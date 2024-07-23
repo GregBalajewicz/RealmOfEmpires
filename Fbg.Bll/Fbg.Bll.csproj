@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B440BCE-5757-4E4D-9369-8E5E69CE1C73}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fbg.Bll</RootNamespace>
+    <AssemblyName>Fbg.Bll</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.Core.3.7.0.36\lib\net45\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.SimpleEmail, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.SimpleEmail.3.7.0.34\lib\net45\AWSSDK.SimpleEmail.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.7.4114.6375, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="MB.TheBeerHouse.CustomEvents, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MB.TheBeerHouse.CustomEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\ApiHelper.cs" />
+    <Compile Include="Api\PlayerNotificationSettings.cs" />
+    <Compile Include="Api\Items.cs" />
+    <Compile Include="Api\VillageApi.cs" />
+    <Compile Include="Avatar.cs" />
+    <Compile Include="Avatars.cs" />
+    <Compile Include="BattleSimulation.cs" />
+    <Compile Include="BBCodes.cs" />
+    <Compile Include="BuildingType.cs" />
+    <Compile Include="BuildingTypeHQ.cs" />
+    <Compile Include="BuildingTypeLevel.cs" />
+    <Compile Include="Chat.cs" />
+    <Compile Include="Clan.cs" />
+    <Compile Include="ClanDiplomacy.cs" />
+    <Compile Include="ClanNotFoundException.cs" />
+    <Compile Include="CoinTranport.cs" />
+    <Compile Include="CONSTS.cs" />
+    <Compile Include="BuildingTypeTP.cs" />
+    <Compile Include="BattleHandicap.cs" />
+    <Compile Include="Items2\Item2_ResearchSpeedup.cs" />
+    <Compile Include="DefinedTargets.cs" />
+    <Compile Include="Player-Morale.cs" />
+    <Compile Include="Realm-PlayerGenerated.cs" />
+    <Compile Include="Realm-Morale.cs" />
+    <Compile Include="RealmPrizes.cs" />
+    <Compile Include="UserAvatar.cs" />
+    <Compile Include="Items2\Item2_BuildingSpeedup.cs" />
+    <Compile Include="Items2\Item2.cs" />
+    <Compile Include="Items2\Item2_PFWithDuration.cs" />
+    <Compile Include="Items2\Item2_Silver.cs" />
+    <Compile Include="Items2\Item2_Troops.cs" />
+    <Compile Include="Player-Items2.cs" />
+    <Compile Include="ThroneRoom\GameWideTopStats.cs" />
+    <Compile Include="ThroneRoom\PlayerInfo.cs" />
+    <Compile Include="Realm-gifts.cs" />
+    <Compile Include="Report_SupportAttacked.cs" />
+    <Compile Include="Report_Misc.cs" />
+    <Compile Include="Report_base.cs" />
+    <Compile Include="DailyReward.cs" />
+    <Compile Include="GovType.cs" />
+    <Compile Include="MapVillageIcon.cs" />
+    <Compile Include="Properties\Misc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Misc.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuestsROE.cs" />
+    <Compile Include="Realm-Ages.cs" />
+    <Compile Include="PF.cs" />
+    <Compile Include="Player-Quests.cs" />
+    <Compile Include="PlayerPFPackage.cs" />
+    <Compile Include="MyResearch.cs" />
+    <Compile Include="Quests2.cs" />
+    <Compile Include="realm-gov.cs" />
+    <Compile Include="Realm-Quests.cs" />
+    <Compile Include="RealmAge.cs" />
+    <Compile Include="Research.cs" />
+    <Compile Include="ResearchItem.cs" />
+    <Compile Include="ResearchItemType.cs" />
+    <Compile Include="DowngradeEvent.cs" />
+    <Compile Include="Mailer.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="Folder.cs" />
+    <Compile Include="Folders.cs" />
+    <Compile Include="Gift and derived classes.cs" />
+    <Compile Include="GiftAvailability.cs" />
+    <Compile Include="MassRecruitRule and derived classes.cs" />
+    <Compile Include="PFPackage.cs" />
+    <Compile Include="Poll.cs" />
+    <Compile Include="CreditPackage.cs" />
+    <Compile Include="PFTrial.cs" />
+    <Compile Include="PlayerOptions.cs" />
+    <Compile Include="PollOptions.cs" />
+    <Compile Include="Quests.cs" />
+    <Compile Include="Report_BattleDet.cs" />
+    <Compile Include="Tag.cs" />
+    <Compile Include="ThroneRoom\ThroneRoom.cs" />
+    <Compile Include="Title.cs" />
+    <Compile Include="UsersXP.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Distance.cs" />
+    <Compile Include="Mail.cs" />
+    <Compile Include="PlayerOther.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="UnitInVillage.cs" />
+    <Compile Include="UnitMovements.cs" />
+    <Compile Include="EventHandler.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Realm.cs" />
+    <Compile Include="Realms.cs" />
+    <Compile Include="UnitRecruitQEntry.cs" />
+    <Compile Include="UnitsAbroad.cs" />
+    <Compile Include="UnitsSupporting.cs" />
+    <Compile Include="UnitType.cs" />
+    <Compile Include="UnitTypeLord.cs" />
+    <Compile Include="UnitTypeSpy.cs" />
+    <Compile Include="UpgradeEvent.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Village.cs" />
+    <Compile Include="VillageBase.cs" />
+    <Compile Include="VillageBasicA.cs" />
+    <Compile Include="VillageBasicB.cs" />
+    <Compile Include="VillageImgPack.cs" />
+    <Compile Include="VillageOther.cs" />
+    <Compile Include="Tags.cs" />
+    <Compile Include="VillageOverviewImages.cs" />
+    <Compile Include="VillagesCache.cs" />
+    <Compile Include="VillageTypes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fbg.Common\Fbg.Common.csproj">
+      <Project>{0142C0CC-7135-4717-9EAC-32D6AAD021E5}</Project>
+      <Name>Fbg.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fbg.DAL\Fbg.DAL.csproj">
+      <Project>{0C3DFAFC-AB75-4C24-85FB-4004242672CA}</Project>
+      <Name>Fbg.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gmbc.Common\Gmbc.Common.csproj">
+      <Project>{8d5a53dc-ea3f-4ade-8c5a-9a0ccf475db6}</Project>
+      <Name>Gmbc.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Misc.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Misc.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

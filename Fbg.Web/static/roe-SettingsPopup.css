@@ -1,0 +1,352 @@
+﻿    .SettingsPopup, .SettingsPopup > #content
+    {
+        height: 100%;
+    }
+
+    .templ_settingpopup
+    {
+        overflow: hidden;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .templ_settingpopup .themeM-tabPanel
+    {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 48px;
+        bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .templ_settingpopup .themeM-tabContent
+    {
+        height: 100%;
+    }
+
+    .templ_settingpopup .incomingContainer, .templ_settingpopup .outgoingContainer
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .templ_settingpopup .soundContainer, .templ_settingpopup .accountContainer, .templ_settingpopup .notifyContainer
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .templ_settingpopup .content
+    {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+
+        .templ_settingpopup .themeM-tabPanel > .themeM-tabs ul {
+            margin-top: 0px;
+        }
+        .templ_settingpopup .themeM-tabPanel > .themeM-tabs li {
+            margin-top: 0px;
+        }
+
+    .templ_settingpopup .themeM-tabPanel > .themeM-tabs a
+    {
+        width: 131px;
+    }
+
+    .templ_settingpopup .themeM-tabPanel > .themeM-tabs
+    {
+        margin: 0 10px;
+    }
+
+    .templ_settingpopup .themeM-tabContent > .bg
+    {
+        filter: alpha(opacity=80);
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);
+        opacity: 0.80;
+    }
+
+    .templ_settingpopup .themeM-tabPanel > .themeM-tabs a.selected
+    {
+        background: rgba(0,0,0,0.80);
+    }
+    
+    .templ_settingpopup .tabs-in
+    {
+        display: block;
+    }
+    
+    .templ_settingpopup .tabs-out
+    {
+        display: none;
+    }
+    
+    #notification_popup, .soundContainer
+    {
+        font: 15px/1.0em "georgia", serif;
+        color: white;
+    }
+
+    #notification_popup .notify_block li
+    {
+        display: inline-block;
+        text-align: center;
+        margin: 0 7px;
+        padding: 0;
+        float: right;
+    }
+
+    #notification_popup .notify_block li:first-child
+    {
+        position: absolute;
+        top: 0px;
+        float: left;
+        margin: 0;
+    }
+
+    #notification_popup .notify_block
+    {
+        clear: both;
+        height: 24px;
+    }
+
+    #notification_popup .notify_mainblock
+    {
+        width: 100%;
+        vertical-align: top;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    #notification_popup .notify_mainblock .notifytext
+    {
+        display: inline-block;
+        width: 272px;
+        float: right;
+    }
+
+    #notification_popup .notify_mainblock DIV.notifyspace
+    {
+        width: 35px;
+    }
+
+    #notification_popup .notify_mainblock DIV.desc
+    {
+        display: inline;
+        font-size: 12px;
+        color: #d0d0d0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    #notification_popup .notificationMasterSwitch, .soundContainer
+    {
+        margin: 0px;
+        padding-top:5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #notification_popup .notifysepartor
+    {
+        display: block;
+        margin: -5px auto -2px auto;
+    }
+
+    #notification_popup .notificationMasterSwitch IMG,
+    #notification_popup .notify_block IMG
+    {
+        width: 30px;
+        height: auto;
+    }
+
+    #notification_popup .mini
+    {
+        width: 20px !important;
+        height: auto;
+    }
+
+    #notification_popup .notify_save
+    {
+        text-align: center;
+        color: rgba(0,0,0,0);
+        margin-bottom: -8px;
+    }
+
+    #notification_popup .savingOut
+    {
+        color: white !important;
+    }
+
+    #notification_popup .NotifyBlockOff
+    {
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+
+    #notification_popup .notifyItem
+    {
+        position: relative;
+    }
+
+    #notification_popup .mapTroopType .selected
+    {
+        text-decoration: underline;
+    }
+
+    .templ_settingpopup .phrases
+    {
+        display: none;
+    }
+
+    .templ_settingpopup .soundContainer .notifysepartor
+    {
+        display: block;
+        margin: 0px auto;
+    }
+
+    .templ_settingpopup .musicImage, .templ_settingpopup .soundImage
+    {
+        margin: 0 10px;
+    }
+
+    .themeM-tabPanel > .themeM-tabs a
+    {
+        text-shadow: 1px 1px black;
+    }
+
+.templ_settingpopup .tabContent {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+
+.templ_settingpopup .soundContainer .oneOption {
+    position: relative;
+    height: 46px;
+    background-repeat: no-repeat;
+    background-position: 30px 0px;
+    text-align: left;
+    font: 16px/25px "georgia", serif;
+    cursor: pointer;
+    padding-left: 80px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px rgba(113, 110, 82, 0.4);
+    box-sizing: border-box;
+}
+.templ_settingpopup .soundContainer SPAN {
+    display: inline-block;
+    margin-top: 9px;
+}
+
+.templ_settingpopup A {
+    color: white !important;
+}
+
+
+.templ_settingpopup .soundContainer .support {
+     background-image: url('https://static.realmofempires.com/images/icons/M_TechSupport.png');
+}
+.templ_settingpopup .soundContainer .steward {
+    background-image: url('https://static.realmofempires.com/images/icons/M_Steward.png');
+}
+.templ_settingpopup .soundContainer .restart {
+    display: none;
+    background-image: url('https://static.realmofempires.com/images/icons/M_ToggleMap.png');
+}
+.templ_settingpopup .soundContainer .tools {
+    background-image: url('https://static.realmofempires.com/images/icons/M_Siege.png');
+}
+.templ_settingpopup .soundContainer .tou {
+    background-image: url('https://static.realmofempires.com/images/icons/M_TOU.png');
+}
+.templ_settingpopup .soundContainer .resetLT {
+    background-image: url('https://static.realmofempires.com/images/icons/M_Padlock.png');
+}
+
+.templ_settingpopup .soundContainer .changepwd {
+    background-image: url('https://static.realmofempires.com/images/icons/changePassword.png');
+}
+
+.templ_settingpopup .soundContainer .logout {
+    background-image: url('https://static.realmofempires.com/images/icons/logout.png');
+}
+
+.templ_settingpopup .soundContainer .selfhelp  {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_PlayerHover.png');
+    background-size: 35px 35px;
+    background-position: 35px 2px;
+}
+
+.templ_settingpopup .soundContainer .realmParams {
+    background-image: url('https://static.realmofempires.com/images/icons/Map.png');
+}
+.templ_settingpopup .soundContainer .setUIDisplayMode {
+    background-image: url(https://static.realmofempires.com/images/icons/upDownArrow.png);
+    background-position: 39px 4px;
+}
+.templ_settingpopup .soundContainer .toggleMapScrollZoom {
+    background-image: url('https://static.realmofempires.com/images/icons/magnifyingGlass.png');
+}
+
+
+.templ_settingpopup .settingsRow {
+    position: relative;
+    /* width: 100%; */
+    height: 45px;
+    padding: 0px;
+}
+
+    .templ_settingpopup .settingsRow .rowIcon {
+        position: absolute;
+        left: 30px;
+        height: 44px;
+        width: 44px;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+        .templ_settingpopup .settingsRow .rowIcon.playOnMOption {
+            background-image: url('https://static.realmofempires.com/images/icons/roeAppleAndroid.png');
+            background-size: 176px 44px;
+        }
+
+            .templ_settingpopup .settingsRow .rowIcon.playOnMOption .innerIcon {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-image: url('https://static.realmofempires.com/images/icons/roeAppleAndroid.png');
+                background-size: 176px 44px;
+            }
+                .templ_settingpopup .settingsRow .rowIcon.playOnMOption .innerIcon[data-iconState="1"] {
+                    background-position: 43px 0px;
+                }
+                .templ_settingpopup .settingsRow .rowIcon.playOnMOption .innerIcon[data-iconState="2"] {
+                    background-position: 87px 0px;
+                }
+                .templ_settingpopup .settingsRow .rowIcon.playOnMOption .innerIcon[data-iconState="3"] {
+                    background-position: 131px 0px;
+                }
+
+    .templ_settingpopup .settingsRow .btnText {
+        position: absolute;
+        top: 9px;
+    }
+
+
+.desktop .templ_settingpopup .soundContainer .oneOption {
+    height: 40px;
+    margin-bottom: 5px;
+    background-size: 32px auto;
+    background-position: 30px 50%;
+}
+.desktop .templ_settingpopup .playOnMOption {
+    top: -2px;
+    left: 24px;
+}

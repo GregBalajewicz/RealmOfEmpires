@@ -1,0 +1,1048 @@
+﻿#popup_QuickRecruit {
+    background-image: url('https://static.realmofempires.com/images/backgrounds/M_LoginKnightNight.jpg');
+    background-size: 100% auto;
+}
+
+#quickrecruit_popup .themeM-view.default {
+    overflow: auto;
+    min-width: 321px;
+}
+
+#popup_QuickRecruit .popupBody {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: auto !important;
+}
+
+#popup_QuickRecruit .IFrameDivTitle {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+}
+
+#popup_QuickRecruit .themeM-panel.header > .fg > .label {
+    text-align: center;
+}
+
+#popup_QuickRecruit .themeM-panel.header > .fg > .level {
+    display: block;
+}
+
+
+#quickrecruit_popup .recruitPanel .sectionDivider {
+    position: relative;
+    display:none;
+}
+
+#quickrecruit_popup .default .recruitSummary {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 84px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0px 82px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#quickRecruitDialog #quickrecruit_popup .default .recruitSummary {
+    height: 43px;
+    background-position: 0px 41px;
+}
+
+#quickrecruit_popup .default .recruitSummary .unitsSummaryHolder {
+    position: absolute;
+    bottom: 2px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+}
+
+    #quickrecruit_popup .default .recruitSummary .unitsSummaryHolder .summaryItem {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        float: left;
+        background-size: 22px 22px;
+        background-position: 8px 4px;
+        background-repeat: no-repeat;
+    }
+
+        #quickrecruit_popup .default .recruitSummary .unitsSummaryHolder .summaryItem .count {
+            position: absolute;
+            bottom: 2px;
+            left: 0px;
+            right: 0px;
+            text-align: center;
+            color: #D7D7D7;
+            font: 10px Georgia;
+        }
+
+#quickrecruit_popup .default .recruitPanelContainer {
+    position: absolute;
+    top: 84px;
+    left: 0px;
+    right: 0px;
+    bottom: 38px;
+    overflow: auto;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer {
+    margin-bottom: 40px;
+}
+
+#quickRecruitDialog #quickrecruit_popup .default .recruitPanelContainer {
+    top: 41px;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel {
+    position: relative;
+    margin-bottom: 1px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(42, 50, 50, 0.9);
+    height: auto;
+    overflow: hidden;
+    min-height: 75px;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel {
+    min-height: 50px;
+    margin-bottom: 0;
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 200% 2px;
+    background-position: -210px 0px;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer {
+    display: none;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .massChestSection,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    min-width: 321px;
+    overflow: hidden;
+    padding-top: 0px;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection,
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov {
+    padding-top: 0;
+    height: 23px;
+    left: 12px;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .massChestSection {
+    padding-top: 0;
+    height: 32px;
+    left: 12px;
+}
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection[data-ucanrec="2"] .unitRecruitCommands {
+        display: none;
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection.missingResearch .unitResearchButton {
+        display: block;
+    }
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection.missingResearch .unitResearchButton {
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    -o-transform: scale(0.6);
+    float: none;
+    top: -13px;
+    left: 88px;
+}
+
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection.missingResearch,
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection.missingBuildingLevel {
+    opacity: 0.6;
+}
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitResearchButton {
+        display: none;
+        position: relative;
+        padding-right: 25px;
+        margin-top: 6px;
+        margin-right: 10px;
+        float: right;
+    }
+
+        #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitResearchButton div {
+            position: absolute;
+            top: 0px;
+            right: 12px;
+            width: 36px;
+            height: 36px;
+            background-image: url(https://static.realmofempires.com/images/icons/M_ResearchList.png);
+            background-size: 100% 100%;
+        }
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection.missingBuildingLevel .missingBuildingLevels {
+        display: block;
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .missingBuildingLevels {
+        display: none;
+        position: relative;
+        padding-top: 10px;
+        width: 150px;
+        margin-top: 6px;
+        margin-right: 10px;
+        float: right;
+        color: #F00;
+    }
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .missingBuildingLevels {
+        width: 400px;
+        margin-top: 0;
+        padding-top: 0;
+        top: 4px;
+        float: none;
+        font-size: 14px;
+        left: -13px;  
+    }
+
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection {
+    position: relative;
+    height: 56px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+    #quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .sectionDivider {
+        bottom: 0px;
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitIcon,
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitIcon,
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .massChestSection .unitIcon,
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitIcon {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        float: left;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 10px 5px 0px 10px;
+    }
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitIcon,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitIcon,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .massChestSection .unitIcon,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitIcon {
+        height: 20px;
+        width: 20px;
+        margin: 0 3px 0 5px;
+    }
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitIcon {
+        top: 13px;
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitInfo,
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitInfo,
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitInfo {
+        position: relative;
+        height: 100%;
+        width: 105px;
+        float: left;
+        padding-left: 3px;
+        padding-top: 6px;
+        box-sizing: border-box;
+    }
+    
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitInfo,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitInfo {
+        padding-top: 2px;
+        width: 140px;
+    }
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitInfo {
+        top: 10px;
+        width: 180px;
+    }
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitInfo div,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitInfo div,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitInfo div {
+        display: inline-block;
+    }
+        #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitInfo .fontSilverNumbersSm {
+            font: 11px "lucida grande" , tahoma, verdana, arial, sans-serif;
+        }
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands {
+    position: relative;
+    height: 50px;
+    width: auto;
+    min-width: 169px;
+    float: left;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands,
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands {
+    min-width: 400px;
+    float: none;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands {
+    min-width: 116px;
+    height: auto;
+    top: 3px;
+    left: -50px;
+}
+
+
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitRecruitCommands {
+    position: relative;
+    height: 50px;
+    width: auto;
+    padding-right: 5px;
+    float: right;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands .massChestInfo {
+    position: relative;
+    float: left;
+    width: 210px;
+    height: 40px;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands .massChestInfo {
+    padding-top: 0;
+    left: 3px;
+    top: 3px;
+    font-size: 12px;
+    width: 255px;
+    margin: 0;
+    text-align: left;
+}
+
+/*#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .textButton {
+    top: 1px;
+    position: relative;
+    left: -10px;
+}
+    /*#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .textButton:hover .rcLabel,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .textButton:hover .rcNum {
+        text-decoration: underline;
+    }*//*
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .textButton:hover {
+        border-bottom: 1px solid #e6cd90;
+    }
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .textButton .rcLabel,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .textButton .rcNum {
+        display: inline-block;
+    }*/
+
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .recruitAmount {
+    width: 50px;
+    left: -10px;
+    top: 3px;
+    position: relative;
+    font: 10px "lucida grande" , tahoma, verdana, arial, sans-serif;
+    -webkit-box-shadow: inset -1px 3px 2px 1px rgba(0,0,0,0.3);
+    box-shadow: inset -1px 3px 2px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 2px;
+    border: none;
+}
+
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .BtnDSm2n,
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .BtnDSm2n
+{
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+    -o-transform: scale(0.7);
+    position: relative;
+}
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .BtnDSm2n .rcLabel {
+        display: inline-block;
+        top: -3px;
+        position: relative;
+    }
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .BtnDSm2n .rcNum,
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .BtnDSm2n .rcNum {
+        font-size: 14px;
+        position: relative;
+        display: inline-block;
+        top: -2px;
+    }
+
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .chestBuy {
+    left: 31px;
+    top: -20px;
+}
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .chestBuy .rcNum {
+        font-size: 18px;
+    }
+
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .BtnDSm2n {
+    left: 157px;
+    top: -26px;
+}
+
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .max {
+    left: 275px;
+    top: -50px;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .half {
+    left: 31px;
+    top: -20px;
+}
+    
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands .BtnDSm2n {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+    -o-transform: scale(0.7);
+    position: relative;
+    left: -7px;
+    top: -5px;
+}
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands .BtnDSm2n .rcMassBuy {
+        font-size: 18px;
+        position: relative;
+        top: -2px;
+    }
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitRecruitCommands .recruitCirc,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .recruitCirc,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands .recruitCirc,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .recruitCirc {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    float: left;
+    background-image: url('https://static.realmofempires.com/images/buttons/M_selectEmpty.png');
+    background-size: 100% 100%;
+    margin: 5px 1px;
+    cursor: pointer;
+}
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands .recruitCirc .rcMassBuy {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov:not([data-uCanRec="0"]) .unitRecruitCommands .recruitCirc,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection:not([data-uCanRec="0"]) .unitRecruitCommands .recruitCirc {
+    opacity: .5;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitRecruitCommands .recruitCirc:active,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .massChestSection .unitRecruitCommands .recruitCirc:active,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .recruitCirc:active,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .recruitCirc:active {
+    margin-top: 7px;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitRecruitCommands .recruitCirc .rcLabel,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .recruitCirc .rcLabel {
+    text-align: center;
+    padding-top: 4px;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitRecruitCommands .recruitCirc .rcNum,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .recruitCirc .rcNum {
+    text-align: center;
+    margin-top: -1px;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .disbandContainer .disbandUnitSection .unitRecruitCommands .recruitCirc .rcHash,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .unitRecruitCommands .recruitCirc .rcHash {
+    text-align: center;
+    margin-top: 6px;
+    font-size: 24px;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .recruitCirc .rcNum {
+    text-align: center;
+    margin-top: 8px;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 22px;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .currentGovCost {
+    position: relative;
+    float: left;
+    width: 115px;
+    padding-top: 14px;
+    margin-right: 10px;
+    text-align: right;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .currentGovCost {
+    display: inline-block;
+    width: auto;
+    padding-top: 0;
+    margin-right: 0;
+    float: none;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .govFoodCost {
+    position: absolute;
+    right: 54px;
+    top: 29px;
+    padding-left: 20px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url("https://static.realmofempires.com/images/icons/Sheep44.png");
+}
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .govFoodCost.notEnoughFood,
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands.notEnoughChests .currentGovCost span {
+        color: #FF3A3A;
+    }
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .govFoodCost {
+    top: 0;
+    right: -18px;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov:not([data-uCanRec="0"]) .unitRecruitCommands .currentGovCost,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands.notEnoughChests .recruitCirc,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands .govFoodCost.notEnoughFood  {
+    opacity: .5;
+}
+
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .unitSectionGov .unitRecruitCommands.notEnoughChests .BtnDSm2n {
+    -webkit-filter: grayscale(1);
+    opacity: 0.5;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSection .sectionDivider,
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .unitSectionGov .sectionDivider {
+    position: absolute;
+    top: 0px;
+}
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .queuedItemsArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: auto 35px;
+    background-position: 10px 7px;
+    padding-left: 50px;
+    padding-top: 7px;
+    background-color: rgba(29, 32, 32, 0.9);
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .queuedItemsArea {
+    background-size: auto 24px;
+    height: 21px;
+    background-position: 10px 2px;
+    top: 2px;
+    left: -5px;
+}
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .queuedItemsArea .queuedItem {
+        position: relative;
+        float: left;
+        top: 3px;
+        display: block;
+        height: 30px;
+        width: auto;
+        padding: 1px 3px 1px 32px;
+        background-position: 0px 0px;
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        line-height: 29px;
+        margin-right: 7px;
+        font-family: georgia;
+    }
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .queuedItemsArea .queuedItem {
+        background-size: 20px 20px;
+        height: 20px;
+        padding: 0px 3px 1px 24px;
+        line-height: 20px;
+        top: -3px;
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .queuedItemsArea .queuedMore {
+        position: relative;
+        float: left;
+        display: block;
+        width: auto;
+        left: 2px;
+        top: 2px;
+        color: #D7D7D7;
+        font: 22px Georgia;
+        text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel .queuedItemsArea .queuedMore {
+        top: -10px;
+    }
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel .slideToQueuePage {
+    position: relative;
+    left: 205px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .slideToQueuePage {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    transform: scale(0.7);
+    -o-transform: scale(0.7);
+    left: 287px;
+    margin-top: 0;
+    padding-top: 8px;
+    padding-right: 15px;
+}
+    #quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel .slideToQueuePage .smallArrowRight {
+        right: 15px;
+        top: 6px;
+    }
+
+#quickrecruit_popup .default .recruitPanelContainer .recruitPanel.unbuilt {
+    height: 55px;
+    min-height: 0px;
+}
+#quickrecruit_popup #d2fg .default .recruitPanelContainer .recruitPanel.unbuilt {
+  display: none !important;
+}
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel.unbuilt .grayband {
+        position: absolute;
+        top: 20px;
+        height: 16px;
+        left: 0px;
+        right: 0px;
+        background: -moz-linear-gradient(left, rgba(51,51,51,0.5) 0%, rgba(123,123,123,1) 50%, rgba(51,51,51,0.5) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(51,51,51,0.5)), color-stop(50%,rgba(123,123,123,1)), color-stop(100%,rgba(51,51,51,0.5)));
+        background: -webkit-linear-gradient(left, rgba(51,51,51,0.5) 0%,rgba(123,123,123,1) 50%,rgba(51,51,51,0.5) 100%);
+        background: -o-linear-gradient(left, rgba(51,51,51,0.5) 0%,rgba(123,123,123,1) 50%,rgba(51,51,51,0.5) 100%);
+        background: -ms-linear-gradient(left, rgba(51,51,51,0.5) 0%,rgba(123,123,123,1) 50%,rgba(51,51,51,0.5) 100%);
+        background: linear-gradient(to right, rgba(51,51,51,0.5) 0%,rgba(123,123,123,1) 50%,rgba(51,51,51,0.5) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80333333', endColorstr='#80333333',GradientType=1 );
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel.unbuilt .buildingName,
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel.unbuilt .buildingState {
+        position: absolute;
+        top: 21px;
+        left: 50%;
+        width: 120px;
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel.unbuilt .lockImage {
+        position: absolute;
+        top: 0px;
+        height: 50px;
+        width: 100%;
+        left: 0px;
+        background-image: url(https://static.realmofempires.com/images/icons/lockedBanner.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel.unbuilt .buildingName {
+        margin-left: -150px;
+        text-align: right;
+    }
+
+    #quickrecruit_popup .default .recruitPanelContainer .recruitPanel.unbuilt .buildingState {
+        margin-left: 30px;
+        text-align: left;
+    }
+
+
+
+
+#quickrecruit_popup .default .upgDowngContainer {
+    position: absolute;
+    top: 104px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: auto;
+}
+
+
+.upgradeNumpadHolder {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+}
+
+    .upgradeNumpadHolder .upgradeNumpadHeader {
+        position: relative;
+        width: 100%;
+        height: 50px;
+    }
+
+        .upgradeNumpadHolder .upgradeNumpadHeader .buildingName {
+            position: absolute;
+            left: 65px;
+            top: 5px;
+        }
+
+        .upgradeNumpadHolder .upgradeNumpadHeader .buildingLevel {
+            position: absolute;
+            left: 65px;
+            top: 24px;
+        }
+
+        .upgradeNumpadHolder .upgradeNumpadHeader .buildingUpgradeText {
+            position: absolute;
+            left: 215px;
+            top: 6px;
+            text-align: right;
+        }
+
+    .upgradeNumpadHolder .upgradeNumpadBox {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 240px;
+        overflow: hidden;
+        padding: 0px 20px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+        .upgradeNumpadHolder .upgradeNumpadBox .upgradeItemNum {
+            position: relative;
+            float: left;
+            margin: 9px;
+        }
+
+            .upgradeNumpadHolder .upgradeNumpadBox .upgradeItemNum.impossibleUpgrade {
+                opacity: 0.5;
+                filter: url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+                filter: gray; /* IE6-9 */
+                -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+            }
+
+
+
+#quickrecruit_popup .queuepage .sectionBar {
+    z-index: 1;
+    top: -2px;
+}
+
+#quickrecruit_popup .queuepage .queueWrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#quickRecruitDialog #quickrecruit_popup .queuepage .queueWrapper .queueHeader {
+    top: 0px;
+}
+
+#quickrecruit_popup .queuepage .queueWrapper .queueHeader {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    height: 35px;
+}
+
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .sectionDivider {
+        bottom: 0px;
+    }
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .qCount,
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .qName,
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .qTime,
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .qCancel {
+        position: absolute;
+        top: 7px;
+        color: #e6cd90;
+        text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font: 15px "IM Fell French Canon LC", serif;
+    }
+
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .qCount,
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qCount {
+        left: 20px;
+    }
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .qName,
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qName {
+        left: 90px;
+    }
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .qTime,
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qTime {
+        left: 200px;
+    }
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueHeader .qCancel {
+        left: 260px;
+    }
+
+#quickrecruit_popup .queuepage .queueWrapper .queueContainer .qCancel {
+    left: 280px;
+}
+
+#quickRecruitDialog #quickrecruit_popup .queuepage .queueWrapper .queueContainer {
+    top: 35px;
+}
+
+#quickrecruit_popup .queuepage .queueWrapper .queueContainer {
+    position: absolute;
+    top: 75px;
+    left: 0px;
+    right: 0px;
+    bottom: 35px;
+    overflow: auto;
+}
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .queuedItemRow {
+        position: relative;
+        width: 100%;
+        height: 36px;
+        overflow: hidden;
+    }
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qCount,
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qName,
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qTime,
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qIcon,
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qCancel {
+        position: absolute;
+        top: 7px;
+        color: #d7d7d7;
+        text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font: 15px "IM Fell French Canon LC", serif;
+    }
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qIcon {
+        top: 2px;
+        left: 60px;
+        width: 30px;
+        height: 30px;
+        background-size: 100% 100%;
+    }
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueContainer .qCancel {
+        top: 4px;
+        width: 25px;
+        height: 25px;
+        background-image: url("https://static.realmofempires.com/images/icons/M_X.png");
+        background-size: 100% 100%;
+    }
+
+
+#quickrecruit_popup .queuepage .queueWrapper .queueFooter {
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    right: 0px;
+    height: 30px;
+    background-color: #000;
+    border-top: 1px solid #464646;
+    box-sizing: border-box;
+}
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueFooter .stripe {
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        right: 3px;
+        bottom: 3px;
+        background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png);
+    }
+
+    #quickrecruit_popup .queuepage .queueWrapper .queueFooter .slideBackToDefaultPage {
+        position: absolute;
+        top: -1px;
+        left: 5px;
+    }
+
+        #quickrecruit_popup .queuepage .queueWrapper .queueFooter .slideBackToDefaultPage .smallArrowLeft {
+            top: 6px;
+        }
+
+        #quickrecruit_popup .queuepage .queueWrapper .queueFooter .slideBackToDefaultPage:active .smallArrowLeft {
+            top: 7px;
+        }
+
+
+
+
+.simplePopupOverlay.quickRecruitInput .pContainer {
+    top: 30px;
+}
+
+    .simplePopupOverlay.quickRecruitInput .pContainer .pContent {
+        overflow: hidden;
+        position: relative;
+        height: 108px;
+    }
+
+        .simplePopupOverlay.quickRecruitInput .pContainer .pContent .recruitIcon {
+            position: absolute;
+            top: 13px;
+            left: 90px;
+            width: 44px;
+            height: 44px;
+            background-size: 100% 100%;
+        }
+
+        .simplePopupOverlay.quickRecruitInput .pContainer .pContent .recruitName {
+            position: absolute;
+            text-align: center;
+            top: 42px;
+            left: 135px;
+            width: 120px;
+        }
+
+        .simplePopupOverlay.quickRecruitInput .pContainer .pContent .recruitmaxLabel {
+            position: absolute;
+            top: 65px;
+            left: 93px;
+        }
+
+        .simplePopupOverlay.quickRecruitInput .pContainer .pContent .recruitmaxNumber {
+            position: absolute;
+            text-align: center;
+            top: 80px;
+            left: 80px;
+            width: 60px;
+        }
+
+        .simplePopupOverlay.quickRecruitInput .pContainer .pContent .recruitAmount {
+            position: absolute;
+            top: 5px;
+            left: 150px;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            width: 80px;
+            -webkit-box-shadow: inset -1px 3px 2px 1px rgba(0,0,0,0.3);
+            box-shadow: inset -1px 3px 2px 1px rgba(0,0,0,0.3);
+        }
+
+        .simplePopupOverlay.quickRecruitInput .pContainer .pContent .recruitAmountBtn {
+            position: absolute;
+            top: 65px;
+            left: 139px;
+        }
+
+
+/* TOGGLE MODE STYLE */
+#quickrecruit_popup .default .switchModeArea {
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 5px 0px;
+    margin-top: 4px;
+    text-align: center;
+}
+#quickrecruit_popup #d2fg .default .switchModeArea {
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 38px;
+}
+#quickrecruit_popup #d2fg .default .switchModeArea {
+    margin-top: 0;
+}
+    #quickrecruit_popup .default .switchModeArea .switchModeBtn {
+        position: absolute;
+        top: 3px;
+        height: 36px;
+        width: 125px;
+        padding-top: 11px;
+        box-sizing: border-box;
+        background-image: url('https://static.realmofempires.com/images/buttons/M_SP_ButtonToggle1.png');
+        background-size: 250px 100px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    #quickrecruit_popup #d2fg .default .switchModeArea .switchModeBtn {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+
+        #quickrecruit_popup .default .switchModeArea .switchModeBtn.left {
+            left: 35px;
+            padding-left: 10px;
+        }
+        #quickrecruit_popup #d2fg .default .switchModeArea .switchModeBtn.left {
+            left: 85px;
+        }
+
+        #quickrecruit_popup .default .switchModeArea .switchModeBtn.right {
+            left: 160px;
+            padding-right: 10px;
+        }
+        #quickrecruit_popup #d2fg .default .switchModeArea .switchModeBtn.right {
+            left: 185px;
+        }
+
+    #quickrecruit_popup .default .switchModeArea.leftActive .switchModeBtn.left {
+        background-position: 0px 0px;
+        padding-top: 12px;
+    }
+
+    #quickrecruit_popup .default .switchModeArea.rightActive .switchModeBtn.left {
+        background-position: 0px -50px;
+    }
+
+    #quickrecruit_popup .default .switchModeArea.leftActive .switchModeBtn.right {
+        background-position: -125px 0px;
+    }
+
+    #quickrecruit_popup .default .switchModeArea.rightActive .switchModeBtn.right {
+        background-position: -125px -50px;
+        padding-top: 12px;
+    }
+
+#quickrecruit_popup #d2fg .default .recruitAllRow {
+    height: 35px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 200% 2px;
+    background-position: -210px 0px;
+}
+    #quickrecruit_popup #d2fg .default .recruitAllRow .BtnDSm2n {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        transform: scale(0.9);
+        -o-transform: scale(0.9);
+        left: 150.5px;
+        top: 3px;
+        position: relative;
+    }
+
+/* END TOGGLE MODE STYLE */

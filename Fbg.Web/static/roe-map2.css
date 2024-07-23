@@ -1,0 +1,932 @@
+﻿#map {
+    height: 330px;
+}
+
+#mapwrap {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+#surface {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+    #surface canvas {
+        -webkit-user-select: none;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        z-index: 1; /*background: url(/static/bigtile_cloud.png);*/
+    }
+
+    #surface .earth.old {
+        z-index: 10;
+    }
+
+#select {
+    border: solid 2px #4887CF;
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    z-index: 2;
+}
+
+.doact .ui_item {
+    white-space: nowrap;
+    padding: 2px;
+}
+
+.doact .vilName,
+.doact .hdr {
+    background-color: rgb(41, 33, 22);
+    color: #c8a488;
+    font-weight: normal;
+}
+
+.doact .help {
+    display: none;
+}
+
+.doact a {
+    cursor: pointer;
+}
+
+    .doact a.na {
+        cursor: default;
+    }
+
+.doact a, .doact .na {
+    display: inline-block;
+    white-space: nowrap;
+    color: #c39037;
+    background-image: url(https://static.realmofempires.com/images/menuItemSeperator.png);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 34px;
+    height: 34px;
+}
+
+
+.doact .inOutContainer {
+}
+
+    .doact .inOutContainer > div {
+        display: table-cell;
+        width: 33px;
+        height: 33px;
+    }
+
+
+
+.doact a:hover {
+    color: rgb(195, 144, 55);
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.doact a.attq {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickAttack.png');
+}
+
+.doact .attq_na {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickAttackGray.png');
+}
+
+.doact a.attq:hover {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickAttackHover.png');
+}
+
+.doact a.att {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_Attack.png');
+}
+
+    .doact a.att:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_AttackHover.png');
+    }
+
+.doact a.sup {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_Support.png');
+}
+
+.doact .sup_na {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_SupportGray.png');
+}
+
+.doact a.sup:hover {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_SupportHover.png');
+}
+
+.doact a.supq {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupport.png');
+}
+
+.doact .supq_na {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupportGray.png');
+}
+
+.doact a.supq:hover {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupportHover.png');
+}
+
+.doact a.supl {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookup.png');
+}
+
+.doact .supl_na {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookupGray.png');
+}
+
+.doact a.supl:hover {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookupHover.png');
+}
+
+.doact a.map {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_CenterMap.png');
+}
+
+    .doact a.map:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_CenterMapHover.png');
+    }
+
+.doact a.sends {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_Silver.png');
+}
+
+.doact .sends_na {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_SilverGray.png');
+}
+
+.doact a.sends:hover {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_SilverHover.png');
+}
+
+.doact a.myvov {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_Vov2.png');
+}
+
+    .doact a.myvov:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Vov2Hover.png');
+    }
+
+.doact a.othervov {
+    background-image: url('https://static.realmofempires.com/images/helpicon.png');
+}
+
+.doact a.hq {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_Upgrade2.png');
+}
+
+    .doact a.hq:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Upgrade2Hover.png');
+    }
+
+
+.doact .hq_na {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_UpgradeGray.png');
+}
+
+
+.doact a.renV {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_Rename.png');
+}
+
+.doact .renV_na {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_RenameGray.png');
+}
+
+.doact a.renV:hover {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_RenameHover.png');
+}
+
+.doact a.recr {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_Recruit2.png');
+}
+
+    .doact a.recr:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Recruit2Hover.png');
+    }
+
+.doact .recr_na {
+    background-image: url('https://static.realmofempires.com/images/icons/Q_RecruitGray.png');
+}
+
+.doact a.prom {
+    display: inline-block;
+    background-image: url('https://static.realmofempires.com/images/icons/thumbUp30x30.png');
+}
+
+.doact a.unprom {
+    display: inline-block;
+    background-image: url('https://static.realmofempires.com/images/icons/thumbDown30x30.png');
+}
+
+.doact .promSet {
+    width: 70px;
+}
+    .doact .promInfo {
+        display: inline-block;
+        background-image: url('https://static.realmofempires.com/images/helpicon.png');
+    }
+
+.doact .villselect {
+    background-image: url('https://static.realmofempires.com/images/icons/selectvillage.png');
+}
+
+    .doact .villselect.na {
+        opacity: 0.3;
+    }
+
+.doact a.itemsPopup {
+    background-image: url('https://static.realmofempires.com/images/icons/M_Reward.png');
+    background-size: 32px 32px;
+}
+
+.doact a.editVillageNote {
+    background-image: url('https://static.realmofempires.com/images/icons/M_Notes.png');
+    background-size: 32px 32px;
+}
+
+.doact a.targetSupport {
+    background-image: url('https://static.realmofempires.com/images/icons/M_HD_SupportCAll.png');
+    background-size: 32px 32px;
+}
+.doact a.targetAttack {
+    background-image: url('https://static.realmofempires.com/images/icons/M_HD_AttackCAll.png');
+    background-size: 32px 32px;
+}
+
+.doact a.gifts {
+    background-image: url('https://static.realmofempires.com/images/icons/giftsS.png');
+}
+
+    .doact a.gifts:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/giftsHoverS.png');
+    }
+
+.doact .gifts_na {
+    background-image: url('https://static.realmofempires.com/images/icons/m_gifts.png');
+    opacity: .3;
+}
+
+.doact .highlight {
+    background-image: url('https://static.realmofempires.com/images/icons/highlight2S.png');
+}
+
+    .doact .highlight:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/highlight2HoverS.png');
+    }
+
+
+.doact a.toVillage,
+.doact a.fromVillage,
+.doact a.toPlayer,
+.doact a.fromPlayer {
+    width: 40px;
+}
+
+
+.doact a.toVillage {
+    background-image: url('https://static.realmofempires.com/images/icons/toVillage.png');
+}
+
+.doact a.fromVillage {
+    background-image: url('https://static.realmofempires.com/images/icons/fromVillage.png');
+}
+
+.doact a.toPlayer {
+    background-image: url('https://static.realmofempires.com/images/icons/toPlayer.png');
+}
+
+.doact a.fromPlayer {
+    background-image: url('https://static.realmofempires.com/images/icons/fromPlayer.png');
+}
+
+    .doact a.toVillage.notAvailable, .doact a.fromVillage.notAvailable, .doact a.toPlayer.notAvailable, .doact a.fromPlayer.notAvailable {
+        opacity: 0.3;
+        cursor: auto;
+    }
+
+.doact a.claimVillage {
+    background-size: 30px 30px;
+}
+        .doact a.claimVillage[data-claimStatus="0"] {
+            background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_none.png);
+        }
+            .doact a.claimVillage[data-claimStatus="0"].purple {
+                background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_ally.png);
+            }
+        .doact a.claimVillage[data-claimStatus="1"] {
+            background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_my.png);
+        }
+        .doact a.claimVillage[data-claimStatus="2"] {
+            background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_other.png);
+        }
+
+    .doact a.claimVillage.busy {
+        background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif) !important;
+        background-position: 50% 50%;
+        background-size: 25px 25px;
+        background-repeat: no-repeat;
+    }
+        .doact a.claimVillage.na {
+            background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_none.png) !important;
+        }
+
+.doact .launchReports {
+    background-size: 30px 30px;
+    background-image: url('https://static.realmofempires.com/images/icons/m_Reports.png') !important;
+}
+
+
+.facebookMenu .vilName a {
+    white-space: nowrap;
+    color: rgb(195, 144, 55);
+    text-decoration: none;
+}
+
+    .facebookMenu .vilName a:hover {
+        text-decoration: underline;
+    }
+
+#map .phrases {
+    display: none;
+}
+
+#highlight_popup .phrases {
+    display: none;
+}
+
+#hover .points, #hover .area {
+    color: #8d7765;
+}
+
+#hover .note {
+    font-size: x-small;
+    white-space: nowrap;
+    font-style: italic;
+    color: #8d7765;
+}
+
+
+
+/* D2 Specific Map Gui */
+.desktop .doact .highlight {
+    padding-left: 5px;
+}
+
+.desktop #select {
+    border: none;
+    box-shadow: inset 0px 3px 6px rgba(0, 185, 255, 0.7), inset 0px -3px 6px rgba(0, 185, 255, 0.7);
+    border-radius: 10px;/*get rid of highlighting*/
+    -webkit-user-select: none;/* Chrome/Safari */
+    -moz-user-select: none;/* Firefox */
+    -ms-user-select: none;/* IE10+ */
+}
+
+#mapGuiSelected, #mapGuiHover {
+    width: 255px;
+    height: auto;
+}
+
+#mapGuiHover {
+pointer-events: none;
+}
+
+.mapGuiPanel {
+    position: absolute;
+    z-index: 3001; /*puts it above dialogs*/
+}
+
+.mapGuiSubPanel {
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    min-height: 25px;
+    margin-bottom: 1px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+    .mapGuiSubPanel.mapGuiNote {
+        overflow: hidden;
+        word-break: break-all;
+    }
+
+
+
+
+
+
+
+.mapGuiSubPanel.mapGuiPlayer {
+    padding: 2px 0px 9px 0px;
+}
+
+        .mapGuiSubPanel.mapGuiPlayer .pAvatarFrame {
+            position: absolute;
+            left: -30px;
+            top: 50%;
+            margin-top: -35px;
+            background-image: url(https://static.realmofempires.com/images/D2test/VillageClickAvatarRing.png);
+            width: 50px;
+            height: 50px;
+            border-radius: 60px;
+            padding: 10px;
+            overflow: hidden;
+            background-size: 100% 100%;
+            z-index: 1;
+        }
+
+            .mapGuiSubPanel.mapGuiPlayer .pAvatarFrame .pAvatarPicture {
+                position: relative;
+                width: 54px;
+                height: 54px;
+                left: -2px;
+                top: -2px;
+                background-size: auto 100%;
+                border-radius: 55px;
+                box-shadow: inset 0px 0px 5px #000;
+                background-position: center;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        .mapGuiSubPanel.mapGuiPlayer .pInfo {
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+
+
+    .mapGuiSubPanel.mapGuiInout {
+        padding:0px 5px;
+    }
+
+    .mapGuiSubPanel.mapGuiTroop  {
+        cursor:pointer;
+        padding:0px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+        .mapGuiSubPanel.mapGuiTroop .loading {
+            position: absolute;
+            padding:5px;
+            left: 0px;
+            right: 0px;
+            text-align: center;
+            background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+            background-size: 15px;
+            background-position: 30px center;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+        }
+        .mapGuiSubPanel.mapGuiTroop table {
+        background-color: rgba(0, 0, 0, 0.8);
+        min-height: 25px;
+        min-width:100%;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+#mapGuiButtons {
+    width: 255px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+    #mapGuiButtons a, #mapGuiButtons .na {
+        text-decoration: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    }
+
+    #mapGuiButtons a {
+        position:relative;
+        cursor: pointer;
+    }
+
+        #mapGuiButtons a.na {
+            cursor: default;
+            opacity: .3;
+        }
+
+        #mapGuiButtons a.att {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Attack.png');
+        }
+
+            #mapGuiButtons a.att:hover {
+                background-image: url('https://static.realmofempires.com/images/icons/Q_AttackHover.png');
+            }
+
+        #mapGuiButtons a.sup {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Support.png');
+        }
+
+    #mapGuiButtons .sup_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportGray.png');
+    }
+
+    #mapGuiButtons a.sup:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportHover.png');
+    }
+
+    #mapGuiButtons a.supq {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupport.png');
+    }
+
+    #mapGuiButtons .supq_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupportGray.png');
+    }
+
+    #mapGuiButtons a.supq:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupportHover.png');
+    }
+
+    #mapGuiButtons a.supl {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookup.png');
+    }
+
+    #mapGuiButtons .supl_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookupGray.png');
+    }
+
+    #mapGuiButtons a.supl:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookupHover.png');
+    }
+
+    #mapGuiButtons a.map {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_CenterMap.png');
+    }
+
+        #mapGuiButtons a.map:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_CenterMapHover.png');
+        }
+
+    #mapGuiButtons a.sends {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Silver.png');
+    }
+
+    #mapGuiButtons .sends_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SilverGray.png');
+    }
+
+    #mapGuiButtons a.sends:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SilverHover.png');
+    }
+
+    #mapGuiButtons a.myvov {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Vov2.png');
+    }
+
+        #mapGuiButtons a.myvov:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Vov2Hover.png');
+        }
+
+    #mapGuiButtons a.othervov {
+        background-image: url('https://static.realmofempires.com/images/helpicon.png');
+    }
+
+    #mapGuiButtons a.hq {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Upgrade2.png');
+    }
+
+        #mapGuiButtons a.hq:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Upgrade2Hover.png');
+        }
+
+
+    #mapGuiButtons .hq_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_UpgradeGray.png');
+    }
+
+
+    #mapGuiButtons a.renV {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Rename.png');
+    }
+
+    #mapGuiButtons .renV_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_RenameGray.png');
+    }
+
+    #mapGuiButtons a.renV:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_RenameHover.png');
+    }
+
+    #mapGuiButtons a.recr {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Recruit2.png');
+    }
+
+        #mapGuiButtons a.recr:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Recruit2Hover.png');
+        }
+
+    #mapGuiButtons .recr_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_RecruitGray.png');
+    }
+
+    #mapGuiButtons a.prom {
+        background-image: url('https://static.realmofempires.com/images/icons/thumbUp30x30.png');
+    }
+
+    #mapGuiButtons a.unprom {
+        background-image: url('https://static.realmofempires.com/images/icons/thumbDown30x30.png');
+    }
+
+    #mapGuiButtons .promSet {
+        display:inline-block;
+        width: 60px;
+    }
+        #mapGuiButtons .promSet .promInfo {
+            display: none;
+        }
+            #mapGuiButtons .promSet:hover .promInfo {
+                display: inline-block;
+                background-image: url('https://static.realmofempires.com/images/helpicon.png');
+            }
+
+    #mapGuiButtons a.gifts {
+        background-image: url('https://static.realmofempires.com/images/icons/giftsS.png');
+    }
+
+        #mapGuiButtons a.gifts:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/giftsHoverS.png');
+        }
+
+    #mapGuiButtons .gifts_na {
+        background-image: url('https://static.realmofempires.com/images/icons/giftsS.png');
+        opacity: .3;
+    }
+
+    #mapGuiButtons .highlight {
+        background-image: url('https://static.realmofempires.com/images/icons/highlight2S.png');
+    }
+
+        #mapGuiButtons .highlight:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/highlight2HoverS.png');
+        }
+
+
+    #mapGuiButtons a.claimVillage {
+        background-size:100% 100%;
+    }
+        #mapGuiButtons a.claimVillage[data-claimStatus="0"] {
+            background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_none.png);
+        }
+            #mapGuiButtons a.claimVillage[data-claimStatus="0"]:hover {
+                background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_noneHover.png);
+            }
+            #mapGuiButtons a.claimVillage[data-claimStatus="0"].purple {
+                background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_ally.png);
+            }
+        #mapGuiButtons a.claimVillage[data-claimStatus="1"] {
+            background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_my.png);
+        }
+            #mapGuiButtons a.claimVillage[data-claimStatus="1"]:hover {
+                background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_myHover.png);
+            }
+        #mapGuiButtons a.claimVillage[data-claimStatus="2"] {
+            background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_other.png);
+        }
+            #mapGuiButtons a.claimVillage[data-claimStatus="2"]:hover {
+                /*background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_otherHover.png);*/
+            }
+        #mapGuiButtons a.claimVillage.busy {
+            background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif) !important;
+            background-position: 50% 50%;
+            background-size: 25px 25px;
+            background-repeat: no-repeat;
+        }
+        #mapGuiButtons a.claimVillage.na {
+            background-image: url(https://static.realmofempires.com/images/icons/ClAimeD_none.png) !important;
+        }
+
+    #mapGuiButtons .launchReports {
+        background-size: 100% 100%;
+        background-image: url('https://static.realmofempires.com/images/icons/m_Reports.png') !important;
+    }
+
+    #mapGuiButtons .editVillageNote {
+        background-size: 100% 100%;
+        background-image: url('https://static.realmofempires.com/images/icons/M_Notes.png');
+    }
+
+    #mapGuiButtons .targetSupport {
+        background-size: 100% 100%;
+        background-image: url('https://static.realmofempires.com/images/icons/M_HD_SupportCAll.png');
+    }
+    #mapGuiButtons .targetAttack {
+        background-size: 100% 100%;
+        background-image: url('    https://static.realmofempires.com/images/icons/M_HD_AttackCAll.png');
+    }
+
+
+    #mapGuiButtons .help {
+        text-align: center;
+        padding: 2px 5px;
+    }
+
+.mapGuiSubPanel .targetContent {
+    position:relative;
+    overflow:hidden;
+    cursor: pointer;
+    padding-bottom:10px;
+}
+
+    .mapGuiSubPanel .targetContent .tIcon {
+        position:relative;
+        float:left;
+        width: 26px;
+        height: 26px;
+        background-size: 100% 100%;
+        margin-right: 4px;
+    }
+            .mapGuiSubPanel .targetContent .tIcon.type1 {
+                background-image: url(https://static.realmofempires.com/images/icons/M_HD_SupportCAll.png);
+            }
+            .mapGuiSubPanel .targetContent .tIcon.type2 {
+                background-image: url(https://static.realmofempires.com/images/icons/M_HD_AttackCAll.png);
+            }
+
+    .mapGuiSubPanel .targetContent .tAssigned {
+        position: relative;
+        color: #7c9fdd;
+        display: inline-block;
+        margin-right: 5px;
+        float: left;
+    }
+
+    .mapGuiSubPanel .targetContent .tVerbage {
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        float: left;
+    }
+
+    .mapGuiSubPanel .targetContent .tSetTime {
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        float: left;
+        clear:right;
+    }
+        .mapGuiSubPanel .targetContent .tSetTime .tTimer {
+            font: 13px monospace;
+            color: #e6cd90;
+        }
+    .mapGuiSubPanel .targetContent .tNote {
+        position: relative;
+        color: gray;
+        float:left;
+    }
+    .mapGuiSubPanel .targetContent .tCreated {
+        position: absolute;
+        bottom: -2px;
+        right: 0px;
+        color: gray;
+        font-size: 11px;
+        font-family: monospace;
+    }
+    .mapGuiSubPanel .targetContent .tMoreTargets {
+        position: relative;
+        float: left;
+        padding: 4px;
+        background: rgba(0, 0, 0, 0.3);
+        margin-top: 3px;
+        margin-bottom: 3px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+        .mapGuiSubPanel .targetContent .tMoreTargets:hover {
+            background: rgba(110, 110, 110, 0.3);
+        }
+
+    .mapGuiSubPanel .targetContent .tMoreTargetsCounter {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border-radius: 20px;
+        width: 15px;
+        height: 15px;
+        padding: 1px;
+        line-height: 15px;
+        text-align: center;
+        background-color: rgba(90, 90, 120, 0.5);
+        color: #f5faff;
+        font-family: monospace;
+    }
+
+.mapGuiSubPanel .inOutContainer {
+    text-align:center;
+}
+
+    .mapGuiSubPanel .inOutContainer a.toVillage,
+    .mapGuiSubPanel .inOutContainer a.fromVillage,
+    .mapGuiSubPanel .inOutContainer a.toPlayer,
+    .mapGuiSubPanel .inOutContainer a.fromPlayer {
+        display: inline-block;
+        width: 38px;
+        height: 25px;
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+
+
+    .mapGuiSubPanel .inOutContainer a.toVillage {
+        background-image: url('https://static.realmofempires.com/images/icons/toVillage.png');
+    }
+
+    .mapGuiSubPanel .inOutContainer a.fromVillage {
+        background-image: url('https://static.realmofempires.com/images/icons/fromVillage.png');
+    }
+
+    .mapGuiSubPanel .inOutContainer a.toPlayer {
+        background-image: url('https://static.realmofempires.com/images/icons/toPlayer.png');
+    }
+
+    .mapGuiSubPanel .inOutContainer a.fromPlayer {
+        background-image: url('https://static.realmofempires.com/images/icons/fromPlayer.png');
+    }
+
+        .mapGuiSubPanel .inOutContainer a.toVillage.notAvailable,
+        .mapGuiSubPanel .inOutContainer a.fromVillage.notAvailable,
+        .mapGuiSubPanel .inOutContainer a.toPlayer.notAvailable,
+        .mapGuiSubPanel .inOutContainer a.fromPlayer.notAvailable {
+            opacity: 0.3;
+            cursor: default;
+        }
+
+
+
+
+.zoomPanel {
+    height: 20px;
+    left: 50%;
+    margin-left: -230px;
+    top: 40%;
+    color: black;
+    position: absolute;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 25px;
+    width: 460px;
+    text-align: center;
+}
+
+.zoomPanel #progressBar {
+    margin: 0px auto;
+    background: radial-gradient(circle, rgb(22, 255, 66) 0%, rgb(2, 133, 48) 100%);
+    background: -webkit-radial-gradient(circle, rgb(22, 255, 66) 0%, rgb(2, 133, 48) 100%);
+    background: -moz-radial-gradient(circle, rgba(22, 255, 66, 1.0) 0%, rgba(2, 133, 48, 1.0) 100%);
+    background: -ms-radial-gradient(circle, rgba(22, 255, 66, 1.0) 0%, rgba(2, 133, 48, 1.0) 100%);
+    background: -o-radial-gradient(circle, rgba(22, 255, 66, 1.0) 0%, rgba(2, 133, 48, 1.0) 100%);
+}
+
+.zoomText {
+    font-size:12px;
+}
+
+
+
+
+
+
+        /*MAP ANIMATIONS UI*/
+#pixiCanvas {
+    position:absolute;
+    /*background-color:rgba(0,0,0,0.2);*/
+}
+
+.pixiCommand {
+    position: absolute;
+    top: 0px;
+    padding: 3px 10px;
+    cursor: pointer;
+    background-color: #808080;
+}
+    .pixiCommand.active {
+        background-color: cyan;
+    }
+    .pixiCommand.pcA {
+        left: 450px;
+    }
+
+    .pixiCommand.pcB {
+        left: 500px;
+    }
+        .pixiCommand.pcC {
+        left: 550px;
+    }

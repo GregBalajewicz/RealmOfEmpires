@@ -1,0 +1,388 @@
+﻿
+.QuickCommandPopup .targetVillage {
+    background: rgba(0,0,0,0.7);
+    margin: 0px 0;
+    margin-bottom: 2px;
+    text-align: center;
+    height: 34px;
+}
+    .QuickCommandPopup .targetVillage .sectionBar {
+        display: none;
+    }
+.QuickCommandPopup .filtersCmdBtn {
+    position: absolute;
+    top: -1px;
+    right: 9px;
+    transform: scale(.86);
+}
+.QuickCommandPopup .filtersCmdBtn .filterIcon {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('https://static.realmofempires.com/images/icons/M_FilterB.png');
+}
+
+.QuickCommandPopup .moraleBtn {
+    position: absolute;
+    top: -1px;
+    right: 45px;
+    transform: scale(.86);
+}
+    .QuickCommandPopup .moraleBtn .icon {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url('https://d30y9cdsu7xlg0.cloudfront.net/png/21619-200.png');
+        background-image: url('http://en.xn--icne-wqa.com/images/icones/1/3/animals-eagle.png');
+    }
+
+
+.QuickCommandPopup .showLandTimeSelection .landTimeByTroopSelector.selected {
+    border: none;
+    box-shadow: inset 0px 3px 6px rgba(0, 185, 255, 0.7), inset 0px -3px 6px rgba(0, 185, 255, 0.7);
+    border-radius: 0px;
+    -webkit-user-select: none;
+}
+   
+    /*
+        .QuickCommandPopup .targetName {
+            display: inline-block;
+            min-width:140px;
+            color:white;
+            font: 14px/35px "IM Fell French Canon LC", serif;
+            vertical-align: top;
+            white-space: nowrap;
+            text-align:left;
+            margin-left:2px;
+        }
+.QuickCommandPopup .targetImg {
+    display: inline-block;
+    width: 40px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    margin-top: 4px;
+}
+    */
+        .QuickCommandPopup .villageListMainTable  {
+            background: rgba(0,0,0,0.2);
+            margin: 0;
+            overflow: auto;
+            border-spacing: 0px;
+        }
+
+         .QuickCommandPopup .villageListMainTable.showOnlyVillagesWithTroopsByLT  {
+            background: rgba(0,0,0,0.2);
+            margin: 0;
+            overflow: auto;
+            border-spacing: 0px;
+        }
+        /*
+        .QuickCommandPopup .sectionBar {
+            margin-top: -8px;
+        }*/
+         .QuickCommandPopup .oneVillage .landtime
+    , .QuickCommandPopup .oneVillage .travelTime
+    , .QuickCommandPopup .oneVillage .dist
+    {
+       float:right;
+       white-space:nowrap;
+    }
+         .QuickCommandPopup .oneVillage .landtime
+    , .QuickCommandPopup .oneVillage .travelTime
+    {
+       margin-left:5px;
+    }
+        .QuickCommandPopup .attackVilPanel {
+           
+
+
+
+
+
+
+
+
+
+        }/*
+        .QuickCommandPopup .attackVilPanel .villName  {
+            color: #e6cd90;
+            line-height: 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }*/
+
+
+
+
+
+/*
+        .QuickCommandPopup .attackTroopsPanel {
+            display: inline-block;
+            vertical-align: top;
+            color: #7d7d7d;
+            width: 210px;
+        }
+        .QuickCommandPopup .attackTroopsPanel .troopPick {
+            display: inline-block;
+            font: 11px/11px Georgia;
+            width: 55px;
+            margin: 1px 1px 0 0;
+            padding: 2px 0;
+            overflow:hidden;
+        }*/
+
+
+
+         
+         
+         
+         
+         
+           
+        .QuickCommandPopup .troopPick.selected  {
+
+
+
+        }/*        
+        .QuickCommandPopup .attackTroopsPanel IMG {
+            padding: 0 1px;
+        }*/
+.QuickCommandPopup .attackIconSheet {
+    color: #d7d7d7;
+}
+
+        .QuickCommandPopup .attackIconSheet.panel {
+            background: rgba(29, 32, 32, 0.9);
+            cursor:pointer;
+        }
+            .QuickCommandPopup .attackIconSheet.panel:nth-child(even) {
+                background: rgba(42, 50, 50, 0.9);
+            }
+            .QuickCommandPopup .attackIconSheet.panel:hover {
+                background: rgba(12, 12, 12, 0.9);
+                opacity: 1 !important;
+            }
+            .QuickCommandPopup .attackIconSheet.panel.highlight {
+                background: #0F171C !important;
+                cursor:default;
+            }
+                .QuickCommandPopup .attackIconSheet.panel.highlight td {
+                    background: #001e31;
+                }
+                .QuickCommandPopup .attackIconSheet.panel.highlight td.troopPick:not(.zero) {
+                    cursor: pointer;
+                }
+
+        .QuickCommandPopup .attackIconSheet.cover.active {
+            opacity: .6;
+        }
+/*
+        .QuickCommandPopup .getMoreVill {
+            width: 100%;
+            text-align: center;
+        }
+
+        .QuickCommandPopup .sendPanel {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 51px;
+            font: 13px/13px "IM Fell French Canon LC", serif;
+            text-shadow: 1px 1px 2px #000000;
+            background: #001e31 url(https://static.realmofempires.com/images/misc/knotDesign.png);
+            background-repeat: repeat-x;
+            background-position: center;
+            z-index: 1;
+        }
+            .QuickCommandPopup .sendPanel .dividerTop {
+                position: absolute;
+                top: -51px;
+                width: 100%;
+                height: 6px;
+                background: url(https://static.realmofempires.com/images/misc/M_SP_UIMisc.png) top center no-repeat;
+                margin: 0px;
+            }
+            .QuickCommandPopup .sendPanel .dividerBottom {
+                position: absolute;
+                bottom: -1px;
+                z-index: 1;
+                width: 100%;
+                height: 6px;
+                background: url(https://static.realmofempires.com/images/misc/M_SP_UIMisc.png) top center no-repeat;
+                margin: 0px;
+            }
+            .QuickCommandPopup .sendPanel .attackBtn {
+                position: absolute;
+                top: 7px;
+                right: 0px;
+            }
+            .QuickCommandPopup .sendPanel .premiumPanel {
+                position: relative;
+                margin-top: 2px;
+                height: 33px;
+                background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png), url('https://static.realmofempires.com/images/misc/metalgrad320x1.png'),url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+                background-position: 0px 5px, 0px 0px,0px 32px;
+                background-repeat: repeat-x;
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+
+
+        .QuickCommandPopup .sendPanel .set {
+            display: inline-block;
+            width: 140px;
+            vertical-align: top;
+        }
+        .QuickCommandPopup .handicap {
+            visibility: hidden;
+            padding-bottom: 10px;
+        }
+        .QuickCommandPopup .landtime {
+            padding: 7px 0;
+        }*/
+
+        .QuickCommandPopup .travelTime {
+        }
+        /*.QuickCommandPopup .refreshBtn {
+            width: 34px;
+            height: 34px;
+            background: url(https://static.realmofempires.com/images/icons/M_RefreshSm.png) center no-repeat;
+            margin: -34px 10px 0 10px;
+        }*/
+
+
+.QuickCommandPopup .sendPanel .savePreset {
+    position: absolute;
+    top: 7px;
+    right: 160px;
+}
+
+
+.QuickCommandPopup .villNameContainer {
+    height:13px;
+}
+        .QuickCommandPopup .villFrom {
+            float: left;
+        }
+
+.QuickCommandPopup .troopPick .troopCountEntry {
+    height: 15px;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    border: 0px;
+    padding: 0px;
+    width: 50px;
+    background-color: rgba(255,232,142,0.7);
+    text-align: right;
+}
+         .QuickCommandPopup .troopPick.w4 .troopCountEntry {
+            width: 45px;
+        }
+         .QuickCommandPopup .troopPick.w3 .troopCountEntry {
+            width: 34px;
+        }
+         .QuickCommandPopup .troopPick.w1 .troopCountEntry {
+            width: 24px;
+        }
+
+        .QuickCommandPopup .villageListMainTable .troopPick {            
+            text-align: right;
+        }
+         .QuickCommandPopup .villageListMainTable .troopPickHeader {            
+             width:50px;
+        }
+        .QuickCommandPopup .villageListMainTable .troopPickHeader.w4 {            
+             width:45px;
+        }
+        .QuickCommandPopup .villageListMainTable .troopPickHeader.w3 {            
+             width:34px;
+        }
+        .QuickCommandPopup .villageListMainTable .troopPickHeader.w1 {            
+             width:24px;
+        }
+       
+
+.QuickCommandPopup .villageListMainTable .vilres_unitimg {
+    float: right;
+}
+         
+
+.QuickCommandPopup .landTimeByTroopIcons  {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px -52px;
+    background-size: 234px auto;
+    margin-bottom: -5px;
+}
+.QuickCommandPopup .landTimeByTroopIcons .landTimeByTroopIcon {
+    display:none;
+}
+
+.QuickCommandPopup .landTimeByTroopIcons .landTimeByTroopIcon.selected {
+    display:inline;
+}
+
+.QuickCommandPopup .villageListMainTable th {
+    background: rgba(0,0,0,0.7);
+}
+
+.QuickCommandPopup .travelTimeNum
+,.QuickCommandPopup  .landtimeNum {
+    text-align:right;
+}
+
+.QuickCommandPopup .DistColumn, .QuickCommandPopup .TravelTimeColumn, .QuickCommandPopup .LandingTimeColumn {
+    text-align: right;
+    width: 1%;
+    white-space:nowrap;
+}
+.QuickCommandPopup .LandingTimeColumn {
+    text-align: right;
+    width: 50px;
+    white-space:normal;
+}
+
+.QuickCommandPopup .TravelTimeColumn {
+    text-align: center;
+    cursor: pointer;
+    min-width: 50px;
+}
+
+
+.QuickCommandPopup .mode_oneClick .oneVillage:not(.highlight) .troopPick:not(.zero):not(.not1ClickSend) {
+    color: #FFD886;
+    text-decoration: none;
+}
+    .QuickCommandPopup .mode_oneClick .oneVillage:not(.highlight) .troopPick:not(.zero):not(.not1ClickSend) :hover {
+        text-decoration: underline;
+    }
+
+
+    .QuickCommandPopup .showOnlyVillagesWithTroopsByLT .oneVillage.hasNoLandByTroops {
+        display:none;
+    }
+    .QuickCommandPopup .oneVillage.hasNoLandByTroops .landtime
+    , .QuickCommandPopup .oneVillage.hasNoLandByTroops .travelTime
+    
+    {
+       opacity : 0.3;
+    }
+
+    .QuickCommandPopup .oneVillage.hasNoLandByTroops.highlight .landtime
+    , .QuickCommandPopup .oneVillage.hasNoLandByTroops.highlight .travelTime
+     {
+        opacity: 1;
+    }

@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivateTheTwentyFiveBonus" xml:space="preserve">
+    <value>Activate the 25% Bonus Silver feature!</value>
+  </data>
+  <data name="AttackVillagesAndLoot" xml:space="preserve">
+    <value>Attack surrounding villages and loot silver!</value>
+  </data>
+  <data name="BonusFromElvenSpell" xml:space="preserve">
+    <value>Bonus from Elven Efficiency Spell</value>
+  </data>
+  <data name="BonusFromResearch" xml:space="preserve">
+    <value>Bonus From Research:</value>
+  </data>
+  <data name="BonusStatistics" xml:space="preserve">
+    <value>(includes +{0}% bonus from &lt;a href='#' onclick='return popupResearch()'&gt;research&lt;/a&gt;)</value>
+  </data>
+  <data name="Build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="BuildingLevels" xml:space="preserve">
+    <value>Building Levels</value>
+  </data>
+  <data name="BuildingNotBuilt" xml:space="preserve">
+    <value>Recruitment building not built.</value>
+  </data>
+  <data name="BuildingRequirements" xml:space="preserve">
+    <value>Building requirements not yet satisfied.</value>
+  </data>
+  <data name="BuildTimeFactor" xml:space="preserve">
+    <value>From Building Level</value>
+  </data>
+  <data name="BuildTimeFactor_Title" xml:space="preserve">
+    <value>Build Time Factor:</value>
+  </data>
+  <data name="busy" xml:space="preserve">
+    <value>Busy. Wait for construction to complete.&lt;br /&gt;
+                                                        Only one building can be upgraded at a time &lt;br /&gt;
+                                                        until your Headquarters building reaches level {0}</value>
+  </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="BuySilver" xml:space="preserve">
+    <value>Buy silver!</value>
+  </data>
+  <data name="CannotBuild" xml:space="preserve">
+    <value>Cannot build</value>
+  </data>
+  <data name="CannotBuildNow" xml:space="preserve">
+    <value>Cannot build right now. Reason:</value>
+  </data>
+  <data name="CannotUpgrade_1" xml:space="preserve">
+    <value>Cannot upgrade to Level</value>
+  </data>
+  <data name="cannotUpgradeTo" xml:space="preserve">
+    <value>Cannot upgrade to</value>
+  </data>
+  <data name="Chest" xml:space="preserve">
+    <value>Chest</value>
+  </data>
+  <data name="ComeBackToEnsureSilverProduction" xml:space="preserve">
+    <value>Make sure to come back before it does to ensure your silver production continues!</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="CurrentIncome" xml:space="preserve">
+    <value>Current Income:</value>
+  </data>
+  <data name="CurrentSpareCapacity" xml:space="preserve">
+    <value>Your current spare capacity:</value>
+  </data>
+  <data name="Defense_Title" xml:space="preserve">
+    <value>Defense Bonus:</value>
+  </data>
+  <data name="Downgrades" xml:space="preserve">
+    <value>Downgrades in progress.</value>
+  </data>
+  <data name="EffectiveBuildTime" xml:space="preserve">
+    <value>Effective Build Time Factor</value>
+  </data>
+  <data name="EffectiveRecruitmentTimeFactor" xml:space="preserve">
+    <value>Effective:</value>
+  </data>
+  <data name="EfficiencyInfo" xml:space="preserve">
+    <value>Efficiency Info</value>
+  </data>
+  <data name="Ensure" xml:space="preserve">
+    <value>Ensure 25% more silver spell is active!</value>
+  </data>
+  <data name="FirstBuild" xml:space="preserve">
+    <value>First build the following:</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="Food_Title" xml:space="preserve">
+    <value>Farm Yield:</value>
+  </data>
+  <data name="FromBuildingLevel" xml:space="preserve">
+    <value>From Building Level:</value>
+  </data>
+  <data name="FromTowerLevel" xml:space="preserve">
+    <value>From Towers Level</value>
+  </data>
+  <data name="FromWallLevel" xml:space="preserve">
+    <value>From Wall Level</value>
+  </data>
+  <data name="FromYourFriends" xml:space="preserve">
+    <value>to your friends</value>
+  </data>
+  <data name="FullUpgrade" xml:space="preserve">
+    <value>Fully upgraded</value>
+  </data>
+  <data name="GetSackOfSilverGifts" xml:space="preserve">
+    <value>Send 'Sack Of Silver' gifts</value>
+  </data>
+  <data name="HidingSpot_Title" xml:space="preserve">
+    <value>Silver hidden from plunder:</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>/hour</value>
+  </data>
+  <data name="HowCanIGetSilver" xml:space="preserve">
+    <value>How can I get more silver?</value>
+  </data>
+  <data name="IncomeFromLvl" xml:space="preserve">
+    <value>Income from Level</value>
+  </data>
+  <data name="LackFood" xml:space="preserve">
+    <value>Lack Food</value>
+  </data>
+  <data name="LackSilver" xml:space="preserve">
+    <value>Lack Sliver</value>
+  </data>
+  <data name="locked" xml:space="preserve">
+    <value>Locked feature.</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="MaxUpgrade" xml:space="preserve">
+    <value>You have upgraded the building to the last level. No more upgrades are possible.</value>
+  </data>
+  <data name="NotEnough" xml:space="preserve">
+    <value>Not enough silver. What you can do:</value>
+  </data>
+  <data name="Reason" xml:space="preserve">
+    <value>Reason:</value>
+  </data>
+  <data name="Recruit" xml:space="preserve">
+    <value>Recruit</value>
+  </data>
+  <data name="RecruitTimeFactorBuildLvl" xml:space="preserve">
+    <value>From Building Level:</value>
+  </data>
+  <data name="RecruitTimeFactor_Title" xml:space="preserve">
+    <value>Recruitment Time Factor:</value>
+  </data>
+  <data name="requirements" xml:space="preserve">
+    <value>Requirements not satisfied.</value>
+  </data>
+  <data name="ResearchSilver" xml:space="preserve">
+    <value>Research technologies that speed up silver production!</value>
+  </data>
+  <data name="ResearchToGetBonuses" xml:space="preserve">
+    <value>Research Technologies</value>
+  </data>
+  <data name="ResearchToGetBonuses1" xml:space="preserve">
+    <value>to get production bonuses!</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="SilverIsHiddenFromPlunder" xml:space="preserve">
+    <value>%effect.level_effect% silver is hidden from plunder. If you have more silver than that in the Treasury, and you get attacked and loose, that silver can be looted. </value>
+  </data>
+  <data name="TheSmallerTheNumber_Rec" xml:space="preserve">
+    <value>The smaller this number, the faster your troops are recruited. Best Recruitment Time Factor is %effect.total_max%%</value>
+  </data>
+  <data name="TheSmallerThisNumber" xml:space="preserve">
+    <value>The smaller this number, the faster your buildings are upgraded. Best Build Time Factor is %effect.total_max%%</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="toLevel" xml:space="preserve">
+    <value>to level</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="TotalDefense" xml:space="preserve">
+    <value>Your Total Defense Bonus:</value>
+  </data>
+  <data name="TotalFarmYield" xml:space="preserve">
+    <value>Total Farm Yield</value>
+  </data>
+  <data name="TotalIncome" xml:space="preserve">
+    <value>Total Income</value>
+  </data>
+  <data name="TotalTreasuryCap" xml:space="preserve">
+    <value>Total Treasury Capacity</value>
+  </data>
+  <data name="TradePost_Title" xml:space="preserve">
+    <value>Max Silver To Transport:</value>
+  </data>
+  <data name="TreasuryCapFromBuildingLvl" xml:space="preserve">
+    <value>From Building Level</value>
+  </data>
+  <data name="Tresury_Title" xml:space="preserve">
+    <value>Treasury Capacity:</value>
+  </data>
+  <data name="TroopDetails" xml:space="preserve">
+    <value>Troop Details</value>
+  </data>
+  <data name="upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="UpgradeSilverMineAbove" xml:space="preserve">
+    <value>Upgrade the Silver Mine here. See above.</value>
+  </data>
+  <data name="Upgrading" xml:space="preserve">
+    <value>Upgrading to level</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning:</value>
+  </data>
+  <data name="YouCannotStoreFood" xml:space="preserve">
+    <value>Remember that you cannot store food therefore only upgrade the farm land when necessary</value>
+  </data>
+  <data name="YourTreasuryIsFull" xml:space="preserve">
+    <value>Your Treasury is full so silver production has been halted!&lt;br /&gt;Spend some silver now or upgrade your treasury to be able to hold more silver.</value>
+  </data>
+  <data name="YourTreasuryWillFillIn" xml:space="preserve">
+    <value>Your treasury will fill up in:</value>
+  </data>
+  <data name="YourTroopsAndWorkersConsume" xml:space="preserve">
+    <value>Your Troops and Building Workers consume:</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="CannotUpgrade_2" xml:space="preserve">
+    <value> right now.</value>
+  </data>
+  <data name="AttackVillages" xml:space="preserve">
+    <value>Attack surrounding villages and loot silver!</value>
+  </data>
+  <data name="GoToFood" xml:space="preserve">
+    <value>Goto Farm Lands!</value>
+  </data>
+  <data name="GoToHq" xml:space="preserve">
+    <value>Go to Headquarters</value>
+  </data>
+  <data name="LackOfFood" xml:space="preserve">
+    <value>Need more food. Upgrade Farm Lands first.</value>
+  </data>
+  <data name="SpeedUp" xml:space="preserve">
+    <value>Speed Up!</value>
+  </data>
+  <data name="TimeSnip1" xml:space="preserve">
+    <value>Cast Time Snip Spell - &lt;B&gt;cut 1 min&lt;/b&gt; - 1 Servants</value>
+  </data>
+  <data name="TimeSnip2" xml:space="preserve">
+    <value>Cast Time Chop Spell - &lt;B&gt;cut 15 min&lt;/b&gt; - 5 servants</value>
+  </data>
+  <data name="TimeSnip3" xml:space="preserve">
+    <value>Cast Time Cut Spell - &lt;B&gt;cut 1 hour&lt;/b&gt; - 10 servants</value>
+  </data>
+  <data name="TimeSnip4" xml:space="preserve">
+    <value>Cast Time Slash Spell - &lt;B&gt;cut 4 hour&lt;/b&gt; - 30 servant</value>
+  </data>
+  <data name="TimeSnip5" xml:space="preserve">
+    <value>Cast Time Stop Spell - &lt;B&gt;Finish Now!&lt;/b&gt; - %finishNowCost% servants</value>
+  </data>
+  <data name="YouHave" xml:space="preserve">
+    <value>you have</value>
+  </data>
+</root>

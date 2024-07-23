@@ -1,0 +1,297 @@
+﻿.instantFrom.transition,
+.instantTo.transition {
+}
+
+.instantFrom {
+    display: block !important;
+}
+
+.instantFrom.transition {
+    display: none !important;
+}
+
+.instantTo {
+    display: none !important;
+}
+
+.instantTo.transition {
+    display: block !important;
+}
+
+.crossFadeFrom.transition,
+.crossFadeTo.transition {
+    -webkit-transition: opacity 0.5s ease 0.0s;
+       -moz-transition: opacity 0.5s ease 0.0s;
+        -ms-transition: opacity 0.5s ease 0.0s;
+         -o-transition: opacity 0.5s ease 0.0s;
+            transition: opacity 0.5s ease 0.0s;
+}
+
+.crossFadeFrom {
+    opacity: 1.0 !important;
+}
+
+.crossFadeFrom.transition {
+    opacity: 0.0 !important;
+}
+
+.crossFadeTo {
+    opacity: 0.0 !important;
+}
+
+.crossFadeTo.transition {
+    opacity: 1.0 !important;
+}
+
+.slideLeftFrom.transition,
+.slideLeftTo.transition,
+.slideRightFrom.transition,
+.slideRightTo.transition {
+    -webkit-transition: -webkit-transform 0.5s ease 0.0s;
+       -moz-transition: -moz-transform 0.5s ease 0.0s;
+        -ms-transition: -ms-transform 0.5s ease 0.0s;
+         -o-transition: -o-transform 0.5s ease 0.0s;
+            transition: transform 0.5s ease 0.0s;
+}
+
+.slideLeftFrom {
+    -webkit-transform: translate3d(0%, 0, 0) !important;
+       -moz-transform: translate3d(0%, 0, 0) !important;
+        -ms-transform: translate3d(0%, 0, 0) !important;
+         -o-transform: translate3d(0%, 0, 0) !important;
+            transform: translate3d(0%, 0, 0) !important;
+}
+
+.slideLeftFrom.transition {
+    -webkit-transform: translate3d(-100%, 0, 0) !important;
+       -moz-transform: translate3d(-100%, 0, 0) !important;
+        -ms-transform: translate3d(-100%, 0, 0) !important;
+         -o-transform: translate3d(-100%, 0, 0) !important;
+            transform: translate3d(-100%, 0, 0) !important;
+}
+
+.slideLeftTo {
+    -webkit-transform: translate3d(100%, 0, 0) !important;
+       -moz-transform: translate3d(100%, 0, 0) !important;
+        -ms-transform: translate3d(100%, 0, 0) !important;
+         -o-transform: translate3d(100%, 0, 0) !important;
+            transform: translate3d(100%, 0, 0) !important;
+}
+
+.slideLeftTo.transition {
+    -webkit-transform: translate3d(0%, 0, 0) !important;
+       -moz-transform: translate3d(0%, 0, 0) !important;
+        -ms-transform: translate3d(0%, 0, 0) !important;
+         -o-transform: translate3d(0%, 0, 0) !important;
+            transform: translate3d(0%, 0, 0) !important;
+}
+
+.slideRightFrom {
+    -webkit-transform: translate3d(0%, 0, 0) !important;
+       -moz-transform: translate3d(0%, 0, 0) !important;
+        -ms-transform: translate3d(0%, 0, 0) !important;
+         -o-transform: translate3d(0%, 0, 0) !important;
+            transform: translate3d(0%, 0, 0) !important;
+}
+
+.slideRightFrom.transition {
+    -webkit-transform: translate3d(100%, 0, 0) !important;
+       -moz-transform: translate3d(100%, 0, 0) !important;
+        -ms-transform: translate3d(100%, 0, 0) !important;
+         -o-transform: translate3d(100%, 0, 0) !important;
+            transform: translate3d(100%, 0, 0) !important;
+}
+
+.slideRightTo {
+    -webkit-transform: translate3d(-100%, 0, 0) !important;
+       -moz-transform: translate3d(-100%, 0, 0) !important;
+        -ms-transform: translate3d(-100%, 0, 0) !important;
+         -o-transform: translate3d(-100%, 0, 0) !important;
+            transform: translate3d(-100%, 0, 0) !important;
+}
+
+.slideRightTo.transition {
+    -webkit-transform: translate3d(0%, 0, 0) !important;
+       -moz-transform: translate3d(0%, 0, 0) !important;
+        -ms-transform: translate3d(0%, 0, 0) !important;
+         -o-transform: translate3d(0%, 0, 0) !important;
+            transform: translate3d(0%, 0, 0) !important;
+}
+
+.slideUpFrom.transition,
+.slideUpTo.transition,
+.slideDownFrom.transition,
+.slideDownTo.transition {
+    -webkit-transition: -webkit-transform 0.5s ease 0.0s;
+       -moz-transition: -moz-transform 0.5s ease 0.0s;
+        -ms-transition: -ms-transform 0.5s ease 0.0s;
+         -o-transition: -o-transform 0.5s ease 0.0s;
+            transition: transform 0.5s ease 0.0s;
+}
+
+.slideUpFrom {
+    -webkit-transform: translate3d(0, 0%, 0) !important;
+       -moz-transform: translate3d(0, 0%, 0) !important;
+        -ms-transform: translate3d(0, 0%, 0) !important;
+         -o-transform: translate3d(0, 0%, 0) !important;
+            transform: translate3d(0, 0%, 0) !important;
+}
+
+.slideUpFrom.transition {
+    -webkit-transform: translate3d(0, -100%, 0) !important;
+       -moz-transform: translate3d(0, -100%, 0) !important;
+        -ms-transform: translate3d(0, -100%, 0) !important;
+         -o-transform: translate3d(0, -100%, 0) !important;
+            transform: translate3d(0, -100%, 0) !important;
+}
+
+.slideUpTo {
+    -webkit-transform: translate3d(0, 100%, 0) !important;
+       -moz-transform: translate3d(0, 100%, 0) !important;
+        -ms-transform: translate3d(0, 100%, 0) !important;
+         -o-transform: translate3d(0, 100%, 0) !important;
+            transform: translate3d(0, 100%, 0) !important;
+}
+
+.slideUpTo.transition {
+    -webkit-transform: translate3d(0, 0%, 0) !important;
+       -moz-transform: translate3d(0, 0%, 0) !important;
+        -ms-transform: translate3d(0, 0%, 0) !important;
+         -o-transform: translate3d(0, 0%, 0) !important;
+            transform: translate3d(0, 0%, 0) !important;
+}
+
+.slideDownFrom {
+    -webkit-transform: translate3d(0, 0%, 0) !important;
+       -moz-transform: translate3d(0, 0%, 0) !important;
+        -ms-transform: translate3d(0, 0%, 0) !important;
+         -o-transform: translate3d(0, 0%, 0) !important;
+            transform: translate3d(0, 0%, 0) !important;
+}
+
+.slideDownFrom.transition {
+    -webkit-transform: translate3d(0, 100%, 0) !important;
+       -moz-transform: translate3d(0, 100%, 0) !important;
+        -ms-transform: translate3d(0, 100%, 0) !important;
+         -o-transform: translate3d(0, 100%, 0) !important;
+            transform: translate3d(0, 100%, 0) !important;
+}
+
+.slideDownTo {
+    -webkit-transform: translate3d(0, -100%, 0) !important;
+       -moz-transform: translate3d(0, -100%, 0) !important;
+        -ms-transform: translate3d(0, -100%, 0) !important;
+         -o-transform: translate3d(0, -100%, 0) !important;
+            transform: translate3d(0, -100%, 0) !important;
+}
+
+.slideDownTo.transition {
+    -webkit-transform: translate3d(0, 0%, 0) !important;
+       -moz-transform: translate3d(0, 0%, 0) !important;
+        -ms-transform: translate3d(0, 0%, 0) !important;
+         -o-transform: translate3d(0, 0%, 0) !important;
+            transform: translate3d(0, 0%, 0) !important;
+}
+
+.flipLeftFrom.transition,
+.flipLeftTo.transition {
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+         -o-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+         -o-backface-visibility: hidden;
+            backface-visibility: hidden;
+    
+    -webkit-transition: -webkit-transform 0.5s ease 0.0s;
+       -moz-transition:    -moz-transform 0.5s ease 0.0s;
+        -ms-transition:     -ms-transform 0.5s ease 0.0s;
+         -o-transition:      -o-transform 0.5s ease 0.0s;
+            transition:         transform 0.5s ease 0.0s;
+}
+
+.flipLeftFrom {
+    -webkit-transform: rotateY(0.0deg) !important;
+       -moz-transform: rotateY(0.0deg) !important;
+        -ms-transform: rotateY(0.0deg) !important;
+         -o-transform: rotateY(0.0deg) !important;
+            transform: rotateY(0.0deg) !important;
+}
+
+.flipLeftFrom.transition {
+    -webkit-transform: rotateY(180.0deg) !important;
+       -moz-transform: rotateY(180.0deg) !important;
+        -ms-transform: rotateY(180.0deg) !important;
+         -o-transform: rotateY(180.0deg) !important;
+            transform: rotateY(180.0deg) !important;
+}
+
+.flipLeftTo {
+    -webkit-transform: rotateY(180.0deg) !important;
+       -moz-transform: rotateY(180.0deg) !important;
+        -ms-transform: rotateY(180.0deg) !important;
+         -o-transform: rotateY(180.0deg) !important;
+            transform: rotateY(180.0deg) !important;
+}
+
+.flipLeftTo.transition {
+    -webkit-transform: rotateY(0.0deg) !important;
+       -moz-transform: rotateY(0.0deg) !important;
+        -ms-transform: rotateY(0.0deg) !important;
+         -o-transform: rotateY(0.0deg) !important;
+            transform: rotateY(0.0deg) !important;
+}
+
+.css-transforms.no-csstransforms3d .flipLeftFrom.transition,
+.css-transforms.no-csstransforms3d .flipLeftTo.transition {
+    -webkit-transition: opacity 0.5s ease 0.0s;
+       -moz-transition: opacity 0.5s ease 0.0s;
+        -ms-transition: opacity 0.5s ease 0.0s;
+         -o-transition: opacity 0.5s ease 0.0s;
+            transition: opacity 0.5s ease 0.0s;
+}
+
+.css-transforms.no-csstransforms3d .flipLeftFrom {
+    opacity: 1.0 !important;
+}
+
+.css-transforms.no-csstransforms3d .flipLeftFrom.transition {
+    opacity: 0.0 !important;
+}
+
+.css-transforms.no-csstransforms3d .flipLeftTo {
+    opacity: 0.0 !important;
+}
+
+.css-transforms.no-csstransforms3d .flipLeftTo.transition {
+    opacity: 1.0 !important;
+}
+
+.no-csstransforms.no-csstransforms3d .flipLeftFrom.transition,
+.no-csstransforms.no-csstransforms3d .flipLeftTo.transition {
+    -webkit-transition: opacity 0.5s ease 0.0s;
+       -moz-transition: opacity 0.5s ease 0.0s;
+        -ms-transition: opacity 0.5s ease 0.0s;
+         -o-transition: opacity 0.5s ease 0.0s;
+            transition: opacity 0.5s ease 0.0s;
+}
+
+.no-csstransforms.no-csstransforms3d .flipLeftFrom {
+    opacity: 1.0 !important;
+}
+
+.no-csstransforms.no-csstransforms3d .flipLeftFrom.transition {
+    opacity: 0.0 !important;
+}
+
+.no-csstransforms.no-csstransforms3d .flipLeftTo {
+    opacity: 0.0 !important;
+}
+
+.no-csstransforms.no-csstransforms3d .flipLeftTo.transition {
+    opacity: 1.0 !important;
+}

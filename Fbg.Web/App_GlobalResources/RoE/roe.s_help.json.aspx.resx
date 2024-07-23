@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="s_BuildingsCost_t1" xml:space="preserve">
+    <value>This is the Cost of this level - the amount of silver it costs to upgrade the building to this level.</value>
+  </data>
+  <data name="s_BuildingsCost_t2" xml:space="preserve">
+    <value>This is the amount of time it takes to upgrade this level.&lt;br/&gt;&lt;br/&gt;By now you probably noticed that it takes a very long time to upgrade some higher level however, this is at Headquarters level 1. As you upgrade the Headquarters building, you shorten the time it takes to upgrade other buildings - your workers and infrastructure improves with every Headquarters' level resulting in quicker construction time. &lt;br/&gt;&lt;br/&gt;For example, at level 1 Headquarters, it may take 20hours to upgrade some building, however, at level 20 Headquarters, this can be reduced to only 1/3 of that (roughly) meaning that it will actually take less than 7 hours. &lt;br/&gt;&lt;br/&gt;Therefore, once you find that it takes too long to upgrade certain buildings, upgrade your Headquarters.</value>
+  </data>
+  <data name="s_BuildingsCost_title1" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="s_BuildingsCost_title2" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="s_BuildingsEffect_t" xml:space="preserve">
+    <value>This column explains the &lt;I&gt;effect&lt;/I&gt; of this building in performing its unique function.&lt;br/&gt;&lt;br/&gt;Each building serves some function, and higher the level, the better it is at performing this function. &lt;br/&gt;&lt;br/&gt;For example, the function of the Farm is to produce food therefore the last column, named 'food production', lists the amount of food the farm produces per hour at each level.</value>
+  </data>
+  <data name="s_BuildingsFood_t" xml:space="preserve">
+    <value>Food (the amount of food necessary to feed the workers to maintain this building).&lt;br/&gt;&lt;br/&gt;The number before the slash /, is the amount of food necessary for this particular level. The number after the slash, is the cumulative food 'used up' by the building up to this level.&lt;BR&gt;&lt;BR&gt;For example, assume level 5 for some building says food: 10/100. This means that at level 5, this building’s workers consume a total of 100 food units. Upgrading from level 4 to 5 required 10 more food units, for a total of 100.</value>
+  </data>
+  <data name="s_BuildingsFood_title" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="s_BuildingsNoFood_t" xml:space="preserve">
+    <value>Food (the amount of food necessary to feed the workers to maintain this building).&lt;br/&gt;&lt;br/&gt;Some buildings do not require any maintenance hence have no food requirements</value>
+  </data>
+  <data name="s_BuildingsNoFood_title" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="s_BuildingsPoints_t" xml:space="preserve">
+    <value>Points - the number of points you will have when you upgrade the building to this level.&lt;br/&gt;&lt;br/&gt;Every building upgrade gives you certain number of points (the longer it takes to upgrade a building, the more points you get). &lt;br/&gt;&lt;br/&gt;Your village points are based ONLY on buildings you have at the village. Points are used to ascertain the 'size' of neighboring villages however, points alone cannot tell you exactly what buildings are in this village.&lt;BR&gt;&lt;BR&gt;Please note, this number is not the number of points you will get for upgrading to this level. Rather, this is a total number of points this building gives when it is &lt;I&gt;at&lt;/I&gt; this level.&lt;BR&gt;&lt;BR&gt;For example, assume a building has these specification for points: &lt;UL&gt;&lt;li&gt;Level 1: 3 points&lt;/li&gt;&lt;li&gt;Level 2: 5 points&lt;/li&gt;&lt;li&gt;Level 3: 8 points&lt;/li&gt;&lt;/ul&gt;So, when you have upgraded the building to level 3, this building will give you 8 points, NOT 3+5+8 points. If you had no other building at the village, your village would have 8 points.</value>
+  </data>
+  <data name="s_BuildingsPoints_title" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="s_UnitsAttackStrength_t" xml:space="preserve">
+    <value>The Attack Strength describe the unit's combat ability. &lt;br/&gt;&lt;br/&gt;If a unit of strength 10 attacks a unit of defense strength of 10, then it's an even match and both units are killed. If however, the attack strength is higher than the defense strength, then the attacking unit wins and the defender is killed and vice versa. &lt;br/&gt;&lt;br/&gt;It is basically the same thing when multiple units are involved, except that strengths are summed up, defense strength depends on the ratio of different attacking troops etc. Things get complicated rather quickly therefore the best way to understand the battle system, is to experiment with the Battle Simulator and discuss your findings with other players.</value>
+  </data>
+  <data name="s_UnitsAttackStrength_title" xml:space="preserve">
+    <value>Attack Strength</value>
+  </data>
+  <data name="s_UnitsCarry_t" xml:space="preserve">
+    <value>Carry Capacity indicates how much plundered silver this unit can carry. &lt;br/&gt;&lt;br/&gt;When you attack a village, and some units survive, they plunder the treasury and carry the silver back to their home village for you to use.</value>
+  </data>
+  <data name="s_UnitsCarry_title" xml:space="preserve">
+    <value>Carry</value>
+  </data>
+  <data name="s_UnitsCost_t" xml:space="preserve">
+    <value>This is how much silver you need to recruit one unit of this type. &lt;br/&gt;&lt;br/&gt;Your current silver is displayed on the top, next to the &lt;img src="images\\BuildingIcons\\Treasury.png" alt="Silver Mine" /&gt; icon</value>
+  </data>
+  <data name="s_UnitsCost_title" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="s_UnitsDefenseStrength_t" xml:space="preserve">
+    <value>The Defense Strength describe the unit's combat ability. &lt;br/&gt;&lt;br/&gt;If a unit of strength 10 attacks a unit of defense strength of 10, then it's an even match and both units are killed. If however, the attack strength is higher than the defense strength, then the attacking unit wins and the defender is killed and vice versa. &lt;br/&gt;&lt;br/&gt;It is basically the same thing when multiple units are involved, except that strengths are summed up, defense strength depends on the ratio of different attacking troops etc. Things get complicated rather quickly therefore the best way to understand the battle system, is to experiment with the Battle Simulator and discuss your findings with other players.</value>
+  </data>
+  <data name="s_UnitsDefenseStrength_title" xml:space="preserve">
+    <value>Defense Strength</value>
+  </data>
+  <data name="s_UnitsFood_t" xml:space="preserve">
+    <value>This is how much food you need to recruit one unit of this type. &lt;br/&gt;&lt;br/&gt;Troops consume food so you need to ensure your farm land can support them. &lt;br/&gt;&lt;br/&gt;You can see how much food you are currently consuming &amp; producing next to the farm &lt;img src="images\\BuildingIcons\\Farm2.png" alt="Farm" /&gt;  icon on top of the page</value>
+  </data>
+  <data name="s_UnitsFood_title" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="s_UnitsMovementSpeed_t" xml:space="preserve">
+    <value>Movement Speed indicates how fast this unit moves between villages on the realm. &lt;br/&gt;&lt;br/&gt;Note that an army moves at the slowest unit's speed. &lt;br/&gt;&lt;br/&gt;So if you send both Light Cavalry and Rams in one attack, the whole army will move at the snail pace of Rams.</value>
+  </data>
+  <data name="s_UnitsMovementSpeed_title" xml:space="preserve">
+    <value>Movement Speed</value>
+  </data>
+  <data name="s_UnitsRecruitTime_t" xml:space="preserve">
+    <value>This is how much time it takes to recruit one unit of this type. &lt;br/&gt;&lt;br/&gt;As you can see, it takes a very long time to recruit an army so it's not a good idea to delay recruiting troops.&lt;br/&gt;&lt;br/&gt;Also, remember that the time to recruit units depends on the level of the recruitment building for this unit - the higher the level, the shorter the recruitment time.</value>
+  </data>
+  <data name="s_UnitsRecruitTime_title" xml:space="preserve">
+    <value>Recruit Time</value>
+  </data>
+</root>

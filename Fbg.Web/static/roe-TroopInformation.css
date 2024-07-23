@@ -1,0 +1,50 @@
+﻿.vilres_mytroopbottomtabs
+    {
+        display:none;
+    }
+
+    .vilres_trooptable_cell .vilres_unitimg{
+        padding-left:5px;
+        padding-right:5px;
+        height:44px;
+        width:44px;
+    }
+
+    .vilres_trooptable_cell .vilres_unitcountnumb
+    {
+        font: 20px/1.0em "charlemagne_stdbold";
+    }
+
+    .vilres_mytroopbottomtabs,
+    .vilres_mytroopbottomtabs a
+    {
+        color:rgb(138, 138, 138);
+    }
+
+    .vilres_mytroopbottomtabs a.selected 
+    {
+        font-weight:bold;
+        color:White;
+    }
+
+    .vilres_mytroopbottomtabs a:hover
+    {
+        text-decoration:none;
+    }
+
+    
+    .troopHeaderInformation{
+        font: 12px/1.0em "charlemagne_stdbold";
+        margin-right:10px;
+    }
+
+    .troopHeader {
+        margin-bottom: 10px;
+        text-align:center; 
+    }
+
+
+    .troopInformation_popup .footerActions
+    {
+        height:30px;
+    }

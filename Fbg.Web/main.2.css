@@ -1,0 +1,1758 @@
+/*
+* deep blue facebook color-- #3b5998
+* mid deep blue color --#7f93bc
+* light blue facebook color -- #D8DFEA
+* very light blue -- #E8EEF8
+*/
+
+
+.i20x16 
+,a.i20x16 img
+{
+    width:20px;
+    height:16px;
+}
+.TypicalText
+{
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+
+body
+{
+	background: #898E92; /*b6a876	*/
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	margin: 0px;
+	padding: 0px;
+	width: 100% !important;
+	width: 96%;
+	text-align: left;
+	color: #F7F7F7;
+}
+
+TD.TDContent
+{
+	padding: 2px;
+}
+
+
+
+a.close
+{
+	background: transparent url( /images/fb_close_bt.gif ) no-repeat top left;
+	width: 13px;
+	height: 13px;
+	float: right;
+	margin: 1px 1px 1px 5px;
+}
+
+a.SelectedMenuItem
+{
+	font-weight: bold;
+}
+
+a.close:hover
+{
+	background: transparent url( /images/fb_close_bt.gif ) no-repeat bottom left;
+	width: 13px;
+	height: 13px;
+	float: right;
+	margin: 1px 1px 1px 5px;
+}
+.CrossedOut
+{
+	background: url('https://static.realmofempires.com/images/cancel.png') center no-repeat;
+}
+
+
+ol
+{
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+input.login_preview
+{
+	color: #777;
+	border: 1px solid #6D84B4;
+	margin-top: 3px;
+	width: 100%;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+}
+
+input.login_text
+{
+	border: 1px solid #6D84B4;
+	margin-top: 3px;
+	width: 100%;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+}
+
+
+.buttons input
+{
+	margin: 0px 5px 0px 0px;
+}
+
+.checkbox
+{
+	color: #DEDFE3;
+	font-size: 11px;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+}
+
+.inputbutton, .inputsubmit
+{
+	background-color: #302C2D;
+	border-color: #DEDFE3;
+	border-style: solid;
+	border-width: 1px;
+	color: #DEDFE3;
+	font-size: 11px;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+	height: 20px;
+}
+
+.inputbuttonDisabled, .inputsubmitDisabled
+{
+	background-color: #302C2D;
+	border-color: #5a5456;
+	border-style: solid;
+	border-width: 1px;
+	color: #5a5456;
+	font-size: 11px;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+	height: 20px;
+}
+
+
+.inputbuttonInYourFace
+{
+	background-color: #E91400;
+	border-color: #FFFFFF;
+	border-style: solid;
+	border-width: 2px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+	font-weight: bold;
+	height: 25px;
+}
+
+.TextBox
+{
+	border-color: #4B3D32;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #CED5DA;
+	color: #000000;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+}
+.TextBoxReadOnly
+{
+	border-color: #B5B4B4;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	font-size: 11px;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+}
+
+
+/* 20080409: Class for dropdownlist */
+
+.DropDown
+{
+	border-color: #7f93bc;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	font-size: 11px;
+	font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+}
+
+.LargerText
+{
+	font-size: 13px;
+}
+
+.LargerText2
+{
+	font-size: 14px !important;
+}
+
+.headerbutton
+{
+	width: 100%;
+}
+
+.header_controls
+{
+	width: 150px;
+	float: right;
+	font-size: 11px;
+	vertical-align: bottom;
+}
+
+
+
+/*BEGIN HEADER BAR STUFF */
+.header_bar
+{
+}
+.header_bar_SelVil
+{
+	background-color: #292116;
+	color: #ffffff;
+}
+
+.header_bar_SelVil a
+{
+	color: #C39037;
+	text-decoration: none;
+}
+
+.header_bar_SelVil a:hover
+{
+	text-decoration: underline;
+}
+
+.header td.F /*food*/
+{
+	color: #FFFFFF;
+	width: 90px;
+	background-image: url(https://static.realmofempires.com/images/hdrBG_TC.gif);
+	white-space: nowrap;
+}
+
+.header td.R /*food right bracket*/
+{
+	width: 8px;
+	background-image: url(https://static.realmofempires.com/images/hdrBG_TRtrans.gif);
+	white-space: nowrap;
+}
+
+.header td.FI /*food icon*/
+{
+	width: 23px;
+	background-image: url(https://static.realmofempires.com/images/hdrBG_Tbutton.gif);
+	white-space: nowrap;
+	text-align: center;
+}
+
+.header td.silverIcon
+{
+	width: 23px;
+	background-image: url(https://static.realmofempires.com/images/hdrBG_TbuttonLtrans.gif);
+	text-align: center;
+}
+
+.header td.S /*silver display */
+{
+	background-image: url(https://static.realmofempires.com/images/hdrBG_TC.gif);
+	white-space: nowrap;
+	width: 205px;
+}
+
+.header .SP
+{
+	color: gray;
+	font-size: 11px;
+}
+
+.header .FT_Title /*Filter& Tags title*/
+{
+	background: rgb(41,33,22);
+	display: block;
+	color: rgb(195,144,55);
+	font-weight: bold;
+	padding: 2px;
+}
+.header .FT /*Filter& Tags container*/
+{
+	border: 1px solid rgb(30,30,30);
+	background-color: rgb(75, 61, 48);
+	left: 0px;
+	top: 0px;
+	z-index: 300;
+}
+
+.header .Time
+{
+	color: #A6A2A3;
+}
+.footer
+{
+	color: #d0d5d9;
+}
+
+
+
+.header a.map
+{
+	background: url('https://static.realmofempires.com/images/GlobeIcon.png') 0px center no-repeat;
+	text-decoration: none;
+	padding: 0px 0px 0px 16px;
+}
+
+
+.header a.jsTroopsMenu
+{
+	background: url('https://static.realmofempires.com/images/units/Infantry.png') -2px center no-repeat;
+	text-decoration: none;
+	padding: 0px 0px 0px 16px;
+}
+
+
+.ut2
+{
+	background: url('https://static.realmofempires.com/images/units/Infantry.png') 0px no-repeat;
+	padding: 0px 0px 0px 19px;
+	font-size: 12px;
+}
+.ut11
+{
+	background: url('https://static.realmofempires.com/images/units/Militia.png') 0px no-repeat;
+	padding: 0px 0px 0px 19px;
+	font-size: 12px;
+}
+.ut5
+{
+	background: url('https://static.realmofempires.com/images/units/cavalry.png') 0px no-repeat;
+	padding: 0px 0px 0px 19px;
+	font-size: 12px;
+}
+.ut7
+{
+	background: url('https://static.realmofempires.com/images/units/ram.png') 0px no-repeat;
+	padding: 0px 0px 0px 19px;
+	font-size: 12px;
+}
+.ut8
+{
+	background: url('https://static.realmofempires.com/images/units/treb.png') 0px no-repeat;
+	padding: 0px 0px 0px 19px;
+	font-size: 12px;
+}
+.ut12
+{
+	background: url('https://static.realmofempires.com/images/units/spy.png') 0px 0px no-repeat;
+	padding: 0px 0px 0px 19px;
+	font-size: 12px;
+}
+.ut10
+{
+	background: url('https://static.realmofempires.com/images/units/governor.png') 0px no-repeat;
+	padding: 0px 0px 0px 19px;
+	font-size: 12px;
+}
+.ut6
+{
+	background: url('https://static.realmofempires.com/images/units/knight.png') 0px no-repeat;
+	padding: 0px 0px 0px 19px;
+	font-size: 12px;
+}
+
+
+
+
+
+/*END HEADER BAR STUFF */
+
+
+Table.GridTable
+{
+	border-collapse: collapse;
+}
+
+
+
+
+Table.GridTable td
+{
+	border: solid 1px #7f93bc;
+}
+
+
+a.hidden
+{
+	color: #a9a9a9 !important;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a.hidden:hover
+{
+	text-decoration: underline;
+}
+
+
+a
+{
+	color: #FFD886;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+
+
+
+a.StandoutLink
+{
+	color: #FFD886;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.StandoutLink:hover
+{
+	text-decoration: underline;
+}
+
+
+
+form
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+a.HeaderLinks
+{
+	color: #ffffff;
+}
+
+a.NavigationBarItem:hover
+{
+	text-decoration: underline;
+}
+
+/*
+* UnavailableBuilding  - classes to display a building that is not avialble to build yet
+*/
+.UnavailableBuilding
+{
+	color: #B5B4B4;
+}
+.UnavailableBuilding td
+{
+	color: #B5B4B4;
+}
+
+.UnavailableBuilding li
+{
+	list-style-type: circle;
+}
+li.btid3 /*HQ*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/hq.png);
+}
+li.btid5 /*silvermine*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/mine.png);
+}
+li.btid1 /*Barracks*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/barracks.png);
+}
+li.btid2 /*stable*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/stable.png);
+}
+li.btid10 /*siege*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/seige.png);
+}
+li.btid12 /*siege*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/tavern.png);
+}
+li.btid11 /*trade*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/trade.png);
+}
+li.btid8 /*farm2*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/farm2.png);
+}
+li.btid9 /*palace*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/palace.png);
+}
+li.btid4 /*wall*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/wall.png);
+}
+li.btid7 /*tower*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/tower.png);
+}
+li.btid6 /*treasury*/
+{
+	list-style-image: url(https://static.realmofempires.com/images/BuildingIcons/treasury.png);
+}
+
+
+.UnavailableBuilding a
+{
+	color: #B5B4B4;
+}
+.UnavailableBuilding img
+{
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+a:hover
+{
+	text-decoration: underline;
+}
+tr.UnavailableBuilding a.StandoutLink
+{
+	color: #B5B4B4;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+tr.UnavailableBuilding a.StandoutLink:hover
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.UnavailableBuilding .det
+{
+	color: #FFFFFF;
+}
+.UnavailableBuilding .det a
+{
+    color:#ffffff;
+}
+.UnavailableBuilding .det img
+{
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+
+
+
+
+/*
+* BEGIN UnavailableUnit  - classes to display a unit that is not avialble to build yet
+*/
+.UnavailableUnit
+{
+	color: #B5B4B4;
+}
+.UnavailableUnit a
+{
+	color: #B5B4B4;
+}
+
+.UnavailableUnit a.StandoutLink
+{
+	color: #B5B4B4;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.UnavailableUnit a.StandoutLink:hover
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+/** BEGIN UnavailableUnit  */
+
+.CurrentlyRecruitingUnit
+{
+}
+
+.Label
+{
+	color: Green;
+}
+
+
+.ConfirmationMsg
+{
+	color: #5DE901;
+	font-weight: bold;
+}
+.ConfirmMsg
+{
+	color: #5DE901;
+	font-weight: bold;
+}
+
+
+/*Notification is a bit like an error, mean to say something is missing or wrong but not realy an error
+Used in village builing when silver or food is missing*/
+.Notification
+{
+	color: #B11801;
+	font-weight: bold;
+}
+
+.StrongWarning
+{
+	/*	color:#C01808	!important; 	font-weight:bold;*/
+	color: white !important;
+	font-weight: bold;
+	background-color: #C01808;
+	padding: 1px;
+}
+
+
+.Warning
+{
+	color: #000000 !important;
+	font-weight: bold;
+	background-color: #FFFF99;
+	padding: 1px;
+}
+
+.Error
+{
+	/*	color:#C01808	!important; 	font-weight:bold;*/
+	color: white !important;
+	font-weight: bold;
+	background-color: #C01808;
+	padding: 1px;
+}
+
+.Error2
+{
+	/*	color:#C01808	!important; 	font-weight:bold;*/
+	color: #C08000 !important;
+	font-weight: bold;
+}
+
+.Error a
+{
+	color: #A01806 !important;
+}
+
+.Error input
+{
+	border-color: red;
+	border-style: solid;
+	border-width: 1px;
+	color: red;
+}
+
+
+
+.HiddenInput
+{
+	display: none;
+}
+
+/*This is a unit type amount that is displayed as 0 so we make it less visible*/
+.ZeroUnitCount
+{
+	color: Gray;
+}
+
+
+.NewReport
+{
+	font-weight: bold;
+}
+
+.silverOverflow
+{
+	color: Red;
+}
+
+.IncomingAttacksWarning
+{
+	color: Red;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+a.IncomingAttacksWarning
+{
+	color: Red;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header a.sleep
+{
+	color: Gray;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a.close:hover
+{
+	text-decoration: underline;
+}
+
+
+/*
+
+BOX - a major section on the screen
+
+*/
+.Box
+{
+}
+
+.BoxHeader
+{
+	background-color: #4B3D32;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 2px;
+}
+
+/*Use this when ever you want to gray or slighlty hidden text in the box header */
+.BoxHeader .LightText
+{
+	color: #A6A2A3;
+	font-weight: normal;
+}
+.LighterText
+{
+	color: #959192;
+	font-weight: normal;
+}
+
+
+.BoxHeaderSecondLine
+{
+	background-color: #7f93bc;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 11px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 0px;
+}
+
+.BoxContent
+{
+	background-color: #454F50;
+	color: #FFFFFF;
+}
+
+.Padding
+{
+	padding: 2px;
+}
+
+
+.BorderedBoxHeader
+{
+	border-top: 1px solid #4B3D32;
+	border-left: 1px solid #4B3D32;
+	border-right: 1px solid #4B3D32;
+	background-color: #4B3D32;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 2px;
+}
+
+.BorderedBoxContent
+{
+	border-bottom: 1px solid #4B3D32;
+	border-left: 1px solid #4B3D32;
+	border-right: 1px solid #4B3D32;
+	background-color: #454F50;
+	color: #FFFFFF;
+}
+
+
+
+.Sectionheader
+{
+	background-color: #363E3F;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 2px;
+}
+.SectionheaderBackgroundOnly
+{
+	background-color: #D8DFEA;
+}
+
+.SectionheaderLighter
+{
+	background-color: #5B6660;
+}
+
+/*
+
+
+The following are for table formatting. 
+Tables that actually list data in tabular fashion 
+
+
+*//* This is a header row for a table*/
+.TableHeaderRow
+{
+	background-color: #363E3F !important;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 1px;
+}
+
+.TypicalTable TD
+{
+	padding: 2px;
+}
+
+.TypicalTable TD.NoPad
+{
+	padding: 0px;
+}
+
+
+
+.TypicalTable .DataRowNormal
+{
+	background-color: #454F50;
+	color: #ffffff;
+}
+
+.TypicalTable .DataRowAlternate
+{
+	background-color: #515A57;
+	color: #ffffff;
+}
+
+/*Use this when ever you want to gray or slighlty hidden text in the table */
+.TypicalTable .LightText
+{
+	color: #A6A2A3;
+	font-weight: normal;
+}
+
+/** BEGIN List pager styles **/
+.ListPager
+{
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #363E3F;
+	font-weight: bold;
+}
+
+.ListPager A
+{
+	text-decoration: underline;
+	color: #FFD886;
+	font-weight: normal;
+}
+/** END (List pager styles) **/
+
+.SmallHelpText
+{
+	font-size: 11px;
+	color: gray;
+	font-style: italic;
+}
+
+/**/
+.helpShortText
+{
+	background-color: #4B3D30;
+	color: #FFFFFF;
+	padding: 3px;
+	color: #FFD886;
+}
+
+.Advisor
+{
+	z-index: 50;
+	border: 1px solid #518304;
+	background-color: #F6F9F2;
+}
+
+.Advisor A
+{
+	color: #3b5998;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.Advisor A:hover
+{
+	text-decoration: underline;
+}
+
+/*BEGIN Tutorial*/
+.Tutorial
+{
+	z-index: 200;
+	width: 275px;
+	border: 1px solid #518304;
+	position: absolute;
+	top: 250px;
+	left: 250px;
+	background-color: #F6F9F2;
+}
+
+.Tutorial A
+{
+	color: #3b5998;
+	text-decoration: none;
+}
+
+.Tutorial A:hover
+{
+	text-decoration: underline;
+}
+
+
+.TutorialFooter A
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.TutorialFooter A:hover
+{
+	text-decoration: underline;
+}
+
+.TutorialHeader
+{
+	background-color: #518304;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 12pt;
+	padding: 2px;
+}
+.TutorialHeader a
+{
+	color: #FFFFFF;
+}
+
+.TutorialFooter
+{
+	background-color: #518304;
+	color: #FFFFFF;
+	font-weight: normal;
+	padding: 2px;
+}
+.TutorialBody
+{
+	padding: 2px;
+	font-size: 11pt;
+	color: #385C01;
+}
+
+.TutorialHighlight
+{
+	border: solid 2px red;
+	padding: 2px;
+}
+
+
+.TutorialBody li
+{
+	list-style-image: url(https://static.realmofempires.com/images/menuItemSeperator.png);
+}
+
+
+/*END Tutorial*/
+
+
+
+
+/*BEGIN Village Overview*/
+.vovC 
+{
+	position: absolute;
+	z-index: 2;
+}
+.vovC.vov_tower
+{
+	position: absolute;
+	z-index: 2;
+	z-index:16;
+}
+
+.vov
+{
+	position: absolute;
+	z-index: 2;
+}
+.vov_troops
+{
+	position: absolute;
+	z-index: 10;
+}
+.vov_tower
+{
+	position: absolute;
+	z-index: 15;
+}
+.vovWallBack
+{
+	position: absolute;
+	z-index: 30;
+}
+
+.vovWallFront
+{
+	position: absolute;
+	z-index: 40;
+}
+
+
+
+.vovCountdown
+{
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+	z-index: 50 !important;
+}
+.vovlabel
+{
+	color: #FFFFFF;
+	font-weight: bolder;
+	text-decoration: none;
+	z-index: 50 !important;
+}
+
+/*END Village Overview*/
+
+
+/*BEGIN For clan Forum */
+.posttitle
+{
+	padding: 3px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.postbody
+{
+	padding: 3px;
+	color: #ffffff;
+}
+/*BEGIN For clan Forum */
+
+
+.test
+{
+	z-index: 0;
+	top: 0px;
+	right: 5px;
+	position: absolute;
+	width: 240px;
+}
+
+.uiTop
+{
+	z-index: 45;
+	width: 100%;
+}
+
+
+/*
+li { 
+	list-style-type:circle;
+	 }
+*/
+
+
+
+/* quikc css fix for the help */
+a.helpQuestion, .helpBalloonTitle a
+{
+	color: #292116;
+	cursor: pointer;
+}
+.TroopsMenu
+{
+	z-index: 45 !important;
+}
+
+.TroopsMenu *
+{
+	z-index: 45 !important;
+}
+
+
+
+
+/* Top menu icons */
+.header_bar a
+{
+	float: left;
+	width: 35px;
+	height: 35px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+.header_bar a.reports
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Reports1.gif');
+}
+.header_bar a.reports:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Reports2.gif');
+}
+.header_bar a.newReport
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Reports3.gif');
+}
+.header_bar a.newReport:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Reports4.gif');
+}
+
+.header_bar a.mail
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Mail1.gif');
+}
+.header_bar a.mail:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Mail2.gif');
+}
+.header_bar a.newMail
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Mail3.gif');
+}
+.header_bar a.newMail:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Mail4.gif');
+}
+
+.header_bar a.clan
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Clan1.gif');
+}
+.header_bar a.clan:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Clan2.gif');
+}
+.header_bar a.newClan
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Clan3.gif');
+}
+.header_bar a.newClan:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Clan4.gif');
+}
+
+.header_bar a.invite
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Invite1.gif');
+}
+.header_bar a.invite:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Invite2.gif');
+}
+
+.header_bar a.ranking
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Ranking1.gif');
+}
+.header_bar a.ranking:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Ranking2.gif');
+}
+
+.header_bar a.help
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Help1.gif');
+}
+.header_bar a.help:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Help2.gif');
+}
+
+.header_bar a.settings
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Settings1.gif');
+}
+.header_bar a.settings:hover
+{
+	background-image: url('https://static.realmofempires.com/images/navIcons/Settings2.gif');
+}
+
+/* sprited mnu buttons! 
+.header_bar a { display : block; float : left; width : 35px; height : 35px; background-repeat : no-repeat; background-image : url('https://static.realmofempires.com/images/navIcons/18.gif') !important; }
+
+a.clan { background-position : 0px 0px; }
+a.clan:hover { background-position : -35px 0px; }
+a.newClan { background-position : -70px 0px; }
+a.newClan:hover { background-position : -105px 0px; }
+
+a.help { background-position : -140px 0px; }
+a.help:hover { background-position : -175px 0px; }
+
+a.invite { background-position : -210px 0px; }
+a.invite:hover { background-position : -245px 0px; }
+
+a.mail { background-position : -280px 0px; }
+a.mail:hover { background-position : -315px 0px; }
+a.newMail { background-position : -350px 0px; }
+a.newMail:hover { background-position : -385px 0px; }
+
+a.ranking { background-position : -420px 0px; }
+a.ranking:hover { background-position : -455px 0px; }
+
+a.reports { background-position : -490px 0px; }
+a.reports:hover { background-position : -525px 0px; }
+a.newReport { background-position : -560px 0px; }
+a.newReport:hover { background-position : -595px 0px; }
+/*.header_bar a.reports { text-indent : -9000px; }*/
+
+
+
+/*BEGIN Tabs STUFF */
+
+.Tabs ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.Tabs li
+{
+	float: left;
+	border: 1px solid #363E3F;
+	border-bottom-width: 0;
+	margin: 0;
+}
+
+.Tabs a
+{
+	text-decoration: none;
+	display: block;
+	background: #5B6660;
+	padding: 0.24em 1em;
+	width: 12em;
+	text-align: center;
+}
+
+.Tabs a:hover
+{
+	background: #515A57;
+	text-decoration: underline;
+}
+
+.Tabs .selected
+{
+	border-color: black;
+}
+
+.Tabs .selected a
+{
+	position: relative;
+	top: 1px;
+	background: #898E92;
+	color: black;
+	font-weight: bold;
+}
+
+.TabContent
+{
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	clear: both;
+	padding: 0;
+}
+
+/*END Tabs STUFF */
+
+a.configSml
+{
+	background: url('https://static.realmofempires.com/images/buildingIcons/seige_11.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 2px 4px 2px 16px;
+	border-style: solid;
+	border-color: rgb(195, 144, 55);
+	border-width: 1px 0px 0px 0px;
+	padding-top: 2px;
+	margin-top: 2px;
+}
+a.confignohrSml
+{
+	background: url('https://static.realmofempires.com/images/buildingIcons/seige_11.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 2px 4px 2px 16px;
+}
+a.configSml:hover
+{
+	text-decoration: underline;
+}
+a.confignohrSml:hover
+{
+	text-decoration: underline;
+}
+a.config:hover
+{
+	text-decoration: underline;
+}
+a.confignohr:hover
+{
+	text-decoration: underline;
+}
+
+
+
+a.FilterPreDef
+{
+	background: url('https://static.realmofempires.com/images/funnel1.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 0px 0px 0px 16px;
+	font-weight: bold;
+}
+a.FilterSelected
+{
+	background: url('https://static.realmofempires.com/images/funnel2.png') 2px center no-repeat !important;
+}
+a.Filter:hover
+{
+	background: url('https://static.realmofempires.com/images/funnel2.png') 2px center no-repeat;
+	text-decoration: underline;
+}
+a.Filter
+{
+	background: url('https://static.realmofempires.com/images/funnel1.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 0px 0px 0px 16px;
+}
+a.Filter:hover
+{
+	background: url('https://static.realmofempires.com/images/funnel2.png') 2px center no-repeat;
+	text-decoration: underline;
+}
+
+a.Tag
+{
+	background: url('https://static.realmofempires.com/images/checkmark2_8x8.gif') 2px center no-repeat;
+	text-decoration: none;
+	padding: 0px 0px 0px 12px;
+}
+a.Tag:hover
+{
+	text-decoration: underline;
+}
+a.noTag
+{
+	color: #8f661f;
+	padding: 0px 0px 0px 12px;
+	text-decoration: none;
+}
+a.noTag:hover
+{
+	color: #FFD886;
+}
+/*BEGIN troops links with image*/
+
+
+a.unitname
+{
+	white-space: nowrap;
+	padding: 2px 5px 2px 23px;
+	background: 0px center no-repeat;
+}
+/*END troops links with image*/
+
+
+a.LockedFeatureLink
+{
+	white-space: nowrap;
+	padding: 2px 5px 2px 18px;
+	background: 0px center no-repeat;
+	background-image: url('https://static.realmofempires.com/LockedFeature.png');
+}
+a.LockedFeatureLinkSml
+{
+	white-space: nowrap;
+	padding: 2px 5px 2px 11px;
+	background: 0px center no-repeat;
+	background-image: url('https://static.realmofempires.com/LockedFeature.sml.png');
+}
+
+a.attack
+{
+	background: url('https://static.realmofempires.com/images/attack.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 2px 4px 2px 16px;
+}
+a.attack:hover
+{
+	text-decoration: underline;
+}
+a.support
+{
+	background: url('https://static.realmofempires.com/images/support.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 2px 4px 2px 16px;
+}
+a.support:hover
+{
+	text-decoration: underline;
+}
+a.globe
+{
+	background: url('https://static.realmofempires.com/images/globeIcon_small.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 2px 4px 2px 16px;
+}
+a.globe:hover
+{
+	text-decoration: underline;
+}
+a.sendSilver
+{
+	background: url('https://static.realmofempires.com/images/coin_small.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 2px 4px 2px 16px;
+}
+a.sendSilver:hover
+{
+	text-decoration: underline;
+}
+a.sendSilverPlus
+{
+	background: url('https://static.realmofempires.com/images/coin_smallPlus.png') 2px center no-repeat;
+	text-decoration: none;
+	padding: 2px 4px 2px 16px;
+}
+a.sendSilverPlus:hover
+{
+	text-decoration: underline;
+}
+
+.GiftIcon
+{
+	padding: 0px 5px 1px 18px;
+	background: url(  'https://static.realmofempires.com/images/gifts/gift_icon.png' ) 0px center no-repeat;
+}
+a.GiftUseIcon
+{
+	padding: 0px 5px 1px 18px;
+	background: url(  'https://static.realmofempires.com/images/gifts/gift_use_gift_icon.png' ) 0px center no-repeat;
+}
+a.GiftSendIcon
+{
+	padding: 0px 5px 1px 33px;
+	background: url(  'https://static.realmofempires.com/images/gifts/gift_send_gift_icon.png' ) 0px center no-repeat;
+}
+a.pnote
+{
+	white-space: nowrap;
+	padding: 2px 5px 2px 27px;
+	color: #ffffff;
+	background: url(  'https://static.realmofempires.com/images/OldReport.png' ) 4px center no-repeat;
+	font-size: 10px;
+	font-weight:normal !important;
+}
+a.pnonote
+{
+	white-space: nowrap;
+	padding: 2px 5px 2px 27px;
+	color: #A6A2A3;
+	font-size: 10px;
+	font-weight:normal !important;
+}
+a.pnonote:hover
+{
+	text-decoration: underline;
+}
+a.pnote:hover
+{
+	text-decoration: underline;
+	background: url(  'https://static.realmofempires.com/images/NewReport.png' ) 4px center no-repeat;
+}
+table.bbcodeTroops tr
+{
+	background-color: #5B6660;
+}
+table.bbcodeTroops td
+{
+	text-align: right;
+}
+table.bbcodeTroops td.hdr
+{
+	text-align: center;
+}
+
+
+Div.bbcodeRepHeader
+{
+	background-color: #363E3F;
+	color: #FFFFFF;
+	font-size: 12px;
+	padding: 2px;
+	width: auto;
+}
+
+
+Div.bbcodeRepContent
+{
+	border: solid 1px #4B3D32;
+	padding: 1px;
+	width: auto;
+}
+table.tablesorter thead tr .headerSortUp {
+ background-image: url(https://static.realmofempires.com/images/asc.gif);
+  background-repeat: no-repeat;
+ background-position: center right;
+ cursor: pointer;
+}
+table.tablesorter thead tr .headerSortDown {
+ background-image: url(https://static.realmofempires.com/images/desc.gif);
+  background-repeat: no-repeat;
+ background-position: center right;
+ cursor: pointer;
+}
+
+table.tablesorter thead{
+ cursor: pointer;
+}
+
+
+.coe .avatar
+{
+    float: left;
+    margin: 2px 2px 0px 2px;
+}
+.coe .avatar img
+{
+    width: 57px;
+}
+.coe .titlearea
+{
+    overflow: hidden;
+}
+.coe .titlearea .titlename, .coe .titlearea .pname, .coe .titlearea .servants
+{
+    font-size: 10pt;
+    white-space: nowrap;
+}
+.coe .titlearea .servants a
+{
+    font-size: 8pt;
+}
+.coe .titlearea .points
+{
+    font-size: 10pt;
+}
+.coe .titlearea .panelProgressBarContainer
+{
+    background-color: #477100;
+    border: solid 1px #2F4A00;
+}
+.coe .titlearea .panelProgressBar
+{
+    background-color: #6FAF00;
+    text-align: left;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+.coe .jaxHide
+{
+    clear: both;
+    float: left;
+    display: none;
+    margin-left:2px;
+}
+
+
+.troops .tabs
+{
+    padding: 4px 0 0 0;
+}
+.troops .tabs ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.troops .tabs ul li
+{
+    float: left;
+    border: 1px solid #454F50;
+    border-bottom-width: 0;
+    margin-left: 3px;
+    padding: 2px;
+}
+.troops .tabs ul li.det
+{
+    font-weight: normal;
+    font-size: 8pt;
+}
+.troops .tabs ul li.selected
+{
+    background-color: #454F50;
+}
+.troops .tabs ul li:hover
+{
+    background-color: #454F50;
+    cursor: pointer;
+}
+.troops .normal TD
+{
+    padding-right: 15px;
+}
+.troops .normal TD:hover
+{
+    background-color: #5B6660;
+}
+.troops .normal img
+{
+    padding-right: 4px;
+}
+.troops .normal a
+{
+    color: white;
+}
+.troops .normal a:hover
+{
+    text-decoration: none;
+}
+.troops .list .det
+{
+    display: none;
+}
+
+.jsTroopsAbroad a
+, .jsTroopsSupporting a { cursor : pointer;}
+
+
+.supLookup .tabs ul li
+{
+    float: left;
+    border: 1px solid #454F50;
+    border-bottom-width: 0;
+    margin-left: 3px;
+    padding: 2px;
+}
+
+.supLookup .Tabs a
+{
+    width: 22em;
+
+}
+.supLookup .Tabs a:hover
+{
+    text-decoration:none;
+    background: #515A57;
+}
+
+.supLookup .Tabs .light
+{
+    color:#CCCCCC; 
+    font-weight:normal;
+    margin-left:5px;
+}
+
+
+.preload 
+{
+    width:0px;
+    display:none;
+}
+
+
+
+
+#ClickMenu
+{
+	position : absolute;
+    background : rgb(75, 61, 48);
+	border : 1px solid rgb(0, 0, 0); 
+    text-align:center;
+}
+
+
+#ClickMenu .help 
+{
+    color:#c8a488;
+    height:15px;
+}
+
+
+#ClickMenu .hoverMenu a
+{ 
+    white-space : nowrap;  
+    color : rgb(195, 144, 55); 
+    background-image : url('https://static.realmofempires.com/images/menuItemSeperator.png'); 
+    text-decoration : none; 
+    background-color : rgb(75, 61, 48); 
+    background-repeat:no-repeat;
+    background-position: 2px center;
+    display:table-cell;
+    width:30px;
+    height:30px;
+
+}
+
+
+#ClickMenu .hoverMenu .na
+{ 
+    white-space : nowrap;  
+    color : rgb(195, 144, 55); 
+    background-image : url('https://static.realmofempires.com/images/menuItemSeperator.png'); 
+    text-decoration : none; 
+    background-color : rgb(75, 61, 48); 
+    background-repeat:no-repeat;
+    background-position: 2px center;
+    display:table-cell;
+    width:30px;
+    height:30px;
+}
+
+#ClickMenu .hoverMenu a:hover { color : rgb(195, 144, 55); text-decoration : underline; text-decoration : none; }
+#ClickMenu .hoverMenu a.attq{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttack.png');  }
+#ClickMenu .hoverMenu  .attq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttackGray.png');  }
+#ClickMenu .hoverMenu a.attq:hover { background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttackHover.png'); }
+#ClickMenu .hoverMenu a.att{ background-image : url('https://static.realmofempires.com/images/icons/Q_Attack.png');  }
+#ClickMenu .hoverMenu a.att:hover { background-image : url('https://static.realmofempires.com/images/icons/Q_AttackHover.png'); }
+#ClickMenu .hoverMenu a.sup{ background-image : url('https://static.realmofempires.com/images/icons/Q_Support.png');  }
+#ClickMenu .hoverMenu  .sup_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportGray.png');  }
+#ClickMenu .hoverMenu a.sup:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportHover.png');  }
+#ClickMenu .hoverMenu a.supq{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupport.png');  }
+#ClickMenu .hoverMenu  .supq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupportGray.png');  }
+#ClickMenu .hoverMenu a.supq:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupportHover.png');  }
+#ClickMenu .hoverMenu a.supl{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookup.png');  }
+#ClickMenu .hoverMenu  .supl_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookupGray.png');  }
+#ClickMenu .hoverMenu a.supl:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookupHover.png');  }
+#ClickMenu .hoverMenu a.map{ background-image : url('https://static.realmofempires.com/images/icons/Q_CenterMap.png');  }
+#ClickMenu .hoverMenu a.map:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_CenterMapHover.png');  }
+#ClickMenu .hoverMenu a.sends{ background-image : url('https://static.realmofempires.com/images/icons/Q_Silver.png');  }
+#ClickMenu .hoverMenu  .sends_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SilverGray.png');  }
+#ClickMenu .hoverMenu a.sends:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SilverHover.png');  }
+#ClickMenu .hoverMenu a.myvov{ background-image : url('https://static.realmofempires.com/images/icons/Q_Vov2.png');}
+#ClickMenu .hoverMenu a.myvov:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_Vov2Hover.png');}
+#ClickMenu .hoverMenu a.hq{ background-image : url('https://static.realmofempires.com/images/icons/Q_Upgrade.png');}
+#ClickMenu .hoverMenu  .hq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_UpgradeGray.png');}
+#ClickMenu .hoverMenu a.hq:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_UpgradeHover.png');}
+#ClickMenu .hoverMenu a.renV{ background-image : url('https://static.realmofempires.com/images/icons/Q_Rename.png');}
+#ClickMenu .hoverMenu .renV_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_RenameGray.png');}
+#ClickMenu .hoverMenu a.renV:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_RenameHover.png');}
+#ClickMenu .hoverMenu a.recr{ background-image : url('https://static.realmofempires.com/images/icons/Q_Recruit.png');}
+#ClickMenu .hoverMenu .recr_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_RecruitGray.png');}
+#ClickMenu .hoverMenu a.recr:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_RecruitHover.png');}
+
+.bLevelInfoExt td .Sectionheader { white-space:nowrap;}

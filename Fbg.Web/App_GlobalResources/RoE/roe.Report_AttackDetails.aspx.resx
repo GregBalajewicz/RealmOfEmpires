@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AttackerColon" xml:space="preserve">
+    <value>Attacker:</value>
+  </data>
+  <data name="Attacking" xml:space="preserve">
+    <value>Attacking</value>
+  </data>
+  <data name="BackToReports" xml:space="preserve">
+    <value>&lt;&lt; Back to reports</value>
+  </data>
+  <data name="BuildingsAtTheVillage" xml:space="preserve">
+    <value>Buildings at the village:</value>
+  </data>
+  <data name="CouncilOfEldersApproval" xml:space="preserve">
+    <value>Council of Elders Approval change:</value>
+  </data>
+  <data name="DefenderColon" xml:space="preserve">
+    <value>Defender:</value>
+  </data>
+  <data name="Defending" xml:space="preserve">
+    <value>Defending</value>
+  </data>
+  <data name="FromToYea" xml:space="preserve">
+    <value>From {0}% to {1}% Yea</value>
+  </data>
+  <data name="InfoGatheredBySpies" xml:space="preserve">
+    <value>Information gathered by spies</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Lost" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="NoneOfYourTroopsSurvived" xml:space="preserve">
+    <value>None of your troops survived therefore you have no information on the strength of the enemy</value>
+  </data>
+  <data name="NotAbleToObtainInfoFromSpies" xml:space="preserve">
+    <value>Despite the use of all known methods of... persuasion... your men were not able to obtain the identity of the attacking spies</value>
+  </data>
+  <data name="PasteIntoBattleSimAsAttacker" xml:space="preserve">
+    <value>Paste into battle sim. as attacker</value>
+  </data>
+  <data name="PasteIntoBattleSimAsDefender" xml:space="preserve">
+    <value>Paste into battle sim. as defender</value>
+  </data>
+  <data name="PasteIntoVillageNote" xml:space="preserve">
+    <value>Paste into village note</value>
+  </data>
+  <data name="PasteReportInto" xml:space="preserve">
+    <value>Paste report into...</value>
+  </data>
+  <data name="PlunderColon" xml:space="preserve">
+    <value>Plunder:</value>
+  </data>
+  <data name="Remaining" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="SilverInTreasury" xml:space="preserve">
+    <value>Silver in treasury:</value>
+  </data>
+  <data name="SpiesInfiltratedVillageWithoutOwnerKnowing" xml:space="preserve">
+    <value>Your &lt;B&gt;spies have successfully infiltrated the village&lt;/B&gt; and brought back valuable information! In addition, the identity of your spies remains a secret; any spies captured or killed have taken this information to their grave. All hail your fallen loyal subjects.</value>
+  </data>
+  <data name="SpiesInfiltratedVillageWithOwnerKnowing" xml:space="preserve">
+    <value>Your &lt;B&gt;spies have successfully infiltrated the village&lt;/B&gt; and brought back valuable information! However, some rotten, disloyal spy must have squealed under pressure and revealed the identity of his master - Alas, your &lt;B&gt;target now knows you have spied upon him&lt;/B&gt;.</value>
+  </data>
+  <data name="SpiesSuccessfulWithInfo" xml:space="preserve">
+    <value>Your &lt;B&gt;spies have successfully infiltrated the village&lt;/B&gt; and brought back valuable information!</value>
+  </data>
+  <data name="SpiesUnsuccessfulSneakingInVillageSecretKept" xml:space="preserve">
+    <value>Your &lt;B&gt;spies have been unsuccessful in infiltrating the village&lt;/B&gt; and brought back nothing! However, at least the &lt;B&gt;identity of your spies remain a secret&lt;/B&gt;; any spies captured or killed have taken this information to their grave. At least for that you can be grateful.</value>
+  </data>
+  <data name="SpiesUnsuccessfulSneakingInVillageSecretUnkept" xml:space="preserve">
+    <value>Your &lt;B&gt;spies have been unsuccessful in infiltrating the village&lt;/B&gt; and brought back nothing! Even worse, some rotten, disloyal spy must have squealed under pressure and revealed the identity of its master - Alas, your &lt;B&gt;target now knows you have spied upon him&lt;/B&gt;. A disaster...</value>
+  </data>
+  <data name="SpiesUnsuccessfulWithNoInfo" xml:space="preserve">
+    <value>Your &lt;B&gt;spies have been unsuccessful in infiltrating the village&lt;/B&gt; and brought back nothing!</value>
+  </data>
+  <data name="ToLevel" xml:space="preserve">
+    <value>to level</value>
+  </data>
+  <data name="UnlockImprovedReportNav" xml:space="preserve">
+    <value>Unlock improved report navigation</value>
+  </data>
+  <data name="VillageSpiedUponFailed" xml:space="preserve">
+    <value>Your village was spied upon but fortunately your own counter intelligence measures prevailed! The spies came back empty handed! Hopefully some harm will come to them for this failure...</value>
+  </data>
+  <data name="VillageSpiedUponSuccessfully" xml:space="preserve">
+    <value>Your village was spied upon and, alas, the spies were able to successfully penetrate your counter intelligence measures! The spies learned of the troops stationed at the village, the silver in the treasury, as well as building levels</value>
+  </data>
+  <data name="WasAttackedAndDamaged" xml:space="preserve">
+    <value>was attacked and damaged from level</value>
+  </data>
+  <data name="WhatToDoWithCapturedSpies" xml:space="preserve">
+    <value>My Liege, what to do with captured spies:</value>
+  </data>
+  <data name="YourSpiesCantSeeStrengthOfArmy" xml:space="preserve">
+    <value>Your spies were not able to ascertain the strength of the enemy</value>
+  </data>
+  <data name="NoteThis" xml:space="preserve">
+    <value>[Note this]</value>
+  </data>
+</root>

@@ -1,0 +1,68 @@
+﻿.scroll {
+    position: relative;
+    left: 0px; top: 0px;
+    width: 100%; height: 100%;
+    overflow: auto;
+}
+
+.scroll-content {
+    position: absolute;
+    left: 0px; top: 0px;
+    width: auto; height: auto;
+    z-index: 0;
+}
+
+.scroll-bar {
+    display: block;
+    position: absolute;
+    width: 6px; height: 6px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #808080;
+    z-index: 2;
+}
+
+.scroll-bar.scroll-bar-x {
+    left: 1px; top: auto; right: auto; bottom: 1px;
+}
+
+.scroll-bar.scroll-bar-y {
+    left: auto; top: 1px; right: 1px; bottom: auto;
+}
+
+.scroll-end {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.scroll-end.scroll-end-l,
+.scroll-end.scroll-end-r {
+    top: 0px; bottom: 0px;
+    width: 48px; height: auto;
+}
+
+.scroll-end.scroll-end-l {
+    left: 0px; right: auto;
+}
+
+.scroll-end.scroll-end-r {
+    left: auto; right: 0px;
+}
+
+.scroll-end.scroll-end-t,
+.scroll-end.scroll-end-b {
+    left: 0px; right: 0px;
+    width: auto; height: 48px;
+}
+
+.scroll-end.scroll-end-t {
+    top: 0px; bottom: auto;
+}
+
+.scroll-end.scroll-end-b {
+    top: auto; bottom: 0px;
+}

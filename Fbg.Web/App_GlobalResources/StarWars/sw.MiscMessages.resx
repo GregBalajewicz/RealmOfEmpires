@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Building1" xml:space="preserve">
+    <value>&lt;strong&gt;Fighter Factory&lt;/strong&gt;
+        &amp;nbsp;allows you to build small fighter ships. &lt;br /&gt;
+        &lt;br /&gt;
+        As you upgrade the Fighter Factory, building of ships becomes more efficient and you are able to build ships faster. 
+        &lt;br /&gt;
+        &lt;br /&gt;
+        Remember that building an fleet is a time consuming process so it is a good idea to upgrade the Fighter Factory to a high level to minimize this time</value>
+    <comment>Fighter Factory building help</comment>
+  </data>
+  <data name="Building10" xml:space="preserve">
+    <value>&lt;strong&gt;Engineering Bay&lt;/strong&gt;&amp;nbsp; allows you to construct siege ships. You
+        need siege ships to destroy the defenses of enemy planets. It is a very difficult
+        and bloody task for an fleet to storm a well defended planet without the help of
+        siege ships.&lt;br /&gt;
+        &lt;br /&gt;
+        As you upgrade the Engineering Bay, your engineers become more efficient at constructing
+        the ships, resulting in quicker production.
+        &lt;br /&gt;
+        &lt;br /&gt;
+        Remember that constructing siege ships is a costly and very time consuming process
+        so it is a good idea to upgrade your Engineering Bay to a high level to minimize this
+        time</value>
+    <comment>Engineering Bay building help</comment>
+  </data>
+  <data name="Building11" xml:space="preserve">
+    <value>Transporter Station allows you to transport minerals between planets.
+&lt;br /&gt;     &lt;br /&gt;
+ You can transport minerals between your own planets but you can also send minerals to other player's planets.
+&lt;br /&gt;&lt;br /&gt;
+The higher the level of this building, the higher your transport capacity.</value>
+    <comment>trading post</comment>
+  </data>
+  <data name="Building12" xml:space="preserve">
+    <value>&lt;b&gt;Cantina&lt;/b&gt;, a gathering place for many interesting characters, including those that are good at... at not being seen when they choose not to. Just the type of patron you will want to recruit into your spy network! Therefore tavern allows you to recruit &lt;b&gt;scouts&lt;/b&gt;. 
+
+&lt;br&gt;&lt;br&gt;Scouts are able to covertly learn details about other planets so they could prove a valuable asset to your war machine.&lt;br&gt;&lt;br&gt;
+            
+            The higher the level of the cantina, the more patrons it attracts enabling you to recruit scouts much faster.</value>
+  </data>
+  <data name="Building2" xml:space="preserve">
+    <value>&lt;strong&gt;Orbital Shipyard&lt;/strong&gt; &amp;nbsp;allows you to build heavy warships. &lt;br /&gt;
+        &lt;br /&gt;
+        As you upgrade the Orbital Shipyard, building of ships becomes more efficient and you are able to build faster. 
+        &lt;br /&gt;
+        &lt;br /&gt;
+        Remember that building an fleet is a time consuming process so it is a good idea to upgrade the Orbital Shipyard to a high level to minimize this time</value>
+    <comment>Orbital Shipyard building help </comment>
+  </data>
+  <data name="Building3" xml:space="preserve">
+    <value>Command Center &amp;nbsp;is where you give commands to your workers to construct or upgrade
+                buildings on the planet.&lt;br /&gt;
+                &lt;br /&gt;
+                You can also upgrade the Command Center building itself. As you upgrade the Command Center, the workers on your planet get more and more efficient and as a result, construction
+                takes less and less time.</value>
+    <comment>Command Center help</comment>
+  </data>
+  <data name="Building4" xml:space="preserve">
+    <value>&lt;b&gt;Energy Shield&lt;/b&gt; protects the planet from attacks. The Energy Shield by itself does little to protect the planet, however the Energy Shield does improve the defensive ability of the ships defending the planet. The higher the level, the better job the Energy Shield does.&lt;br&gt;&lt;br&gt;The Energy Shield can be damaged and/or destroyed with Ion Cannon Gunships. </value>
+    <comment>Energy Shield help</comment>
+  </data>
+  <data name="Building5" xml:space="preserve">
+    <value>&lt;b&gt;Mining Facility&lt;/b&gt; is the primary source of your construction. The Mining Facility produces a steady supply of minerals for you to build ships and buildings. The higher the level of the Mining Facility, the more minerals it yields per hour. &lt;br&gt;&lt;br&gt;But be aware that minerals produced is stored in your Warehouse which has a storage limit so spend your minerals before the warehouse becomes full or your production will halt.</value>
+    <comment>Mining Facility help</comment>
+  </data>
+  <data name="Building6" xml:space="preserve">
+    <value>&lt;b&gt;Warehouse&lt;/b&gt; is where you store your minerals. As minerals are produced, it is stored in the warehouse. However, the warehouse has a storage limit and when reached, your mining facility stops production. Therefore, it is a good idea to upgrade the warehouse to be able to store a fair amount of minerals. </value>
+    <comment>Warehouse help</comment>
+  </data>
+  <data name="Building7" xml:space="preserve">
+    <value>&lt;b&gt;Defense Platform&lt;/b&gt; are orbiting defense structures that greatly improve the ability of the ships to defend the planet.&lt;br&gt;&lt;br&gt; Defense Platform can be damaged and/or destroyed with Siege Ships. </value>
+    <comment>Defense Platform help</comment>
+  </data>
+  <data name="Building8" xml:space="preserve">
+    <value>&lt;b&gt;Power Plant&lt;/b&gt; is the source of energy. The Power Plant produces energy which allow you to power ships and support buildings on your planet. &lt;br&gt;&lt;br&gt;Every building requires a certain amount energy to maintain. The higher the level of the building, the more energy you need.&lt;br&gt;&lt;br&gt;The higher the level of the Power Plant, the more energy you are able to produce.&lt;br&gt;&lt;br&gt;You can never build more ships, or upgrade buildings unless your power plant can support them.</value>
+    <comment>Power Plant help</comment>
+  </data>
+  <data name="Building9" xml:space="preserve">
+    <value>&lt;strong&gt;Galactic Council&lt;/strong&gt;&amp;nbsp; is where you entertain your guests and where poiliticians gather. The Galactic Councils are the perfect and necessary place to attract politicians to join your empire in performing the role of senators.
+            
+            Senators are necessary for you to take over another planet as they are the ones who convince the enemy's population to join your empire, and stay at the planet to govern it.</value>
+    <comment>Palace building help</comment>
+  </data>
+  <data name="email_InviteAccepted_Subject" xml:space="preserve">
+    <value>Hello from {0}. Thanks for the invite!!</value>
+  </data>
+  <data name="email_InviteAccepted1_body" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/misc/KnightsGraphic.png' align='right' style='padding:2px;'/&gt;Hey  {0}!
+&lt;BR&gt;&lt;BR&gt;This is {1} aka {2}, thanks for the invite! 
+&lt;BR&gt;&lt;BR&gt;I joined and accepted your invite while registering
+&lt;HR&gt;
+{0}, This is an automated message telling you that your friend has joined the realm and has accepted your invite. &lt;BR&gt;&lt;BR&gt;{2} has already been invited to your clan on your behalf. 
+&lt;BR&gt;&lt;BR&gt;Good luck to both of you!
+&lt;BR&gt;Realm Of Empires team</value>
+  </data>
+  <data name="email_InviteAccepted2_body" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/misc/KnightsGraphic.png' align='right' style='padding:2px;'/&gt;Hey  {0}!
+&lt;BR&gt;&lt;BR&gt;This is {1} aka {2}, thanks for the invite! 
+&lt;BR&gt;&lt;BR&gt;I joined and accepted your invite while registering
+&lt;HR&gt;
+{0}, This is an automated message telling you that your friend has joined the realm and has accepted your invite. &lt;BR&gt;&lt;BR&gt;&lt;B&gt;{2} has NOT been invited to your clan&lt;/B&gt; since you lack invite permission. Consider contacting your clan leaders and either ask them for an invite, or ask for invite permissions.  
+&lt;BR&gt;&lt;BR&gt;Good luck to both of you!
+&lt;BR&gt;Realm of Empires team</value>
+  </data>
+  <data name="email_KTitleInviteFriendsMsg_body" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/units/knight.jpg' align='left' style='padding:2px;'/&gt;&lt;B&gt;Congratulations noble {0}&lt;/B&gt;! &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+Congratulation on your first step into nobility!&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+Since you have proven yourself as an adept player and know the game well, we would like to extend to you an exclusive offer, available to Nobility only - We would like to offer you a &lt;B&gt;recruitment reward of 15 servants per Knight&lt;/B&gt;!! &lt;a href="invites_AcceptedInvites.aspx" target='_parent' &gt;details...&lt;/a&gt;
+
+&lt;BR&gt;&lt;BR&gt;Invite a friend and claim your reward when they reach a title of Knight/Dame! When your friend joins, you will get an email notifying you of this and hence will be able to mentor them on their way if you wish.  &lt;a href="invites_AcceptedInvites.aspx"&gt;details...&lt;/a&gt;
+
+&lt;BR&gt;&lt;BR&gt;We are committed to rewarding your efforts to help us grow and actively look for new ways to offer premium features for free to the friends of realm of empires.&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+Once again, Congratulations and in advance, thank you for helping us grow and improve.&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+&lt;I&gt;This is an automated message, please do not reply&lt;/I&gt;&lt;BR&gt;</value>
+  </data>
+  <data name="email_KTitleInviteFriendsMsg_subject" xml:space="preserve">
+    <value>Congratulations! Welcome to the nobility with its exclusive rights!</value>
+  </data>
+  <data name="email1_body" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/units/Gov.jpg' align='left' style='padding:2px;'/&gt;&lt;B&gt;Congratulations oh mighty {0}&lt;/B&gt;! &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+Your hard work and dedication has paid off! A big congratulation from Realm Of Empires team! &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+&lt;img src='https://static.realmofempires.com/images\review.gif' align='left' style='padding:2px;'/&gt; By now you know the dynamics of the game well, and if you enjoy it, we would very much like to ask you to help us grow and improve by &lt;a target="_blank" href="http://www.new.facebook.com/apps/application.php?id=10471770557#/reviews/see_all.php?of=10471770557"&gt;writing a very quick review&lt;/a&gt;. As a thank you, we'll reward your efforts with 10 servants. 5 star reviews are most welcome and appreciated, and they help us grow! &lt;img src='https://static.realmofempires.com/images\blushsmily.gif'/&gt;
+&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+Please keep in mind that we are still in Beta and there are many more features and improvements to come!&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+Once again, Congratulations and in advance, thank you for helping us grow and improve.&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+&lt;I&gt;This is an automated message, please do not reply&lt;/I&gt;&lt;BR&gt;</value>
+  </data>
+  <data name="email1_subject" xml:space="preserve">
+    <value>Congratulations and a gift!</value>
+  </data>
+  <data name="tou" xml:space="preserve">
+    <value>&lt;BR&gt;
+Realm of Empires strives to be a fun, rewarding online gaming experience for everyone. It is expected that players treat each other with common courtesy and respect.  In addition to following facebook’s terms of use, we reserve the right to suspend or terminate any account that engages in the following: 
+
+&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Malicious Intent&lt;/B&gt;
+&lt;LI&gt;Attempting to deface or damage www.realmofempires.com&lt;/LI&gt;
+&lt;LI&gt;Spamming, excessive posting, or disrupting normal communication in the game or on the about page&lt;/LI&gt;
+
+&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Cheating&lt;/b&gt;
+
+&lt;LI&gt;Creating multiple Facebook accounts – creating multiple accounts in game using multiple Facebook accounts is prohibited. Only one account per player per realm is allowed.&lt;/li&gt;
+&lt;LI&gt;Logging in with other players facebook accounts (consensually or not) to play Realm of Empires on their behalf will be detected and is against TOU.  Use the Stewardship feature (if available).&lt;/li&gt;
+&lt;LI&gt;Creating an account for the sole purpose of aiding another account is strictly prohibited.&lt;/li&gt;
+&lt;LI&gt;Using automated scripts (bots), including client side scripts like Greasemonkey scripts.&lt;/li&gt;
+&lt;LI&gt;Exploiting a bug - A player that discovers a bug that gives him/her an unfair advantage is expected to report the bug to realmofempires.com immediately.  Exploiting any bugs to your advantage is prohibited.&lt;/li&gt;
+
+
+&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Posting offensive material&lt;/b&gt;
+&lt;LI&gt;Any posts (emails, forum posts, village names, clan names, player names, etc) that are discriminatory in nature with regards to religion, race, sexual orientation, age, or sex will not be permitted.&lt;/LI&gt;
+&lt;LI&gt;Any posts that encourage, link to, or promote illegal activity.&lt;/LI&gt;
+&lt;LI&gt;Spamming the discussion boards to promote another game, business, political agenda or religious philosophy&lt;/LI&gt;
+&lt;LI&gt;Physically threatening a player is not allowed (although in-game threats of attacking are ok).&lt;/LI&gt;
+&lt;LI&gt;Insulting other players unless this is in regards to their gameplay ability.&lt;/LI&gt;
+&lt;LI&gt;No pornographic material (text or graphics) is allowed in Realm of Empires.&lt;/LI&gt;
+
+&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Language&lt;/b&gt;
+&lt;li&gt;All communication on Realm of Empires is expected to be in English so that everyone who plays can understand. &lt;/li&gt;
+&lt;li&gt;Use of abusive language or profanity may result in a suspension or termination&lt;/LI&gt;
+
+&lt;BR&gt;&lt;BR&gt;
+
+By accepting the terms of use, the player accepts the following:
+
+&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Servants&lt;/b&gt;&lt;BR&gt;
+&lt;LI&gt;Servants are the in game currency used to unlock various premium features or the nobility package.&lt;/LI&gt;
+&lt;LI&gt;There are two types of servants transferable (typically purchased through paypal or completing offers) and non-transferable (typically given as gifts from other players, rewards from contests etc.)&lt;/LI&gt;
+&lt;LI&gt;Once acquired, servants are not redeemable for cash, all purchases are final, and no returns will be made.&lt;/LI&gt;
+&lt;LI&gt;Servants cannot be sold for real money to other players, or transfered to other players as bribes for any benefit in the game. For example, in exchange for silver, attacking other player(s), for villages, or to further one's propaganda.&lt;/LI&gt;
+&lt;LI&gt;A player whose account is terminated forfeits any outstanding servants they may have.&lt;/LI&gt;
+&lt;LI&gt;Availability and prices of any servant deals or packages may change at any time.&lt;/LI&gt;
+
+&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Copyright&lt;/b&gt;&lt;BR&gt;
+All images, text on the Realm of Empires application is the property of realmofempires.com. Unauthorized use is prohibited. 
+
+&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Privacy&lt;/b&gt;&lt;BR&gt;
+RealmOfEmpires.com respects your privacy. We abide by facebook’s application policy which prohibits us from collecting and/or distributing any personal information about you outside of the game.
+
+&lt;BR&gt;&lt;BR&gt;
+&lt;B&gt;Disclaimer&lt;/b&gt;&lt;BR&gt;
+Realm of Empires is provided as-is. www.realmofempires.com is not responsible for any losses incurred by the player, financial, emotional or otherwise.  The Realm of Empires application will, on occasion, be unavailable for server maintenance, hardware and software upgrades.  Realm of Empires may also experience unplanned outages due to circumstances beyond our control.
+&lt;br&gt;&lt;br&gt;
+RealmofEmpires.com reserves the right to amend or change the terms of use at anytime.</value>
+  </data>
+  <data name="email_MsgToFriendUponRealmJoin_Body" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/misc/KnightsGraphic.png' align='right' style='padding:2px;'/&gt;Hey  {0}!
+&lt;BR&gt;&lt;BR&gt;Hey! This is {1} aka {2}! 
+&lt;BR&gt;&lt;BR&gt;I just joined this realm as well! Happy gaming!!
+&lt;HR&gt;
+{0}, This is an automated message telling you that your friend has joined this realm! &lt;BR&gt;&lt;BR&gt;If you are an advanced player, consider helping your friend out. Perhaps you may enjoy mentoring them along, sharing your strategies and hard-earned lessons. Perhaps you are new, in which case you may benefit from guidance from your friend. Remember that this is first most a game of diplomacy and co-operation. It is designed so that working with others is the key to success.&lt;BR&gt;&lt;BR&gt;To get in contact with your friend, simply reply to this message.
+&lt;BR&gt;&lt;BR&gt;Good luck to both of you!
+&lt;BR&gt;Realm Of Empires team</value>
+  </data>
+  <data name="email_MsgToFriendUponRealmJoin_Subject" xml:space="preserve">
+    <value>Hello from {0}!</value>
+  </data>
+  <data name="ClanInviteNotification_FromApp" xml:space="preserve">
+    <value>&lt;B&gt;You have just been invited to {0}&lt;/B&gt;, a clan in &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=6'&gt;Realm Of Empires&lt;/a&gt;! &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=6&amp;goto=clanoverview.aspx'&gt;&lt;B&gt;Accept&lt;/b&gt;&lt;/a&gt; or &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=6&amp;goto=clanoverview.aspx'&gt;&lt;b&gt;Reject&lt;/b&gt;&lt;/a&gt; the invitation. &lt;i&gt;Clan is a loose federation of players working together for their mutual glory!&lt;/i&gt;</value>
+  </data>
+  <data name="ClanInviteNotification_FromUser" xml:space="preserve">
+    <value>: &lt;B&gt;Hey! I just invited you to my clan {0}&lt;/B&gt; in &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=5'&gt;Realm Of Empires&lt;/a&gt;! &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=5&amp;goto=clanoverview.aspx'&gt;&lt;B&gt;Accept&lt;/b&gt;&lt;/a&gt; or &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=5&amp;goto=clanoverview.aspx'&gt;&lt;b&gt;Reject&lt;/b&gt;&lt;/a&gt; the invitation. &lt;i&gt;Clan is a loose federation of players working together for their mutual glory!&lt;/i&gt;</value>
+  </data>
+  <data name="SleepModeExplanation" xml:space="preserve">
+    <value>Sleep Mode allows you to prevent anyone from launching attacks on your planets while you are not at your computer. &lt;BR&gt;
+
+&lt;BR&gt;- You can activate sleep mode once every &lt;b&gt;{0} hours&lt;/b&gt; and this protection lasts for &lt;b&gt;{1} hours&lt;/b&gt;.
+&lt;BR&gt;- Once you activate the sleep mode, you have to wait &lt;b&gt;{2} min&lt;/b&gt; before it actually comes to effect (during which time you can still get attacked).
+&lt;BR&gt;- Once the sleep mode goes into effect no one will be able to &lt;i&gt;launch&lt;/I&gt; an attack at you during this time. Attacks incoming before sleep mode is active will still land even during the sleep mode
+&lt;BR&gt; - You may cancel the sleep mode anytime BUT you lose the remaining time of protection and must wait until sleep mode is available again to use it again.
+&lt;BR&gt;- NOTE - Any attacks against you that are in progress will land, only new attacks will be prevented when sleep mode is enabled.</value>
+  </data>
+  <data name="email_InviteReward" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/misc/KnightsGraphic.png' align='right' style='padding:2px;'/&gt;&lt;B&gt;THANKS FOR INVITING - FROM THE REALM OF EMPIRES TEAM!!&lt;/B&gt; &lt;BR&gt;
+
+Many thanks for helping spread the word about Realm of Empires to your friends! &lt;BR&gt;
+
+Thanks for inviting your friends! &lt;B&gt;Please accept this gift of {0} servants&lt;/B&gt; as a thank you for helping us grow.  We appreciate your efforts, and are very happy to offer you this gift!&lt;BR&gt;
+
+&lt;B&gt;&lt;a target='_parent' href=t.aspx?ccm=ir&amp;ccd=1&amp;to=invite.aspx&gt;Please invite more of your friends now&lt;/A&gt;&lt;/B&gt; and get more gifts.&lt;BR&gt;
+
+Once again, thank you and we hope you are enjoying Realm of Empires as much as we enjoy making it for you!&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+&lt;I&gt;This is an automated message, please do not reply.&lt;/I&gt;&lt;BR&gt;</value>
+  </data>
+  <data name="email_InviteRewardEX" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/misc/KnightsGraphic.png' align='right' style='padding:2px;'/&gt;&lt;B&gt;MANY THANKS FROM the Realm Of Empires TEAM!!&lt;/B&gt; &lt;BR&gt;&lt;BR&gt;
+
+Many thanks for helping spread the word about Realm of Empires to your friends! &lt;BR&gt;&lt;BR&gt;
+
+&lt;B&gt;Please accept this gift of 15 servants&lt;/B&gt; as a thank you for helping us grow. We appreciate your good will, and are very happy to offer you this gift!&lt;BR&gt;&lt;BR&gt;
+
+&lt;B&gt;&lt;a  target='_parent' href=t.aspx?ccm=ir&amp;ccd=1x&amp;to=invite.aspx&gt;Please invite more of your friends now&lt;/A&gt;&lt;/B&gt; and become eligible for further gifts.
+
+&lt;BR&gt;&lt;BR&gt;
+Once again, thank you and we hope you are enjoying Realm of Empires as much as we enjoy making it for you!&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+&lt;I&gt;This is an automated message, please do not reply.&lt;/I&gt;&lt;BR&gt;
+&lt;I&gt;You will receive a duplicate of this message on every realm you play.&lt;/I&gt;</value>
+  </data>
+  <data name="Building13" xml:space="preserve">
+    <value>&lt;b&gt;Vault&lt;/b&gt; is where you can hide your minerals from being plundered when you get attacked.</value>
+    <comment>hiding spot info </comment>
+  </data>
+  <data name="shortBuilding1" xml:space="preserve">
+    <value>&lt;strong&gt;Fighter Factory&lt;/strong&gt; allows you to build fighters.</value>
+  </data>
+  <data name="shortBuilding10" xml:space="preserve">
+    <value>&lt;strong&gt;Engineering Bay&lt;/strong&gt; allows you to build siege ships.</value>
+  </data>
+  <data name="shortBuilding12" xml:space="preserve">
+    <value>&lt;b&gt;Cantina&lt;/b&gt; allows you to recruit scouts. </value>
+  </data>
+  <data name="shortBuilding2" xml:space="preserve">
+    <value>&lt;strong&gt;Orbital Shipyard&lt;/strong&gt; allows you to build Heavy War ships.</value>
+  </data>
+  <data name="shortBuilding8" xml:space="preserve">
+    <value>&lt;b&gt;Power Plant&lt;/b&gt; creates energy needed for ships and buildings</value>
+  </data>
+  <data name="shortBuilding11" xml:space="preserve">
+    <value>Trading Post allows you to transport minerals between planets.</value>
+  </data>
+  <data name="shortBuilding13" xml:space="preserve">
+    <value>&lt;b&gt;Vault&lt;/b&gt; hides minerals from being plundered when you get attacked.</value>
+  </data>
+  <data name="shortBuilding6" xml:space="preserve">
+    <value>&lt;b&gt;Warehouse&lt;/b&gt; is where you store your minerals.</value>
+  </data>
+  <data name="shortBuilding5" xml:space="preserve">
+    <value>&lt;b&gt;Mining Facility&lt;/b&gt; produces Minerals used to grow your planet.</value>
+  </data>
+  <data name="shortBuilding9" xml:space="preserve">
+    <value>&lt;strong&gt;Galactic Council&lt;/strong&gt; allows you to recruit Senators.</value>
+  </data>
+  <data name="shortBuilding3" xml:space="preserve">
+    <value>Command Center is where you manage your planets upgrades.</value>
+  </data>
+  <data name="shortBuilding4" xml:space="preserve">
+    <value>&lt;b&gt;Energy Shield&lt;/b&gt; helps protect the planet from attacks.</value>
+  </data>
+  <data name="shortBuilding7" xml:space="preserve">
+    <value>&lt;b&gt;Defensive Platform&lt;/b&gt; help protect the planet from attacks.</value>
+  </data>
+  <data name="email_FriendNetworkRankingRew" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/misc/KnightsGraphic.png' align='right' style='padding:2px;'/&gt;&lt;B&gt;Congrats! You just got a reward of {1} servants for your standing in &lt;a target='_parent' href='playersfriendranking.aspx'&gt;Friend Network Ranking&lt;/a&gt;&lt;/B&gt; 
+
+&lt;BR&gt;
+&lt;B&gt;NEXT REWARD:&lt;/B&gt;
+Get {0} friends in your &lt;a target='_parent' href='playersfriendranking.aspx'&gt;Friend Network Ranking&lt;/a&gt; and win another {1} servants!
+
+&lt;BR&gt;Please note that friend network ranking is refreshed once every few hours. Once you reach {0} friends, allow up to 24 hours for the next reward to be delivered (we got to pack the {1} servants in the cart, travel to your villages, avoid the wolves etc... takes a lot of work, so be patient! ;)
+
+&lt;I&gt;This is an automated message, please do not reply.&lt;/I&gt;&lt;BR&gt;</value>
+  </data>
+</root>

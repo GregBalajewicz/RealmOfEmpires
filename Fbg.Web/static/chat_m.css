@@ -1,0 +1,347 @@
+﻿    /*BEGIN chat*/
+
+.chat .notInClan ul {
+    -webkit-padding-start: 18px;
+}
+
+.chat .notInClan li {
+    margin-top: 22px;
+}
+
+.chat .tabs {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    right: 0px;
+}
+
+    .chat .tabs ul {
+        list-style: none;
+        height: 35px;
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .chat .tabs li {
+        list-style: none;
+        float: left;
+        white-space: nowrap;
+        margin-top: 3px;
+    }
+
+        .chat .tabs li span {
+            margin: 0px 2px 0px 2px;
+            float: left;
+            padding: 4px 5px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-decoration: none;
+            color: rgb(138, 138, 138);
+            border-left: 2px solid #846824;
+            border-top: 2px solid #846824;
+            border-right: 2px solid #846824;
+            font: 12px/1.0em "charlemagne_stdbold";
+            height: 20px;
+            line-height: 20px;
+            -webkit-transition: color 0.5s ease 0.0s;
+        }
+
+            .chat .tabs li span > img {
+                opacity: 0.5;
+                -webkit-transition: opacity 0.5s ease 0.0s;
+            }
+
+    .chat .tabs ul li.selected span {
+        color: #ffffff;
+        -webkit-transition: color 0.5s ease 0.0s;
+        background-color: black;
+    }
+
+        .chat .tabs ul li.selected span > img {
+            opacity: 1.0;
+            -webkit-transition: opacity 0.5s ease 0.0s;
+        }
+
+
+    .chat .tabs ul li:hover {
+        background-color: transparent;
+        cursor: pointer;
+        color: #66FFFF;
+    }
+
+.chat .list .panel {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.chat .older {
+    cursor: pointer;
+}
+
+/*BEGIN chat*/
+.chat .older
+{ 
+    cursor: pointer; 
+    height:33px;
+    vertical-align:middle;
+    text-align:center;
+}
+.chat .older:hover {background-color:#404040  ;}
+
+    
+.chat .block { color: gray; cursor: pointer; }
+.chat .block:hover { color: red; cursor: pointer; }
+
+.chat .panel img.clan { height:10px;padding-right:1px; }
+.chat .c1 {clear:both;}
+    
+.chat .c1 .pinfo {color:Gray;}
+
+/*LARGE CHAT */       
+.chatBox.large {
+    position:absolute; 
+    top:0px; 
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:51;    
+    margin:1px;
+    overflow:hidden;
+    bottom: 44px;
+    -webkit-transition: top 0.5s ease 0.0s;
+    -moz-transition: top 0.5s ease 0.0s;
+    -ms-transition: top 0.5s ease 0.0s;
+        -o-transition: top 0.5s ease 0.0s;
+        transition: top 0.5s ease 0.0s;
+    
+    background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image:         linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+
+
+    margin: 0px;
+    padding: 0px;
+}
+.chatBox.large .chat .c1 {min-height:25px;}
+.chatBox.large .handle {
+    text-align:center; 
+    height:33px; 
+    float: right;
+    display: inline;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-right: 8px;
+    width: 33px;
+}
+
+.chatBox.large .handle > img
+{
+    padding-top: 10px;
+}
+.chatBox.large .panel 
+{
+    right:0px;
+    left:0px;
+    bottom:0px;
+    margin:0px;
+    padding:3px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.chatBox.large img.avatar { height:24px; float:left;margin:1px;padding-right:1px; }
+.chatBox.large .msg { display:block; }
+.chat .pn {color:gray;}
+
+.chatBox.large .list {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 29px;
+    bottom: 0px;
+       
+    border: 2px solid #846824;
+    
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+
+    border: 2px solid #846824;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background-color: black;
+    margin: 2px;
+    overflow: auto;
+    padding: 3px;
+}
+
+
+/*MINI CHAT */
+
+
+.view-vov .chatBox.mini 
+{
+
+    position: absolute;
+    top: 397px;
+    bottom: 44px;
+    height: auto;
+    left: 0px;
+    right: 0px;
+    overflow:hidden;
+    -webkit-transition: top 0.5s ease 0.0s;
+       -moz-transition: top 0.5s ease 0.0s;
+        -ms-transition: top 0.5s ease 0.0s;
+         -o-transition: top 0.5s ease 0.0s;
+            transition: top 0.5s ease 0.0s;
+   
+
+   
+    background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image:     -ms-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background-image:         linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.6) 100%);
+    
+    padding: 0px;
+}
+
+.view-map .chatBox
+, .view-res .chatBox{
+    display:none;
+} 
+
+.chatBox.mini .chat  .pn {padding-right:3px;}
+.chatBox.mini .chat .c1 {min-height:1px;}
+
+.chatBox.mini .chat .tabs 
+,.chatBox.mini .command
+, .chatBox.mini .handle
+, .chatBox.mini .older
+, .chatBox.mini .chat .avatar 
+, .chatBox.mini .pinfo 
+, .chatBox.mini .c1.warn 
+, .chatBox.mini .notInClan
+{display:none !important;}
+
+
+.chatBox.mini .panel 
+{
+    overflow:hidden;
+}
+
+.chatBox .chat.panel .action-icon-expand,
+.chatBox .clan.panel .action-icon-expand
+{
+    display:none;
+}
+
+.chatBox.mini .chat.panel .action-icon-expand,
+.chatBox.mini .clan.panel .action-icon-expand
+{
+    position:absolute;
+    top:0px;
+    display:block;
+    filter: alpha(opacity=0.6);	
+    -khtml-opacity: 0.6;
+      -moz-opacity:0.6;
+           opacity: 0.6;   
+    right: 0px;               
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+.chat-container {
+   
+}
+
+.chatBox.large .chat-container {
+    background-color: rgba(0, 0, 0, 1);
+    background-image: none;
+    overflow: hidden;
+    padding: 2px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.chatBox.mini .chat-container
+{
+    background-color: transparent;
+    overflow: hidden;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 1)));
+    border-radius: 15px;
+    padding: 2px;
+
+    border: 2px solid #846824;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin: 2px;
+
+     position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+footer > .chatBox .BoxContent
+{
+    background-color:transparent;
+
+}
+
+.chatBox .error-add
+{
+    color:Red;
+}
+
+.chat.panel .avatar,
+.clan.panel .avatar {
+    border: 1px solid #8d7765;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+
+/* Syntax highlighting for BBCodes */
+.bbsyntax_v, .chat .bbcode_v {
+    color: #de7d4d;
+}  
+
+.bbsyntax_c, .chat .bbcode_c {
+    color: #cdb596;
+} 
+
+.bbsyntax_p, .chat .bbcode_p {
+    color: #7c9fdd;
+}
+
+.bbsyntax_f,
+.chat .fp {
+     color: #99cd3e;
+}
+
+.chat .warn {
+    font-style:italic;
+}
+
+.chatBox.large .msg {
+    display: block;
+    padding-left: 38px;
+}
+.chat .msg {
+    color:#d7d7d7;
+}
+
+.chatBox.large .pn {
+    padding-left: 3px;
+}
+
+.chat .msg a:hover {
+    cursor:pointer;
+}

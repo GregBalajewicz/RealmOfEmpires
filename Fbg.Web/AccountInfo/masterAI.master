@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterInfoPage.master" AutoEventWireup="false" CodeFile="masterAI.master.cs" Inherits="masterAI" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadPlaceHolder" runat="Server">
+    <asp:ContentPlaceHolder ID="hph1" runat="server">
+    </asp:ContentPlaceHolder>
+
+   
+    <%if (isDevice)  { %>
+        <style>
+            BODY { 
+                width:100% !important;
+                background: rgba(0,0,0,0.5) !important;
+            }
+            .header  {
+                display:none;
+            }
+        </style>
+    <%}  %>
+
+    <style>
+        .navigationBar 
+        {
+            font-size:10px;
+        }
+        
+
+    </style>
+
+
+
+    <% if(isD2) { %>
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|IM+Fell+French+Canon+SC|IM+Fell+French+Canon+LC|Arapey" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            background-color:rgba(0, 0, 0, 0.5);
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        .d2_title {
+            font: 17px "IM Fell French Canon SC", serif !important;
+        }
+
+        .TDContent {
+            width:640px !important;
+            margin:0 auto;
+            margin-top:20px;
+            float:none !important;
+        }
+    </style>
+    <%} else if(isMobile) {  %>
+     <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|IM+Fell+French+Canon+SC|IM+Fell+French+Canon+LC|Arapey" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body {
+            background-color:rgba(0, 0, 0, 0.5);
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        .d2_title {
+            font: 17px "IM Fell French Canon SC", serif !important;
+        }
+
+        .TDContent {
+            width:initial !important;
+            padding:4px;
+            margin-top:20px;
+            float:none !important;
+        }
+    </style>    
+    <%}  %>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph1" runat="Server">
+    <div class="navigationBar">
+        <center>
+            Logs: <a href="LootCamp.aspx">Traveling Caravan</a> 
+            | <a href="SleepModeUsageLog.aspx">Sleep & Vacation Mode</a>
+            | <a href="ServantRescueLog.aspx">Servant Rescue</a>
+            | <a href="GovRecruitLog.aspx">Gov Recruit</a>
+            | <a href="ChestBuyLog.aspx">Chest Purchase</a>
+
+        </center>
+
+    </div>
+
+
+    <asp:ContentPlaceHolder ID="cph1" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</asp:Content>

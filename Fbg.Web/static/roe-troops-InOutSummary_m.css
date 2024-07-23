@@ -1,0 +1,72 @@
+﻿.inoutsummary {
+}
+
+    .inoutsummary .helpIcon {
+        background-image: url('https://static.realmofempires.com/images/helpicon.png');
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .inoutsummary .earliestLanding {
+        float: right;
+    }
+
+
+
+    .inoutsummary .summaryItem {
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .inoutsummary .summary .smallRoundButtonDark {
+        position: relative;
+        float: right;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .inoutsummary .summary .filterIcon {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterB.png');
+    }
+
+
+
+    .inoutsummary .incomingMiniIndicators .incomingMiniIndicator {
+        background-color:transparent !important;
+    }
+
+    .inoutsummary .longMiniSummaryContainer {
+        color:#7d7d7d;
+    }
+
+table.summary {
+border-collapse: separate;
+border-spacing: 0px 2px;
+}
+
+.summary a {
+    margin-left:3px;
+    padding: 0px;
+}
+
+.inoutsummary .summaryItem td span.incomingMiniIndicators {
+    margin-left:3px;
+    background:none;
+}
+
+
+.highlight.summaryItem .subRow {
+    margin-bottom:0px;
+}

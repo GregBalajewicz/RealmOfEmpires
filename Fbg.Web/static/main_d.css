@@ -1,0 +1,197 @@
+
+body
+{
+	background: #898E92; /*b6a876	*/
+}
+
+.Error
+{
+	/*	color:#C01808	!important; 	font-weight:bold;*/
+	color: white !important;
+	font-weight: bold;
+	background-color: #C01808;
+	padding: 1px;
+}
+
+.Sectionheader
+{
+	background-color: #363E3F;
+}
+
+/*
+
+
+The following are for table formatting. 
+Tables that actually list data in tabular fashion 
+
+
+*//* This is a header row for a table*/
+.TableHeaderRow
+{
+	background-color: #363E3F !important;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 1px;
+}
+.BoxContent
+{
+	background-color: #454F50;
+}
+
+
+
+.TypicalTable TD
+{
+	padding: 2px;
+}
+
+.TypicalTable TD.NoPad
+{
+	padding: 0px;
+}
+
+
+
+.TypicalTable .DataRowNormal
+{
+	background-color: #454F50;
+	color: #ffffff;
+}
+
+.TypicalTable .DataRowAlternate
+{
+	background-color: #515A57;
+	color: #ffffff;
+}
+
+/*Use this when ever you want to gray or slighlty hidden text in the table */
+.TypicalTable .LightText
+{
+	color: #A6A2A3;
+	font-weight: normal;
+}
+
+
+
+/*BEGIN Quick Intro (QI)*/
+.QI
+{
+	z-index: 200;
+	width: 340px;
+	height: 360px;
+	border: none;
+	position: absolute;
+	top: 80px;
+	left: 150px;
+	background-color: Transparent;
+	background-image: url( 'https://static.realmofempires.com/images/gifts/Scroll.png' );
+}
+
+.QI A
+{
+	color: #FFFFFF;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+
+.QIBody
+{
+	font-size: 14pt;
+	color: #000000;
+	padding-top: 40px;
+	padding-left: 35px;
+	padding-right: 35px;
+	text-align: center;
+}
+.QIBody.Div
+{
+	width: 200px;
+	padding: 10px;
+	font-size: 14pt;
+	color: #000000;
+	border: solid 1px red;
+	position: relative;
+	top: 0px;
+	left: 10px;
+	font-family: Verdana, Arial;
+}
+
+
+#ClickMenu
+{
+	position : absolute;
+    background : rgb(75, 61, 48);
+	border : 1px solid rgb(0, 0, 0); 
+    text-align:center;
+}
+    
+
+#ClickMenu .help 
+{
+    color:#c8a488;
+    height:15px;
+}
+
+
+#ClickMenu .hoverMenu a
+{ 
+    white-space : nowrap;  
+    color : rgb(195, 144, 55); 
+    background-image : url('https://static.realmofempires.com/images/menuItemSeperator.png'); 
+    text-decoration : none; 
+    background-color : rgb(75, 61, 48); 
+    background-repeat:no-repeat;
+    background-position: 2px center;
+    display:table-cell;
+    width:30px;
+    height:30px;
+
+}
+
+
+#ClickMenu .hoverMenu .na
+{ 
+    white-space : nowrap;  
+    color : rgb(195, 144, 55); 
+    background-image : url('https://static.realmofempires.com/images/menuItemSeperator.png'); 
+    text-decoration : none; 
+    background-color : rgb(75, 61, 48); 
+    background-repeat:no-repeat;
+    background-position: 2px center;
+    display:table-cell;
+    width:30px;
+    height:30px;
+}
+
+#ClickMenu .hoverMenu a:hover { color : rgb(195, 144, 55); text-decoration : underline; text-decoration : none; }
+#ClickMenu .hoverMenu a.attq{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttack.png');  }
+#ClickMenu .hoverMenu  .attq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttackGray.png');  }
+#ClickMenu .hoverMenu a.attq:hover { background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttackHover.png'); }
+#ClickMenu .hoverMenu a.att{ background-image : url('https://static.realmofempires.com/images/icons/Q_Attack.png');  }
+#ClickMenu .hoverMenu a.att:hover { background-image : url('https://static.realmofempires.com/images/icons/Q_AttackHover.png'); }
+#ClickMenu .hoverMenu a.sup{ background-image : url('https://static.realmofempires.com/images/icons/Q_Support.png');  }
+#ClickMenu .hoverMenu  .sup_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportGray.png');  }
+#ClickMenu .hoverMenu a.sup:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportHover.png');  }
+#ClickMenu .hoverMenu a.supq{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupport.png');  }
+#ClickMenu .hoverMenu  .supq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupportGray.png');  }
+#ClickMenu .hoverMenu a.supq:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupportHover.png');  }
+#ClickMenu .hoverMenu a.supl{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookup.png');  }
+#ClickMenu .hoverMenu  .supl_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookupGray.png');  }
+#ClickMenu .hoverMenu a.supl:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookupHover.png');  }
+#ClickMenu .hoverMenu a.map{ background-image : url('https://static.realmofempires.com/images/icons/Q_CenterMap.png');  }
+#ClickMenu .hoverMenu a.map:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_CenterMapHover.png');  }
+#ClickMenu .hoverMenu a.sends{ background-image : url('https://static.realmofempires.com/images/icons/Q_Silver.png');  }
+#ClickMenu .hoverMenu  .sends_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SilverGray.png');  }
+#ClickMenu .hoverMenu a.sends:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SilverHover.png');  }
+#ClickMenu .hoverMenu a.myvov{ background-image : url('https://static.realmofempires.com/images/icons/Q_Vov2.png');}
+#ClickMenu .hoverMenu a.myvov:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_Vov2Hover.png');}
+#ClickMenu .hoverMenu a.hq{ background-image : url('https://static.realmofempires.com/images/icons/Q_Upgrade.png');}
+#ClickMenu .hoverMenu  .hq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_UpgradeGray.png');}
+#ClickMenu .hoverMenu a.hq:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_UpgradeHover.png');}
+#ClickMenu .hoverMenu a.renV{ background-image : url('https://static.realmofempires.com/images/icons/Q_Rename.png');}
+#ClickMenu .hoverMenu .renV_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_RenameGray.png');}
+#ClickMenu .hoverMenu a.renV:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_RenameHover.png');}
+#ClickMenu .hoverMenu a.recr{ background-image : url('https://static.realmofempires.com/images/icons/Q_Recruit.png');}
+#ClickMenu .hoverMenu .recr_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_RecruitGray.png');}
+#ClickMenu .hoverMenu a.recr:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_RecruitHover.png');}

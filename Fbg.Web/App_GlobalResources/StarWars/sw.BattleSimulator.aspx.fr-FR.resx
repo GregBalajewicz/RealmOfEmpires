@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivateFeature" xml:space="preserve">
+    <value>Activez La Fonction</value>
+  </data>
+  <data name="AttackBonus" xml:space="preserve">
+    <value>20% Bonus d'attaque</value>
+  </data>
+  <data name="Attacking" xml:space="preserve">
+    <value>Attaquer &lt;br /&gt;</value>
+  </data>
+  <data name="BattleHandicap" xml:space="preserve">
+    <value>&lt;strong&gt;Bataille Handicap:&lt;/strong&gt;</value>
+  </data>
+  <data name="Calculate" xml:space="preserve">
+    <value>Calculer</value>
+  </data>
+  <data name="Defending" xml:space="preserve">
+    <value>Défendre &lt;br /&gt;</value>
+  </data>
+  <data name="DefenceBonus" xml:space="preserve">
+    <value>20% Bonus de la Défense</value>
+  </data>
+  <data name="Deserted" xml:space="preserve">
+    <value>déserté</value>
+  </data>
+  <data name="Desertion" xml:space="preserve">
+    <value>&lt;strong&gt;La désertion Factor:&lt;/strong&gt;</value>
+  </data>
+  <data name="Killed" xml:space="preserve">
+    <value>tué</value>
+  </data>
+  <data name="linkBackToReport" xml:space="preserve">
+    <value>&lt;B&gt;Simulateur de population avec l'intelligence d'après le rapport&lt;/B&gt;. Cliquez ici pour revenir au rapport.</value>
+  </data>
+  <data name="PopAttackAll" xml:space="preserve">
+    <value>Remplir attaquer avec mes troupes (tous)</value>
+  </data>
+  <data name="PopAttackCurrent" xml:space="preserve">
+    <value>Remplir attaquer avec mes troupes (actuellement dans le village)</value>
+  </data>
+  <data name="PopDefendAll" xml:space="preserve">
+    <value>Remplir défendre avec mes troupes (tous)</value>
+  </data>
+  <data name="PopDefendCurrent" xml:space="preserve">
+    <value>Remplir défendre avec mes troupes (actuellement dans le village)</value>
+  </data>
+  <data name="Remaining" xml:space="preserve">
+    <value>autres</value>
+  </data>
+  <data name="SpyChance" xml:space="preserve">
+    <value>&lt;b&gt;Chance les espions seront couronnés de succès:&lt;/b&gt;</value>
+  </data>
+  <data name="SpyIdentifyChance" xml:space="preserve">
+    <value>&lt;b&gt;Chance le défenseur de connaître l'identité d'espions:&lt;/b&gt;</value>
+  </data>
+  <data name="SpySeeChance" xml:space="preserve">
+    <value>&lt;b&gt;Chance le défenseur pourrez voir des espions à venir:&lt;/b&gt;</value>
+  </data>
+  <data name="TargetDistance" xml:space="preserve">
+    <value>&lt;b&gt;Distance à la cible:&lt;/b&gt;</value>
+  </data>
+  <data name="TowerLevel" xml:space="preserve">
+    <value>&lt;strong&gt;Niveau Tower Defender:&lt;/strong&gt;</value>
+  </data>
+  <data name="Troops" xml:space="preserve">
+    <value>les troupes &lt;br /&gt;</value>
+  </data>
+  <data name="WallLevel" xml:space="preserve">
+    <value>&lt;strong&gt;Niveau mur Défenseur:&lt;/strong&gt;</value>
+  </data>
+  <data name="Between0and1000" xml:space="preserve">
+    <value>Seul le numéro entre 0 et 1000 a permis</value>
+  </data>
+  <data name="Between0and50" xml:space="preserve">
+    <value>Seul le numéro entre 0 et 50 permis</value>
+  </data>
+  <data name="BuildingAttacked" xml:space="preserve">
+    <value>Attaqué de Construction:</value>
+  </data>
+  <data name="Extend" xml:space="preserve">
+    <value>Elargir la</value>
+  </data>
+  <data name="InsertTroops" xml:space="preserve">
+    <value>Insérer mes troupes</value>
+  </data>
+  <data name="LevelAfterAttack" xml:space="preserve">
+    <value>Niveau après une attaque: </value>
+  </data>
+  <data name="MaxLevel" xml:space="preserve">
+    <value>Niveau Max Admis </value>
+  </data>
+  <data name="MaxLevel10Only" xml:space="preserve">
+    <value>Niveau Max a Permis à 10</value>
+  </data>
+  <data name="NumbersOnly" xml:space="preserve">
+    <value>numéros seulement permis</value>
+  </data>
+  <data name="PercentBonus" xml:space="preserve">
+    <value>bonus de 20%</value>
+  </data>
+  <data name="Simulate" xml:space="preserve">
+    <value>Simuler</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>&lt;b&gt;Cible:&lt;/b&gt;</value>
+  </data>
+  <data name="TargetLevel" xml:space="preserve">
+    <value>&lt;b&gt;Niveau Cible:&lt;/b&gt;</value>
+  </data>
+</root>

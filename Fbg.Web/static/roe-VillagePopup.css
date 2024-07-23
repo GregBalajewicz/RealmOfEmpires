@@ -1,0 +1,240 @@
+﻿.VillagePopup { height: 100%; }
+
+        #village_popup { 
+            position: absolute;  
+            top: 0px;  
+            bottom: 0px;  
+            left: 0px;  
+            right: 0px; 
+            margin:0;
+            padding:0;
+            overflow:auto;
+              background: rgba(0,0,0,0.5);
+        }
+            #village_popup .faded {
+                opacity: 0.4;
+            }
+        #village_popup .info { 
+            /*background: rgba(0,0,0,0.5);
+            min-height: 100%;*/
+            width:100%;
+            padding-top: 1px; 
+            font-size: 12px; 
+            margin-top:11px;
+        }
+        #village_popup .separator {
+            position: relative;
+            /* is there a reason why this is set a 100? it is causing conflicts, lets find another solution -farhad
+                z-index: 100;*/
+            width: 100%;
+            height: 18px;
+            text-align: center;
+            margin: -9px 0;
+            background: url('https://static.realmofempires.com/images/misc/m_listbar.png') no-repeat center;
+        }
+        #village_popup .villagename {
+            color:white;
+            font: 14px/1.0em "Eagle Lake", serif;
+            text-shadow: 1px 1px 2px #000000;
+            text-align:center;
+            padding: 12px 0 18px 0;
+            height: 16px;
+            background: rgba(0,0,0,0.6);            
+            }
+
+            #village_popup .rebel,
+            #village_popup .abandoned {
+                padding: 0px 10px;
+                margin-bottom: 5px;
+            }
+
+        #village_popup .villagename SPAN:first-child {
+            display: inline-block;
+            max-width: 210px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 4px;
+            }
+        #village_popup .villagename SPAN.coord{
+            font: 12px/1.0em "Eagle Lake", serif;
+            padding:0 4px;
+            }
+        #village_popup .villageimage {
+            display: inline-block;
+            width: 84px;
+            height: 84px;
+            float:left;
+            }
+
+        #village_popup .villageinfo {
+            width:100%; 
+            min-height:86px;
+            margin:0;
+            text-shadow: 1px 1px 2px #000000;
+            background:rgba(0,0,0,0.40);
+            }
+        #village_popup .villageinfos  {
+            display: inline-block;
+            font: 13px/1.0em "Eagle Lake", serif;
+            color: #d0d0d0;
+            vertical-align: top;
+            margin: 10px 0;
+            width:65%;
+        }
+        #village_popup .villageimage {
+            padding: 0 6px;
+        }
+        #village_popup .villageinfos DIV{
+            padding: 2px 0;
+            }
+        #village_popup .villowner, #village_popup .villclan {
+            font: 14px/1.0em "Eagle Lake", serif;
+            color: #d0d0d0;
+        }
+        #village_popup .villclan {
+            display:none;
+        }
+        #village_popup .villowner DIV, #village_popup .villclan DIV{
+            display: inline-block;
+            color: #ffd776;
+            font: 16px/1.0em "Eagle Lake", serif !important;
+        }
+
+            #village_popup .actions {
+                text-align: center;
+                padding: 16px 0;
+                background: rgba(0,0,0,0.6);
+            }
+
+            #village_popup .actions .action {
+                display: inline-block;
+                width: 49%;
+                height: 30px;
+                line-height: 30px;
+                margin-bottom:5px;
+            }
+                #village_popup .actions .action a,
+                #village_popup .actions .action div {
+                    display: inline-block;
+                    text-decoration: none;
+                    padding: 3px 6px 2px 40px;
+                    background-size: 34px auto;
+                    background-position: 2px center;
+                    background-repeat: no-repeat;
+                    font-size: 15px;
+                    color: #FFD886;
+                }
+                    #village_popup .actions .action a:hover,
+                    #village_popup .actions .action div:hover {
+                        text-decoration: underline;
+                    }
+
+                #village_popup .actions .action .faded,
+                #village_popup .actions .action .na,
+                #village_popup .actions .action .notAvailable {
+                    color: #d7d7d7 !important;
+                    opacity: .4;
+                    text-decoration: none !important;
+                }
+
+                #village_popup .actions .mapit a,
+                #village_popup .actions .mapit div {
+                    background-image: url('https://static.realmofempires.com/images/icons/Q_CenterMap.png');
+                }
+                #village_popup .actions .sendtab a,
+                #village_popup .actions .sendtab div {
+                    background-image: url('https://static.realmofempires.com/images/icons/Q_Silver.png');
+                }
+                #village_popup .actions .supporttab a,
+                #village_popup .actions .supporttab div {
+                    background-image: url('https://static.realmofempires.com/images/icons/Q_Support.png');
+                }
+                #village_popup .actions .attacktab a,
+                #village_popup .actions .attacktab div {
+                    background-image: url('https://static.realmofempires.com/images/icons/Q_Attack.png');
+                }
+                #village_popup .actions .supportlookup a,
+                #village_popup .actions .supportlookup div {
+                    background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookup.png');
+                }
+                #village_popup .actions .items a,
+                #village_popup .actions .items div {
+                    background-image: url('https://static.realmofempires.com/images/icons/giftsS.png');
+                }
+                #village_popup .actions .qb a,
+                #village_popup .actions .qb div {
+                    background-image: url('https://static.realmofempires.com/images/icons/Q_Upgrade2.png');
+                }
+                #village_popup .actions .qr a,
+                #village_popup .actions .qr div {
+                    background-image: url('https://static.realmofempires.com/images/icons/Q_Recruit2.png');
+                }
+                #village_popup .actions .incoming a,
+                #village_popup .actions .incoming div {
+                    background-image: url('https://static.realmofempires.com/images/icons/toVillage.png');
+                }
+                #village_popup .actions .outgoing a,
+                #village_popup .actions .outgoing div {
+                    background-image: url('https://static.realmofempires.com/images/icons/fromVillage.png');
+                }
+
+                
+
+            #village_popup .note {
+                padding: 16px 0;
+                text-align: center;
+                text-shadow: 1px 1px 2px #000000;
+                background: rgba(0,0,0,0.40);
+            }
+
+                #village_popup .note .noteUpdate {
+                    color: #ffd776;
+                    font: 16px/1.0em "IM Fell French Canon SC", serif;
+                    text-shadow: 1px 1px 2px #000000;
+                    text-align: center;
+                    display: inline-block;
+                    height: 30px;
+                    line-height: 30px;
+                    background: url('https://static.realmofempires.com/images/icons/M_Notes.png') 2px center no-repeat;
+                    background-size: 30px 30px;
+                    padding: 3px 6px 2px 34px;
+                }
+
+                #village_popup .note .currentNote {
+                    font-size: 13px;
+                    padding: 16px;
+                }
+
+       
+        .village_notePopup .notePopup {
+            text-align:center;
+        }
+
+        .village_notePopup .notePopup .customButtomBG {
+           margin-top:0px;
+        }
+
+        .village_notePopup .notePopup .editNotesTextarea {
+          width:90%;
+          height:100px;
+        }
+
+        .village_notePopup .notePopup .saveButton {
+            float: right;
+            margin-right: 40px;
+        }
+
+        .village_notePopup .notePopup .clearButton {
+           float: left;
+            margin-left: 40px;
+        }
+
+        .village_notePopup .notePopup .noteButtonWrapper {
+            overflow:auto;
+            padding:6px;
+        }
+       
+
+
+

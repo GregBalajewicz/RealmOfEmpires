@@ -1,0 +1,537 @@
+﻿#advisorLaunchIcon {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: 0px;
+    left: 100%;
+    border-radius: 50px;
+    border: 1px solid #a78e2e;
+    cursor: pointer;
+    margin-right: 7px;
+    text-shadow: 0px 3px 2px #000, 0px -3px 2px #000, -4px 0px 2px #000, 4px 0px 2px #000;
+    font-size: 25px;
+    background-image: url(https://static.realmofempires.com/images/misc/M_AdvisorSm.png);
+    background-position: 7px -6px;
+    background-color: rgba(47, 47, 47, 0.9);
+    background-size: 54px auto;
+    background-repeat: no-repeat;
+}
+    #advisorLaunchIcon.zero,
+    #advisorLaunchIcon.hide {
+        display: none !important;
+    }
+
+
+.advisorSpawnFly {
+    position: fixed;
+    z-index: 9999999;
+    background-size: 100% 100%;
+    width:176px;
+    height:176px;
+}
+
+.advisorFlyPanel {
+    position: absolute;
+    width: 170px;
+    padding: 8px;
+    background-color: #f8f6f5;
+    border: 2px solid #4ad0a8;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    text-shadow: none;
+    height: 100px;
+    z-index: 1;
+    background-image: url(https://static.realmofempires.com/images/icons/m_Quests2.png);
+    background-size: 88px 88px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+#advisorMain {
+    background-image: url(https://static.realmofempires.com/images/backgrounds/M_BG_Bazaar.jpg);
+}
+
+.advisorContent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,.7);
+}
+
+    .advisorContent .header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 40px;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: rgba(0,0,0,.5);
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .advisorContent .list {
+        position: absolute;
+        top: 42px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: rgba(0,0,0,.5);
+    }
+
+
+        .advisorContent .list .missionBox {
+            position: relative;
+            padding: 30px;
+            border: 1px solid rgba(133, 117, 72, 0.5);
+            margin-bottom: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+            .advisorContent .list .missionBox:hover {
+                background-color: rgba(0,0,0,.5);
+            }
+
+            .advisorContent .list .missionBox .img {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                bottom: 0px;
+                background-size: cover;
+                background-position: 50% 50%;
+            }
+
+            .advisorContent .list .missionBox .label {
+                font-size: 23px;
+                position: relative;
+                padding: 10px;
+                text-shadow: 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+                background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 100%);
+                background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%);
+                background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+            }
+
+            .advisorContent .list .missionBox.completed {
+                box-shadow: 0px 0px 10px 5px rgba(186, 168, 101, 0.8);
+                border: 1px solid rgba(186, 168, 101, 0.8);
+            }
+
+                .advisorContent .list .missionBox.completed .completeElement {
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    width: 34px;
+                    height: 34px;
+                    background-size: 100% 100%;
+                    background-image: url(https://static.realmofempires.com/images/misc/M_SmGood.png);
+                }
+
+            
+
+
+
+#advisorMain .expandArea {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    background-color: black;
+    background-position: 50% 50%;
+}
+
+    #advisorMain .expandArea .expandAreaContent {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        padding: 5px;
+        padding-top: 0px;
+        background: rgba(0,0,0,.7);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+        #advisorMain .expandArea .expandAreaContent .close {
+            display: none;
+            position: absolute;
+            right: 7px;
+            top: 7px;
+            width: 44px;
+            height: 44px;
+            background: url(https://static.realmofempires.com/images/icons/M_X.png);
+            background-size: 100% 100%;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        #advisorMain .expandArea .expandAreaContent .panel {
+            position: absolute;
+            box-sizing: border-box;
+            left: 0px;
+            right: 0px;
+            /* background: rgba(0,0,0,.3); */
+            padding: 10px;
+        }
+
+        #advisorMain .expandArea .expandAreaContent .detailsArea {
+            top: 0px;
+            bottom: 61px;
+        }
+
+            #advisorMain .expandArea .expandAreaContent .detailsArea .image {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-size: cover;
+            }
+
+            #advisorMain .expandArea .expandAreaContent .detailsArea .header {
+                position: relative;
+                font-size: 17px;
+                margin-bottom: 15px;
+                color: #e6cd90;
+            }
+
+            #advisorMain .expandArea .expandAreaContent .detailsArea .header2 {
+                position: relative;
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+
+            #advisorMain .expandArea .expandAreaContent .detailsArea .desc {
+                font-size: 17px;
+                line-height: 17px;
+            }
+
+            #advisorMain .expandArea .expandAreaContent .detailsArea .nav {
+                display:none !important;
+                position: absolute;
+                top: 50%;
+                margin-top: 0px;
+                cursor: pointer;
+                z-index:1;
+            }
+
+                #advisorMain .expandArea .expandAreaContent .detailsArea .nav.prev {
+                    left: 1px;
+                }
+
+                #advisorMain .expandArea .expandAreaContent .detailsArea .nav.next {
+                    right: 1px;
+                }
+
+                #advisorMain .expandArea .expandAreaContent .detailsArea .nav .arrow {
+                    position: absolute;
+                    left: 50%;
+                    margin-top: -1px;
+                    height: 28px;
+                    width: 24px;
+                    background-image: url(https://static.realmofempires.com/images/buttons/M_SP_Buttons.png);
+                }
+                #advisorMain .expandArea .expandAreaContent .detailsArea .nav.prev .arrow {
+                    background-position: -400px -100px;
+                    margin-left: -13px;
+                }
+                #advisorMain .expandArea .expandAreaContent .detailsArea .nav.next .arrow {
+                    background-position: -400px -50px;
+                    margin-left: -9px;
+                }
+
+        #advisorMain .expandArea .expandAreaContent .progressArea {
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            max-height: 90px;
+            padding: 0px;
+        }
+
+            #advisorMain .expandArea .expandAreaContent .progressArea #advisorProgressSVG {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+            }
+
+            #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer {
+                position: relative;
+                text-align: center;
+                padding: 5px;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            /**/
+                #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step {
+                    display: inline-block;
+                    position: relative;
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 50px;
+                    border: 1px solid rgba(0, 0, 0, 0);
+                    box-shadow: 0px 0px 5px 2px #635842;
+                    box-sizing: border-box;
+                    text-align: center;
+                    font-size: 27px;
+                    line-height: 25px;
+                    margin: 5px;
+                    margin-right: 35px;
+                    cursor: pointer;
+                    background-size: 100% 100%;
+                    background-position: 50% 50%;
+                }
+               
+
+    /*
+                #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step {
+                    display: inline-block;
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    text-align: center;
+                    font-size: 30px;
+                    margin: 3px;
+                    margin-right: 25px;
+                    line-height: 47px;
+                    background: url(https://static.realmofempires.com/images/D2test/CircleSm.png);
+                    cursor: pointer;
+                    background-size: 100% 100%;
+                    background-position: 50% 50%;
+                    border-radius: 60px;
+                    border: 1px rgba(255, 255, 255, 0) solid;
+                */
+
+                    #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step.completed {
+                        box-shadow: 0px 0px 5px 2px rgb(111, 206, 20);
+                        color: #05942d !important;
+                    }
+
+                        #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step.completed .completeElement {
+                            position: absolute;
+                            top: -5px;
+                            right: -3px;
+                            width: 20px;
+                            height: 23px;
+                            background-size: 100% 100%;
+                            background-image: url(https://static.realmofempires.com/images/misc/M_SmGood.png);
+                        }
+
+                    #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step.current {
+                        box-shadow: 0px 0px 5px 2px rgba(104, 226, 198, 0.8);
+                        color: cyan;
+                    }
+                        #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step.current .currentElement {
+                            position: absolute;
+                            top: -5px;
+                            right: -5px;
+                            left:-5px;
+                            bottom:-5px;
+                            background-size: 100% 100%;
+                            background-image: url(https://static.realmofempires.com/images/icons/M_Target.png);
+                        }
+
+                    #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step.selected {
+                        border: 1px rgba(255, 255, 255, 0.5) solid;
+                    }
+
+                    #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step .pointer {
+                        position: absolute;
+                        right: -40px;
+                        width: 40px;
+                        top: 50%;
+                        height: 8px;
+                        margin-top: -4px;
+                        background-image: url( https://static.realmofempires.com/images/animation/map_lineIncAttk.png);
+                    }
+                    #advisorMain .expandArea .expandAreaContent .progressArea .stepsContainer .step.completed .pointer {
+                        background-image: url( https://static.realmofempires.com/images/animation/map_lineIncSupport.png);
+                    }
+
+
+#advisorMiniPanelArea {
+    position: absolute;
+    left: 100%;
+    width: 115px;
+    height: 238px;
+    bottom: 0px;
+    margin-left: -5px;
+    background-image: url(https://static.realmofempires.com/images/misc/M_AdvisorSm.png);
+}
+    #advisorMiniPanelArea.hide {
+        display:none !important;
+    }
+    #advisorMiniPanelArea.dock {
+        display: none !important;
+    }
+
+    #advisorMiniPanelArea .advisorMiniPanel {
+        display: none;
+        position: absolute;
+        left: 80px;
+        bottom: 140px;
+        width: 190px;
+        padding: 8px;
+        text-align: center;
+        background-color: #f8f6f5;
+        border: 2px solid #4ad0a8;
+        border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        cursor: pointer;
+        color: black;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+        text-shadow: none;
+    }
+        #advisorMiniPanelArea .advisorMiniPanel.shown {
+            display: block;
+        }
+
+        #advisorMiniPanelArea .advisorMiniPanel .label {
+            font-size: 17px;
+            margin-bottom: 3px;
+        
+        }
+
+        #advisorMiniPanelArea .advisorMiniPanel .dismiss {
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            width: 34px;
+            height: 34px;
+            background: url(https://static.realmofempires.com/images/icons/M_X.png);
+            background-size: 100% 100%;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        #advisorMiniPanelArea .advisorMiniPanel .view {
+            margin: 0 auto;
+            margin-top: 5px;
+            margin-bottom: -5px;
+        }
+
+        #advisorMiniPanelArea .advisorMiniPanel.questMiniPanel {
+            width: 190px;
+                    padding: 10px 20px 10px 44px;
+            background-size: 44px 44px;
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+        }
+            #advisorMiniPanelArea .advisorMiniPanel.questMiniPanel .label {
+                
+            }
+            #advisorMiniPanelArea .advisorMiniPanel.questMiniPanel .desc {
+          
+            }
+
+/* custom steps area */
+#advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea {
+    position: absolute;
+    top: 90px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+}
+
+    #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .head1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        line-height: normal;
+    }
+
+
+    #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .stepComplete {
+        font: 27px "IM Fell French Canon", serif;
+        color: #e6cd90;
+        margin-top: 20px;
+        text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+    #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .stepCompleteBtn {
+        margin: 0 auto;
+        margin-top: 5px;
+        padding-top: 12px;
+    }
+
+    #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .item {
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 90px;
+        margin: 5px;
+        font-size: 10px;
+        cursor: pointer;
+        text-shadow: 0px 3px 3px #000, 0px -3px 3px #000, -4px 0px 3px #000, 4px 0px 3px #000;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-size: 40px auto;
+        background-position: 50% 15px;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+        border-top: 1px solid #676131;
+        border-bottom: 1px solid #27261A;
+        box-shadow: 0px 0px 5px 0px cyan;
+    }
+
+        #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .item .text {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            padding: 3px;
+        }
+
+        #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .item .c {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: #000;
+            padding: 0px 8px;
+            border-radius: 10px;
+            min-width: 12px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        /*intro attack - step 0 */
+        #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .item.cm50 {
+        }
+
+        #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .item.rebel {
+            background-size: 84px auto;
+            background-position: 50% 50%;
+            background-image:url(https://static.realmofempires.com/images/map/highlands/vILL/VillVar1_1a.png);
+        }
+        #advisorMain .expandArea .expandAreaContent .detailsArea .onviewArea .item .rebelSkull {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -25px;
+            margin-top: -25px;
+            width: 18px;
+            height: 20px;
+            background-size: 100% 100%;
+            background-image: url(https://static.realmofempires.com/images/map/freb.png);
+        }

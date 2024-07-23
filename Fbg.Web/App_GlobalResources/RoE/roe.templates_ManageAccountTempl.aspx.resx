@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="InputErrorInvalidEmail" xml:space="preserve">
+    <value>Error! Please enter your email in the following format: email@domain.com</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Page1EmailNotVerified" xml:space="preserve">
+    <value>&lt;p&gt;Your email is not yet verified. Please check to make sure this is your email and click OK.  If you do not verify your email, you risk losing your empire.&lt;/p&gt;</value>
+  </data>
+  <data name="Page1EmailNotVerified_d2" xml:space="preserve">
+    <value>&lt;p&gt;Your email is needed in order to &lt;a href=# onclick=ROE.Frame.settingsPopup(0)&gt;alert you&lt;/a&gt; of important events such as incoming attacks. 
+&lt;BR&gt;&lt;BR&gt; We either do not have your email, or you have not verified it.
+
+&lt;BR&gt;&lt;BR&gt;Don't worry, we won't spam you or sell your email to evil marketing firms for profit. You can change your notification settings &lt;a href=# onclick=ROE.Frame.settingsPopup(0)&gt;here&lt;/a&gt;.
+
+&lt;BR&gt;&lt;BR&gt;Please enter your email below and click OK&lt;/p&gt;</value>
+  </data>
+  <data name="Page1SetupTactica" xml:space="preserve">
+    <value>&lt;p&gt;Your account is vulnerable!&lt;/p&gt;
+&lt;p&gt;In the event you lose, damage, &lt;br /&gt; upgrade your device or even reinstall the game,&lt;br /&gt; you will lose access to your empire!&lt;/p&gt;
+&lt;p&gt;Please secure it by creating a &amp;nbsp;&lt;img width="16" height="16" align="middle" src="https://static.realmofempires.com/images/misc/tacticaIcon.png"&gt; Tactica Account.&lt;/p&gt;</value>
+  </data>
+  <data name="Page2IsCorrect" xml:space="preserve">
+    <value>&lt;p&gt;Is &lt;span class="currEmailAccount"&gt;&lt;/span&gt; correct?&lt;/p&gt;</value>
+  </data>
+  <data name="SecureAccount" xml:space="preserve">
+    <value>Secure My Account Now</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SubmitResponseEmailTaken" xml:space="preserve">
+    <value>&lt;p&gt;Email is already in use, please try a different email.&lt;/p&gt;</value>
+  </data>
+  <data name="SubmitResponseError" xml:space="preserve">
+    <value>&lt;p style='color:red'&gt;An unexpected error occurred. Please try again in a few minutes or contact support if this persists.&lt;/p&gt;</value>
+  </data>
+  <data name="SubmitResponseOK" xml:space="preserve">
+    <value>&lt;p&gt;Thank you.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT NEXT STEP&lt;/strong&gt;: look for an email from us and follow directions in it to verify your email address. Please check the spam folder if you don't see the email in a few minutes.&lt;/p&gt;</value>
+  </data>
+  <data name="TitleConfirm" xml:space="preserve">
+    <value>Confirm Your Email</value>
+  </data>
+  <data name="TitleProtect" xml:space="preserve">
+    <value>Protect Your Empire</value>
+  </data>
+  <data name="TitleResponse" xml:space="preserve">
+    <value>Status of Changes</value>
+  </data>
+</root>

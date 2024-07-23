@@ -1,0 +1,64 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterInfoPage.master.cs" Inherits="masterInfoPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%= RSc("GameName") %></title>
+    <%=Fbg.Common.WebHelper.FileList.js(Fbg.Common.WebHelper.FileList.FOR.popupfulFunct, isMobile, Config.InDev)%>
+                    <meta name="viewport" content="width=device-width"/>
+
+    <link href="main.2.css?6" rel="stylesheet" type="text/css" />
+    <link href="static/menus_c.css" rel="stylesheet" type="text/css" />
+    <link href="static/help.css" rel="stylesheet" type="text/css" />
+    
+        <link href="static/jqueryui.css" rel="stylesheet" type="text/css" />
+
+   <script type="text/javascript">
+       <asp:Literal runat=server ID="lblJSONStruct"></asp:Literal>    
+
+       $(function () {     
+            jaxReplace();
+            UpdateStartingCoins();
+            initTimers();
+             $('.helpQuestion, #highlight').remove();
+            initHelp();
+            InitStripeTable();
+            initFakeSelects();
+            InitAutoPop();
+            InitAutoPop2();
+            InitAutoPop3();
+             initTutorial();
+            page.load_scripts();
+            if (typeof window.initHideBuildRequirements === 'function') { initHideBuildRequirements(); }
+            <asp:contentplaceholder id="IntoPageLoad" runat="server">
+            </asp:contentplaceholder>
+
+            //FixFFLinkIssue();
+            if (typeof window.CustomOnLoad === 'function') { CustomOnLoad(); }
+        });        
+    </script> 
+
+
+    <asp:contentplaceholder id="HeadPlaceHolder" runat="server">
+    </asp:contentplaceholder>
+    <link type="text/json" rel="help" href="static/help/j_Global.json.aspx" />
+</head>
+<body style="margin-left: 0; margin-right: 0;">
+    <form id="form1" runat="server">
+        <div class="TDContent" style="width: 100%; float: left; clear: both;font-size:11pt;">
+                  <%if (!isMobile && !isD2 && String.IsNullOrEmpty(Request.QueryString["noheader"]) ) { %>
+            <table width="100%" height="46" border="0" cellpadding="0" cellspacing="0" background="https://static.realmofempires.com/images/HeaderBG3.gif">
+                <tr>
+                    <td align=center>
+                        <font color="#FFD886" style="font-size: 13pt;" face="Verdana, Arial, Helvetica, sans-serif"><%= RSc("GameName")%></font>                        
+                    </td>                        
+                </tr>
+            </table>
+            <%} %>
+            <asp:ContentPlaceHolder ID="cph1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿/* styles for ManageAccountTempl template */
+
+#account_popup {
+    /* background-color:black;*/
+    background-color: rgba(6, 20, 31, 0.9) !important;
+}
+
+#account_popup p {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 6px;
+
+    /* borrowed from .fontDarkGoldFrLCmed in roe-ui.css */
+    font: 13px "IM Fell French Canon", serif;
+    color: #C5B494;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#account_popup h1 {
+    margin:0px;
+    padding:0px;
+    margin-bottom: 6px;
+
+    /* borrowed from .fontGoldFrLClrg in roe-ui.css */
+    font: 15px "IM Fell French Canon", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+#account_popup a:hover {
+    text-decoration:none;
+}
+
+#account_popup .errMsg {
+    color:red;
+    font-weight: bold;
+    display:none;
+}
+
+#account_popup .contentWrapper {
+    padding: 4px;
+}
+
+#account_popup .contentWrapper p,
+#account_popup .contentWrapper h1 {
+    text-align:center;
+}
+
+#account_popup .accountPages {
+    display:none;
+    /* so the tables float vertically unblurred */
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#account_popup .accountPages.default {
+    display:block;
+}
+
+#account_popup table {
+    width:100%;
+    /* center the table vertically */
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#account_popup td.buttonColumn {
+    text-align: center;
+}
+
+#account_popup .BtnBLg1  {
+    display:inline-block;
+}
+
+#account_popup .currEmailAccount {
+    color:white;
+}
+
+#account_popup table.buttonBar {
+    position:absolute;
+    bottom:0;
+}
+
+#account_popup .stylishInputBox {
+    width: 90%;
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+#accountDialog {
+   /* background-image: url('https://static.realmofempires.com/images/misc/Intro.jpg'); */
+    background: url('https://static.realmofempires.com/images/backgrounds/M_BG_Tower.jpg') no-repeat center center fixed;
+}

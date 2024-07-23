@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AttackBonus" xml:space="preserve">
+    <value>This feature adds 20% to your offensive ability  in all of your villages.
+
+&lt;BR&gt;&lt;BR&gt;Only attacks launched when this feature is active will get the 20% bonus. 
+
+&lt;BR&gt;&lt;BR&gt;If you activiate this feature AFTER an attacks was launched that attack will NOT get the bonus. </value>
+  </data>
+  <data name="AttackBonus_PFName" xml:space="preserve">
+    <value>Blood Lust Spell</value>
+  </data>
+  <data name="BattleSimImprovements" xml:space="preserve">
+    <value>This premium feature gives you a number of convenient extensions to the battle simulator such as :
+
+&lt;UL&gt;
+&lt;LI&gt;Ability to paste troops from report to simulator&lt;/LI&gt;
+&lt;LI&gt;More convenient battle handicap calculator&lt;/LI&gt;
+&lt;/UL&gt;</value>
+  </data>
+  <data name="BattleSimImprovements_PFName" xml:space="preserve">
+    <value>Battle Simulator Plus</value>
+  </data>
+  <data name="BuildingQ" xml:space="preserve">
+    <value>
+Unlocking this feature allows you to add &lt;strong&gt;unlimited building upgrade&lt;/strong&gt;
+        assignments!
+        &lt;br /&gt;
+        &lt;br /&gt;
+        This
+        is perfect time saver if you are unable to check your village often.&lt;br/&gt;&lt;BR&gt;
+You will also get a handy feature that allows you to upgrade to a maximum possible level with just one click.&lt;BR&gt;&lt;BR&gt;You can still upgrade buildings without this feature by queuing 2 upgrades at a time.&lt;BR&gt;
+
+&lt;BR&gt;&lt;BR&gt;Note that on some realms, unlimited building Q is only available when your Headquaters have reached a certain level.</value>
+  </data>
+  <data name="BuildingQ_PFName" xml:space="preserve">
+    <value>Unlimited Building Q + Improvements</value>
+  </data>
+  <data name="CommandTroopsEnhancements" xml:space="preserve">
+    <value>This premium feature give you: 
+
+&lt;UL&gt;
+&lt;LI&gt;a quickly accessible list of the last 10 villages you either attacked or supported. Makes repeating commands much easier!&lt;/LI&gt;
+&lt;LI&gt;distance to target display when attacking or supporting&lt;/LI&gt;
+&lt;LI&gt;distance to target display when switching villages from command troops popup&lt;/LI&gt;
+&lt;LI&gt;sort villages by distance to destination when switching villages from command troops popup&lt;/LI&gt;
+&lt;LI&gt;See troops in villages when switching villages from command troops popup&lt;/LI&gt;
+&lt;LI&gt;Troops in your village display on the map&lt;/LI&gt;
+&lt;LI&gt;One-click support/attack&lt;/LI&gt;
+&lt;/UL&gt;</value>
+  </data>
+  <data name="CommandTroopsEnhancements_PFName" xml:space="preserve">
+    <value>Command Troops Enhancements</value>
+  </data>
+  <data name="ConvenientSilverTransport" xml:space="preserve">
+    <value>&lt;img src="https://static.realmofempires.com/images/misc/trade.png" 
+                    align="Left" style='padding:3px;' /&gt;
+                &lt;b&gt;Convenient Silver Transport&lt;/b&gt; 
+                &lt;br /&gt;
+                Allows you to easily
+                transport silver from
+                your other villages
+                to your current one.&lt;br /&gt;&lt;br /&gt;
+                Rather than having to send multiple transports to one village from many villages, you can just send those transports without leaving your current village.
+&lt;br /&gt;&lt;BR&gt;
+You can also conveniently and quickly send silver from your villages to someone else's village.&lt;BR&gt;
+</value>
+  </data>
+  <data name="ConvenientSilverTransport_PFName" xml:space="preserve">
+    <value>Convenient Silver Transport</value>
+  </data>
+  <data name="DefenseBonus" xml:space="preserve">
+    <value>This feature adds 20% to your defensive ability in all of your villages.
+
+&lt;BR&gt;&lt;BR&gt;While enabled, your troops' defend ability strength is increased by 20%. Any attacks against you that LAND while this feature is enabled are affected.</value>
+  </data>
+  <data name="DefenseBonus_PFName" xml:space="preserve">
+    <value>Bravery Spell</value>
+  </data>
+  <data name="Generic" xml:space="preserve">
+    <value>Premium features give you access to some advanced tools designed for time saving and convenience. All features necessary to play the game are, and always will be available at no cost and premium features will not offer any unfair or direct advantages such as give you more silver, stronger troops etc.&lt;BR&gt;</value>
+  </data>
+  <data name="GiantMap" xml:space="preserve">
+    <value>Unlocking this feature gives you access to a&lt;strong&gt; GIANT 25x25 and 45x45 square map!&lt;/strong&gt;&lt;br /&gt;&lt;BR&gt;
+            &lt;B&gt;Please note that this map take a little longer to load and you must have a sufficiently powerful computer to display it well.&lt;/B&gt;&lt;BR&gt;&lt;BR&gt;This map performs best under Fire Fox 3.x or Internet Explorer 8
+&lt;br /&gt;&lt;BR&gt;You will also get graphical indicators, right on the map, of your attacks or support sent out at other villages</value>
+  </data>
+  <data name="GiantMap_PFName" xml:space="preserve">
+    <value>GIANT Map (25x25 and 45x45)</value>
+  </data>
+  <data name="ImprovedVOV" xml:space="preserve">
+    <value>&lt;img src="https://static.realmofempires.com/images/misc/hq_w_counter.gif" 
+                    align="Left" style='padding:3px;'/&gt;
+&lt;UL&gt;&lt;Li&gt;&lt;B&gt;Building busy counters&lt;/b&gt;&lt;BR&gt;Counters over buildings which tell you when a building will become idle. (ex, counter over the Headquarters tells you when all upgrades are completed&lt;/LI&gt;
+&lt;LI&gt;&lt;B&gt;Troop movements&lt;/B&gt;&lt;BR&gt;See all incoming and outgoing troops from/to this village right on the village overview screen - no need to go to the Incoming and Outgoing pages! Also on Summar Pages&lt;/li&gt;
+&lt;LI&gt;&lt;B&gt;Non-graphical overview enhancements&lt;/B&gt;&lt;BR&gt;In a non-graphical village overview mode, you will find many, many enhancements including busy counters, quick upgrade link, list of upgrades and recruitments, helpful info and more.&lt;/li&gt;
+
+&lt;/ul&gt;</value>
+  </data>
+  <data name="ImprovedVOV_PFName" xml:space="preserve">
+    <value>Village Overview Enhancements</value>
+  </data>
+  <data name="IncomingOutgoingAllVillages" xml:space="preserve">
+    <value>While it is a great to be able to see the list of incoming or outgoing troops just from your current village, this premium feature allows you to also see the list of troops incoming to &lt;B&gt;all&lt;/b&gt; your villages, as well as the list of outgoing troops from &lt;b&gt;all&lt;/b&gt; your villages, all on one page.
+
+&lt;BR&gt;&lt;BR&gt;You can always see all your troops movements but without this feature, you can see them one village at a time.&lt;BR&gt;</value>
+  </data>
+  <data name="IncomingOutgoingAllVillages_PFName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IncomingOutgoingEnhacements" xml:space="preserve">
+    <value>This premium feature gives you various great enhacements to the incoming and outgoing troops page such as:
+&lt;UL&gt;
+&lt;LI&gt;&lt;img src='https://static.realmofempires.com/images/visible.png' /&gt; / &lt;img src='https://static.realmofempires.com/images/hidden.png' /&gt; Hide particular incoming and outoging troops that you do not want to see&lt;/li&gt;
+&lt;LI&gt;&lt;img src='https://static.realmofempires.com/images/funnel1.png' /&gt; Limit the list of incoming or outgoing troops to only the type you are currently interested in. For example, if you are under attack, you may want to limit the list of incoming troops to just attacks thus saving you time in assessing your situation.&lt;/li&gt;
+&lt;LI&gt;&lt;img src='https://static.realmofempires.com/images/funnel1.png' /&gt; Filter the incoming and outgoing troops page based on from/to player and village&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="IncomingOutgoingEnhacements_PFName" xml:space="preserve">
+    <value>Incoming and Outgoing troops enhancements</value>
+  </data>
+  <data name="IncomingOutgoingOnVov" xml:space="preserve">
+    <value>This feature gives you a convenient view of the troops incoming and outgoing from your current village right on the Village Overview screen - no need to go to the Incoming and Outgoing pages!&lt;BR&gt;&lt;BR&gt;Remember! you can still see troops incoming and ourgoing from the current village from the Troops menu. This feature is only for convenience&lt;BR&gt;</value>
+  </data>
+  <data name="IncomingOutgoingOnVov_PFName" xml:space="preserve">
+    <value>Troop movements on your village overview</value>
+  </data>
+  <data name="IncomingTroopsToFromVillagePlayer" xml:space="preserve">
+    <value>This feature give you convenient view of the troops travelling between your villages and a village on Village Overview page, or on Player's Overview Page. &lt;BR&gt;&lt;BR&gt;For example, when looking at a player's overview page, you will have a list of all attacks or supports you have sent at some of his villages as well as all attacks or supports (that you know about) coming from one of his villages. You can drill deeper by looking at just one of his villages and then the lists will be further filtered to only include the village you are studying. &lt;BR&gt;&lt;BR&gt;Although, as with all premium features, you can get all this information from the Incoming &amp; Outgoing page, this feature will save you a few clicks - a nice time saver!&lt;BR&gt;</value>
+  </data>
+  <data name="IncomingTroopsToFromVillagePlayer_PFName" xml:space="preserve">
+    <value>Troop movements on Player and Village overview</value>
+  </data>
+  <data name="LargeMap" xml:space="preserve">
+    <value>Unlocking this feature allows you to customize your map size - &lt;strong&gt;up to 19x19 squares&lt;/strong&gt;
+        giving you a larger view of your surrounding.
+        &lt;br /&gt;
+&lt;BR&gt;You will also get graphical indicators, right on the map, of your attacks or support sent out at other villages</value>
+  </data>
+  <data name="LargeMap_PFName" xml:space="preserve">
+    <value>Large Map (9x9 to 19x19)</value>
+  </data>
+  <data name="MassRecruitAndUpgrade" xml:space="preserve">
+    <value>Here are the set of features included in this package:
+&lt;UL&gt;
+&lt;LI&gt;Mass Recruit allows you to easily and quickly recruit troops in all or some of your villages.
+&lt;LI&gt; Mass Upgrade allows you to upgrade a building to a certain level in all or some of your villages with just a few clicks.
+&lt;/li&gt;&lt;li&gt;Mass Downgrade allows you to easily demolish buildings you don't want
+&lt;/li&gt;&lt;li&gt;Mass Disband allows you to quickly disband unwanted troops, perhaps when you want to make room for better class troops
+&lt;/li&gt;&lt;li&gt;Mass chest buy allows you to quickly buy chests in all villages
+ &lt;/UL&gt;</value>
+  </data>
+  <data name="MassRecruitAndUpgrade_PFName" xml:space="preserve">
+    <value>Mass Upgrade, Recruit, Downgrade and more</value>
+  </data>
+  <data name="MessageImprovements" xml:space="preserve">
+    <value>This premium feature includes some improvements to the messages view. You can:
+
+&lt;UL&gt;
+&lt;LI&gt;View archived messages (messages older than 14 days)&lt;/LI&gt;
+&lt;LI&gt;Group your messages into custom folders.&lt;/LI&gt;
+&lt;LI&gt;Archive your messages (those messages will not be deleted after 30 days)&lt;/LI&gt;
+&lt;LI&gt;Check recipients of a message - so that you don't send secret information to enemies by mistake!&lt;/li&gt;
+&lt;/UL&gt;</value>
+  </data>
+  <data name="MessageImprovements_PFName" xml:space="preserve">
+    <value>Messages Plus</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>This feature allows you to write personal notes both on other players and their villages. These can help you remember important information about a player or about a village such as a player being a good friend who helped you in need, or one that back stabbed you when in need! Or help you remember some inside information about a village - perhaps you learn that a particular village has only spies, you can make a note about this, etc.&lt;BR&gt;&lt;BR&gt; You can see these notes on player overview/information screen and on the village overview screens. You will also get an indicator on the map if you have a note on a village or players&lt;BR&gt;</value>
+  </data>
+  <data name="Notes_PFName" xml:space="preserve">
+    <value>Notes on Players and Villages</value>
+  </data>
+  <data name="ReportImprovements" xml:space="preserve">
+    <value>This premium feature includes a number of improvements to the reports view. You are able to:
+&lt;ul&gt;&lt;LI&gt;view archived reports (reports older than 14 days)&lt;/li&gt;&lt;li&gt; group your reports into custom folders&lt;/li&gt;&lt;li&gt;filter your reports based on various criteria&lt;/li&gt;&lt;li&gt;navigation to next/previous report&lt;/li&gt;&lt;LI&gt;archive your reports into custom folders (those reports will not be deleted after 30 days)&lt;/LI&gt;&lt;/ul&gt;</value>
+  </data>
+  <data name="ReportImprovements_PFName" xml:space="preserve">
+    <value>Reports Plus</value>
+  </data>
+  <data name="RewardNow" xml:space="preserve">
+    <value>This feature is available only as part of the Nobility Package and gives you the option of claiming a reward without completing a beginner's quest*.
+
+&lt;BR&gt;&lt;BR&gt;It is offered as a time-saver to seasoned players who have played on other realms and seen these quests before.
+
+&lt;BR&gt;&lt;BR&gt;NOTE: Players with or without the Nobility Package get the same number of quests and the same reward amount.
+
+&lt;BR&gt;&lt;BR&gt;* this option is available for most but not all quests. Some quests, such as those that ask you to build a building or recruit troops will not have this option as this may give the Nobility Package holder an unfair advantage</value>
+  </data>
+  <data name="RewardNow_PFName" xml:space="preserve">
+    <value>rewardNow&amp;trade;</value>
+  </data>
+  <data name="SilverBonus" xml:space="preserve">
+    <value>This feature gives you 25% more silver production from your silver mine in all of your villages.</value>
+  </data>
+  <data name="SilverBonus_PFName" xml:space="preserve">
+    <value>Elven Efficiency Spell</value>
+  </data>
+  <data name="SummaryPages" xml:space="preserve">
+    <value>Summary pages give you a high level overview of all your villages.&lt;BR&gt;&lt;BR&gt; 
+You can quickly see:
+&lt;UL&gt;&lt;LI&gt;what buildings you have in your villages&lt;/LI&gt;
+&lt;LI&gt;which buildings are idle or when they will become idle&lt;/LI&gt;
+&lt;LI&gt;what troops you have in your villages.&lt;/LI&gt;
+&lt;LI&gt;what villages have incoming attacks and support troops*&lt;/LI&gt;
+&lt;LI&gt;you can buy treasure chests from all or some of your villages with one click&lt;/LI&gt;
+&lt;LI&gt;full summary pages on the mass recruit and mass build page&lt;/LI&gt;
+&lt;/UL&gt;
+&lt;BR&gt;&lt;BR&gt;
+* this feature is only available if you have 'Village Overview Enhancements' premium feature active</value>
+  </data>
+  <data name="SummaryPages_PFName" xml:space="preserve">
+    <value>Summary / Overview Pages</value>
+  </data>
+  <data name="SupportAllVillage" xml:space="preserve">
+    <value>While it is a great to be able to to see the support you have, or support you sent out from just your current village, this premium feature allows you to also see all your troops supporting other villages, and also support you have at any of your villages, all on one page.
+
+&lt;BR&gt;&lt;BR&gt;You can always see all your troops but without this feature, you can see them one village at a time. </value>
+  </data>
+  <data name="SupportAllVillage_PFName" xml:space="preserve">
+    <value>See Support and Abroad Troops from all villages</value>
+  </data>
+  <data name="SupportReturnsFaster" xml:space="preserve">
+    <value>This feature shortens the time it takes to recall any of your support in other villages by a factor of 10.  The feature only affects recalled support while the feature is enabled.</value>
+  </data>
+  <data name="SupportReturnsFaster_PFName" xml:space="preserve">
+    <value>GodSpeedSpell</value>
+  </data>
+  <data name="TagsAndFilters" xml:space="preserve">
+    <value>Tags and Filters are a flexible and powerful tool for managing your villages. In a nutshell, this allows you to group your villages into custom groups like ‘My attack villages’ or ‘My attack villages in the north sector’ or ‘My spy villages’ etc
+&lt;BR&gt;&lt;BR&gt;
+You &lt;I&gt;tag&lt;/i&gt; villages and then create &lt;i&gt;filters&lt;/i&gt; to show villages with certain tags. Thus creating flexible &lt;i&gt;groups&lt;/I&gt; that allow a village to belong to one or many groups. 
+&lt;BR&gt;&lt;BR&gt;
+Once grouped, you can view summary pages for villages just in one group allowing you to quickly scan to see if any action on your part is required. Likewise you can step through all your villages in a group using the previous &amp; next village navigation icons. 
+&lt;BR&gt;&lt;BR&gt;
+It’s an excellent time saving feature!</value>
+  </data>
+  <data name="TagsAndFilters_PFName" xml:space="preserve">
+    <value>Village Tags and Filters</value>
+  </data>
+</root>

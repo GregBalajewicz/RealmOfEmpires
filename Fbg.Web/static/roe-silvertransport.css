@@ -1,0 +1,260 @@
+﻿
+/*
+    #popup_SilverTransport is M only
+    #transportSilverDialog is D2 only
+    #silvertransport_popup applies to both M and D2
+*/
+
+#popup_SilverTransport {
+    background-image: url(https://static.realmofempires.com/images/misc/M_BG_Treasury.jpg);
+    background-size: 100% auto;
+    /*hack for the silvertransport M popup sometimes somehow not working.*/
+    z-index: 30901;
+}
+
+    #popup_SilverTransport .popupBody {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        height: auto !important;
+        margin-top: 40px;
+    }
+
+    #popup_SilverTransport .IFrameDivTitle {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #popup_SilverTransport .themeM-panel.header > .fg > .label {
+        text-align: center;
+    }
+    /*
+    #popup_SilverTransport .roeslider {
+        position: relative;
+        width: 150px;
+        height: 23px;
+        margin: 0 auto;
+        background-color: #2863AE;
+        border: 1px solid #11113A;
+        box-shadow: inset 0px 0px 5px #000;
+        border-radius: 30px;
+    }
+
+        #popup_SilverTransport .roeslider .ui-slider-handle {
+            position: absolute;
+            z-index: 2;
+            width: 30px;
+            height: 30px;
+            border-radius: 40px;
+            cursor: default;
+            margin-left: -1.6em;
+        }
+*/
+
+
+#silvertransport_popup .headerPanel {
+    position:relative;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0px bottom;
+    margin-bottom:4px;
+}
+    #silvertransport_popup .headerPanel .destinationWrapper {
+        text-align: center;
+        margin-bottom:7px;
+    }
+
+    #silvertransport_popup .headerPanel .mainBtns {
+        text-align: center;
+    }
+    #silvertransport_popup .headerPanel .getMaxAll {
+        position: relative;
+        display:inline-block;
+    }
+        #silvertransport_popup .headerPanel .viewTransports {
+        position: relative;
+        display:inline-block;
+    }
+    #silvertransport_popup .headerPanel .showFilters {
+        position: relative;
+        float: right;
+        top: -31px;
+        right: 21px;
+    }
+        #silvertransport_popup .headerPanel .showFilters .filterIcon {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-image: url('https://static.realmofempires.com/images/icons/M_FilterB.png');
+        }
+
+        /*filter popup*/
+.silverTransportFiltersPopup .pContainer {
+    max-width: 300px;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -150px;
+}
+    .silverTransportFiltersPopup .pContainer .minOption,
+    .silverTransportFiltersPopup .pContainer .villOption {
+        margin: 0 auto;
+        position: relative;
+        width: 120px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+        .silverTransportFiltersPopup .pContainer .minOption .minOptionAmount,
+        .silverTransportFiltersPopup .pContainer .villOption .villOptionAmount {
+            width: 100px;
+            margin: 5px 0px;
+        }
+    .silverTransportFiltersPopup .pContainer .setOptions {
+        margin: 0 auto;
+    }
+
+
+#silvertransport_popup .tp {
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+}
+    #silvertransport_popup .tp.tpLeft {
+        left: 0px;
+        right: 160px;
+    }
+    #silvertransport_popup .tp.tpMid {
+        width: 80px;
+        right: 80px;
+    }
+    #silvertransport_popup .tp.tpRight {
+        right: 0px;
+        width: auto;
+    }
+
+#silvertransport_popup .tableHead {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+    #silvertransport_popup .tableHead .tp.tpLeft {
+        top: 9px;
+    }
+
+#silvertransport_popup .villagesPanel {
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    top: 120px;
+    bottom: 0px;
+}
+    #silvertransport_popup .villagesPanel .noTransports {
+        position: relative;
+        padding: 5px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #silvertransport_popup .villagesPanel .villageRow {
+        position: relative;
+        height: 38px;
+        text-align: center;
+          background: rgba(29, 32, 32, 0.9);
+    }
+        #silvertransport_popup .villagesPanel .villageRow:nth-child(even) {
+            background: rgba(42, 50, 50, 0.9);
+        }
+        #silvertransport_popup .villagesPanel .villageRow:hover {
+            background: rgba(12, 12, 12, 0.9) !important;
+        }
+        #silvertransport_popup .villagesPanel .villageRow .containerBusyMask .busyMaskText {
+            padding: 0px;
+            padding-top: 10px;
+            top: 0px;
+            bottom: 0px;
+            height: auto;
+            font: 17px "IM Fell French Canon", serif;
+            background-position: 250px 10px;
+            background-size: 20px 20px;
+        }
+#transportSilverDialog .villagesPanel .villageRow {
+    margin-bottom: 1px;
+}
+#popup_SilverTransport .villagesPanel .villageRow {
+    margin-bottom: 4px;
+}
+
+#silvertransport_popup .villagesPanel .villageRow .transportTime {
+    color: #A7A7A7;
+}
+
+#silvertransport_popup .villagesPanel .villageRow .villageName,
+#silvertransport_popup .villagesPanel .villageRow .villageCords {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#silvertransport_popup .villagesPanel .villageRow .sendMax,
+#silvertransport_popup .villagesPanel .villageRow .sendAmount {
+    position: relative;
+    display: inline-block;
+    padding-top: 12px;
+}
+
+#silvertransport_popup .villagesPanel .villageRow .sendAmountGo,
+#silvertransport_popup .villagesPanel .villageRow .deactivateRow   {
+    display: none;
+    padding-top: 10px;
+}
+#silvertransport_popup .villagesPanel .villageRow .sendAmountInput {
+    display: none;
+    width: 70px;
+    margin: 4px 3px;
+    padding: 5px;
+}
+#silvertransport_popup .villagesPanel .villageRow .deactivateRow {
+    background: url("https://static.realmofempires.com/images/icons/M_X.png");
+    background-size: 100% 100%;
+}
+
+
+
+#silvertransport_popup .villagesPanel .villageRow .inputActive .sendAmountGo,
+#silvertransport_popup .villagesPanel .villageRow .inputActive .sendAmountInput,
+#silvertransport_popup .villagesPanel .villageRow .inputActive .deactivateRow {
+    display: block;
+    position: relative;
+    float: left;
+}
+#silvertransport_popup .villagesPanel .villageRow .inputActive .sendMax,
+#silvertransport_popup .villagesPanel .villageRow .inputActive .sendAmount {
+    display: none;
+}
+#silvertransport_popup .villagesPanel .villageRow .tpRight.inputActive {
+    width: auto;
+}
+
+#popup_SilverTransport .villagesPanel .villageRow .tpRight.inputActive {
+    background-color: #181818;
+    border-radius: 35px;
+}
+
+
+.mobile #silvertransport_popup .villagesPanel {
+    top: 165px;
+}
+    .mobile #silvertransport_popup .villagesPanel.foreign {
+        top: 120px;
+    }

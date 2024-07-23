@@ -1,0 +1,293 @@
+﻿#massActionsDialog {
+    background-image: url(https://static.realmofempires.com/images/backgrounds/M_BG_Clan.jpg);
+}
+
+
+
+.massActionsContent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,.7);
+}
+
+    .massActionsContent .close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 44px;
+        height: 44px;
+        background: url(https://static.realmofempires.com/images/icons/M_X.png);
+        background-size: 100% 100%;
+        cursor: pointer;
+       /* z-index: 1;*/
+    }
+
+    .massActionsContent .header {
+        position: relative;
+        width: 100%;
+        height: 35px;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: rgba(0,0,0,.6);
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .massActionsContent .toolkit {
+        position: absolute;
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgba(0,0,0,.4);
+    }
+
+        .massActionsContent .toolkit .massActionBtn {
+            position: relative;
+            float: left;
+            margin: 5px;
+            width: 44px;
+            height: 44px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+            background-size: 100% 100%;
+        }
+
+            .massActionsContent .toolkit .massActionBtn.massChestBuy {
+                background-image: url(https://static.realmofempires.com/images/icons/M_Icon_MultiChest.png);
+            }
+
+            .massActionsContent .toolkit .massActionBtn.massRecruit {
+                background-image: url(https://static.realmofempires.com/images/icons/M_MassRecruit.png);
+            }
+
+            .massActionsContent .toolkit .massActionBtn.massBuild {
+                background-image: url(https://static.realmofempires.com/images/icons/M_MassUpgrade.png);
+            }
+
+            .massActionsContent .toolkit .massActionBtn.massDisband {
+                background-image: url(https://static.realmofempires.com/images/icons/M_MassDisband.png);
+            }
+
+            .massActionsContent .toolkit .massActionBtn.massDowngrade {
+                background-image: url(https://static.realmofempires.com/images/icons/M_MassDowngrade.png);
+            }
+            
+
+
+    .massActionsContent .panel {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-image: url(https://static.realmofempires.com/images/backgrounds/M_BG_Clan.jpg);
+        background-size: cover;
+        background-position:50% 50%;
+        overflow: auto;
+    }
+
+        .massActionsContent .panel .subPanel {
+            background-color: rgba(0,0,0,.6);
+            margin-bottom: 5px;
+            padding: 10px;
+            text-shadow: 1px 1px black, -1px -1px black, 1px 1px black, -1px -1px black;
+        }
+            .massActionsContent .panel .subPanel .section {
+                position: relative;
+                margin-bottom: 5px;
+                overflow: hidden;
+            }
+
+
+
+
+    .massActionsContent .massRecruitPanel {
+    
+    }
+        .massActionsContent .massRecruitPanel .optionsPanel .addMore {
+            position: relative;
+            padding: 5px;
+            background: rgba(0,0,0,.5);
+            overflow: hidden;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .massActionsContent .massRecruitPanel .optionSet {
+            position: relative;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius:5px;
+            padding: 5px;
+            background: rgba(0,0,0,.5);
+        }
+
+
+
+        .massActionsContent .massRecruitPanel .methodContainer {
+        }
+
+
+
+            .massActionsContent .massRecruitPanel .methodContainer .method {
+                position: relative;
+                border: 1px solid white;
+                border-radius: 5px;
+                padding: 7px;
+                overflow: hidden;
+                display: inline-block;
+                margin-right: 5px;
+                cursor: pointer;
+                background-position: 5px 50%;
+                background-repeat: no-repeat;
+            }
+                .massActionsContent .massRecruitPanel .methodContainer .method.selected {
+                    background-color: #0e6d0e;
+                    border: 1px solid #71ff00;
+                }
+
+        .massActionsContent .massRecruitPanel .unitContainer {
+        
+        }
+            .massActionsContent .massRecruitPanel .unitContainer .unit {
+                position: relative;
+                float: left;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                background-size: 44px 44px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                height: 44px;
+                width: 44px;
+                padding: 3px;
+                border: 1px solid white;
+                border-radius: 5px;
+                cursor:pointer;
+            }
+                .massActionsContent .massRecruitPanel .unitContainer .unit.selected {
+                    background-color: #0e6d0e;
+                    border: 1px solid #71ff00;
+                }
+
+
+        .massActionsContent .massRecruitPanel .inputArea {
+            
+        }
+            .massActionsContent .massRecruitPanel .inputArea .label {
+                 float:left;
+                 margin-right: 5px;
+            }
+            .massActionsContent .massRecruitPanel .inputArea .amountInput {
+                float: left;
+                background-color: #F1F1F1;
+                border: none;
+                box-sizing: border-box;
+                padding: 2px;
+                overflow: hidden;
+                width: 100px;
+            }
+            .massActionsContent .massRecruitPanel .goBtn {
+            
+            }
+
+
+
+    .massActionsContent .massChestBuyPanel {
+    
+    }
+        .massActionsContent .massChestBuyPanel .optionsPanel {
+            text-align: center;
+        }
+        .massActionsContent .massChestBuyPanel .keepCoinsInput {
+            background-color: #F1F1F1;
+            border: none;
+            box-sizing: border-box;
+            padding: 2px;
+            overflow: hidden;
+            width: 100px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .massActionsContent .massChestBuyPanel .goBtn {
+            display: inline-block;
+        }
+
+        .massActionsContent .massChestBuyPanel .stopBtn,
+        .massActionsContent .massChestBuyPanel.active .goBtn{
+            display: none;
+        }
+
+        .massActionsContent .massChestBuyPanel.active .stopBtn {
+            display: inline-block;
+            color: #ff3232;
+        }
+
+        .massActionsContent .massChestBuyPanel .progressPanel,
+        .massActionsContent .massChestBuyPanel .logPanel {
+            display: none;
+        }
+        .massActionsContent .massChestBuyPanel.active .progressPanel,
+        .massActionsContent .massChestBuyPanel.active .logPanel,
+        .massActionsContent .massChestBuyPanel.completed .progressPanel,
+        .massActionsContent .massChestBuyPanel.completed .logPanel {
+            display: block;
+        }
+
+
+        .massActionsContent .massChestBuyPanel .vProgressBar {
+            position: relative;
+            width: 100%;
+            height: 23px;
+            border: 2px solid #63594C;
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+            .massActionsContent .massChestBuyPanel .vProgressBar .vProgress {
+                height: 100%;
+                border-radius: 6px;
+                border: 1px solid #445C64;
+                box-sizing: border-box;
+                background: #3E565E;
+                background: -moz-linear-gradient(left, #3e565e 0%, #172737 6%, #2a4950 29%, #385f62 35%, #5a998d 40%, #568462 65%, #264355 92%, #445c64 100%);
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#3E565E), color-stop(6%,#172737), color-stop(29%,#2A4950), color-stop(35%,#385F62), color-stop(40%,#5A998D), color-stop(65%,#568462), color-stop(92%,#264355), color-stop(100%,#445C64));
+                background: -webkit-linear-gradient(left, #3E565E 0%,#172737 6%,#2A4950 29%,#385F62 35%,#5A998D 40%,#568462 65%,#264355 92%,#445C64 100%);
+                background: -o-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%);
+                background: -ms-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%);
+                background: linear-gradient(to right, #3E565E 0%,#172737 6%,#2A4950 29%,#385F62 35%,#5A998D 40%,#568462 65%,#264355 92%,#445C64 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e565e', endColorstr='#445c64',GradientType=1 );
+                background-size: 250px;
+                -webkit-transition: width .3s ease-out;
+                -moz-transition: width .3s ease-out;
+                -ms-transition: width .3s ease-out;
+                -o-transition: width .3s ease-out;
+                transition: width .3s ease-out;
+            }
+
+            .massActionsContent .massChestBuyPanel .vProgressBar .vProgressMessage {
+                position: absolute;
+                top: 3px;
+                left: 4px;
+                bottom: 4px;
+                right: 4px;
+                text-align: center;
+            }
+
+        .massActionsContent .massChestBuyPanel .progressInfo {
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .massActionsContent .massChestBuyPanel .logPanel .result {
+            margin-bottom: 3px;
+        }
+            .massActionsContent .massChestBuyPanel .logPanel .result span.had {
+                color: lime;
+            }

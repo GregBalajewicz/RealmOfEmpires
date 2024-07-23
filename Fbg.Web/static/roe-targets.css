@@ -1,0 +1,820 @@
+﻿
+#targetsDialog {
+    font: 13px "IM Fell French Canon LC", serif;
+}
+
+
+.infoLinksSection {
+    clear: both;
+    margin-top: 15px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.targetsHeader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    /* font-size: 15px; */
+}
+
+
+
+    .targetsHeader .villageInfo {
+        position: relative;
+        text-align: left;
+        padding: 5px;
+        padding-left: 60px;
+        margin-bottom: 3px;
+    }
+        .targetsHeader .villageInfo .icon {
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            left: 10px;
+            top: 0px;
+            background-size: 100% 100%;
+        }
+        .targetsHeader .villageInfo .v {
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+            .targetsHeader .villageInfo .v .incomingMiniIndicator {
+                margin-left: 5px;
+                background: rgba(0, 0, 0, 0.1);
+            }
+                .targetsHeader .villageInfo .v .incomingMiniIndicator.indicatorTypeAttack {
+                    color: #ff1f1f;
+                }
+                .targetsHeader .villageInfo .v .incomingMiniIndicator.indicatorTypeSupport {
+                    color: #49ff00;
+                }
+
+        .targetsHeader .villageInfo .p {
+        
+        }
+    .targetsHeader .headerBtn {
+        position: relative;
+        padding: 3px;
+        display: inline-block;
+        line-height: 11px;
+        margin-right: 3px;
+        margin-left: 3px;
+        padding-top: 5px;
+        padding-left: 35px;
+        font-size: 15px;
+        text-align: left;
+    }
+        .targetsHeader .headerBtn:active:not(.grayout) {
+            background-position: -300px 0px;
+            padding-top: 5px;
+        }
+        .targetsHeader .headerBtn .icon {
+            position: absolute;
+            top: 1px;
+            left: 8px;
+            width: 30px;
+            height: 30px;
+            /* background-color: rgba(0, 0, 0, 0.25); */
+            background-size: 100% 100%;
+        }
+        .targetsHeader .headerBtn.newAtk .icon {
+            background-image: url(https://static.realmofempires.com/images/icons/M_HD_AttackCAll.png);
+        }
+        .targetsHeader .headerBtn.newSup .icon {
+            background-image: url(https://static.realmofempires.com/images/icons/M_HD_SupportCAll.png);
+        }
+
+.targetsList {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0,0,0,.7);
+}
+
+.requestBox {
+    position: relative;
+    margin: 5px;
+    padding: 4px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #27241f;
+    border-radius: 5px;
+    cursor: pointer;
+    background-size: auto 44px;
+    min-height: 35px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-repeat: no-repeat;
+    background-position: 2px 50%;
+    background-color: rgba(0, 0, 0, .8);
+}
+    .requestBox:hover {
+        background-color: rgba(30,30,30,.9);
+    }
+
+    .requestBox[data-type="1"] {
+        background-image: url(https://static.realmofempires.com/images/icons/M_HD_SupportCAll.png);
+    }
+
+    .requestBox[data-type="2"] {
+        background-image: url(https://static.realmofempires.com/images/icons/M_HD_AttackCAll.png);
+    }
+
+    .requestBox .tAssigned {
+        color: #7c9fdd;
+        display: inline-block;
+        margin-right: 5px;
+        float: left;
+    }
+
+    .requestBox .tVerbage {
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        float: left;
+    }
+
+    .requestBox .tSetTime {
+        position: relative;
+        display: inline-block;
+        margin-right: 5px;
+        float: left;
+    }
+
+        .requestBox .tSetTime .tTimer {
+            font: 13px monospace;
+            color: #e6cd90;
+        }
+
+    .requestBox .reqNote {
+        position: relative;
+        overflow: hidden;
+        /*
+        white-space: nowrap;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        */
+        color: gray;
+        clear: both;
+    }
+
+    .requestBox .reqOwner {
+        background-size: auto 100%;
+        padding-left: 15px;
+        background-repeat: no-repeat;
+    }
+
+    .requestBox .reqTime {
+        position: absolute;
+        bottom: 2px;
+        right: 2px;
+        color: gray;
+        font-size: 11px;
+        font-family: monospace;
+    }
+
+
+#targetsDialog .expandArea {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: url(https://static.realmofempires.com/images/backgrounds/M_LoginKnightDay.jpg);
+    background-size: cover;
+}
+    #targetsDialog .expandArea .expandAreaContent {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        padding: 5px;
+        padding-top: 0px;
+        background: rgba(0,0,0,.8);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #targetsDialog .expandArea .toolKit {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+        #targetsDialog .expandArea .expandTool {
+            position: relative;
+            display: inline-block;
+            font-size: 13px;
+            width: 80px;
+            height: 26px;
+            background-size: 360px auto;
+            background-position: -122px 0px;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-top: 7px;
+            margin: 2px;
+        }
+            #targetsDialog .expandArea .expandTool:active {
+                background-position: -122px 0px;
+            }
+
+
+            #targetsDialog .expandArea .expandTool.saveResponse {
+                float: right;
+                margin-bottom: 5px;
+                margin-right: 3px;
+            }
+
+            #targetsDialog .expandArea .expandTool.autoFill {
+                float: right;
+                margin-bottom: 5px;
+                margin-right: 3px;
+            }
+
+    #targetsDialog .expandArea .expandHeader {
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    #targetsDialog .expandArea .callingFor {
+        text-align: center;
+        font-size: 19px;
+        padding: 5px;
+    }
+
+    #targetsDialog .expandArea .vill {
+        background-size: 44px 44px;
+        padding: 5px;
+        padding-left: 55px;
+        background-repeat: no-repeat;
+        background-position: 5px 0px;
+        min-height: 32px;
+    }
+        #targetsDialog .expandArea .vill .vInfo {
+
+        }
+        #targetsDialog .expandArea .vill .pInfo {
+        
+        }
+
+    #targetsDialog .expandArea .opener {
+        color: gray;
+    }
+
+    #targetsDialog .expandArea .dateCreated {
+        margin-right: 15px;
+    }
+
+    #targetsDialog .expandArea .dateCreated,
+    #targetsDialog .expandArea .dateExpire {
+        color: gray;
+        display: inline-block;
+    }
+        #targetsDialog .expandArea .dateCreated span,
+        #targetsDialog .expandArea .dateExpire span {
+            font-size: 11px;
+            font-family: monospace;
+        }
+
+    #targetsDialog .expandArea .daysToKeepInput {
+        width: 40px;
+    }
+
+    #targetsDialog .expandArea .setTimeElement,
+    #targetsDialog .expandArea .assignedPlayerSection {
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+        #targetsDialog .expandArea .setTimeElement:hover,
+        #targetsDialog .expandArea .assignedPlayerSection:hover {
+            background-color: rgba(16, 122, 216, 0.24);
+        }
+
+
+        #targetsDialog .expandArea .assignedPlayerSection .assignedPlayerName {
+        }
+
+    #targetsDialog .expandArea .textAreaInput {
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0px;
+        height: 80px;
+        box-sizing: border-box;
+    }
+
+
+        #targetsDialog .expandArea .textAreaInput.disabled {
+            cursor: not-allowed;
+            background-color: #d2d2d2;
+        }
+
+    #targetsDialog .expandArea .responseArea {
+        position: relative;
+        margin-top:10px;
+    }
+
+        #targetsDialog .expandArea .responseArea .newRespondArea {
+            position: relative;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+            #targetsDialog .expandArea .responseArea .newRespondArea .respondAsType {
+                position: relative;
+                display: inline-block;
+                font-size: 13px;
+                width: 80px;
+                height: 26px;
+                background-size: 360px auto;
+                background-position: -122px 0px;
+                padding-right: 5px;
+                padding-left: 5px;
+                padding-top: 7px;
+                margin: 1px;
+            }
+                #targetsDialog .expandArea .responseArea .newRespondArea .respondAsType.a {
+                    padding-top: 3px;
+                }
+
+            #targetsDialog .expandArea .responseArea .newRespondArea .responseInputMsg {
+                position: relative;
+                width: 100%;
+                display: block;
+                margin: 0px;
+                padding: 3px;
+                height: 40px;
+                box-sizing: border-box;
+            }
+
+            #targetsDialog .expandArea .responseArea .newRespondArea .respondBtnsArea {
+                text-align: left;
+                margin-bottom: 2px;
+            }
+                #targetsDialog .expandArea .responseArea .newRespondArea .respondBtnsArea .respondBtn {
+                    position: relative;
+                    margin: 5px;
+                    margin-left: 10px;
+                    margin-right: 0px;
+                    width: 33px;
+                    height: 33px;
+                    border: 1px solid #fff;
+                    background-size: 22px 22px;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+
+
+                    #targetsDialog .expandArea .responseArea .newRespondArea .respondBtnsArea .respondBtn[data-typeid="2"] {
+                        background-image: url(https://static.realmofempires.com/images/icons/M_CreateMail.png);
+                    }
+
+
+
+        #targetsDialog .expandArea .responseArea .response {
+            position: relative;
+            padding: 0px;
+            margin-bottom: 5px;
+            padding-left: 35px;
+            padding-right: 32px;
+            min-height: 30px;
+            background-color: rgba(30, 30, 30, 0.8);
+        }
+            #targetsDialog .expandArea .responseArea .response.selfComment {
+                background-color: rgba(0, 40, 60, 0.8);
+            }
+
+            #targetsDialog .expandArea .responseArea .response .avatar {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 30px;
+                height: 30px;
+                background-size: 100% 100%;
+            }
+
+            #targetsDialog .expandArea .responseArea .response .type {
+                position: absolute;
+                top: 30px;
+                left: 0px;
+                width:30px;
+                height:30px;
+                background-size: 22px 22px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                display: none;
+            }
+                #targetsDialog .expandArea .responseArea .response .type[data-typeid="1"] {
+                    background-image: url(https://static.realmofempires.com/images/icons/questiong.png);
+                }
+                #targetsDialog .expandArea .responseArea .response .type[data-typeid="2"] {
+                    background-image: url(https://static.realmofempires.com/images/icons/M_CreateMail.png);
+                }
+                #targetsDialog .expandArea .responseArea .response .type[data-typeid="3"] {
+                    background-image: url(https://static.realmofempires.com/images/icons/M_DefendGreen.png);
+                }
+            #targetsDialog .expandArea .responseArea .response .player {
+                font-size: 11px;
+                color: gray;
+            }
+
+            #targetsDialog .expandArea .responseArea .response .dltBtn {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                background-size: 100% 100%;
+                background-image: url(https://static.realmofempires.com/images/icons/M_X33.png);
+            }
+
+.expandAreaContent .miniPanel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    text-align:center;
+}
+
+    .expandAreaContent .miniPanel .miniPanelBtn {
+        display: inline-block;
+        margin:2px;
+    }
+    .expandAreaContent .assignPanel .assignLabel {
+        margin-bottom: 5px;
+    }
+    .expandAreaContent .assignPanel .assignInput {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .expandAreaContent .assignPanel .suggestionsBox {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 80%;
+    }
+        .expandAreaContent .assignPanel .suggestionsBox .suggestion {
+            padding: 5px;
+            margin-bottom: 1px;
+            cursor: pointer;
+        }
+
+
+.expandAreaContent .setTimePanel .setTimeLabel {
+    margin-bottom: 10px;
+}
+.expandAreaContent .setTimePanel .setTimeInput {
+    width: 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.expandAreaContent .setTimePanel .setTimeInputContainer {
+    text-align: center;
+}
+
+
+    .expandAreaContent .setTimePanel .setTimeInputContainer .setTimeTimePicker,
+    .expandAreaContent .setTimePanel .setTimeInputContainer .setTimeDatePicker {
+        margin-bottom: 10px;
+        padding: 5px;
+        border: none;
+    }
+
+/* Targets List Styling */
+
+#targetsListDialog {
+    background-image: url(https://static.realmofempires.com/images/backgrounds/M_BG_Battle1.jpg);
+}
+
+.targetsListContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: none;
+}
+
+.targetsListContent .targetsListHeader {
+    position: relative;
+    padding: 5px;
+    background: rgba(0,0,0,0.8);
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+    .targetsListContent .targetsListHeader .c1 {
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        text-align: center;
+    }
+    .targetsListContent .targetsListHeader .c2 {
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin: 5px;
+        margin-top: 3px;
+    }
+    .targetsListContent .targetsListHeader .reload {
+        position: relative;
+        float:left;
+        /*
+        top: 4px;
+        left: 4px;
+            */
+    }
+        .targetsListContent .targetsListHeader .reload .icon {
+            background-image: url(https://static.realmofempires.com/images/buttons/M_RefreshSm.png);
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            border-radius: 40px;
+        }
+
+
+
+    .targetsListContent .targetsListHeader .infoBtn {
+        position: relative;
+        float: left;
+    }
+        .targetsListContent .targetsListHeader .infoBtn .icon {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px;
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-image: url(https://static.realmofempires.com/images/icons/questiong.png);
+        }
+
+
+    .targetsListContent .targetsListHeader .option {
+        position: relative;
+        float: left;
+        vertical-align: middle;
+        border: 1px solid #61665e;
+        border-radius: 5px;
+        padding: 2px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 2px;
+        margin-top: 0px;
+        cursor: pointer;
+        max-width: 60px;
+        font-size: 13px;
+        text-align: center;
+        background: rgba(0,0,0,.3);
+    }
+
+        .targetsListContent .targetsListHeader .option.active {
+            background-color: rgba(14, 109, 14, 0.7);
+            border: 1px solid rgba(113, 255, 0, 0.7);
+        }
+
+    .targetsListContent .animationsWarn {
+        position: relative;
+        padding: 10px;
+        background: rgba(120, 0, 0, 0.75);
+        margin-bottom: 2px;
+        overflow: hidden;
+        cursor:pointer;
+    }
+        .targetsListContent .animationsWarn:hover {
+                    background: rgba(180, 0, 0, 0.8);
+        }
+
+.targetsListContent .targetsListBody{
+    position: relative;
+    background: rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+    .targetsListContent .targetsListBody .listItem {
+        position: relative;
+        padding: 3px 10px;
+        margin-bottom: 2px;
+        background-color: rgba(0,0,0,.8);
+        min-height: 36px;
+        padding-left: 36px;
+        padding-bottom: 15px;
+    }
+
+        .targetsListContent .targetsListBody .listItem.assignedToYou {
+            background-color: rgba(5, 35, 49, 0.8);
+            box-shadow: inset 0px 0px 7px 2px rgba(29, 143, 255, 0.5);
+        }
+        .targetsListContent .targetsListBody .listItem:hover {
+            background-color: rgba(30,30,30,.9);
+            cursor:pointer;
+        }
+
+        .targetsListContent .targetsListBody .listItem .targetBit {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .targetsListContent .targetsListBody .listItem .typeIcon {
+            position: absolute;
+            top: 6px;
+            left: 3px;
+            width: 30px;
+            height: 30px;
+            margin: 0px;
+            cursor: pointer;
+            background-size: 100% 100%;
+        }
+            .targetsListContent .targetsListBody .listItem .typeIcon.type1 {
+                background-image: url(https://static.realmofempires.com/images/icons/M_HD_SupportCAll.png);
+            }
+            .targetsListContent .targetsListBody .listItem .typeIcon.type2 {
+                background-image: url(https://static.realmofempires.com/images/icons/M_HD_AttackCAll.png);
+            }
+        .targetsListContent .targetsListBody .listItem .groupFlag {
+            top: 2px;
+            margin-right: 3px;
+            width: 18px;
+            height: 20px;
+            background-size: 100% 100%;
+        }
+            .targetsListContent .targetsListBody .listItem .groupFlag.own {
+                background-image: url(https://static.realmofempires.com/images/map/flag_White.png);
+            }
+            .targetsListContent .targetsListBody .listItem .groupFlag.rebel {
+                background-image: url(https://static.realmofempires.com/images/map/Shield3_Rebel.png);
+            }
+            .targetsListContent .targetsListBody .listItem .groupFlag.abandoned {
+                background-image: url(https://static.realmofempires.com/images/map/fabd.png);
+            }           
+            .targetsListContent .targetsListBody .listItem .groupFlag.clan {
+                background-image: url(https://static.realmofempires.com/images/map/flag_Green1.png);
+            }
+            .targetsListContent .targetsListBody .listItem .groupFlag.ally {
+                background-image: url(https://static.realmofempires.com/images/map/flag_Purple1.png);
+            }
+            .targetsListContent .targetsListBody .listItem .groupFlag.black {
+                background-image: url(https://static.realmofempires.com/images/map/flag_Black.png);
+            }
+
+        .targetsListContent .targetsListBody .listItem .TargetVillageOwnerPlayer {
+            cursor: pointer;
+            color: #88a8e0;
+            padding:1px;
+        }
+            .targetsListContent .targetsListBody .listItem .TargetVillageOwnerPlayer.gray {
+                cursor: default;
+                color: #a0a0a0;
+                padding:1px;
+            }
+
+        
+        .targetsListContent .targetsListBody .listItem .TargetVillage {
+            cursor: pointer;
+            color: #e09672;
+        }
+
+        .targetsListContent .targetsListBody .listItem .distance {
+            position: absolute;
+            bottom: 3px;
+            left: 5px;
+            color: gray;
+            font-size: 11px;
+            font-family: monospace;
+        }
+
+
+        .targetsListContent .targetsListBody .listItem .TargetAssignArea {
+        }
+            .targetsListContent .targetsListBody .listItem .TargetAssignArea .assignedPlayer {
+                display: block;
+                /* color: #a7a7a7; */
+            }
+                .targetsListContent .targetsListBody .listItem .TargetAssignArea .assignedPlayer .name {
+                    cursor: pointer;
+                    color: #7c9fdd;
+                }
+                .targetsListContent .targetsListBody .listItem .TargetAssignArea .assignedPlayer.you {
+                    cursor: pointer;
+                    color: rgb(106, 217, 255);
+                    font-size: 13px;
+                    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+                }
+
+            .targetsListContent .targetsListBody .listItem .TargetAssignArea .setTime {
+                display: block;
+                /* color: #a7a7a7; */
+            }
+                .targetsListContent .targetsListBody .listItem .TargetAssignArea .setTime .counter {
+                    font: 13px monospace;
+                    color: #e6cd90;
+                }
+
+        .targetsListContent .targetsListBody .listItem .TargetNote {
+            display: block;
+            margin: 2px 0px;
+            color: gray;
+        }
+
+        .targetsListContent .targetsListBody .listItem .TimeCreated {
+            position: absolute;
+            bottom: 3px;
+            right: 5px;
+            color: gray;
+            font-size: 11px;
+            font-family: monospace;
+        }
+
+        .targetsListContent .targetsListBody .listItem .targetResponses {
+            position: absolute;
+            top: 1px;
+            right: 3px;
+            text-align: center;
+            line-height: 23px;
+            background-image: url(https://static.realmofempires.com/images/icons/chat-chat.png);
+            background-size: auto 100%;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            color: black;
+            font-family: monospace;
+            font-weight: 900;
+            font-size: 17px;
+            min-width: 25px;
+            min-height: 25px;
+        }
+
+
+
+    #targetsListDialog .infoPanel {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.95);
+        overflow: auto;
+        text-align: left;
+        cursor: pointer;
+        font: 15px "IM Fell French Canon LC", serif;
+    }
+        #targetsListDialog .infoPanel .label {
+            margin-bottom: 3px;
+        }
+
+        #targetsListDialog .infoPanel .groupFlag {
+            background-size: 18px auto;
+            background-repeat: no-repeat;
+            padding-left: 22px;
+            margin-bottom: 2px;
+        }
+            #targetsListDialog .infoPanel .groupFlag.own {
+                background-image: url(https://static.realmofempires.com/images/map/flag_White.png);
+            }
+            #targetsListDialog .infoPanel .groupFlag.rebel {
+                background-image: url(https://static.realmofempires.com/images/map/Shield3_Rebel.png);
+            }
+            #targetsListDialog .infoPanel .groupFlag.abandoned {
+                background-image: url(https://static.realmofempires.com/images/map/fabd.png);
+            }           
+            #targetsListDialog .infoPanel .groupFlag.clan {
+                background-image: url(https://static.realmofempires.com/images/map/flag_Green1.png);
+            }
+            #targetsListDialog .infoPanel .groupFlag.ally {
+                background-image: url(https://static.realmofempires.com/images/map/flag_Purple1.png);
+            }
+            #targetsListDialog .infoPanel .groupFlag.black {
+                background-image: url(https://static.realmofempires.com/images/map/flag_Black.png);
+            }
+
+
+

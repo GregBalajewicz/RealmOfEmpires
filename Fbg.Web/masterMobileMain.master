@@ -1,0 +1,933 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterMobileMain.master.cs" Inherits="MasterMobileMain" %>
+<%@ Register Src="Controls/VillageHeaderInfo.ascx" TagName="VillageHeaderInfo" TagPrefix="uc2" %>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if lt IE 8]><html class="no-js lt-ie10 lt-ie8" lang="en"><![endif]-->
+<!--[if lt IE 10]><html class="no-js lt-ie10" lang="en"><![endif]-->
+<!--[if gte IE 10]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head id="Head1" runat="server">
+    <title><%= RSc("GameName") %></title>
+    <meta charset="utf-8"/>
+    
+    <%if (isDevice == CONSTS.Device.iOS) { %>
+    <meta name="viewport" content="width=320,inital-scale=1.0,maximum-scale=5.0,user-scalable=0">
+    <%} else if (isDevice == CONSTS.Device.Amazon) { %>
+    <meta name="viewport" content="width=321, user-scalable=0">
+    <%} else if (isDevice == CONSTS.Device.Android) { %>
+    <meta id="androidViewport" name="viewport" content="width=321">
+    <script>       
+        // Handle input scaling bug in KitKat         
+        // Duplicate of ROE.Browser.androidApiLevel because not defined yet.       
+        var droidApi_matches = (/\bApiLevel=([1-9][0-9]*)\b/i).exec(navigator.userAgent);        
+        if(droidApi_matches) {
+            if(parseInt(droidApi_matches[1]) >= 19) {
+                // Using name instead of id because ASP adds a prefix to the id
+                var avp = document.getElementsByName('viewport')[0];                
+                avp.setAttribute('content','width=321, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');                
+            } 
+        }       
+    </script>
+    <%} else { %>
+    <meta name="viewport" content="width=321"/>
+    <%} %>
+
+    <% 
+        bool indev = Request.Cookies["indev"] == null ? Config.InDev : Request.Cookies["indev"].Value == "true";
+    %>
+     
+    <%
+        //a list of beta features
+        List<String> BetaFeatures = new List<String> { "QB:ShowMaxedBuildings",  "AdvancedReportList" };
+        dynamic BetaCookies = new System.Dynamic.ExpandoObject();
+        var dict = (IDictionary<string, object>)BetaCookies;
+        BetaFeatures.ForEach(delegate(String name) {
+            HttpCookie cookie = Request.Cookies[name];
+            if (cookie != null) {
+                dict[name] = cookie.Value;
+            }           
+        });       
+    %>
+
+    <%=Fbg.Common.WebHelper.FileList.js(Fbg.Common.WebHelper.FileList.FOR.mMainPage, isMobile, indev, isDevice == CONSTS.Device.Amazon,BetaCookies, IsTesterRoleOrHigher) %>
+ 
+           
+    <script type="text/javascript">
+        <asp:Literal runat=server ID="lblJSONStruct"></asp:Literal>    
+        <asp:Literal runat="server" ID="roeentities" EnableViewState=false></asp:Literal>
+
+        function pageLoad () 
+        {                                     
+            if (typeof window.UpdateStartingCoins === 'function') { UpdateStartingCoins(); }
+            initTimers();
+            $('.helpQuestion, #highlight').remove();
+            initHelp();
+            InitStripeTable();
+            InitAutoPop();
+            InitAutoPop2();
+            InitAutoPop3();
+            page.load_scripts();
+            if (typeof window.initHideBuildRequirements === 'function') { initHideBuildRequirements(); }
+            <asp:contentplaceholder id="IntoPageLoad" runat="server">
+            </asp:contentplaceholder>
+            
+            if (typeof window.CustomOnLoad === 'function') { CustomOnLoad(); }           
+
+            if (ROE.Device.getAppVersion() < <%=GetDeviceVersion()%>) {
+
+                ROE.Frame.Confirm("New version of the App is available! Please update to continue playing the game", "UPDATE", '', 'rgba(33,33,33,0.8)'
+                , function () {ROE.Device.getLatestApp();} );
+                
+       }
+
+
+
+       }  
+        
+     
+    </script>  
+
+    <!--Beta Feature Section -->
+    <script type="text/javascript">
+        
+        var BetaFeatures = {
+
+            //add your feature name to this array, remember to update the C# list above as well! :)
+            FeaturesArray: ["QB:ShowMaxedBuildings", "AdvancedReportList"],
+            
+            initNullCheck: function(){
+                var cookieValue;
+                var date = new Date();
+                date.setTime(date.getTime() + 86313600000);
+                for(var i = 0; i < BetaFeatures.FeaturesArray.length; i++){
+                    cookieValue = $.cookie(BetaFeatures.FeaturesArray[i]);               
+                    if( cookieValue == "" || cookieValue != "ON"){               
+                        $.cookie(BetaFeatures.FeaturesArray[i],'OFF',{ expires:date });
+                    }
+                }
+            },
+
+            //use BetaFeatures.status('featurename'); to check if feature is on or off in cookies
+            //for example: if(BetaFeatures.status('quickBuild') == 'ON'){ /*do smething here*/ }
+            status: function(featureName){
+                if ( $.inArray(featureName, BetaFeatures.FeaturesArray) > -1 ) {
+                    return  $.cookie(featureName);
+                }else{                  
+                    return "ON"; //if feature not listed in array, return ON
+                }
+            },
+
+            displayPanel: function(){
+                featurePanel = $('#betaFeaturePanel');
+                featurePanel.find('.itemRow').remove();
+                var itemRow, status, featureName;
+                for(var i = 0; i < BetaFeatures.FeaturesArray.length; i++){
+                    featureName = BetaFeatures.FeaturesArray[i];
+                    status = BetaFeatures.status(featureName);
+                    itemRow = $('<div>').addClass('itemRow '+status).html(featureName + " is "+ status)
+                    .attr('data-feature',featureName).attr('data-status',status)
+                    .click(function(){
+                        if($(this).attr('data-status') == "ON"){
+                            $(this).removeClass("ON").addClass("OFF").attr('data-status',"OFF");
+                        }else{
+                            $(this).removeClass("OFF").addClass("ON").attr('data-status',"ON");
+                        }
+                        $(this).html($(this).attr('data-feature') + " is "+ $(this).attr('data-status'));
+                        var date = new Date();
+                        date.setTime(date.getTime() + 86313600000);
+                        $.cookie($(this).attr('data-feature'), $(this).attr('data-status'), { expires:date });
+                        $('#betaFeaturePanel').addClass('refreshOnClose');
+                    });
+                    itemRow.appendTo(featurePanel);
+                }
+                featurePanel.show();
+            },
+
+            hidePanel: function(){
+                if($('#betaFeaturePanel').hasClass('refreshOnClose')){
+                    ROE.Frame.reloadTheWindow();
+                }else{
+                    $('#betaFeaturePanel').hide();
+                }
+                
+            },
+
+        }
+
+        BetaFeatures.initNullCheck();
+
+    </script>
+
+    <%=Fbg.Common.WebHelper.FileList.css(Fbg.Common.WebHelper.FileList.FOR.mMainPage, isMobile, indev, BetaCookies) %>
+
+
+    <asp:contentplaceholder id="HeadPlaceHolder" runat="server">
+    </asp:contentplaceholder>
+    <link type="text/json" rel="help" href="static/help/j_Global.json.aspx" />
+
+   
+    <%if (_player != null)
+      { %>
+   <script type="text/javascript">
+
+       var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-33297531-1']);
+       _gaq.push(['_trackPageview']);
+
+       (function () {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+    </script>
+    <%} %> 
+    
+    <!-- FONT LINK REFERENCE SECTION-->
+    <link href='https://fonts.googleapis.com/css?family=IM+Fell+French+Canon' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '865117673575588'); // Insert your pixel ID here.
+    fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=865117673575588&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+</head>
+<body style="margin:0; overflow:hidden !important;" class="view-vov mobile">
+   
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+        <Services>
+            <asp:ServiceReference Path="Troops.asmx" />
+        </Services>
+    </asp:ScriptManager>
+        <header>
+            <div class="headernav">                 
+                <img class="hvov archmiddle" style="top:0px;" src="https://static.realmofempires.com/images/misc/M_VovHeader.jpg" />
+                <uc2:VillageHeaderInfo ID="ctrlVillageHeaderInfo" runat="server" Visible=false />
+                <div class="hvov arches">
+                    <div class="left">
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_1.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_2.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_3.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_4.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_5.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_6.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_7.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_8.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_9.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_10.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_11.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_12.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_13.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_14.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_15.png" />
+                        <img  src="https://static.realmofempires.com/images/misc/ArchL_16.png" />
+                    </div>
+                    
+                </div>
+                        <img class="right hvov arche" style="top:40px;" src="https://static.realmofempires.com/images/misc/ArchR_1.png" />
+                        <img class="right hvov arche" style="top:47px;" src="https://static.realmofempires.com/images/misc/ArchR_2.png" />
+                        <img class="right hvov arche" style="top:54px;" src="https://static.realmofempires.com/images/misc/ArchR_3.png" />
+                        <img class="right hvov arche" style="top:61px;" src="https://static.realmofempires.com/images/misc/ArchR_4.png" />
+                        <img class="right hvov arche" style="top:68px;" src="https://static.realmofempires.com/images/misc/ArchR_5.png" />
+                        <img class="right hvov arche" style="top:75px;" src="https://static.realmofempires.com/images/misc/ArchR_6.png" />
+                        <img class="right hvov arche" style="top:82px;" src="https://static.realmofempires.com/images/misc/ArchR_7.png" />
+                        <img class="right hvov arche" style="top:89px;" src="https://static.realmofempires.com/images/misc/ArchR_8.png" />
+                        <img class="right hvov arche" style="top:96px;" src="https://static.realmofempires.com/images/misc/ArchR_9.png" />
+                        <img class="right hvov arche" style="top:103px;" src="https://static.realmofempires.com/images/misc/ArchR_10.png" />
+                        <img class="right hvov arche" style="top:110px;" src="https://static.realmofempires.com/images/misc/ArchR_11.png" />
+                        <img class="right hvov arche" style="top:117px;" src="https://static.realmofempires.com/images/misc/ArchR_12.png" />
+                        <img class="right hvov arche" style="top:125px;" src="https://static.realmofempires.com/images/misc/ArchR_13.png" />
+                        <img class="right hvov arche" style="top:132px;" src="https://static.realmofempires.com/images/misc/ArchR_14.png" />
+                        <img class="right hvov arche" style="top:139px;" src="https://static.realmofempires.com/images/misc/ArchR_15.png" />
+                        <img class="right hvov arche" style="top:146px;" src="https://static.realmofempires.com/images/misc/ArchR_16.png" />
+                <div class="hvov hdrVInfo click ButtonTouch">
+                    <span id="villName" class="hdrFont"></span><span id="villCords" class="hdrFont"></span>
+                </div>
+                <div class="hvov resources ">
+                    <div class="ButtonTouch">
+                        <div id="hdrResourcesBackground"></div>
+                        <span id="hdrLoyalty" class="click"></span>                        
+                        <span id="hdrCoins" class="click">
+                            <asp:Image runat="server" ID="imgSilver" ImageUrl="https://static.realmofempires.com/images/coin.png" />
+                            <span id="villCoins" class="hdrFont"></span>
+                        </span>
+                        <span id="hdrFood" class="click">
+                            <img src='<%=RSic("Food")%>'><span id="villFood" class="hdrFont"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="hvov troops ">
+                    <div id="hdrTroops" class="click ButtonTouch">
+                        <div id="hdrTroopsBackground"></div>
+                        <img src='https://static.realmofempires.com/images/attack.png' ><span class="troopsStrength hdrFont"></span><br />
+                        <img src='https://static.realmofempires.com/images/support.png' ><span class="troopsStrengthDef hdrFont"></span>
+                    </div>
+                </div>
+                <div class="hvov build ">
+                    <a id="hdrBuild" href="#">
+                        <div class="qbBtnCountdown"></div>
+                        <img class="i33 ButtonTouch" src="https://static.realmofempires.com/images/icons/m_build.png" /></a>
+                    <div id="openQuickBuildBtn" class="ButtonTouch" onclick="ROE.QuickBuild.showPopup('vov');" style="display:none;">
+                        <div class="qbBtnCountdown"></div>
+                    </div>
+                </div>
+                <div class="hvov QR">
+                    <div id="openQuickRecruitBtn" class="ButtonTouch" onclick="ROE.QuickRecruit.showPopup('vov');" style="display:none;"></div>
+                </div>
+                <div class="hvov pInfo">
+                    <td id="hdrPInfo" class="click">
+                        <a class="sfx2">
+                            <div class="hdrPInfo ButtonTouch">
+                                <img border="0" id="avatar" src="<%=_player.Avatar.ImageUrlS %>" style="display:none;" />
+                                <div class="themeM-progress">
+                                    <div class="bg">
+                                        <div class="progress-container">
+                                            <div class="progress-indicator">
+                                            </div>
+                                        </div>
+                                        <div class="corner-tl">
+                                        </div>
+                                    </div>
+                                    <div class="fg">
+                                        <div class="value">
+                                            <span runat="server" id="hdrPoints" class="hdrPoints hdrFont"></span>
+                                        </div>
+                                        <div class="label">
+                                            <span runat="server" id="hdrPName" class="hdrPName hdrFont"></span>                                         
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </td>
+                </div>
+
+                <div class="hvov left">
+                    <div id="launchRaidsPopup" class="ButtonTouch sfx2" ></div>
+
+                    <a runat="server" href="Quests.aspx"  target="_blank" ID="linkQuests" class="linkQuests ButtonTouch sfx2" >
+                        <img class=i33 src="https://static.realmofempires.com/images/icons/m_Quests.png" />
+                        <span id="linkQuests_completedCount"></span>
+                    </a>
+
+                    <div id="hdrPF" class="click ButtonTouch">
+                        <div class="hdrPF">
+                                <img class=i33 src="https://static.realmofempires.com/images/vov/m_hatspells.png" /><span class="playerCredits hdrFont"></span><br />                            
+                        </div>
+                    </div>
+                    
+                    <div class="pfStatus">
+                    </div>
+
+                    <div id="itemRewardsIcon" class="mUIIcon ButtonTouch itemRewards"><span></span></div>
+                </div>
+
+                <div class="hmap info"></div>
+                <div class="hmap troop"></div>
+                <div class="hmap doact"></div>
+            </div>
+        </header>
+        
+        <div class="TDContent mainView mobile">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+    <%if (IsTesterRoleOrHigher) { %>
+        <div id="adminPopup">
+                <script>
+                    function popupTest(){
+                        counterA--;
+                        if ($('.iFrameDiv .header .action.close').is(':visible')) 
+                        { 
+                            $('.iFrameDiv .header .action.close').click() ;
+                        } 
+                        else {
+                            ROE.Frame.popupIncoming(); 
+                        }
+                        if (counterA>0) {
+                            setTimeout(popupTest, 50);
+                        }
+                    }
+
+                    function maptest(fun) {
+                        counterA--;
+                        fun();
+                        if (counterA>0) {
+                            setTimeout(function() {maptest(fun)}, 500);
+                        }
+                       
+                    }
+                </script>
+                <center> <%=BuildNumConfig.BuildNumber%>
+                    <b>DEV console</b>   | <a onclick="$('#adminPopup').hide();">HIDE</a></center>
+            
+                <br />
+                
+                <a onclick="$('#showmoredevoptions').toggle();">SHOW / HIDE MORE</a>
+
+                <div id="showmoredevoptions" style="display:none">
+                    <a target="_blank" href="devconsole.aspx">Show Dev Console </a>| 
+                    <asp:LinkButton ID="LinkButton2" OnCommand="btnSwitchToDesktop_onCommand" runat="server">desktopV</asp:LinkButton> | 
+                    <a onclick="BetaFeatures.displayPanel();">**BETA**</a> |
+                    <a target="_blank" href="introa1_m.aspx">GOTO new player intro</a> | 
+                    <a target="_blank" href="intro_m.aspx">GOTO new player intro2</a> | 
+                    <a status="min" id="debugJsCss" >DEBUGED SCRIPT/CSS</a> |
+                    <a onclick="ROE.Tutorial.start(0)">Tutorial start</a> |
+                    <a href="/Admin_tester/chooserealm2.aspx">Acess Any Realm</a>|
+                    <a href="Intro_m.aspx">New Intro Video</a>|
+
+                    <%if (Context.User.IsInRole("Admin")) { %>
+                        <a href="/Admin/LoginAs.aspx">Login As</a>|
+                        <a href="/Admin/roeteammail.aspx">Login As ROETEAM</a>|                    
+                    <%} %>
+            
+                    <a onclick="vovNutTest=50;ROE.Frame.showThisVOV(ROE.SVID);">Test VOV switch</a>|
+                    <a onclick="initTcounter=1000;while(initTcounter>0) {initTcounter--;initTimers();}">Test initTimers</a>|
+                    <a onclick="counterA=500;;popupTest();">Test InOutTroops pop</a>
+                    <a onclick="counterA=33; maptest(ROE.Frame.swipeDown);">Test swipeD</a>
+                    <a onclick="counterA=33; maptest(ROE.Frame.swipeUp);">Test swipeU</a>
+                    <a onclick="counterA=33; maptest(ROE.Frame.swipeRight);">Test swipeR</a>
+                    <a onclick="counterA=33; maptest(ROE.Frame.swipeLeft);">Test swipeL</a>
+                    <a onclick="BDA.Database.LocalDel('MapVillArea'); BDA.Database.LocalDel('MapLandArea');">Clear cached areas</a>
+                    <a id="devOptionEnableVOVAnimations" >Enable/Disable/Default animations on VOV</a>
+                   
+                </div>
+
+                <br />Exec JS cmd<input type="text" id="console-eval" value="" /><a onclick="alert(eval($('#console-eval').val()))">alert(eval)</a> | <a onclick="BDA.Console.log(eval($('#console-eval').val()))">Log(eval)</a>                
+
+                <br /><br /><a onclick="$('#adminPopup .devConsole').show();DevTools.start();">show & start local dev console</a>
+                <div class=devConsole style="display:none;">                                               
+                     <style>
+                        #BDAConsoleWin {}
+                        #BDAConsoleWin .logentry.error {color:red}
+                        #BDAConsoleWin .logentry.verbose{color: #AAAAAA;}
+                        #BDAConsoleWin .button {border:solid 1px gray; cursor:pointer; height:30px; display :table-cell; vertical-align:middle; font-weight:bolder; padding:3px;}
+
+                         #showmoredevoptions a {
+                             padding: 10px 10px 10px 10px;
+                             display: inline-block;
+                             cursor: pointer;
+                         }
+                    </style>
+                    <div id="BDAConsoleWin">
+                        <input type=checkbox class=showType value=2 style="width:44px;height:44px;"  />verbose
+                        <input type=checkbox class=showType value=0 style="width:44px;height:44px;" />info
+                        <input type=checkbox class=showType value=1 style="width:44px;height:44px;" />error
+                        <br />
+                        Category: <input type=text id=showCatName /> <input type=checkbox id=showCatVal value=0 /> show <input type=button value="show/hide category" id=save /> 
+                        <input type=button value="toggle show all categories" id=Button1 /><input type=button value="FORCE show-all categories" id=Button2 />
+                        <br /><br />
+                        <span class='button clear' >clear</span>
+                        <div class=logcontent></div>
+                    </div>
+
+                    <script>
+
+                        DevTools = {};
+                        DevTools.clearConsole = function () {
+                            $('#BDAConsoleWin .logcontent').html("");
+                        }
+                        DevTools.showDevConsole = function () {
+                            $('#BDAConsoleWin .button.clear').click(DevTools.clearConsole);
+                        };
+
+                        DevTools.start = function()   {
+                            //window.opener.BDA.DevTools.showDevConsole();
+                            $('#ctl00_villageHeader').remove();
+                            $('.showType').click(function () {
+                                BDA.Console.showType($(this).val(), this.checked);
+                            });
+
+                            $('#save').click(function () {
+                                BDA.Console.showCategory($('#showCatName').val(), $('#showCatVal').is(":checked") === "checked");
+                            });
+
+                            $('#Button1').click(function () {
+                                BDA.Console.setShowAllCategories(!BDA.Console.getShowAllCategories());
+                            });
+
+                            $('#Button2').click(function () {
+                                BDA.Console.forceShowAllCatgories();
+                            });
+
+                            $('.showType').attr('checked', "checked");
+
+                            BDA.Console.logHtmlObject = $('#BDAConsoleWin .logcontent');
+
+                            DevTools.showDevConsole();
+                        };
+                    </script>                
+
+                </div>
+
+                <!-- This will house features to be toggled on and off -->
+                <div id="betaFeaturePanel" style="display:none;">
+                    <div class="close" onclick="BetaFeatures.hidePanel();">X</div>
+                </div>
+        </div>
+    <%} %>
+
+    <% if (_player.Realm.ID > 96 || _player.Realm.ID == 0 || _player.Realm.ID < 0 || _player.Realm.ID == 13 || _player.Realm.ID == 21 || IsTesterRoleOrHigher)
+       { %>
+        <script type="text/javascript">
+
+            //on M, if hasnt been turned on once, set OFF by default
+            if(localStorage.getItem('animation_engineState') != "ON"){  
+                localStorage.setItem('animation_engineState', "OFF");
+            }
+           
+            $(document).ready(function () {   
+                $('.toggleAnimationSettings').addClass('on');
+            });
+
+        </script>
+    <%}else{%>
+        <script type="text/javascript">
+            localStorage.setItem('animation_engineState', "OFF");
+            $(document).ready(function () {   
+                $('.toggleAnimationSettings').remove();
+            });
+        </script>
+    <%}%>
+
+    <% if (_player.Realm.Theme == Fbg.Bll.Realm.Themes.desert){ %>
+        <script type="text/javascript">
+            GLOBAL_MAP_BIGTILE = "https://static.realmofempires.com/images/map/des/bigtile.jpg";
+        </script>
+        <style>
+            #mapwrap {
+                background: url(https://static.realmofempires.com/images/map/des/bigtile.jpg);
+            }
+            .earth {
+                background: url(https://static.realmofempires.com/images/map/des/bigtile.jpg);
+                background-size: 100% 100%;
+            }
+        </style>
+
+    <%}else if(_player.Realm.Theme == Fbg.Bll.Realm.Themes.highlands){%>
+
+        <script type="text/javascript">
+            GLOBAL_MAP_BIGTILE = "https://static.realmofempires.com/images/map/highlands/Bigtile.jpg";
+        </script>
+        <style>
+            #mapwrap {
+                background: url(https://static.realmofempires.com/images/map/highlands/Bigtile.jpg);
+            }
+            .earth {
+                background: url(https://static.realmofempires.com/images/map/highlands/Bigtile.jpg);
+                background-size: 100% 100%;
+            }
+        </style>
+
+    <%} else{%>
+        <script type="text/javascript">
+            GLOBAL_MAP_BIGTILE = "https://static.realmofempires.com/images/map/bigtile.jpg";
+        </script>
+        <style>
+            #mapwrap {
+                background: url(https://static.realmofempires.com/images/map/bigtile_5.jpg);
+            }
+            .earth {
+                background: url(https://static.realmofempires.com/images/map/bigtile_5.jpg);
+                background-size: 100% 100%;
+            }
+        </style>
+    <%}%>
+
+
+    <div id="roeOptions">
+        
+        <div class="topGarg button"></div>  
+
+        <% if(isDevice == CONSTS.Device.Amazon) { %>
+            <div class="section refreshpage ButtonTouch sfx2" onclick="window.location.reload();"></div>
+        <%} %>
+
+        <%if (IsTesterRoleOrHigher) { %>
+            <div class="section devoptions ButtonTouch sfx2" onclick="$('#adminPopup').show();"></div>    
+            <div  class="sectiontext" style="display:none;height:40px;">
+                 <span>Map Type:<span id="dev_mapType"></span> : <span id="dev_maptype_togle">toggle map type</span>
+                     <script> 
+                         $(function () {
+                             $('#dev_mapType').text(ROE.Landmark.currentMapType);
+                             $('#dev_maptype_togle').click(
+                                function () {
+                                    if (ROE.Landmark.currentMapType === ROE.Landmark.Enum.MapTypes.imgs) {
+                                        $.cookie("dev_forceUseMapType", ROE.Landmark.Enum.MapTypes.canvas);
+                                    } else {
+                                        $.cookie("dev_forceUseMapType", ROE.Landmark.Enum.MapTypes.imgs);
+                                    }
+                                    window.location = window.location + '?r=1';
+                                }
+                             );
+
+                             $('#troopType input[t=' + (localStorage.MapTroopType ? localStorage.MapTroopType : 'all') + ']').attr('checked', 'checked');
+
+                             $('#troopType input').click(function () {
+                                 localStorage.MapTroopType = $(this).attr('t');
+                             });
+
+                             $('#debugJsCss').click(function() {
+                                 var status = $(this).attr('status'); 
+                                 var ismin = status == 'min';
+                                 $.cookie('indev', ismin ? 'true' : null);
+                                 $(this).html(ismin ? 'MIN SCRIPT/CSS' : 'DEBUGED SCRIPT/CSS')
+                                 $(this).attr('status', ismin ? 'debug' : 'min');
+                             });
+
+                             $('#devOptionEnableVOVAnimations').click(function () {
+                                 var enableAnimations = localStorage.getItem('enableVOVAnimations');
+                                 if (!ROE.vov.CONST.EnableAnimations) {
+                                     alert('Option only works when new VOV is enabled');
+                                     return;
+                                 }
+                                 // We use double == in the second term because localStorage holds only strings.
+                                 if (enableAnimations === null || enableAnimations == ROE.vov.CONST.EnableAnimations.DEFAULT) {
+                                     localStorage.setItem('enableVOVAnimations', ROE.vov.CONST.EnableAnimations.TRUE);
+                                     alert('Force Enable animations on VOV');
+                                     ROE.Frame.reloadView();
+                                 } else if (enableAnimations == ROE.vov.CONST.EnableAnimations.TRUE) {
+                                     localStorage.setItem('enableVOVAnimations', ROE.vov.CONST.EnableAnimations.FALSE);
+                                     alert('Force Disable animations on VOV');
+                                     ROE.Frame.reloadView();
+                                 } else if (enableAnimations == ROE.vov.CONST.EnableAnimations.FALSE) {
+                                     localStorage.setItem('enableVOVAnimations', ROE.vov.CONST.EnableAnimations.DEFAULT);
+                                     alert('Default animation behavior');
+                                     ROE.Frame.reloadView();
+                                 }
+                             });
+
+                         });
+                     </script>
+                 </span>
+             </div>
+
+            <div class="section text" id="troopType" style="display:none">
+                <span>See
+                    <input type="radio" name="troopType" t="your" />
+                    your troops or
+                    <input type="radio" name="troopType" t="all" />
+                    all troops at a village </span>
+            </div>
+
+            <%} %>   
+
+        <div id="linkMassActions" class="section massactions ButtonTouch sfx2" ></div>
+
+        <div id="roeOptions-map" class="viewSpecific">
+
+            <!-- Map Zoom section -->
+            <div class="section zoom" >
+                <a class='out ButtonTouch sfx2' onclick="ROE.Landmark.zoom(-0.25)"></a>
+                <a class='in ButtonTouch sfx2' onclick="ROE.Landmark.zoom(0.25)"></a>
+            </div>
+            
+            <div class="optionSection" style="width: 155px;">
+
+                <!-- Tooggle chat in map view -->
+                <div class="option toggleMapChat ButtonTouch sfx2" onclick="ROE.Frame.toggleChatOnMapView();"></div>
+
+                <!-- Map Animation Settings -->
+                <div class="option toggleAnimationSettings ButtonTouch sfx2" onclick="ROE.Animation.openSettingsUI();"></div>
+
+                <!-- Toggle Troop Direction -->
+                <div class="option direction ButtonTouch sfx2" data-troops=""></div>
+
+            </div>
+
+            <div class="optionSection">
+
+                <!-- Move to specific cords -->
+                <div class="option movetoCoord ButtonTouch sfx2" ></div>
+
+                <!-- Map Summary -->
+                <div class="option mapsummary ButtonTouch sfx2" onclick="ROE.Frame.popupMapSummary(event);" ></div>
+
+                <!-- Targets List Attack -->
+                <div class="option launchTargetsListAttack ButtonTouch sfx2"  data-type="2" onclick="ROE.Targets.launchTargetsList(2);"></div>
+
+                <!-- Targets List Support -->
+                <div class="option launchTargetsListSupport ButtonTouch sfx2" data-type="1"  onclick="ROE.Targets.launchTargetsList(1);"></div>
+                        
+            </div>
+
+
+        </div>
+
+        <div id="roeOptions-vov" class="viewSpecific">
+
+            <div class="optionSection">
+
+                <!-- Log Out -->
+                <div id="SwitchRealm" class="ButtonTouch sfx2 option switchRealm"><a href="LogoutOfRealm.aspx?isM=1" runat="server"></a></div>
+
+                <!-- Settings -->
+                <div class="ButtonTouch sfx2 option notifications"></div>
+                            
+                <!-- Rankings -->
+                <div id="linkRanking" class="ButtonTouch sfx2 option ranking"><a target="_blank" href="stats.aspx" ></a></div>
+
+
+                <!-- Battle Sim -->
+                <div id="linkBattleSim" class="ButtonTouch sfx2 option battleSim"><a target="_blank" href="battlesimulator.aspx"></a></div>
+
+            </div>
+
+            <!-- AoC Area -->
+            <asp:Panel id="nextAOC" runat="server" CssClass="nextAOC" visible="false">                    
+                <div class="ButtonTouch sfx2 inner" onclick="ROE.Frame.popGeneric('Age of Cities information','',840,650); ROE.Frame.showIframeOpenDialog('#genericDialog','currentAgeInfo_AOC.aspx');">
+                    <asp:Label ID="lblNextAOC" runat="server" Text="AoC in "></asp:Label><span runat="server" id="timeTillAOC" class="countdown" format="long2"> </span>                         
+                </div>             
+            </asp:Panel>
+
+            
+
+
+            <div class="section servertime">
+                <asp:Label runat="server" ID="Label1" />
+                <span id="hdrServerTime" class="Time help" data-offset="0" data-showtoday="false"></span>
+            </div>
+            <asp:Label ID="lblCurRealm" runat="server" Visible="false" />
+
+
+        </div> 
+
+ </div>
+
+
+    <img src="https://static.realmofempires.com/images/misc/M_VovFooter.jpg" id="footerBackGr1">
+
+    <div id="tutorial">
+        <div class="dialog" style="display:none;" >
+            <section>
+                
+                    <div class="tutbody">
+                        <div class="textwrite"></div>
+
+                        <a class="next BtnBSm2 sfx2" href="#" style="visibility: visible;">Next</a>
+                        <a class="skip BtnBSm2 sfx2" href="#" style="display: none;">Skip</a>                        
+                        <div class="dontShow"><input type="checkbox" style="vertical-align: -2px;"><span></span></div>                       
+                                             
+                        <a class="tutclose" href="#" onclick="if(confirm('My Liege! You are almost done! The people depend on you - I beg you, finish this tutorial. STILL QUIT?')) { ROE.Tutorial.ended(); return true; } return false;"></a>
+                        <div style="clear: both;"></div>
+                    </div>
+                
+            </section>
+        </div>
+
+        <div class="pointer" style="display: none; z-index: 5001; position: absolute; top: 10px; left: 15px; width: 44px; height: 64px; pointer-events: none;">
+            <img src="https://static.realmofempires.com/images/misc/AdvArrowStraight.png" class="pointer-img"/>
+        </div>
+    </div>
+    <% if (!_player.BeginnerProtection_IsNowActive || (_player.BeginnerProtection_ExpiresInDays < 2)) { %>  
+    <div id="sleepMode" class="mUIIcon ButtonTouch sfx2" ><span data-refreshcall="windowReload()" data-refreshCallDelay="1"></span></div>
+    <%} %>
+
+    <div id="currentAge" class="ButtonTouch sfx2" ></div>
+
+    <% if (_player.Realm.Research.IsResearchActive
+        && _player.Realm.RealmType != "CLASSIC" // HACK-should be based on if MORE research items are available  
+        && !_player.Realm.IsTemporaryTournamentRealm)                          
+    { %>  
+        <div id="viewSwitch_res" class="mUIIcon ButtonTouch vovViewOnly"><span data-refreshcall="ROE.Frame.researchersIdleInCountdownAtZero();"></span></div>
+    <% }%>
+    <%if (_player.Realm.IsTemporaryTournamentRealm) 
+                          // this icon goes in place of the research icon
+                      { %>
+    <div id="RXIcon" class="mUIIcon ButtonTouch vovViewOnly" ><span class="counter countdown" data-finisheson="<%=Fbg.Bll.Api.ApiHelper.SerializeDate(_player.Realm.ClosingOn)%>"></span></div>
+    <%} %>
+ 
+    <div runat="server" id="emailEntryIcon" class="emailEntryIcon" style="display:none;z-index: 2; position: absolute;top: 24px;left: 204px;height: 40px; width: 60px; background-image:url('https://static.realmofempires.com/images/misc/M_AccountSecurity.png');"></div>
+    <%if (_player.Realm.NewDailyReward) { %>
+        <div class="mUIIcon dailyReward"><span class="counter"></span></div>   
+    <%} %>
+    <%if (AllowFriendReward){%><a class="inviteFriendsReward mUIIcon" target="_blank" href="friendreward.aspx"></a> <%} %>
+    <div class="selectGovType  effect-pulse" onclick="ROE.UI.GovTypeSelect.init();"></div>   
+    <div runat="server" id="saleIndicator" class="saleIndicator" onclick="ROE.Frame.showBuyCredits();"></div>   
+    <div runat="server" id="mobAppTryGift" visible="false" class="mobAppTryGift  effect-pulse" ></div>
+    <div runat="server" id="Offer2" visible="false" class="Offer2"></div>
+    <div id="showvideoad" class="vovViewOnly" onclick="ROE.Device.showVideoAd();ROE.Api.call_vaar();$(this).hide();" style="display:none;"></div>
+    
+    <div class="vov-inout-alert inc ButtonTouch sfx2"></div>
+    <div class="vov-inout-alert out ButtonTouch sfx2"></div>
+
+    <div id="networkerrors">
+        <span class="error networkerrors_slow">Detected slow internet connection. <a class="Networkerrors_dismiss" onclick="$('.networkerrors_slow').fadeOut();">dismiss</a></span>
+        <span class="error networkerrors_noconnection">You appear to have lost internet connection. Trying again... <a class="Networkerrors_dismiss" onclick="$('.networkerrors_noconnection').fadeOut();">dismiss</a></span>
+    </div>
+
+        <footer>
+        <div class="footernav">
+            <div class="togle button sfx2">
+            </div>
+            <div class="inOutTroops button ButtonTouch ">
+                <span class="incomingCount" style="vertical-align: middle;"></span>
+                <span id="lblCountdown" format="short" data-refreshCallDelay="1" data-refreshCall="ROE.Frame.someInOutgoingCountdownFinished();" style="vertical-align: middle;" />
+            </div>
+            <div id="linkReports" class="reports button ButtonTouch">
+                
+            </div>
+            <div id="linkMail" class="mail button ButtonTouch">
+                
+            </div>
+            <div id="linkClan" class="clan button ButtonTouch sfx2" >
+            </div>
+            <div id="linkItem" class="items button ButtonTouch">
+                <a target="_blank" href="gift_use.aspx"></a>
+            </div>
+            <div id="linkSetting" class="more button">
+                <img src="https://static.realmofempires.com/images/icons/M_more.png" />
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="blockscreens">
+        <div class="whole"></div>
+        <div class="part part1" style="top: 0px; right: 0px;"></div>
+        <div class="part part2" style="bottom: 0px;"></div>
+        <div class="part part3" style="top: 0px; bottom: 0px; right: 0px;"></div>
+        <div class="part part4" style="top: 0px; right: 0px;"></div>
+    </div>
+
+    <div id="busy" style="display: none;">
+        <div id="busy-content">
+            <img src="https://static.realmofempires.com/images/misc/ajax-loader1.gif" /><br />
+            <span id="busy-msg-default">working...</span>
+            <span id="busy-msg-custom" style="display: none;"></span><br />
+            <a id="busy-refresh" href="#"><br><br>        
+                <div class="crashMsg" onclick="ROE.Frame.reloadTheWindow();">Oops! This is taking a while...<br>Tap to refresh if you feel it's stuck!</div>
+                <%if (IsTesterRoleOrHigher) { %><div id="AdminHideBusyFrame" class="fontSilverFrLCmed" title="Keep Calm, and Click this.." onclick="ROE.Frame.free();">HIDE MASK (ADMIN)</div><% }%> 
+            </a>            
+        </div>
+    </div>
+
+    <div id="popupInfo" ></div>
+    
+    <div id="popupInfoTemp" >
+        <div class="popupInfo_box">
+                <div class="popupInfo_header"><span></span><div class="popupInfo_close pressedEffect sfxMenuExit" ></div></div>
+                <div class="popupInfo_content"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    
+        $(function () {
+            if (!BDA.Database.LocalGet('TroopDirection')) { BDA.Database.LocalSet('TroopDirection', 'outgoing'); }
+            $('#roeOptions-map .direction').attr("data-troops", BDA.Database.LocalGet('TroopDirection'));
+        });
+
+      </script>
+
+
+    </form>
+    
+    <div id="preloadimages" style="display: none;">
+        <img src='https://static.realmofempires.com/images/misc/M_MoreColumn.jpg' />
+        <img src='https://static.realmofempires.com/images/misc/M_MoreGarg.png' />
+        <img src='https://static.realmofempires.com/images/icons/m_switchrealm.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_Rucksack.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreSettings.png' />
+        <img src='https://static.realmofempires.com/images/icons/m_Ranking.png' />
+        <img src='https://static.realmofempires.com/images/icons/m_battleSim.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreSleep.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreMusicOn.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreMusicOff.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreSoundOff.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreSoundOn.png' />
+        <img src='https://static.realmofempires.com/images/misc/M_MoreTime.png' />
+        <img src='https://static.realmofempires.com/images/misc/yesGreen.PNG' />
+        <img src='https://static.realmofempires.com/images/icons/M_IcoCancel.png' />
+        <img src='https://static.realmofempires.com/images/misc/m_listbar.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreCoord.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreSummary.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreZoomIn.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreZoomout.png' />
+        <img src='https://static.realmofempires.com/images/misc/M_MoreZoomBG.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreInc.png' />
+        <img src='https://static.realmofempires.com/images/icons/M_MoreOut.png' />
+    </div>
+        
+    <!-- Popup Dialog Section -->
+    <div id="genericDialog" class="popupDialogs"></div>
+    <div id="quickCommandDialog" class="popupDialogs"><div class="QuickCommandPopup"></div></div>
+    <div id="villageListDialog" class="popupDialogs"></div>
+    <div id="statsDialog" class="popupDialogs"></div>
+    <div id="accountDialog" class="popupDialogs"></div>
+    <div id="items2Dialog" class="popupDialogs"></div>
+    <div id="quickBuildDialog" class="popupDialogs"></div>
+    <div id="quickRecruitDialog" class="popupDialogs"></div>
+    <div id="transportSilverDialog" class="popupDialogs"></div>
+    <div id="supportLookupDialog" class="popupDialogs"></div>
+    <div id="giftsDialog" class="popupDialogs"></div>
+    <div id="targetsDialog" class="popupDialogs"></div>
+    <div id="presetsDialog" class="popupDialogs"></div>
+
+
+    <!-- Temp Promo -->
+    <% 
+        DateTime messageTill = new DateTime(2017, 5, 10, 16, 0, 0);
+        string linkTo = "http://tinyurl.com/lzjdhf8"; // links to FB not allowed, will take over the app entirely
+        bool askDevsOn = true; //note, will only show if within messageTill
+        if (DateTime.Now < messageTill) { %>
+    <%if (false)
+        { %>
+        <div id="promo" class="hvov" onclick="ROE.Frame.popGeneric('New realm questions?','',840,650); ROE.Frame.showIframeOpenDialog('#genericDialog','R100info.aspx');"></div>
+    <%} %>
+    <% if (askDevsOn) { %>
+        <a  id="promo" class="hvov" href="<%=linkTo %>"><span class="countdown" data-finisheson="<%=Fbg.Bll.Api.ApiHelper.SerializeDate(messageTill)  %>"></a>
+    <%} %>
+    <style>
+        #promo {
+            position: absolute;
+            left: 3px;
+            top: 185px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            box-shadow: 0px 0px 3px 0px #f1d084;
+            border-radius: 40px;
+            border: 1px outset #f0cf83;
+            background-size: 33px auto;
+            background-position: 50% 50%;
+            background-image: url(https://static.realmofempires.com/images/icons/onAir.png);
+            border-radius: 50px;
+            border: 1px inset #463808;
+            background-color: rgba(0, 0, 0, 0.41);
+            background-repeat:no-repeat;
+            display:block;
+        }
+            #promo .countdown {
+                bottom: 0px;
+                position: absolute;
+                font: 9px "Trebuchet MS", serif;
+                text-shadow: 1px 0px 1px #000, -1px 0px 1px #000, 0px 1px 1px #000, 0px -1px 1px #000;
+                color: #cccccc;
+                left: 0px;
+                right: 0px;
+                text-align: center;
+            }
+    </style>
+
+    <!-- Temp Promo -->
+    <%} %>
+
+</body>
+</html>

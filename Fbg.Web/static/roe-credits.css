@@ -1,0 +1,286 @@
+﻿#credits .bg{
+    
+    background-image:url() ; /* remove original black */
+}
+
+#credits .themeM-squiggle-t {
+    top: 8px;
+}
+#credits .themeM-squiggle-b {
+    bottom: 8px;
+}
+#credits .themeM-panel > .bg
+{
+    background-color:rgba(0,0,0, 0.5);
+}
+
+#credits .themeM-panel.description {
+    
+    width: auto; 
+    height: auto;
+    z-index: 0;
+    overflow: hidden;
+    color: #FFFFFF;
+    padding: 0 12px;
+    font-family: "Arapay";
+    font-size: 14px;
+    text-align:center;
+    
+}
+
+    #credits .themeM-panel.description .fg {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+#credits .themeM-panel.description .themeM-icon,
+#credits .themeM-panel.description .name {
+    position: absolute;
+}
+
+#credits .themeM-panel.description .themeM-icon
+{
+    left: 0px; top: 0px;
+}
+
+#credits .themeM-panel.creditpackages {
+    /*position: absolute;*/
+    left: 0px; 
+    width: auto;     
+    z-index: 0;
+    padding:0 3px;
+}
+
+#credits .themeM-panel.creditpackages > .fg > .margin
+{
+    position: absolute;
+    left: 10px; top: 10px; right: 10px; bottom: 10px;
+    width: auto; height: auto;
+    overflow: hidden;
+}
+
+#credits .themeM-panel.creditpackages a {
+    text-decoration: none;
+}
+
+#credits .themeM-panel.creditpackages .name {
+    left: 54px; top: 0px; right: 104px; bottom: auto;
+    width: auto; height: 24px;
+    overflow: hidden;
+    
+    color: #FFFFFF;
+    font: 14px/1.0em "Eagle Lake", serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#credits .themeM-panel .label{
+    padding: 6px 12px 4px 12px;
+    overflow: hidden;
+    
+    color: #FFFFFF;
+    font: 14px/1.0em "charlemagne_stdbold";
+    text-transform: uppercase;
+    text-align: left;
+    white-space: nowrap;
+
+    -webkit-text-overflow: ellipsis;
+       -moz-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+         -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+    
+    text-shadow: 0 0 4px #000000;
+}
+
+#credits .creditpackagerow { 
+    width: 100%;
+}
+
+#credits .themeM-panel .creditpackage > DIV {
+    width: 85px;
+    padding:6px 0;
+    text-align:center;
+    font-weight: bold;
+    font-size: 11px !important;
+}
+
+#credits .themeM-panel .creditpackage .hidden { 
+    display: none !important; 
+    visibility: hidden  !important;
+}
+
+#credits .themeM-panel .creditpackage .price
+ {
+    color: #FFD776;
+    font: 18px/1.0em "IM Fell French Canon SC", serif;
+}
+
+#credits .credits {
+    text-align:center;
+    color:white;
+    font: 14px/1.0em serif;
+}
+
+#credits .sale {
+    text-decoration:line-through;
+}
+
+
+#credits .saleServants {
+    color:red;
+}
+
+#credits .salemsg {
+    color:red;
+}
+
+#credits .themeM-panel .creditpackage .salePrice {
+    color:red;
+    font: 18px/1.0em "IM Fell French Canon SC", serif;
+}
+
+#credits .offer2Msg {
+    color:red;
+    text-align:center;
+    font-weight:bold;
+}
+#credits .otherPayment {
+    text-align:center;
+    margin: 0 auto;
+}
+#popup_Credits .otherPaymentContent {
+    display:none;
+}
+.otherPaymentContentBox, .otherPaymentContentBox DIV {
+    text-align:center;
+    margin: 0 auto;
+}
+.otherPaymentContentBox SPAN {    
+    color: #e6cd90;
+    font: 14px/34px "IM Fell French Canon lc", serif;
+}
+
+#credits .transferBtn {
+    margin-top: 10px;
+}
+
+#credits .transferBtn .actionButton {
+    margin:0 auto;
+    display: block;
+}
+
+/* Transfer Credits Page */
+
+
+
+#transfercredits .fg.mainSection {
+   background-color: rgba(0, 0, 0, 0.48);
+   line-height: 14px;
+}
+
+#transfercredits table.inputlayout {
+  width:100%;
+}
+
+#transfercredits table.inputlayout td {
+    vertical-align: middle;
+    text-align: left;
+}
+
+#transfercredits .textWrapper {
+    padding:4px;
+}
+
+#transfercredits .centerBtn {
+    margin: 0 auto;
+}
+
+#transfercredits ul {
+    list-style-type: none;
+    clear: both;
+    margin: 0;
+    padding-top: 0px;
+    width:100%;
+    padding-left: 12px;
+   
+}
+#transfercredits ul.dashedList li:before{ content:"-"; position:relative; left:-5px;}
+#transfercredits ul.dashedList li{ text-indent:-5px; }
+
+#transfercredits .transferSearchList {
+ line-height: 16px;
+
+}
+#transfercredits .transferSearchList li {
+        text-indent: -10px;
+}
+
+#transfercredits .searchResultsArea {
+    padding: 4px;
+   background: rgba(0, 0, 0, 0.7);
+    width: 210px;
+    margin-left: 13px;
+   
+}
+
+#transfercredits .title {
+    margin-bottom: 2px;
+}
+
+#transfercredits .body {
+    margin-bottom: 12px;
+    margin-left:10px;
+}
+
+#transfercredits .textWrapper ul {
+     margin-bottom: 12px;
+}
+
+#transfercredits .reqNotMet {
+    color: #FF1818;
+}
+
+#transfercredits .actionButton.grayout {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#transfercredits .transferSuccessMsg {
+    /*color:rgb(21, 223, 21);*/
+    
+    display:none;    
+    background-color: rgba(6, 255, 0, 0.49);
+
+}
+
+#transfercredits .transferFailMsg {
+    background-color: rgba(255, 0, 0, 0.49);
+}
+
+#transfercredits .transferSuccessMsg,
+#transfercredits .transferFailMsg
+ {
+    color:#ffffff;
+    margin-top:8px;
+    padding: 4px;
+    padding-left: 5px;
+    text-shadow:none !important;
+}
+
+
+#transfercredits .transferYES,
+#transfercredits .transferNO {
+    display: inline-block;
+}
+
+#transfercredits .buttonWrapper {  
+    text-align: center;
+}
+
+#transfercredits .confirmTransferBlock {
+    display:none;
+}

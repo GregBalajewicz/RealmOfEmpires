@@ -1,0 +1,21 @@
+﻿.inoutsummary {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+}
+
+    .inoutsummary .summary .noSummaryMsg {
+        text-align: center;
+    }
+
+    .inoutsummary .summary .tdName {
+        padding: 2px;
+    }
+    .inoutsummary .summary .summaryItem {
+        /* background-color: #1D2020; */
+        background-color: rgba(29, 32, 32, 0.9);
+    }
+        .inoutsummary .summary .summaryItem:nth-child(even) {
+            /* background-color: #2A3232; */
+            background-color: rgba(42, 50, 50, 0.9);
+        }

@@ -1,0 +1,332 @@
+﻿
+/*#gifts_popup .giftContainer {
+    position: relative;
+    margin: 4px;
+    width: 96%;
+}
+
+#gifts_popup .giftList{
+            position: relative;            
+            font: 15px/1.0em "IM Fell French Canon SC", serif;            
+            width: 100%;
+        }
+        #gifts_popup .giftInfo{
+           position: absolute;
+           left: 0%;
+           top: 0%;
+           height:406px;
+           width: 100%;
+        }
+        #gifts_popup .giftsIconSheet, #gifts_popup .giftsIconSheetNot  {
+            padding:0 5px;
+            cursor:pointer;
+            font-size:20px;
+        }
+        #gifts_popup .giftsIconSheetNot  {
+            cursor: default;
+        }
+        .giftRArrow  {
+            float:right;
+        }
+        .giftLArrow  {
+            float:left;
+        }
+        .giftsIconSheet img:first-child, .giftsIconSheetNot img:first-child {
+            height: 44px;
+            width: 44px;
+        }
+        .giftsIconSheet SPAN, .giftsIconSheetNot SPAN {
+            font: 18px/1.0em "Georgia", serif;
+        }
+        .giftList H1   {
+            text-align: center;
+            padding:0;
+            margin:5px 0;
+            color: #FFFFFF;
+            font: 22px/1.0em "IM Fell French Canon SC", serif;
+        }    
+        .giftBackButton {            
+            padding: 3px;
+            cursor:pointer;            
+            z-index:20;
+        }
+        #giftsInfoGet  {
+            margin:4px auto;
+            padding:6px;
+            text-align: center;
+            font-weight: bold;  
+            font-size:16px;          
+            height:208px;
+            width:274px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            text-align:center;
+        }
+        #giftCurrent, #giftBuyInfo  {
+            padding: 2px 0; 
+            font: 15px/1.0em "Eagle Lake", serif;
+            text-align:center;
+            color: #acacac;
+        }        
+        #giftInfoName {
+            white-space:nowrap;
+            text-align:left;
+            margin:6px 0 10px 0;
+            color: #FFFFFF;
+            font: 22px/1.0em "Eagle Lake", serif;
+        }
+        .giftInfoPlus img:hover, .giftInfoMinus img:hover  {
+            background-color:red;
+        }
+        .giftsIconSheetNot > div {
+            display:inline-block;
+            color: gray;
+            cursor:default;
+        }       
+        .giftsIconSheetNot .giftreq {
+            font-size: 14px;
+            margin: 0 0 -12px 0;
+        }       
+        #giftupdater {
+            font: 15px/1.0em "IM Fell French Canon SC", serif;
+            text-align:center;
+            margin-bottom:10px;
+            color:white;
+            transition: color 2s;
+            -moz-transition:color 2s;
+            -webkit-transition:color 2s; 
+        }
+        .giftupdaterOut {
+            color: rgba(0,0,0,0.1)  !important;
+        }
+        #giftupdater SPAN {
+            color:white;
+            transition: color 2s;
+            -moz-transition:color 2s;
+            -webkit-transition:color 2s;
+            margin:0;
+            padding:0;
+        }
+        .ShowNewGift {
+            color: #FFD776;
+        }
+        
+        #giftdaily, #giftGetItem {
+            text-align: center;
+            color: #FFD776;
+            font: 14px/1.0em "Eagle Lake", serif;
+            margin: 0;
+            padding:0;
+        }
+        #giftdaily > span {
+            font: 22px/1.0em "IM Fell French Canon SC", serif;
+        }
+        #giftBuyButton IMG{
+            position:relative;
+            cursor:pointer;
+            margin:3px auto;
+            width:138px;
+            height:50px;
+            text-align:center;
+           
+        }
+               
+        .giftInfoImg{
+            position:absolute;
+            text-align:center;
+            width:100%;       
+        }
+        .giftInfoImg > img{
+            opacity:0.40;
+            filter:alpha(opacity=40);
+            padding-top:40px;  
+            z-index: 2;     
+        }
+        .GiftTextLayer {
+            position: relative;
+            width:100%;
+            z-index: 10;
+        }
+        .GiftTextLayer .headerLine0 {
+            height:15px;
+            background: url("https://static.realmofempires.com/images/misc/M_SpacerBottom.png") center no-repeat;
+        }
+        .GiftTextLayer .headerLine1 {
+            height:15px;
+            background: url("https://static.realmofempires.com/images/misc/M_SpacerTop.png") center no-repeat;
+        }
+        #giftError {
+            font: 14px/1.0em "Eagle Lake", serif;
+            color: red;
+            width:90%;
+            height:28px;
+            text-align:center;
+            margin:0 auto;
+            padding-top:6px;
+        }
+        #gifts_popup .phrases {
+            display: none;
+        }
+        #gifts_popup .themeM-squiggle-t {
+            position: relative;
+            background: url('https://static.realmofempires.com/images/misc/m_listbar.png') center no-repeat;
+            width:100%;
+            margin: 7px 0 -17px 0;
+        }
+        #gifts_popup .buysuccess {
+            color: #FFD776  !important;
+            transition: color 3s;
+            -moz-transition:color 3s;
+            -webkit-transition:color 3s; 
+        }
+       
+        #giftWillItem  {
+            color: #acacac;
+            font: 24px/1.0em "IM Fell French Canon SC", serif;
+            padding-bottom: 4px;
+        }
+        #giftWillItem > SPAN {
+            display: inline-block;
+            color: #FFFFFF;
+            font: 24px/1.0em "Georgia", serif;
+        }
+        
+        #giftWillGet, #giftCost, #giftPop  {
+            color: #acacac;
+            font: 18px/1.0em "IM Fell French Canon SC", serif;
+            visibility:hidden;
+        }
+        #giftWillGet DIV, #giftCost SPAN  {
+            display: inline-block;
+            color: #FFFFFF;
+            font: 18px/1.0em "Georgia", serif;
+        }
+        #giftPop         {
+            display: none;
+        }
+        .giftButtonList {
+            padding: 8px 0;
+        }
+        .giftButtonList span {
+            cursor:pointer;
+        }
+        #gifts_popup .text2 {
+            font-weight: normal;
+        }
+        #gifts_popup .bg {
+            border: 2px solid #846824;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            background: rgba(0,0,0,0.75);
+        }
+        .GiftTextImg {
+            display: inline-block;
+            width: 60px;
+            margin-top: -34px;
+            margin-right: -3px;
+            margin-left: -5px;
+            padding:4px 0;
+        }
+        .GiftTextHeader  {
+            display: inline-block;
+        }
+        .GiftTextLayer > DIV   {
+            text-align: center;
+        }
+
+        .giftAddMax   {
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            text-align: center;
+            padding-top: 26px;
+            color: white;
+            font: 13px/1.0em "Georgia", serif;
+            text-shadow: 1px 1px #000000;
+        }
+        #gifts_popup #giftdaily {
+            visibility: hidden;
+        }
+        #gifts_popup .giftdailyShow {
+            visibility: visible !important;
+        }
+        #gifts_popup .buymore {
+            margin-top:4px;
+        }
+        #giftsInfoGet.buyit {
+            height: 236px;
+        } */
+
+
+
+#gifts_popup .inputControl {
+    width: 254px;
+    overflow: auto;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#gifts_popup .inputControl .giftUnits {
+    float:left;
+    border: none;
+    border-radius: 5px;
+    margin-top:12px;
+    margin-left:2px;
+    margin-right:6px;
+    padding: 5px;
+    width: 130px;
+    -webkit-box-shadow: inset -1px 3px 2px 1px rgba(0,0,0,0.3);
+    box-shadow: inset -1px 3px 2px 1px rgba(0,0,0,0.3);
+    background-color:#ffffff;
+    position:relative;
+    z-index:2000;
+}
+
+#gifts_popup .inputControl .invalidNum {
+    background-color:#ff6666;    
+}
+
+#gifts_popup .inputControl .btnCircle {
+     float:left;
+}
+
+
+#gifts_popup .btnMaxGifts {
+    float:left;
+    margin-top:8px;
+}
+
+#gifts_popup .btnMaxGifts .num {   
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#gifts_popup .btnMaxGifts .label {
+ color: #C5B494;
+    
+}
+#gifts_popup .sendGiftsToggleBtnWrapper {
+    margin:0 auto;
+    width: 254px;
+    display: block;
+}
+
+    #gifts_popup .sendGiftsToggleBtnWrapper:hover {
+        text-decoration:none;
+    }
+
+#gifts_popup .sendGiftsToggleBtn {
+    text-align: center;
+    margin-top: 0px;
+    display:block;
+}
+
+#gifts_popup .sendItemToFriend {   
+    display:none;
+
+}
+
+
+#popup_gifts {
+    z-index:999999;
+}

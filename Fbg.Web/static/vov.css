@@ -1,0 +1,97 @@
+﻿ .vovHover
+    {
+        opacity:0.6 !important;
+        display:block !important;
+    }
+    .vovNotBuilt
+    {
+        display:none;
+    }
+
+.vovBuildPnl
+{
+    z-index:101;
+    background-color:Gray;
+    font-size:12pt;
+    width:300px;
+    left:200px;
+    top:41px;
+    display:none;
+    background-color: rgb(75,61,48);
+    border: solid 2px black;
+
+}
+
+.buildLink
+{
+    left:378px;top:15px;
+    z-index:101;
+    font-size:14px;
+    display:block;
+    width:85px;
+    height:28px;
+    background-image: url(https://static.realmofempires.com/images/buttons/build.gif);
+        cursor:pointer;
+
+}
+.buildLink:hover
+{
+    background-image: url(https://static.realmofempires.com/images/buttons/buildhover.gif);
+}
+
+
+.researchLinkA
+{
+    left:10px;top:14px;
+    z-index:101;
+    font-size:14px;
+    display:block;
+    width:123px;
+    height:27px;
+    background-image: url(https://static.realmofempires.com/images/buttons/research_active.gif);
+}
+.researchLinkA:hover
+{
+    background-image: url(https://static.realmofempires.com/images/buttons/research_hover.gif);
+}
+
+.researchLink
+{
+    left:10px;top:14px;
+    z-index:101;
+    font-size:14px;
+    display:block;
+    width:123px;
+    height:27px;
+    background-image: url(https://static.realmofempires.com/images/buttons/research.gif);
+}
+.researchLink:hover
+{
+    background-image: url(https://static.realmofempires.com/images/buttons/research_hover.gif);
+}
+
+
+.vovBuildPnl img.notBuiltBuilding 
+{
+    float:left;
+    height:70px;
+}
+.vovBuildPnl div
+{
+    clear:both;
+    height:70px;
+}
+.vovBuildPnl div a
+{
+    color:White;
+    text-decoration:none;
+    width:100%;
+    height:70px;
+    display:block;    
+}
+
+
+.vovBuildPnl div:hover
+{
+    background-color:rgb(41,33,22);
+}

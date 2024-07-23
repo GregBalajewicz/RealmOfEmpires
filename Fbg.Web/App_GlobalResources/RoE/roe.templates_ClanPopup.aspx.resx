@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddClanName" xml:space="preserve">
+    <value>Add Clan Name</value>
+  </data>
+  <data name="adminCannotDismiss" xml:space="preserve">
+    <value>Administrator cannot dismiss an Owner</value>
+  </data>
+  <data name="Ally" xml:space="preserve">
+    <value>Ally</value>
+  </data>
+  <data name="BackButton" xml:space="preserve">
+    <value>BACK</value>
+  </data>
+  <data name="CantLeaveClan" xml:space="preserve">
+    <value>You are unable to leave your current clan since you are the only owner. You either have to make someone else an owner and then leave, or disband this clan.</value>
+  </data>
+  <data name="ClanMemberLimit" xml:space="preserve">
+    <value>Clan's member limit reached</value>
+  </data>
+  <data name="ClanName" xml:space="preserve">
+    <value>Clan Name</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="CreateYourClan" xml:space="preserve">
+    <value>Create your own clan</value>
+  </data>
+  <data name="CurrentInvitations" xml:space="preserve">
+    <value>Current Invitations</value>
+  </data>
+  <data name="Diplomacy" xml:space="preserve">
+    <value>Diplomacy</value>
+  </data>
+  <data name="Enemy" xml:space="preserve">
+    <value>Enemy</value>
+  </data>
+  <data name="EnterPlayerName" xml:space="preserve">
+    <value>Enter the name of the player you would like to invite to the clan</value>
+  </data>
+  <data name="Info10Days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="Info11BriefClanInfo" xml:space="preserve">
+    <value>Brief Clan Info</value>
+  </data>
+  <data name="Info12Revoke" xml:space="preserve">
+    <value>Revoke</value>
+  </data>
+  <data name="Info13NoPendingInvite" xml:space="preserve">
+    <value>There currently are no pending invitations to the clan.</value>
+  </data>
+  <data name="Info14InviteNumbers" xml:space="preserve">
+    <value>You can issue &lt;span&gt;&lt;/span&gt; invitations at this moment.</value>
+  </data>
+  <data name="Info15MoreInviteOn" xml:space="preserve">
+    <value>More invite on:</value>
+  </data>
+  <data name="Info16ProcessingInvite" xml:space="preserve">
+    <value>Processing player invite..</value>
+  </data>
+  <data name="Info17Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="Info18Reject" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="Info19RejectingClanInvite" xml:space="preserve">
+    <value>Rejecting clan invite</value>
+  </data>
+  <data name="Info1NoInvite" xml:space="preserve">
+    <value>Currently, you do not have any invitations to other clans. To get invited, find a clan you like and message some clan member asking for an invitation.</value>
+  </data>
+  <data name="Info20LeaveClanConfirm" xml:space="preserve">
+    <value>Are you sure you want to leave the clan?</value>
+  </data>
+  <data name="Info21DisbandClan" xml:space="preserve">
+    <value>Disband Clan</value>
+  </data>
+  <data name="Info22JoiningClanConfirm" xml:space="preserve">
+    <value>Joining this clan will make you leave your current one. Are you sure you want to join this clan?</value>
+  </data>
+  <data name="Info23RevokeInvite" xml:space="preserve">
+    <value>Revoking player invite</value>
+  </data>
+  <data name="Info24ClanNameChanged" xml:space="preserve">
+    <value>Clan name changed</value>
+  </data>
+  <data name="Info25Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Info26Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Info27UpdatingProfile" xml:space="preserve">
+    <value>Updating public profile</value>
+  </data>
+  <data name="Info28UpdatingDiplomacy" xml:space="preserve">
+    <value>Updating diplomacy</value>
+  </data>
+  <data name="Info29SavingDiplomacy" xml:space="preserve">
+    <value>Saving diplomacy</value>
+  </data>
+  <data name="Info2NotInClan" xml:space="preserve">
+    <value>You are currently not part of a clan.</value>
+  </data>
+  <data name="Info30SavingSetting" xml:space="preserve">
+    <value>Saving settings</value>
+  </data>
+  <data name="Info31RemoveRoleConfirm" xml:space="preserve">
+    <value>Are you sure you want to remove this role from the player?</value>
+  </data>
+  <data name="Info32RoleChanged" xml:space="preserve">
+    <value>Role changed</value>
+  </data>
+  <data name="Info33DismissConfirm" xml:space="preserve">
+    <value>Are you sure you want to dismiss this player from the clan?</value>
+  </data>
+  <data name="Info34JoinClanConfirm" xml:space="preserve">
+    <value>Are you sure you want to join this clan?</value>
+  </data>
+  <data name="Info35DiplomacyExist" xml:space="preserve">
+    <value>Diplomacy already exist</value>
+  </data>
+  <data name="Info36ClanDontExist" xml:space="preserve">
+    <value>Clan don't exist</value>
+  </data>
+  <data name="Info37ThisIsYourClan" xml:space="preserve">
+    <value>This is your clan</value>
+  </data>
+  <data name="Info38ClanAlreadyExist" xml:space="preserve">
+    <value>This clan already exists</value>
+  </data>
+  <data name="Info39LeaveClan" xml:space="preserve">
+    <value>Leave Clan</value>
+  </data>
+  <data name="Info3CreateYourClan" xml:space="preserve">
+    <value>You can either create and lead your own clan, or contact some other clan and ask for an invitation.</value>
+  </data>
+  <data name="Info40RenameClan" xml:space="preserve">
+    <value>Rename Clan</value>
+  </data>
+  <data name="Info4Allies" xml:space="preserve">
+    <value>Allies</value>
+  </data>
+  <data name="Info5Enemies" xml:space="preserve">
+    <value>Enemies</value>
+  </data>
+  <data name="Info6NAP" xml:space="preserve">
+    <value>Non-aggression Pact (NAP)</value>
+  </data>
+  <data name="Info7DefaultRoles" xml:space="preserve">
+    <value>Default Roles</value>
+  </data>
+  <data name="Info8DefaultRolesText" xml:space="preserve">
+    <value>When checked, all new members will automatically have "Inviter" role.</value>
+  </data>
+  <data name="Info9ExpiresOn" xml:space="preserve">
+    <value>Expires in</value>
+  </data>
+  <data name="InvalidChars" xml:space="preserve">
+    <value>Invalid characters and any HTML code will be stripped from the name</value>
+  </data>
+  <data name="Invitations" xml:space="preserve">
+    <value>Invitations</value>
+  </data>
+  <data name="InvitationsFromClans" xml:space="preserve">
+    <value>Your invitations from other clans</value>
+  </data>
+  <data name="InviteButton" xml:space="preserve">
+    <value>invite</value>
+  </data>
+  <data name="InvitePlayers" xml:space="preserve">
+    <value>Invite Players</value>
+  </data>
+  <data name="Members" xml:space="preserve">
+    <value>Members</value>
+  </data>
+  <data name="NAP" xml:space="preserve">
+    <value>NAP</value>
+  </data>
+  <data name="NotValidInvite" xml:space="preserve">
+    <value>You don't have valid invite</value>
+  </data>
+  <data name="onlyOwnerNoDismiss" xml:space="preserve">
+    <value>This player cannot be dismissed since this is the only owner of the Clan. Clan must have at least one owner.</value>
+  </data>
+  <data name="PeopleInvitedToclan" xml:space="preserve">
+    <value>People invited to this clan</value>
+  </data>
+  <data name="PlayerDismissed" xml:space="preserve">
+    <value>Player dismissed from clan</value>
+  </data>
+  <data name="Points" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="PublicProfile" xml:space="preserve">
+    <value>Public Profile</value>
+  </data>
+  <data name="Rank" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="OnlyOwnerDisband" xml:space="preserve">
+    <value>Only Owner can disband the Clan</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="loading" xml:space="preserve">
+    <value>loading...</value>
+  </data>
+  <data name="Dismiss" xml:space="preserve">
+    <value>Dismiss</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Steward" xml:space="preserve">
+    <value>Steward</value>
+  </data>
+  <data name="RequestInvite" xml:space="preserve">
+    <value>Request Invite to Clan</value>
+  </data>
+</root>

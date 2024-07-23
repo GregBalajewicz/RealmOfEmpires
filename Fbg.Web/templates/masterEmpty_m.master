@@ -1,0 +1,8 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterEmpty_m.master.cs" Inherits="masterEmpty_m" %>
+<asp:contentplaceholder id="HeadPlaceHolder" runat="server">
+</asp:contentplaceholder>
+<div class="templateContent" style="position: relative; width: 100%; height: 100%;">
+<asp:ContentPlaceHolder ID="cph1" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+    

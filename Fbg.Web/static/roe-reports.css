@@ -1,0 +1,479 @@
+﻿.reports_popup_old { position: absolute;  top: 0px;  bottom: 0px;  left: 0px;  right: 0px; overflow: hidden;   }
+
+#reports_popup .reload { position: absolute; right: 11px; top: 6px; cursor: pointer; }
+#reports_popup .loading { float: left; margin: 3px 20px 3px 1px; font-size: 18px; }
+
+/*#reports_popup .list { width: 95%; margin-left: 8px; position: absolute; }
+#reports_popup .list .items { overflow-y: auto; width: 95%; top: 45px; bottom: 0px; position: absolute; left: 0px; right: 0px; }*/
+#reports_popup .list .items .empty { font-size: 22px; margin: 20px; display: none; }
+/*#reports_popup .list .item { 
+    padding: 2px 0; 
+    color: #8e8e8e; 
+    margin: 1px 0; 
+    clear: both; 
+    overflow: hidden; 
+    background: rgba(0,0,0,0.6);
+}*/
+#reports_popup .list .item.selected { color: black !important; background: rgba(255,255,255,0.7); }
+#reports_popup .list .item.selected a { color: black; }
+#reports_popup .list .item.selected .rightArrows { 
+    -moz-opacity: 1; opacity: 1;
+    content: url("https://static.realmofempires.com/images/icons/M_ArrowRBlack.png");   
+}
+
+/*#reports_popup .list .item .time { float:right; margin: 0 10px; }
+#reports_popup .list .item .indicator { height:15px; width:15px; }
+#reports_popup .list .item a { display:block; width:100%; color: #B7B7B7; }*/
+#reports_popup .list .item.new { color: #ffd776 !important; background: rgba(0,0,0,0.9); }
+#reports_popup .list .item.new a { color: #ffd776 !important; }
+#reports_popup .list .item.new .rightArrows { 
+    -moz-opacity: 1; opacity: 1;    
+    content: url("https://static.realmofempires.com/images/misc/M_ArrowR.png"); 
+}
+#reports_popup .list .item a:hover { text-decoration:none !important; }
+#reports_popup .list .item .rightArrows { float: right; -moz-opacity: 1; opacity: 1; }
+#reports_popup .list .item .troopIconSheet44 { float: left; }
+
+.ReportsPopup { height: 100%; }
+
+#reports_popup > .bg { 
+    z-index: 1; 
+    margin-top: 2px;
+    background: rgba(0,0,0,0.5) !important;
+}
+#reports_popup .list .template { display: none }
+#reports_popup .phrases { display: none }
+#reports_popup .more { height: 58px; width: 247px; margin: 0 auto; margin-top: 4px; cursor: pointer; background: url(https://static.realmofempires.com/images/icons/M_MoreList.png) }
+
+#reports_popup .detail { display: none; position: absolute; bottom: 0px; top: 0px }
+
+#reports_popup .detail .info { bottom: 0px; top: 85px; overflow-y: auto; overflow-x: hidden; position: absolute; right: 0; left: 0; }
+
+#reports_popup .detail .attacker .functions, 
+#reports_popup .detail .defender .functions { display:none; }
+
+#reports_popup .function { top: 30px; position: absolute }
+#reports_popup .function > div { float: left; font-size: 18px; margin: 5px; cursor: pointer }
+#reports_popup .function .forward-search { display: none; width: 100%; }
+#reports_popup .function .forward-search .selected { width: 50% }
+#reports_popup .function .forward-search .result span { margin: 0px 5px 0px 5px; float: left }
+#reports_popup .function .forward-search .message { clear: both }
+
+#reports_popup .list { top: 0px; overflow-y: auto; overflow-x: hidden; }
+#reports_popup .list, #reports_popup .details { position: absolute; top: 0px; bottom: 0px; width: 100%; }
+
+#reports_popup .list .filterHeader { height: 22px; line-height: 33px; font: 16px "charlemagne_stdbold"; padding-top: 11px; }
+#reports_popup .action { width: 44px; height: 44px; }
+#reports_popup .action-expandColapse { position: absolute; right: 0px; top: 0px; width: 44px; height: 44px; background-image: url("https://static.realmofempires.com/images/misc/M_ArrowDown.png"); background-repeat: no-repeat; background-position: center center; filter: alpha(opacity=1); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; -webkit-transition: opacity 0.7s; -moz-transition: opacity 0.7s; transition: opacity 0.7s; }
+#reports_popup .action-expandColapse.clicked { background-image: url("https://static.realmofempires.com/images/misc/M_ArrowUp.png"); filter: alpha(opacity=0.4); -moz-opacity: 0.4; -khtml-opacity: 0.4; opacity: 0.4; -webkit-transition: opacity 0.7s; -moz-transition: opacity 0.7s; transition: opacity 0.7s; }
+#reports_popup .detail .fg .themeM-more { float: left }
+/*
+#reports_popup .list .reportseparator {
+    width:100%;
+    text-align:center;
+    margin: -7px 0;
+}
+*/
+#reports_popup [id$=lblDescription] a {
+    line-height:33px;
+}
+
+/*#popup_reports {
+    background-image: url('https://static.realmofempires.com/images/backgrounds/M_BG_Battle1.jpg');
+    background-size: 100% auto;
+}*/
+
+
+
+.reportDetails_forwardReportPopup .forwardPopup {   
+    z-index:100;
+    background-color:none;
+}
+
+
+.reportDetails_forwardReportPopup .forwardPopup .forwardSendBtn {
+    position: relative;
+    float: left;
+    top: 6px;
+}
+
+.reportDetails_forwardReportPopup .forwardPopup .forwardTo {
+    position: relative;
+    width: 184px;
+    float: left;
+    margin: 12px 5px 5px 8px;
+    -webkit-box-shadow: inset -1px 3px 2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset -1px 3px 2px 1px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+.reportDetails_forwardReportPopup .forwardPopup ul.forwardSearchList {
+    position:relative;
+    clear:both;
+    padding:6px;
+    padding-left: 14px;
+    list-style: none;
+    height: 150px;
+    overflow: auto;
+}
+
+.reportDetails_forwardReportPopup .forwardPopup ul.forwardSearchList li {
+    font: 13px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    padding:4px 0px;
+}
+
+.reportDetails_forwardReportPopup .forwardPopup ul.forwardSearchList li {
+    font: 13px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    padding:4px 0px;
+}
+
+.reportDetails_forwardReportPopup .forwardPopup .loadingSearchList {
+   background-image:url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+   width:20px;
+   height:20px;
+   background-size:20px 20px;
+   background-repeat:no-repeat;
+   margin-left:14px;
+   position: absolute;
+top: 110px;
+
+}
+
+#reports_popup .phrases {
+    display:none;
+}
+
+#newReportsIndicator {
+    display:none;
+     position: absolute;
+    top: 15px;
+    right: 50px;
+}
+
+/*#reports_popup .item .hotspot {
+    float:left;    
+    width: 100%;
+}*/
+
+
+/*
+#reports_popup .toggle {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-size:100% 100%;
+    top: 3px;
+    margin: 2px 5px;
+    position: absolute;
+    float:left;
+}
+
+#reports_popup .toggle.selectableReport {
+    display:inline-block;
+}
+
+#reports_popup .toggle.selectableReport[data-state="on"] {
+    background-image: url('https://static.realmofempires.com/images/misc/yesGreen.PNG');
+}
+#reports_popup .toggle.selectableReport[data-state="off"] {
+    background-image: url('https://static.realmofempires.com/images/icons/M_IcoCancel.png');
+}
+*/
+
+
+
+.filterReports {
+    float:left;
+}
+
+#reportFilterInput {
+    float:left;
+    margin: 2px;
+    height:20px;
+    width:100px;
+}
+
+.filterReports .runFilterBtn {
+    float:left;
+    background-color:blue;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+
+#reports_popup .listTools .filterReports .clearFilterBtn {
+
+    background-color: transparent;
+    position: relative;
+    padding: 0px;
+    padding-top: 10px;
+    float: left;
+    margin: 2px;
+    cursor: pointer;
+    width:22px;
+    height:22px;
+}
+
+.reportModifiers {
+    float:left;
+    overflow: auto;
+}
+
+.reportModifiers .deleteSelectedReports {
+    float:left;
+    background-color:red;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.reportModifiers .forwardSelectedReports {
+    float:left;
+    background-color:darkorange;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.reportModifiers .selectAllReports {
+    float:left;
+    background-color:forestgreen;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.reportModifiers .deselectAllReports {
+    float:left;
+    background-color:forestgreen;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+
+.reportModifiers .showStarred {
+    float:left;
+    background-color:darkmagenta;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.reportModifiers .editReports {
+    float:left;
+    background-color:mediumpurple;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+
+#reports_popup .numNewReports {
+    display:none;
+    background-image: url('https://static.realmofempires.com/images/fonts/num_B3.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+
+#reports_popup .fontFellFCLClg {
+    color: #ffffff;
+    font: 15px/1.0em "IM Fell French Canon LC", serif;
+    text-shadow: 0 0 4px #000000;
+}
+
+
+/* Full size */
+/*.btnCheckboxToggle {
+    height:40px;
+    width:40px;
+    text-align: center;
+        
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px 0px;
+    background-size: 450px 550px;
+    background-repeat:no-repeat;
+   
+}*/
+
+.btnCheckboxToggle .checkmark {
+    height:27px;
+    width: 27px;
+    text-align: center;
+  
+    background-size: 450px 550px;
+    background-repeat:no-repeat;
+
+    position: relative;
+    top: 5px;
+    left: 6px;
+}
+
+.btnCheckboxToggle .checkmark.on {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -51px 0px;   
+}
+
+.btnCheckboxToggle .checkmark.off {
+   background-image:none;
+}
+
+.btnCheckboxToggle .checkmark.del {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -98px 0px;  
+}
+
+
+/* Custom sized */
+/*.btnCheckboxToggle.medUI {
+    height:24px;
+    width:24px;
+    background-size: 270px 330px;
+    background-position: 0px 0px;
+}*/
+
+.btnCheckboxToggle.medUI .checkmark {
+    height:16px;
+    width: 16px;
+    background-size: 270px 330px;
+   
+    top: 3px;
+    left: 5px;
+}
+
+.btnCheckboxToggle.medUI .checkmark.on {
+     background-position: -31px 0px; 
+}
+
+
+/* Star toggle */
+.btnStarToggle {
+    
+    height:32px;
+    width:32px;
+    text-align: center;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/icons/starred.png");
+  
+    background-size: 32px 32px;
+    background-repeat:no-repeat;
+
+}
+
+.btnStarToggle.medUI {
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    background-size: 24px 24px;
+}
+
+
+.btnStarToggle.on {
+    opacity:1;
+    background-image: url("https://static.realmofempires.com/images/icons/starred.png");
+}
+
+.btnStarToggle.off {
+    opacity:0.7;
+     background-image: url("https://static.realmofempires.com/images/icons/starredh.png");
+}
+
+
+
+.reportDetails_forwardReportPopup .bar,
+.reportDetails_showNotePopup .bar {
+    margin: 0 auto;
+    left:0;
+}
+.reportDetails_forwardReportPopup .forwardPopup {
+    margin: 0 auto;
+    width:320px;
+}
+
+/* Initially these are faded */
+.listTools .forwardSelectedReports, 
+.listTools .deleteSelectedBtn {
+    opacity: 0.2;
+}
+
+.listTools .forwardSelectedReports.active, 
+.listTools .deleteSelectedBtn.active {
+    opacity: 1.0;
+}
+
+#reports_popup .filterReports .clearFilterBtn img {
+width: 22px;
+height: 22px;
+}
+
+#reports_popup .filterTerm {
+    display:none;
+    float:left;
+    padding-left: 6px;
+    padding-right: 3px;
+    padding-top:8px;
+}
+
+
+#reports_popup .listTools .confirmAction {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 44px;
+    text-align: center;
+    text-shadow: 0px 0px 1px #FF0000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    font-family: "IM Fell French Canon", serif;
+    text-decoration: none;
+    user-select: none;
+}
+
+    #reports_popup .listTools .confirmAction.areyousure2 {
+        font-size: 14px;
+        line-height: 21px;
+        line-height: 15px;
+    }
+
+
+#reports_popup .listTools .confirmAction:hover {
+    text-decoration:none;
+}
+
+#reports_popup .listToolIcon.starredIcon {
+    background-image:url('https://static.realmofempires.com/images/icons/starred.png');
+}
+
+#reports_popup .listToolIcon.govIcon {
+    background-image:url('https://static.realmofempires.com/images/units/Governor_M.png');
+}
+
+#reports_popup .listToolIcon.spyIcon {
+    background-image:url('https://static.realmofempires.com/images/units/Spy_M.png');
+}
+
+#reports_popup .listToolIcon.successIcon {
+    background-image:url('https://static.realmofempires.com/images/icons/M_AttackGreen.png');
+}
+
+#reports_popup .listToolIcon.successIcon {
+    background-image:url('https://static.realmofempires.com/images/icons/M_AttackGreen.png');
+}
+
+#reports_popup .listToolIcon.defeatIcon {
+    background-image:url('https://static.realmofempires.com/images/icons/M_AttackRed.png');
+}
+
+
+
+#reports_popup .subjectColumn .forwarded {
+    display:none;
+}
+#reports_popup .subjectColumn .forwarded.show {
+    display:block;
+}

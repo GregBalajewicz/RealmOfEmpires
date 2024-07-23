@@ -1,0 +1,115 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master_PopupFullFunct.master.cs" Inherits="master_PopupFullFunct" %>
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%= RSc("GameName") %></title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <%=Fbg.Common.WebHelper.FileList.js(Fbg.Common.WebHelper.FileList.FOR.popupfulFunct, isMobile, Config.InDev) %>
+
+    <script type="text/javascript">
+        <asp:Literal runat=server ID="lblJSONStruct"></asp:Literal>    
+
+        function pageLoad () 
+        {       
+            jaxReplace();
+            UpdateStartingCoins();
+            initTimers();
+             $('.helpQuestion, #highlight').remove();
+            initHelp();
+            InitStripeTable();
+            initFakeSelects();
+            InitAutoPop();
+            InitAutoPop2();
+            InitAutoPop3();
+
+             if (typeof window.CustomOnLoad === 'function') { CustomOnLoad(); }      
+        }        
+    </script>  
+    <%=Fbg.Common.WebHelper.FileList.css(Fbg.Common.WebHelper.FileList.FOR.popupfulFunct, isMobile, Config.InDev) %>
+    
+    <link type="text/json" rel="help" href="static/help/j_Global.json.aspx" />
+    <asp:contentplaceholder id="HeadPlaceHolder" runat="server">
+    </asp:contentplaceholder>
+
+</head>
+<body runat="server" id="body" class="Popup" style="margin-left: 0; margin-right: 0; background-color : rgb(75,61,48);color : rgb(195,144,55);">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+        <Services>
+            <asp:ServiceReference Path="Troops.asmx" />
+        </Services>
+        </asp:ScriptManager>
+
+
+    <div runat=server id=villageHeader visible=false style="height: 46px; max-width: 100%; min-width: 639px; background-image: url(https://static.realmofempires.com/images/HeaderBG3.gif)">
+        <div class="header" style="width: 490px; ">
+                <table width="100%" height="23" border="0" cellpadding="0" cellspacing="0" style="font-size: 13px">
+                    <tr>
+                        <td class="silverIcon">
+                            <a href="QuickTransportCoins.aspx?svid=<%=_village.id.ToString()%>" onclick="return popupQuickSilverTransport(this);">
+                                <asp:Image runat="server" ID="imgSilver" ImageUrl="https://static.realmofempires.com/images/coin.png" /></a>
+                        </td>
+                        <td class="S">
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                    <span class="help" rel="jSilver">
+                                        <asp:Label CssClass="tut" ID="lblCoins" runat="server"></asp:Label>/<asp:Label CssClass="tut"
+                                            ID="lblTrasury" runat="server"></asp:Label></span> <span runat="server" id="spanProd"
+                                                class="tut SP" rel="jSilverProd">(+<asp:Label CssClass="help" rel="jSilverProd" ID="lblProduction"
+                                                    runat="server"></asp:Label>)</span>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </td>
+                        <td width="23" class="FI">
+                            <img src='https://static.realmofempires.com/images/Food.png'>
+                        </td>
+                        <td class="help F" rel="jFood">
+                            <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                                <ContentTemplate>
+                                    <asp:Label ID="lblPopulation" CssClass="tut" runat="server"></asp:Label></ContentTemplate>
+                            </asp:UpdatePanel>
+                        </td>
+                        <td class="R">
+                        </td>
+      
+                        <td width="150">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+                <table height="23" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td width="12" background="https://static.realmofempires.com/images/hdrBG_vL.gif">
+                            &nbsp;
+                        </td>
+                        <td background="https://static.realmofempires.com/images/hdrBG_vC.gif" width="95%" >
+                            <asp:HyperLink ForeColor="black" ID="linkVillageName" runat="server" style="font-weight:bold" >HyperLink</asp:HyperLink></ContentTemplate></asp:UpdatePanel>
+                        </td>
+                        <td width="30" background="https://static.realmofempires.com/images/hdrBG_vRtrans.gif"
+                            align="left">
+                        </td>
+                    </tr>
+                </table>
+        <div class="header_bar" style="width: 245px; float: right; margin-top: 5px;">
+        </div>
+    </div>
+    <div class="TDContent" style="width: 100%; float: left; clear: both;">
+        <asp:ContentPlaceHolder ID="cph1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <asp:UpdateProgress ID="UpdateProgress2" runat="server" >
+        <ProgressTemplate>
+            <div style="color:rgb(195,144,55);background-color: rgb(75, 61, 48); position:fixed;left:50%;top:100px;z-index:1000;font-size:12pt;padding:5px;">
+                <center><img src='https://static.realmofempires.com/images/misc/ajax-loader1.gif' /><br />
+                loading
+                </center>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    </form>
+</body>
+</html>

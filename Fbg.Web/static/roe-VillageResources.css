@@ -1,0 +1,166 @@
+﻿#popup_Resources #content {
+    height: initial !important;
+}
+
+#resources .vilres_nameloc_txt {
+    display: inline-block;
+    letter-spacing: 0; 
+    text-overflow: ellipsis;
+    max-width: 62%;
+    overflow: hidden;
+}
+#resources .vilres_coord {
+    font: 18px/20px "Georgia";
+}
+#resources .topbar {
+    position: absolute;
+    background: url('https://static.realmofempires.com/images/misc/m_listbar.png') center no-repeat;
+    width: 100%;
+    height: 20px;
+    margin: -12px 0 0px 0;
+}
+#resources .separator {  
+    background-image: url('https://static.realmofempires.com/images/misc/M_SP_UIMisc.png');
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    background-position: 0px 0px;
+    width: 250px;
+    height: 6px;
+    margin: -6px auto 0 auto;
+}
+#resources .Village {
+    text-align:center;
+}
+#resources .Village, #resources .resourcesSilver, #resources .resourcesFarm {
+    background: rgba(0,0,0,0.8);
+    margin: 5px 0;
+    padding: 5px 20px;
+    color: #d7d7d7;
+    font: 18px/20px "IM Fell French lc";
+    text-shadow: 1px 1px 2px #000000;
+}
+#resources .resourcesSilver IMG, #resources .resourcesFarm IMG {
+    float: left;
+    margin: 5px;
+}
+#resources .yeaprogress {    
+    height: 16px;
+    border: 2px solid #7d7d7d;
+    background: #000000;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    padding: 2px 6px 2px 2px     
+}
+#resources .progress-indicator {
+    height: 12px;
+    border: 2px solid rgb(2, 133, 48);   
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    background-color: rgba(2, 133, 48, 1.0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(2, 133, 48, 1.0)), color-stop(100%, rgba(22, 255, 66, 1.0)));
+    background: -webkit-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+    background: -moz-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+    background: -ms-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+    background: -o-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+    background: linear-gradient(to right, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+}
+#resources .red-progress-indicator {
+    height: 12px;
+    border: 2px solid rgb(133, 2, 48);    
+    -webkit-border-radius: 11px;
+    border-radius: 11px;
+    background-color: rgba(133, 2, 48, 1.0);
+    background: linear-gradient(to right, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(133, 2, 48, 1.0)), color-stop(100%, rgba(255, 22, 66, 1.0)));
+    background: -webkit-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+}
+#resources .yeaLabel {
+    color: #d7d7d7;
+    font: 14px/20px "IM Fell French lc";
+    text-shadow: 1px 1px 2px #000000;
+    text-align:left;
+    margin: -18px 4px;
+}
+#resources .boostLoyaltyText {
+    display: inline-block;
+    width:70%;
+    color: #e6cd90;
+    font: 12px/16px "IM Fell French lc";
+    vertical-align: top;
+    margin-top: 14px;
+}
+#resources .boostLoyaltyClick {
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background: url(https://static.realmofempires.com/images/icons/m_hatspells.png) center no-repeat;
+    background-size: 28px 28px;
+    background-position: 8px -1px;
+}
+#resources .notEnoughServants {
+    display: none;
+    color: #d7d7d7;
+    font: 14px/16px "IM Fell French lc";
+}
+#resources .plainLabel {
+    color: #7d7d7d;
+    font: 12px/15px "Georgia";
+}
+#resources .buttonRight {
+    display: inline-block;
+    float:right;
+    margin-top: 6px;
+}
+#resources .silverText {
+    display: inline-block;
+}
+#resources .sendSilverClick {
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background: url(https://static.realmofempires.com/images/icons/Q_SilverHover.png) center no-repeat;
+    text-align: left;
+    background-position: 8px -1px;
+    background-size: 26px 26px;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 9px 0px 0 8px;
+    text-shadow: 2px 2px 1px #000000;
+}
+#resources .mini {
+    font: 12px/12px "IM Fell French lc";
+}
+#resources .bonusVillage {
+    background: rgba(0,0,0,0.8);
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    text-align:center;
+}
+#resources .yellowLabel {
+    display: inline-block;
+    color: #e6cd90;
+    font: 12px/16px "IM Fell French lc";
+    text-shadow: 1px 1px 2px #000000;
+}
+#resources .bonusIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(https://static.realmofempires.com/images/Icons/q_recruithover.png) no-repeat center;
+}
+#resources .bonusIcon:before {
+    content: "+";
+    content: "+";
+    position: relative;
+    top: 14px;
+    left: -8px;
+    color: rgb(22, 255, 66);
+    font: 19px/16px "Georgia";
+    text-shadow: 1px 1px 2px #000000;
+    font-weight: bold;
+}
+#resources .bonusTitle {
+    display: inline-block;
+    text-align:center;
+}

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BracketGetMore" xml:space="preserve">
+    <value>(get more)</value>
+  </data>
+  <data name="Build" xml:space="preserve">
+    <value>Build</value>
+  </data>
+  <data name="BuildTimeSpellCast" xml:space="preserve">
+    <value>CONGRATS! Spell cast successful!&lt;BR&gt; You've cut the build time by {0}.&lt;BR&gt; You have {1} Servants left.</value>
+  </data>
+  <data name="BusyUpgrading" xml:space="preserve">
+    <value>Busy upgrading</value>
+  </data>
+  <data name="CannotBeUpgradedTo" xml:space="preserve">
+    <value>Cannot be upgraded to</value>
+  </data>
+  <data name="CannotBuildNow" xml:space="preserve">
+    <value>Cannot build right now. Reason:</value>
+  </data>
+  <data name="ConstructionSpellCast" xml:space="preserve">
+    <value>CONGRATS! Spell cast successful! Construction completed.&lt;BR&gt; You have {1} Servants left.</value>
+  </data>
+  <data name="CurrentLevel" xml:space="preserve">
+    <value>current level</value>
+  </data>
+  <data name="DetailsElipses" xml:space="preserve">
+    <value>details...</value>
+  </data>
+  <data name="DowngradesInProgress" xml:space="preserve">
+    <value>Downgrades in progress. Cancel all downgrades first.</value>
+  </data>
+  <data name="ErrorDoingUpgrade" xml:space="preserve">
+    <value>error doing upgrade</value>
+  </data>
+  <data name="FifteenMinutes" xml:space="preserve">
+    <value>15 minutes</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>first.</value>
+  </data>
+  <data name="FourHours" xml:space="preserve">
+    <value>4 hours</value>
+  </data>
+  <data name="GetItAtLevel" xml:space="preserve">
+    <value>Get it at level</value>
+  </data>
+  <data name="HireMoreServants" xml:space="preserve">
+    <value>Hire More Servants Now!</value>
+  </data>
+  <data name="MustUnlockUnlimitedQ" xml:space="preserve">
+    <value>You must unlock Unlimited Building Q premium feature.</value>
+  </data>
+  <data name="NeedMoreFood" xml:space="preserve">
+    <value>Need more energy.</value>
+  </data>
+  <data name="NextLevel" xml:space="preserve">
+    <value>next level</value>
+  </data>
+  <data name="NoMoreLevels" xml:space="preserve">
+    <value>No more levels</value>
+  </data>
+  <data name="NotEnoughServants" xml:space="preserve">
+    <value>Not enough servants to cast the spell</value>
+  </data>
+  <data name="NotEnoughSilver" xml:space="preserve">
+    <value>Not enough minerals. Wait for more minerals.</value>
+  </data>
+  <data name="NotYetConstructed" xml:space="preserve">
+    <value>not yet constructed</value>
+  </data>
+  <data name="OneHour" xml:space="preserve">
+    <value>1 hour</value>
+  </data>
+  <data name="OneMinute" xml:space="preserve">
+    <value>1 minute</value>
+  </data>
+  <data name="OnlyOneBuildingUpgrade" xml:space="preserve">
+    <value>Only one building can be upgraded at a time</value>
+  </data>
+  <data name="RequirementsNotYetSatisfied" xml:space="preserve">
+    <value>&lt;div&gt;Building requirements not yet satisfied.&lt;BR&gt;First build the following:&lt;ul&gt;</value>
+  </data>
+  <data name="RightNowReason" xml:space="preserve">
+    <value>right now. Reason:</value>
+  </data>
+  <data name="SpeedUpUsed" xml:space="preserve">
+    <value>Speed up function used!</value>
+  </data>
+  <data name="UntilYourUpgradesReach10" xml:space="preserve">
+    <value> &lt;BR&gt;until your Headquarters building reaches level {0}</value>
+  </data>
+  <data name="Upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="UpgradeFarmLand" xml:space="preserve">
+    <value>Upgrade Power Plant</value>
+  </data>
+  <data name="UpgradesToLevel" xml:space="preserve">
+    <value>&lt;BR&gt;upgrades to level {0}&lt;BR&gt;queued up.</value>
+  </data>
+  <data name="UpgradeTo" xml:space="preserve">
+    <value>Upgrade to</value>
+  </data>
+  <data name="UpgradingArrow" xml:space="preserve">
+    <value>Upgrading-&gt;</value>
+  </data>
+  <data name="WaitForConstructionToFinish" xml:space="preserve">
+    <value>Busy. Wait for construction to complete.&lt;BR&gt; Only one building can be upgraded at a time</value>
+  </data>
+  <data name="YouHave" xml:space="preserve">
+    <value>you have</value>
+  </data>
+  <data name="FoodNeededElipses" xml:space="preserve">
+    <value>Energy needed:</value>
+  </data>
+  <data name="SilverNeededElipses" xml:space="preserve">
+    <value>Minerals needed:</value>
+  </data>
+  <data name="TimeElipses" xml:space="preserve">
+    <value>Time:</value>
+  </data>
+</root>

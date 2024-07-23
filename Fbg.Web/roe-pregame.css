@@ -1,0 +1,143 @@
+
+
+
+/* WARNING! WARNING! WARNING! */
+
+/* CHANGES TO THIS FILE AFFECT MANY PAGES, DO SO VERY CAREFULLY. */
+/* PAGE SPECIFIC CHANGES SHOULD IDEALLY BE DONE INSIDE THE PAGES THEMSELVES. */
+
+/* WARNING! WARNING! WARNING! */
+
+
+
+/* General CSS pre-setup */
+* {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+
+ul, ol {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+a {
+    color: #FFD886;
+    text-decoration: none;
+}
+
+html {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    color: #F7F7F7;
+}
+
+
+
+/* Common pre-game setup */
+
+/* 
+
+    body or body.viewShared => for both Mobile and Desktop
+    body.viewMobile => mobile only, usually with aspx isMobile == true
+    body.viewDesktop => desktop only, usually with isD2 == true
+
+*/
+
+.holderbkg {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+}
+
+    .holderbkg .corner {
+        position: absolute;
+        background-size: 100% 100%;
+    }
+
+    .holderbkg .corner-top-left {
+        width: 35px;
+        height: 36px;
+        left: 0px;
+        top: 0px;
+        background-image: url('https://static.realmofempires.com/images/forum/MainBox_TL.png');
+    }
+
+    .holderbkg .corner-top-right {
+        width: 35px;
+        height: 36px;
+        right: 0px;
+        top: 0px;
+        background-image: url('https://static.realmofempires.com/images/forum/MainBox_TR.png');
+    }
+
+    .holderbkg .corner-bottom-left {
+        width: 35px;
+        height: 46px;
+        left: 0px;
+        bottom: 0px;
+        background-image: url('https://static.realmofempires.com/images/forum/MainBox_BL.png');
+    }
+
+    .holderbkg .corner-bottom-right {
+        width: 35px;
+        height: 46px;
+        right: 0px;
+        bottom: 0px;
+        background-image: url('https://static.realmofempires.com/images/forum/MainBox_BR.png');
+    }
+
+    .holderbkg .border {
+        position: absolute;
+        background-size: 100% 100%;
+    }
+
+    .holderbkg .lb-border-top {
+        top: 0px;
+        left: 35px;
+        right: 35px;
+        height: 36px;
+        background-image: url('https://static.realmofempires.com/images/forum/MainBox_TC.png');
+    }
+
+    .holderbkg .lb-border-bottom {
+        left: 35px;
+        right: 35px;
+        height: 46px;
+        bottom: 0px;
+        background-image: url('https://static.realmofempires.com/images/forum/MainBox_BC.png');
+    }
+
+    .holderbkg .lb-border-left {
+        left: 0px;
+        top: 36px;
+        bottom: 46px;
+        width: 35px;
+        background-image: url('https://static.realmofempires.com/images/forum/MainBox_L.png');
+    }
+
+    .holderbkg .lb-border-right {
+        right: 0px;
+        top: 36px;
+        bottom: 46px;
+        width: 35px;
+        background-image: url('https://static.realmofempires.com/images/forum/MainBox_R.png');
+    }
+
+form {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}

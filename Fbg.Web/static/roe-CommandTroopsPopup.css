@@ -1,0 +1,294 @@
+﻿#CommandTroopsPopup .AttacksPopup {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+#attack_popup .attackUnitList, #attack_popup .attackInfo{
+    position:relative;            
+    margin:0 4px;
+    padding:4px;
+    z-index:2;
+}
+#attack_popup .attackInfo {
+    z-index:1;
+    font: 13px/1.0em "Georgia", serif;
+    padding: 2px 4px;
+}
+#attack_popup .bg {
+    border: 2px solid #846824;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.75);
+}
+#attack_popup .attackIconSheet INPUT {
+    width: 42px;
+    text-align:center;
+    font: 16px/1.0em "Georgia", serif;
+    padding:0;
+    margin:0;
+    border:0;
+    letter-spacing:-1px;
+    }
+#attack_popup .themeM-squiggle-t {
+    position: relative;
+    background: url('https://static.realmofempires.com/images/misc/m_listbar.png') center no-repeat;
+    width: 100%;
+    top: -1px !important;
+}
+#attack_popup .targetVillage, #attack_popup .currentVillage {
+    margin: 2px 1px;
+    color: #FFFFFF;
+    font: 15px/1.0em "IM Fell French Canon SC", serif;
+    text-shadow: 2px 2px 1px #000000 ;
+    white-space:nowrap;
+}
+#attack_popup .targetvillagename {
+    display: inline-block;
+    max-width:180px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.popupDialogs #attack_popup .targetvillagename {
+    display: initial;
+}
+#attack_popup #attackupdater {
+    font: 16px/1.0em "IM Fell French Canon SC", serif;
+    text-align:center;
+    margin-bottom:4px;
+    color:white;
+    transition: color 2s;
+    -moz-transition:color 2s;
+    -webkit-transition:color 2s; 
+}
+#attack_popup .attackupdaterOut {
+    color: rgba(0,0,0,0.1)  !important;
+}
+#attack_popup .attackButton {
+    display: inline-block;
+    margin:0 3px;
+    padding:0;
+    cursor:pointer;
+    min-width:40px;
+    text-align:center;  
+    vertical-align:middle;
+    font: 15px/1.0em "Georgia", serif;
+}
+
+#attack_popup #doAttackButton {
+    position: relative;
+    top:2px;
+    margin: 0 auto;
+    clear:both;
+    width: 138px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#attack_popup .savePreset {
+    position: relative;
+    margin: 0 auto;
+    clear:both;
+    margin-bottom: 10px;
+}
+
+#attack_popup .unithide {
+    display: none;
+}
+#attack_popup #targetInfo,
+#attack_popup #targetError {
+    font: 14px/1.0em "Georgia", serif;
+    text-shadow: 2px 2px 1px #000000;
+    color: red;
+    display: none;
+}
+
+#attack_popup .moraleWarningWrapper {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 5px;
+}
+    #attack_popup .moraleWarningWrapper .moraleWarningMsg {
+        position: relative;
+        min-height: 34px;
+        color: #ff2d2d;
+        padding-left: 50px;
+        background-size: 44px auto;
+        background-image: url(https://static.realmofempires.com/images/icons/M_HD_Morale.png);
+        background-position: 0px -4px;
+        background-repeat: no-repeat;
+    }
+    #attack_popup .moraleWarningWrapper .moraleWarningDisable {
+        position: relative;
+        width: 230px;
+        height: 42px;
+        margin: 0 auto;
+        margin-top: 5px;
+        overflow: hidden;
+        color: #FFD886;
+        font: 15px "IM Fell French Canon SC", serif;
+        text-align: center;
+        padding-top: 10px;
+        line-height: 15px;
+        cursor: pointer;
+        text-shadow: 0px 3px 3px #000, 0px -3px 3px #000, -4px 0px 3px #000, 4px 0px 3px #000;
+        background: url(https://static.realmofempires.com/images/buttons/M_BtnL_P.png), url(https://static.realmofempires.com/images/buttons/M_Btn2b_L.png), url(https://static.realmofempires.com/images/buttons/M_Btn2b_R.png);
+        background-size: 180px 100%, 26px 100%, 26px 100%;
+        background-position: center top, left top, right top;
+        background-repeat: no-repeat;
+    }
+
+#attack_popup #targetError {
+    text-align: center;
+}
+#attack_popup #targetInfo SPAN, #attack_popup #targetError SPAN, .targetError,  #attack_popup .attackwarning {
+    font: 14px/1.0em "Georgia", serif;
+    color: #FFD776;
+}
+#attack_popup .attackTarget, #attackHandicap, #Desertion {
+    visibility: hidden;
+    display: inline-block;
+    margin:0;
+}
+#attack_popup .attackTarget IMG{
+    background:url('') center no-repeat;
+    background-size:32px 32px;
+    width: 44px;
+    height: 44px;
+    margin: -6px;
+}
+#attack_popup .phrases, #attack_popup #unitDie, #attack_popup #unitDesert {
+    display: none;
+    text-shadow: 2px 2px 1px #000000 ;
+}
+#attack_popup .unitDieWhy, #attack_popup .unitDesertWhy  {
+        color: yellow;
+    }
+#attack_popup #unitDieInfo, #attack_popup #unitDesertInfo  {
+    display: none;
+    width:100%;
+    text-align:justify;
+    padding:2px;
+}  
+#attack_popup .attackTargetLayer {            
+    display: none;
+    margin: 5px;
+    padding: 5px;
+    z-index:100;
+    top: 0px;
+    left:0px;
+    text-align:left;
+    font: 17px/1.0em "IM Fell French Canon SC", serif !important;
+}
+.popupInfo_content .selectTarget  {
+    border: 1px solid #846824;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.5);
+    margin: 3px;
+    color: #C9C8C8;
+    font: 14px/1.0em "Eagle Lake", Georgia;
+}
+#attack_popup .popupInfo_content .selectTarget:active {
+        background: rgba(255,215,118,0.70);
+    }
+#attack_popup .popupInfo_content .selectTarget >IMG {
+    height:26px;
+    width:auto;
+    padding:0 5px;
+}
+#attack_popup .desertFactor {
+    display:none;
+    color:red;
+    margin: -7px 0px 7px 45px;
+}
+#attack_popup .targetDieInfo {
+    display: block !important ;
+    background-color: grey;
+}
+#attack_popup DIV.changeFrom {
+    visibility:hidden;
+    display: inline-block;
+    margin-left: 5px;
+}
+#attack_popup #attackDistance, #attack_popup #attackHandicap {
+    float:left;
+    padding:2px 7px 0px 0px;
+    text-align:left;
+}
+#attack_popup #attackTraveltime, #attack_popup #Desertion, #attack_popup #attackLandingtime {  
+    display: inline-block;
+    float:right;
+    padding:2px 0px 0px 7px;
+    text-align:right;
+}        
+#attack_popup .attackwarning2 {
+    color: red;
+}
+
+#attack_popup .attackIconSheet {
+    position: relative;
+    height: 44px;
+    padding-top:2px;
+}
+#attack_popup .attackIconSheet .attackImg {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    float: left;
+    margin: -3px 5px 0px 5px;
+}
+
+#attack_popup .outgoing {
+    display: none;
+    position: relative;
+    left: -2px;
+    min-height: 85px;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #846824;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.75);
+}
+.popupDialogs #attack_popup .outgoing {
+    border: 2px solid rgba(132, 104, 36, 0.7);
+    border-radius: 5px;
+}
+
+#attack_popup .widget_inOutTroops .cmdList {
+    position: relative;
+}
+
+#attack_popup .showingMsg {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font: 13px/26px "Georgia", serif;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#attack_popup .outgoing #content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#popupInfo .selectTarget IMG {
+    width:auto;
+    height: 34px;
+    margin-left: 10px;
+}
+#attack_popup .quickCommand {
+    font: 13px/13px "Georgia", serif;
+    color: #FFD776;
+}
+
+#attack_popup .commandMorale {
+    position: relative;
+    margin-bottom: 2px;
+    width: 100%;
+    height: 25px;
+    background-color: rgba(0,0,0,0.7);
+}

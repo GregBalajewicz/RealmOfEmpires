@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Activate" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="ActivateAndGet" xml:space="preserve">
+    <value>Activate and get</value>
+  </data>
+  <data name="ActivateFor" xml:space="preserve">
+    <value>Activate for</value>
+  </data>
+  <data name="ActivationSuccessful" xml:space="preserve">
+    <value>Activation successful!</value>
+  </data>
+  <data name="ActiveExpiresIn" xml:space="preserve">
+    <value>Active. Expires in</value>
+  </data>
+  <data name="BattleSimulatorPlus" xml:space="preserve">
+    <value>Battle Simulator Plus</value>
+  </data>
+  <data name="BracketsExplain" xml:space="preserve">
+    <value>(explain...)</value>
+  </data>
+  <data name="CastBloodLustSpell" xml:space="preserve">
+    <value>Cast Blood Lust Spell&lt;BR&gt;&lt;span style='font-weight:normal'&gt;(20% Attack Bonus)&lt;/span&gt;</value>
+  </data>
+  <data name="CastBraverySpell" xml:space="preserve">
+    <value>Cast Bravery Spell&lt;BR&gt;&lt;span style='font-weight:normal'&gt;(20% Defense Bonus)&lt;/span&gt;</value>
+  </data>
+  <data name="CastElvenEfficiency" xml:space="preserve">
+    <value>Cast Elven Efficiency Spell&lt;BR&gt;&lt;span style='font-weight:normal'&gt;(25% More Silver)&lt;/span&gt;</value>
+  </data>
+  <data name="CastGodSpeedSpell" xml:space="preserve">
+    <value>Cast God Speed Spell&lt;BR&gt;&lt;span style='font-weight:normal'&gt;(Support Returns 10X Faster)&lt;/span&gt;</value>
+  </data>
+  <data name="CommandTroopsEnhancements" xml:space="preserve">
+    <value>Command Troops Enhancements</value>
+  </data>
+  <data name="ConvenientSilverTransport" xml:space="preserve">
+    <value>Convenient Silver Transport</value>
+  </data>
+  <data name="DayBracketsS" xml:space="preserve">
+    <value>day(s)</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="Extend" xml:space="preserve">
+    <value>Extend</value>
+  </data>
+  <data name="ExtendWithoutRisk" xml:space="preserve">
+    <value>Go ahead! Extend without risk!&lt;BR /&gt;Click to learn why.</value>
+  </data>
+  <data name="ExtensionSuccessful" xml:space="preserve">
+    <value>Extension successful!</value>
+  </data>
+  <data name="FREE" xml:space="preserve">
+    <value>FREE!</value>
+  </data>
+  <data name="GiantMap" xml:space="preserve">
+    <value>Giant map</value>
+  </data>
+  <data name="GroupingVillages" xml:space="preserve">
+    <value>Grouping Villages</value>
+  </data>
+  <data name="HireMoreServants" xml:space="preserve">
+    <value>Hire More Servants</value>
+  </data>
+  <data name="IncomingAndOutgoingTroopEnhancements" xml:space="preserve">
+    <value>Incoming and Outgoing troops enhancements</value>
+  </data>
+  <data name="InsufficientServants" xml:space="preserve">
+    <value>Insufficient Servants</value>
+  </data>
+  <data name="LargeMap" xml:space="preserve">
+    <value>Large Map</value>
+  </data>
+  <data name="LetMeChooseFeaturesWanted" xml:space="preserve">
+    <value>Let me choose just the features I want</value>
+  </data>
+  <data name="MassRecruitUpgrade" xml:space="preserve">
+    <value>Mass Recruit and Upgrade</value>
+  </data>
+  <data name="MessagePlus" xml:space="preserve">
+    <value>Messages Plus</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="NobilityPackage" xml:space="preserve">
+    <value>Nobility Package</value>
+  </data>
+  <data name="NotesOnPlayersAndVillages" xml:space="preserve">
+    <value>Notes on players and villages</value>
+  </data>
+  <data name="PFBenefitsParagraphOne" xml:space="preserve">
+    <value>&lt;B&gt;You can extend an already activated feature without risk &lt;/B&gt;because as long as you do not use any of the days of the extension, 
+                you can get a full refund. 
+                &lt;BR&gt;&lt;BR&gt;For example. Imagine you activated the giant map for 7 days but you think you may likely need it for 14 days. 
+                Rather than having to activate the giant map again in 7 days, you can just extend it now; the giant map will be active for 14 days, 
+                and you can always cancel the extension for 100% servants returned as long as the days remaining is more than 7 days. 
+                &lt;BR&gt;&lt;BR&gt;Since you did not use any portion of the extension yet, we will do a full refund. &lt;BR&gt;&lt;BR&gt;We strive to make your experience as pleasant as we can!</value>
+  </data>
+  <data name="PFBenefitsParagraphTwo" xml:space="preserve">
+    <value>There may be free trials available for some of those features.
+    &lt;br /&gt;
+    When you try to use this feature in the game, you will get a popup with trial information.
+    &lt;br /&gt;
+    &lt;br /&gt;
+    Prices and other terms may change without notice.</value>
+  </data>
+  <data name="ReportsPlus" xml:space="preserve">
+    <value>Reports Plus</value>
+  </data>
+  <data name="Servants" xml:space="preserve">
+    <value>Servants</value>
+  </data>
+  <data name="ServantsRefund" xml:space="preserve">
+    <value>Servants refund</value>
+  </data>
+  <data name="SevenDays" xml:space="preserve">
+    <value>7 days</value>
+  </data>
+  <data name="SummaryOverview" xml:space="preserve">
+    <value>Summary / Overview Pages</value>
+  </data>
+  <data name="SupportAndAbroadTroopsAll" xml:space="preserve">
+    <value>Support and Abroad troops from all villages</value>
+  </data>
+  <data name="TroopMovementsOverview" xml:space="preserve">
+    <value>Troop movements on Player and Village overview</value>
+  </data>
+  <data name="UnlimitedBuildQ" xml:space="preserve">
+    <value>Unlimited Building Q + Improvements</value>
+  </data>
+  <data name="VillageOverviewEnhancements" xml:space="preserve">
+    <value>Village Overview Enhancements</value>
+  </data>
+</root>

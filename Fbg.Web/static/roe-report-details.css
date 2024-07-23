@@ -1,0 +1,1458 @@
+﻿
+
+#popup_reports .IFrameDivTitle_new {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#popup_reports .popupBody_new {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: auto !important;
+    margin-top: 40px;
+}
+
+
+#reportDetails_section .reportDetailContainer {
+
+    position:absolute;
+    width:100%;
+    top:0px;
+    bottom:0px;
+
+}
+
+
+#reportDetails_section .reportDetailScroll {
+    background-color: rgba(0, 0, 0, 0.7);
+    position:absolute;
+    width:100%;
+    top:0px;
+    bottom:38px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    padding-bottom:10px;
+}
+
+#reportDetails_section .reportTables {
+    padding-bottom: 5px;
+}
+
+
+#reportDetails_section .reportDetailScroll::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+#reportDetails_section .reportDetailTop {
+    /* background-color: rgba(0, 0, 0, 0.55);*/
+
+} 
+#reportDetails_section .reportDetailBody {
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    /*background: -webkit-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7));  For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7));  For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7));  For Firefox 3.6 to 15 */
+    /*background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7));  Standard syntax */
+
+} 
+
+
+
+
+
+
+
+#reportDetails_section .reportDetailScroll .titleBanner {
+    height:46px;
+    width:320px;
+    margin: 0 auto;
+    margin-top:2px;    
+    background-image:url('https://static.realmofempires.com/images/illustrations/RepMisc.png');
+    
+    font: 25px/1.0em "IM Fell French Canon SC", serif;
+    color: #000000;
+    text-shadow:0px 0px 6px rgba(255,219,199,0.8);
+    text-align: center;
+    line-height: 46px;
+    font-weight:bold;
+}
+
+
+.titleBanner.defeatBanner {
+    background-image:url('https://static.realmofempires.com/images/illustrations/RepDefeat.png') !important;
+}
+.titleBanner.victoryBanner {
+    background-image:url('https://static.realmofempires.com/images/illustrations/RepVictory.png') !important;
+}
+.titleBanner.successBanner {
+    background-image:url('https://static.realmofempires.com/images/illustrations/RepSuccess.png') !important;
+}
+.titleBanner.supportAttackedBanner {
+    background-image:url('https://static.realmofempires.com/images/illustrations/RepSupportAttacked.png') !important;
+}
+.titleBanner.supportBanner {
+    background-image:url('https://static.realmofempires.com/images/illustrations/RepSupport.png') !important;
+}
+.titleBanner.miscBanner {
+    background-image:url('https://static.realmofempires.com/images/illustrations/RepMisc.png') !important;
+}
+
+
+
+#reportDetails_section .reportDetailScroll .reportTime {
+    text-align:center;
+    margin-top:-2px;
+    margin-bottom:2px;
+}
+
+
+
+
+
+#reportDetails_section .reportDetailScroll .miscBlock {
+    margin-top:85px;
+    width:100%;
+    text-align:center;
+}
+#reportDetails_section .reportDetailScroll .miscBlock p,
+.reportDetails_showNotePopup p {
+    margin-top:16px;
+    margin-bottom:18px;
+}
+
+
+
+
+
+/* VERSUS */
+
+#reportDetails_section .versus {
+    overflow: auto;
+    position:relative;
+    margin-bottom:2px;
+}
+
+#reportDetails_section .versus .rowLine {
+    overflow: auto;
+   
+}
+
+#reportDetails_section .versus .vsIcon {
+    position:absolute;
+    top:50%;
+    margin-top:-12px;
+    left:50%;
+    margin-left:-12px;
+}
+
+#reportDetails_section .versus .roleIcon {
+    width:14px;
+    height:14px;
+    background-size: 100% 100%;
+    display:inline-block;
+    
+    margin-bottom:-1px;
+}
+
+#reportDetails_section .versus .player,
+#reportDetails_section .versus .village {
+    overflow:hidden;
+    clear:both;
+    padding-top:2px;
+    padding-bottom:2px;
+    width:146px;
+}
+
+#reportDetails_section .versus .leftSide .player,
+#reportDetails_section .versus .leftSide .village {
+    width:146px;
+}
+
+#reportDetails_section .versus .rightSide .player,
+#reportDetails_section .versus .rightSide .village {
+    width:142px;
+}
+
+
+
+
+
+/* START VERSUS 2 */
+
+#reportDetails_section .versus2 {
+    overflow: auto;
+    position:relative;
+    margin-bottom:4px;
+    margin-top:4px;
+}
+
+#reportDetails_section .versus2 .icon.village-name {
+}
+#reportDetails_section .versus2 .icon.roundedIcon {
+    width: 34px;
+    height: 34px;
+    display: block;
+    /* border: 1px inset #000000; */
+    background-color: #000000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#reportDetails_section .versus2 .icon.playerIcon {
+    width:44px;
+    height:44px;
+    cursor:pointer;
+}
+
+
+#reportDetails_section .versus2 .noteIconOverlapContainer {
+    position:relative;
+    width: 42px;
+    height: 42px;
+    margin:0 auto;
+}
+#reportDetails_section .versus2 .noteIconOverlapContainer .note {
+    float:none;
+    position:absolute; 
+    z-index:2;
+}
+
+
+
+
+#reportDetails_section .versus2 .noteIconOverlapContainer .icon {
+   float:initial;
+    position:absolute; 
+    z-index:1;
+}
+
+#reportDetails_section .versus2 .leftSide {
+    float:left;
+    width:50%;
+}
+
+#reportDetails_section .versus2 .rightSide {
+    float:right;
+    width:50%;
+}
+
+
+#reportDetails_section .versus2 .both {
+    float: left;
+    width: 100%;
+}
+
+#reportDetails_section .versus2 .both .iconsRow {
+    /* padding-right: 10px; */
+    width: 110px;
+    margin: 0 auto;
+}
+
+#reportDetails_section .versus2 .supportedView .both .iconsRow {
+    /* padding-right: 10px; */
+    width: 130px;
+
+}
+
+
+#reportDetails_section .versus2 .both .villageIconWrapper,
+#reportDetails_section .versus2 .both .playerIconWrapper {
+  float:right;
+
+} 
+
+
+#reportDetails_section .versus2 .both p {
+    text-align:center;
+     padding-right:4px !important;
+}
+
+#reportDetails_section .versus2 .villageIconWrapper {
+    width: 66px;
+    height:54px;
+    overflow:hidden;
+
+
+}
+
+#reportDetails_section .versus2 .villageIconShiner {
+     /* All that cool round stuff ... */
+     position: absolute;
+    padding: 2px;
+    margin: 2px;
+    width: 34px;
+    height: 34px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #7d614a;
+    background: -moz-linear-gradient(-45deg, #7d614a 0%, #5f463c 13%, #7d614a 27%, #b59d88 37%, #ffedce 39%, #70554a 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#7d614a), color-stop(13%,#5f463c), color-stop(27%,#7d614a), color-stop(37%,#b59d88), color-stop(39%,#ffedce), color-stop(100%,#70554a));
+    background: -webkit-linear-gradient(-45deg, #7d614a 0%,#5f463c 13%,#7d614a 27%,#b59d88 37%,#ffedce 39%,#70554a 100%);
+    background: -o-linear-gradient(-45deg, #7d614a 0%,#5f463c 13%,#7d614a 27%,#b59d88 37%,#ffedce 39%,#70554a 100%);
+    background: -ms-linear-gradient(-45deg, #7d614a 0%,#5f463c 13%,#7d614a 27%,#b59d88 37%,#ffedce 39%,#70554a 100%);
+    background: linear-gradient(135deg, #7d614a 0%,#5f463c 13%,#7d614a 27%,#b59d88 37%,#ffedce 39%,#70554a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d614a', endColorstr='#70554a',GradientType=1 );
+    -webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
+    -moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
+    box-shadow: 0px 0px 3px 1px rgba(57, 199, 183, 0.8);
+}
+
+#reportDetails_section .versus2 .playerIconWrapper {
+    width:46px;
+    height:46px;
+
+    /* All that cool round stuff ... */
+    padding: 3px;
+    margin: 4px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #7d614a;
+    background: -moz-linear-gradient(-45deg, #7d614a 0%, #5f463c 13%, #7d614a 27%, #b59d88 37%, #ffedce 39%, #70554a 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#7d614a), color-stop(13%,#5f463c), color-stop(27%,#7d614a), color-stop(37%,#b59d88), color-stop(39%,#ffedce), color-stop(100%,#70554a));
+    background: -webkit-linear-gradient(-45deg, #7d614a 0%,#5f463c 13%,#7d614a 27%,#b59d88 37%,#ffedce 39%,#70554a 100%);
+    background: -o-linear-gradient(-45deg, #7d614a 0%,#5f463c 13%,#7d614a 27%,#b59d88 37%,#ffedce 39%,#70554a 100%);
+    background: -ms-linear-gradient(-45deg, #7d614a 0%,#5f463c 13%,#7d614a 27%,#b59d88 37%,#ffedce 39%,#70554a 100%);
+    background: linear-gradient(135deg, #7d614a 0%,#5f463c 13%,#7d614a 27%,#b59d88 37%,#ffedce 39%,#70554a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d614a', endColorstr='#70554a',GradientType=1 );    
+    -webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
+    -moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
+    box-shadow: 0px 0px 5px 1px rgba(57, 199, 183, 0.8);
+    
+    
+}
+
+#reportDetails_section .versus2 .leftSide .villageIconWrapper {
+  float:right;
+}
+
+#reportDetails_section .versus2 .leftSide .playerIconWrapper {
+  float:right;
+}
+
+#reportDetails_section .versus2 .rightSide .villageIconWrapper {
+  float:left;
+}
+
+#reportDetails_section .versus2 .rightSide .playerIconWrapper {
+  float:left;
+}
+
+
+#reportDetails_section .versus2 .leftSide .village-name,
+#reportDetails_section .versus2 .leftSide .player-name,
+#reportDetails_section .versus2 .leftSide .role {
+   /* float:right;
+    display:block;
+    clear:right;*/
+}
+#reportDetails_section .versus2 .leftSide p {
+    text-align:right;
+     padding-right:4px !important;
+}
+
+#reportDetails_section .versus2 .rightSide .village-name,
+#reportDetails_section .versus2 .rightSide .player-name,
+#reportDetails_section .versus2 .rightSide .role
+ {
+   /* float:left;
+    display:block;
+    clear:left;*/
+}
+
+
+#reportDetails_section .versus2 .nameOfPlayer {
+    line-height:18px;
+}
+
+#reportDetails_section .versus2 .leftSide .iconsRow
+ {
+    padding-right:10px;
+}
+
+
+#reportDetails_section .versus2 .rightSide .iconsRow {
+    padding-left:10px;
+}
+
+#reportDetails_section .versus2 .rightSide p {
+    text-align:left;
+    padding-left:4px !important;
+}
+
+#reportDetails_section .versus2 p,
+#reportDetails_section .versus2 .fontLucidaGrande {    
+    margin-bottom:1px !important;
+    font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+
+#reportDetails_section .versus2 .villageLocation {
+    text-align:center;
+}
+
+/*
+#reportDetails_section .versus2 .leftSide .villageLocation {
+    text-align:right;
+    padding-right: 2px;
+}
+#reportDetails_section .versus2 .rightSide .villageLocation {
+    text-align:left;
+    padding-left: 2px;
+}*/
+
+
+
+#reportDetails_section .versus2 .iconsRow {
+    
+     overflow: hidden;
+}
+#reportDetails_section .versus2 .namesRow {
+     overflow: visible;
+     line-height:20px;
+}
+
+
+#reportDetails_section .versus2 .roleIcon {
+    width:14px;
+    height:14px;
+    background-size: 100% 100%;
+    display:inline-block;
+    margin-left: 2px;
+     margin-right: 2px;
+    margin-bottom:-3px;
+}
+
+
+/*#reportDetails_section .versus2 .vsIcon {
+    position:absolute;
+    top:30%;
+    margin-top:-24px;
+    left:50%;
+    margin-left:-9px;
+}*/
+
+
+#reportDetails_section .villageInlineNote,
+#reportDetails_section .playerInlineNote {
+    font-style:italic;
+    color:#d7d7d7;
+    cursor:pointer;
+    width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    height:15px;
+}
+
+#reportDetails_section .notClickable {
+    cursor:default;
+}
+
+
+/* END VERSUS2 */
+
+
+
+
+
+
+
+#reportDetails_section .versus .noteIconOverlapContainer {
+    position:relative;
+    width: 30px;
+    height: 25px;
+    
+}
+
+#reportDetails_section .versus .leftSide .noteIconOverlapContainer {
+    float:right;   
+}
+#reportDetails_section .versus .rightSide .noteIconOverlapContainer {
+    float:left;   
+    margin-left:3px;
+}
+
+#reportDetails_section .versus .leftSide {   
+    overflow:auto;
+    float:left;
+}
+
+#reportDetails_section .versus .leftSide .note {
+    float:left;
+   
+}
+
+#reportDetails_section .versus .leftSide .info {
+    float:right;
+    text-align:right;    
+    padding-right:2px;
+    padding-left:4px;
+}
+
+#reportDetails_section .versus .leftSide .icon {
+    float:right;  
+}
+
+#reportDetails_section .versus .noteIconOverlapContainer .note {
+    float:none;
+    position:absolute; 
+    z-index:2;
+}
+
+
+#reportDetails_section .versus .noteIconOverlapContainer .icon {
+    float:none;
+    position:absolute; 
+    z-index:1;
+}
+ 
+ 
+
+#reportDetails_section .versus .rightSide {
+   
+    overflow:auto;
+    float:right;
+}
+
+/*
+#reportDetails_section .versus .rightSide .note {
+    float:right;
+}*/
+
+#reportDetails_section .versus .rightSide .info {
+    float: right;
+    text-align: right;
+
+    padding-right: 14px;
+}
+
+#reportDetails_section .versus .info {
+    
+    /*width:86px;*/
+    overflow:hidden;
+   
+}
+
+/*
+#reportDetails_section .versus .rightSide .icon {
+    float:left;
+}*/
+
+
+#reportDetails_section .versus .textColumnMode {
+    width:50%;
+}
+
+#reportDetails_section .versus .textColumnMode p {
+    text-align:left;
+ 
+   /* font: 13px "IM Fell French Canon", serif;
+    color: #ffffff;*/
+   font-size:13px;
+}
+
+#reportDetails_section .versus .textColumnMode p span {
+     font-size:13px;
+}
+
+#reportDetails_section .leftSide.textColumnMode p {
+    padding-right:20px;
+    padding-left:0px;
+}
+
+#reportDetails_section .rightSide.textColumnMode p {
+    padding-left:20px;
+    padding-right:0px;
+}
+
+#reportDetails_section .versus .who {
+    vertical-align:middle;
+}
+
+
+/* SPY REPORT */
+#reportDetails_section .spyStatusMessage {
+
+}
+
+#reportDetails_section .spyStatusMessage .sectionDivider {
+
+}
+
+#reportDetails_section .spyReport {
+    width:100%;
+    overflow: auto;
+    margin-top:6px;
+    background-size:84px 84px;
+    background-position:16px center;
+    background-repeat:no-repeat;
+}
+
+#reportDetails_section .spyReport .villageColumn {
+    width:120px;
+    float:left;
+    text-align:right;
+    padding-top:10px;
+}
+
+#reportDetails_section .spyReport .villageColumn img {
+    width:84px;
+    height:84px;
+}
+
+#reportDetails_section .spyReport .levelColumnContainer {
+     float:left;
+}
+
+#reportDetails_section .spyReport .levelColumn {
+    padding-right:8px;
+    float:left;
+    text-align:left;
+}
+
+#reportDetails_section .spyReport .buildingLevel {
+    
+    height: 23px;
+    padding-left: 26px;
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+    padding-top: 3px;
+
+}
+
+#reportDetails_section .spyReport .buildingLevel2 {
+    
+    height: 23px;
+    padding-left: 26px;
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+    padding-top: 3px;
+
+}
+
+#reportDetails_section .spyReport .buildingLevel2 .buildingNameCol {
+    width:120px;
+    float:left;
+}
+
+    
+#reportDetails_section .spyReport .buildingLevel2 .buildingLevelCol {
+    float:left;
+}
+
+
+#reportDetails_section .briefingText {
+    margin-top:-8px;
+    padding-left:10px;
+    padding-right:10px;
+   
+}
+
+
+
+/* BONUS */
+
+
+#reportDetails_section .bonusVillage {   
+    margin-right: 30px !important;
+    margin-left: 50px !important;
+}
+
+#reportDetails_section .bonusVillage .bonusDetails {
+    width:200px;
+}
+
+#reportDetails_section .bonusCallOut {
+  margin:4px 60px;
+  overflow:auto;
+}
+
+#reportDetails_section .bonusCallOut .icon {
+    width:30px;
+    height:30px;
+    float:left;
+    background-size:30px 30px;
+    background-repeat:no-repeat;
+}
+
+#reportDetails_section .bonusCallOut .bonusDetails {  
+    float:left;
+    /*width:164px;*/
+    padding:0px 2px;
+    padding-left:4px;
+}
+
+#reportDetails_section .capturedVillage .bonusDetails {
+    width:164px;
+    padding-left:6px;
+}
+
+#reportDetails_section .bonusCallOut.capturedVillage {
+    margin-right: 40px;
+}
+/*
+#reportDetails_section .bonusCallOut.damagedBuilding .icon {
+    width:24px;
+    height:24px;
+    float:left;
+    background-size:24px 24px;
+    background-repeat:no-repeat;
+}*/
+
+#reportDetails_section .bonusCallOut.damagedBuilding {
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+    background-position: left center;
+    margin:8px 10px;
+}
+
+
+
+/* ICONS */
+
+#reportDetails_section .versus .icon {
+    width: 25px;
+    height: 25px;
+    background-size: 100% 100%;
+}
+
+#reportDetails_section .player .icon {      
+    border-radius: 0px;
+    /*border: 1px inset #FFD886;*/
+    border: 1px inset #000000;
+    background-color:#000000;
+}
+
+#reportDetails_section .village .icon {
+    background-size: 100% 100%;    
+    border:0;
+}
+
+#reportDetails_section .note {
+    background-image:url('https://static.realmofempires.com/images/icons/M_Notes.png');
+    background-size:18px 18px;
+    background-position:16px 12px;
+    background-repeat:no-repeat;
+    width:40px;
+    height:29px;
+
+}
+
+
+
+#reportDetails_section .hideNote {
+    background-image:none;
+    width:40px;
+    height:29px;
+}
+
+#reportDetails_section a.note {
+    display:block;
+}
+
+
+
+#reportDetails_section .versus2 .icon {
+    width: 23px;
+    height: 23px;
+    background-size: 100% 100%;
+}
+
+#reportDetails_section .versus2 .playerIcon {      
+    border-radius: 0px;
+    /*border: 1px inset #FFD886;*/
+     border: 1px inset #000000;
+    background-color:#000000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#reportDetails_section .versus2 .village .icon {
+    background-size: 100% 100%;    
+    border:0;
+}
+
+#reportDetails_section .versus2 .note {
+    background-image:url('https://static.realmofempires.com/images/icons/M_Notes.png');
+    background-size:18px 18px;
+    background-position:29px 29px;
+    background-repeat:no-repeat;
+    width:44px;
+    height:44px;
+
+}
+
+#reportDetails_section .versus2 .villageIconWrapper .note {
+     /*background-position:18px 17px;*/
+     background-position: 23px 21px;
+}
+
+#reportDetails_section .versus2 .hideNote {
+    background-image:none;
+    width:44px;
+    height:44px;
+}
+
+
+/* DIVIDER */
+
+#reportDetails_section .lighter {
+    opacity:0.55;
+    filter:alpha(opacity=55); /* For IE8 and earlier */
+}
+
+#reportDetails_section .sectionDivider {
+    position:relative;
+    margin:0 auto;    
+    left:0px;
+}
+
+
+#reportDetails_section .sectionBar {
+    position:relative;
+    margin:0 auto;    
+    left:0px;
+}
+
+
+
+/* TEXT and FONTS */
+
+#reportDetails_section .reportDetailScroll p {
+    text-align:center;
+    padding:0px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-bottom:0px;
+    margin-top:4px;
+}
+
+.reportDetails_showNotePopup p {
+    text-align:center;
+    padding:0px;
+    padding-left:10px;
+    padding-right:10px;    
+}
+
+.fontTanFrLCmed {
+    font: 13px "IM Fell French Canon", serif;
+    color: #c8bc9e;
+}
+
+.fontTanFrLClg {
+    font: 15px "IM Fell French Canon", serif;
+    color: #c8bc9e;
+}
+
+.fontWhiteNumbersMed {
+    color: #ffffff;
+    font-size: 13px;
+    font-family: Georgia, 'Playfair Display';
+}
+.fontWhiteNumbersSm {
+    color: #ffffff;
+    font-size: 11px;
+    font-family: Georgia, 'Playfair Display';
+}
+
+
+#reportDetails_section .fontGoldFrSCmini {
+   
+   
+    font: 10px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    
+}
+
+
+#reportDetails_section .fontGoldFrSCsm {
+   
+   
+    font: 11px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#reportDetails_section .fontGoldFrSCmed {
+   
+   
+    font: 13px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+.fontDarkGoldFrLClg {
+    font: 15px "IM Fell French Canon", serif;
+    color: #C5B494;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+#reportDetails_section .fontSilverNumbersTiny {
+    color: #d7d7d7;
+    font-size: 9px;
+    font-family: Georgia, 'Playfair Display';
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#reportDetails_section .fontSilverNumbersSm {   
+    font-family: Georgia, 'Playfair Display';   
+}
+
+#reportDetails_section .fontSilverFrLCsm {
+    font: 11px "IM Fell French Canon", serif;
+    color: #d7d7d7;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#reportDetails_section .fontSilverFrLCmed {
+    font: 13px "IM Fell French Canon", serif;
+    color: #d7d7d7;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+
+
+#reportDetails_section .fontWhiteNoShadFrLCmed {
+    font: 13px "IM Fell French Canon", serif;
+    color: #ffffff;
+   
+}
+
+#reportDetails_section .noShadow {
+   text-shadow:none;
+}
+
+
+
+
+
+#reportDetails_section .themeM-progress {
+    margin:4px 20px;
+    margin-bottom:6px;
+}
+
+#reportDetails_section .themeM-progress > .bg {
+    border-color:#444444;
+}
+
+
+
+
+/* UNITS TABLE */
+
+#reportDetails_section .reportDetailScroll table {
+    width:100%;
+    border-spacing:0px;
+ }
+
+#reportDetails_section .unitsReportTable td {
+    text-align:center;
+    border-spacing:0px;
+    padding:0px;
+   
+}
+
+#reportDetails_section .unitsReportTable td.unitIcon {
+   width:20px; 
+   padding-left: 8px;
+}
+#reportDetails_section .unitsReportTable td.unitCount {
+   width:50px;
+   text-align:center;
+}
+
+
+#reportDetails_section .unitsReportTable .deployed,
+#reportDetails_section .unitsReportTable .lost,
+#reportDetails_section .unitsReportTable .remaining {
+    font-size:11px;
+    font-family: Georgia, 'Playfair Display';
+
+    /*text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    text-shadow:none;
+}
+
+#reportDetails_section .unitsReportTable .deployed {
+    color:#E6CD90;
+}
+
+#reportDetails_section .unitsReportTable .lost {
+    color:#DC2B2B;
+}
+
+#reportDetails_section .unitsReportTable .remaining {
+    color:#FFFFFF;
+}
+
+#reportDetails_section .unitsReportTable .zeroUnits {
+    color:#787878;
+}
+
+#reportDetails_section .unitsReportTable .unknownUnits {
+    color:#E6CD90;
+}
+
+
+#reportDetails_section .unitsReportTable .unitImg {
+    width:16px;
+    height:16px;
+    background-size:16px 16px;
+    margin:0 auto;
+}
+
+
+#reportDetails_section .unitsReportTable .rowDivider {
+    background-repeat:no-repeat;
+    background-image: url('https://static.realmofempires.com/images/misc/M_SP_UIMisc.png');
+    /* background-repeat: no-repeat; */
+    /* background-position: 0px 0px; */
+    /* background-size: 8px 233px; */
+    /* background-size: 100%; */
+    background-position: top;
+
+}
+
+
+/* YEAS */
+
+
+#reportDetails_section .indicator-after,
+#reportDetails_section .indicator-before {
+    position:absolute;
+}
+
+#reportDetails_section .progressBar {
+    width: 0%;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+
+    height: 100%;
+    
+    
+}
+
+/* GREEN: rgba(22, 255, 66, 1.0) RED: rgba(255, 22, 66, 1.0) 100%);*/
+
+#reportDetails_section .neutral {
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    
+    background-color: rgba(100, 100, 100, 1.0) !important;
+    /* background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(133, 2, 48, 1.0)), color-stop(100%, rgba(255, 22, 66, 1.0)));
+    background: -webkit-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: -moz-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: -ms-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: -o-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: linear-gradient(to right, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);*/
+}
+/* defaults to before being higher than after */
+#reportDetails_section .loyalty .indicator-before {
+    z-index:0;
+}
+#reportDetails_section .loyalty .indicator-after {
+    z-index:1;
+}
+
+#reportDetails_section .loyalty .indicator-to-top {
+    z-index:2;
+}
+
+
+.reportDetailScroll p.centered {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+#reportDetails_section .footerWrapper {
+    position: absolute;
+    left: 0px;
+    
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    height: 30px;
+    z-index: 2000;
+    background-image: url(https://static.realmofempires.com/images/misc/M_SP_UIMisc.png), url(https://static.realmofempires.com/images/misc/M_SP_UIMisc.png);
+    background-repeat: no-repeat;
+    background-position: 53px 0px, 53px 34px;
+}
+
+/* FOOTER CONTROL BAR */
+
+/*
+#reportDetails_section .themeM-panel.footer {
+    height: 30px;
+    margin:2px;
+
+
+}
+
+#reportDetails_section .themeM-panel.footer > .bg {
+    border:none;
+}
+
+ #reportDetails_section .themeM-panel.footer > .bg > .stripe {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    width: auto;
+    height: auto;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png);
+}
+
+#reportDetails_section .themeM-panel.footer > .fg > .close {
+    position: absolute;
+    left: auto;
+    top: -7px;
+    right: -6px;
+    bottom: auto;
+    width: 44px;
+    height: 44px;
+    background-image: url("https://static.realmofempires.com/images/icons/M_X.png");
+    background-repeat: no-repeat;
+}
+
+#reportDetails_section .themeM-panel.footer > .fg > .themeM-icon {
+    position: relative;
+    left: 0px;
+    top: -7px;
+}*/
+
+
+#reportDetails_section .reportDetailControlBar {
+    
+    /* purple
+    background-color:rgba(178, 0, 255, 1.0); */
+    position:absolute;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    height:36px;
+    background-color: #000;
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png'), url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2px, 100% 2px;
+    background-position:top, bottom;
+
+}
+
+#reportDetails_section .sectionDivider.adjustForControlBar {
+    position:absolute; 
+    bottom:32px;
+    left:44px; 
+    z-index:1;
+}
+
+#reportDetails_section .reportDetailControlBar .BtnDSm2n {
+    position:absolute;
+    top: 2px;
+    left: 5px;
+}
+
+
+#reportDetails_section .reportDetailControlBar .smallArrowLeft {
+    top: 6px;
+}
+
+#reportDetails_section .reportDetailControlBar .bgStrip {
+    position: absolute;
+    left: 3px;
+    top: 8px;
+    right: 3px;
+    bottom: 3px;
+    background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png);
+}
+
+#reportDetails_section .reportDetailControlBar .btnBattleSim,
+#reportDetails_section .reportDetailControlBar .btnRevengeAttack,
+#reportDetails_section .reportDetailControlBar .btnDeleteReport,
+#reportDetails_section .reportDetailControlBar .btnForwardReport,
+#reportDetails_section .reportDetailControlBar .btnNextReport,
+#reportDetails_section .reportDetailControlBar .btnPrevReport,
+#reportDetails_section .reportDetailControlBar .btnStar {
+    position: absolute;
+    display: block;
+    top: -8px;
+    width: 44px;
+    height: 44px;
+    z-index: 2;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#reportDetails_section .reportDetailControlBar .btnBattleSim {
+    background-image: url(https://static.realmofempires.com/images/icons/M_BattleSim.png);
+    right:104px;
+    
+}
+
+/*
+#reportDetails_section .reportDetailControlBar .btnRevengeAttack {
+     background-image: url(https://static.realmofempires.com/images/icons/M_DeleteReport.png);
+}
+*/
+
+#reportDetails_section .reportDetailControlBar .btnDeleteReport {
+     background-image: url(https://static.realmofempires.com/images/icons/M_DeleteReport.png);
+     right:54px;
+    
+}
+#reportDetails_section .reportDetailControlBar .btnForwardReport {
+     background-image: url(https://static.realmofempires.com/images/icons/M_FwdReport.png);
+     right:6px;
+    
+}
+
+#reportDetails_section .reportDetailControlBar .btnStar {
+    right: 102px;
+}
+
+    #reportDetails_section .reportDetailControlBar .btnStar.on {
+        opacity: 1;
+        background-image: url("https://static.realmofempires.com/images/icons/starred.png");
+    }
+    #reportDetails_section .reportDetailControlBar .btnStar.off {
+        opacity: 0.7;
+        background-image: url("https://static.realmofempires.com/images/icons/starredh.png");
+    }
+
+
+#reportDetails_section .reportDetailControlBar .forward-search {
+    display: block;
+    bottom: 38px;
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    padding-left:44px;
+}
+
+
+#reportDetails_section .reportForwarded {
+    
+}
+#reportDetails_section .reportForwarded .sectionDivider {
+    clear:both;
+}
+
+
+#reportDetails_section .forwardedByWho {
+  width:256px;
+  overflow:visible;
+  margin:0 auto;
+}
+
+#reportDetails_section .forwardedByWho .forwardedTitle {
+    float:left;
+    width:90px;
+
+    margin-top:14px;
+}
+
+#reportDetails_section .forwardedByWho .forwardedPlayerAvatar {
+     float:left;
+     border-radius: 0px;
+     border: 1px inset #FFD886;
+     height:25px;
+     width:25px;
+     background-size: 25px 25px;
+     background-repeat:no-repeat;
+     margin-top:8px;
+  
+}
+#reportDetails_section .forwardedByWho a.player-name {
+    display:block;
+    float:left;
+    width:90px;
+    padding-left:5px;
+    padding-top:7px;
+    margin-top:8px;
+    position:relative;
+    z-index:100;
+   
+}
+
+#reportDetails_section .player-name,
+#reportDetails_section .village-name {
+   /* font-size:10px !important;*/
+   /* font-family: "lucida grande" , tahoma, verdana, arial, sans-serif;
+   font-size:11px;*/
+}
+
+#reportDetails_section .forwardedByWho .blockPlayerBtn {
+    background-image:url('https://static.realmofempires.com/images/icons/M_BlockPlayer.png');
+    background-size:44px 44px;
+    background-repeat:no-repeat;
+    width:44px;
+    height:44px;
+    float:left;
+    position:relative;
+    z-index:1;
+}
+
+
+
+/* Report up down buttons */
+
+#reportDetails_section .btnNextReport {
+    right: 205px;
+    top:-1px !important;
+}
+
+
+#reportDetails_section .btnPrevReport {
+    right: 155px;
+    top:-1px !important;
+}
+
+#reportDetails_section .btnPrevReport.smallRoundButtonDark .smallArrowUp,
+#reportDetails_section .btnNextReport.smallRoundButtonDark .smallArrowDown {
+    top: 10px !important;
+    right: 15px !important;
+    filter: alpha(opacity=100);	
+    -moz-opacity:1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+
+#reportDetails_section .btnDisabled {
+    filter: alpha(opacity=50);	
+    -moz-opacity:0.5;
+    -khtml-opacity:0.5;
+    opacity:0.5; 
+}
+
+
+#reportDetails_section .doNotCatpureClick {
+    pointer-events: none;
+}
+
+#reportDetails_section .doNotShow {
+    visibility: hidden;
+}
+
+#reportDetails_section .supportedText {
+    padding-bottom:4px;
+    margin-top: -4px;
+}
+
+
+#reportDetails_section .versus .leftSide .infoForSupportedAttacker  {
+    padding-left: 14px !important;
+    text-align:left !important;
+}
+
+#reportDetails_section .versus .leftSide .infoForSupportedAttacker .fontLucidaGrande {
+    color: #FFD886;
+}
+
+
+#reportDetails_section .pasteToBattleSimBtn {
+    width: 54px;
+    /* height: 44px; */
+    background-image: url(https://static.realmofempires.com/images/icons/M_BattleSim.png);
+    background-repeat: no-repeat;
+    background-size: 34px 34px;
+    background-position: top center;
+    margin: 0px 5px;
+    /* margin-bottom: 0px; */
+    padding-top: 34px;
+    font-size: 11px;
+    font-family: Georgia, 'Playfair Display';
+    /* text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    text-shadow: none;
+    text-align: center;
+    cursor:pointer;
+}
+
+#reportDetails_section .leftSide .pasteToBattleSimBtn {
+   float:left;
+}
+
+#reportDetails_section .rightSide .pasteToBattleSimBtn {
+   float:right;
+}
+
+
+#reportDetails_section .leftSide {
+    float:left;
+    width:50%;
+    text-align:left;
+
+}
+
+#reportDetails_section .rightSide {
+    float:right;
+    width:50%;
+    text-align:right;
+
+}
+
+#reportDetails_section .noPointer {
+    cursor:default !important;
+    text-decoration: none;
+}
+#reportDetails_section .noPointer:hover {
+    cursor:default !important;
+    text-decoration: none;
+}
+
+#reportDetails_section .dull {
+    background: initial !important;
+    background-color: rgba(142, 142, 142, 0.27) !important;
+    box-shadow: none !important;
+}
+
+#reportDetails_section .reportDetailControlBar .btnDeleteReport.confirmAction {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 44px;
+    text-align: center;  
+    text-shadow: 0px 0px 1px #FF0000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    font-family: "IM Fell French Canon", serif;
+    text-decoration:none;
+}
+
+#reportDetails_section .reportDetailControlBar .btnDeleteReport.confirmAction:hover {
+    text-decoration:none;
+}
+
+#reportDetails_section .plunder {
+    position: absolute;   
+    left:50%;
+    height: 23px;
+  padding-top: 10px;
+}
+#reportDetails_section .plunder img {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+
+#reportDetails_section .plunder p {
+   margin-left:-100%;
+}

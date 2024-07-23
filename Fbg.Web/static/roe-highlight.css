@@ -1,0 +1,245 @@
+﻿
+
+#highlight_popup {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+    #highlight_popup .sectionDivider {
+        position: relative;
+        left: initial;
+        margin: 2px auto;
+        background-position: center 0px;
+    }
+    #highlight_popup .section .panelTitle {
+        text-align:center;
+    }
+    #highlight_popup .section {
+        display: none;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
+    #highlight_popup .highlightPanel {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 5px 10px;
+        margin-bottom: 4px;       
+    }
+
+    #highlight_popup .list {
+
+    }
+        #highlight_popup .list .description {
+            text-align: center;
+        }
+
+        #highlight_popup .list .addNew {
+            padding: 5px 0px;
+            padding-bottom: 2px;
+            background-image: url(https://static.realmofempires.com/images/misc/M_SP_UIMisc.png), url(https://static.realmofempires.com/images/misc/M_SP_UIMisc.png);
+            background-repeat: no-repeat;
+            background-position: center top, center 41px;
+        }
+
+            #highlight_popup .list .addNew .addNewRule {
+                position: relative;
+                margin: 0px auto;
+                padding-right: 13px;
+            }
+                #highlight_popup .largeArrowR {
+                    position: absolute;
+                    right: 15px;
+                    top: 6px;
+                }
+
+        #highlight_popup .list .rows {
+        
+        }
+            #highlight_popup .list .rows td {
+                background-image: url(https://static.realmofempires.com/images/misc/M_ArrowR.png);
+                background-repeat: no-repeat;
+                background-position: right center;
+            }
+                #highlight_popup .list .rows td .item .flag-icon {
+                    float: left;
+                    width: 22px;
+                    height: 24px;
+                }
+
+
+#highlight_popup .legendsRightArrow  {
+    float:right;
+    margin-top: -3px;
+    }
+    #highlight_popup .legendsList {
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        transition: height .5s;
+        -webkit-transition: height .5s;
+    }
+        #highlight_popup .legendsList .legendsListBorder div {
+            position: relative;
+            float: left;
+            width: 50%;
+            overflow: hidden;
+        }
+
+
+#highlight_popup .section.showed,
+#highlight_popup .section.newshowed { display: block }
+
+
+
+
+    #highlight_popup .list .item .remove {
+        float: right;
+        font-size: 25px;
+        margin: 4px 8px;
+    }
+    #highlight_popup .flag-icon {
+        float: left;
+        width: 22px;
+        height: 24px;
+        margin-top: 6px;
+        margin-right: 7px;
+        margin-left: 5px;
+    }
+    
+    #highlight_popup .edit {
+    }
+        #highlight_popup .edit .type {
+            float: left;
+            margin-top: 8px;
+        }
+        #highlight_popup .edit .changeShield {
+            overflow: hidden;
+            position: relative;
+            float: right;
+            padding-right: 16px;
+        }
+            #highlight_popup .edit .changeShield .flag {
+                position: absolute;
+                top: 8px;
+                right: 17px;
+                width: 22px;
+                height: 24px;
+                background-size: 100% 100%;
+            }
+        #highlight_popup .edit .keyword {
+            width: 100%;
+            padding: 4px 0px;
+        }
+        #highlight_popup .edit .flag-icon {
+            margin-top: 15px;
+            margin-right: 7px;
+            margin-left: 7px;
+        }
+        #highlight_popup .edit .editButtonPanel {
+            text-align: center;
+            padding-top: 5px;
+        }
+            #highlight_popup .edit .editButtonPanel .cancel,
+            #highlight_popup .edit .editButtonPanel .remove,
+            #highlight_popup .edit .editButtonPanel .saving {
+                display: inline-block;
+                overflow: hidden;
+            }
+
+
+#highlight_popup .item .hand-icon { 
+    float: left;
+    width:26px;
+    height:34px;
+    background: url("https://static.realmofempires.com/images/icons/upDownArrow.png") no-repeat center;
+    border:0;
+}
+#highlight_popup .item .arrow { 
+    float: right; 
+    margin-top: 5px;
+}
+
+#highlight_popup .highlightList {
+    background: rgba(0,0,0,0.7);
+}
+#highlight_popup .item .keyword { 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width:70%;
+}
+
+    #highlight_popup .item .type .largeArrowR {
+        display: none;
+    }
+
+
+
+#highlight_popup .add .addType  { 
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+
+#popupInfo .legendicon {
+    width:31px;
+    height:auto;
+    margin: -3px;
+    }
+#highlight_popup .popup { position: absolute; background-color: grey; left: 10%; right: 10%; padding: 10px; }
+
+.HighlightPopup { height: 100%; }
+
+#highlight_popup .empty {
+    font: 16px/1.0em "Eagle Lake", serif;
+}
+
+
+
+#highlight_popup .sectionFooter {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+
+    #highlight_popup .sectionFooter .stripe {
+        position: absolute;
+        left: 3px;
+        top: 8px;
+        right: 3px;
+        bottom: 3px;
+        background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png);
+    }
+
+    #highlight_popup .sectionFooter .back {
+        position: absolute;
+        top: 3px;
+        left: 5px;
+    }
+
+
+ .shieldPickPopup .pContent{
+    text-align:center;
+}
+    .shieldPickPopup .pContent .legendicon  {
+        margin: 5px;
+        cursor:pointer;
+    }

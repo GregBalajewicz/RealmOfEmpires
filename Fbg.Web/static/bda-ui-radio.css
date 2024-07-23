@@ -1,0 +1,38 @@
+﻿.bda-ui-radio
+{
+    background: url('https://static.realmofempires.com/images/misc/RadioBoxcontainer.png');
+    background-repeat: no-repeat;
+    height: 19px;
+    display: block;
+    padding-right: 5px;
+}
+
+    .bda-ui-radio.horizontal
+    {
+        display: table-cell;
+    }
+
+.bda-ui-radiogroup .bda-ui-radio .bda-ui-radioimg
+{
+    padding-right: 3px;
+    width: 16px;
+    height: 19px;
+    filter: alpha(opacity=0.1);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
+    opacity: 0.1;
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+}
+
+.bda-ui-radiogroup .bda-ui-radio.on .bda-ui-radioimg
+{
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+}

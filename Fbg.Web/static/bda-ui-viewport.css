@@ -1,0 +1,6 @@
+﻿#blockMouse {
+    position: absolute;
+    left: 0px; top: 0px; right: 0px; bottom: 0px;
+    width: auto; height: auto;
+    z-index: 18446744073709551615;
+}

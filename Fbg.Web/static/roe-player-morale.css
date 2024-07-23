@@ -1,0 +1,267 @@
+﻿
+.moraleBar {
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    right: 20px;
+    bottom: 2px;
+    cursor:pointer;
+    border: solid 2px #63594c;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+    .moraleBar .outer {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+        .moraleBar .outer .bar {
+            position: absolute;
+            left:0px;
+            top: 0px;
+            bottom: 0px;
+            transition: all .7s ease;
+            box-sizing: border-box;
+            background-repeat:no-repeat !important;
+            border-radius:5px;
+        }
+
+            .moraleBar .outer .bar.p1 {
+                background: #850202;
+                background: -moz-linear-gradient(left, #850202 0%, #ff1616 100%);
+                background: -webkit-linear-gradient(left, #850202 0%,#ff1616 100%);
+                background: linear-gradient(to right, #850202 0%,#ff1616 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#850202', endColorstr='#ff1616',GradientType=1 );
+            }
+            .moraleBar .outer .bar.p2,
+            .moraleBar .outer .bar.p3 {
+                background: #2d0285;
+                background: -moz-linear-gradient(left, #2d0285 0%, #9f16ff 100%);
+                background: -webkit-linear-gradient(left, #2d0285 0%,#9f16ff 100%);
+                background: linear-gradient(to right, #2d0285 0%,#9f16ff 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d0285', endColorstr='#9f16ff',GradientType=1 );
+            }
+
+    .moraleBar .line {
+        position: absolute;
+        top: 1px;
+        bottom: 1px;
+        width: 3px;
+        background: #63594c;
+        margin-left: -1px;
+    }
+            .moraleBar .line.l2 {
+                /*
+                top: -7px;
+                bottom: -7px;
+                width: 44px;
+                margin-left:22px;
+                background-color: rgba(0,0,0,0);
+                background-size: auto 100%;
+                background-image: url(https://static.realmofempires.com/images/icons/M_HD_Morale.png);
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                    */
+            }
+
+        .moraleBar .outer .shimmer {
+            position: absolute;
+            top: 5px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.59) 0%,rgba(74, 85, 101, 0.2) 100%,#e0a88b 100%);
+            opacity: .3;
+        }
+
+
+    /*
+        .moraleBar .outer .segment {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+        }
+        .moraleBar .outer .part1 {
+            background: #ff3232;
+            background: -moz-linear-gradient(left, #d21f1f  0%, #ff2e00 100%, #e0a88b 100%);
+            background: -webkit-linear-gradient(left, #d21f1f  0%,#ff2e00 100%,#e0a88b 100%);
+            background: linear-gradient(to right, #d21f1f  0%,#ff2e00 100%,#e0a88b 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d21f1f ', endColorstr='#e0a88b',GradientType=1 );
+        }
+        .moraleBar .outer .part2 {
+            background: #e0a88b;
+            background: -moz-linear-gradient(left, #e0a88b 0%, #f2f2f2 30%, #f2f2f2 30%, #e0e0e0 70%, #88c466 100%);
+            background: -webkit-linear-gradient(left, #e0a88b 0%,#f2f2f2 30%,#f2f2f2 30%,#e0e0e0 70%,#88c466 100%);
+            background: linear-gradient(to right, #e0a88b 0%,#f2f2f2 30%,#f2f2f2 30%,#e0e0e0 70%,#88c466 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0a88b', endColorstr='#88c466',GradientType=1 );
+        }
+        .moraleBar .outer .part3 {
+            background: #88c466;
+            background: -moz-linear-gradient(left, #88c466 0%, #30d127 0%, #25a711 100%);
+            background: -webkit-linear-gradient(left, #88c466 0%,#30d127 0%,#25a711 100%);
+            background: linear-gradient(to right, #88c466 0%,#30d127 0%, #25a711 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88c466', endColorstr='#1cd600',GradientType=1 );
+        }
+*/
+
+    /* hover effects mess up M */
+    .desktop .moraleBar:hover .inner {
+        display: block;
+    }
+    .moraleBar.showInner .inner {
+        display:block;
+    }
+    .moraleBar.hideInner .inner {
+        display: none !important;
+    }
+
+.moraleBar .inner {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    right: 2px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    line-height: 16px;
+}
+        .moraleBar .inner .deet {
+            position:absolute;
+            top: 0px;
+            z-index:1;
+        }
+            .moraleBar .inner .deet.d5 {
+                left: 0px;
+                right: 0px;
+                text-align: center;
+            }
+
+.moraleBar.showInner .line,
+.desktop .moraleBar:hover .line,
+.moraleBar.showInner .pointer,
+.desktop .moraleBar:hover .pointer {
+    opacity: .1;
+}
+
+.moraleBar .pointer {
+    position: absolute;
+    top: -9px;
+    bottom: -9px;
+    width: 40px;
+    margin-left: -22px;
+    background-color: rgba(0,0,0,0);
+    background-size: 44px auto;
+    background-image: url(https://static.realmofempires.com/images/icons/M_HD_Morale.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    transition: all .7s ease;
+}
+
+            /*
+    .moraleBar .pointer {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 4px;
+        background: #0c4286;
+        border-radius: 50px;
+        margin-left: -2px;
+        box-shadow: 0px 0px 1px 1px #69d1ff;
+        transition: all .7s ease;
+    }
+*/
+
+
+/* /////////////////////////////////////////// */
+/* Morale Details Popup CSS */
+/* /////////////////////////////////////////// */
+
+#moraleDetailsContent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: auto;
+    padding: 15px;
+    font-size: 15px;
+}
+    #moraleDetailsContent .header {
+        position:relative;
+        overflow:hidden;
+    }
+    #moraleDetailsContent .moraleIcon {
+        display: inline-block;
+        float:left;
+        width: 88px;
+        height: 88px;
+        margin-right: 10px;
+        vertical-align: bottom;
+        background-size: 100% 100%;
+        background-image: url(https://static.realmofempires.com/images/icons/M_HD_Morale.png);
+    }
+    #moraleDetailsContent .detailsList ul {
+        padding: 0px;
+        padding-left: 15px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    #moraleDetailsContent table {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        background: rgba(0,0,0,0.2);
+        border-spacing: 0px;
+    }
+
+    #moraleDetailsContent .moraleEffectsTableHeader {
+    }
+
+    #moraleDetailsContent .moraleEffectsTableBodyScroll {
+        position: relative;
+        width: 100%;
+        height: 180px;
+        overflow: auto;
+    }
+
+    #moraleDetailsContent .moraleEffectsTableBody {
+    }
+
+    #moraleDetailsContent table th {
+        background: rgba(0,0,0,0.7);
+        width:25%;
+    }
+
+
+        #moraleDetailsContent table tr {
+            background: rgba(29, 32, 32, 0.9);
+            color: #d7d7d7;
+        }
+            #moraleDetailsContent table tr:nth-child(even) {
+                background: rgba(42, 50, 50, 0.9);
+            }
+            #moraleDetailsContent table tr:hover {
+                background: rgba(12, 12, 12, 0.9);
+                opacity: 1 !important;
+            }
+            #moraleDetailsContent table tr.highlight {
+                background: #104d73;
+            }
+            #moraleDetailsContent table tr td,
+            #moraleDetailsContent table tr th {
+                width: 25%;
+            }
+.moraleEffectsTableBody tr {
+    font-family: georgia;
+}
+

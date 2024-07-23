@@ -1,0 +1,111 @@
+﻿#BonusVillageSelection { 
+            margin-top:4px;
+            border: 2px solid #846824;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            background: black;
+            padding: 8px;
+            width: 280px;
+        }
+        #BonusVillageSelection .title {
+            width:100%;
+            color: #FFFFFF;
+            font: 14px/1.0em "charlemagne_stdbold";
+            text-align:center;
+            padding-bottom:15px;
+        }
+        #BonusVillageSelection .bonusName {
+            position: absolute;
+            color: #FFFFFF;
+            font: 12px/1.0em "charlemagne_stdbold";
+            margin-top: -25px;
+            text-align: center;
+            width: 92%;
+            text-shadow: 0px 3px 3px #000000,              0px -3px 3px #000000,             -4px 0px 3px #000000,             4px 0px 3px #000000;
+        }
+        #BonusVillageSelection .closeX {
+            float:right;
+            margin: -15px -12px 0 0;
+        }
+    #BonusVillageSelection .bonusList {
+        background: black;
+        text-align: center;
+        font: 16px/1.0em "IM Fell French Canon LC", serif;
+        -moz-transition: height 1s;
+        -o-transition: height 1s;
+        -webkit-transition: height 1s;
+        transition: height 1s;
+        position: relative;
+        max-height: 510px;
+        overflow-x: hidden;
+    }
+        #BonusVillageSelection .villName  {
+            margin-top:4px;
+
+        }
+       #BonusVillageSelection .highlight {
+            opacity: 1 !important;
+        }
+       #BonusVillageSelection .bonusTypes {
+            width: 280px;
+            height:75px;
+            cursor: pointer;
+            color:white;
+            font: 14px/1.0em "IM Fell French Canon LC", serif;                       
+            margin:8px 0;
+            overflow: hidden;            
+            text-align:center;
+            -moz-transition: height 0.7s ease-in-out;
+            -o-transition: height 0.7s ease-in-out;
+            -webkit-transition: height 0.7s ease-in-out;
+            transition: height 0.7s ease-in-out;
+       }
+       #BonusVillageSelection .currentBonusTypes {
+            color: #FFD776;
+            font: 13px/1.0em "Eagle Lake", serif;
+       }
+       #BonusVillageSelection .bonusDisplay  {
+           width:280px;
+           height:75px;
+           opacity: 0.65;
+           -webkit-transition: opacity 0.7s ease-in-out;
+           -moz-transition: opacity 0.7s ease-in-out;
+           -o-transition: opacity 0.7s ease-in-out;
+           transition: opacity 0.7s ease-in-out;
+        }
+       #BonusVillageSelection .currentBonusTypes >DIV {
+            display:inline-block;
+            vertical-align: top;
+            width: 220px;
+       }
+       #BonusVillageSelection .icon { 
+            width: 50px;
+            height: 50px;
+            margin-right: 6px;
+       }
+        #BonusVillageSelection .bonusswitch {
+            color:white;
+            text-align:center;
+            font: 13px/1.0em "Eagle Lake", serif;
+        }        
+        #BonusVillageSelection .bonusTypes.showit {
+            height: 165px;
+        }
+
+        #BonusVillageSelection .bonusConvert, #BonusVillageSelection .nextCost  {
+            margin-top:5px  !important;  
+            color: gray;          
+        }
+        #popup_bonus .phrases {
+            display: none;
+        }
+        #BonusVillageSelection .costError{
+            color: red;
+        }
+        #BonusVillageSelection .GO {
+            color: #FFD886;
+            margin-top: -4px;
+        }
+        #BonusVillageSelection .bonusDesc {
+            margin-top: 6px;
+        }

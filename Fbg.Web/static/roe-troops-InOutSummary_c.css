@@ -1,0 +1,40 @@
+﻿.inoutsummary {
+
+}
+    .inoutsummary .summaryItem td span {
+        display:inline;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+.longMiniSummaryContainer .incomingMiniIndicators.longMiniSummary .incomingMiniIndicator:not(:last-child) {
+    padding-right: 5px;
+    background-image: url(https://static.realmofempires.com/images/misc/arrowRight.png);
+    background-size: 5px 5px;
+    background-position: center right;
+}
+
+
+
+.confirmbox .incomingMiniIndicators .incomingMiniIndicator:not(:last-child) {
+    padding-right: 5px;
+    background-image: url(https://static.realmofempires.com/images/misc/arrowRight.png);
+    background-size: 5px 5px;
+    background-position: center right;
+}
+
+.inoutsummary .setupSupport {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://static.realmofempires.com/images/icons/M_HD_SupportCAll.png);
+}
+.inoutsummary .setupSupport.busy {
+    background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+} 
+.inoutsummary .setupSupport.done {
+    background-color: rgba(59, 212, 23, 0.8);
+} 

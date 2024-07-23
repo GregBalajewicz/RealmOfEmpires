@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Chekinglatestdata" xml:space="preserve">
+    <value>Checking for latest data...</value>
+  </data>
+  <data name="deserter" xml:space="preserve">
+    <value>deserting unit</value>
+  </data>
+  <data name="Desertion" xml:space="preserve">
+    <value>Desertion</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance</value>
+  </data>
+  <data name="Error10_AllToopsDesert" xml:space="preserve">
+    <value>You will lose all troops to desertion; You need to send more troops.</value>
+  </data>
+  <data name="Error11_NoTroopsSelected" xml:space="preserve">
+    <value>No Troops Selected!</value>
+  </data>
+  <data name="Error12_StewardAttacking" xml:space="preserve">
+    <value>Steward Attacking On Defence Only Stewardship Realm!</value>
+  </data>
+  <data name="Error13_StewardSupport" xml:space="preserve">
+    <value>Steward Supporting Someone Else In Realm Where This Is Not Allowed</value>
+  </data>
+  <data name="Error14_NoTroopsSelected" xml:space="preserve">
+    <value>No Troops Selected!</value>
+  </data>
+  <data name="Error15_TargetClanIsYours" xml:space="preserve">
+    <value>You are about to attack your own clan!</value>
+  </data>
+  <data name="Error16_TargetVillageSame" xml:space="preserve">
+    <value>You are about to attack your own village!</value>
+  </data>
+  <data name="Error17_TargetOwnerChanged" xml:space="preserve">
+    <value>The Target Owner is Changed!</value>
+  </data>
+  <data name="Error18_TargetBeginnerProtection" xml:space="preserve">
+    <value>Target is Under Beginner Protection until </value>
+  </data>
+  <data name="Error19_TargetSleepModeUntil" xml:space="preserve">
+    <value>Target is in Sleep Mode Until</value>
+  </data>
+  <data name="Error0_TroopsSent" xml:space="preserve">
+    <value>Support sent!</value>
+  </data>
+  <data name="Error1_TroopsSent" xml:space="preserve">
+    <value>Attack sent!</value>
+  </data>
+  <data name="Error20_TargetAlly" xml:space="preserve">
+    <value>You are about to attack an ally!</value>
+  </data>
+  <data name="Error21_TargetNAP" xml:space="preserve">
+    <value>You are about to attack an NAP!</value>
+  </data>
+  <data name="Error22_XNumberDeserter" xml:space="preserve">
+    <value>You will lose some of your troops!</value>
+  </data>
+  <data name="Error23_CapitalVillage" xml:space="preserve">
+    <value>Attacking a Capital Village. This Capital Village cannot be taken over with governors for the next %d% day%s%.</value>
+  </data>
+  <data name="Error2_NoTroopsinVillage" xml:space="preserve">
+    <value>Troops Specified Not In Village!</value>
+  </data>
+  <data name="Error3_BeginnerProtection" xml:space="preserve">
+    <value>Target Under Beginner Protection</value>
+  </data>
+  <data name="Error4_TargetUnderSleepMode" xml:space="preserve">
+    <value>Target Under Sleep Mode!</value>
+  </data>
+  <data name="Error5_CannotSupportRebels" xml:space="preserve">
+    <value>Cannot Support Rebels!</value>
+  </data>
+  <data name="Error6_CannotAttackRebelsMoreThan22Away" xml:space="preserve">
+    <value>Cannot Attack Rebels More Than 22 Squares Away!</value>
+  </data>
+  <data name="Error7_AttackFreeze" xml:space="preserve">
+    <value>Attack Freeze Active!</value>
+  </data>
+  <data name="Error8_UnknownError" xml:space="preserve">
+    <value>Unknown Error!</value>
+  </data>
+  <data name="Error9_TargetVillageSameAsOrigin" xml:space="preserve">
+    <value>Target Village Same As Origin!</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="Handicap" xml:space="preserve">
+    <value>Handicap</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="TravelTime" xml:space="preserve">
+    <value>Travel Time</value>
+  </data>
+  <data name="UnitsDesertInfo" xml:space="preserve">
+    <value>When sending an attack over long distances, some troops may desert. The longer the distance the more troops you will lose to desertion. You can prevent any desertion by increasing the number of troops you send in an attack, or including a governor with the attack. NOTE: Cancelling an attack will not reclaim any deserted troops. I.e., troops desert immediately when you launch the attack</value>
+  </data>
+  <data name="UnitsDie" xml:space="preserve">
+    <value>Your units will die!</value>
+  </data>
+  <data name="UnitsDieInfo" xml:space="preserve">
+    <value>You are attacking with special units ONLY. These units do not have any offensive capabilities. If you send them alone, they will surely get slaughtered, even if the target village has no troops, as the village itself will be able to overpower your defenseless troops.
+ If you choose to send them anyway, you are sending them to certain death.</value>
+  </data>
+  <data name="Why" xml:space="preserve">
+    <value>Why?</value>
+  </data>
+  <data name="ChangeFrom" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="Warning:" xml:space="preserve">
+    <value>Please note:</value>
+  </data>
+  <data name="Error:" xml:space="preserve">
+    <value>Error:</value>
+  </data>
+  <data name="LandingTime" xml:space="preserve">
+    <value>Arriving</value>
+  </data>
+  <data name="today" xml:space="preserve">
+    <value>today</value>
+  </data>
+  <data name="squares" xml:space="preserve">
+    <value>squares</value>
+  </data>
+  <data name="tomorrow" xml:space="preserve">
+    <value>tomorrow</value>
+  </data>
+  <data name="troopsChanged" xml:space="preserve">
+    <value>Warning: troops  in the village changed!</value>
+  </data>
+  <data name="Error_TargetInVacationMode" xml:space="preserve">
+    <value>Target is in Vacation Mode</value>
+  </data>
+</root>

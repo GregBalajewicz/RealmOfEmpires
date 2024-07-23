@@ -1,0 +1,674 @@
+﻿
+#mail_listtabs {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    margin: 0px;
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    padding-top: 3px;
+}
+    /*.mailTabIcon is M only*/
+    #mail_listtabs .mailTabIcon {
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        top: 0px;
+        width: 44px;
+        height: 44px;
+        margin: 0px 5px;
+        cursor: pointer;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 90% 90%;
+    }
+        #mail_listtabs .mailTabIcon.reload {
+            background-image: url(https://static.realmofempires.com/images/icons/M_RefreshSm.png);
+        }
+        #mail_listtabs .mailTabIcon.selected {
+            background-size: 90% 90%, 48px 48px;
+        }
+        #mail_listtabs .mailTabIcon.inbox {
+            background-image: url(https://static.realmofempires.com/images/icons/M_Inbox.png);
+        }
+            #mail_listtabs .mailTabIcon.inbox.selected {
+                background-image: url(https://static.realmofempires.com/images/icons/M_Inbox.png),url(https://static.realmofempires.com/images/icons/selected.png);
+            }     
+        #mail_listtabs .mailTabIcon.create {
+            background-image: url(https://static.realmofempires.com/images/icons/M_CreateMail.png);
+        }
+            #mail_listtabs .mailTabIcon.create.selected {
+                background-image: url(https://static.realmofempires.com/images/icons/M_CreateMail.png),url(https://static.realmofempires.com/images/icons/selected.png);
+            }
+        #mail_listtabs .mailTabIcon.outbox {
+    
+            background-image: url(https://static.realmofempires.com/images/icons/M_SentMail.png);
+        }
+            #mail_listtabs .mailTabIcon.outbox.selected {
+                background-image: url(https://static.realmofempires.com/images/icons/M_SentMail.png),url(https://static.realmofempires.com/images/icons/selected.png);
+            }
+        #mail_listtabs .mailTabIcon.block {
+            background-image: url(https://static.realmofempires.com/images/icons/M_BlockPlayer.png);
+        }
+            #mail_listtabs .mailTabIcon.block.selected {
+                background-image: url(https://static.realmofempires.com/images/icons/M_BlockPlayer.png),url(https://static.realmofempires.com/images/icons/selected.png);
+            }
+
+            /*.BtnDLf1 is D2 only*/
+    #mail_listtabs .BtnDLf1 {
+        position: relative;
+        display: inline-block;
+        top: 0px;
+        padding-left: 9px;
+    }
+        #mail_listtabs .BtnDLf1 span {
+            position: absolute;
+            top: 1px;
+            left: 9px;
+            width: 34px;
+            height: 34px;
+            background-size: 100% 100%;
+        }
+        #mail_listtabs .BtnDLf1.create span {
+            background-image: url(https://static.realmofempires.com/images/icons/M_CreateMail.png);
+        }
+        #mail_listtabs .BtnDLf1.inbox span {
+            background-image: url(https://static.realmofempires.com/images/icons/M_Inbox.png);
+        }
+        #mail_listtabs .BtnDLf1.outbox span {
+                  
+            background-image: url(https://static.realmofempires.com/images/icons/M_SentMail.png);
+        }
+        #mail_listtabs .BtnDLf1.block span {
+            background-image: url(https://static.realmofempires.com/images/icons/M_BlockPlayer.png);
+        }
+
+        #mail_listtabs .BtnDLf1.selected {
+            background-position: -100px -250px;
+        }
+
+
+#mail_popup {
+    position: absolute;
+    top: 44px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+}
+    #mail_popup > .bg {
+        margin-top: 0px;
+        background-color: rgba(0,0,0,0.9);
+        border-top: 2px solid #846824;
+        position: absolute;
+        overflow:hidden;
+    }
+
+     #mail_popup .list,
+    #mail_popup .sentList {
+        top: 0px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #mail_popup .list,
+    #mail_popup .sentList,
+    #mail_popup .details,
+    #mail_popup .bg .block {
+       /* position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 100%;*/
+    }
+        #mail_popup .list .filterHeader {
+            height: 22px;
+            line-height: 33px;
+            font: 16px "charlemagne_stdbold";
+            padding-top: 11px;
+        }
+        #mail_popup .list .mailseparator {
+            width: 100%;
+            text-align: center;
+            margin: -7px 0;
+        }
+    #mail_popup .action {
+        width: 44px;
+        height: 44px;
+    }
+    #mail_popup .action-expandColapse {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 44px;
+        height: 44px;
+        background-image: url("https://static.realmofempires.com/images/misc/M_ArrowDown.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        filter: alpha(opacity=1);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1;
+        -webkit-transition: opacity 0.7s;
+        -moz-transition: opacity 0.7s;
+        transition: opacity 0.7s;
+    }
+        #mail_popup .action-expandColapse.clicked {
+            background-image: url("https://static.realmofempires.com/images/misc/M_ArrowUp.png");
+            filter: alpha(opacity=0.4);
+            -moz-opacity: 0.4;
+            -khtml-opacity: 0.4;
+            opacity: 0.4;
+            -webkit-transition: opacity 0.7s;
+            -moz-transition: opacity 0.7s;
+            transition: opacity 0.7s;
+        }
+    #mail_popup .list .item,
+    #mail_popup .sentList .item {
+        padding-bottom: 0px;
+    }
+    #mail_popup .action-back {
+        display: none;
+        position: absolute;
+        top: -43px;
+    }
+        #mail_popup .list .items
+        #mail_popup .sentList .items {
+            overflow-y: auto;
+            width: 100%;
+           top: 47px;
+            bottom: 0px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+        }
+            #mail_popup .list .items .empty,
+            #mail_popup .sentList .items .empty,
+            #mail_popup .block .empty {
+                font-size: 22px;
+                margin: 20px;
+                display: none;
+            }
+        #mail_popup .list .item,
+         #mail_popup .sentList .item {
+            padding: 4px;
+            color: #B7B7B7;
+            margin: 1px;
+            clear: both;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.6);
+            /*background-image: url(https://static.realmofempires.com/images/icons/M_ArrowRWhite.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background:none;*/
+        }
+            #mail_popup .list .item.selected,
+            #mail_popup .sentList .item.selected {
+                color: black !important;
+                background-color: rgba(255,255,255,0.7);
+                /*background-image: url(https://static.realmofempires.com/images/icons/M_ArrowRBlack.png);*/
+            }
+            #mail_popup .list .item.new,
+             #mail_popup .sentList .item.new
+             {
+                color: #ffd776 !important;
+                /*background-color: rgba(0,0,0,0.8);*/
+                background-color:rgba(45, 56, 71, 0.8);
+                /*background-image: url(https://static.realmofempires.com/images/misc/M_ArrowR.png);
+                background:none;*/
+            }
+            #mail_popup .list .item .indicator,
+            #mail_popup .sentList .item .indicator {
+                height: 15px;
+                width: 15px;
+            }
+            #mail_popup .list .item a:hover,
+            #mail_popup .sentList .item a:hover {
+                text-decoration: none;
+            }
+            #mail_popup .list .item .rightArrows,
+            #mail_popup .sentList .item .rightArrows  {
+                float: right;
+                -moz-opacity: 0.8;
+                opacity: 0.8;
+            }
+            #mail_popup .list .item .troopIconSheet44,
+            #mail_popup .sentList .item .troopIconSheet44 {
+                float: left;
+            }
+
+    #mail_popup .template {
+        display: none;
+    }
+    #mail_popup .phrases {
+        display: none;
+    }
+    #mail_popup .more {
+        height: 58px;
+        width: 247px;
+        margin: 10px 0 4px 0;
+        cursor: pointer;
+        background: url(https://static.realmofempires.com/images/icons/M_MoreList.png);
+    }
+
+
+    #mail_popup .detail,
+    #mail_popup .detailout {
+        display: none;
+        position: absolute;
+        box-sizing: border-box;
+        bottom: 0px;
+        top: 0px;
+        width: 100%;
+        padding: 0px 8px;
+        margin: 3px 0px;
+        overflow: hidden;
+    }
+        #mail_popup .detail .mailheader,
+        #mail_popup .detailout .mailheader {
+            width: 86%;
+            overflow: hidden;
+            min-height: 44px;
+            padding-left: 44px;
+            padding-bottom: 17px;
+            background-image: url(https://static.realmofempires.com/images/icons/M_MailListOld.png),url(https://static.realmofempires.com/images/misc/m_listbar.png);
+            background-repeat: no-repeat;
+            background-position: 0px 0px, 29px bottom;
+        }
+        #mail_popup .detail > .info,
+        #mail_popup .detailout > .info {
+            position: absolute;
+            right: 8px;
+            left: 8px;
+            bottom: 60px;
+            top: 0px;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        #mail_popup .detail .attacker .functions,
+        #mail_popup .detail .defender .functions,
+        #mail_popup .detailout .attacker .functions,
+        #mail_popup .detailout .defender .functions {
+            display: none;
+        }
+
+      
+
+    #mail_popup .function {
+        position: absolute;
+        bottom: 0px;
+        left: 8px;
+        right: 8px;
+        text-align:center;
+    }
+        #mail_popup .function > div {
+            display:inline-block;
+            width: 44px;
+            height: 44px;
+            cursor: pointer;
+        }
+#mail_popup .function .forward-search { display: none }
+#mail_popup .function .prev { background-image: url(https://static.realmofempires.com/images/buttons/M_ArrowDown2.png) }
+#mail_popup .function .next { background-image: url(https://static.realmofempires.com/images/buttons/M_ArrowUp2.png) }
+#mail_popup .function .reply { background-image: url(https://static.realmofempires.com/images/icons/M_Reply.png) }
+#mail_popup .function .replyall { background-image: url(https://static.realmofempires.com/images/icons/M_ReplyAll.png) }
+#mail_popup .function .forward { background-image: url(https://static.realmofempires.com/images/icons/M_FwdMail.png) }
+#mail_popup .function .delete { background-image: url(https://static.realmofempires.com/images/icons/M_DeleteMail.png) }
+#mail_popup .users .user { display: table }
+#mail_popup .users .user .cell { display: table-cell; }
+#mail_popup .users .user .name { font-size: 18px; padding: 5px 10px; }
+
+.MailPopup { height: 100%; }
+
+
+
+#mail_popup .step {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    overflow: auto;
+    position: absolute;
+    display: none;
+    bottom: 0px;
+    top: 0px;
+}
+
+#mail_popup .notification {
+    display: none;
+    position: relative;
+    background-color: #D61818;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.5);
+    padding: 3px 5px;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#mail_popup .mailSection {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+    #mail_popup .mailSection .label {
+        position: relative;
+        padding: 2px 0px;
+    }
+    #mail_popup .mailSection .to, #mail_popup .mailSection .subject, #mail_popup .mailSection .message {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgba(245, 245, 245, 0.9);
+        border: none;
+        border-radius: 5px;
+        padding: 2px 5px;
+        margin: 0px;
+    }
+    #mail_popup .mailSection .wrapTo {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 30px;
+    }
+    #mail_popup .mailSection .wrapSubject {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 62px;
+    }
+
+#mail_popup .action-save {
+    position: relative;
+    margin: 0 auto;
+}
+
+
+#mail_popup .detail .from,
+#mail_popup .detailout .from {
+    color: #F3D08C;
+    font-weight: bold;
+    margin-right: 3px;
+    cursor:pointer;
+}
+#mail_popup .detail .doblock,
+#mail_popup .detailout .doblock  {
+    /*margin-right: 3px;*/
+}
+
+#mail_popup .paddinator2000 {
+    margin-top: 60px;
+}
+
+#mail_popup .sentList {
+    display: none;
+}
+
+/*D2 Dialog Specific*/
+#mailDialog #mail_popup .list, #mailDialog .sentList {
+   /* position: absolute;
+    left: 0px;
+    width: 50%;
+    border-right: 2px solid #846824;*/
+}
+#mailDialog #mail_popup .detail,
+#mailDialog #mail_popup .detailout {
+    width: 50%;
+    left: 50%;
+}
+
+/*in 2-pane style, 200% translate ensures a section with width of 50% leaves the container completely*/
+#mailDialog .section.slideRightFrom.transition {
+-webkit-transform: translate3d(200%, 0, 0) !important;
+-moz-transform: translate3d(200%, 0, 0) !important;
+-ms-transform: translate3d(200%, 0, 0) !important;
+-o-transform: translate3d(200%, 0, 0) !important;
+transform: translate3d(200%, 0, 0) !important;
+}
+
+
+
+
+.lt-checkboxToggleBtn {
+    float:left;
+}
+.lt-starToggleBtnWrapper {
+    float:left;
+}
+
+
+ #mail_popup .itemsPane {
+    float: left;
+    width: 49%;
+    height: 100%;
+    border-right: 2px solid #846824;
+}
+
+ #mail_popup .contentPane {
+    float: left;   
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#mailDialog #mail_popup .detail,
+#mailDialog #mail_popup .detailout {
+    width: 100%;
+    /* left: 50%; */
+   position:static;
+}
+
+#mailDialog #mail_popup .message {
+    /*position: absolute;
+    top: 60px;
+    bottom: 50px;
+          right: 0;
+    left: 0;*/
+    overflow-y: auto;
+  
+    padding:10px;
+}
+
+
+#mail_popup .detail > .info,
+#mail_popup .detailout > .info {
+     position: absolute; 
+    right: 8px;
+    left: 6px;
+    bottom: 60px;
+    top: 0px;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; 
+    position:initial;*/
+    width: 100%;
+}
+
+
+#mailDialog #mail_popup .list, #mailDialog .sentList {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    border-right: 2px solid #846824;
+}
+
+
+#mail_popup .list .items,
+#mail_popup .sentList .items  {
+    width:49%;
+}
+
+
+#mail_popup .listToolsSelect {
+
+}
+
+
+#mail_popup .listTools {
+/* float: left; */
+float:none;
+overflow: auto;
+margin: 0 auto;
+width: 230px;
+}
+     
+
+
+#mail_popup .list .item,
+#mail_popup .sentList .item {
+    padding:0px;
+    margin:0px;
+    clear:none;
+    overflow:initial;
+    background-image:none;
+    background-color:rgba(0, 0, 0, 0.6); 
+}
+
+#mail_popup .item table.itemTable {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+#mail_popup .item table.itemTable td {
+    padding:0px;
+    vertical-align: middle;
+}
+
+/* ignore width and height and use
+    padding to fill space so button is */
+#mail_popup .lt-checkboxToggleBtn {
+   
+    float: none;   
+    width: initial;
+    height: initial;
+    padding: 6px;
+    margin:0;
+     /*background-color: red;*/
+}
+#mail_popup .lt-starToggleBtn {
+   
+    float: none;
+    margin: 0;
+    padding: 0;
+    /*background-color: green;*/
+    padding: 9px;
+}
+
+
+#mail_popup .itemTable .touchBtnCol {
+    vertical-align: middle;
+    width:34px;
+}
+
+#mail_popup .itemTable .arrowCol {
+    width:20px;
+}
+#mail_popup .itemTable .subjectCol {
+     padding: 4px;
+}
+
+#mail_popup .item .hotspot .name {   
+
+}
+
+#mail_popup .item .nameWrapper {   
+    float: left;
+    overflow: hidden;  
+    max-height: 24px;
+    width: 100%;
+}
+
+#mail_popup .item .hotspot .time {
+    display: inline-block;
+}
+
+#mail_popup .list .mailseparator,
+#mail_popup .sentList .mailseparator {
+    width: 100%;
+    text-align: center;
+    margin: -3px 0px;
+    margin-top: -1px;
+    /*height: 6px;*/
+}
+#mail_popup .list .mailseparator .sectionDivider,
+#mail_popup .sentList .mailseparator .sectionDivider {
+    margin:0 auto;
+    position:relative;
+    left:auto;
+}
+/*
+#mail_popup .list .item.selected .arrowCol  {
+    color: black !important;
+    background-color: rgba(255,255,255,0.7);
+    background-image: url(https://static.realmofempires.com/images/icons/M_ArrowRBlack.png);
+}
+#mail_popup .list .item.new {
+    color: #ffd776 !important;
+    background-color: rgba(0,0,0,0.8);
+    background-image: url(https://static.realmofempires.com/images/misc/M_ArrowR.png);
+}*/
+
+#mail_popup .list .item .arrowIcon,
+#mail_popup .sentList .item .arrowIcon {
+     width:20px;
+    height:26px;
+    /*background-image: url(https://static.realmofempires.com/images/icons/M_ArrowRWhite.png);*/
+    background:none;
+}
+#mail_popup .list .item.selected .arrowIcon,
+#mail_popup .sentList .item.selected .arrowIcon  {   
+    background-image: url(https://static.realmofempires.com/images/icons/M_ArrowRBlack.png);
+}
+#mail_popup .list .item.new .arrowIcon,
+#mail_popup .sentList .item.new .arrowIcon { 
+    /*background-image: url(https://static.realmofempires.com/images/misc/M_ArrowR.png);*/
+    background:none;
+}
+
+/* tool stuff */
+
+#mail_popup .listToolsSelect {
+    width:auto;
+    overflow: hidden;
+    float: right;
+    display:inline-block;
+}
+
+#mail_popup .listToolsFilter {
+    float:none;
+    
+    margin-left: 3px;
+}
+
+
+#mail_popup .listTools {
+    float:none;
+    overflow: auto;
+    width:auto;
+    margin:0;
+    text-align:center;
+    padding-top: 8px;
+}
+
+
+/* when we remove the circle buttons */
+#mail_popup .listTools .listToolBtn {
+    background-color: transparent;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    float: left;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#mail_popup .filterStarredOnlyBtn .listToolIcon {
+}
+
+#mail_popup .listTools .listToolBtn.filterStarredOnlyBtn,
+#mail_popup .listTools .listToolBtn.reload {
+    width: 38px;
+    height: 38px;
+}
+
+#mail_popup .deleteSelectedBtn .listToolIcon  {
+    left: 0px;
+    right: 4px;
+}

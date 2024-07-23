@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="cost_per" xml:space="preserve">
+    <value>Cost Per</value>
+  </data>
+  <data name="desc_bid1" xml:space="preserve">
+    <value>The Barracks is where you train Citizen Militia and Infantry.</value>
+  </data>
+  <data name="desc_bid10" xml:space="preserve">
+    <value>The Seige Workshop is where you build Rams and Trebuchets</value>
+  </data>
+  <data name="desc_bid11" xml:space="preserve">
+    <value>The trading post allows you to transport silver between villages</value>
+  </data>
+  <data name="desc_bid12" xml:space="preserve">
+    <value>The Tavern is where you train Spies</value>
+  </data>
+  <data name="desc_bid13" xml:space="preserve">
+    <value>The Hiding Spot allows you to hide silver from plunder</value>
+  </data>
+  <data name="desc_bid2" xml:space="preserve">
+    <value>The Stables is where you train Light Cavalry and Knights.</value>
+  </data>
+  <data name="desc_bid3" xml:space="preserve">
+    <value>Level-up your Headquarters to improve the upgrade speed of all buildings</value>
+  </data>
+  <data name="desc_bid4" xml:space="preserve">
+    <value>The Wall improves the defensive ability of your troops</value>
+  </data>
+  <data name="desc_bid5" xml:space="preserve">
+    <value>Your Silver mine produces silver needed for upgrading buildings and training troops</value>
+  </data>
+  <data name="desc_bid6" xml:space="preserve">
+    <value>The Treasury stores your Silver. Once it is full, Silver production stops</value>
+  </data>
+  <data name="desc_bid7" xml:space="preserve">
+    <value>The Towers improve the defensive ability of your troops</value>
+  </data>
+  <data name="desc_bid8" xml:space="preserve">
+    <value>Your Farm produces Food which is needed for maintaining buildings and feeding troops</value>
+  </data>
+  <data name="desc_bid9" xml:space="preserve">
+    <value>The Palace is where you train Governors required to take over new villages</value>
+  </data>
+  <data name="effectTxt_bid1" xml:space="preserve">
+    <value>Training is %effectValOne%% faster</value>
+  </data>
+  <data name="effectTxt_bid10" xml:space="preserve">
+    <value>Training is %effectValOne%% faster</value>
+  </data>
+  <data name="effectTxt_bid11" xml:space="preserve">
+    <value>Maximum Silver that you can send is %effectValOne%</value>
+  </data>
+  <data name="effectTxt_bid12" xml:space="preserve">
+    <value>Training is %effectValOne%% faster</value>
+  </data>
+  <data name="effectTxt_bid13" xml:space="preserve">
+    <value>You can hide %effectValOne% Silver from plunder</value>
+  </data>
+  <data name="effectTxt_bid2" xml:space="preserve">
+    <value>Training is %effectValOne%% faster</value>
+  </data>
+  <data name="effectTxt_bid3" xml:space="preserve">
+    <value>Buildings upgrades complete %effectValOne%% faster</value>
+  </data>
+  <data name="effectTxt_bid4" xml:space="preserve">
+    <value>Defensive ability is increased by %effectValOne%%</value>
+  </data>
+  <data name="effectTxt_bid5" xml:space="preserve">
+    <value>Your Silver production is at %effectValOne% an hour</value>
+  </data>
+  <data name="effectTxt_bid6" xml:space="preserve">
+    <value>The Treasury can store %effectValOne% silver&lt;br&gt;It will fill up in %effectValTwo%</value>
+  </data>
+  <data name="effectTxt_bid6b" xml:space="preserve">
+    <value>The Treasury can store %effectValOne% silver&lt;br&gt;&lt;span style="color:red;"&gt;Your treasury is Full!&lt;/span&gt;</value>
+  </data>
+  <data name="effectTxt_bid7" xml:space="preserve">
+    <value>Defensive ability is increased by %effectValOne%%</value>
+  </data>
+  <data name="effectTxt_bid8" xml:space="preserve">
+    <value>You have %effectValOne% in spare food capacity</value>
+  </data>
+  <data name="effectTxt_bid9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FillingUpChests" xml:space="preserve">
+    <value>Filling up treasure chests...</value>
+  </data>
+  <data name="food" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="hiremore" xml:space="preserve">
+    <value>Hire More</value>
+  </data>
+  <data name="PreparingGovernor" xml:space="preserve">
+    <value>Preparing Governor...</value>
+  </data>
+  <data name="Recruiting" xml:space="preserve">
+    <value>Recruiting...</value>
+  </data>
+  <data name="servants" xml:space="preserve">
+    <value>Servants</value>
+  </data>
+  <data name="silver" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="speedup" xml:space="preserve">
+    <value>SpeedUp</value>
+  </data>
+  <data name="SpeedUpCastFail" xml:space="preserve">
+    <value>Speed Up Failed! No servants used.</value>
+  </data>
+  <data name="time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="tolevel" xml:space="preserve">
+    <value>to Level</value>
+  </data>
+  <data name="train" xml:space="preserve">
+    <value>Train</value>
+  </data>
+  <data name="traintroops" xml:space="preserve">
+    <value>Train Troops</value>
+  </data>
+  <data name="upgrade" xml:space="preserve">
+    <value>Upgrade</value>
+  </data>
+  <data name="upgradetomaxlevel" xml:space="preserve">
+    <value>Building Upgraded to Maximum Level!</value>
+  </data>
+  <data name="youcurrentlyhouse" xml:space="preserve">
+    <value>You currently house</value>
+  </data>
+</root>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivateTheTwentyFiveBonus" xml:space="preserve">
+    <value>Activate the 25% Bonus Minerals feature!</value>
+  </data>
+  <data name="AttackVillagesAndLoot" xml:space="preserve">
+    <value>Attack surrounding planets and loot minerals!</value>
+  </data>
+  <data name="BonusFromElvenSpell" xml:space="preserve">
+    <value>Bonus from Elven Efficiency Spell</value>
+  </data>
+  <data name="BonusFromResearch" xml:space="preserve">
+    <value>Bonus From &lt;a href='#' onclick='return popupResearch("?bid=8");return false;'&gt; Research</value>
+    <comment>Bonus From Research (farm)</comment>
+  </data>
+  <data name="BonusFromResearch2" xml:space="preserve">
+    <value>Bonus From &lt;a href='#' onclick='return popupResearch("?bid=5");return false;'&gt; Research</value>
+    <comment>Bonus From Research (silver mine)</comment>
+  </data>
+  <data name="BonusFromResearch3" xml:space="preserve">
+    <value>Bonus From &lt;a href='#' onclick='return popupResearch("?bid=6");return false;'&gt; Research</value>
+    <comment>Bonus From Research (treasury)</comment>
+  </data>
+  <data name="BonusFromResearch4" xml:space="preserve">
+    <value>Bonus From &lt;a href='#' onclick='return popupResearch("?bid=3");return false;'&gt; Research</value>
+    <comment>Bonus From Research (hq)</comment>
+  </data>
+  <data name="BonusStatistics" xml:space="preserve">
+    <value>(includes +{0}% bonus from &lt;a href='#' onclick='return popupResearch()'&gt;research&lt;/a&gt;)</value>
+  </data>
+  <data name="BuildTimeFactor" xml:space="preserve">
+    <value>Build Time Factor from Building Level</value>
+  </data>
+  <data name="ComeBackToEnsureSilverProduction" xml:space="preserve">
+    <value>Make sure to come back before it does to ensure your mineral production continues!</value>
+  </data>
+  <data name="CurrentIncome" xml:space="preserve">
+    <value>Current Income:</value>
+  </data>
+  <data name="CurrentSpareCapacity" xml:space="preserve">
+    <value>Your current spare capacity:</value>
+  </data>
+  <data name="EffectiveBuildTime" xml:space="preserve">
+    <value>Effective Build Time Factor</value>
+  </data>
+  <data name="FromYourFriends" xml:space="preserve">
+    <value>to your friends</value>
+  </data>
+  <data name="GetSackOfSilverGifts" xml:space="preserve">
+    <value>Send 'Sack Of Minerals' gifts</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>/hour</value>
+  </data>
+  <data name="HowCanIGetSilver" xml:space="preserve">
+    <value>How can I get more minerals?</value>
+  </data>
+  <data name="IncomeFromLvl" xml:space="preserve">
+    <value>Income from Level</value>
+  </data>
+  <data name="ResearchToGetBonuses" xml:space="preserve">
+    <value>Research Technologies</value>
+  </data>
+  <data name="ResearchToGetBonuses1" xml:space="preserve">
+    <value>to get production bonuses!</value>
+  </data>
+  <data name="SilverIsHiddenFromPlunder" xml:space="preserve">
+    <value>{0} minerals is hidden from plunder</value>
+  </data>
+  <data name="SilverIsVulnerableToPlunder" xml:space="preserve">
+    <value>Currently, {0} minerals is vulnerable to plunder if you get attacked and lose</value>
+  </data>
+  <data name="TheSmallerThisNumber" xml:space="preserve">
+    <value>The smaller this number, the faster your buildings are upgraded</value>
+  </data>
+  <data name="TotalFarmYield" xml:space="preserve">
+    <value>Total Energy Yield</value>
+  </data>
+  <data name="TotalIncome" xml:space="preserve">
+    <value>Total Income</value>
+  </data>
+  <data name="TotalTreasuryCap" xml:space="preserve">
+    <value>Total Warehouse Capacity</value>
+  </data>
+  <data name="TreasuryCapFromBuildingLvl" xml:space="preserve">
+    <value>Warehouse Capacity from Building Level</value>
+  </data>
+  <data name="UpgradeSilverMineAbove" xml:space="preserve">
+    <value>Upgrade the mining facility here. See above.</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning:</value>
+  </data>
+  <data name="YouCannotStoreFood" xml:space="preserve">
+    <value>Remember that you cannot store energy therefore only upgrade the power plant when necessary</value>
+  </data>
+  <data name="YourCurrentFarmYield" xml:space="preserve">
+    <value>Energy Yield from Level:</value>
+  </data>
+  <data name="YourTreasuryIsFull" xml:space="preserve">
+    <value>Your Warehouse is full so mineral production has been halted!&lt;br /&gt;Spend some minerals now or upgrade your warehouse to be able to hold more minerals.</value>
+  </data>
+  <data name="YourTreasuryWillFillIn" xml:space="preserve">
+    <value>Your warehouse will fill up in:</value>
+  </data>
+  <data name="YourTroopsAndWorkersConsume" xml:space="preserve">
+    <value>Your Ships and Buildings consume:</value>
+  </data>
+</root>

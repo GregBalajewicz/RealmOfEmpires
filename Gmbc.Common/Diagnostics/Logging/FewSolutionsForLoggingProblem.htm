@@ -1,0 +1,306 @@
+<html>
+	<head>
+		<title>ASP.NET Website Programming Code Download</title>
+	</head>
+	<body bgcolor="#ffffff">
+		<h1>ASP.NET Website Programming Code Download C# Edition</h1>
+		<p>Welcome! The following instructions provide a way to get the site running. If 
+			you follow these instructions but cannot make the site work then please contact 
+			-- <a href="mailto:techsupwrox@wrox.com">Wrox Technical Support.</a> we will do 
+			everything we can to help you, and where needed change the download for future 
+			readers.</p>
+		<p>Before you start, you must have SQL Server and IIS installed and running., you 
+			can also use MSDE as your local database server, if your machine is running on 
+			windows 2000 professional. The procedure for database backup is same for both 
+			MSDE and SQL server 2000.
+		</p>
+		<p>Also Read the <a href="#FAQ">FAQ</a> at End of doucment to solve some of 
+			commanly known problems <a name="#a1"></a>
+		</p>
+		<a name="#a1"></a>[ <a href="#a1">Getting the Site Up and Running</a> | <a href="#a2">
+			Modifying the Web Data Administrator to Work in .NET 1.0</a> ] <a name="#a1"></a>
+		<h2>Getting the Site Up and Running</h2>
+		<center><table width="60%" cellpadding="7" bgcolor="#dddddd">
+				<tr>
+					<td>
+						<b>We connect to the database using the 'sa' account, with a blank password. This 
+							is not a good idea in a production system! If you want to build a live site 
+							then you will need to create other database accounts, and modify the connection 
+							string used in the config files.</b>
+					</td>
+				</tr>
+			</table>
+		</center>
+		<ol>
+			<li>
+				Restore the <tt>thephile-database-backup</tt> database file in SQL Server 
+				Enterprise Manager
+				<ul>
+					<li>
+						Copy the file <tt>thephile-database-backup.bak</tt>
+					into your SQL Server backup folder
+					<li>
+						Create a new database called <tt>thePhile</tt>
+					<li>
+						Right click the new database, click <font face="arial">All Tasks</font> then <font face="arial">
+							Restore Database</font>
+					<li>
+						Select <font face="arial">From Device</font>
+					<li>
+						Click <font face="arial">Select Devices</font>
+					<li>
+						Click <font face="arial">Add</font>
+					<li>
+						Use the filename box to select the <tt>thephile-database-backup.bak</tt>
+					file.
+					<li>
+						Click <font face="arial">OK</font>
+					<li>
+						Click <font face="arial">OK</font>
+					again
+					<li>
+						Click <font face="arial">OK</font> once more
+					</li>
+				</ul>
+			<li>
+				Unzip <tt>wrox.zip</tt> (nested in the main download zip) to <tt>c:\</tt>, so 
+				that there are folders <tt>c:\wrox\keys</tt> and <tt>c:\wrox\thephile<br>
+					<br>
+				</tt>
+			<li>
+				Web-share the <tt>c:\wrox\thephile</tt> folder as <tt>thephile</tt>:
+				<ul>
+					<li>
+						Right-click on the <tt>thephileVB</tt> folder in Windows Explorer, and select <font face="arial">
+							Properties</font>
+					<li>
+						Click the <font face="arial">Web Sharing</font> tab</li>
+				</ul>
+				and select <font face="arial">Share This Folder</font>
+				<ul>
+					<li>
+						Ensure that the Alias reads <font face="arial">thephileVB</font>
+					<li>
+						<font face="arial">Set <b>execute</b> </font><font>Permissions</font> for the 
+						application by selecting the radio buttion in the <b>application permission </b>
+						section of the dialog box. It makes it easier to hack around with the site if 
+						you also check <font face="arial">Directory Browsing</font>
+					<li>
+						Click <font face="arial">OK</font>
+					<li>
+						Click <font face="arial">OK</font> again<br>
+						<br>
+					</li>
+				</ul>
+			<li>
+				Open the file <tt>c:\wrox\thephile\thephile.sln</tt> in Visual Studio .NET or 
+				Visual C# Standard
+				<br>
+				<br>
+			<li>
+				You also need to change the name of database server in the following files 
+				listed below:
+				<br>
+				<br>
+				<ul>
+					<li>
+						<b>Web.config
+							<br>
+							<br>
+						</b>
+					<li>
+						All the config files residing in the <b>C:\wrox\ThePhile\Config\ </b>folder.
+					</li>
+				</ul>
+				<br>
+				<br>
+			<li>
+			Rebuild the Solution in VS.NET
+			<li>
+				<STRONG>Open <tt>Machine.Config</tt> (by default in <tt>C:\WINNT\Microsoft.NET\Framework\v1.0.3705\CONFIG</tt>) 
+					in a text editor, find the <tt>&lt;processModel&gt;</tt> section, and set the <tt>userName</tt>
+					attribute to <tt>"SYSTEM"</tt>. This is required to enable event logging in 
+					ASP.NET Applications -- which we use in our custom error handling.</STRONG>
+			<li>
+				Reboot the computer. This will enable the change to <tt>Machine.Config</tt>
+			to take effect
+			<li>
+				Navigate to <a href="http://localhost/thephile"><tt>http://localhost/thephile</tt></a></li>
+		</ol>
+		<a name="#a2"></a>
+		<h2>Modifying the Web Data Administrator to Work in .NET 1.0</h2>
+		<p>Chapter 4 mentions the Web Data Administrator. Microsoft produced this tool for 
+			.NET beta 2, and have yet to update it. Wrox cannot redistrubute a modified 
+			version of the tool, but following these steps has made the tool work for me.</p>
+		<p>This is just a hack -- I don't completely understand how this tool works, I just 
+			tried something, and it appeared to work. Please do not rely on or trust these 
+			instructions!</p>
+		<p>Also, if you find ways to improve this hack, please email support</p>
+		<ol>
+			<li>
+				<a href="http://msdn.microsoft.com/code/default.asp?url=/code/sample.asp?url=/msdn-files/026/002/458/msdncompositedoc.xml">
+					Download the tool from MSDN</a>
+			<li>
+			Install it
+			<li>
+				Navigate to the <tt>source</tt> sub-folder (by default <tt>C:\Inetpub\wwwroot\DataAdmin\source</tt>), 
+				and web-share the <tt>webdatadmin</tt> folder, giving it the alias <tt>sqlwebadmin</tt>
+			<li>
+				Open <tt>WebDataAdmin.sln</tt>
+			in Visual Studio .NET
+			<li>
+				Open the codebehind for <tt>default.aspx</tt> (part of the <tt>SqlWebAdmin</tt> 
+				project) and comment out the first two lines in the <tt>page_load</tt> method:<pre>// if (!IsValid)
+//    return;</pre>
+			<li>
+			Rebuild the solution
+			<li>
+				Navigate to <a href="http://localhost/sqlwebadmin"><tt>http://localhost/sqlwebadmin</tt></a></li>
+		</ol>
+		<p>&nbsp;</p>
+		<p><font size="6"><a name="FAQ"></a>FAQ</font></p>
+		<p><b>Question 1</b></p>
+		<p>I have successfully able to build the solution, but when I try to access the 
+			default.aspx page it gives me security exception similar to the one as 
+			described below.
+		</p>
+		<p>Server Error in '/ThePhile' Application.<br>
+			--------------------------------------------------------------------------------</p>
+		<p>Access is denied<br>
+			Description: An unhandled exception occurred during the execution of the 
+			current web request. Please review the stack trace for more information about 
+			the error and where it originated in the code.</p>
+		<p>Exception Details: System.ComponentModel.Win32Exception: Access is denied</p>
+		<p>Source Error:</p>
+		<p><br>
+			Line 31: EventLog.CreateEventSource("ThePhile.COM", "Application");<br>
+			Line 32: }<br>
+			Line 33: EventLog.WriteEntry("ThePhile.COM", message, entryType);<br>
+			Line 34: }<br>
+			Line 35:
+		</p>
+		<p><br>
+			<b>Answer </b>
+		</p>
+		<p>There are few possible solutions to this problem
+		</p>
+		<ol>
+			<li>
+				<STRONG>Change the security settings of your virtual directory named "ThePhile". As 
+					this virtual directory use IUSR_MACHINENAME account by default, which is a 
+					member of GUEST and has the privileges of GUEST account. In this case GUEST 
+					account is disabled on your system. Enable the Guest account
+					<br>
+					<br>
+				</STRONG>
+			<li>
+				<STRONG>Provide write permission to the ASPNET or asp_wp accountaccount on the file 
+					below </STRONG>
+				<ul>
+					<li>
+						<STRONG>C:\WINNT\system32\config\AppEvent.Evt<br>
+							<br>
+							So, you have to add write permission to the account you use for aspnet process 
+							execution on this file. Be ensure that your IIS disallow an anonymous access.
+							<br>
+						</STRONG>
+						<br>
+					</li>
+				</ul>
+			<li>
+				You can also turn off the logging by commenting the line below
+				<br>
+				<br>
+				<ul>
+					<li>
+						EventLog.WriteEntry("ThePhile.COM", message, entryType);</li>
+				</ul>
+			</li>
+		</ol>
+		<p></p>
+		<p><b>Question 2 </b>
+		</p>
+		<p>I am getting this Error Message: <b>SQL Server does not exist or access denied</b>. 
+			How should I solve this problem</p>
+		<p><b>Answer</b></p>
+		<p>You have probably not changed the connection string in various config files 
+			residing the config folder as described in the readme file. Follow the steps 
+			given below.
+		</p>
+		<ul>
+			<li>
+				Change the connection string settings in web.cong file
+				<br>
+				<br>
+			<li>
+				Change the connection string settings in all the config files residing in the 
+				config folder.
+			</li>
+		</ul>
+		<p><br>
+			<b>Question 3</b></p>
+		<p>I am facing problem with the SQL Server Connection it says "Login failed for 
+			user 'sa'. Reason: Not associated with a trusted SQL Server connection". How 
+			should I solve this problem.
+		</p>
+		<p><b>Answer.</b></p>
+		<p><b>Users with SQL Server 2000 or using MSDE with Enterprise Manager Installed</b></p>
+		<p>To resolve this problem, You need to change it to SQL Server authentication mode 
+			using Enterprise manager from widows only to SQL Server and Windows Mode. 
+			Please follow the steps given below.
+		</p>
+		<ul>
+			<li>
+				<b>Right click on your SQL SERVER INSTANCE NAME and select properties<br>
+					<br>
+				</b>
+			<li>
+				<b>Select the security tab and change the authentication to SQL server and Windows.</b></li>
+		</ul>
+		<p><br>
+			<b>Users with MSDE stand alone without enterprise manager</b></p>
+		<p>If you do not have enterprise manager on your machine, there is one possible 
+			solution is described at the Microsoft Knowledge Base. These articles will give 
+			you in-depth information on the various topics such as changing the MSDE 
+			authentication mode From Windows integrated to mixed mode at the time of 
+			installation and even after the installation. Just browse the two URLs give 
+			below.</p>
+		<p><b><a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;319930">http://support.microsoft.com/default.aspx?scid=kb;en-us;319930</a></b></p>
+		<p><b><a href="http://support.microsoft.com/default.aspx?scid=kb;en-us;322336">http://support.microsoft.com/default.aspx?scid=kb;en-us;322336</a></b></p>
+		<p><br>
+			<b>Question 4 </b>
+		</p>
+		<p>I am facing problem with site. When I try to access the default.aspx, I get the 
+			following error.
+		</p>
+		<p><b>Error Message
+				<br>
+				Access to the path<br>
+				"C:\wrox\ThePhileVB\Config\Polls.Config is denied. </b>
+		</p>
+		<p>Or
+		</p>
+		<p><b>Error Message
+				<br>
+				Access to the path<br>
+				"C:\wrox\ThePhile\Config\Polls.Config is denied. </b>
+		</p>
+		<p><b>Answer</b></p>
+		<p>You need to modify the FileStream constructors in the ModuleConfig.vb or 
+			ModuleConfig.cs files as described below.
+		</p>
+		<p><b>Users with VB.NET version of Code</b></p>
+		<blockquote>
+			<p><br>
+				Dim fs As New FileStream(fileName, FileMode.Open, FileAccess.Read)</p>
+		</blockquote>
+		<p><b>Users with C# version of Code</b></p>
+		<blockquote>
+			<p><br>
+				FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read);</p>
+		</blockquote>
+		<p>Enjoy!</p>
+		<p>Ankur Verma , Charul Shukla<br>
+			Technical Support</p>
+	</body>
+</html>

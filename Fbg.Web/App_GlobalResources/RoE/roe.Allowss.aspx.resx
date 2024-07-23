@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Congratulations" xml:space="preserve">
+    <value>Congratulations</value>
+  </data>
+  <data name="GiftOfTenServants" xml:space="preserve">
+    <value>gift of 10 servants</value>
+  </data>
+  <data name="a" xml:space="preserve">
+    <value>a</value>
+  </data>
+  <data name="AddAPersonalMessage" xml:space="preserve">
+    <value>Add a personal message (psst… it’s ok to brag, this is a true achievement! :)</value>
+  </data>
+  <data name="AddAPersonalMessage2" xml:space="preserve">
+    <value>Add a personal message</value>
+  </data>
+  <data name="AddAPersonalMessagePerhaps" xml:space="preserve">
+    <value>Add a personal message - perhaps ask your friends to join your clan.</value>
+  </data>
+  <data name="AKingdomOfAMightyFortress" xml:space="preserve">
+    <value>a {5} kingdom of {4} mighty fortresses! All Hail {1} {2}!</value>
+  </data>
+  <data name="AreYOUReadyForAnAdventure" xml:space="preserve">
+    <value>Are YOU ready for an adventure of your life?? THEN JOIN {2}'s CLAN and claim the throne of your own kingdom!!</value>
+  </data>
+  <data name="CapitalA" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="CapitalHe" xml:space="preserve">
+    <value>He</value>
+  </data>
+  <data name="CapitalHer" xml:space="preserve">
+    <value>Her</value>
+  </data>
+  <data name="CapitalHim" xml:space="preserve">
+    <value>Him</value>
+  </data>
+  <data name="CapitalHis" xml:space="preserve">
+    <value>His</value>
+  </data>
+  <data name="CapitalShe" xml:space="preserve">
+    <value>She</value>
+  </data>
+  <data name="CapitalThe" xml:space="preserve">
+    <value>The</value>
+  </data>
+  <data name="CapitalTheir" xml:space="preserve">
+    <value>Their</value>
+  </data>
+  <data name="CapitalThem" xml:space="preserve">
+    <value>Them</value>
+  </data>
+  <data name="CapitalThey" xml:space="preserve">
+    <value>They</value>
+  </data>
+  <data name="CONGRATSTOForMakingThis" xml:space="preserve">
+    <value>CONGRATS TO {2} for making this critical strategic decision!</value>
+  </data>
+  <data name="ConqueredANewCastle" xml:space="preserve">
+    <value>{2} conquered a new Castle in REALM OF EMPIRES!!</value>
+  </data>
+  <data name="DiplomaticWitOfTheirLeader" xml:space="preserve">
+    <value>diplomatic wit of their leader {1}!</value>
+  </data>
+  <data name="DueToTremendousAcheivements" xml:space="preserve">
+    <value>Due to {3} tremendous achievements, the Council Of Elders has granted {2} a new title and {4} {6} accepted! ALL HAIL {5}!</value>
+  </data>
+  <data name="DueToTremendousAcheivements2" xml:space="preserve">
+    <value>Due to {3} tremendous achievements, the Council Of Elders has granted {2} a new title of {8} and {4} {6} accepted! ALL HAIL {5}!</value>
+  </data>
+  <data name="giant" xml:space="preserve">
+    <value>giant</value>
+  </data>
+  <data name="has" xml:space="preserve">
+    <value>has</value>
+  </data>
+  <data name="HasAcceptedANewTitle" xml:space="preserve">
+    <value>{5} has accepted a new title in REALM OF EMPIRES!!</value>
+  </data>
+  <data name="HasAcceptedANewTitleOf" xml:space="preserve">
+    <value>{5} has accepted a new title of {8} in REALM OF EMPIRES!!</value>
+  </data>
+  <data name="HasBeenGrantedAndAccepted" xml:space="preserve">
+    <value>{2} has been granted and has accepted the first noble title of {1} with all the rights and privileges</value>
+  </data>
+  <data name="have" xml:space="preserve">
+    <value>have</value>
+  </data>
+  <data name="he" xml:space="preserve">
+    <value>he</value>
+  </data>
+  <data name="her" xml:space="preserve">
+    <value>her</value>
+  </data>
+  <data name="herself" xml:space="preserve">
+    <value>herself</value>
+  </data>
+  <data name="him" xml:space="preserve">
+    <value>him</value>
+  </data>
+  <data name="himself" xml:space="preserve">
+    <value>himself</value>
+  </data>
+  <data name="his" xml:space="preserve">
+    <value>his</value>
+  </data>
+  <data name="IInviteYouToJoinMyClan" xml:space="preserve">
+    <value>*** I invite you to join my clan as we prepare for a adventure of a life time - our quest to rule the realm! Join me!***.</value>
+  </data>
+  <data name="InABloodyBattleFearlessSoldiers" xml:space="preserve">
+    <value>In a bloody battle {2}'s fearless soldiers stormed and captured a new Castle!! {2} now rules over</value>
+  </data>
+  <data name="InauguratedIntoRoENobility" xml:space="preserve">
+    <value>{2} has been inaugurated into Realm of Empires Nobility!</value>
+  </data>
+  <data name="IsLeadingABrandNewClan" xml:space="preserve">
+    <value>{1} is leading {2}, a brand new clan in REALM OF EMPIRES!!</value>
+  </data>
+  <data name="JoiningAClanIsACriticalStep" xml:space="preserve">
+    <value>Joining a clan (a federation of independent kingdoms) is a critical step in ensuring security for your kingdom in Realm of Empires.</value>
+  </data>
+  <data name="JOINTODAY" xml:space="preserve">
+    <value>JOIN {0} TODAY!</value>
+  </data>
+  <data name="JoinUsInCongratulating" xml:space="preserve">
+    <value>Join us in congratulating {3} by attending the celebration!</value>
+  </data>
+  <data name="JustJoinedAClanInRoE" xml:space="preserve">
+    <value>{1} just joined {3}, a clan in REALM OF EMPIRES!!</value>
+  </data>
+  <data name="large" xml:space="preserve">
+    <value>large</value>
+  </data>
+  <data name="LeadingAClanIsAGreatHonor" xml:space="preserve">
+    <value>Leading a clan is a great honor, responsibility and an exciting challenge! Hundreds of players depend on the strategic and</value>
+  </data>
+  <data name="PleaseVisitTheCelebration" xml:space="preserve">
+    <value>Please visit the celebration feast made in {2}'s honor! {7}</value>
+  </data>
+  <data name="RoEIsAnRTGAndItTakesWeeks" xml:space="preserve">
+    <value>Realm of Empires is a real time game and it takes weeks to achieve this title, making it a true honor! It takes keen strategic planning, diplomatic know-how and patience as one struggles to maintain control of and expand their Kingdom. At any point in time, with one or two wrong diplomatic moves, one risks total defeat – but no matter what fortune may bring, a title, once bestowed and accepted is yours forever!</value>
+  </data>
+  <data name="RoETakesManyMonthsToAchieve" xml:space="preserve">
+    <value>Realm of Empires is a real time game where it takes many months to achieve the grand title of {0}! It is a true honor! {2} {0} has proven {1} as a great commander with acute strategic and diplomatic sense. {2} {0} directly controls a vast territory, and influences the political and diplomatic landscape of the realm. But even {3} {0} is not completely secure and needs friends and allies or {4} risk loosing it all!</value>
+  </data>
+  <data name="she" xml:space="preserve">
+    <value>she</value>
+  </data>
+  <data name="the" xml:space="preserve">
+    <value>the</value>
+  </data>
+  <data name="their" xml:space="preserve">
+    <value>their</value>
+  </data>
+  <data name="them" xml:space="preserve">
+    <value>them</value>
+  </data>
+  <data name="TheretoAppertainingIsNowAMember" xml:space="preserve">
+    <value>{2} is now a member of the select elite of Realm of Empires! {2}'s subjects have organized a splendid feast in {4} honor.</value>
+  </data>
+  <data name="they" xml:space="preserve">
+    <value>they</value>
+  </data>
+  <data name="VisitTheFeast" xml:space="preserve">
+    <value>VISIT THE FEAST!!</value>
+  </data>
+  <data name="YourKingdomAwaits" xml:space="preserve">
+    <value>YOUR KINGDOM AWAITS!</value>
+  </data>
+  <data name="AcceptedANewTitlePublishStoryFacebookProfile" xml:space="preserve">
+    <value>You have accepted a new title! We would like to publish a story to your facebook profile about this achievement.&lt;br /&gt;
+            &lt;br /&gt;
+            In addition to sharing this honor with your friends, publishing stories helps us grow and keeps the game vibrant and interesting!
+            &lt;br /&gt;&lt;br /&gt;
+            Thank you in advance for sharing Realm Of Empires with others!</value>
+  </data>
+  <data name="CONGRATSAssertYourSovereignty" xml:space="preserve">
+    <value>&lt;B&gt;CONGRATULATIONS!&lt;/B&gt;
+            &lt;br /&gt;
+            &lt;br /&gt;
+            You're almost done! Assert your sovereignty - throw a royal feast! Let everyone know who is in charge!</value>
+  </data>
+  <data name="CongratsOnFormingNewClan" xml:space="preserve">
+    <value>&lt;strong&gt;Congratulations on forming your new clan!&lt;/strong&gt;!!&lt;br /&gt;
+            &lt;br /&gt;
+            Leading a clan is an exciting challenge! &lt;br /&gt;
+            &lt;br /&gt;
+            The first step in leading a successful clan is growing its ranks. We suggest you publish a story to your facebook profile telling your friends of this event and inviting them to join your clan.&lt;br /&gt;</value>
+  </data>
+  <data name="CongratsOnJoiningAClan" xml:space="preserve">
+    <value>&lt;strong&gt;Congratulations joining a clan!&lt;/strong&gt;&lt;br /&gt;
+            &lt;br /&gt;
+            Joining a clan is the single most important decision you can make!
+            &lt;br /&gt;
+            &lt;br /&gt;
+            There is nothing stronger than a large clan of friends. We suggest you
+            publish a story to your facebook profile telling your friends of this event and
+            inviting them to join your clan.&lt;br /&gt;
+            &lt;br /&gt;
+            &lt;strong&gt;Remember!&lt;/strong&gt; Growing the clan's ranks is not just the leaders responsibility
+            but also yours. Don't let your clan mates down! Publish this story to invite your
+            friends to the clan.&lt;br /&gt;</value>
+  </data>
+  <data name="CongratsProvingYourselfAsGreatWarLeader" xml:space="preserve">
+    <value>&lt;strong&gt;Congratulations!&lt;/strong&gt;&lt;br /&gt;
+            &lt;br /&gt;
+            Your subjects tell us, that just a little while ago, you proved yourself as a great war leader when you captured a new village!
+            &lt;br /&gt;
+            &lt;br /&gt;
+            Your subjects are throwing you a splendid celebration feast! Let the world know your glory, and invite your friends to join the celebration feast by publishing a story!&lt;br /&gt;</value>
+  </data>
+  <data name="NewTitlePublishToYourFacebookProfile" xml:space="preserve">
+    <value>You have accepted a new title! We would like to publish a story to your facebook profile about this achievement which also invites your friends to a Celebration Feast in you honor.&lt;br /&gt;
+            &lt;br /&gt;
+            Remember that publishing stories helps us grow and keeps the game vibrant and interesting. Many thanks from Realm Of Empires team!</value>
+  </data>
+  <data name="PublishAStoryBecauseYouJoinedRealm3" xml:space="preserve">
+    <value>&lt;B&gt;Publish a story to your profile telling your friends you joined realm 3.&lt;/B&gt;
+            &lt;br /&gt;
+            &lt;br /&gt;
+           The more people join early on, the more exciting the game! and publishing stories is a very pleasant, non-intrusive way of inviting your friends.
+            &lt;br /&gt;&lt;br /&gt;We are commited to only publishing stories you are fully aware - clicking the link below will allow you to
+            &lt;I&gt;preview&lt;/I&gt; the story and then &lt;I&gt;YOU&lt;/I&gt; can decide if you want to post it.
+            &lt;br /&gt;&lt;br /&gt;&lt;B&gt;THANK YOU IN ADVANCE!!&lt;/B&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="YouHaveAcceptedFirstNobleTitle" xml:space="preserve">
+    <value>You have accepted the first noble title and hence have became part of a select 
+            elite of Realm Of Empires, the Nobility!&lt;br /&gt;
+            &lt;br /&gt;
+            We would like to publish a &lt;strong&gt;special&lt;/strong&gt; &lt;strong&gt;story&lt;/strong&gt; to your facebook profile about this achievement which also invites your friends to a Celebration Feast in you honor.&lt;br /&gt;
+            &lt;br /&gt;
+            Publishing stories helps us grow and keeps the game vibrant and interesting. Please allow us to publish this story and as a thank you for your effort and good will, please accept this</value>
+  </data>
+</root>

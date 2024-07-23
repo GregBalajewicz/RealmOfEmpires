@@ -1,0 +1,278 @@
+﻿/* in map gui */
+.presetsInnerPanel {
+    position: absolute;
+    padding: 1px 0px;
+    top: 100%;
+    margin-top: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .presetsInnerPanel .presetBtn {
+        position: relative;
+        float: left;
+        margin-right: 1px;
+        margin-bottom: 1px;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.8);
+        
+    }
+
+        .presetsInnerPanel .presetBtn.addMore {
+            padding: 5px 10px;
+        }
+        .presetsInnerPanel .presetBtn.action {
+            padding: 5px 5px;
+            font-size: 11px;
+        }
+
+            .presetsInnerPanel .presetBtn.action[data-commandtype="0"] {
+                background-color: rgba(113, 6, 121, 0.8);
+            }
+            .presetsInnerPanel .presetBtn.action[data-commandtype="1"] {
+                background-color: rgba(123, 0, 0, 0.8);
+            }
+
+
+        /* in body preset progress */
+#activeCommandsContainer {
+    position: absolute;
+    top: 220px;
+    left: 10px;
+}
+
+
+.mobile #activeCommandsContainer {
+    position: absolute;
+    top: auto;
+    left: 0px;
+    bottom:50px;
+    font-size:9px;
+}
+
+.presetCommand {
+    position: relative;
+    margin-bottom: 1px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2px 5px 2px 5px;
+    padding-left: 30px;
+    max-height: 100px;
+    overflow: hidden;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+    background-position: 3px 50%;
+    background-repeat: no-repeat;
+    clear:both;
+    cursor:pointer;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+    .presetCommand.busy { 
+        background-image: url(https://static.realmofempires.com/images/misc/busy_tinyRed.gif);
+        background-position: 9px 50%;
+    }
+
+    .presetCommand.success {
+        background-color: #009200;
+        background-image: url(https://static.realmofempires.com/images/misc/M_SmGood.png);
+    }
+
+    .presetCommand.failed {
+        background-color: #d40000;
+        background-image: url(https://static.realmofempires.com/images/misc/M_SmNotEnough.png);
+    }
+
+    .presetCommand.startFade {
+        opacity: 0;
+        max-height:0px;
+        margin:0px;
+        padding:0px;
+    }
+
+    .presetCommand.min {
+        float: left;
+        clear: none;
+        width: 28px;
+        height: 37px;
+        font-size: 0px;
+        padding: 0px;
+        margin-right: 3px;
+    }
+        .presetCommand.min * {
+            display: none;
+        }
+
+
+    .presetCommand .morale {
+        background-size: 22px 22px;
+        background-image: url(https://static.realmofempires.com/images/icons/M_HD_Morale.png);
+        padding-left: 24px;
+        padding-top: 4px;
+        padding-bottom: 5px;
+        background-repeat: no-repeat;
+    }
+    .presetCommand .lowMorale {
+        color: #f4a118;
+        text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    }
+
+
+/* preset editor styling */
+
+#presetsDialog {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#presetsDialog .presetsHeader {
+    position: relative;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+#presetsDialog .presetsEdit {
+    position: relative;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+    #presetsDialog .presetsEdit .headerText {
+        margin-bottom: 3px;
+    }
+
+    #presetsDialog .presetsEdit .presetLabel {
+        position: relative;
+        display: inline-block;
+        background-color: #F1F1F1;
+        border: none;
+        box-sizing: border-box;
+        padding: 5px;
+        overflow: hidden;
+        resize: none;
+    }
+    #presetsDialog .presetsEdit .save {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #presetsDialog .presetsEdit .typeChangebox {
+        position: relative;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 7px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 3px;
+        cursor:pointer;
+    }
+        #presetsDialog .presetsEdit .typeChangebox.selected {
+            background-color: #0e6d0e;
+            border: 1px solid #71ff00;
+        }
+
+    #presetsDialog .presetsEdit .commandTypeChangebox {
+        position: relative;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 7px;
+        overflow: hidden;
+        display: inline-block;
+        margin: 3px;
+        cursor: pointer;
+        padding-left: 40px;
+        background-position: 5px 50%;
+        background-repeat: no-repeat;
+    }
+        #presetsDialog .presetsEdit .commandTypeChangebox.selected {
+            background-color: #0e6d0e;
+            border: 1px solid #71ff00;
+        }
+        #presetsDialog .presetsEdit .commandTypeChangebox[data-commandtype="0"] {
+            background-image: url(https://static.realmofempires.com/images/icons/Q_Support.png);
+        }
+        #presetsDialog .presetsEdit .commandTypeChangebox[data-commandtype="1"] {
+            background-image: url(https://static.realmofempires.com/images/icons/Q_Attack.png);
+        }
+
+    #presetsDialog .presetsEdit .troopContainer {
+    }
+        #presetsDialog .presetsEdit .troopContainer .troopBox {
+            position: relative;
+            width: auto;
+            height: 25px;
+            float: left;
+            padding: 2px 2px 2px 30px;
+            background-size: auto 95%;
+            background-position: 2px 50%;
+            background-repeat: no-repeat;
+            margin-right: 5px;
+            margin-bottom: 1px;
+            font-family: georgia;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+
+#presetsDialog .presetsContainer {
+    position: relative;
+    padding: 10px;
+    background: rgba(0,0,0,0.8);
+    overflow: hidden;
+}
+
+    #presetsDialog .presetBox {
+        position: relative;
+        float: left;
+        width: 120px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,.8);
+        margin: 3px;
+        margin-bottom: 7px;
+        padding: 3px;
+        cursor: pointer;
+    }
+        #presetsDialog .presetBox[data-commandtype="0"] {
+            background-color: rgba(113, 6, 121, 0.8);
+        }
+        #presetsDialog .presetBox[data-commandtype="1"] {
+            background-color: rgba(123, 0, 0, 0.8);
+        }
+
+        #presetsDialog .presetBox.selectedForEdit {
+            border: 1px solid #4ad0a8;
+        }
+
+
+    #presetsDialog .presetBox .delete {
+        position: absolute;
+        right: -5px;
+        top: -7px;
+        width: 30px;
+        height: 30px;
+        background: url(https://static.realmofempires.com/images/icons/M_X.png);
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+
+
+    #presetsDialog .presetBox .troopContainer {
+    }
+        #presetsDialog .presetBox .troopContainer .troopBox {
+            position: relative;
+            float: left;
+            padding: 2px 2px 2px 20px;
+            background-size: auto 95%;
+            background-position: 2px 50%;
+            background-repeat: no-repeat;
+            margin-right: 1px;
+            margin-bottom: 1px;
+        }

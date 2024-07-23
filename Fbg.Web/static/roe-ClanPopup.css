@@ -1,0 +1,543 @@
+﻿#popup_clan {
+    background-image:url('https://static.realmofempires.com/images/backgrounds/M_BG_Clan.jpg');
+    background-size:cover;
+    background-position:50% 50%;
+}
+
+.ClanPopup   {
+    width: 100%;
+    height: 100%;
+    font: 13px/1.5em "IM Fell French Canon LC", serif;
+}
+#clan_popup {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden; 
+}
+
+#clan_popup .bgold {
+    border: 2px solid #846824;
+    -webkit-border-radius: 15px;
+    border-radius: 15px; 
+}
+#clan_popup #clanMain  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    overflow-y: auto;
+    margin: 0;
+    background: rgba(0,0,0,0.55);                       
+}
+#clan_popup .clanMainPage {
+    
+    overflow-y:auto;
+}
+ #clan_popup .clanpages  {
+    position:absolute;
+    left: 0;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    overflow-x: hidden;
+    overflow-y:auto;
+    margin: 0;  
+    background: rgba(0,0,0,0.55);    
+}
+#clan_popup .clanName, #clan_popup .clanCreate SPAN {
+    text-align:center;
+    color: #FFD776;
+    font: 18px/1.0em "IM Fell French Canon LC", serif;
+    padding:12px 0;
+    height:12px;
+    text-shadow: 0 0 4px #000000;
+    white-space:nowrap;
+    overflow:hidden;
+}
+#clan_popup #clanInvites  {
+    text-align:center;
+    color: #FFD776;
+    font: 18px/1.0em "IM Fell French Canon LC", serif;
+    padding:2px;
+    display: none;
+}
+#clan_popup .clanDetail, #clanMain #clanSettings, 
+#clanMain .clanCreate, #clanMain .phrases,
+#clan_popup .clanInvitePlayer, #clan_popup .claninviteLeft, #clan_popup .clanAddDimpl {
+    display: none;
+}
+    #clan_popup iframe {
+        border: 0px solid rgba(0,0,0,0);
+    }
+    #clan_popup .clanDetail.clanForum,
+    #clan_popup .clanDetail.clanEmailMembers,
+    #clan_popup .clanDetail.clanForumAdmin,
+     #clan_popup .clanDetail.clanClaims,
+     #clan_popup .clanDetail.clanSettings {
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        bottom: 5px;
+    }
+    #clan_popup .clanDetail .cmRow{
+        background: rgba(0, 30, 49, 0.6);
+        color: #F7F7F7 !important;
+    }
+        #clan_popup .clanDetail .cmRow .cmRole span {
+            margin:0px 3px;
+        }
+    
+#clanMain ul, #clan_popup .clanDiplomacy UL {
+    list-style-type: none; 
+    padding:0; 
+    margin:0;           
+}
+
+#clanMain #otherClanProfile, #clan_popup .clanEditMessage {
+    display: none;            
+    font-size: 12pt;
+    text-align:center;
+}  
+#clan_popup .clanPageTitle {
+    text-align:center;
+    font: 20px/1.0em "IM Fell French Canon LC", serif;
+    padding-top:2px;
+}
+#clan_popup .clanRank, #clan_popup .clanPoints{
+    display: inline-block;
+    font: 16px/1.0em "IM Fell French Canon LC", serif;
+    margin: 0 15px;
+    color: #FFD776;
+    width:120px;
+    text-align:left;
+}
+#clan_popup .clanMessage {
+    padding: 3px;
+    max-width: 310px !important;
+    line-height: 100%  !important;
+    overflow: hidden;
+}  
+#clan_popup .clanMessage FONT{
+    line-height: 105%  !important;
+}
+#clan_popup .cmRowHeader{
+    background: rgb(128, 128, 128);
+    text-align:center;
+    color: black;
+    overflow: hidden;
+    background-image:url('') !important;   
+    font-size:14px;       
+}
+    #clan_popup .cmMore {
+        position: relative;
+        height: 32px;
+        width: 32px;
+        color: white;
+        font: 12px/1.0em georgia, serif;
+        white-space: nowrap;
+    }
+        #clan_popup .cmMore svg {
+            position: absolute;
+            left: 0px;
+            top: 3px;
+            width: 33px;
+            height: 33px;
+        }
+    #clan_popup .clanMoreInfo {
+        position: absolute;
+        top: 3px;
+        left: 0px;
+        width: 34px;
+        height: 34px;
+        line-height: 31px;
+        background: url('https://static.realmofempires.com/images/icons/clanMoreInfo2.png') no-repeat center;
+    }
+#clan_popup .dissmiss, #clan_popup .cmPlayer {
+    color:white;
+    margin: 0 42px 4px 42px;
+    text-decoration: none;
+}     
+#clan_popup .cmActive, #clan_popup .cmVills, #clan_popup .cmRank, 
+#clanMain .clanCreate, #clan_popup .cmPoint, #clan_popup .cmMore,
+#clan_popup .clanAddDimpl  {  
+    text-align:center;
+}
+#clan_popup .cmPoint {
+    display: inline-block;
+    font: 12px/1.0em georgia, serif; 
+    white-space:nowrap;
+}
+#clan_popup .cmName {         
+    min-width:207px;
+    padding-top: 5px;
+    font: 17px/1em "IM Fell French Canon LC", serif;
+    text-align:center;
+    overflow: hidden;
+    max-width:250px;
+}
+#clan_popup .cmRole {
+    display: block;
+    color: gray;
+    font-size: 11px;
+}  
+#clan_popup .cmRole SPAN {
+    margin: 0 10px;
+} 
+#clan_popup .cmRole .ON {
+    color: white;
+}      
+#clan_popup .cmInfo {  
+    width:100%;
+    font: 16px/1em "IM Fell French Canon LC", serif;
+    height:0;
+    text-align: center;
+    overflow:hidden;
+    transition: height .2s ease-in;
+    -webkit-transition: height .2s ease-in;     
+    -moz-transition: height .2s ease-in;
+    -ms-transition: height .2s ease-in;
+    -o-transition: height .2s ease-in;     
+}
+#clan_popup .cmInfo.infoOpen {
+    height: 180px;
+    padding-top: 5px;
+}
+#clan_popup .cmRoleList {
+    display: inline-block;
+    font: 15px/1.0em "IM Fell French Canon LC", serif;
+    padding: 0 17px;
+    float: left;
+}
+#clan_popup .cmRoleList SPAN{
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+#clan_popup .RoleAdminON {
+    display: inline-block;
+    background: url("https://static.realmofempires.com/images/buttons/M_Btn_toggle1.png") no-repeat;
+    width:42px;
+    height:42px;
+    margin-right:4px;
+}
+#clan_popup .RoleAdminOFF {
+    display: inline-block;
+    background: url("https://static.realmofempires.com/images/buttons/M_Btn_toggle0.png") no-repeat;
+    width:42px;
+    height:42px;
+    margin-right:4px;
+}
+#clan_popup .lateDays {
+    background-color: red !important;
+}
+#clan_popup .clanAllies, #clan_popup .clanEnemies, #clan_popup .clanNAP  {
+    font: 12px/1.0em "IM Fell French Canon LC", serif;
+    padding:4px;
+    margin: 6px;
+}
+#clan_popup .clanAction  {
+    text-align: center;
+}
+#clan_popup .clanAction SPAN {
+    margin: 3px 30px;
+    min-width: 110px;
+}
+#clan_popup .clanArrow  {
+    float:right;
+    width:26px;
+    height:26px;
+    background: url("https://static.realmofempires.com/images/misc/M_ArrowR.png") no-repeat right;
+}
+#clan_popup #clanInvites .separator, #clan_popup .clanProfilePoints {
+    width:100%;
+    text-align:center;
+    margin-top: -10px;
+}
+#clan_popup .clanProfileEdits {
+    display: none;
+    width:100%;
+    text-align:center;
+    margin-top:18px;
+}
+#clanMain .clanInvitelist {
+    color: white;
+    font: 14px/1.0em serif;
+    margin: -10px 0 6px 0;
+}
+#clanMain .clanEntry {
+    margin-top:18px;
+}
+#clan_popup #clanMembers SPAN {
+    display: inline-block;
+    width:14px;
+}
+#clan_popup .clanMembersTable table, #clan_popup .clanSettingsTable table  {
+    width: 100%;
+    border-spacing:0;
+    background: rgba(0,0,0,0.4);
+}
+#clan_popup .clanDiplTable {
+    position:relative;
+    margin: 6px 2px;
+    height: 100%;
+}      
+#clan_popup .separator2 {
+    width:100%;
+    height:19px;
+    text-align:center;
+    background: url("https://static.realmofempires.com/images/misc/m_listbar.png") center no-repeat;
+    margin: 5px 0 -10px 0;
+}
+#clan_popup .separator1 {
+    width:100%;
+    height:5px;
+    text-align:center;
+    background: url("https://static.realmofempires.com/images/misc/m_listbar2.png") center no-repeat;
+    margin-bottom:-5px;
+}
+#clan_popup .clanInvitations {
+    text-align: center;
+}
+#clan_popup .renameClan {
+    position:relative;
+    height: 0;
+    visibility: hidden;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+#clan_popup .renameClan.showRename{
+    height: 50px;
+    visibility: visible;
+}
+#clan_popup #clanInvitePlayer, #clan_popup #clanAddClanName {
+    display:block;
+    margin:0 auto;
+    width: 80%;
+    max-width:300px;
+    margin-bottom:20px;
+}
+#clan_popup .clanInviteTable {
+    margin: 20px 4px 0;
+}
+#clan_popup .clanInvitelist TABLE, #clan_popup .clanInviteTable TABLE   {
+    margin: 18px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width:100%;
+}
+#clan_popup .clanInvitelist DIV {
+    color: white;
+    font: 12px/1.0em "IM Fell French Canon LC", serif;
+}
+#clan_popup .TRrow {
+    text-align:center;
+    margin:4px 0;
+    background: rgba(0,0,0,0.55); 
+}
+#clan_popup .cmList {
+    width:20px;
+    text-align:center;
+    color: #FFD776;
+    font: 22px/1.0em "IM Fell French Canon LC", serif;
+}
+#clan_popup .TDclanName {
+    color: #FFD776;
+    font: 14px/1.0em "IM Fell French Canon LC", serif;
+    padding-top: 8px;
+    text-align: left;
+}
+#clan_popup .TDclanName2 {
+    color: #FFD776;
+    font: 14px/1.0em "IM Fell French Canon LC", serif;
+    float: left;
+    padding-top: 12px;
+}
+#clan_popup .clanPlayerInvRevoke{
+    width:44px;
+}
+#clan_popup .TDclanDays {
+    font: 14px/1.0em "IM Fell French Canon LC", serif;
+    float: right;
+    padding-top: 12px;
+}
+#clan_popup .clanInviteTable TD {
+    height:14px;
+}
+#clan_popup .clanInviteAccept {
+    display: inline-block;
+    background: url('https://static.realmofempires.com/images/buttons/M_Btn_DotY.png') center no-repeat;
+    width:40px;
+    height:42px;
+}
+#clan_popup .clanInviteReject {
+    display: inline-block;
+    background: url('https://static.realmofempires.com/images/buttons/M_Btn_DotX.png') center no-repeat;
+    width:40px;
+    height:42px;
+}
+
+#clan_popup .claninviteLeft {
+    color: #FFD776;
+    font: 14px/1.0em "IM Fell French Canon LC", serif;
+    margin: 12px 0 -19px 0;
+}
+#clan_popup #clanEditorMessage {
+    position: absolute;
+    left: 2px;
+    width:94%;
+    height:230px;
+    overflow-y:auto;
+    font-size: 11px;
+    margin: 3px 5px;
+}
+#clan_popup .deletedipl {
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+#clan_popup .clanDiplomacy LI {
+    color:white;
+    font: 16px/1.2em "IM Fell French Canon LC", serif;
+    text-align: center;
+    height:42px;
+}
+#clan_popup .addDipl {
+    margin: -10px 28px 11px;
+}
+#clan_popup .clanSettingImg {
+    width: 30px;
+    height: auto;
+}
+#clan_popup .sleepmode {
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    margin: -3px 0;
+    background: url("https://static.realmofempires.com/images/misc/sleepicon.png") no-repeat left;
+}
+#clan_popup .villNum {
+    width: 20px;
+    margin: -1px 0;
+    content: url("https://static.realmofempires.com/images/icons/Q_Vov2.png");
+} 
+#clan_popup .clanMessage FONT {
+    background-size: 310px !important;
+    max-width: 310px !important;
+}       
+#inputClanName {
+    display:block;
+    margin:6px auto;
+    width: 260px;
+    font-size:14px;
+    color:blue;
+}
+#clan_popup .clanPageTitleLoading, #clan_popup .clanDiplTitleLoading {
+    text-align:center;
+    font-size:14px;
+    color:white;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+#clan_popup .clanPageTitleLoading.off, #clan_popup .clanDiplTitleLoading.off {
+    opacity: 0;
+}
+#clan_popup .leaveClanButton, #clan_popup .renameClanButton, #clan_popup .disbandClanButton{
+    display: none;
+}
+
+#clan_popup .clanEntry DIV {
+    padding: 8px 0;
+}
+
+#clanMain li {
+    margin: 11px 0 0 38px;
+    width: 230px;
+}
+
+#clan_popup .customButtomBG2 {
+    position: relative;
+    display: block;
+    min-width: 70px;
+    height: 42px;
+    color: #FFD886;
+    font: 18px/1.0em "IM Fell French Canon SC", serif;
+    text-shadow: 
+        0px 3px 3px #000000, 
+        0px -3px 3px #000000,
+        -4px 0px 3px #000000,
+        4px 0px 3px #000000;
+    text-align: center;
+    line-height: 40px;
+    background: url('https://static.realmofempires.com/images/buttons/M_BtnL_P.png') center;
+}
+#clan_popup .customButtomBG2:before {
+    width: 36px;
+    height: 42px;
+    background: url('https://static.realmofempires.com/images/buttons/M_Btn2_L.png') no-repeat center;
+    float: left;
+    content: " ";
+    margin-left: -26px;
+    }
+#clan_popup .customButtomBG2:after {
+    width: 37px;
+    height: 42px;
+    background: url('https://static.realmofempires.com/images/buttons/M_BtnL_RA.png') no-repeat center;
+    float: right;
+    content: " ";
+    margin-right: -37px;
+    }
+#clan_popup .style-link.linkBack > .fg > .label {
+    text-align: center;
+}
+#clan_popup .clanDefaultRole {
+    display: none;
+    margin: 4px;
+    text-align: center;
+    font: 16px/1.0em "IM Fell French Canon LC", serif;
+}
+#clan_popup .clanDefaultRole A{
+    float:left;
+    width: 44px;
+    height: 42px;
+    margin: 0 6px 7px 0;
+}
+#clan_popup .clanYscroll {
+    overflow-y:auto;
+    overflow-x:hidden;
+    height:390px;
+}
+
+#clan_popup .autocomplete {
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    z-index: 10000;
+    font-size: 17px;
+    margin-top: -19px;
+}
+#clan_popup .autocomplete DIV{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 2px;
+    text-align:left;
+    overflow:hidden;
+    white-space:nowrap;
+}
+#clan_popup .phrases {
+    display: none;
+}
+
+#clan_popup .clanRequestInviteBtn {
+    margin: 0px 0px;
+    margin-top: 4px;
+    width: 234px;
+
+}

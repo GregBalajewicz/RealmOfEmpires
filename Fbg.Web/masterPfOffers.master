@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterPfBuy.master" AutoEventWireup="false" CodeFile="masterPfOffers.master.cs" Inherits="masterPfOffers" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="hph1" Runat="Server">
+    <asp:ContentPlaceHolder ID="hph1" runat="server"></asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            font-size: medium;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph1" Runat="Server">
+        <span class="style1"><%= RS("offerInfo")%>
+        <br />
+        </span>
+       <div class="Tabs">
+            <ul>
+                <li runat="server" id="tabOfferPal"><a href="pfOffers.aspx"><%= RS("viaTapjoy")%></a></li>
+                <li runat="server" id="tabGWallet"><a href="pfOffers4_gwallet.aspx"><%= RS("viagWallet")%></a></li>
+            </ul>
+        </div>
+    <div class="TabContent" style="padding: 5px;">
+        <asp:ContentPlaceHolder ID="cph1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
+

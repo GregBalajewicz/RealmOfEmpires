@@ -1,0 +1,174 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
+<%@ Register Src="Controls/Tutorial.ascx" TagName="Tutorial" TagPrefix="uc3" %>
+<%@ Register Src="Controls/VillageHeaderInfo.ascx" TagName="VillageHeaderInfo" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%= RSc("GameName") %></title>
+    
+    <asp:contentplaceholder id="Contentplaceholder3" runat="server">
+    <%=Fbg.Common.WebHelper.FileList.js(Fbg.Common.WebHelper.FileList.FOR.mainPages, isMobile, Config.InDev)%>
+            </asp:ContentPlaceHolder>
+
+    <script src="https://connect.facebook.com/en_US/sdk.js"></script>
+    <script type="text/javascript">
+       <asp:Literal runat=server ID="lblJSONStruct"></asp:Literal>    
+
+        function pageLoad () 
+        {                       
+            jaxReplace();
+            UpdateStartingCoins();
+            initTimers();
+             $('.helpQuestion, #highlight').remove();
+            initHelp();
+            InitStripeTable();
+            initFakeSelects();
+            InitAutoPop();
+            InitAutoPop2();
+            InitAutoPop3();
+             initTutorial();
+            page.load_scripts();
+            if (typeof window.initHideBuildRequirements === 'function') { initHideBuildRequirements(); }
+            <asp:contentplaceholder id="IntoPageLoad" runat="server">
+            </asp:contentplaceholder>
+            
+            if (typeof window.CustomOnLoad === 'function') { CustomOnLoad(); }           
+        }        
+    </script>  
+
+    <asp:contentplaceholder id="Contentplaceholder2" runat="server">
+    <%=Fbg.Common.WebHelper.FileList.css(Fbg.Common.WebHelper.FileList.FOR.mainPages, isMobile, Config.InDev)%>
+    </asp:ContentPlaceHolder>
+    <asp:contentplaceholder id="HeadPlaceHolder" runat="server">
+    </asp:contentplaceholder>
+    <link type="text/json" rel="help" href="static/help/j_Global.json.aspx" />
+
+     <asp:ContentPlaceHolder id="Contentplaceholder4" runat="server">
+     <%
+    if (isD2)
+    {%>
+        <script type="text/javascript"> 
+            $(function () {
+                $(".header_bar").remove()
+                $("span[rel=MapLink]").remove()
+                $("a.jsTroopsMenu").remove()
+                $("a.jPrevVillage").remove()
+                $("a.jNextVillage").remove()
+                $(".help").removeClass('help')
+                $("#ctrlVillageHeaderInfo_linkVillageSelectiondd").remove()
+                $("#lblCurRealm").parent().remove()
+                $(".footer").remove()
+            });
+
+        </script>
+   <%}%>
+       </asp:ContentPlaceHolder >
+    
+</head>
+<body style="margin-left: 0; margin-right: 0;">
+
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '<%=FacebookConfig.FacebookApiKey%>',
+                version    : 'v2.0',
+                status: true, // check login status
+                cookie: true, // enable cookies to allow the server to access the session
+                channelURL: '<%=Config.BaseUrl %>xd_receiver2.htm' // channel.html file
+            });
+            FB.Canvas.setAutoGrow();
+
+            FB.getLoginStatus(function(response){
+                page.fbinit_call();
+            });
+        };
+    </script>  
+
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+        <Services>
+            <asp:ServiceReference Path="Troops.asmx" />
+        </Services>
+    </asp:ScriptManager>
+        <asp:Image src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" Style=" z-index: 500; position: absolute; left: 250px; top: 300px;display:none" runat="server" ID="imgPointer" />
+        <div class=header style="height: 46px; max-width: 100%; <%=isD2 ? "" : "min-width: 799px;" %> background-image: url(https://static.realmofempires.com/images/HeaderBG<%=(CurrentlySelectedVillageBasicB == null || String.IsNullOrEmpty(CurrentlySelectedVillageBasicB.VillageType.Name))?"3" : "4"%>.gif)">
+            <div style="width: 550px; float: left">
+                <uc2:VillageHeaderInfo ID="ctrlVillageHeaderInfo" runat="server" />
+            </div>
+            <div class="header_bar" style="width: 245px; float: right;margin-top:5px;">
+                <asp:HyperLink ImageUrl="https://static.realmofempires.com/images/tran32x32.gif" ID="linkReports" runat="server" CssClass="reports" NavigateUrl="~/Reports.aspx?fid=-1&va=false&reptid=-1&nosearch=1&pageindex=-1" />
+                <asp:HyperLink ImageUrl="https://static.realmofempires.com/images/tran32x32.gif" runat="server" ID="linkMail" CssClass="mail" NavigateUrl="~/messages.aspx?fid=-1&va=false&pageindex=-1"></asp:HyperLink>
+                <asp:HyperLink ImageUrl="https://static.realmofempires.com/images/tran32x32.gif" ID="linkClan" runat="server" CssClass="clan" NavigateUrl="~/ClanOverview.aspx" />
+                <asp:HyperLink ImageUrl="https://static.realmofempires.com/images/tran32x32.gif" ID="HyperLink3" runat="server" CssClass="invite" NavigateUrl="~/Invite.aspx" />
+                <asp:HyperLink ImageUrl="https://static.realmofempires.com/images/tran32x32.gif" ID="HyperLink5" runat="server" CssClass="ranking" NavigateUrl="~/stats.aspx" />
+                <asp:HyperLink ImageUrl="https://static.realmofempires.com/images/tran32x32.gif" runat="server" ID="linkHelp" NavigateUrl="~/help.aspx" CssClass="help" />
+                <asp:HyperLink ImageUrl="https://static.realmofempires.com/images/tran32x32.gif" runat="server" ID="linkSetting" NavigateUrl="~/PlayerOptions.aspx" CssClass="settings" />
+            </div>
+        </div>
+        <div class="TDContent" style="<%=isD2 ? "" : "min-width: 799px;" %> width: 100%; float: left; clear: both;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <uc3:Tutorial ID="Tutorial1" runat="server" />
+            <span style="font-size: 12px; font-weight: normal;">
+                <asp:Label ID="lblBuildNumber" runat="server"></asp:Label><br />
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal">
+                    <StaticMenuItemStyle BackColor="black" ItemSpacing="5px" />
+                    <StaticHoverStyle BackColor="black" />
+                    <DynamicHoverStyle BackColor="black" />
+                    <DynamicMenuItemStyle BackColor="black" />
+                </asp:Menu>
+            </span>
+        </div>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+        &nbsp;
+        <asp:Panel ID="panelNotifications" Visible="false" runat="server" CssClass="Tutorial">
+            <table id="Table1" runat="server" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td class="TutorialHeader">
+                        Notification
+                    </td>
+                    <td class="TutorialHeader" align="right">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="TutorialBody">
+                        <asp:Label ID="lblText" runat="server"></asp:Label><br />
+                        <br />
+                        <center>
+                            <asp:LinkButton ID="linkNotification_Close" CssClass="StandoutLink" runat="server" CausesValidation="False" OnClick="linkNotification_Close_Click">OK</asp:LinkButton></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TutorialFooter" nowrap width="99%">
+                    </td>
+                    <td class="TutorialFooter">
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+    <asp:UpdateProgress ID="UpdateProgress2" runat="server" >
+        <ProgressTemplate>
+            <div style="border: 1px solid rgb(30,30,30);color:rgb(195,144,55);background-color: rgb(75, 61, 48); position:fixed;left:50%;top:100px;z-index:1000;font-size:12pt;padding:5px;">
+                <center><img src='https://static.realmofempires.com/images/misc/ajax-loader1.gif' /><br />
+                loading
+                </center>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    <hr width="99%" size="1" noshade>
+    <center>
+        <span style="float: left"><asp:Label Font-Bold="true"  ID="lblCurRealm" runat="server" Text=""></asp:Label> <a href="LogoutOfRealm.aspx" runat=server id=SwitchRealm>Switch Realm</a> <span runat="server" id="spanRealmSwitch"></span></span>
+        <span class="footer"><B>Server Time:</B> <asp:Label runat="server" ID="curServerDate" /><asp:Label runat="server" ID="curServerTime" CssClass="Time help" Rel="jServerTime" />
+        <B>Your Time:</B> <asp:Label runat="server" ID="curLocalDate" /><asp:Label runat="server" ID="curLocalTime" CssClass="Time help" Rel="jServerTime" /><a style="color:DimGrey;" href="PlayerOptions.aspx"> change</a>
+        </span>
+        <div style="float: right;margin-right:20px;"><asp:HyperLink ID="betaUI" runat="server" CssClass="customButtomBG" NavigateUrl="~/d2.aspx">TRY NEW UI</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" Target="d2help" runat="server" style="padding-left:30px;" NavigateUrl="~/NewOldUISideBySideHowTo.aspx"><span class="Error">NEW</span>: Open old and new UI side by side</asp:HyperLink></div>
+    </center>
+    
+    <span runat="server" id="ads"></span>
+      
+        </form>
+
+</body>
+</html>

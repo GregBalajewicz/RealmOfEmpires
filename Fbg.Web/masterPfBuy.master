@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterPF.master" AutoEventWireup="false" CodeFile="masterPfBuy.master.cs" Inherits="masterPfBuy" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="hph1" Runat="Server">
+    <asp:ContentPlaceHolder ID="hph1" runat="server"></asp:ContentPlaceHolder>
+        
+    <script type="text/javascript" src="//s-assets.tp-cdn.com/static3/js/api/payment_overlay.js"></script>
+    <script>
+        function offerwall() {
+            TRIALPAY.fb.show_overlay("10471770557","fbdirect",
+                {
+                    tp_vendor_id: "NGLENLU87",
+                    callback_url: "https://www.realmofempires.com/pfCallback_trialpay.aspx",
+                    currency_url: "https://www.realmofempires.com/static/fbprod/trialpay.html",
+                    sid: "<%=_player.User.ID%>"
+                });
+            }
+    </script>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cph1" Runat="Server">
+
+    <style type="text/css">
+.Tabs a
+{
+font-size:9pt;
+}
+</style>
+
+    <%if (!LoginModeHelper.isKongregate(Request)) { %>
+    <div class="Tabs" >
+        <ul>
+            <%if ( !_showFBCreditsOnly ) {%><li runat="server" id="tabPayPal"><a href="pfCredits.aspx" style="width: 8em"><%= RS("payPal") %></a></li><%}%>
+            <% if (LoginModeHelper.isFB(Request))
+               { %>
+            <li runat="server" id="tabFbCredits"><a href="pfCredits_fb2.aspx" style="width: 17em"><%= RS("fBCred")%></a></li>
+            <%}%>
+            <li runat="server" id="tabROEOffers"><a href="pfOffers_roe.aspx" style="width: 8em"><%= RS("ourOffers")%></a></li>
+        </ul>
+    </div>
+    <%} %>
+    
+    <div class='TabContent' style="padding:5px;">
+        <asp:ContentPlaceHolder ID="cph1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+
+</asp:Content>
+

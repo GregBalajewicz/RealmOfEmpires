@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="jFood_st" xml:space="preserve">
+    <value>This is how much food you are consuming and how much food your Farm Land can produce.</value>
+  </data>
+  <data name="jFood_t" xml:space="preserve">
+    <value>Unlike Silver, food is perishable and cannot be stored therefore this number is NOT how much food &lt;I&gt;you have&lt;/I&gt; but rather how much food you are &lt;I&gt;currently consuming&lt;/I&gt; and how much food your Farm Land &lt;I&gt;can produce&lt;/I&gt;.&lt;BR&gt;&lt;BR&gt;Food is necessary to maintain an army as well as to upgrade your buildings. &lt;BR&gt;&lt;BR&gt;Your troops consume food. You can recruit an army no larger than what the Farm Land can support.&lt;BR&gt;&lt;BR&gt;Buildings, indirectly, require food as well since every building requires workers to maintain it and those workers consume food. With each level, the building needs more work, hence more food.</value>
+  </data>
+  <data name="jFood_title" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="jFromUnknown_st" xml:space="preserve">
+    <value>Origin unknown; You are being spied on!</value>
+  </data>
+  <data name="jFromUnknown_t" xml:space="preserve">
+    <value>Sometimes the origin of the attack cannot be ascertained. &lt;BR&gt;&lt;BR&gt;This can only occur if this attack is composed only of spies. Spies move covertly therefore you maybe unable to tell where they are coming from.&lt;BR&gt;&lt;BR&gt;The more spies you have at a village, the more likely you will know the origin of a spy attack.</value>
+  </data>
+  <data name="jFromUnknown_title" xml:space="preserve">
+    <value>From "Unknown..."</value>
+  </data>
+  <data name="jIncomingAttack_t" xml:space="preserve">
+    <value>Warning! You are under attack!!&lt;br/&gt;&lt;br/&gt;Clicking this message will take you to the Incoming Troop's page that will show you, among other things all incoming attacks. &lt;br/&gt;&lt;br/&gt;You may want to call on your friends &amp; clan members for support as well.</value>
+  </data>
+  <data name="jIncomingAttack_title" xml:space="preserve">
+    <value>Incoming Attack</value>
+  </data>
+  <data name="jOverdue_st" xml:space="preserve">
+    <value>Click this link to refresh the page</value>
+  </data>
+  <data name="jOverdue_t" xml:space="preserve">
+    <value>Sometimes an event such as a building upgrade or attack does not get processed on time beacuse of high server load. In this case you will see this overdue message.&lt;BR&gt;&lt;BR&gt;Please be assured that alghough an event may get processed late, all events will occur in their correct order.&lt;BR&gt;&lt;BR&gt;You can click the \'Overdue!\' link to manually refresh the page.&lt;BR&gt;&lt;BR&gt;If the problem persists, it could mean there is a server problem. In this case, please &lt;a href=\'ContactSupport.aspx\'&gt;contact support&lt;/a&gt; and just enter \'overdue\' in the subject and body and support will investigate</value>
+  </data>
+  <data name="jOverdue_title" xml:space="preserve">
+    <value>Overdue event</value>
+  </data>
+  <data name="jServerTime_t" xml:space="preserve">
+    <value>&lt;B&gt;Server Time&lt;/B&gt; - In order for all players in different time zone to communicate, all time is based on UTC</value>
+  </data>
+  <data name="jSilverProd_st" xml:space="preserve">
+    <value>This is how much silver your Silver Mine produces every hour.</value>
+  </data>
+  <data name="jSilverProd_t" xml:space="preserve">
+    <value>Your Silver Mine constantly produces silver (even if you are not logged in). This is how much silver is produced every hour. You can produce more silver by upgrading the Silver Mine.&lt;BR&gt;&lt;BR&gt;Please note that silver is stored in the Treasury. Treasury has a limit to the amount of silver it can store. Once the Treasury fills up, the silver production is halted. It is a good practice to spend your silver before this happens.</value>
+  </data>
+  <data name="jSilverProd_title" xml:space="preserve">
+    <value>Your Silver Production</value>
+  </data>
+  <data name="jSilver_st" xml:space="preserve">
+    <value>This is your current silver and maximum silver you can store in the Treasury</value>
+  </data>
+  <data name="jSilver_t" xml:space="preserve">
+    <value>The number before the \'/\' is your current silver. You can use this silver to upgrade buildings, recruit troops etc&lt;BR&gt;&lt;BR&gt;The number after the \'/\', is your Treasury size, ie, the maximum amount of silver you can store. Note that once your Treasury fills up, your Silver Mine stops producing silver so make sure you spend your silver before the Treasury fills up.</value>
+  </data>
+  <data name="jSilver_title" xml:space="preserve">
+    <value>Your Silver</value>
+  </data>
+  <data name="jVillName_st" xml:space="preserve">
+    <value>This is the name of your village. You can change it in Headquarters building</value>
+  </data>
+</root>

@@ -1,0 +1,233 @@
+
+
+.avatarPicker {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image:url('https://static.realmofempires.com/images/misc/M_BG_Generic.jpg');
+    background-size:cover;
+    background-position:50% 50%;
+    background-color: rgba(0,0,0,.7);
+}
+    .avatarPicker .listPane {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 260px;
+        height: 100%;
+        background-color: rgba(0,0,0,.7);
+        overflow: auto;
+        padding: 5px;
+        text-align:center;
+        box-sizing: border-box;
+    }
+        .avatarPicker .listPane .avatarBox {
+            display:inline-block;
+            position: relative;
+            /*float: left;*/
+            width: 70px;
+            height: 70px;
+            background-size: 100% 100%;
+            margin: 2px;
+            cursor: pointer;
+            background-color: #5f5f5f;
+            border: 1px solid #000;
+            box-shadow: 0px 0px 2px 1px #232323;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        /*
+            .avatarPicker .listPane .avatarBox[data-status="1"] {
+                -webkit-filter: grayscale(1);
+                filter: grayscale(1);
+            }
+
+            .avatarPicker .listPane .avatarBox[data-status="2"] {
+                -webkit-filter: sepia(1) brightness(1.1);
+                filter: sepia(1) brightness(1.1);
+            }
+
+            .avatarPicker .listPane .avatarBox[data-status="3"] {
+                display:none;
+            }
+
+            */
+
+            .avatarPicker .listPane .avatarBox:hover {
+                /*box-shadow: inset 0px 0px 10px #FFF;*/
+                box-shadow: 0px 0px 2px 1px #232323 !important;
+                opacity: 1 !important;
+            }
+            .avatarPicker .listPane .avatarBox.locked {
+                box-shadow: inset 0px 0px 8px 3px rgba(126, 161, 179, 0.7);
+                opacity: 0.9;
+            }
+            .avatarPicker .listPane .avatarBox.clicked {
+                box-shadow: inset 0px 0px 15px #00b2ff !important;
+                border: 1px solid #00b2ff;
+            }
+
+
+
+            /*
+            .avatarPicker .listPane .avatarBox .lockMask {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                bottom: 0px;
+                right: 0px;
+                background-image: url(https://static.realmofempires.com/images/Research/Border02gray.png);
+                background-size: 76px auto;
+                background-position: center center;
+                opacity: 0.9;
+            }
+            */
+            .avatarPicker .listPane .avatarBox .lockMask {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                bottom: 0px;
+                right: 0px;
+                background-image: url(https://static.realmofempires.com/images/icons/servantCarry_m.png);
+                background-size: 22px 22px;
+                background-position: right top;
+                background-repeat: no-repeat;
+            }
+            .avatarPicker .listPane .avatarBox:hover .lockMask {
+                display: none;
+            }
+
+
+    .avatarPicker .dispPane {
+        position: absolute;
+        left: 261px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0,0,0,.7);
+        background-position:50% 50%;
+        background-size:contain;
+        background-repeat:no-repeat;
+    }
+        .avatarPicker .dispPane .infoBox {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+            .avatarPicker .dispPane .infoBox .desc {
+                position: relative;
+                padding: 10px;
+            }
+            .avatarPicker .dispPane .infoBox .notice {
+                position: relative;
+                min-height: 33px;
+                padding: 10px;
+            }
+                .avatarPicker .dispPane .infoBox .notice .text {
+                    position: relative;
+                    top: 6px;
+                    float: left;
+                    text-shadow: 0px -1px #000,-1px 0px #000, 0px 1px #000, 1px 0px #000;
+                    padding-right: 26px;
+                }
+                .avatarPicker .dispPane .infoBox .notice .sIcon {
+                    position: absolute;
+                    top: -3px;
+                    right: 0px;
+                    width: 22px;
+                    height: 22px;
+                    background-image: url(https://static.realmofempires.com/images/icons/servantCarry_m.png);
+                    background-size: 100% 100%;
+                    background-position: right top;
+                    background-repeat: no-repeat;
+                }
+            .avatarPicker .dispPane .infoBox .unlockNow {
+                position: absolute;
+                right: 5px;
+                bottom: 8px;
+            }
+
+
+.avatarPopup.genericDialogContent .iconFg{
+    border-radius:40px;
+}
+
+.unlockNowPopup {
+    text-align:center;
+    padding: 10px;
+}
+
+    .unlockNowPopup .textCost {
+        position: relative;
+        padding: 20px;
+        margin: 0 auto;
+        width: 210px;
+        margin-top: 5px;
+        font-size: 17px;
+        padding-right: 50px;
+    }
+    .unlockNowPopup .sIcon {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        width: 44px;
+        height: 44px;
+        background-image: url(https://static.realmofempires.com/images/icons/servantCarry_m.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .unlockNowPopup .purchaseBtn {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    .unlockNowPopup .notEnoughServants .bigred {
+        color: #f00;
+        font-size: 17px;
+    }
+    .unlockNowPopup .notEnoughServants .info {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+    /*M specific styling */
+.mobile .avatarPicker .listPane {
+    width: 85px;
+    padding: 2px;
+}
+.mobile .avatarPicker .dispPane {
+    left: 85px;
+}
+
+    .mobile .avatarPicker .dispPane .infoBox .desc {
+        padding: 5px;
+    }
+    .mobile .avatarPicker .dispPane .infoBox .notice {
+        padding: 5px;
+    }
+        .mobile .avatarPicker .dispPane .infoBox .notice .text {
+            top: 0px;
+            font-size: 11px;
+            width: 65px;
+            padding-right: 24px;
+        }
+            .mobile .avatarPicker .dispPane .infoBox .notice .text .sIcon {
+                top: 0px;
+            }
+    .mobile .avatarPicker .dispPane .infoBox .unlockNow {
+        right: 0px;
+        bottom: 5px;
+    }

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="autoInvited" xml:space="preserve">
+    <value>and they will automatically get an invite to your clan &lt;I&gt;which does not count to the normal invite limit&lt;/I&gt;.</value>
+  </data>
+  <data name="canIssue" xml:space="preserve">
+    <value>You can issue</value>
+  </data>
+  <data name="currInvites" xml:space="preserve">
+    <value>Current Invitations</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>day(s)</value>
+  </data>
+  <data name="didYouKnow" xml:space="preserve">
+    <value>Did you know you can invite your Facebook friends directly to your clan?</value>
+  </data>
+  <data name="enterName" xml:space="preserve">
+    <value>Enter the name of the player you would like to invite to the clan</value>
+  </data>
+  <data name="expIn" xml:space="preserve">
+    <value>Expires In</value>
+  </data>
+  <data name="hint" xml:space="preserve">
+    <value>Hint - Add a personal message encouraging your friend to accept your invite.</value>
+  </data>
+  <data name="infoPart1" xml:space="preserve">
+    <value>That's right! Once your friends join and accept your invite, they will get an invite to your clan. Also you will get a message telling you your friend joined!</value>
+  </data>
+  <data name="infoPart2" xml:space="preserve">
+    <value>Invite your Facebook friends now!</value>
+  </data>
+  <data name="infoPart3" xml:space="preserve">
+    <value>Hint - Add a personal message encouraging your friend to accept your invite.
+&lt;br /&gt;
+&lt;br /&gt;
+Besides creating a strong clan, enjoying the game with other friends, we also guarantee a warm feeling knowing you helped RoE grow! Virtual hugs dispatched daily.
+&lt;br /&gt;
+&lt;br /&gt;
+ If you don't have invite rights, you will just get a message telling you your friend joined. You can then have them invited.</value>
+  </data>
+  <data name="inviteBtn" xml:space="preserve">
+    <value>Invite</value>
+  </data>
+  <data name="invitedPlyr" xml:space="preserve">
+    <value>Invited Player</value>
+  </data>
+  <data name="inviteFBFrnds" xml:space="preserve">
+    <value>Invite your Facebook friends</value>
+  </data>
+  <data name="invitePlyrs" xml:space="preserve">
+    <value>Invite Players</value>
+  </data>
+  <data name="invitesAtMom" xml:space="preserve">
+    <value>invitations at this moment.</value>
+  </data>
+  <data name="notMemberOf" xml:space="preserve">
+    <value>You are not member of clan</value>
+  </data>
+  <data name="numOfInvites" xml:space="preserve">
+    <value># of Invites To Display:</value>
+  </data>
+  <data name="peopleInvited" xml:space="preserve">
+    <value>People invited to this clan</value>
+  </data>
+  <data name="revokeLnk" xml:space="preserve">
+    <value>Revoke Invitation</value>
+  </data>
+  <data name="revPlyrName" xml:space="preserve">
+    <value>invalid player name</value>
+  </data>
+  <data name="showAll" xml:space="preserve">
+    <value>all TEST</value>
+  </data>
+  <data name="then" xml:space="preserve">
+    <value>Then</value>
+  </data>
+  <data name="wantMore" xml:space="preserve">
+    <value>Want more invites?</value>
+  </data>
+  <data name="errEnterName" xml:space="preserve">
+    <value>Enter a name</value>
+  </data>
+  <data name="moreInvAvail" xml:space="preserve">
+    <value>More invites available in:</value>
+  </data>
+  <data name="noInvsFound" xml:space="preserve">
+    <value>No invites found for this search criteria.</value>
+  </data>
+  <data name="noPendingInv" xml:space="preserve">
+    <value>There currently are no pending invitations to the clan</value>
+  </data>
+  <data name="searchBtn" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="msg_allInvUsed" xml:space="preserve">
+    <value>You have used up all your invites. More invites available on {0}. Remember you can still &lt;a href='invite.aspx' style='color:#000000 !important; text-decoration:underline'&gt;invite your Facebook friends&lt;/a&gt; to your clan</value>
+  </data>
+  <data name="msg_hasInvite" xml:space="preserve">
+    <value>This player already has a pending invitation to the clan.</value>
+  </data>
+  <data name="msg_limitReached" xml:space="preserve">
+    <value>Clan size limit reached. You cannot issue any more invites.</value>
+  </data>
+  <data name="msg_plyrNotFound" xml:space="preserve">
+    <value>Player name not found.</value>
+  </data>
+  <data name="msg_plyrPartOfClan" xml:space="preserve">
+    <value>This player is already part of this clan.</value>
+  </data>
+  <data name="Invitations" xml:space="preserve">
+    <value>Invitations</value>
+  </data>
+</root>

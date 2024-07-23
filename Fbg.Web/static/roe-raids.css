@@ -1,0 +1,700 @@
+
+#raidsDialog {
+    background-image: url(https://static.realmofempires.com/images/raids/RaidsListPanel.jpg);
+}
+
+
+.raidsDialogContent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+    .raidsDialogContent .header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 36px;
+        overflow: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: rgba(0,0,0,.6);
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .raidsDialogContent .list {
+        position: absolute;
+        top: 38px;
+        left: 0px;
+        right: 0px;
+        bottom: 37px;
+        overflow: auto;
+        box-sizing: border-box;
+        background-color: rgba(0,0,0,.4);
+    }
+        .raidsDialogContent .list .noRaids {
+            position: relative;
+            margin: 10px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .raidsDialogContent .list .raidRow {
+            position: relative;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: rgba(0,0,0,.6);
+            padding-left: 56px;
+            cursor: pointer;
+            text-shadow: 1px 1px black, -1px -1px black, 1px 1px black, -1px -1px black;
+        }
+            .raidsDialogContent .list .raidRow:hover {
+                background-color: rgba(30, 36, 53, 0.4);
+                box-shadow: inset 0px 0px 0px 1px rgb(47, 82, 58), 0px 0px 50px 0px rgba(51, 160, 140, 0.5);
+            }
+
+
+            .raidsDialogContent .list .raidRow .icon {
+                position: absolute;
+                left: 3px;
+                top: 50%;
+                margin-top: -25px;
+                width: 50px;
+                height: 50px;
+                background-size: contain;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+
+            .raidsDialogContent .list .raidRow.beaten {
+                border-bottom: 1px solid #d1b480;
+                border-top: 1px solid #d1b480;
+                box-shadow: inset 0px 0px 30px #d1b480;
+            }
+                .raidsDialogContent .list .raidRow.beaten .raidExpire {
+                    color: #d1b480;
+                }
+
+            .raidsDialogContent .list .raidRow.expired {
+               
+               
+            }
+                .raidsDialogContent .list .raidRow.expired .name,
+                .raidsDialogContent .list .raidRow.expired .desc,
+                .raidsDialogContent .list .raidRow.expired .status,
+                .raidsDialogContent .list .raidRow.expired .health {
+                    opacity: 0.8;
+                }
+                 .raidsDialogContent .list .raidRow.expired .barInner{
+                         background: gray;
+                 }
+
+    .raidsDialogContent .links {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 25px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .raidsDialogContent .status {
+        margin-top: 5px;
+        color: #d7d7d7;
+        font: 13px "IM Fell French Canon", serif;
+        clear: both;
+        overflow: hidden;
+    }
+        .raidsDialogContent .expiration {
+            font-family: monospace;
+        }
+
+        .raidsDialogContent .raidRarity {
+            float: left;
+            margin-right: 5px;
+        }
+            .raidsDialogContent .raidRarity.Common {
+                color:gray;
+            }
+            .raidsDialogContent .raidRarity.UnCommon {
+                color:lime;
+            }
+            .raidsDialogContent .raidRarity.Rare {
+                color: #1b89ff;
+            }
+            .raidsDialogContent .raidRarity.Epic {
+                color: #fb00fb;
+            }
+            .raidsDialogContent .raidRarity.Legendary {
+                color:#ffa700;
+            }
+
+
+            .raidsDialogContent .health {
+                position: relative;
+                margin-top:5px;
+            }
+
+                .raidsDialogContent .health .barOuter {
+                    position: relative;
+                    height: 15px;
+                    width: 100%;
+                    border: 1px inset rgba(137, 128, 101, 0.6);
+                    background: rgba(0, 0, 0, 0.7);
+                    border-radius: 15px;
+                    overflow: hidden;
+                }
+
+                .raidsDialogContent .health .barInner {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    width: auto;
+                    height: auto;
+                    background-color: #028530;
+                    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #028530), color-stop(100%, #16FF42));
+                    background: -webkit-linear-gradient(left, #028530 0%, #16FF42 100%);
+                    background: -moz-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+                    background: -ms-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+                    background: -o-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+                    background: linear-gradient(to right, #028530 0%, #16FF42 100%);
+                    -webkit-transition: width .5s ease-out;
+                    -moz-transition: width .5s ease-out;
+                    -ms-transition: width .5s ease-out;
+                    -o-transition: width .5s ease-out;
+                    transition: width .5s ease-out;
+                }
+ 
+
+                .raidsDialogContent .health .barLabel {
+                    position: absolute;
+                    top: 2px;
+                    left: 0px;
+                    right: 0px;
+                    text-align: center;
+                    text-shadow: 0px 1px black;
+                    text-shadow: 1px 0px 1px #000, -1px 0px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000;
+                }
+
+    .raidsDialogContent .close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 44px;
+        height: 44px;
+        background: url(https://static.realmofempires.com/images/icons/M_X.png);
+        background-size: 100% 100%;
+        cursor: pointer;
+       /* z-index: 1;*/
+    }
+
+
+    .raidsDialogContent .raidPanel {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0,0,0,1);
+        background-size: cover;
+        background-position: center center;
+        overflow: auto;
+    }
+
+
+
+        .raidsDialogContent .raidPanel .subPanel {
+            position: relative;
+            background-color: rgba(0,0,0,.3);
+            margin-bottom: 3px;
+            padding: 10px;
+            text-shadow: 1px 0px black, -1px 0px black, 0px 1px black, 0px -1px black, 1px 0px black, -1px 0px black, 0px 1px black, 0px -1px black;
+        }
+
+            .raidsDialogContent .raidPanel .subPanel .loadMask {
+                display: none;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgba(0,0,0,.8);
+                background-image: url(https://static.realmofempires.com/images/misc/busy_tinyRed.gif);
+                background-size: 16px 16px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+            .raidsDialogContent .raidPanel .subPanel.loading .loadMask {
+                display: block;
+            }
+
+
+        .raidsDialogContent .raidPanel.beaten {
+            box-shadow: inset 0px 0px 30px #d1b480;
+        }
+            .raidsDialogContent .raidPanel.beaten .raidExpire {
+                color: #d1b480;
+            }
+
+        .raidsDialogContent .raidPanel .health {
+         
+        }
+        .raidsDialogContent .raidPanel.expired .health .innerBar {
+            background: gray;
+        }
+
+
+        .raidsDialogContent .raidType {
+            float: left;
+            margin-right: 5px;
+        }
+
+    .raidsDialogContent .raidPanel .head {
+    }
+        .raidsDialogContent .raidPanel .head .desc {
+            padding-right:40px;
+        }
+
+    .raidsDialogContent .raidPanel .details {
+    }
+        .raidsDialogContent .raidPanel .details .perish {
+            color: #ff7800;
+        }
+
+    .raidsDialogContent .raidPanel .attack {
+
+    }
+        .raidsDialogContent .raidPanel .attack .cantattackexpired {
+            text-align: center;
+            color: #a2a2a2;
+        }
+        .raidsDialogContent .raidPanel .attack .sendAttack {
+            margin: 0 auto;
+        }
+
+    .raidsDialogContent .raidPanel .rewards {
+    }
+        .raidsDialogContent .raidPanel .rewards .rewardsList {
+        }
+            .raidsDialogContent .raidPanel .rewards .rewardsList .raidReward {
+                position: relative;
+                padding: 6px;
+                padding-left: 30px;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-position: 0px 50%;
+                margin-top:2px;
+            }
+
+        .raidsDialogContent .raidPanel .rewards .acceptReward {
+            position: relative;
+            margin: 0 auto;
+        }
+        .raidsDialogContent .raidPanel .rewards .rewardAccepted {
+            text-align: center;
+            margin: 5px;
+            color: lime;
+        }
+
+        .raidsDialogContent .raidPanel .rewards .clanRewardPanel {
+        }
+            .raidsDialogContent .raidPanel .rewards .clanRewardPanel .c1 span {
+                color: lime;
+            }
+
+            .raidsDialogContent .raidPanel .rewards .clanRewardPanel .damageValueDisplaySlider {
+                height: 7px;
+                margin: 10px;
+                border: 1px solid #08171c;
+                background: #cccccc;
+                background: -moz-linear-gradient(left, #cccccc 0%, #eeeeee 100%);
+                background: -webkit-linear-gradient(left, #cccccc 0%,#eeeeee 100%);
+                background: linear-gradient(to right, #cccccc 0%,#eeeeee 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#eeeeee',GradientType=1 );
+            }
+                .raidsDialogContent .raidPanel .rewards .clanRewardPanel .damageValueDisplaySlider .ui-slider-handle {
+                    left: 50%;
+                    background: #14b19c;
+                    cursor: pointer;
+                    z-index: auto;
+                    border: 1px solid #08171c;
+                    background: #cedce7;
+                    background: -moz-radial-gradient(center, ellipse cover, #cedce7 0%, #596a72 100%);
+                    background: -webkit-radial-gradient(center, ellipse cover, #cedce7 0%,#596a72 100%);
+                    background: radial-gradient(ellipse at center, #cedce7 0%,#596a72 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 );
+                }
+
+
+    .raidsDialogContent .raidPanel .outgoing {
+        
+    }
+
+        .raidsDialogContent .raidPanel .outgoing .totalOutgoing {
+            margin-bottom:5px;
+        }
+
+    /*
+        .raidsDialogContent .raidPanel .outgoing .containerBusyMask {
+            z-index: auto;
+        }
+
+        .raidsDialogContent .raidPanel .outgoing .busyMaskText {
+            top:3px;
+        }
+        */
+        .raidsDialogContent .raidPanel .outgoing .outgoingList {       
+        }
+            .raidsDialogContent .raidPanel .outgoing .outgoingList .movement {
+                position:relative;
+                margin-bottom: 5px;
+            }
+                .raidsDialogContent .raidPanel .outgoing .outgoingList .movement .info {
+                    position: relative;
+                    overflow: hidden;
+                }
+                    .raidsDialogContent .raidPanel .outgoing .outgoingList .movement .info .vill {
+                        float: left;
+                        margin-right: 5px;
+                    }
+                    .raidsDialogContent .raidPanel .outgoing .outgoingList .movement .info .troops {
+                        float: left;
+                    }
+                        .raidsDialogContent .raidPanel .outgoing .outgoingList .movement .info .troops .troop {
+                            float: left;
+                            padding-left: 15px;
+                            margin-left: 5px;
+                            font-family: monospace;
+                            color: #e6cd90;
+                            background-size: auto 100%;
+                            background-repeat: no-repeat;
+                            height: 15px;
+                            line-height: 15px;
+                        }
+
+                .raidsDialogContent .raidPanel .outgoing .outgoingList .movement .progress {
+                    position: relative;
+                }
+
+                    .raidsDialogContent .raidPanel .outgoing .outgoingList .movement .progress .barOuter {
+                        position: relative;
+                        height: 15px;
+                        width: 100%;
+                        border: 1px inset rgba(137, 128, 101, 0.6);
+                        background: rgba(0, 0, 0, 0.7);
+                        border-radius: 15px;
+                        overflow: hidden;
+                    }
+
+                    .raidsDialogContent .raidPanel .outgoing .outgoingList .movement .progress .barInner {
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        bottom: 0px;
+                        width: auto;
+                        height: auto;
+                        background-color: #028530;
+                        background: linear-gradient(to right, #005eff 0%, #1695ff 100%);
+                        transition: width .5s ease-out;
+                    }
+
+
+                    .raidsDialogContent .raidPanel .outgoing .outgoingList .movement .progress .barLabel {
+                        position: absolute;
+                        top: 2px;
+                        left: 0px;
+                        right: 0px;
+                        text-align: center;
+                        text-shadow: 0px 1px black;
+                        text-shadow: 1px 0px 1px #000, -1px 0px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000;
+                    }
+
+    .raidsDialogContent .raidPanel .history {
+    }
+        .raidsDialogContent .raidPanel .history .historyToogle {
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 11px;
+        }
+        .raidsDialogContent .raidPanel .history .label {           
+        }
+
+        .raidsDialogContent .raidPanel .history .resultList {
+        }
+            .raidsDialogContent .raidPanel .history .resultList .resultsTable {
+                width: 100%;
+                border-spacing: 0px;
+            }
+                .raidsDialogContent .raidPanel .history .resultList .resultsTable td {
+                    padding-bottom: 2px;
+                    padding-top: 2px;
+                }
+
+            .raidsDialogContent .raidPanel .history .resultList .result {
+                font-size: 11px;
+                /*color: #C5B494;*/
+                 background-color: rgba(29, 32, 32, 0.9);
+            }
+                .raidsDialogContent .raidPanel .history .resultList .result:nth-child(even) {
+                    background-color: rgba(42, 50, 50, 0.9);
+                }
+                .raidsDialogContent .raidPanel .history .resultList .result .name {
+           
+                }
+
+    .mobile .raidsDialogContent .raidPanel .history {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+        .mobile .raidsDialogContent .raidPanel .history .label {
+            margin-left: 10px;
+        }
+        .mobile .raidsDialogContent .raidPanel .history .resultList .result .name {
+            max-width: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+         /*
+
+            .raidsDialogContent .raidPanel .resultList .result .name,
+            .raidsDialogContent .raidPanel .resultList .result .date,
+            .raidsDialogContent .raidPanel .resultList .result .damage {
+               margin-right: 5px;
+            }
+
+            .raidsDialogContent .raidPanel .resultList .result .damage {
+                padding-left: 20px;
+                background-image: url(https://static.realmofempires.com/images/icons/m_attacks.png);
+                background-position: 0px 0px;
+                background-size: 15px 15px;
+                background-repeat: no-repeat;
+            }
+
+        */
+
+    .raidsDialogContent .attackPanel {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0,0,0,.9);
+        background-size: cover;
+        user-select: none;
+    }
+
+        .raidsDialogContent .attackPanel .head {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 40px;
+            padding: 10px;
+            padding-right: 50px;
+        }
+            .raidsDialogContent .attackPanel .head .total span {
+                color: lime;
+            }
+
+        .raidsDialogContent .attackPanel .villageList {
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            right: 0px;
+            bottom: 40px;
+            overflow: auto;
+        }
+            .raidsDialogContent .attackPanel .villageList .villageRow {
+                position: relative;
+                background: rgba(29, 32, 32, 0.9);
+                padding: 5px;
+                padding-left: 49px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            }
+
+                .raidsDialogContent .attackPanel .villageList .villageRow:nth-child(even) {
+                    background: rgba(42, 50, 50, 0.9);
+                }
+
+                .raidsDialogContent .attackPanel .villageList .villageRow:hover {
+                    background: rgba(12, 12, 12, 0.9);
+                    opacity: 1 !important;
+                }
+
+                .raidsDialogContent .attackPanel .villageList .villageRow.notEnoughAttackPower {
+                    background: rgba(51, 10, 5, 0.6) !important;
+                    padding-bottom: 10px;
+                    opacity: .7;
+                }
+                .raidsDialogContent .attackPanel .villageList .villageRow.notEnoughAttackPower .troops,
+                .raidsDialogContent .attackPanel .villageList .villageRow.notEnoughAttackPower .info,
+                .raidsDialogContent .attackPanel .villageList .villageRow.notEnoughAttackPower .info .villCoors{
+                    color: gray;
+                }
+
+                .raidsDialogContent .attackPanel .villageList .villageRow.selected {
+                    background: #0F171C;
+                }
+          
+                .raidsDialogContent .attackPanel .villageList .villageRow .loader {
+                    position: absolute;
+                    top: 50%;
+                    right: 5px;
+                    margin-top: -8px;
+                    background-image: url(https://static.realmofempires.com/images/misc/busy_tinyRed.gif);
+                    background-size: 100% 100%;
+                    width: 16px;
+                    height: 16px;
+                }
+
+                .raidsDialogContent .attackPanel .villageList .villageRow .icon {
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    width: 44px;
+                    height: 44px;
+                    margin-top:-22px;
+                    background-size: 100% 100%;
+                }
+
+                .raidsDialogContent .attackPanel .villageList .villageRow .troops {
+                    position: relative;
+                    overflow: hidden;
+                    margin-top:5px;
+                }
+                    .raidsDialogContent .attackPanel .villageList .villageRow .troops .troop {
+                        position: relative;
+                        float: left;
+                        height: 30px;
+                        padding-right: 5px;
+                        padding-left: 25px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                        .raidsDialogContent .attackPanel .villageList .villageRow .troops .troop:hover {
+                            background-color: rgba(0, 85, 255, 0.15);
+                        }
+                        .raidsDialogContent .attackPanel .villageList .villageRow .troops .troop.selected {
+                            background-color: rgba(0, 85, 255, 0.6);
+                        }
+
+
+                        .raidsDialogContent .attackPanel .villageList .villageRow .troops .troop .tIcon {
+                            position: absolute;
+                            left:0px;
+                            top: 50%;
+                            width: 22px;
+                            height: 22px;
+                            margin-top: -11px;
+                            background-size: 100% 100%;
+                        }
+                        .raidsDialogContent .attackPanel .villageList .villageRow .troops .troop .tCount {
+                             font-family: monospace;
+                             margin-top: 8px;
+                        }
+
+                        .raidsDialogContent .attackPanel .villageList .villageRow .troops .troop.zeroAP {
+                            cursor: default;
+                            opacity: .5;
+                        }
+                            .raidsDialogContent .attackPanel .villageList .villageRow .troops .troop.zeroAP:hover {
+                                background-color: rgba(0,0,0,0);
+                            }
+                            .raidsDialogContent .attackPanel .villageList .villageRow .troops .troop.zeroAP .tCount {
+                                color: gray;
+                            }
+                
+                .raidsDialogContent .attackPanel .villageList .villageRow .sendInfo {
+                    display:none;
+                    margin-top:5px;
+                }
+                .raidsDialogContent .attackPanel .villageList .villageRow.selected .sendInfo {
+                    display:block;
+                }
+                .raidsDialogContent .attackPanel .villageList .villageRow.notEnoughAttackPower .sendInfo {
+                    display: none;
+                }
+
+                .raidsDialogContent .attackPanel .villageList .villageRow .launchRaid {
+                    display: none;
+                    position: relative;
+                    left: 50%;
+                    margin-left: -70px;
+                    margin-top: 5px;
+                }
+
+                .raidsDialogContent .attackPanel .villageList .villageRow .sendInfo span {
+                    font-family: monospace;
+                }
+
+
+                .raidsDialogContent .attackPanel .villageList .villageRow.selected .launchRaid {
+                    display: block;
+                }
+                .raidsDialogContent .attackPanel .villageList .villageRow.notEnoughAttackPower .launchRaid {
+                    display: none;
+                }
+
+        .raidsDialogContent .attackPanel .villageListMask {
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            right: 0px;
+            bottom: 40px;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 10px;
+            display: none;
+        }
+        .raidsDialogContent .attackPanel.metDamageShare .villageListMask {
+            display:block;
+        }
+        .raidsDialogContent .attackPanel.overRule .villageListMask {
+            display: none !important;
+        }
+
+        .raidsDialogContent .attackPanel .footer {
+            position: absolute;
+            height: 40px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            overflow: hidden;
+        }
+
+            .raidsDialogContent .attackPanel .footer .checkBox {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                margin: 4px;
+                float: left;
+                border-radius: 30px;
+                background-size: 24px auto;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                border: 2px solid gray;
+                opacity: .25;
+                cursor: pointer;
+                background-image: url(https://static.realmofempires.com/images/check_small.png);
+            }
+
+                .raidsDialogContent .attackPanel .footer .checkBox.checked {
+                    opacity: 1;
+
+                    border: 2px solid lime;
+                }
+
+            .raidsDialogContent .attackPanel .footer .label {
+                margin-top: 7px;
+            }
+            
+

@@ -1,0 +1,41 @@
+﻿   
+#reportDetails_section .themeM-progress .label {
+    color: #FFF;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-shadow: 1px 2px 2px #000,1px 1px 2px #000,1px -1px 2px #000;
+}
+
+#reportDetails_section .versus2 .vsIcon {
+    position:absolute;
+    top:40%;
+    margin-top:-24px;
+    left:50%;
+    margin-left:-10px;
+}
+
+
+
+.mobile #reportDetails_section .reportDetailControlBar .BtnDSm2n {
+    left: -3px;
+}
+
+.mobile #reportDetails_section .reportDetailControlBar .btnNextReport,
+.mobile #reportDetails_section .reportDetailControlBar .btnPrevReport {
+    width: 38px;
+    height: 38px;
+}
+
+.mobile #reportDetails_section .reportDetailControlBar .smallArrowUp,
+.mobile #reportDetails_section .reportDetailControlBar .smallArrowDown {
+    left: 8px !important;
+}
+
+.mobile #reportDetails_section .btnNextReport {
+    right: 185px;
+}
+.mobile #reportDetails_section .btnPrevReport {
+    right: 147px;
+}

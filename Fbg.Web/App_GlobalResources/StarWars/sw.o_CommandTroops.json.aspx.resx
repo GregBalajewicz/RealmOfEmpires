@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Attack_t" xml:space="preserve">
+    <value>When you attack, you send your ships into battle! They will fight any ships stationed at the target planet to the death. If at least some of your ships survive, they will take as much minerals as they can carry from that planet and bring it back for you to use.&lt;br/&gt;&lt;br/&gt;Make sure you learn about the units special abilities to know how to use them. (Click on the ship icon/name)&lt;br/&gt;&lt;br/&gt;For example, scouts, when sent alone are able to remain undetected by the target. Ion Cannon Gunships, Siege ships and Senators sent alone will surely be destroyed.&lt;br/&gt;&lt;br/&gt;Make sure to first scout a planet you are attacking and, using the Battle simulator, determine if you are able to win.</value>
+  </data>
+  <data name="Attack_title" xml:space="preserve">
+    <value>Attack</value>
+  </data>
+  <data name="BattleHandicap_t" xml:space="preserve">
+    <value>Strong players attacking weaker ones do so with a handicap. The higher the handicap, the higher the disadvantage to the attacker.&lt;BR&gt;&lt;BR&gt;The actual handicap is calculated at the time of battle, ie, when the attack lands.&lt;BR&gt;&lt;BR&gt;Handicap is based on the ratio of points of the players.&lt;BR&gt;&lt;BR&gt;Example: Handicap of 30% means that 30% of your ships will consider the battle dishonorable and will not participate in it</value>
+  </data>
+  <data name="BattleHandicap_title" xml:space="preserve">
+    <value>Battle Handicap</value>
+  </data>
+  <data name="CommandTroopsMain_t" xml:space="preserve">
+    <value>Here you can command ships - send them to attack or support another player’s planet.&lt;br/&gt;&lt;br/&gt;When you attack, you send your ships into battle! They will fight any ships stationed at the target planet to death. If at least some of your ships survive, they will take as much minerals as they can carry from that planet and bring it back for you to use. &lt;br/&gt;&lt;br/&gt;When you support some planet, you are helping this planet defend against attacks. You are not giving this player control of your ships, i.e. the owner of the other planet cannot send your ships to attack anyone; all your ships will do is help defend it from attacks. You will get a report if your supporting ships get attacked. &lt;br/&gt;&lt;br/&gt;Make sure you learn about the units special abilities to know how to use them. (Click on the troop icon/name)&lt;br/&gt;&lt;br/&gt;For example, scouts, when sent alone are able to remain undetected by the target; Siege ships sent alone will surely be destroyed etc.</value>
+  </data>
+  <data name="CommandTroopsMain_title" xml:space="preserve">
+    <value>Command Troops</value>
+  </data>
+  <data name="IncomingTroops_t" xml:space="preserve">
+    <value>This table shows you any other attacks or supports heading to the planet you are currently targeting. &lt;br/&gt;&lt;br/&gt;For example: Assume you are attacking the same planet from 2 of your planets. When you are about to send your second attack, you will be able to see your first one in this table.</value>
+  </data>
+  <data name="OutgoingTroops_t" xml:space="preserve">
+    <value>This table shows you any other attacks or supports moving from your current planet.</value>
+  </data>
+  <data name="OutgoingTroops_title" xml:space="preserve">
+    <value>Outgoing Ships</value>
+  </data>
+  <data name="RamTarget_t" xml:space="preserve">
+    <value>Ion Cannon Gunships are efficient Energy Shield demolishers. &lt;br/&gt;&lt;br/&gt;Consider sending them to attack planets which have their energy shields built (You can spy a planet first to find out if it does have a energy shield. You spy on a village by attacking it with scouts).&lt;br/&gt;&lt;br/&gt;But be aware that Ion Cannon Gunships move very slowly.</value>
+  </data>
+  <data name="RebelVillageTooFar_t" xml:space="preserve">
+    <value>Rebels do not yield to authority well. When attacking with a senator in order to convince them to come under your banner, your senator will only have an effect when the target rebel planet is within 22 spaces away from you. Any rebel planet further than that, cannot be capture by a senator from this village.&lt;BR&gt;&lt;BR&gt;For example, if your planet is located at (0,0), you will be able to capture a rebel planet located at (22,22) or (22,-22) but not one at (22,23) or (-23,22) or further away from you.&lt;BR&gt;&lt;BR&gt;An easy way to remember this, is that all planets within your view on a giant 45x45 map are capturable.</value>
+  </data>
+  <data name="RebelVillageTooFar_title" xml:space="preserve">
+    <value>Rebel Planet Too Far</value>
+  </data>
+  <data name="Support_t" xml:space="preserve">
+    <value>When you support some planet, you are helping this planet defend against attacks. You are not giving this player control of your ships, i.e. the owner of the other planet cannot send your ships to attack anyone; all your ships will do is help defend it from attacks. You will get a report if your supporting ships get attacked. &lt;br/&gt;&lt;br/&gt;Make sure to send ships good at defending. For example, sending Siege ships or Senators is a waste as they are very poor in defense. Destroyers, although better at defense than Siege ships, as still a poor choice for defense, better keep those for attacking, and support with Fighters. &lt;br/&gt;&lt;br/&gt;Once your ships arrive at the planet they are supporting, you will see them, and can call them back from the Ships Abroad page</value>
+  </data>
+  <data name="Support_title" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="TargetVillage_t" xml:space="preserve">
+    <value>Enter co-ordinates of the planet you want to attack / support.&lt;br/&gt;&lt;br/&gt;You can also attack/support a planet from the map which auto populates the coordinates.</value>
+  </data>
+  <data name="TargetVillage_title" xml:space="preserve">
+    <value>Target Planet</value>
+  </data>
+  <data name="TrebuchetTarget_t" xml:space="preserve">
+    <value>Siege ships can target any building and you can choose their target here. &lt;br/&gt;&lt;br/&gt;Keep in mind that although Siege ships can, like Ion Cannon Gunships target the Energy Shield, they are much less efficient at it. Ideally, target the Shield with Ion cannon gunships and defense platforms with siege ships. &lt;br/&gt;&lt;br/&gt;You can also cripple your target by damaging other buildings on the planet using Siege ships.</value>
+  </data>
+  <data name="TroopDesertion_t" xml:space="preserve">
+    <value>When sending an attack over long distances, some ships may desert.&lt;BR&gt;&lt;BR&gt;The longer the distance the more ships you will lose to desertion.&lt;BR&gt;&lt;BR&gt;You can prevent any desertion by increasing the number of ships you send in an attack, or including a senator with the attack.&lt;BR&gt;&lt;BR&gt;NOTE: Cancelling an attack will not reclaim any deserted ships. I.e., ships desert immediately when you launch the attack</value>
+  </data>
+  <data name="TroopDesertion_title" xml:space="preserve">
+    <value>Ship Desertion Desertion</value>
+  </data>
+</root>

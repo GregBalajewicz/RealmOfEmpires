@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="asFirstStep" xml:space="preserve">
+    <value>As first step, ensure the transaction is completed in PayPal. Login to your PayPal account, find the transaction for Realm of Empires, and ensure the status is 'Completed'.
+&lt;br /&gt;
+&lt;br /&gt;
+If the transaction is completed, or for other paypal transaction related problems, please</value>
+  </data>
+  <data name="contactSupport" xml:space="preserve">
+    <value>Contacting Support</value>
+  </data>
+  <data name="firstContactOfferComp" xml:space="preserve">
+    <value>(like OfferPal or SuperRewards), either by completing offers or buying servants using other methods these 3rd parties provide, you must first contact the offer company. 
+&lt;br /&gt;
+&lt;br /&gt;
+To do so,</value>
+  </data>
+  <data name="forAllOther" xml:space="preserve">
+    <value>For all other support inquiries...</value>
+  </data>
+  <data name="forSimilarQuestions" xml:space="preserve">
+    <value>for similar questions.</value>
+  </data>
+  <data name="link_goToOffers" xml:space="preserve">
+    <value>go to the offers page</value>
+  </data>
+  <data name="iFoundABug" xml:space="preserve">
+    <value>I found a bug that I want to report.</value>
+  </data>
+  <data name="ifSolutionNotSat" xml:space="preserve">
+    <value>if the solution is not to your satisfaction.
+&lt;br /&gt;
+&lt;br /&gt;
+Please don't contact us first as we have no means of validating a transaction. You must contact the offer company first.</value>
+  </data>
+  <data name="ifThisIsVerySerious" xml:space="preserve">
+    <value>If this is very serious abuse, and/or 24 hours passed since it occured,
+&lt;/b&gt; 
+then please</value>
+  </data>
+  <data name="ifYouAreNotSure" xml:space="preserve">
+    <value>If you are not sure what to do or how to accomplish something in game, then follow this guide to quickly resolve your problem:</value>
+  </data>
+  <data name="ifYouBoughtServants" xml:space="preserve">
+    <value>If you have bought servants through our</value>
+  </data>
+  <data name="ifYouFoundBug" xml:space="preserve">
+    <value>If you found a bug or think you did, please let us know! We reward players who provide pivotal clues to help us solve bugs.
+&lt;br /&gt;
+&lt;br /&gt; 
+Please</value>
+  </data>
+  <data name="iHaveAProblem" xml:space="preserve">
+    <value>I have a problem with my servants purchase via PayPal.</value>
+  </data>
+  <data name="iHaveAQuestion" xml:space="preserve">
+    <value>I have a question about game play.</value>
+  </data>
+  <data name="iHaveASuggestion" xml:space="preserve">
+    <value>I have a suggestion to make!</value>
+  </data>
+  <data name="iHaveProbWServants" xml:space="preserve">
+    <value>I have a problem with an offer I completed for servants.</value>
+  </data>
+  <data name="iReportCheating" xml:space="preserve">
+    <value>I want to report cheating or suspected cheating or any other case of abuse of our Terms of Use.</value>
+  </data>
+  <data name="iWantToReport" xml:space="preserve">
+    <value>I want to report serious abuse by a player.</value>
+  </data>
+  <data name="link_ContactUsHere" xml:space="preserve">
+    <value>contact us here</value>
+  </data>
+  <data name="link_FAQ" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="link_FurtherInfoOfTOU" xml:space="preserve">
+    <value>our further explanation of the terms of use</value>
+  </data>
+  <data name="link_ourForum" xml:space="preserve">
+    <value>our forum</value>
+  </data>
+  <data name="link_PostOnForum" xml:space="preserve">
+    <value>post your question on the forum</value>
+  </data>
+  <data name="link_postSuggestion" xml:space="preserve">
+    <value>post your suggestion on the forum</value>
+  </data>
+  <data name="link_ThirdParties" xml:space="preserve">
+    <value>3rd party providers</value>
+  </data>
+  <data name="link_TOU" xml:space="preserve">
+    <value>terms of use</value>
+  </data>
+  <data name="link_wiki" xml:space="preserve">
+    <value>our wiki</value>
+  </data>
+  <data name="ninetyNinePercentTime" xml:space="preserve">
+    <value>99% of the time, someone asked the same question before you.</value>
+  </data>
+  <data name="ninetyPercentTime" xml:space="preserve">
+    <value>90% of the time you will find the answer to your question there.</value>
+  </data>
+  <data name="noteActionMayResult" xml:space="preserve">
+    <value>Note! Abuse of this system, ie, reporting little things in order to damage a player, will be considered a serious offense and may result in action taken against you.</value>
+  </data>
+  <data name="noteNotProperWay" xml:space="preserve">
+    <value>Please note that this is not a proper way to make a suggestion or ask a game-play related question. We will not respond to such queries.</value>
+  </data>
+  <data name="OTHERTHAN" xml:space="preserve">
+    <value>OTHER THAN PERSONAL INSULTS, please see 
+&lt;i&gt;I want to report a serious abuse by a player&lt;/i&gt;
+above.
+&lt;br /&gt;
+&lt;br /&gt;
+For suspected cheating or other Terms of Use abuse, please</value>
+  </data>
+  <data name="please" xml:space="preserve">
+    <value>Please</value>
+  </data>
+  <data name="pleaseLetUsKnow" xml:space="preserve">
+    <value>please let us know. NOTE that in-game threats and comments on your game play ability are not considered abuse. For more explanation of what we consider abuse, see</value>
+  </data>
+  <data name="pleaseNote" xml:space="preserve">
+    <value>Please note! In case of abuse or profanity or such, only report abuse if you are seriously offended! This is a game of conflict and emotions sometimes run high. We will only deal with serious cases of abuse.
+&lt;br /&gt;
+&lt;br /&gt;
+If the nature of the abuse is excessive profanity or insults, you must wait and report the case to us 24 hours AFTER the occurance of the abuse. We will not take action on any reports sent earlier since in most of the cases, emotions subside, and involved parties make amends without the 'big brother' getting involved - everybody wins.
+&lt;br /&gt;
+&lt;br /&gt;
+For abuse on clan forums, first contact clan administrators. We will typically not police clan forums since the clan administrators have the power of silencing such people. We will deal with serious cases such as real-life threats.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;
+Also, note that you can block a person &lt;/b&gt;from being able to send you in-game messages. Open a message from the person you want to block and click the "Block Person" link. This is the easiest and quickest method of silencing the abuser.</value>
+  </data>
+  <data name="pleaseNoteNotProper" xml:space="preserve">
+    <value>Please note that this is not a proper way to make a suggestion or ask a game-play related question. We will not respond to such queries. </value>
+  </data>
+  <data name="pleaseUse" xml:space="preserve">
+    <value>Please use the guide below to find out how to contact us in your situation.</value>
+  </data>
+  <data name="link_postOnForumInstead" xml:space="preserve">
+    <value>Post on the forum instead</value>
+  </data>
+  <data name="selectATab" xml:space="preserve">
+    <value>select a tab for the company in question, and find and click a "Missing Servants?/View Offer Status" link.
+&lt;br /&gt;
+&lt;br /&gt;
+Keep a record of your case and</value>
+  </data>
+  <data name="stepOne" xml:space="preserve">
+    <value>Step 1 - Read our</value>
+  </data>
+  <data name="stepThree" xml:space="preserve">
+    <value>Step 3 - Post your own question on </value>
+  </data>
+  <data name="stepTwo" xml:space="preserve">
+    <value>Step 2 - Search </value>
+  </data>
+  <data name="weMonitorForum" xml:space="preserve">
+    <value>We monitor the forum regularly and, in most cases, you will receive immediate help from other players.
+&lt;br /&gt;
+&lt;br /&gt;
+Do not contact support in other ways for such questions. Posting on the forum is the only appropriate way to ask game related questions.</value>
+  </data>
+  <data name="weMonitorForums" xml:space="preserve">
+    <value>We monitor the forum regularly and either staff or perhaps other players may be able to help you. &lt;/span&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+If the inquiry is not appropriate for the forum, then</value>
+  </data>
+  <data name="weReadCatalogue" xml:space="preserve">
+    <value>We read the catalogue of all your suggestions. For list of already catalogued suggestions, see</value>
+  </data>
+  <data name="weStriveToKeep" xml:space="preserve">
+    <value>We strive to keep the game fun for everyone. If you feel someone broke our</value>
+  </data>
+  <data name="forCasesOfAbuse" xml:space="preserve">
+    <value>For cases of abuse of our</value>
+  </data>
+  <data name="link_contactUs" xml:space="preserve">
+    <value>contact us</value>
+  </data>
+</root>

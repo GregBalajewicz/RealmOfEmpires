@@ -1,0 +1,60 @@
+﻿.templ_inOutFilter .toggle {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-size:100% 100%;
+    top: 3px;
+    margin: 2px 5px;
+    position: relative;
+}
+
+    .templ_inOutFilter .toggle.attack[data-state="on"] {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterShowAttacks.png');
+    }
+    .templ_inOutFilter .toggle.attack[data-state="off"] {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterHideAttacks.png');
+    }
+
+    .templ_inOutFilter .toggle.support[data-state="on"] {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterShowSupport.png');
+    }
+    .templ_inOutFilter .toggle.support[data-state="off"] {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterHideSupport.png');
+    }
+
+    .templ_inOutFilter .toggle.returning[data-state="on"] {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterShowReturning.png');
+    }
+    .templ_inOutFilter .toggle.returning[data-state="off"] {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterHideReturning.png');
+    }
+
+    .templ_inOutFilter .toggle.hidden[data-state="on"] {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterShowHidden.png');
+    }
+    .templ_inOutFilter .toggle.hidden[data-state="off"] {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterHideHidden.png');
+    }
+
+.filter .bda-ui-radio {
+    height: 25px;
+    float: left;
+    margin-left: 20px;
+}
+
+.widget_inOutTroops .filter .byFrom {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    clear: both;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.widget_inOutTroops .cmd .lineInfo {
+    display: none !important;
+}
+
+.widget_inOutTroops .filterPopup .clearFilter {
+    color: #898989;
+}

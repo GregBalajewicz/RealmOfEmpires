@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/main.master" AutoEventWireup="false" CodeFile="masterPf.master.cs" Inherits="masterPf" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadPlaceHolder" runat="Server">
+    <asp:ContentPlaceHolder ID="hph1" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:Menu ID="mnu_PF" runat="server" Orientation="Horizontal" StaticSubMenuIndent="10px"  RenderingMode="Table">
+        <StaticMenuItemStyle ItemSpacing="1px" />
+        <DynamicMenuStyle HorizontalPadding="2" VerticalPadding="2" BackColor="#ffffff" BorderColor="#3b5998" BorderStyle="Solid" BorderWidth="1px" />
+        <DynamicMenuItemStyle HorizontalPadding="2" VerticalPadding="2" />
+        <StaticSelectedStyle CssClass="SelectedMenuItem" />
+        <DynamicMenuItemStyle ForeColor="#C39037" />
+        <DynamicMenuStyle HorizontalPadding="2" VerticalPadding="2" BackColor="#4B3D32" BorderColor="#000000" BorderStyle="Solid" BorderWidth="1px" />
+        <Items>
+            <asp:MenuItem NavigateUrl="~/pfBenefits.aspx" Text="Unlock Features" SeparatorImageUrl="https://static.realmofempires.com/images/menuItemSeperator.png" />
+            <asp:MenuItem NavigateUrl="~/pfCredits.aspx" Text="Hire Servants" SeparatorImageUrl="https://static.realmofempires.com/images/menuItemSeperator.png" />
+            <asp:MenuItem NavigateUrl="~/pfTransferCredits.aspx" Text="Transfer Servants" SeparatorImageUrl="https://static.realmofempires.com/images/menuItemSeperator.png" />
+            <asp:MenuItem NavigateUrl="~/ChooseRealm.aspx" Text="<< Back to game" />
+        </Items>
+    </asp:Menu>
+
+    <table>
+        <tr>
+            <td nowrap style="Font-Size:1.1em">
+                <%if (Config.SaleType != 0) {%>
+                <img src="https://static.realmofempires.com/images/misc/SaleL.png" style="float:left;width:70px;padding-right:10px;" />                
+                <%} else { %>
+                
+                <img src="https://static.realmofempires.com/images/misc/servant_2.png" style="float:left;width:70px;padding-right:10px;" />
+                <%} %>
+
+                <%if (Config.SaleType != 0)
+                  { %>
+                <table>
+                <tr>
+                <td>
+                <%} %>
+                <asp:Panel runat="server" ID="panelWhatAreServants_ForBenefitsPage">
+                    <br /><strong><%= RS("servAreUsed")%></strong><br />
+                </asp:Panel>
+                <asp:Panel runat="server" ID="panelWhatAreServants">
+                    <strong><BR /><%= RS("servAreUsed2")%>                       
+                        <asp:HyperLink ID="HyperLink5" CssClass="d2TurnOffBenefitsLink" runat="server" NavigateUrl="~/PFBenefits.aspx"><%= RS("link_PF")%></asp:HyperLink></strong>.<br />
+                </asp:Panel>
+                <br />
+                <div id="servantsAnim" style="float:left">
+                    <asp:UpdatePanel ID="UpdatePanelServants" runat="server" RenderMode="Inline">
+                        <ContentTemplate>
+                            <asp:Label ID="lbl_AvilableGold" CssClass="available" runat="server" Font-Bold="True" Font-Size="1.1em"></asp:Label>.
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+                <div>
+                <asp:PlaceHolder runat="server" ID="panelHireMore">(<asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/pfCredits.aspx"><%= RS("link_HireMore")%></asp:HyperLink>)</asp:PlaceHolder>
+                <asp:Label ID="lblOffer" ForeColor="greenyellow" runat="server" Font-Bold="True" Font-Size="1.1em"></asp:Label>
+<%if (Config.SaleType != 0)
+                  { %>
+                </td>
+                <td>
+                    <%--<span class="Error" style="font-size:1.2em;font-weight:bold;">SERVANT SALE!!</span><br />
+                    <div style="border:solid 2px #B11801;padding:3px;font-size:1.2em;font-weight:bold;">
+                    <%if (Config.SaleType == 1)
+                      { %>  
+                      Get <I>at least</I> 10% more servants on 
+                      <%}
+                      else
+                      {%>
+                      Get great savings on 
+                      <%} %>
+                      <a href=pfCredits.aspx>select packages</a>!<br />
+                    <span style="font-weight:normal;font-size:1.0em">offer expires soon</span></div></td>--%>
+                </td>
+                </tr>
+                </table>
+                <%} %>
+                </div>
+            </td
+            <td>
+                <!--<span class="Error" style="font-size:1.2em;font-weight:bold;">SERVANT SALE!!</span><br /><div style="border:solid 2px #B11801;padding:3px;font-size:1.2em;font-weight:bold;">Get 10% more servants on <a href=pfCredits.aspx>select packages</a>!<br /><span style='font-weight:normal;font-size:1.0em'>offer expires Nov 23rd 2009</span></div></td>-->
+            </td>
+        </tr>
+    </table>
+    <asp:ContentPlaceHolder ID="cph1" runat="server">
+    </asp:ContentPlaceHolder>
+    <cc1:UpdatePanelAnimationExtender ID="UpdatePanelAnimationExtender1" runat="server" TargetControlID="UpdatePanelServants" BehaviorID="animServants">
+        <Animations>
+            <OnUpdating>
+                <Sequence>
+                    <Parallel duration="1" Fps="30">
+                        <FadeOut AnimationTarget="servantsAnim" minimumOpacity="0.1"></FadeOut>
+                    </Parallel>
+                </Sequence>
+
+            </OnUpdating>
+            <OnUpdated>
+                <Sequence>
+                    <Parallel duration="1" Fps="30">
+                        <FadeIn AnimationTarget="servantsAnim" minimumOpacity="0.1"></FadeIn>
+                    </Parallel>
+                </Sequence>
+
+            </OnUpdated>
+           
+        </Animations>
+    </cc1:UpdatePanelAnimationExtender>
+</asp:Content>

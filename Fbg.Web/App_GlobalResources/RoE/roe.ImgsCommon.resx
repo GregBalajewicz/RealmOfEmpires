@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="hdrBG_TC" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/hdrBG_TC.gif</value>
+  </data>
+  <data name="hdrBG_TLtrans" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/hdrBG_TLtrans.gif</value>
+  </data>
+  <data name="hdrBG_TRtrans" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/hdrBG_TRtrans.gif</value>
+  </data>
+  <data name="menuItemSeperator" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/menuItemSeperator.png</value>
+  </data>
+  <data name="Scroll" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/gifts/Scroll.png</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/cancel.png</value>
+  </data>
+  <data name="cancel_8x8" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/cancel_8x8.png</value>
+  </data>
+  <data name="checkmark2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/checkmark2.gif</value>
+  </data>
+  <data name="checkmark2_8x8" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/checkmark2_8x8.gif</value>
+  </data>
+  <data name="Coin" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/Coin.png</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/Food.png</value>
+  </data>
+  <data name="HourGlass" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/HourGlass.png</value>
+  </data>
+  <data name="newforum" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/newforum.png</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/Logo.png</value>
+  </data>
+  <data name="Main2c_hedaer" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/Main2c_hedaer.jpg</value>
+  </data>
+  <data name="d_Knights3e_A_R" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/vov/d_Knights3e_A_R.png</value>
+  </data>
+  <data name="d_Troops5e_A_L" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/vov/d_Troops5e_A_L.png</value>
+  </data>
+  <data name="allresearch_G" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/allresearch_G.png</value>
+  </data>
+  <data name="avail_research_G" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/avail_research_G.png</value>
+  </data>
+  <data name="cavalry" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/units/cavalry.png</value>
+  </data>
+  <data name="clock" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/clock.png</value>
+  </data>
+  <data name="completecheckmark" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/completecheckmark.png</value>
+  </data>
+  <data name="CompletedResearch_G" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/CompletedResearch_G.png</value>
+  </data>
+  <data name="devider_h_yellow" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/devider_h_yellow.png</value>
+  </data>
+  <data name="fa" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/fa.png</value>
+  </data>
+  <data name="fabd" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/fabd.png</value>
+  </data>
+  <data name="fbcreditslogo" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/fbcreditslogo.png</value>
+  </data>
+  <data name="fc" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/fc.png</value>
+  </data>
+  <data name="ffb" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/ffb.png</value>
+  </data>
+  <data name="flag_black" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/flag_black.png</value>
+  </data>
+  <data name="flag_Pink1" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/flag_Pink1.png</value>
+  </data>
+  <data name="flag_Teal2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/flag_Teal2.png</value>
+  </data>
+  <data name="fme" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/fme.png</value>
+  </data>
+  <data name="Gift_sack_of_silver" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/gifts/Gift_sack_of_silver.png</value>
+  </data>
+  <data name="helpicon" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/helpicon.png</value>
+  </data>
+  <data name="Infantry" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/units/Infantry.png</value>
+  </data>
+  <data name="knight" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/units/knight.png</value>
+  </data>
+  <data name="leads_to_arrow" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/leads_to_arrow.png</value>
+  </data>
+  <data name="Militia" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/units/Militia.png</value>
+  </data>
+  <data name="plus_sign_blue" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/plus_sign_blue.png</value>
+  </data>
+  <data name="ram" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/units/ram.png</value>
+  </data>
+  <data name="research_now_hover" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/buttons/research_now_hover.png</value>
+  </data>
+  <data name="ShieldV4shield_temp" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/ShieldV4shield_temp.png</value>
+  </data>
+  <data name="spy" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/units/spy.png</value>
+  </data>
+  <data name="treb" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/units/treb.png</value>
+  </data>
+  <data name="VovBottom" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/vov/VovBottom.png</value>
+  </data>
+  <data name="VovL" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/vov/VovL.png</value>
+  </data>
+  <data name="VovR" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/vov/VovR.png</value>
+  </data>
+  <data name="VovTop" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/vov/VovTop.png</value>
+  </data>
+  <data name="funnel2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/funnel2.png</value>
+  </data>
+  <data name="governor" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/units/governor.png</value>
+  </data>
+  <data name="Roe" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/Roe.jpg</value>
+  </data>
+  <data name="OldForum01" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/OldForum.png</value>
+  </data>
+  <data name="ajaxloader1" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/ajax-loader1.gif</value>
+  </data>
+  <data name="help_silver" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/help_silver.gif</value>
+  </data>
+  <data name="busy_biggrey" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/busy_biggrey.gif</value>
+  </data>
+  <data name="busy_tinyred" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/busy_tinyred.gif</value>
+  </data>
+  <data name="farm" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/farm.png</value>
+  </data>
+  <data name="hq" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/hq.png</value>
+  </data>
+  <data name="Barracks" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Barracks.png</value>
+  </data>
+  <data name="chest" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/chest.jpg</value>
+  </data>
+  <data name="ChestIcon" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/ChestIcon.png</value>
+  </data>
+  <data name="Farm2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Farm2.png</value>
+  </data>
+  <data name="funnel1" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/funnel1.png</value>
+  </data>
+  <data name="HQ1" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/HQ.png</value>
+  </data>
+  <data name="Mine" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Mine.png</value>
+  </data>
+  <data name="Palace" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Palace.png</value>
+  </data>
+  <data name="Seige" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Seige.png</value>
+  </data>
+  <data name="Stable" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Stable.png</value>
+  </data>
+  <data name="Tavern" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Tavern.png</value>
+  </data>
+  <data name="Tower" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Tower.png</value>
+  </data>
+  <data name="Trade" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Trade.png</value>
+  </data>
+  <data name="Treasury" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Treasury.png</value>
+  </data>
+  <data name="Wall" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/BuildingIcons/Wall.png</value>
+  </data>
+  <data name="rightarrow" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/rightarrow.png</value>
+  </data>
+  <data name="pf_attack2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/pf_attack2.png</value>
+  </data>
+  <data name="pf_defence2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/pf_defence2.png</value>
+  </data>
+  <data name="pf_fasterreturn2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/pf_fasterreturn2.png</value>
+  </data>
+  <data name="pf_map2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/pf_map2.png</value>
+  </data>
+  <data name="pf_np2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/pf_np2.png</value>
+  </data>
+  <data name="pf_silvermore2" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/pf_silvermore2.png</value>
+  </data>
+  <data name="researchanim" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/research-anim.gif</value>
+  </data>
+  <data name="leftarrow" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/leftarrow.png</value>
+  </data>
+  <data name="quests_clickfilter" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/quests_clickfilter.gif</value>
+  </data>
+  <data name="quests_clicktag" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/quests_clicktag.gif</value>
+  </data>
+  <data name="quests_tagspopup" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/quests_tagspopup.jpg</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/rightarrow.png</value>
+  </data>
+  <data name="Arrow_pointer_North" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif</value>
+  </data>
+  <data name="barracks1" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/barracks.png</value>
+  </data>
+  <data name="IncomingAttack" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/IncomingAttack.gif</value>
+  </data>
+  <data name="mine1" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/mine.png</value>
+  </data>
+  <data name="research_10" xml:space="preserve">
+    <value>http://static.pl.realmofempires.com/images/research/research_10.png</value>
+  </data>
+  <data name="Logo_bar" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/Logo_bar.png</value>
+  </data>
+  <data name="fe" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/fe.png</value>
+  </data>
+  <data name="fn" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/fn.png</value>
+  </data>
+  <data name="freb" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/map/freb.png</value>
+  </data>
+  <data name="introheader" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/misc/M_IntroHeader.jpg</value>
+  </data>
+  <data name="ChestIconThemeM" xml:space="preserve">
+    <value>https://static.realmofempires.com/images/icons/M_PF_Silver.png</value>
+  </data>
+</root>

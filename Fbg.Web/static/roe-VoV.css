@@ -1,0 +1,70 @@
+﻿
+.vovC 
+{
+	position: absolute;
+	z-index: 2;
+}
+.vovC.vov_tower
+{
+	position: absolute;
+	z-index: 2;
+	z-index:16;
+}
+.vov
+{
+	position: absolute;
+	z-index: 2;
+}
+.vov_troops
+{
+	position: absolute;
+	z-index: 10;
+}
+.vov_tower
+{
+	position: absolute;
+	z-index: 15;
+}
+.vovWallBack
+{
+	position: absolute;
+	z-index: 30;
+}
+
+.vovWallFront
+{
+	position: absolute;
+	z-index: 40;
+}
+
+.vovCountdown
+{
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+	z-index: 50 !important;
+}
+.vovlabel
+{
+	color: #FFFFFF;
+	font-weight: bolder;
+	text-decoration: none;
+	z-index: 50 !important;
+}
+
+
+
+#vov .vovFreeBtn {
+    position: absolute;
+    z-index:60;
+    padding-right: 33px;
+}
+    #vov .vovFreeBtn .icon {
+        position: absolute;
+        top: -4px;
+        right: 14px;
+        width: 44px;
+        height: 44px;
+        background-size: 100% 100%;
+        background-image: url(https://static.realmofempires.com/images/icons/freeSign.png);
+    }

@@ -1,0 +1,42 @@
+.iFrameDiv {
+    border: solid 2px rgb(41,33,22) !important;
+}
+
+
+
+ /*TEMP CODE FOR THE RATE-US popup */
+
+.rateAppPopup {
+         font: 18px/1.0em "IM Fell French Canon SC", serif;      
+}
+ 
+.rateAppPopup .title {
+    color: #FFD776; 
+    font: 20px/1.0em "IM Fell French Canon SC", serif;
+}
+.rateAppPopup  .rateitbut{
+        display: block;
+        width: 148px;
+        height: 42px;
+        bottom: 0px;
+        left: 78px;
+        margin: 10px auto;
+        cursor:pointer;
+    }
+
+    .rateAppPopup  .rateitbut {
+        background-image: url("https://static.realmofempires.com/images/buttons/M_Btn_rateus.png");
+    }
+
+        .rateAppPopup  .rateitbut:active {
+            background-image: url("https://static.realmofempires.com/images/buttons/M_Btn_rateus2.png");
+        }
+.rateAppPopup .nothanks,
+.rateAppPopup .donebut {
+    color: #FFD776;
+    font: 11pt/1.0em "IM Fell French Canon SC", serif;
+    margin-bottom:15px;
+    margin-top:15px;
+}
+
+/* END ***** *TEMP CODE FOR THE RATE-US popup*/

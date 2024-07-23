@@ -1,0 +1,73 @@
+﻿.templ_inOutFilter .toggle {
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+}
+
+    .templ_inOutFilter .toggle:hover {
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1;
+        -webkit-transition: opacity 0.7s;
+        -moz-transition: opacity 0.7s;
+        transition: opacity 0.7s;
+    }
+
+    .templ_inOutFilter .toggle.on {
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1;
+    }
+
+    .templ_inOutFilter .toggle .checkmark {
+        width: 16px;
+        height: 20px;
+        background-image: url('https://static.realmofempires.com/images/check_small.png');
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        -khtml-opacity: 0;
+        opacity: 0;
+        -webkit-transition: opacity 0.7s;
+        -moz-transition: opacity 0.7s;
+        transition: opacity 0.7s;
+    }
+
+    .templ_inOutFilter .toggle.on .checkmark {
+        background-image: url('https://static.realmofempires.com/images/check_small.png');
+        background-repeat: no-repeat;
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1;
+        -webkit-transition: opacity 0.7s;
+        -moz-transition: opacity 0.7s;
+        transition: opacity 0.7s;
+    }
+
+    .templ_inOutFilter .toggle span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.templ_inOutFilter .phrases {
+    display: none;
+}
+
+.templ_inOutFilter .toggle {
+    height: 20px;
+}
+
+.templ_inOutFilter .troopIconSheet {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.templ_inOutFilter .icon {
+    width: 20px;
+}

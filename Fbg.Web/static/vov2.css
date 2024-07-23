@@ -1,0 +1,83 @@
+﻿ .pfs a
+   {
+        display:block;
+        width:50px;
+        height:20px;
+        margin: 0px 1px 0px 1px;
+   }
+   
+   .pfs a.attOn
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_attack2.png');
+   }
+   .pfs a.attOff
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_attack1.png');
+   }
+   .pfs a.attOff:hover
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_attack2.png');
+   }
+   .pfs a.defOn
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_defence2.png');
+   }
+   .pfs a.defOff
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_defence1.png');
+   }
+   .pfs a.defOff:hover
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_defence2.png');
+   }
+   .pfs a.silOn
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_silvermore2.png');
+   }
+   .pfs a.silOff
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_silvermore1.png');
+   }
+   .pfs a.silOff:hover
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_silvermore2.png');
+   }
+   .pfs a.retOn
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_fasterreturn2.png');
+   }
+   .pfs a.retOff
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_fasterreturn1.png');
+   }
+   .pfs a.retOff:hover
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_fasterreturn2.png');
+   }
+   .pfs a.npOn
+   {
+        width:120px;
+     background-image:url('https://static.realmofempires.com/images/pf_np2.png');
+   }
+   .pfs a.npOff
+   {
+        width:120px;
+     background-image:url('https://static.realmofempires.com/images/pf_np1.png');
+   }
+   .pfs a.npOff:hover
+   {
+        width:120px;
+        background-image:url('https://static.realmofempires.com/images/pf_np2.png');
+   }
+   .pfs a.mapOn
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_map2.png');
+   }
+   .pfs a.mapOff
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_map1.png');
+   }
+   .pfs a.mapOff:hover
+   {
+     background-image:url('https://static.realmofempires.com/images/pf_map2.png');
+   }

@@ -1,0 +1,108 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterMain_d2.master.cs" Inherits="main_d2" %>
+<%@ Register Src="Controls/Tutorial.ascx" TagName="Tutorial" TagPrefix="uc3" %>
+<%@ Register Src="Controls/VillageHeaderInfo.ascx" TagName="VillageHeaderInfo" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%= RSc("GameName") %></title>
+
+    <meta name="viewport" content="width=320"/>
+    <asp:contentplaceholder id="Contentplaceholder3" runat="server">
+    <%=Fbg.Common.WebHelper.FileList.js(Fbg.Common.WebHelper.FileList.FOR.mainPages, isMobile, Config.InDev)%>
+    </asp:ContentPlaceHolder>
+
+    <script src="https://connect.facebook.net/en_US/all.js"></script>
+    <script type="text/javascript">
+       <asp:Literal runat=server ID="lblJSONStruct"></asp:Literal>    
+
+        function pageLoad () 
+        {                       
+            jaxReplace();
+            UpdateStartingCoins();
+            initTimers();
+             $('.helpQuestion, #highlight').remove();
+            initHelp();
+            InitStripeTable();
+            initFakeSelects();
+            InitAutoPop();
+            InitAutoPop2();
+            InitAutoPop3();
+             initTutorial();
+            page.load_scripts();
+            if (typeof window.initHideBuildRequirements === 'function') { initHideBuildRequirements(); }
+            <asp:contentplaceholder id="IntoPageLoad" runat="server">
+            </asp:contentplaceholder>
+            
+            if (typeof window.CustomOnLoad === 'function') { CustomOnLoad(); }           
+        }        
+    </script>  
+
+    <asp:contentplaceholder id="Contentplaceholder2" runat="server">
+    <%=Fbg.Common.WebHelper.FileList.css(Fbg.Common.WebHelper.FileList.FOR.mainPages, isMobile, Config.InDev)%>
+    </asp:contentplaceholder>
+
+    <asp:contentplaceholder id="HeadPlaceHolder" runat="server">
+    </asp:contentplaceholder>
+    <link type="text/json" rel="help" href="static/help/j_Global.json.aspx" />
+   
+    <script type="text/javascript">
+        $(function () {
+            $('.TDContent').delegate('a', 'click', function handleGenericPlayerLinkClick(event) {
+                var a = $(event.target);
+                var href = a.attr('href');
+               
+                // This was getting assigned to img in globalstats so we check if href 
+                // exists first otherwise substring will cause a console error.
+                if (href && href.substring(0, "player.aspx".length).toUpperCase() === "player.aspx".toUpperCase()) {
+                    event.preventDefault(); 
+                    //alert(href);
+                    //var playerid = href.substring(href.indexOf("pid=")+4);
+                    window.parent.ROE.Frame.popupPlayerProfile(a.text());
+                }/*
+                else if (href && href.substring(0, "clanpublicprofile.aspx".length).toUpperCase() === "clanpublicprofile.aspx".toUpperCase()) {
+                    event.preventDefault();
+                    //if no clanid in url dont pass it, or itll pass some nonsense
+                    if(href.indexOf("clanid") > -1){
+                        var clanID = href.substring(href.indexOf("clanid=")+7);
+                        window.parent.ROE.Frame.popupClan(clanID);
+                    }else{
+                        window.parent.ROE.Frame.popupClan();
+                    }                   
+                }*/
+            });
+        });
+
+    </script>
+
+
+</head>
+<body class='Popup' style="margin-left: 0; margin-right: 0;">
+
+    
+
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+        <Services>
+            <asp:ServiceReference Path="Troops.asmx" />
+        </Services>
+    </asp:ScriptManager>
+        
+        <div class="TDContent" style=" min-width:0px; width: 100%; float: left; clear: both;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           
+        </div>
+        
+    <asp:UpdateProgress ID="UpdateProgress2" runat="server" >
+        <ProgressTemplate>
+            <div style="border: 1px solid rgb(30,30,30);color:rgb(195,144,55);background-color: rgb(75, 61, 48); position:fixed;left:50%;top:100px;z-index:1000;font-size:12pt;padding:5px;">
+                <center><img src='https://static.realmofempires.com/images/misc/ajax-loader1.gif' /><br />
+                loading
+                </center>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+        </form>
+
+</body>
+</html>

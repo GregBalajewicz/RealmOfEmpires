@@ -1,0 +1,90 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterPopupTemplate_m.master.cs" Inherits="masterPopupTemplate_m" %>
+
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><%= RSc("GameName") %></title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <script src="<%= Config.InDev ? "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js" : "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" %>" type="text/javascript"></script>
+    <script src="../script-nochange/jquery.dimensions.js" type="text/javascript"></script>
+    <script src="../script-nochange/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../script-nochange/jquery.json-2.2.js" type="text/javascript"></script>
+    <script src="../script-nochange/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../script/bda.js" type="text/javascript"></script>
+    <script src="../script/interface.js" type="text/javascript"></script>
+    <script src="../script/interfaces.js" type="text/javascript"></script>
+    <script src="../script/menus_c.js" type="text/javascript"></script>
+    <script src="../script/menus.4.js?11" type="text/javascript"></script>
+    <script src="../script/autopop.js" type="text/javascript"></script>
+    <script src="../script/countdown_old.js" type="text/javascript"></script>
+    <script src="../script/help.js" type="text/javascript"></script>
+
+    
+    
+    <link href="../static/main_c.css" rel="stylesheet" type="text/css" />
+    <link href="../static/main_m.css" rel="stylesheet" type="text/css" />
+    <link href="../static/menus_c.ss" rel="stylesheet" type="text/css" />
+    <link href="../static/help.css" rel="stylesheet" type="text/css" />
+    <link href="../static/roe-ui.css" rel="stylesheet" type="text/css" />
+    <link href="../static/roe-building.css" rel="stylesheet" type="text/css" />
+    <link href="../static/roe-resources.css" rel="stylesheet" type="text/css" />
+    <link href="../static/roe-credits.css" rel="stylesheet" type="text/css" />
+
+    <script src="../script/clock.js" type="text/javascript"></script>
+
+    <script src="../script/troops.3.js?2" type="text/javascript"></script>
+    <script src="../script/misc.js?4" type="text/javascript"></script>
+    <script src="../script/ROE_c.js" type="text/javascript"></script>
+    <script src="../script/ROE_m.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        <asp:Literal runat=server ID="lblJSONStruct"></asp:Literal>    
+
+        function pageLoad () 
+        {       
+            jaxReplace();
+            UpdateStartingCoins();
+            initTimers();
+             $('.helpQuestion, #highlight').remove();
+            initHelp();
+            InitStripeTable();
+            initFakeSelects();
+            InitAutoPop();
+            InitAutoPop2();
+            InitAutoPop3();
+        }        
+    </script>  
+    
+    <link type="text/json" rel="help" href="../static/help/j_Global.json.aspx" />
+    <asp:contentplaceholder id="HeadPlaceHolder" runat="server">
+    </asp:contentplaceholder>
+
+</head>
+<body runat="server" id="body" class="Popup" style="margin-left: 0; margin-right: 0; ">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+        </asp:ScriptManager>
+
+
+   
+     <div class="TDContent" style="width: 100%; float: left; clear: both;">
+    <asp:ContentPlaceHolder ID="cph1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+        <asp:UpdateProgress ID="UpdateProgress2" runat="server" >
+        <ProgressTemplate>
+            <div style="color:rgb(195,144,55);background-color: rgb(75, 61, 48); position:fixed;left:50%;top:100px;z-index:1000;font-size:12pt;padding:5px;">
+                <center><img src='https://static.realmofempires.com/images/misc/ajax-loader1.gif' /><br />
+                loading
+                </center>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    </form>
+</body>
+</html>

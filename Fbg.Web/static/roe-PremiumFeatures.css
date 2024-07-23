@@ -1,0 +1,153 @@
+﻿#popup_servants {
+    background-image: url('https://static.realmofempires.com/images/backgrounds/M_BG_Items.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.templ_premiumFeatures {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+
+    .templ_premiumFeatures td {
+        vertical-align: top;
+    }
+
+    .templ_premiumFeatures .name {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .templ_premiumFeatures .pfDesc {
+        color: #CCCCCC;
+    }
+
+.templ_premiumFeatures .pfHeaderText {
+    text-align: center;
+    margin: 5px;
+    font-family: "Arapay";
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+
+.templ_premiumFeatures .onePF {
+    height: 69px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 1px solid #726F68;
+}
+        
+        .templ_premiumFeatures .onePF .icon
+        {
+            float: left;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            height:64px;
+            width:64px;
+            background-size: 100% 100%;
+        }
+            .templ_premiumFeatures .onePF .action {
+                float: right;
+                margin-top: 19px;
+                width: 36px;
+                height: 35px;
+                background-size: 100% 100%;
+            }
+                .templ_premiumFeatures .onePF .action.busy {
+                    background-image: url('https://static.realmofempires.com/images/misc/busy_biggrey.gif') !important;
+                }
+        
+        .templ_premiumFeatures .onePF .txt
+        {
+            padding: 5px;
+        }
+
+        .templ_premiumFeatures .pfTitle {
+            font-family: "IM Fell French Canon SC";
+            font-size:16px;
+        }
+
+.PFInlineRow {
+    position: absolute;
+    width: 100%;
+    height: 33px;
+    overflow: hidden;
+}
+    .PFInlineRow .PFText {
+        text-transform: uppercase;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 138px;
+        bottom: 0px;
+    }
+
+        .PFInlineRow .PFText .PFDesc, 
+        .PFInlineRow .PFText .PFDura, 
+        .PFInlineRow .PFText .PFState, 
+        .PFInlineRow .PFText .PFTimer {
+            position: absolute;
+        }
+        .PFInlineRow .PFText .PFDesc,
+        .PFInlineRow .PFText .PFState {
+            top: 4px;
+        }
+
+        .PFInlineRow .PFText .PFDesc,
+        .PFInlineRow .PFText .PFDura {
+            left:0px;
+            width: 130px;
+            text-align: right;
+        }
+        .PFInlineRow .PFText .PFState,
+        .PFInlineRow .PFText .PFTimer {
+            right: 0px;
+            width: 60px;
+            text-align: center;
+            background: #060606;
+        }
+
+        .PFInlineRow .PFText .PFState.active {
+            color:#39EC00;
+        }
+        .PFInlineRow .PFText .PFState.inactive {
+            color: #FF1D1D;
+        }
+        .PFInlineRow .PFText .PFDura {
+            top: 16px;
+        }
+        .PFInlineRow .PFText .PFTimer {
+            top: 16px;
+        }
+
+    .PFInlineRow .PFIcon {
+        position: absolute;
+        right: 104px;
+        top: 3px;
+        width: 27px;
+        height: 27px;
+        background-size: 100% 100%;
+    
+}
+    .PFInlineRow .castSpell {
+        position: absolute;
+        right: 0px;
+        top: 1px;
+    }
+
+        .PFInlineRow .castSpell.busy {
+            background-image: url(https://static.realmofempires.com/images/misc/busy_biggrey.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: default;
+            opacity: .8;
+        }
+        .PFInlineRow .castSpell.areyousure {
+            color: #FF1D1D;
+        }
+
+
+

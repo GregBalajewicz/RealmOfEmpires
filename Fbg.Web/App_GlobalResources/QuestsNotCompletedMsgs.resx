@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Advisor" xml:space="preserve">
+    <value>You have not accessed the advisor yet.</value>
+  </data>
+  <data name="BarracksRecruitTime" xml:space="preserve">
+    <value>This is not correct. Remember that you can ignore the decimal part of the number. So if the recruitment time factor is 40.45%, all you have to enter is "40" in the text box.</value>
+  </data>
+  <data name="BattleSimCM" xml:space="preserve">
+    <value>This is not correct. Remember to run the simulation with defender's wall and towers both at level 0</value>
+  </data>
+  <data name="BattleSimLC" xml:space="preserve">
+    <value>This is not correct. Remember to run the simulation with defender's wall and towers both at level 0</value>
+  </data>
+  <data name="BattleSimLCWithWall" xml:space="preserve">
+    <value>This is not correct. Did you remember to run the simulation with defender's wall and towers both at level 10?</value>
+  </data>
+  <data name="BattleSimRamAndTreb" xml:space="preserve">
+    <value>This is not correct. 
+&lt;BR&gt;- Did you remember to run the simulation with defender's wall and towers both at level 10?
+&lt;BR&gt;- Did you remember to include 40 rams and 40 trebuchets with the attack?
+&lt;BR&gt;- Did you remember to target defensive towers with the trebuchets?
+&lt;BR&gt; - Did you remember to set Defender's Wall Research Defence Bonus to 0%?</value>
+  </data>
+  <data name="BattleSimSpies" xml:space="preserve">
+    <value>This is not correct. Make sure you enter the exact number which includes the decimal part.</value>
+  </data>
+  <data name="ClanLeaders" xml:space="preserve">
+    <value>Nope, that's not correct. Remember that you must be part of a clan, and name one of the 'Owners' of your clan</value>
+  </data>
+  <data name="ClanMates" xml:space="preserve">
+    <value>I don't see any post made by you...</value>
+  </data>
+  <data name="DefenseFactor" xml:space="preserve">
+    <value>This is not correct. Make sure you only enter a number. You do not need to enter the decimal part either.</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>This is not correct. Your food consumption is before the '/' and food production after the '/'.</value>
+  </data>
+  <data name="Friends" xml:space="preserve">
+    <value>This is not the correct number. Please make sure you are checking the correct realm!
+
+&lt;BR&gt;&lt;BR&gt;
+
+&lt;img src= 'https://static.realmofempires.com/images/navIcons/ranking1.gif' align="left" style="padding-right: 5px" /&gt;If you are having trouble, note that there could be a discrepancy between Realm of Empires and Facebook's friend count therefore check your &lt;I&gt;Number of Friends&lt;/I&gt; on the &lt;I&gt;&lt;U&gt;Friend Network Ranking&lt;/U&gt;&lt;/I&gt; screen and enter this number instead. You will see yourself highlighted when you go to this screen. Access this screen from the Ranking menu item.</value>
+  </data>
+  <data name="InfantryRecruitTime" xml:space="preserve">
+    <value>This is not correct. Remember that you only need to enter minutes. So if you see recruitment time to be "00:15:30", meaning 15 minutes, 30 seconds, you only need to enter 15 in the text box.</value>
+  </data>
+  <data name="Invite" xml:space="preserve">
+    <value>You have not clicked the invite button yet.</value>
+  </data>
+  <data name="JoinClan" xml:space="preserve">
+    <value>You are not part of a clan yet.</value>
+  </data>
+  <data name="MyPoints" xml:space="preserve">
+    <value>This is not correct. You must go to the &lt;U&gt;Player Ranking&lt;/U&gt; screen accessible from the Ranking navigation icon &lt;img src= 'https://static.realmofempires.com/images/navIcons/ranking1.gif' /&gt; to get this information. </value>
+  </data>
+  <data name="NoRoomInTreasury" xml:space="preserve">
+    <value>You cannot accept the reward at this time since your treasury does not have enough room!
+&lt;BR&gt;&lt;BR&gt; You currently have {0} silver and your treasury can hold up to {1} silver, this leaves room for only {2} silver. &lt;BR&gt;&lt;BR&gt;You must spend some of your silver (by upgrading some buildings for example) before claiming your reward OR upgrade your treasury so that it can hold more.</value>
+  </data>
+  <data name="NoRoomInTreasury2" xml:space="preserve">
+    <value>You cannot accept the reward at this village since your treasury does not have enough room!
+&lt;BR&gt;&lt;BR&gt; Switch to a different village or spend some of your silver before claiming your reward.</value>
+  </data>
+  <data name="Q2_ApplyTags" xml:space="preserve">
+    <value>I don't see the tag being applied in the manner specified above.</value>
+  </data>
+  <data name="Q2_CreateTags" xml:space="preserve">
+    <value>I don't see the tag created... remember you must create all the tags listed above</value>
+  </data>
+  <data name="Q2_Filters" xml:space="preserve">
+    <value>I don't see any filter applied. Make sure you select the DEFEND filter as described.</value>
+  </data>
+  <data name="Q2_MultiFilter" xml:space="preserve">
+    <value>I don't see you as having any filter that has 2 tags... Please create the filter as described.</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>This is not correct. Your silver is before the '/' and treasury size after the '/'.</value>
+  </data>
+  <data name="SilverProduction" xml:space="preserve">
+    <value>This is not correct.</value>
+  </data>
+  <data name="Stable" xml:space="preserve">
+    <value>I don't see the Stables built...</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>I do not see any supporting troops stationed at this village. You must claim your reward once the supporting troops arrive at your village.</value>
+  </data>
+  <data name="Tavern" xml:space="preserve">
+    <value>I don't see the Tavern built...</value>
+  </data>
+  <data name="TOU" xml:space="preserve">
+    <value>Nope! that's not it! We would not want you to be banned for something by mistake so please read the Terms of Use carefully :)</value>
+  </data>
+  <data name="Tutorial" xml:space="preserve">
+    <value>You have not completed the tutorial yet! Remember you must complete the tutorial to the very end!</value>
+  </data>
+  <data name="FindInactives" xml:space="preserve">
+    <value>I do not see any messages sent by you at all? Remember that the only way to be sure a player is inactive, is to try to contact him/her. Please do so for this quest.</value>
+  </data>
+  <data name="RecruitSpies" xml:space="preserve">
+    <value>Please recruit 1 spy first.</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>I don't see any custom mail folders</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>I don't see any custom report folders</value>
+  </data>
+  <data name="BrrcksLvl1" xml:space="preserve">
+    <value>You must have barracks constructed before you are able to accept the reward for this quest. </value>
+  </data>
+  <data name="SMLvl3" xml:space="preserve">
+    <value>You must have silver mine at level 3 before you are able to accept the reward for this quest.</value>
+  </data>
+  <data name="SMLvl5" xml:space="preserve">
+    <value>You must have silver mine at level 5 before you are able to accept the reward for this quest.</value>
+  </data>
+  <data name="Resarch" xml:space="preserve">
+    <value>You don't have any completed research. If you already initiated the research, please wait for the research to complete, then claim your rewards.</value>
+  </data>
+  <data name="D2_Food" xml:space="preserve">
+    <value>This is not correct. The food remaining is located in the bottom portion of the Village Overview next to silver.</value>
+  </data>
+  <data name="D2_Mail" xml:space="preserve">
+    <value>Looks like you haven't starred any messages. Go to Mail and click on the star on the message you want to keep. You can unstar it later by clicking it again.</value>
+  </data>
+  <data name="D2_Reports" xml:space="preserve">
+    <value>I don't see any starred reports.</value>
+  </data>
+</root>

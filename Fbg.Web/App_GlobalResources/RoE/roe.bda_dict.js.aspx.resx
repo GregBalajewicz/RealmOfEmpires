@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="incoming" xml:space="preserve">
+    <value>incoming</value>
+  </data>
+  <data name="InOut" xml:space="preserve">
+    <value>In &amp; Outgoing</value>
+  </data>
+  <data name="Items" xml:space="preserve">
+    <value>The Bazaar and Inventory</value>
+  </data>
+  <data name="limit" xml:space="preserve">
+    <value>"Limit to current village only"</value>
+  </data>
+  <data name="noTroops" xml:space="preserve">
+    <value>&lt;TR class="noTroopsMsg"&gt;&lt;TD&gt; No %Dir% troops &lt;/TD&gt;&lt;/TR&gt;</value>
+  </data>
+  <data name="outgoing" xml:space="preserve">
+    <value>outgoing</value>
+  </data>
+  <data name="reportTitle" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="showAll" xml:space="preserve">
+    <value>Show all %Dir%</value>
+  </data>
+  <data name="tapToLoadMore" xml:space="preserve">
+    <value>[%cnt% more. Tap to load more]</value>
+  </data>
+  <data name="today_at" xml:space="preserve">
+    <value>today at </value>
+  </data>
+  <data name="tomorrow_at" xml:space="preserve">
+    <value>tomorrow at </value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Rename Clan</value>
+  </data>
+  <data name="PremiumFeatures" xml:space="preserve">
+    <value>Premium Features</value>
+  </data>
+  <data name="RefreshList" xml:space="preserve">
+    <value>Refresh Village List</value>
+  </data>
+  <data name="All_Resarchers_Busy" xml:space="preserve">
+    <value>All Resarchers Busy</value>
+  </data>
+  <data name="Click_To" xml:space="preserve">
+    <value>Click to research now</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed!</value>
+  </data>
+  <data name="Not_Enough_Silver" xml:space="preserve">
+    <value>Not Enough Silver</value>
+  </data>
+  <data name="Requirements_Not_Satisfied" xml:space="preserve">
+    <value>Requirements Not Satisfied</value>
+  </data>
+  <data name="Researching" xml:space="preserve">
+    <value>Researching...</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="AcceptNewTitle" xml:space="preserve">
+    <value>You have unlocked a new title! Hit the X to close popup.</value>
+  </data>
+  <data name="ActionPanel" xml:space="preserve">
+    <value>You can tap this header, to open the ACTION PANEL to wage war, contact other players etc</value>
+  </data>
+  <data name="CanNotUpgrade" xml:space="preserve">
+    <value>You cannot upgrade to the next level at this time! Complete all requirements for the next level, then come back here to upgrade </value>
+  </data>
+  <data name="EmpireGrasp" xml:space="preserve">
+    <value>Now that you have a grasp of your own empire, lets take a look at the world around you. </value>
+  </data>
+  <data name="ExploreTheMap" xml:space="preserve">
+    <value>It’s a good idea to explore the map to learn about other players near you.</value>
+  </data>
+  <data name="FreeMapExplore" xml:space="preserve">
+    <value>Feel free to explore the map now, click next when done</value>
+  </data>
+  <data name="Friends" xml:space="preserve">
+    <value>Some may become friends, but some may become enemies!</value>
+  </data>
+  <data name="GetMoreSilver" xml:space="preserve">
+    <value>You can also get more silver by improving mining technologies. Lets go visit your kingdom’s researchers. </value>
+  </data>
+  <data name="GreatFirstTarget" xml:space="preserve">
+    <value>Once you have recruited more troops, rebel villages make a great first target for expanding your empire.</value>
+  </data>
+  <data name="IncreaseSilverProduction" xml:space="preserve">
+    <value>Here are the technologies that increase silver production.</value>
+  </data>
+  <data name="MineIsUpgrading" xml:space="preserve">
+    <value>Your silver mine is upgrading. Speed up the upgrade to complete it instantly! </value>
+  </data>
+  <data name="Neighbor" xml:space="preserve">
+    <value>Here are your neighbors. </value>
+  </data>
+  <data name="OhLook" xml:space="preserve">
+    <value>Oh look! You have completed a quest!</value>
+  </data>
+  <data name="Research" xml:space="preserve">
+    <value>Here are the groups of technologies you can research.</value>
+  </data>
+  <data name="ResearchEmpire" xml:space="preserve">
+    <value>Research is critical to growing your empire. </value>
+  </data>
+  <data name="ReturnToVoV" xml:space="preserve">
+    <value>Now lets return to your village overview</value>
+  </data>
+  <data name="SilverCurrentLevel" xml:space="preserve">
+    <value>This is your silver mine’s current level.</value>
+  </data>
+  <data name="SilverMineLevel" xml:space="preserve">
+    <value>As you can see, your silver mine is at level %l%.</value>
+  </data>
+  <data name="SilverResearchGroup" xml:space="preserve">
+    <value>Click on the Silver Mine research group.</value>
+  </data>
+  <data name="Swipe" xml:space="preserve">
+    <value>You can swipe left and right to explore all possible research items.</value>
+  </data>
+  <data name="TappingAVillage" xml:space="preserve">
+    <value>Great! Tapping on a village displays basic information about it, see the header</value>
+  </data>
+  <data name="TappingMap" xml:space="preserve">
+    <value>Tapping on a village, selects it. Try this now. </value>
+  </data>
+  <data name="TapRebelVillage" xml:space="preserve">
+    <value>Well done! Now tap on a rebel village - one with &lt;img src="https://static.realmofempires.com/images/map/freb.png" /&gt; icon. Tap it to center the blue square pointer on the rebel. </value>
+  </data>
+  <data name="TapResearch" xml:space="preserve">
+    <value>Find a research technology available now, and tap it to begin research.</value>
+  </data>
+  <data name="TapToEnter" xml:space="preserve">
+    <value>Lets upgrade it to increase production. Tap it to enter. </value>
+  </data>
+  <data name="TutorialIsNowComplete" xml:space="preserve">
+    <value>Your tutorial is now complete. Go to the quest window for more guidance - and many helpful rewards. Good luck! &lt;img height="1" width="1" border="0" src="https://tpc.trialpay.com/?tp_aid=1902582&amp;tp_pid=P7PBDGGD" /&gt;</value>
+  </data>
+  <data name="Upgrade" xml:space="preserve">
+    <value>Upgrade to next level now.</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome to your village! </value>
+  </data>
+  <data name="WellDone" xml:space="preserve">
+    <value>Well done! Now tap the X to return to your village overview. </value>
+  </data>
+  <data name="SwipeMap" xml:space="preserve">
+    <value>Great! Swiping, moves the map to a new location, try this now.</value>
+  </data>
+  <data name="NewVersionRefresh_later" xml:space="preserve">
+    <value>Later</value>
+  </data>
+  <data name="NewVersionRefresh_msg" xml:space="preserve">
+    <value>New version is available! Hit Refresh to reload the game to ensure it works correctly.</value>
+  </data>
+  <data name="NewVersionRefresh_refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="rsr_BarracksRecruitSpeed" xml:space="preserve">
+    <value>Barracks Recruit Speed</value>
+  </data>
+  <data name="rsr_ConstructionSpeed" xml:space="preserve">
+    <value>Construction Speed</value>
+  </data>
+  <data name="rsr_DefenseFactor" xml:space="preserve">
+    <value>Defense Factor</value>
+  </data>
+  <data name="rsr_FarmOutput" xml:space="preserve">
+    <value>Farm Output</value>
+  </data>
+  <data name="rsr_SilverProduction" xml:space="preserve">
+    <value>Silver Production</value>
+  </data>
+  <data name="rsr_StablesRecruitSpeed" xml:space="preserve">
+    <value>Stables Recruit Speed</value>
+  </data>
+  <data name="rsr_TavernRecruitSpeed" xml:space="preserve">
+    <value>Tavern Recruit Speed</value>
+  </data>
+  <data name="rsr_TradePostCapacity" xml:space="preserve">
+    <value>TradePost Capacity</value>
+  </data>
+  <data name="rsr_TreasuryCapacity" xml:space="preserve">
+    <value>Treasury Capacity</value>
+  </data>
+  <data name="rsr_UnlocksInfantry" xml:space="preserve">
+    <value>Unlocks Infantry</value>
+  </data>
+  <data name="rsr_UnlocksKnight" xml:space="preserve">
+    <value>Unlocks Knight</value>
+  </data>
+  <data name="rsr_UnlocksLightCavalry" xml:space="preserve">
+    <value>Unlocks Light Cavalry</value>
+  </data>
+  <data name="rsr_UnlocksSpy" xml:space="preserve">
+    <value>Unlocks Spy</value>
+  </data>
+  <data name="rsr_UnlocksTrebuchet" xml:space="preserve">
+    <value>Unlocks Trebuchet</value>
+  </data>
+  <data name="rsr_WorkshopRecruitSpeed" xml:space="preserve">
+    <value>Workshop Recruit Speed</value>
+  </data>
+  <data name="rsr_LoadingResearchAssets" xml:space="preserve">
+    <value>Loading research assets.&lt;br/&gt;This may take a few seconds on the first load.</value>
+  </data>
+  <data name="rsr_LoadingResearchInformation" xml:space="preserve">
+    <value>Loading research information.</value>
+  </data>
+  <data name="qb_SpeedUp_Cut1" xml:space="preserve">
+    <value>Cut 1 Min</value>
+  </data>
+  <data name="qb_SpeedUp_Cut15" xml:space="preserve">
+    <value>Cut 15 Min</value>
+  </data>
+  <data name="qb_SpeedUp_Cut240" xml:space="preserve">
+    <value>Cut 4 Hours</value>
+  </data>
+  <data name="qb_SpeedUp_Cut60" xml:space="preserve">
+    <value>Cut 1 Hour</value>
+  </data>
+  <data name="qb_SpeedUp_CutFinishNow" xml:space="preserve">
+    <value>Finish Now</value>
+  </data>
+  <data name="qb_SpeedUp_Servant1" xml:space="preserve">
+    <value>1 Servant</value>
+  </data>
+  <data name="qb_SpeedUp_Servant15" xml:space="preserve">
+    <value>5 Servants</value>
+  </data>
+  <data name="qb_SpeedUp_Servant240" xml:space="preserve">
+    <value>30 Servants</value>
+  </data>
+  <data name="qb_SpeedUp_Servant60" xml:space="preserve">
+    <value>10 Servants</value>
+  </data>
+  <data name="qb_SpeedUp_ServantFinishNow" xml:space="preserve">
+    <value>Servants</value>
+  </data>
+  <data name="qb_SpeedUpDowngrade_CutFinishNow" xml:space="preserve">
+    <value>Downgrade Now</value>
+  </data>
+  <data name="qb_SpeedUpDowngrade_ServantFinishNow" xml:space="preserve">
+    <value>15 Servants</value>
+  </data>
+  <data name="spell_name_speedup1" xml:space="preserve">
+    <value>Time Snip</value>
+  </data>
+  <data name="spell_name_speedup15" xml:space="preserve">
+    <value>Time Chop</value>
+  </data>
+  <data name="spell_name_speedup240" xml:space="preserve">
+    <value>Time Slash</value>
+  </data>
+  <data name="spell_name_speedup60" xml:space="preserve">
+    <value>Time Cut</value>
+  </data>
+  <data name="spell_name_speedupDowngradenow" xml:space="preserve">
+    <value>Fireball</value>
+  </data>
+  <data name="spell_name_speedupFinishnow" xml:space="preserve">
+    <value>Time Stop</value>
+  </data>
+  <data name="CloseSpeedUp" xml:space="preserve">
+    <value>Excellent! Now close the speed up popup</value>
+  </data>
+  <data name="tutorialEnterSM" xml:space="preserve">
+    <value>Lets upgrade it to increase production. Click it to enter.</value>
+  </data>
+  <data name="tutorialSelectResearch" xml:space="preserve">
+    <value>Find a research technology available now, and click it to begin research.</value>
+  </data>
+  <data name="NewVersionRefresh_msg2" xml:space="preserve">
+    <value>&lt;BR&gt;&lt;BR&gt;&lt;B&gt;What\'s new?&lt;/B&gt;&lt;BR&gt;</value>
+  </data>
+</root>

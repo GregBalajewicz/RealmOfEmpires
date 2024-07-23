@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cb_noInform" xml:space="preserve">
+    <value>Check if you do not want to tell clan members that there is a new post on this clan forum.</value>
+  </data>
+  <data name="cb_ViewInSafeMode" xml:space="preserve">
+    <value>View forums in safe mode</value>
+  </data>
+  <data name="createdBy" xml:space="preserve">
+    <value>Created By </value>
+  </data>
+  <data name="createdOn" xml:space="preserve">
+    <value>Created On </value>
+  </data>
+  <data name="forumDetail" xml:space="preserve">
+    <value>Forum Details - enter a new or edit existing forum</value>
+  </data>
+  <data name="hAlertMembers" xml:space="preserve">
+    <value>Alert Clan Members</value>
+  </data>
+  <data name="hDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="hModerated" xml:space="preserve">
+    <value>Moderated</value>
+  </data>
+  <data name="hNameDecs" xml:space="preserve">
+    <value>Name and Description</value>
+  </data>
+  <data name="hSecurityLevel" xml:space="preserve">
+    <value>Security Level</value>
+  </data>
+  <data name="hSort" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="hSortOrder" xml:space="preserve">
+    <value>Sort Order</value>
+  </data>
+  <data name="hTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="imgOldPostTT" xml:space="preserve">
+    <value>Old Post</value>
+  </data>
+  <data name="lblModerated" xml:space="preserve">
+    <value>&lt;i&gt; (moderated) &lt;/i&gt;</value>
+  </data>
+  <data name="li_allMembers" xml:space="preserve">
+    <value>All clan members</value>
+  </data>
+  <data name="li_allRoles" xml:space="preserve">
+    <value>Owners to Inviters</value>
+  </data>
+  <data name="li_onlyOwnAdm" xml:space="preserve">
+    <value>Owners &amp; Admins</value>
+  </data>
+  <data name="li_onlyOwnAdmDip" xml:space="preserve">
+    <value>Owners to Diplomats</value>
+  </data>
+  <data name="li_onlyOwnAdmDipFA" xml:space="preserve">
+    <value>Owners to Forum Admins</value>
+  </data>
+  <data name="mngDelForums" xml:space="preserve">
+    <value>Manage Deleted Forums</value>
+  </data>
+  <data name="mngUnapprovedPosts" xml:space="preserve">
+    <value>Manage Unapproved Posts</value>
+  </data>
+  <data name="noForums" xml:space="preserve">
+    <value>No forums to show</value>
+  </data>
+  <data name="onlyNumsVal" xml:space="preserve">
+    <value>Only numbers from 0-1000 are acceptable.</value>
+  </data>
+  <data name="reqTitle" xml:space="preserve">
+    <value>&lt;/br&gt;The Title field is required.</value>
+  </data>
+  <data name="sureToDelete" xml:space="preserve">
+    <value>Are you sure you want to delete this forum?</value>
+  </data>
+  <data name="mngMySharedForum" xml:space="preserve">
+    <value>Cross-Clan Forum Sharing - Manage My Shared Forums</value>
+  </data>
+  <data name="mngWhiteList" xml:space="preserve">
+    <value>Cross-Clan Forum Sharing - White-list clans to accept their forums</value>
+  </data>
+  <data name="SecurityLegendBody" xml:space="preserve">
+    <value>&lt;B&gt;All clan members:&lt;/B&gt; All clan members can access forum
+                    &lt;br /&gt;&lt;B&gt;Owners &amp; Admins:&lt;/B&gt; Only Owners &amp; Admins can access forum
+                    &lt;br /&gt;&lt;B&gt;Owners to Diplomat:&lt;/B&gt; Only Owners, Admins &amp; Diplomats can access forum
+                    &lt;br /&gt;&lt;B&gt;Owners to Forum Admin:&lt;/B&gt; Only Owners, Admins, Diplomats &amp; Forum Admins can access forum
+                    &lt;br /&gt;&lt;b&gt;Owners to Invites&lt;/B&gt; : Only Owners, Admins, Diplomats, Forum Admins &amp; Inviters can access forum</value>
+  </data>
+  <data name="SecurityLegendTitle" xml:space="preserve">
+    <value>Security Level Legend</value>
+  </data>
+  <data name="alertClanMembers_desc" xml:space="preserve">
+    <value>If checked, new post in the forum will result in notification to players that a new post was made. Do this for important forums only</value>
+  </data>
+  <data name="AlertLegendBody" xml:space="preserve">
+    <value>When checked, the clan button will light up telling the player that there is a new post on the forum. Also, for forums with Security Level "All clan members", a post on the clan chat will be made</value>
+  </data>
+  <data name="AlertLegendTitle" xml:space="preserve">
+    <value>More Info</value>
+  </data>
+</root>

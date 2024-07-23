@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="abPlyrName" xml:space="preserve">
+    <value>(player name)</value>
+  </data>
+  <data name="blockUser" xml:space="preserve">
+    <value>In general, if the abuse is occurring via in game messages, we ask that you block the person from sending you any more messages.</value>
+  </data>
+  <data name="btn_submit" xml:space="preserve">
+    <value>Submit Form</value>
+  </data>
+  <data name="byClicking" xml:space="preserve">
+    <value>by clicking</value>
+  </data>
+  <data name="contactSupport" xml:space="preserve">
+    <value>Contact Support</value>
+  </data>
+  <data name="copyPasteConvo" xml:space="preserve">
+    <value>Copy and paste here all conversations you had with the offer company.</value>
+  </data>
+  <data name="copyPastePP" xml:space="preserve">
+    <value>Please copy and paste your electronic receipt here.</value>
+  </data>
+  <data name="exampleOfAbuse" xml:space="preserve">
+    <value>Criminal level, &lt;u&gt;real life&lt;/u&gt; death threats is an example of a type of abuse that we will review before the 24 hour period elapses.</value>
+  </data>
+  <data name="findClauseViolated" xml:space="preserve">
+    <value>Find the specific clause that you feel was violated. Copy and paste that clause here.</value>
+  </data>
+  <data name="hasTwentyFourPassed" xml:space="preserve">
+    <value>Has 24 hours passed since the abuse occured?</value>
+  </data>
+  <data name="h_abuser" xml:space="preserve">
+    <value>Abuser(s)</value>
+  </data>
+  <data name="h_abuserMat" xml:space="preserve">
+    <value>The Abusive Material</value>
+  </data>
+  <data name="h_AbuseType" xml:space="preserve">
+    <value>Type of Abuse</value>
+  </data>
+  <data name="h_blockedAbuser" xml:space="preserve">
+    <value>Did you block the abuser?</value>
+  </data>
+  <data name="h_CommMed" xml:space="preserve">
+    <value>Communication Medium</value>
+  </data>
+  <data name="h_commTrans" xml:space="preserve">
+    <value>Transcript of your communication with the offer company</value>
+  </data>
+  <data name="h_contactedComp" xml:space="preserve">
+    <value>Did you contact the offer company?</value>
+  </data>
+  <data name="h_message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="h_offCompName" xml:space="preserve">
+    <value>Name of the offer completed</value>
+  </data>
+  <data name="h_offerComp" xml:space="preserve">
+    <value>Offer Company</value>
+  </data>
+  <data name="h_plyrName" xml:space="preserve">
+    <value>Your Player Name</value>
+  </data>
+  <data name="h_ppReceipt" xml:space="preserve">
+    <value>Electronic Receipt</value>
+  </data>
+  <data name="h_ppTransID" xml:space="preserve">
+    <value>Order ID OR Transaction ID</value>
+  </data>
+  <data name="h_provoked" xml:space="preserve">
+    <value>Provoked?</value>
+  </data>
+  <data name="h_realm" xml:space="preserve">
+    <value>Realm</value>
+  </data>
+  <data name="h_scope" xml:space="preserve">
+    <value>Scope</value>
+  </data>
+  <data name="h_subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="h_terms" xml:space="preserve">
+    <value>Terms</value>
+  </data>
+  <data name="h_transStat" xml:space="preserve">
+    <value>Transaction Status</value>
+  </data>
+  <data name="h_twentyFourPassed" xml:space="preserve">
+    <value>24 hours passed?</value>
+  </data>
+  <data name="h_urgency" xml:space="preserve">
+    <value>Urgency</value>
+  </data>
+  <data name="h_violatedTOU" xml:space="preserve">
+    <value>Specific TOU Clause Violated</value>
+  </data>
+  <data name="h_yourEmail" xml:space="preserve">
+    <value>Your Email</value>
+  </data>
+  <data name="link_back" xml:space="preserve">
+    <value>BACK TO THE GAME</value>
+  </data>
+  <data name="link_Guidelines" xml:space="preserve">
+    <value>guidelines</value>
+  </data>
+  <data name="link_here" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="link_OffersPg" xml:space="preserve">
+    <value>offers page</value>
+  </data>
+  <data name="link_TOU" xml:space="preserve">
+    <value>terms of use</value>
+  </data>
+  <data name="li_blockedYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="li_blockedNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="li_GameDisBoard" xml:space="preserve">
+    <value>Game Discussion Board</value>
+  </data>
+  <data name="li_GameThreats" xml:space="preserve">
+    <value>Game threats (I will take your village, will attack you etc)</value>
+  </data>
+  <data name="li_InGameComm" xml:space="preserve">
+    <value>In game communication (mail, forums, etc)</value>
+  </data>
+  <data name="li_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="li_offCompOther" xml:space="preserve">
+    <value>Other (Please specify in message box)</value>
+  </data>
+  <data name="li_OutsideOfGame" xml:space="preserve">
+    <value>Outside of the game (via email, chat, facebook, etc)</value>
+  </data>
+  <data name="li_provokedYes" xml:space="preserve">
+    <value>Yes (Explain in message)</value>
+  </data>
+  <data name="li_RLThreats" xml:space="preserve">
+    <value>Real-Life threats (threats to you as a person outside of the game)</value>
+  </data>
+  <data name="li_scopeAffEveryone" xml:space="preserve">
+    <value>Affects everyone!</value>
+  </data>
+  <data name="li_scopeAffMe" xml:space="preserve">
+    <value>Affects only me (not sure about others)</value>
+  </data>
+  <data name="li_scopeAffOthers" xml:space="preserve">
+    <value>Affects me and I know it affects others</value>
+  </data>
+  <data name="li_SevereInsults" xml:space="preserve">
+    <value>Severe insults, profanity, foul language etc</value>
+  </data>
+  <data name="li_timePassedNo" xml:space="preserve">
+    <value>No (we review your case in extreme abuse)</value>
+  </data>
+  <data name="li_transStatCompleted" xml:space="preserve">
+    <value>COMPLETED</value>
+  </data>
+  <data name="li_transStatOther" xml:space="preserve">
+    <value>Other (Only Completed transactions are cleared)</value>
+  </data>
+  <data name="li_transStatPending" xml:space="preserve">
+    <value>Pending (This transaction has not yet cleared)</value>
+  </data>
+  <data name="li_urgEssential" xml:space="preserve">
+    <value>Essential - I cannot play at all</value>
+  </data>
+  <data name="li_urgImportant" xml:space="preserve">
+    <value>Important - This is a major inconvenience</value>
+  </data>
+  <data name="li_urgMinor" xml:space="preserve">
+    <value>Minor - Small glitch, does not affect the game play</value>
+  </data>
+  <data name="li_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="noMonitorAblty" xml:space="preserve">
+    <value>We have no ability to monitor communcation mediums outside of our ingame communication and discussion board. Please contact facebook if communication took place there or take other appropriate action.</value>
+  </data>
+  <data name="noNameInRealm" xml:space="preserve">
+    <value>This name does not exist on the realm chosen above.</value>
+  </data>
+  <data name="NOTE" xml:space="preserve">
+    <value>NOTE! You must try to contact the offer company to resolve this first. If you did not, you MUST explain why in the message box below</value>
+  </data>
+  <data name="notValidEmail" xml:space="preserve">
+    <value>This does not appear to be a valid email address.</value>
+  </data>
+  <data name="openOur" xml:space="preserve">
+    <value>Open our</value>
+  </data>
+  <data name="pasteEntireComm" xml:space="preserve">
+    <value>Paste here the ENTIRE communication that constitutes the abuse.
+&lt;br /&gt;
+Do not edit in any shape or form.
+&lt;br /&gt;
+If abuse was on our discussion board, include a link to the post as well as the post's text. 
+&lt;br /&gt;
+This will be used as evidence to show your entire conversation with the person. 
+&lt;br /&gt;
+If this is modified in some way, perhaps to hide your mistakes, the case will be thrown out and/or actions may be taken against you.</value>
+  </data>
+  <data name="provokeByPlyr" xml:space="preserve">
+    <value>If the abuse you are reporting was provoked by you by actions violating our</value>
+  </data>
+  <data name="REMEMBER" xml:space="preserve">
+    <value>&lt;b&gt;REMEMBER&lt;/b&gt;! Using this to report petty insults, or just to damage/have someone banned is considered a serious offence.
+&lt;br /&gt;
+&lt;br /&gt;
+This is a game of &lt;b&gt;CONFLICT and WAR&lt;/b&gt;, emotions will run high, sometimes regretable outburst will occur.
+ &lt;br /&gt;
+ &lt;br /&gt;
+Abuse of this reporting system is considered a suspendable offence.&lt;br /&gt;</value>
+  </data>
+  <data name="selectRealm" xml:space="preserve">
+    <value>Select the realm that this issue relates to.</value>
+  </data>
+  <data name="rfv_pleaseSelect" xml:space="preserve">
+    <value>Please select</value>
+  </data>
+  <data name="rfv_required" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="rfv_emailRequired" xml:space="preserve">
+    <value>Your email address is required</value>
+  </data>
+  <data name="lbl_explainAbuse" xml:space="preserve">
+    <value>Please be specific and as brief as possible. Explain exactly what constitues the abuse you are reporting. DO NOT simply paste a long email and expect us to read it trying to determine what went wrong. Tell us EXACTLY what is the abuse.</value>
+  </data>
+  <data name="rfv_msgRequired" xml:space="preserve">
+    <value>Message is required</value>
+  </data>
+  <data name="rfv_selRealm" xml:space="preserve">
+    <value>Select a realm</value>
+  </data>
+  <data name="rfv_enterAbuserName" xml:space="preserve">
+    <value>Enter the player names of the abuser(s) you are reporting</value>
+  </data>
+  <data name="thanksForInquiry" xml:space="preserve">
+    <value>Thank you for your inquiry!
+&lt;br/&gt;&lt;br/&gt;
+You will get an automated email response acknowledging we've received your inquiry. If you do not receive it within an hour, please submit your inquiry again and double check you provided the correct email address.
+&lt;br/&gt;&lt;br/&gt;
+&lt;b&gt;DO YOU HAVE AN ATTACHMENT YOU WOULD LIKE TO INCLUDE?&lt;/b&gt; Then simply respond to the confirmation email with the attachment.
+&lt;br/&gt;&lt;br/&gt;
+We respond to your questions as soon as we can but please be patient.
+&lt;br/&gt;&lt;br/&gt;
+If you are reporting cases of player cheating, it may take a while for us to investigate and to protect everyones privacy, we generally do not respond to such reports but take appropriate action.</value>
+  </data>
+  <data name="toIdentify" xml:space="preserve">
+    <value>To identify the company, go to</value>
+  </data>
+  <data name="whereAbuse" xml:space="preserve">
+    <value>Where did the abuse occur?</value>
+  </data>
+  <data name="willNotReview" xml:space="preserve">
+    <value>we will not review your report and reporting this may result in actions against you.</value>
+  </data>
+  <data name="rfv_subjectRequired" xml:space="preserve">
+    <value>Subject is required</value>
+  </data>
+  <data name="custVal_nameNotFound" xml:space="preserve">
+    <value>Nick name not found</value>
+  </data>
+  <data name="custVal_notYourName" xml:space="preserve">
+    <value>This does not appear to be your player name</value>
+  </data>
+  <data name="li_RealmMulti" xml:space="preserve">
+    <value>Multiple realms or not realm specific.</value>
+  </data>
+  <data name="back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+</root>

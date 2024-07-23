@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AcceptedAndActive" xml:space="preserve">
+    <value>accepted and active</value>
+  </data>
+  <data name="AcceptSquareBrackets" xml:space="preserve">
+    <value>[Accept]</value>
+  </data>
+  <data name="APositiveAnswerToAnyOfThose" xml:space="preserve">
+    <value>A positive answer to any of those likely means you are breaking the stewarding rules.</value>
+  </data>
+  <data name="Appoint" xml:space="preserve">
+    <value>Appoint</value>
+  </data>
+  <data name="AppointAStewardBeforeAccountDeletion" xml:space="preserve">
+    <value>If you go on vacation, you must appoint a steward or risk having your account deleted - If you are inactive for 14 days and you have appointed a steward who has not accepted the appointment, your account will be deleted from the realm and your village will become ownerless.</value>
+  </data>
+  <data name="AppointNow" xml:space="preserve">
+    <value>Appoint now</value>
+  </data>
+  <data name="AreYouSureQuestionMark" xml:space="preserve">
+    <value>Are you sure? This cannot be undone. Consider transferring the stewardship to another player. Login as this player to do so and go to Account Stewardship again.</value>
+  </data>
+  <data name="AskYourselfTheseQuestions" xml:space="preserve">
+    <value>As a steward, ask yourself these questions:</value>
+  </data>
+  <data name="AsMyAccountSteward" xml:space="preserve">
+    <value>as my account steward</value>
+  </data>
+  <data name="BeActiveAsMuchAsPossible" xml:space="preserve">
+    <value>In a real-time game such as this, you must be active as your friends and clan-mates depend on you. If you go on vacation, you must appoint a steward or risk having your account on the realm deleted - 
+        If you are inactive for 14 days and you have appointed a steward </value>
+  </data>
+  <data name="BlogPost" xml:space="preserve">
+    <value>blog post</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelSquareBrackets" xml:space="preserve">
+    <value>[Cancel]</value>
+  </data>
+  <data name="CannotHaveMultipleTabsWhenSteward" xml:space="preserve">
+    <value>when logging in as a steward, remember that you cannot have multiple tabs opened! 
+                            You cannot have your account and account you are stewarding opened at the same time in multiple tabs or windows. 
+                            Doing so may result in errors. Close all tabs before logging in as steward.</value>
+  </data>
+  <data name="CannotTransferToYourSelf" xml:space="preserve">
+    <value>You cannot transfer to your self</value>
+  </data>
+  <data name="ConfirmThisIsTheRightPlayer" xml:space="preserve">
+    <value>Note, click player name to confirm this is the right player.</value>
+  </data>
+  <data name="Critical" xml:space="preserve">
+    <value>CRITICAL</value>
+  </data>
+  <data name="DelegateControlToAnotherPlayer" xml:space="preserve">
+    <value>Kingdom Stewardship allows you to delegate control of your kingdom to another player - when you go on vacation, or will be away for a few days.</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Stewardship is disabled on this realm</value>
+  </data>
+  <data name="EnsureThisIsSomeoneYouCanTrust" xml:space="preserve">
+    <value>&lt;em&gt;Ensure this is a person whom you trust!&lt;/em&gt; Actions taken by your steward cannot be reversed and, minus the limitations listed below on this page, the steward has full control of your account, including transfering the stewardship to someone else. </value>
+  </data>
+  <data name="EnterPlayerName" xml:space="preserve">
+    <value>Enter Player Name</value>
+  </data>
+  <data name="ForMoreExplanation" xml:space="preserve">
+    <value>For more explanation of the rules, please see this</value>
+  </data>
+  <data name="GeneralTermsOfUse" xml:space="preserve">
+    <value>general terms of use</value>
+  </data>
+  <data name="HowKingdomStewardshipWorks" xml:space="preserve">
+    <value>How kingdom stewardship works</value>
+  </data>
+  <data name="IAcceptTheFollowing" xml:space="preserve">
+    <value>I accept and understand the following:</value>
+  </data>
+  <data name="InactiveForFourteenDaysDeletion" xml:space="preserve">
+    <value>* Your account will be DELETED if you are inactive for 14 days.</value>
+  </data>
+  <data name="KingdomsIAmAStewardOf" xml:space="preserve">
+    <value>Kingdoms I am a steward of</value>
+  </data>
+  <data name="LastUpdatedDate" xml:space="preserve">
+    <value>Last updated September 2011</value>
+  </data>
+  <data name="LoginElipses" xml:space="preserve">
+    <value>Login...</value>
+  </data>
+  <data name="LoginEveryThirtyDays" xml:space="preserve">
+    <value>You must login at least once every 30 days in case of an extended absence.</value>
+  </data>
+  <data name="MakeSureToTrustYourSteward" xml:space="preserve">
+    <value>* Make sure you can trust your steward.</value>
+  </data>
+  <data name="MustAcceptTheFollowing" xml:space="preserve">
+    <value>You must accept the following rules before being able to perform this action</value>
+  </data>
+  <data name="NickNameNotFound" xml:space="preserve">
+    <value>Player with this nick name not found</value>
+  </data>
+  <data name="NoneAtThisTime" xml:space="preserve">
+    <value>None at this time</value>
+  </data>
+  <data name="PendingAcceptance" xml:space="preserve">
+    <value>pending acceptance</value>
+  </data>
+  <data name="PleaseConfirmTheTransfer" xml:space="preserve">
+    <value>PLEASE CONFIRM THE TRANSFER:</value>
+  </data>
+  <data name="ProceedQuestionMark" xml:space="preserve">
+    <value>PROCEED?</value>
+  </data>
+  <data name="Rules" xml:space="preserve">
+    <value>RULES!</value>
+  </data>
+  <data name="SquareBracketsCancelAppointment" xml:space="preserve">
+    <value>[Cancel Appointment]</value>
+  </data>
+  <data name="StewardCannotPoints" xml:space="preserve">
+    <value>What the steward cannot do</value>
+  </data>
+  <data name="StewardOfMyKingdom" xml:space="preserve">
+    <value>Steward of my kingdom</value>
+  </data>
+  <data name="StewardshipIsForTemporaryAbsence" xml:space="preserve">
+    <value>Stewardship is designed for a temporary absence and NOT for allowing a player to effectively play with another account.
+        Therefore stewardship is automatically cancelled 30 days after the owner of the account has last logged in; at which point
+        the account will be deleted from the realm (losing all villages)</value>
+  </data>
+  <data name="StewardshipIsForUpToThirtyDays" xml:space="preserve">
+    <value>* Stewardship is for maximum 30 days.</value>
+  </data>
+  <data name="StewardshipNotes" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StewardshipPointsFour" xml:space="preserve">
+    <value>&lt;li&gt;Am I stewarding this player mostly for my benefit?&lt;/li&gt;
+                    &lt;li&gt;Am I stewarding this player in order to make it easier for me or anyone else to take over the villages of this player without the player &lt;/li&gt;
+                    &lt;li&gt;Am I stewarding this account to attack some player with this and my account?&lt;/li&gt;</value>
+  </data>
+  <data name="StewardshipPointsOne" xml:space="preserve">
+    <value>&lt;li&gt;Once you appoint a steward (the steward will get an in-game mail notification), they will be able to either reject or accept the appointment &lt;/li&gt;
+                        &lt;li&gt;Once accepted, your steward will be able to login as you and play as you. Your clan Administrators will be able to see that your account is being managed by this person at this point of time. &lt;/li&gt;
+                        &lt;li&gt;The steward can cancel the appointment at any time but once they do so, they will lose control of the account. Your steward can also transfer the stewardship to someone else. &lt;/li&gt;
+                        &lt;li&gt;The steward can activate or cancel any premium feature or the nobility package&lt;/li&gt;</value>
+  </data>
+  <data name="StewardshipPointsThree" xml:space="preserve">
+    <value>&lt;li &gt;  No coordinated attacks on the same player: The steward cannot attack the same player, who is being attacked by the stewarded account, with his account&lt;br&gt; 
+ (1)During stewardship : Any attacks outgoing to the same player to be cancelled if the account you are stewarding is attacking the same player. &lt;br&gt;
+(2)For 48 hours after stewardship ends/last attack lands from the stewarded account.
+ &lt;/li&gt;
+ &lt;li &gt;The steward cannot support themselves with the account he manages. &lt;/li&gt;
+&lt;li &gt;The steward cannot send silver to himself from the account he manages. &lt;/li&gt;
+&lt;li &gt;You must abide by the</value>
+  </data>
+  <data name="StewardshipPointsTwo" xml:space="preserve">
+    <value>&lt;li&gt;Using stewarding in order to play multiple accounts is strictly prohibited.&lt;/li&gt;
+                        &lt;li&gt;The steward must play the account solely for the benefit of this account. Actions to benefit the steward's account are prohibited.&lt;/li&gt;
+</value>
+  </data>
+  <data name="TellMeMore" xml:space="preserve">
+    <value>tell me more...</value>
+  </data>
+  <data name="TransferringAccountToSteward" xml:space="preserve">
+    <value>Transferring account to steward:</value>
+  </data>
+  <data name="TransferStewardshipTo" xml:space="preserve">
+    <value>Transfer stewardship to</value>
+  </data>
+  <data name="TransferToAnotherSteward" xml:space="preserve">
+    <value>Transfer to another Steward</value>
+  </data>
+  <data name="TryingToTransferStewardshipToYourself" xml:space="preserve">
+    <value>You are trying to tranfers the stewardship to yourself! Now that's just silly! :)</value>
+  </data>
+  <data name="YesGo" xml:space="preserve">
+    <value>YES, GO!</value>
+  </data>
+  <data name="YouAreTheStewardOfThisAccount" xml:space="preserve">
+    <value>You are the steward of this account. You may transfer this responsibility to someone else but note that once you do, you will lose access to this account. &lt;strong&gt;ENSURE &lt;/strong&gt;that the person you are transferring this account to, is aware of this reponsibility and will accept it.</value>
+  </data>
+  <data name="MustAcceptTheRules" xml:space="preserve">
+    <value>You must accept the following rules.
+                    &lt;br /&gt;
+                    &lt;strong&gt;Note that breaking any of these may result in a permanent ban.</value>
+  </data>
+  <data name="YourStewardCannot" xml:space="preserve">
+    <value>Your steward cannot:&lt;ul&gt;
+                        &lt;li&gt;disband your troops&lt;/li&gt;
+                        &lt;li&gt;attack anyone with your account&lt;/li&gt;
+                        &lt;li&gt;downgrade your buildings&lt;/li&gt;
+                        &lt;li&gt;transfer any of your servants&lt;/li&gt;
+                        &lt;li&gt;invite your facebook friends, send gifts, or view any pages related to invites you sent out.&lt;/li&gt;</value>
+  </data>
+  <data name="AccountWillBeDeleted" xml:space="preserve">
+    <value>your account will be deleted from the realm and you will lose ALL your villages</value>
+  </data>
+  <data name="WhoHasNotAccepted" xml:space="preserve">
+    <value>who has not accepted the appointment</value>
+  </data>
+  <data name="YouCanOnlyAppointOneSteward" xml:space="preserve">
+    <value>You can appoint only one steward however your steward can transfer the stewardship to someone else.</value>
+  </data>
+</root>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BarracksL1" xml:space="preserve">
+    <value>&lt;img src='https:\\static.realmofempires.com\images\vov\d_barracks3.png' alt='Barrack' align="left" style="padding-right: 10px" /&gt;I see you have decent silver production, therefore you should now consider recruiting some troops.&lt;BR&gt;&lt;BR&gt; Build &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Barracks.png' alt='Barrack' /&gt; Barrack next.
+    </value>
+  </data>
+  <data name="RecruitTroops_CM" xml:space="preserve">
+    <value>I see that you have Barracks built, therefore your next step should be to recruit some troops.
+      &lt;BR&gt;&lt;BR&gt;
+      Both &lt;img src='https:\\static.realmofempires.com\images\units\militia.png' alt='Citizen Militia' /&gt; Citizen Militia (CM) and &lt;img src='https:\\static.realmofempires.com\images\units\infantry.png' alt='Infantry' /&gt; Infantry (I) are good at defending your village, however, Citizen Militia are much cheaper to recruit. Therefore at the beginning, it's a good strategy to recruit Citizen Militia instead of Infantry and use the left over silver to continue expanding your village (i.e. upgrading buildings).
+      &lt;BR&gt;&lt;BR&gt;
+      A good rule of thumb is to recruit at least 20-40 CM per day if you are already part of a strong clan without current enemies. Increase that if you are in danger.
+      &lt;BR&gt;&lt;BR&gt;
+      In order to recruit troops, find the Troops... link on top left of the screen. Select Recruit from the drop down menu.
+    </value>
+  </data>
+  <data name="SilverMineToLevel10" xml:space="preserve">
+    <value>
+      Your first priority should be to develop good silver production. Therefore I suggest you upgrade your &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Mine.png' alt='Silver Mine'/&gt; silver mine to at least level 10 before you build anything else.
+      &lt;BR&gt;&lt;BR&gt;
+      If you do not know how to upgrade buildings, I strongly suggest you go through the short beginner tutorial. Click the help icon &lt;img src='https://static.realmofempires.com/images/NavIcons/help1.gif' alt='Help' /&gt; and select "Beginner Tutorial"
+    </value>
+  </data>
+  <data name="Clan" xml:space="preserve">
+    <value>
+      It's time for you to consider joining a clan. A Clan is an alliance of players who choose to fight together for their mutual protection and glory.
+      &lt;BR&gt;&lt;BR&gt;
+      Clans normally do not go to war with each other lightly therefore being in a clan increases your chances of not being attacked early on. Players not affiliated with a clan are vulnerable to attacks from stronger players. Also note that clans normally resist accepting members who are already at war with someone, therefore it's a good idea to join a clan early.
+      &lt;BR&gt;&lt;BR&gt;
+      To join a clan, browse the map and see what clans your neighbours are part of. Read about them and find one you like, preferably one with a lot of other clan members near you. Then contact the leaders and ask to be invited. You will get a report telling you an invitation has been dispatched.
+    </value>
+  </data>
+  <data name="SilverMineTOLevel15" xml:space="preserve">
+    <value>
+      Now that you are able to recruit defensive troops like Citizen Militia (and you should be recruiting them daily), concentrate on building up your mine even more, to at least level 15 before you upgrade any other buildings.
+      &lt;BR&gt;&lt;BR&gt;
+      In fact, upgrading your silver mine to level 15 should be considered a minimum at this point. You should be aggressively upgrading your silver mine in general - going up one or two levels per day until level 20 or even 30.
+    </value>
+  </data>
+  <data name="Tavern" xml:space="preserve">
+    <value>
+      At this point I would recommend you build a &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Tavern.png' alt='Tavern' /&gt; Tavern. A Tavern is necessary to recruit &lt;img src='https:\\static.realmofempires.com\images\units\spy.png' alt='Spies' /&gt; Spies. What better place to find and recruit people who are good at not being seen than those hiding in medieval taverns! Spies are used to discover what buildings, troops, etc a village has.
+      &lt;BR&gt;&lt;BR&gt;
+      At this point it's probably not a good idea to aggravate your neighbours by spying on them, so this is not why you will be recruiting spies. Spies are also used to protect yourself from being spied on - a counter-intelligence measure. If you have spies in your village, there is a smaller chance that enemy spies will be successful in penetrating your defenses and finding out details of your village, and a greater chance that you will know who attempted to spy on you. Therefore, build a Tavern and recruit some spies now.
+      &lt;BR&gt;&lt;BR&gt;
+      To learn more about spies and spying, click on the spy icon &lt;img src='https:\\static.realmofempires.com\images\units\spy.png' alt='Spies' /&gt; when ever you see it (or Choose Units from the Help menu &lt;img src='https:\\static.realmofempires.com\images\navIcons\Help1.gif' alt='Help' /&gt;)
+    </value>
+  </data>
+  <data name="RecruitSpies" xml:space="preserve">
+    <value>
+      Now that you have a Tavern built, it's time you recruit &lt;img src='https:\\static.realmofempires.com\images\units\spy.png' alt='Spies' /&gt; Spies.  Spies are used to discover what buildings, troops, etc a village has.
+      &lt;BR&gt;&lt;BR&gt;
+      At this point its probably not a good idea to aggravate your neighbours by spying on them so this is not why you will be recruiting spies. Spies are also used to protect yourself from being spied on - a counter-intelligence measure. If you have spies in your village, there is a smaller chance that enemy spies will be successful in penetrating your defenses and finding out details of your village, and a greater chance that you will know who attempted to spy on you. Therefore, recruit some spies next. Recruit 2-3 spies per day until you get about 10 spies, and then continue recruiting 1 spy per day when possible.
+      &lt;BR&gt;&lt;BR&gt;
+      To learn more on how spies works, click on the spy icon &lt;img src='https:\\static.realmofempires.com\images\units\spy.png' alt='Spies' /&gt; where ever you see it (or Choose Units from Help menu &lt;img src='https:\\static.realmofempires.com\images\navIcons\Help1.gif' alt='Help' /&gt;)
+    </value>
+  </data>
+  <data name="BuildStable" xml:space="preserve">
+    <value>
+      I see you have not yet built the &lt;img src='https://static.realmofempires.com/images/vov/d_stable3.png' alt='Stable' /&gt; Stable. In Stables you recruit mounted units which are your fastest and best offensive units.
+      &lt;BR&gt;&lt;BR&gt;
+      Build the stable now.
+    </value>
+  </data>
+  <data name="RecruitLC" xml:space="preserve">
+    <value>
+      I see you have the stable built. In Stables you recruit Light Cavalry and Knights which are your best offensive units.
+      &lt;BR&gt;&lt;BR&gt;
+      &lt;img src='https:\\static.realmofempires.com\images\units\Cavalry.png' alt='Light Cavalry' /&gt; Light Cavalry is a cheaper, but less efficient alternative to &lt;img src='https:\\static.realmofempires.com\images\units\knight.png' alt='Knights' /&gt; Knights. Although later on you will want to recruit only Knights, right now, since you still need lots of silver to build up your village, it's probably a good idea to prefer the cheaper alternative - Light Cavalry.
+      &lt;BR&gt;&lt;BR&gt;
+      Although you are not yet in the position to attack anyone, you can use your Light Cavalry to plunder silver from surrounding villages of inactive players. I will explain this later, first, recruit some Light Cavalry and continue recruiting more on daily basis.
+    </value>
+  </data>
+  <data name="Recruit10Spies" xml:space="preserve">
+    <value>
+      You need to protect yourself from being spied on, you should recruit at least 10 spies before proceeding further.
+    </value>
+  </data>
+  <data name="SpyOnVillages" xml:space="preserve">
+    <value>
+      It's a good idea now to consider plundering surrounding villages of inactive players for silver. If a player stops playing, his village is still producing silver and if you attack it, you can plunder this silver. This is a very useful strategy to get more silver than you would normally get just from your silver mine.
+      &lt;BR&gt;&lt;BR&gt;
+      First step is to find an inactive village - find a village near you, that has very few points, and is not increasing in points. This is likely an inactive player. You can always message the player as well and see if you get a response.
+      &lt;BR&gt;&lt;BR&gt;
+      Secondly, spy on this village. Send at least 5 spies to ensure a good chance of success - you do that by simply clicking this village on the map, and choosing Attack.
+      &lt;BR&gt;&lt;BR&gt;
+      Once your spy attack occurs, you will get a report telling you what troops are stationed in this village, how much silver is currently in the treasury etc. You can use this information to find out how many troops you must send in order to kill all the troops in this village - use the Battle Simulator for this purpose (from the Troops... menu, select Battle Simulator). Remember that you will only plunder silver if you kill off all troops in this village. You will have to decide if you should wait to recruit more troops before attacking, or if you have enough already.
+      &lt;BR&gt;&lt;BR&gt;
+      Once you decide to attack, attack this village in the same way. The troops that survive the attack will bring back silver for you to use. And since you killed off troops in this village, you can repeat this attack daily.
+    </value>
+  </data>
+  <data name="Wall" xml:space="preserve">
+    <value>
+      I would recommend you now start building up your &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Wall.png' alt='Wall' /&gt; wall.
+      &lt;BR&gt;&lt;BR&gt;
+      A Wall allows your soldiers to defend your village more efficiently meaning you will need fewer troops to defend yourself against attacks.
+      &lt;BR&gt;&lt;BR&gt;
+      Every level of the wall gives you a certain percentage defense bonus so the higher the wall, the higher the defense bonus.
+      &lt;BR&gt;&lt;BR&gt;
+      You can see exactly what this bonus is, if you click the Help icon &lt;img src='https://static.realmofempires.com/images/NavIcons/help1.gif' alt='Help' /&gt;, and choose Buildings.
+    </value>
+  </data>
+  <data name="DefensiveTowers" xml:space="preserve">
+    <value>
+      Just like wall, defensive &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Tower.png' alt='Defensive Towers' /&gt; towers allow your soldiers to defend your village more efficiently meaning you will need fewer troops to defend yourself against attacks. Defensive towers can only be destroyed by &lt;img src='https://static.realmofempires.com/images/buildingIcons/Treb.png' alt='Trebuchets' /&gt; Trebuchets.
+    </value>
+  </data>
+  <data name="BarrackLevels15" xml:space="preserve">
+    <value>
+      You should consider upgrading your Barracks. Higher the level of your barracks, faster are the &lt;img src='https:\\static.realmofempires.com\images\units\Militia.png' alt='Citizen Militia' /&gt; Citizen Militia and &lt;img src='https:\\static.realmofempires.com\images\units\Infantry.png' alt='Infantry' /&gt; Infantry recruited.
+      &lt;BR&gt;&lt;BR&gt;
+      Recruiting an army takes a VERY long time and if you get attacked, you want to be able to rebuild your forces as fast as you can. You can accomplish this by upgrading your barracks.
+      &lt;BR&gt;&lt;BR&gt;
+      As an example, at barracks level 1, it takes {0} Min  {1}  Sec to recruit 1 Citizen Militia. At level 20, it only takes {2} Min {3} Sec .
+      &lt;BR&gt;&lt;BR&gt;
+      Upgrade your Barracks to at least level 15.
+    </value>
+  </data>
+  <data name="Stable" xml:space="preserve">
+    <value>
+      You should consider upgrading your Stable. The higher the level of your &lt;img src='https://static.realmofempires.com/images/BuildingIcons/Stable.png' alt='Stable' /&gt; Stable, the faster &lt;img src='https://static.realmofempires.com/images/Units/Knight.png' alt='Knights' /&gt; Knights and &lt;img src='https://static.realmofempires.com/images/units/Cavalry.png' alt='Light Cavalry' /&gt; Light Cavalry recruit.
+      &lt;BR&gt;&lt;BR&gt;
+      Recruiting an army takes a VERY long time. Light Cavalry and Knights are you main attack force, so the higher the level of Stable, the sooner you can recruit your offensive army.
+      &lt;BR&gt;&lt;BR&gt;
+      In addition, a Stable is a requirement for building a Palace which you will need when you decide to take over another village
+      &lt;BR&gt;&lt;BR&gt;
+      Upgrade your Stables to level 10 at least
+    </value>
+  </data>
+  <data name="HQLevel" xml:space="preserve">
+    <value>
+      By now you probably noticed that it takes longer and longer to upgrade buildings. The higher the level, the longer it takes.
+      &lt;BR&gt;&lt;BR&gt;
+      However, as you upgrade the &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\HQ.png' alt='Headquarter' /&gt; Headquarters building, you shorten the time it takes to upgrade other buildings - your workers and infrastructure improves with every Headquarters' level resulting in quicker construction time.
+      &lt;BR&gt;&lt;BR&gt;
+      Therefore once you find that it takes too long to upgrade certain buildings, upgrade your Headquarters. Also remember that Headquarters level 20 is necessary to build a Palace which you will need when you decide to take over another village
+    </value>
+  </data>
+  <data name="SiegeWorkshopNotBuilt" xml:space="preserve">
+    <value>
+      At this point you should consider building a &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Seige.png' alt='Siege Workshop' /&gt; Siege Workshop. This is necessary for you to be able to construct siege machinery such as &lt;img src='https:\\static.realmofempires.com\images\units\Ram.png' alt='Rams' /&gt; Rams and &lt;img src='https:\\static.realmofempires.com\images\units\Treb.png' alt='Trebuchets' /&gt; Trebuchets. Both are critical in attacking other village as they destroy the defensive wall and towers thus nullifying or lessening their defense bonus.
+      &lt;BR&gt;&lt;BR&gt;
+      If you attack a village with a level 10 wall and level 10 towers, it will be very difficult to win. However, if you include Rams and Trebuchets in your attack, then you will be able to destroy or damage the wall and towers and the defending forces will get less of a defense bonus.
+      &lt;BR&gt;&lt;BR&gt;
+      You should experiment with the Battle Simulator to see how Rams and Trebuchet perform on wall &amp; towers of various levels.
+      &lt;BR&gt;&lt;BR&gt;
+      So, build the Siege Workshop so that you can slowly begin constructing Rams and Trebuchet.
+    </value>
+  </data>
+  <data name="SiegeWorkshopBuilt" xml:space="preserve">
+    <value>
+      I see you have already constructed the &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Seige.png' alt='Siege Workshop' /&gt; Siege Workshop which is necessary for you to be able to construct siege machinary such as &lt;img src='https:\\static.realmofempires.com\images\units\Ram.png' alt='Ram' /&gt; Rams and &lt;img src='https:\\static.realmofempires.com\images\units\Treb.png' alt='Trebuchet' /&gt; Trebuchet. Both are critical in attacking other village as they destroy the defensive wall and towers thus nullifying or lessening their defense bonus.
+      &lt;BR&gt;&lt;BR&gt;
+      If you attack a village with full wall and towers, it will be very difficult to win but if you include Rams and Trebuchet in your attack, then you will be able to destroy or damage the wall and towers and the defending forces will get less of a defense bonus.
+      &lt;BR&gt;&lt;BR&gt;
+      You should experiment with the Battle Simulator to see how Rams and Trebuchet perform on wall &amp; towers of various levels.
+    </value>
+  </data>
+  <data name="SilverMineToLevel35" xml:space="preserve">
+    <value>
+      You should now concentrate on upgrading your &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Mine.png' alt='Silver Mine' /&gt; silver mine. Upgrade it to at least level 35.
+      &lt;BR&gt;&lt;BR&gt;
+      You are getting closer to the point where you might want to start thinking of expanding your empire. However, you should not consider it until you have good silver production.
+    </value>
+  </data>
+  <data name="RecruitEnoughTroops" xml:space="preserve">
+    <value>
+      My next suggestion would be to build a Palace and prepare to expand your empire, however, I see you do not have many defensive troops.
+      &lt;BR&gt;&lt;BR&gt;
+      Before going any further, I suggest you recruit at least 5000 &lt;img src='https:\\static.realmofempires.com\images\units\Militia.png' alt='Citizen Militia' /&gt; Citizen Militia or &lt;img src='https:\\static.realmofempires.com\images\units\Infantry.png' alt='Infantry' /&gt; Infantry.
+      &lt;BR&gt;&lt;BR&gt;
+      I know this sounds like a lot, however, one of the biggest mistakes you can make is to gather more territory than you can defend.
+    </value>
+  </data>
+  <data name="Palace" xml:space="preserve">
+    <value>
+      As you continue to build more troops, you might want to start thinking about expanding your empire by conquering your first village.
+      &lt;BR&gt;&lt;BR&gt;
+      For this you will need to build the &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Palace.png' alt='Palace' /&gt; Palace. Palace is where you will recruit governors. &lt;img src='https:\\static.realmofempires.com\images\units\Governor.png' alt='Governor' /&gt; Governors are required to conquer other villages.
+    </value>
+  </data>
+  <data name="RecruitGovernor" xml:space="preserve">
+    <value>
+      Now that you have a Palace built, you can recruit a &lt;img src='https:\\static.realmofempires.com\images\units\governor.png' alt='Governor' /&gt; Governor.
+      &lt;BR&gt;&lt;BR&gt;
+      Governors are used to capture other villages. In order to take control of another village, you need an administrator who will control it and keep the peace.
+      &lt;BR&gt;&lt;BR&gt;
+      When you send an attack with a governor present, and the governor survives the attack, he tries to persuade members of the Council of Elders to accept you as their new ruler. You will have to attack a few times, until the Council of Elders' approval for the current regime falls to or below 49% at this point the village becomes yours!
+      &lt;BR&gt;&lt;BR&gt;
+      So, I recommend you recruit a governor, and begin to look around you on the map and find a suitable target! Good luck!!
+    </value>
+  </data>
+  <data name="TradePost" xml:space="preserve">
+    <value>
+      It is now the right time to build or upgrade your &lt;img src='https:\\static.realmofempires.com\images\BuildingIcons\Trade.png' alt='Trade Post' /&gt; trade post.This will allow you to send silver to your newly acquired village.
+      &lt;BR&gt;&lt;BR&gt;
+      Higher the level of the trade post more the silver can be sent; thereby helping you to build up your new village faster.
+      &lt;BR&gt;&lt;BR&gt;
+      You do not need a trade post in your new village in order to receive silver.
+    </value>
+  </data>
+  <data name="Specialize" xml:space="preserve">
+    <value>
+      Congratulations!! I see you have expanded your empire!
+      &lt;BR&gt;&lt;BR&gt;
+      With more than 1 village, you should consider specializing your villages. Let me explain by example - creating an attack army.
+      &lt;BR&gt;&lt;BR&gt;
+      You probably already know that Knights are your most efficient offensive force (a few simulations using the Battle Simulator can easily show that). So if you will attack another village, you want to attack with as many Knights as possible. But, villages are limited, by the food available, to a certain number of troops only. So if you recruit troops other than Knights in a village, you will at the end be able to recruit fewer Knights, meaning a smaller attack army (keep in mind that you cannot combine attacking armies from multiple village). Therefore, ideally, you would want to recruit only Knights (and Rams and Trebuchet of course) in one of your villages in order to have the largest possible offensive army.
+      &lt;BR&gt;&lt;BR&gt;
+      Therefore start thinking whether you want to specialize your villages in such a way.
+      &lt;BR&gt;&lt;BR&gt;
+      Same applies for other troops like spies. Rather than recruiting 100 spies in both of your villages, recruit 200 spies in one of your villages and none in another one. This will allow you to spy on someone with 200 spies rather than with just 100 resulting in greater chance for success.</value>
+  </data>
+  <data name="TheEnd" xml:space="preserve">
+    <value>
+      My Liege, I fear I have no more advice to offer... You have proven to be a great leader and have learned all the lessons of managing your kingdom well! Make sure you keep in contact with your clan members to form strategies and plan battles.
+      &lt;BR&gt;&lt;BR&gt;
+      Continue doing what you have been doing and lead us into GLORY!
+    </value>
+  </data>
+</root>

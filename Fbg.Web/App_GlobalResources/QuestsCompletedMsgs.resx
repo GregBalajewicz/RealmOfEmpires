@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Advisor" xml:space="preserve">
+    <value>Excellent! You now know how to obtain advice.
+&lt;BR&gt;
+Please note that the Advisor's suggestions are more on a conservative, defensive side. Use it as a guide as you slowly develop your own unique strategy for a mighty empire!</value>
+  </data>
+  <data name="Advisor2" xml:space="preserve">
+    <value>Excellent! Again, note that the Advisor's suggestions are more on a conservative, defensive side. Use it as a guide as you slowly develop your own unique strategy for a mighty empire!</value>
+  </data>
+  <data name="BarracksRecruitTime" xml:space="preserve">
+    <value>Exactly!! 
+&lt;BR&gt;&lt;BR&gt;
+At level 1, it takes {0} minutes to recruit Infantry, but at level 13, only {1} minutes. 
+&lt;BR&gt;&lt;BR&gt;
+You can even bring this time down to just {2} minutes at level 25!
+&lt;BR&gt;&lt;BR&gt;
+The higher the level of the barracks, the sooner you can have a mighty army!</value>
+  </data>
+  <data name="BattleSimCM" xml:space="preserve">
+    <value>That is correct! So as you can see, all attacking &lt;img src='https://static.realmofempires.com/images/units/Militia.png'  style="padding-right: 5px" /&gt;Citizen Militia were killed and the defender was left with a good percentage of his troops. Citizen Militia make very poor attacking troops. They are much better at defending. 
+&lt;BR&gt;&lt;BR&gt; 
+
+Once you know what troops are defending a village (by spying on it), you can use the battle simulator to find out what it would take to destroy the defending garrison.</value>
+  </data>
+  <data name="BattleSimLC" xml:space="preserve">
+    <value>That is correct!!
+&lt;BR&gt;&lt;BR&gt;
+So as you can see &lt;img src= 'https://static.realmofempires.com/images/units/Cavalry.png'  style="padding-right: 5px" /&gt; Light Cavalry is much better at attacking than &lt;img src= 'https://static.realmofempires.com/images/units/Militia.png'  style="padding-right: 5px" /&gt;Citizen Militia. &lt;img src= 'https://static.realmofempires.com/images/units/knight.png' style="padding-right: 5px" /&gt;Knights make even better offensive troops!
+&lt;BR&gt;&lt;BR&gt;
+However, note that since Cavalry units consume a lot more food, are more expensive and take longer to recruit than Citizen Militia, you can never compare them 1 to 1 but you must take all these factors into consideration.
+&lt;BR&gt;&lt;BR&gt;
+The general lesson is this - use foot soldiers like Citizen Militia and Infantry to defend your village, and cavalry to attack. </value>
+  </data>
+  <data name="BattleSimLCWithWall" xml:space="preserve">
+    <value>Right!!
+&lt;BR&gt;&lt;BR&gt;
+Defensive walls and towers are really helpful to the defender. You should always try to have your walls and towers at the maximum level.</value>
+  </data>
+  <data name="BattleSimRamAndTreb" xml:space="preserve">
+    <value>That is correct!!
+&lt;BR&gt;&lt;BR&gt;
+So there you go - the medieval arms race! defender puts up walls, attacker constructs rams. Defender builds towers, attacker constructs siege engines like the trebuchet.
+&lt;BR&gt;&lt;BR&gt;
+The lesson to learn is always build your walls and towers hence force the attacker to send rams and trebuchet with the attack. Secondly, never attack a village without including rams and trebuchets in the attack or you will suffer much greater losses.  </value>
+  </data>
+  <data name="BattleSimSpies" xml:space="preserve">
+    <value>Exactly! So as you can see, the chance for success is high, and there is only {0}% chance that the defender will be told it was you spying. 
+&lt;BR&gt;&lt;BR&gt;
+
+                &lt;table border=0 cellpadding=0 cellspacing=0 class="stripeTable TypicalTable" style="border:solid 1px black;width:99%;" &gt;
+                    &lt;tr class="DataRowAlternate highlight"&gt;
+                        &lt;td &gt;
+                            Chance the spies will&lt;br /&gt; be successful&lt;/td&gt;
+                        &lt;td&gt;
+                            {1}%&lt;/td&gt;
+                    &lt;/tr&gt;
+                     &lt;tr class="DataRowNormal highlight"&gt;
+                        &lt;td&gt;
+                            Chance the defender will know&lt;br /&gt; the identity of spies&lt;/td&gt;
+                        &lt;td&gt;
+                            {0}%
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                     &lt;tr class="DataRowAlternate highlight"&gt;
+                        &lt;td&gt;
+                            Chance the defender will&lt;br /&gt; see the spies coming&lt;/td&gt;
+                        &lt;td&gt;
+                            {2}%&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;                
+
+&lt;BR&gt;&lt;BR&gt;
+The 'Chance the defender will see the spies coming' refers to the chance that the defender will know that someone is trying to spy on them. If they know, they can move more spies into this village to increase their chances of learning the identity of the attacker, but as you can see, there is a chance they will not know they are even being spied on until it is too late!
+&lt;BR&gt;&lt;BR&gt;
+There is a lot more detail to learn about spying so I suggest you read more on spies on the Units Help page later.</value>
+  </data>
+  <data name="ClanAllies" xml:space="preserve">
+    <value>Excellent! Its critical for you to know the diplomatic landscape of your clan. 
+
+&lt;BR&gt;&lt;BR&gt;Perhaps you would like to become a diplomat? Help the clan leadership decide on such matters, perhaps become a liason to one of your allies? Then get active, talk to people around you, BE ACTIVE on your clan's forum - once leaders notice your enthusiasm, they will likely offer you important positions!</value>
+  </data>
+  <data name="ClanLeaders" xml:space="preserve">
+    <value>Good! Remember, most clans welcome active players who want to particpate in clan affairs. Talk to your leaders, get active, and soon you may find yourself promoted!</value>
+  </data>
+  <data name="ClanMates" xml:space="preserve">
+    <value>&lt;img src= "https://static.realmofempires.com/images/NAVICONS/CLAN3.gif" align="left" style="padding-right: 5px" /&gt;Excellent!! Note that the clan icon will light up when ever there is a new post on the forum. 
+
+&lt;BR&gt;&lt;BR&gt;STRESSING ONCE AGAIN - BE ACTIVE in your clan. Leaders look for that and you are much more likely to get help when needed when you are known to the clan. 
+
+&lt;BR&gt;&lt;BR&gt;Active members are an asset to a clan, inactive members are often considered dead weight.
+
+&lt;BR&gt;&lt;BR&gt;ALSO, clan leaders will often require active members to check in on the forum or risk being dismissed or cannibalized by the clan.</value>
+  </data>
+  <data name="DefenseFactor" xml:space="preserve">
+    <value>That is correct!! Defensive factor of {0}% means your troops fight with a {1}% bonus!&lt;BR&gt;&lt;BR&gt; So if you have 100 Infantry defending, it is the same as if you had {2}.
+&lt;BR&gt;&lt;BR&gt; 
+
+Defensive towers can be destroyed only by trebuchets. Walls on the otherhand are destroyed by rams.</value>
+  </data>
+  <data name="FindInactives" xml:space="preserve">
+    <value>Very good!! Keep an eye on such villages.</value>
+  </data>
+  <data name="Food" xml:space="preserve">
+    <value>Excellent! 
+
+ 
+
+Note that your food is consumed in 2 ways - by troops and by maintenance workers on village buildings.
+
+ &lt;BR&gt;&lt;BR&gt;
+Troops consume food, that is obvious but also, since each building requires a certain amount of workers to maintain it and those workers consume food, therefore indirectly, upgrading buildings also requires food.
+&lt;BR&gt;&lt;BR&gt;
+
+&lt;img src= 'https://static.realmofempires.com/images/navIcons/help1.gif' align="left" style="padding-right: 5px" /&gt;You can see exactly how much food different buildings need, and how much food different troops need from the help menu, the &lt;U&gt;Buildings&lt;/U&gt; and &lt;U&gt;Units&lt;/U&gt; menu items</value>
+  </data>
+  <data name="Friends" xml:space="preserve">
+    <value>Excellent! Please note that you can also see the list of your friends from the &lt;U&gt;Player Ranking&lt;/u&gt; screen.
+
+&lt;BR&gt;&lt;BR&gt; 
+
+To see how many friends other players have, go to the &lt;U&gt;Friend Network Ranking&lt;/U&gt; screen. 
+
+&lt;BR&gt;&lt;BR&gt; 
+
+&lt;img src= 'https://static.realmofempires.com/images/navIcons/ranking1.gif' align="left" style="padding-right: 5px" /&gt;Both accessible from the  ranking menu item</value>
+  </data>
+  <data name="InfantryRecruitTime" xml:space="preserve">
+    <value>That is correct!!
+
+ &lt;BR&gt;&lt;BR&gt;
+
+It takes {0} minutes to recruit &lt;img src= 'https://static.realmofempires.com/images/units/infantry.png'  style="padding-right: 5px" /&gt;Infantry. 
+&lt;BR&gt;&lt;BR&gt;
+But, this is at level 1 &lt;img src= 'https://static.realmofempires.com/images/buildingicons/barracks.png'  style="padding-right: 5px" /&gt;Barracks
+
+&lt;BR&gt;&lt;BR&gt;As you upgrade your Barracks, this time is shortened but lets leave this to your next quest!</value>
+  </data>
+  <data name="Invite" xml:space="preserve">
+    <value>Excellent! So this is how you can invite your facebook friends!
+&lt;BR&gt;&lt;BR&gt;
+
+Please note, Realm of Empires is a strategy game where co-operation with other players is absolutely necessary! There is no stronger alliance than one composed of real life friends.</value>
+  </data>
+  <data name="JoinClan" xml:space="preserve">
+    <value>Congratulations on your choice of alliance!
+&lt;BR&gt;&lt;BR&gt;
+Remember to stay active in your clan's affairs. 
+&lt;BR&gt;&lt;BR&gt;
+Do you want some administrative role in the clan? Then be active, and ask your leader. The clan leader often looks for people who want to help out. &lt;BR&gt;&lt;BR&gt;
+
+Do you want a leadership role in the clan? This may not happen right away, however, if you stay active and prove yourself, you may soon find your way on the council and be able to shape the history of the realm and the fate of hundreds if not thousands of players!</value>
+  </data>
+  <data name="LootingInactives" xml:space="preserve">
+    <value>That's correct! But don't rush into things. Aim towards being able to loot inactive villages by locating inactives, recruiting some Light Cavalry etc.</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>Great!! All messages you move to this folder will never be deleted and will be categorized as you like
+
+&lt;BR&gt;&lt;BR&gt;Premium features support further development of the game! We hope you will consider supporting us!</value>
+  </data>
+  <data name="Map1" xml:space="preserve">
+    <value>Good! You will use the map a lot in the coming days. 
+
+&lt;BR&gt;&lt;BR&gt;REMEMBER to get to know your neighbours! Not only your clan mates but also other players near your village. You may find their friendship very beneficial to you in time of need.</value>
+  </data>
+  <data name="Map2" xml:space="preserve">
+    <value>Good! Now you can see more of the world at one time.</value>
+  </data>
+  <data name="MyPoints" xml:space="preserve">
+    <value>Excellent!!
+
+As you grow your village, and as you conquer other villages, your points and rank will grow!</value>
+  </data>
+  <data name="OtherRealms" xml:space="preserve">
+    <value>That's right!!
+
+&lt;BR&gt;&lt;BR&gt;Feel free to explore other realms! 
+
+&lt;BR&gt;&lt;BR&gt;Explore our wiki some more. We maintain an extensive list of suggestions from players like you - your suggestions matter so don't be afraid to voice your opinion!!</value>
+  </data>
+  <data name="Q2_ApplyTags" xml:space="preserve">
+    <value>Very good!!
+&lt;BR&gt;&lt;BR&gt;This is how you tag your villages. You can untag a village in a simillar manner. 
+&lt;BR&gt;&lt;BR&gt;You can also do this from the My Tags page (click Edit Tags link from the filter icon popup)</value>
+  </data>
+  <data name="Q2_CreateTags" xml:space="preserve">
+    <value>Great!!
+&lt;BR&gt;&lt;BR&gt;Tags are used to &lt;I&gt;describe&lt;/I&gt; a village. 
+&lt;BR&gt;&lt;BR&gt; For example, by tagging a village with 'DEFENSE' tag, you are saying this villlage is a defense village. By tagging it with a 'SECTORA' tag, you are saying this village is located in sector A. &lt;BR&gt;&lt;BR&gt;You can tag a village with DEFENSE tag AND SECTORA tag thus saying it is a defensive village in sector A.
+&lt;BR&gt;&lt;BR&gt;Tags, althgough maybe a little confusing at start, are a very powerful tool for managing your kingdom!</value>
+  </data>
+  <data name="Q2_Filters" xml:space="preserve">
+    <value>Super!!
+
+&lt;BR&gt;&lt;BR&gt;This is how you select a filter. You village list is now limited to villages which fall under this filter. </value>
+  </data>
+  <data name="Q2_FiltersSummaryPages" xml:space="preserve">
+    <value>Great!!
+&lt;BR&gt;&lt;BR&gt;So now with filters limiting your summary pages, you can easily see what needs to be done in your kingdom. </value>
+  </data>
+  <data name="Q2_MultiFilter" xml:space="preserve">
+    <value>Excellent!! This is how you create custom multi-tag filters!
+&lt;BR&gt;&lt;BR&gt;You may have noticed that you did not have to create all the other filters you have. This is because when you create a tag, the system automatically creates a filter with the same name.This is just a plain filter however, a filter that you can change or even delete altogether. </value>
+  </data>
+  <data name="RecruitSpies" xml:space="preserve">
+    <value>Nice! Sometimes 1 spy is enough but more spies will greatly increase your chance of success! 
+
+&lt;BR&gt;&lt;BR&gt;Use the Battle simulator to calculate your odds. Do NOT spy on a village until you know your odds and are comfortable with the risks!</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Great!! All reports you move to this folder will never be deleted and will be categorized as you like
+
+&lt;BR&gt;&lt;BR&gt;Premium features support further development of the game! We hope you will consider supporting us!</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Very Good!! 
+
+&lt;BR&gt;&lt;BR&gt; 
+
+Remember that when your treasury fills up, your silver mine stops producing silver! Be sure to check your village daily to ensure uninterrupted production.
+
+&lt;BR&gt;&lt;BR&gt; 
+
+Note that Realm Of Empires was designed to be played with as little as just a few minutes per day yet offer you new and unique challenges over many months of play!</value>
+  </data>
+  <data name="SilverProduction" xml:space="preserve">
+    <value>That is correct! Something to look forward to! :)</value>
+  </data>
+  <data name="Stable" xml:space="preserve">
+    <value>Great, now you will be able to recruit light cavalry!
+
+&lt;BR&gt;&lt;BR&gt;Light Cavalry will become useful for you when you want to start looting abandoned villages for silver, but more on that a bit later on</value>
+  </data>
+  <data name="Support" xml:space="preserve">
+    <value>Congratulations!! 
+&lt;BR&gt;&lt;BR&gt;
+
+You managed to convince someone to help you! Make sure you make friends with your neighbours.
+&lt;BR&gt;&lt;BR&gt;With their help, you can literally be indestructible. If you are interested, use the Battle Simulator to see how many armies it would take to destroy 50,000 infantry defending a village with level 10 towers &amp; walls.</value>
+  </data>
+  <data name="Tavern" xml:space="preserve">
+    <value>Spies will be necessary for you when you want to start looting abandoned villages for silver, but more on that a bit later on!</value>
+  </data>
+  <data name="TOU" xml:space="preserve">
+    <value>Very good! 
+&lt;BR&gt;&lt;BR&gt;
+Please remember, it is only a game (the greatest game on facebook,  true), but still just a game ;)
+&lt;BR&gt;&lt;BR&gt;
+Play fair, treat others with respect and enjoy!</value>
+  </data>
+  <data name="Tutorial" xml:space="preserve">
+    <value>Very good! You now know the basics! Your reward has been deposited in your treasury. May it serve you well!!</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Great! now you know where to go to personalize your game experience!</value>
+  </data>
+  <data name="BrrcksLvl1" xml:space="preserve">
+    <value>Great! Now you can recruit Citizen Millitia! But don't spend all your silver on recruitment yet! You still have a lot more to do to build your village into a fortress!</value>
+  </data>
+  <data name="SMLvl3" xml:space="preserve">
+    <value>Super! Your silver production is growing fast!</value>
+  </data>
+  <data name="SMLvl5" xml:space="preserve">
+    <value>Wonderful! Now you are ready to contruct barracks!</value>
+  </data>
+  <data name="Resarch" xml:space="preserve">
+    <value>Great! Researching technologies is a great way to get better silver production!</value>
+  </data>
+  <data name="D2_Food" xml:space="preserve">
+    <value>Excellent! 
+
+ 
+
+Note that your food is consumed in 2 ways - by troops and by maintenance workers on village buildings.
+
+ &lt;BR&gt;&lt;BR&gt;
+Troops consume food, that is obvious but also, since each building requires a certain amount of workers to maintain it and those workers consume food, therefore indirectly, upgrading buildings also requires food.</value>
+  </data>
+  <data name="D2_BattleSimSpies" xml:space="preserve">
+    <value>Exactly! So as you can see, the chance for success is high, and there is only {0}% chance that the defender will be told it was you spying. 
+&lt;BR&gt;&lt;BR&gt;
+
+                &lt;table border=0 cellpadding=0 cellspacing=0 class="stripeTable TypicalTable" style="border:solid 1px black;width:99%;" &gt;
+                    &lt;tr class="DataRowAlternate highlight"&gt;
+                        &lt;td &gt;
+                            Chance the spies will&lt;br /&gt; be successful&lt;/td&gt;
+                        &lt;td&gt;
+                            {1}%&lt;/td&gt;
+                    &lt;/tr&gt;
+                     &lt;tr class="DataRowNormal highlight"&gt;
+                        &lt;td&gt;
+                            Chance the defender will know&lt;br /&gt; the identity of spies&lt;/td&gt;
+                        &lt;td&gt;
+                            {0}%
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                     &lt;tr class="DataRowAlternate highlight"&gt;
+                        &lt;td&gt;
+                            Chance the defender will&lt;br /&gt; see the spies coming&lt;/td&gt;
+                        &lt;td&gt;
+                            {2}%&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;/table&gt;                
+
+&lt;BR&gt;&lt;BR&gt;
+The 'Chance the defender will see the spies coming' refers to the chance that the defender will know that someone is trying to spy on them. If they know, they can move more spies into this village to increase their chances of learning the identity of the attacker, but as you can see, there is a chance they will not know they are even being spied on until it is too late!
+&lt;BR&gt;&lt;BR&gt;
+There is a lot more detail to learn about spying. You can find more information about Spies from the Troop Details section of the Tavern Building page.</value>
+  </data>
+  <data name="D2_ClanMates" xml:space="preserve">
+    <value>&lt;img src= "https://static.realmofempires.com/images/icons/m_Clan.png" align="left" style="padding-right: 5px" /&gt;Excellent!! Note that the clan icon will light up when ever there is a new post on the forum. 
+
+&lt;BR&gt;&lt;BR&gt;STRESSING ONCE AGAIN - BE ACTIVE in your clan. Leaders look for that and you are much more likely to get help when needed when you are known to the clan. 
+
+&lt;BR&gt;&lt;BR&gt;Active members are an asset to a clan, inactive members are often considered dead weight.
+
+&lt;BR&gt;&lt;BR&gt;ALSO, clan leaders will often require active members to check in on the forum or risk being dismissed or cannibalized by the clan.</value>
+  </data>
+  <data name="D2_TOU" xml:space="preserve">
+    <value>Very good! 
+&lt;BR&gt;&lt;BR&gt;
+Please remember, it is only a game and its about having fun ;)
+&lt;BR&gt;&lt;BR&gt;
+Play fair, treat others with respect and enjoy!</value>
+  </data>
+  <data name="D2_Mail" xml:space="preserve">
+    <value>Great! All mail starred will never be deleted. However, once you unstar it then it is treated like any other message which is archived after 14 days and deleted after 30. Careful when removing the star status of older messages.</value>
+  </data>
+  <data name="D2_Reports" xml:space="preserve">
+    <value>Great!! All reports you Star will never be deleted. As with mail, once you unstar it then it is treated like any other report which is archived after 14 days and deleted after 30.</value>
+  </data>
+</root>

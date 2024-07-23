@@ -1,0 +1,1254 @@
+﻿#building_popup2 {
+overflow:hidden;
+}
+
+#popup_Building2 #background {
+    background-size: 100% auto;
+}
+
+#popup_Building2 .IFrameDivTitle {
+    left: 35px;  
+    background-position: 10px 0px, 10px 34px;
+}
+
+#popup_Building2 .themeM-view {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+#popup_Building2 .popupBody {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: auto !important;
+    margin: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+    #buildingDialog .headerLevel {
+        display:none;
+    }
+    #popup_Building2 .popupBody .headerLevel {
+        position: absolute;
+        top: 5px;
+        left: 4px;
+        border-radius: 12px;
+        width: 50px;
+        height: 31px;
+        background: #000;
+        padding-top: 6px;
+        padding-left: 3px;
+        padding-right: 13px;
+        border: 2px solid #63594C;
+        text-align: center;
+        box-sizing: border-box;
+        color: #FFD776;
+        font: 18px/1.0em "charlemagne_stdbold";
+        z-index: 500;
+    }
+
+        /*added as a bit of an afterthought to allow adding of resource footer widget */
+#building_popup2 .themeM-view .panelWrapper {
+    position: absolute;
+    top: 0px;
+    bottom: 38px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#building_popup2 .buildingPanel {
+    position:relative;
+    overflow: hidden;
+    background-color:rgba(0,0,0,0.7);
+    margin-bottom: 5px;
+}
+
+
+    #building_popup2 .buildingPanel.descPanel {
+        padding-top: 45px;
+        padding-bottom: 5px;
+    }
+
+        #building_popup2 .buildingPanel.descPanel .buildDescription {
+            padding: 5px 50px 1px 50px;
+            text-align: center;
+        }
+        #building_popup2 .buildingPanel.descPanel .buildingEffect {
+            padding: 0px 20px 5px 20px;
+            text-align: center;
+        }
+            #building_popup2 .buildingPanel.descPanel .buildingEffect.none {
+                display:none;
+            }
+
+#popup_Building2 #building_popup2 .buildingPanel.descPanel .buildingIcon {
+    display: none;
+}
+#buildingDialog #building_popup2 .buildingPanel.descPanel {
+    padding-top: 5px;
+    min-height: 50px;
+}
+    #buildingDialog #building_popup2 .buildingPanel.descPanel .buildingIcon {
+        position: absolute;
+        left: 5px;
+        top: 10px;
+        width: 44px;
+        height: 44px;
+        background-size: 100% 100%;
+    }
+
+#building_popup2 .themeM-view .panelWrapper[data-lvl='0'] .buildingEffect,
+#building_popup2 .themeM-view .panelWrapper[data-lvl='0'] .actionDetail .toEffect  {
+    display:none;
+}
+#building_popup2 .themeM-view .panelWrapper[data-lvl='0'] .actionDetail .toLevel {
+    margin-top:5px;
+}
+
+        #building_popup2 .buildingPanel.upgradePanel {
+            position: relative;
+            overflow: hidden;
+            padding: 10px 0px;
+            padding-bottom: 5px;
+            min-width: 320px;
+        }
+            #building_popup2 .buildingPanel.upgradePanel .primaryRequirements {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 33px;
+                text-align: center;
+            
+}
+                #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq {
+                    position: absolute;
+                    top: 3px;
+                    bottom: 3px;
+                }
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq.nextReqCost {
+                       left:15px;
+                       width:100px; 
+                    }
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq.nextReqFood {
+                        left: 118px;
+                        width: 100px;
+                    }
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq.nextReqTime {
+                        left: 215px;
+                        width: 100px;
+                    }
+
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq .needCol {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                          bottom: 3px;
+                        width: 50%;
+                        text-align: right;
+                    }
+                        #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq .needCol .label {
+                              padding-right: 5px;
+                        }
+                        #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq .needCol .need {
+                            position: absolute;
+                            right: 0px;
+                            bottom: -3px;
+                            padding-left: 16px;
+                            padding-bottom: 3px;
+                            background-size: 15px;
+                            background-repeat: no-repeat;
+                        }
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq .haveCol {
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 50%;
+                        text-align: left;
+                    }
+                        #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq .haveCol .label {
+                            padding-left: 5px;
+                        }
+                        #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq .haveCol .have {
+                            position: absolute;
+                            left: 2px;
+                            bottom: 0px;
+                            padding-bottom: 3px;
+                        }
+                    
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq .reqNotMet {
+                        color: #FF1818;
+                    }
+
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq .reqNotMet {
+                        color: #FF1818;
+                    }
+
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq.nextReqCost .need{
+                        background-image: url('https://static.realmofempires.com/images/icons/Silver44.png');
+                    }
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq.nextReqFood .need{
+                        background-image: url('https://static.realmofempires.com/images/icons/Sheep44.png');
+                    }
+                    #building_popup2 .buildingPanel.upgradePanel .primaryRequirements .nextReq.nextReqTime .need {
+                        background-image: url('https://static.realmofempires.com/images/icons/HourGlass44.png');
+                        position: absolute;
+                        bottom: 0px;
+                        height: 16px;
+                        padding-left: 16px;
+                        background-size: 15px;
+                        background-repeat: no-repeat;
+                    }
+
+            /* hide common upgrade elements for Maxed upgrade */
+            #building_popup2 .buildingPanel.upgradePanel[data-canUpgrade="3"] .actionButton,
+            #building_popup2 .buildingPanel.upgradePanel[data-canUpgrade="3"] .actionDetail,
+            #building_popup2 .buildingPanel.upgradePanel[data-canUpgrade="3"] .actionTime,
+            #building_popup2 .buildingPanel.upgradePanel[data-canUpgrade="3"] .primaryRequirements,
+            #building_popup2 .buildingPanel.upgradePanel[data-canUpgrade="3"] .actionRequirements{
+                display:none;
+            }
+
+            #building_popup2 .buildingPanel.upgradePanel[data-canUpgrade="3"] .maxedNote {
+                display: block;
+            }
+
+            #building_popup2 .buildingPanel.upgradePanel .maxedNote {
+                text-align: center;
+                text-shadow: 0px 0px 5px #0070FF;
+                -webkit-text-stroke: 1px rgba(0,0,255,.1);
+                padding: 0px 25px;
+                display: none;
+            }
+
+            #building_popup2 .buildingPanel.upgradePanel .actionButton {
+                position: relative;
+                margin-left: 30px;
+                float: left;
+            }
+                #building_popup2 .buildingPanel.upgradePanel .actionButton.cant {
+                    padding-right: 10px;
+                    -webkit-filter: grayscale(25%);
+                    -moz-filter: grayscale(25%);
+                    -ms-filter: grayscale(25%);
+                    -o-filter: grayscale(25%);
+                    filter: grayscale(25%);
+                    opacity:.9;
+                }
+                #building_popup2 .buildingPanel.upgradePanel .actionButton .smallArrow {
+                    display: none;
+                    position: absolute;
+                    top: 12px;
+                    right: 15px;
+                    width: 20px;
+                    height: 17px;
+                    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+                    background-position: -400px -350px;
+                }
+                #building_popup2 .buildingPanel.upgradePanel .actionButton.cant .smallArrow {
+                    display: block;
+                }
+
+
+
+            #building_popup2 .buildingPanel.upgradePanel .actionDetail {
+                position: relative;
+                padding-left: 10px;
+                float: left;
+            }
+            #building_popup2 .buildingPanel.upgradePanel .actionTime {
+                position: relative;
+                width: 100px;
+                overflow: hidden;
+                clear: left;
+                margin-left: 54px;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            #building_popup2 .buildingPanel.upgradePanel .actionRequirements {
+                position: relative;
+                width: 100%;
+                max-height: 0;
+                overflow: hidden;
+                padding-top: 3px;
+                padding-bottom: 2px;
+                visibility: hidden;
+            }
+                #building_popup2 .buildingPanel.upgradePanel .actionRequirements.displayed {
+                    visibility: visible;
+                    height: auto;
+                    max-height: 500px;
+                    -webkit-transition: all 1s ease;
+                    -moz-transition: all 1s ease;
+                    -ms-transition: all 1s ease;
+                    -o-transition: all 1s ease;
+                    transition: all 1s ease;
+                }
+                #building_popup2 .buildingPanel.upgradePanel .actionRequirements .reqItemWrapper {
+                    position: relative;
+                    overflow: hidden;
+                    text-align: left;
+                    padding-left: 10px;
+                }
+                #building_popup2 .buildingPanel.upgradePanel .actionRequirements .requirementHeader {
+                    position: relative;
+                    margin: 5px 0px 5px 10px;
+                    color: #FF1818;
+                }
+                #building_popup2 .buildingPanel.upgradePanel .actionRequirements .requirementItem {
+                    position: relative;
+                    display: inline-block;
+                }
+                    #building_popup2 .buildingPanel.upgradePanel .actionRequirements .requirementItem .reqItemLabel {
+                        position: relative;
+                        float: left;
+                        margin: 11px 3px 0px 0px;
+                        color: #FF1818;
+                    }
+                    #building_popup2 .buildingPanel.upgradePanel .actionRequirements .requirementItem .reqItemIcon {
+                        position: relative;
+                        float: left;
+                        padding-top: 0px;
+                        cursor: pointer;
+                    }
+                        #building_popup2 .buildingPanel.upgradePanel .actionRequirements .requirementItem .reqItemIcon div {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            background-size: 28px auto;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                        }
+                    #building_popup2 .buildingPanel.upgradePanel .actionRequirements .requirementItem .reqItemDetail {
+                        position: relative;
+                        float: left;
+                        margin: 11px 0px 0px 3px;
+                        background-repeat: no-repeat;
+                        background-position: 0px -5px;
+                    }
+
+            #building_popup2 .buildingPanel.upgradePanel[data-upgradestate="upgrading"] .progressPanel {
+                display: block;
+            }
+
+            #building_popup2 .buildingPanel.upgradePanel .progressPanel {
+                display: none;
+                position: relative;
+                overflow: hidden;
+            }
+                #building_popup2 .buildingPanel.upgradePanel .progressPanel .sProgressContainer {
+                    margin: 7px 5px 0px 10px;
+                    width: 157px;
+                }
+                    #building_popup2 .buildingPanel.upgradePanel .progressPanel .sProgressContainer.freeFinished {
+                        width: 90%;
+                        margin: 7px auto;
+                        float: initial;
+                    }
+                        #building_popup2 .buildingPanel.upgradePanel .progressPanel .sProgressContainer.freeFinished .finishedText {
+                            position: absolute;
+                            text-align: center;
+                            left: 0px;
+                            right: 0px;
+                            top: 4px;
+                            color: #FFF;
+                        }
+                        #building_popup2 .buildingPanel.upgradePanel .progressPanel .sProgressContainer.freeFinished .sProgressBar {
+                            border: 1px solid #B35706;
+                            background: #D4BA2A;
+                            background: -moz-linear-gradient(left, rgba(212,186,42,1) 0%, rgba(174,99,19,1) 3%, rgba(211,139,23,1) 39%, rgba(245,215,76,1) 42%, rgba(224,190,67,1) 61%, rgba(174,99,19,1) 92%, rgba(103,38,2,1) 100%);
+                            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#D4BA2A), color-stop(3%,#AE6313), color-stop(39%,#D38B17), color-stop(42%,#F5D74C), color-stop(61%,#E0BE43), color-stop(92%,#AE6313), color-stop(100%,#672602));
+                            background: -webkit-linear-gradient(left, #D4BA2A 0%,#AE6313 3%,#D38B17 39%,#F5D74C 42%,#E0BE43 61%,#AE6313 92%,#672602 100%);
+                            background: -o-linear-gradient(left, rgba(212,186,42,1) 0%,rgba(174,99,19,1) 3%,rgba(211,139,23,1) 39%,rgba(245,215,76,1) 42%,rgba(224,190,67,1) 61%,rgba(174,99,19,1) 92%,rgba(103,38,2,1) 100%);
+                            background: -ms-linear-gradient(left, rgba(212,186,42,1) 0%,rgba(174,99,19,1) 3%,rgba(211,139,23,1) 39%,rgba(245,215,76,1) 42%,rgba(224,190,67,1) 61%,rgba(174,99,19,1) 92%,rgba(103,38,2,1) 100%);
+                            background: linear-gradient(to right, #D4BA2A 0%,#AE6313 3%,#D38B17 39%,#F5D74C 42%,#E0BE43 61%,#AE6313 92%,#672602 100%);
+                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ba2a', endColorstr='#672602',GradientType=1 );
+                            width: 100% !important;
+                            box-shadow: 0 0 2px 1px #B35706;
+                            -webkit-transition: width 1s ease-out;
+                            -moz-transition: width 1s ease-out;
+                            -ms-transition: width 1s ease-out;
+                            -o-transition: width 1s ease-out;
+                            transition: width 1s ease-out;
+                        }
+                #building_popup2 .buildingPanel.upgradePanel .progressPanel .cancelUpgrade {
+                    position: absolute;
+                    top: 10px;
+                    left: 14px;
+                    width: 25px;
+                    height: 25px;
+                    background-image: url("https://static.realmofempires.com/images/icons/M_IcoCancelb.png");
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                }
+                #building_popup2 .buildingPanel.upgradePanel .progressPanel .speedUpButton {
+                    position: relative;
+                    float: left;
+                    padding-right: 28px;
+                    margin-top: 3px;
+                }
+
+                    #building_popup2 .buildingPanel.upgradePanel .progressPanel .speedUpButton span {
+                        background-image: url("https://static.realmofempires.com/images/icons/m_hatspells.png");
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        bottom: 5px;
+                        right: 5px;
+                        background-size: 28px 28px;
+                        background-repeat: no-repeat;
+                        background-position: 84px -1px;
+                    }
+
+                #building_popup2 .buildingPanel.upgradePanel .progressPanel .speedUpFreeButton {
+                    display: none;
+                    position: relative;
+                    float: left;
+                    margin-top: 3px;
+                    padding-right: 33px;
+                }
+                    #building_popup2 .buildingPanel.upgradePanel .progressPanel .speedUpFreeButton .icon {
+                        position: absolute;
+                        top: -4px;
+                        right: 14px;
+                        width: 44px;
+                        height: 44px;
+                        background-size: 100% 100%;
+                        background-image: url(https://static.realmofempires.com/images/icons/freeSign.png);
+                    }
+
+            #building_popup2 .buildingPanel.upgradePanel .qPreviewPanel {
+                position: relative;
+                display:none;
+            }
+                #building_popup2 .buildingPanel.upgradePanel .qPreviewPanel.active {
+                    display: block;
+                      height: 38px;
+                }
+                #building_popup2 .buildingPanel.upgradePanel .qPreviewPanel .label {
+                    position: absolute;
+                    top: 13px;
+                    left: 12px;
+                    text-align: center;
+                }
+                #building_popup2 .buildingPanel.upgradePanel .qPreviewPanel .queuedItemsArea {
+                    position: absolute;
+                    top: 5px;
+                    left: 75px;
+                    width: 200px;
+                    height: 35px;
+                    text-align: center;
+                    overflow: hidden;
+                }
+                    #building_popup2 .buildingPanel.upgradePanel .qPreviewPanel .queuedItemsArea .queuedItem {
+                        position: relative;
+                        float: left;
+                        top: 3px;
+                        display: block;
+                        height: 30px;
+                        width: auto;
+                        padding: 1px 7px 1px 30px;
+                        background-position: 0px 0px;
+                        background-size: 30px 30px;
+                        background-repeat: no-repeat;
+                        line-height: 29px;
+                    }
+
+                    #building_popup2 .buildingPanel.upgradePanel .qPreviewPanel .queuedItemsArea .queuedMore {
+                        position: relative;
+                        float: left;
+                        top: 0px;
+                        display: block;
+                        width: auto;
+                        left: 5px;
+                        color: #D7D7D7;
+                        font: 22px Georgia;
+                        text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                    }
+
+                #building_popup2 .buildingPanel.upgradePanel .qPreviewPanel .fullQButton {
+                    position: absolute;
+                    right: 10px;
+                    top: 4px;
+                }
+                    #building_popup2 .buildingPanel.upgradePanel .qPreviewPanel .fullQButton .smallArrowRight {
+                        right: 10px;
+                    }
+                   
+    #building_popup2 .buildingPanel.specialPanel {
+        /*height: 245px;
+        background-image: url(https://static.realmofempires.com/images/misc/M_SP_UIMisc.png), url(https://static.realmofempires.com/images/misc/M_SP_UIMisc.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 47px -2px, 47px 39px;
+        background-size: 250px 250px, 250px 250px;*/
+    }
+        #building_popup2 .buildingPanel.specialPanel .sD1 {
+            top: -2px;
+        }
+        #building_popup2 .buildingPanel.specialPanel .sD2 {
+            top: 39px;
+        }
+        #building_popup2 .buildingPanel.specialPanel .sD3 {
+            bottom: -2px;
+        }
+        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel {
+
+        }
+            #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection {
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 2px;
+                text-align:center;
+            }
+
+                #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDetailBtn {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0px 5px;
+                    cursor: pointer;
+                }
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDetailBtn.selected .unitDetailName {
+                        background: -moz-linear-gradient(left, rgba(54,192,255,0) 0%, rgba(54,192,255,0.5) 50%, rgba(54,192,255,0) 100%);
+                        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(54,192,255,0)), color-stop(50%,rgba(54,192,255,0.5)), color-stop(100%,rgba(54,192,255,0)));
+                        background: -webkit-linear-gradient(left, rgba(54,192,255,0) 0%,rgba(54,192,255,0.5) 50%,rgba(54,192,255,0) 100%);
+                        background: -o-linear-gradient(left, rgba(54,192,255,0) 0%,rgba(54,192,255,0.5) 50%,rgba(54,192,255,0) 100%);
+                        background: -ms-linear-gradient(left, rgba(54,192,255,0) 0%,rgba(54,192,255,0.5) 50%,rgba(54,192,255,0) 100%);
+                        background: linear-gradient(to right, rgba(54,192,255,0) 0%,rgba(54,192,255,0.5) 50%,rgba(54,192,255,0) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0036c0ff', endColorstr='#0036c0ff',GradientType=1 );
+                    }
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDetailBtn .unitDetailName {
+                        float: left;
+                        position: relative;
+                        top: 10px;
+                        margin-right: 0px;
+                        padding: 0px 4px;
+                    }
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDetailBtn .smallRoundButtonDark {
+                        position: relative;
+                        float: left;
+                    }
+                        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDetailBtn .smallRoundButtonDark span {
+                            position: absolute;
+                            top: 2px;
+                            left: 2px;
+                            right: 2px;
+                            bottom: 2px;
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                        }
+
+                #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox {
+                    display: none;
+                    margin-bottom: 92px;
+                    height: auto;
+                }
+
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox.selected {
+                        display: block;
+                    }
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescIcon {
+                        /*position: absolute;
+                        top: 0px;
+                        left: 10px;*/
+                        float: left;
+                        margin-left: 10px;
+                        margin-right: 5px;
+                        width: 40px;
+                        height: 40px;
+                        background-size: 100% 100%;
+                    }
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescText {
+                        /*position: absolute;
+                        top: 117px;
+                        left: 10px;*/
+                        margin-left: 10px;
+                        width: 295px;
+                        height: auto;
+                        text-align: left;
+                    }
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescCost {
+                        position: absolute;
+                        /*top: 70px;*/
+                        margin-top: 4px;
+                        left: 75px;
+                        width: 295px;
+                        height: auto;
+                        overflow: hidden;
+                    }
+                        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescCost .uDescSilver,
+                        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescCost .uDescFood,
+                        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescCost .uDescTime {
+                            position: relative;
+                            float: left;
+                            padding-top: 4px;
+                            padding-left: 25px;
+                            height: 19px;
+                            margin-right: 10px;
+                            margin-bottom: 5px;
+                            background-size: auto 100%;
+                            background-repeat: no-repeat;
+                        }
+                        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescCost .uDescSilver {
+                            background-image: url('https://static.realmofempires.com/images/icons/Silver44.png');
+                        }
+                        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescCost .uDescFood {
+                            background-image: url('https://static.realmofempires.com/images/icons/Sheep44.png');
+                        }
+                        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescCost .uDescTime {
+                            background-image: url('https://static.realmofempires.com/images/icons/HourGlass44.png');
+                        }
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox.gov .uDescCost .uDescSilver {
+                        background-image: url('https://static.realmofempires.com/images/icons/M_PF_Silver.png');
+                    }
+                    #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescStats {
+                        position: absolute;
+                        left: 10px;
+                        margin-top: 32px;
+                        overflow: hidden;
+                    }
+                        #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescStats .stat {
+                            position: relative;
+                            width: 290px;
+                            height: 20px;
+                        }
+                            #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescStats .stat .category {
+                                position: relative;
+                                float: left;
+                                height: 18px;
+                                width: 60px;
+                                text-align: right;
+                            }
+                            #building_popup2 .buildingPanel.specialPanel .goToTrainingPanel .unitInformationSection .unitDescriptionBox .uDescStats .stat .value {
+                                position: relative;
+                                float: left;
+                                height: 18px;
+                                padding-left: 23px;
+                                margin-left: 7px;
+                                text-align: right;
+                                background-size: auto 100%;
+                                background-repeat: no-repeat;
+                            }
+
+        #building_popup2 .buildingPanel.specialPanel,
+        #building_popup2 .buildingPanel.specialPanel .specialSubPanel {
+            display: none;
+        }
+            #building_popup2 .buildingPanel.specialPanel.active,
+            #building_popup2 .buildingPanel.specialPanel .specialSubPanel.active {
+                display: block;
+            }
+
+        #building_popup2 .buildingPanel.specialPanel .goToTrainingBtn {
+            position: relative;
+            margin: 3px auto;
+            padding-right: 23px;
+        }
+            #building_popup2 .buildingPanel.specialPanel .goToTrainingBtn .qrIcon {
+                position: absolute;
+                top: 0px;
+                right: 14px;
+                width: 36px;
+                height: 36px;
+                background-image: url(https://static.realmofempires.com/images/icons/M_QRecruit.png);
+                background-size: 100% 100%;
+            }
+    #building_popup2 .buildingPanel.troopDetailsBtnPanel {
+        display:none;
+    }
+        #building_popup2 .buildingPanel.troopDetailsBtnPanel.active {
+            display: block;
+        }
+    #building_popup2 .buildingPanel .troopDetailsBtn,
+    #building_popup2 .buildingPanel .buildingLevelBtn {
+        position: relative;
+        margin: 0px auto;
+        margin-top: 1px;
+        padding-right: 10px;
+    }
+
+    #building_popup2 .buildingPanel.efficiencyPanel {
+        padding: 15px 0px;
+    }
+
+        #building_popup2 .buildingPanel.efficiencyPanel .eProgressContainer {
+            position: relative;
+            width: 270px;
+            height: 16px;
+            margin: 0px auto;
+            border: 2px solid #63594C;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: 3px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+            #building_popup2 .buildingPanel.efficiencyPanel .eProgressContainer .smallArrow {
+                position: absolute;
+                top: 3px;
+                right: 4px;
+                width: 20px;
+                height: 17px;
+                background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+                background-position: -400px -350px;
+            }
+            #building_popup2 .buildingPanel.efficiencyPanel.expanded .eProgressContainer .smallArrow {
+                background-position: -400px -400px;
+            }
+
+        #building_popup2 .buildingPanel.efficiencyPanel .subEfficiencyBox {
+            position: relative;
+            max-height: 0;
+            overflow: hidden;
+            -webkit-transition: max-height .5s ease-out;
+            -moz-transition: max-height .5s ease-out;
+            -ms-transition: max-height .5s ease-out;
+            -o-transition: max-height .5s ease-out;
+            transition: max-height .5s ease-out;
+        }
+        #building_popup2 .buildingPanel.efficiencyPanel.expanded .subEfficiencyBox {
+            max-height: 600px; /* css hack to overcome 0px to auto transition problem */
+        }
+        #building_popup2 .buildingPanel.efficiencyPanel .subEfficiencyBox .setOne{
+            position:relative;
+            overflow:hidden;
+        }
+
+        #building_popup2 .buildingPanel.efficiencyPanel .subEfficiencyBox .eProgressContainer {
+            display: none;
+            width: 250px;
+        }
+            #building_popup2 .buildingPanel.efficiencyPanel .subEfficiencyBox .eProgressContainer.show {
+                display: block;
+            }
+
+        #building_popup2 .buildingPanel.efficiencyPanel .efficiencyExpandBtn {
+            position: absolute;
+            left: 50%;
+            top: 10px;
+            margin-left: 100px;
+        }
+
+            #building_popup2 .buildingPanel.efficiencyPanel.expanded .efficiencyExpandBtn .smallArrowDown,
+            #building_popup2 .buildingPanel.efficiencyPanel:not(.expanded) .efficiencyExpandBtn .smallArrowUp {
+                display: none;
+            }
+
+        #building_popup2 .buildingPanel.efficiencyPanel .eProgressBar {
+            height: 100%;
+            border-radius: 6px;
+            border: 1px solid #445c64;
+            box-sizing: border-box;
+            background: #3e565e; /* Old browsers */
+            background: -moz-linear-gradient(left, #3e565e 0%, #172737 6%, #2a4950 29%, #385f62 35%, #5a998d 40%, #568462 65%, #264355 92%, #445c64 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#3e565e), color-stop(6%,#172737), color-stop(29%,#2a4950), color-stop(35%,#385f62), color-stop(40%,#5a998d), color-stop(65%,#568462), color-stop(92%,#264355), color-stop(100%,#445c64)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* IE10+ */
+            background: linear-gradient(to right, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e565e', endColorstr='#445c64',GradientType=1 ); /* IE6-9 */
+            background-size: 200px; /*TO PREVENT SQUISH */
+            -webkit-transition: width .5s ease-out;
+            -moz-transition: width .5s ease-out;
+            -ms-transition: width .5s ease-out;
+            -o-transition: width .5s ease-out;
+            transition: width .5s ease-out;
+        }
+
+        #building_popup2 .buildingPanel.efficiencyPanel .eProgressLabel {
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            right: 0px;
+            text-align: center;
+        }
+
+
+#buildingDialog #building_popup2 .alternate .alternateSubPage {
+    /*padding-top: 10px;*/
+    padding: 0;
+}     
+#building_popup2 .alternate .alternateSubPage {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 36px;
+    padding: 10px;
+    padding-top: 50px;
+    display: none;
+}
+    #building_popup2 .alternate .alternateSubPage.active {
+        display: block;
+    }
+
+   /* #building_popup2 .alternate .alternateSubPage.pageTroopDetails,*/
+    #building_popup2 .alternate .alternateSubPage.pageBuildingLevels{
+            background-color: rgba(0, 0, 0, 0.8);
+    }
+    #building_popup2 .alternate .alternateSubPage.pageTroopDetails {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    #building_popup2 .alternate .alternateSubPage.pageSpecial {
+        padding:0px;
+        display:block;
+    }
+
+        #building_popup2 .alternate .alternateSubPage.pageSpecial .gapHeader {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+            #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel {
+                position:relative;
+                overflow: hidden;
+                width:100%;
+                height:auto;
+                background-color: rgba(0, 0, 0, 0.8);
+                margin-bottom: 5px;
+            }
+                #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitIcon {
+                    position: relative;
+                    float: left;
+                    width: 44px;
+                    height: 44px;
+                    background-size: 100% 100%;
+                    margin: 7px;
+                    background-image: url('https://static.realmofempires.com/images/units/Infantry_M.png');
+                }
+                #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitHouse {
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 2px;
+                }
+                    #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitHouse .housedNumber {
+                        font: 15px georgia;
+                    }
+                #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitPerLabel {
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 2px;
+                }
+                #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitPerDetail {
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 2px;
+                }
+                    #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitPerDetail .detailItem {
+                        margin-right:10px;
+                    }
+
+                #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitActions {
+                    position: relative;
+                    overflow: hidden;
+                    clear: left;
+                    margin-bottom: 5px;
+                    padding-left: 5px;
+                }
+                    #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitActions .recruitCirc {
+                        position: relative;
+                        height: 40px;
+                        width: 40px;
+                        float: left;
+                        background-image: url('https://static.realmofempires.com/images/buttons/M_selectEmpty.png');
+                        background-size: 100% 100%;
+                        margin: 5px 1px;
+                        cursor: pointer;
+                    }
+                    #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitActions .recruitCirc:active {
+                        top: 1px;
+                    }
+                        #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitActions .recruitCirc .rcLabel {
+                            text-align: center;
+                            padding-top: 4px;
+                        }
+                        #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitActions .recruitCirc .rcNum {
+                            text-align: center;
+                            margin-top: -1px;
+                            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                        }
+                    #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitActions .recruitAmount {
+                        position: relative;
+                        width: 54px;
+                        float: left;
+                        margin: 12px 5px 5px 8px;
+                        -webkit-box-shadow: inset -1px 3px 2px 1px rgba(0, 0, 0, 0.3);
+                        box-shadow: inset -1px 3px 2px 1px rgba(0, 0, 0, 0.3);
+                        border: none;
+                        border-radius: 5px;
+                        padding: 5px;
+                    }
+                    #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel .recruitActions .train {
+                        position: relative;
+                        float: left;
+                        top: 6px;
+                    }
+                #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel.govRecPanel .govDescription {
+                    position: relative;
+                    float: left;
+                    width: 255px;
+                    margin-top: 3px;
+                    margin-right: 11px;
+                    margin-left: 3px;
+                }
+
+                #building_popup2 .alternate .alternateSubPage.pageSpecial .recruitArea .recruitPanel.govRecPanel .recruitCirc .rcNum {
+                    text-align: center;
+                    margin-top: 8px;
+                    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                    font-size: 22px;
+                }
+
+        /* BUILDING FULL QUEUE PAGE STYLE */        
+#building_popup2 .pageFullQueue {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#buildingDialog #building_popup2 .pageFullQueue .queueHeader {
+    top: 0px;
+}
+    #building_popup2 .pageFullQueue .queueHeader {
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        right: 0px;
+        height: 35px;
+    }
+        #building_popup2 .pageFullQueue .queueHeader .sectionDivider {
+            bottom: 0px;
+        }
+
+        #building_popup2 .pageFullQueue .queueHeader .qLvl,
+        #building_popup2 .pageFullQueue .queueHeader .qName,
+        #building_popup2 .pageFullQueue .queueHeader .qTime,
+        #building_popup2 .pageFullQueue .queueHeader .qCancel {
+            position: absolute;
+            top: 7px;
+            color: #e6cd90;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font: 15px "IM Fell French Canon LC", serif;
+        }
+
+
+        #building_popup2 .pageFullQueue .queueHeader .qLvl,
+        #building_popup2 .pageFullQueue .queueContainer .qLvl {
+            left: 15px;
+        }
+
+        #building_popup2 .pageFullQueue .queueHeader .qName,
+        #building_popup2 .pageFullQueue .queueContainer .qName {
+            left: 70px;
+        }
+
+        #building_popup2 .pageFullQueue .queueHeader .qTime,
+        #building_popup2 .pageFullQueue .queueContainer .qTime {
+            left: 210px;
+        }
+
+        #building_popup2 .pageFullQueue .queueHeader .qCancel,
+        #building_popup2 .pageFullQueue .queueContainer .qCancel {
+            left: 265px;
+        }
+
+    #building_popup2 .pageFullQueue .queueContainer .qSpeedUp {
+        position: absolute;
+        left: 170px;
+    }
+        #building_popup2 .pageFullQueue .queueContainer .qSpeedUp span {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            right: 4px;
+            bottom: 4px;
+            background-image: url("https://static.realmofempires.com/images/icons/m_hatspells.png");
+            background-size: 28px;
+            background-repeat: no-repeat;
+            background-position: 2px 0px;
+        }
+#buildingDialog #building_popup2 .pageFullQueue .queueContainer {
+    top: 40px;
+}
+    #building_popup2 .pageFullQueue .queueContainer {
+        position: absolute;
+        top: 75px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        overflow: auto;
+    }
+
+        #building_popup2 .pageFullQueue .queueContainer .queuedItemRow {
+            position: relative;
+            width: 100%;
+            height: 36px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: 30px 30px;
+            background-position: 38px 0px;
+        }
+
+        #building_popup2 .pageFullQueue .queueContainer .qLvl,
+        #building_popup2 .pageFullQueue .queueContainer .qName,
+        #building_popup2 .pageFullQueue .queueContainer .qTime,
+        #building_popup2 .pageFullQueue .queueContainer .qCancel {
+            position: absolute;
+            top: 7px;
+            color: #d7d7d7;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font: 15px "IM Fell French Canon LC", serif;
+        }
+
+        #building_popup2 .pageFullQueue .queueContainer .qCancel {
+            top: 4px;
+            left: 280px;
+            width: 25px;
+            height: 25px;
+            background-image: url("https://static.realmofempires.com/images/icons/M_X.png");
+            background-size: 100% 100%;
+        }
+/*END OF BUILDING PAGE FULL QUEUE */
+
+
+
+/*UNIT FULL QUEUE STYLE*/
+
+#building_popup2 .recruitQueueArea {
+    display:none;
+    position: relative;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+    #building_popup2 .recruitQueueArea.active {
+        display: block;
+    }
+    #building_popup2 .recruitQueueArea .recruitQSummary {
+        display:none;
+        position: relative;
+        height:45px;
+    }
+    #building_popup2 .recruitQueueArea .queueHeader {
+        position: relative;
+        height: 35px;
+    }
+
+        #building_popup2 .recruitQueueArea .queueHeader .sectionDivider.top {
+            display:none;
+            top: 0px;
+        }
+        #building_popup2 .recruitQueueArea .queueHeader .sectionDivider.bottom {
+            bottom: 0px;
+        }
+
+        #building_popup2 .recruitQueueArea .queueHeader .qCount,
+        #building_popup2 .recruitQueueArea .queueHeader .qName,
+        #building_popup2 .recruitQueueArea .queueHeader .qTime,
+        #building_popup2 .recruitQueueArea .queueHeader .qCancel {
+            position: absolute;
+            top: 7px;
+            color: #e6cd90;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font: 15px "IM Fell French Canon LC", serif;
+        }
+
+
+        #building_popup2 .recruitQueueArea .queueHeader .qCount,
+        #building_popup2 .recruitQueueArea .queueContainer .qCount {
+            left: 20px;
+        }
+
+        #building_popup2 .recruitQueueArea .queueHeader .qName,
+        #building_popup2 .recruitQueueArea .queueContainer .qName {
+            left: 90px;
+        }
+
+        #building_popup2 .recruitQueueArea .queueHeader .qTime,
+        #building_popup2 .recruitQueueArea .queueContainer .qTime {
+            left: 200px;
+        }
+
+        #building_popup2 .recruitQueueArea .queueHeader .qCancel {
+            left: 260px;
+        }
+    #building_popup2 .recruitQueueArea .queueContainer .qCancel {
+        left: 280px;
+    }
+
+
+    #building_popup2 .recruitQueueArea .queueContainer {
+        position:relative;
+    }
+
+        #building_popup2 .recruitQueueArea .queueContainer .qRecruitItemRow {
+            position: relative;
+            width: 100%;
+            height: 36px;
+            overflow: hidden;
+        }
+
+        #building_popup2 .recruitQueueArea .queueContainer .qCount,
+        #building_popup2 .recruitQueueArea .queueContainer .qName,
+        #building_popup2 .recruitQueueArea .queueContainer .qTime,
+        #building_popup2 .recruitQueueArea .queueContainer .qIcon,
+        #building_popup2 .recruitQueueArea .queueContainer .qCancel {
+            position: absolute;
+            top: 7px;
+            color: #d7d7d7;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font: 15px "IM Fell French Canon LC", serif;
+        }
+
+        #building_popup2 .recruitQueueArea .queueContainer .qIcon {
+            top: 2px;
+            left: 60px;
+            width: 30px;
+            height: 30px;
+            background-size: 100% 100%;
+        }
+
+        #building_popup2 .recruitQueueArea .queueContainer .qCancel {
+            top: 4px;
+            width: 25px;
+            height: 25px;
+            background-image: url("https://static.realmofempires.com/images/icons/M_X.png");
+            background-size: 100% 100%;
+        }
+/*END OF UNIT FULL QUEUE*/
+
+
+#building_popup2 .alternate .alernateViewFooter {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+
+    #building_popup2 .alternate .alernateViewFooter .stripe {
+        position: absolute;
+        left: 3px;
+        top: 8px;
+        right: 3px;
+        bottom: 3px;
+        background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png);
+    }
+
+    #building_popup2 .alternate .alernateViewFooter .backToDefault {
+        position: absolute;
+        top: 3px;
+        left: 5px;
+    }
+
+
+
+/* Unit Deets Temp */
+
+#building_popup2 .oneUnitHelp > td > span > table:first-of-type {
+    position: relative;
+    width: 320px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+    /*border-bottom: 2px solid #202020;*/
+}
+
+#building_popup2 .oneUnitHelp > td > span > table > tbody > tr:first-child,
+#building_popup2 .oneUnitHelp > td > span > table > tbody > tr:nth-child(2n) {
+    background-color:rgba(0,0,0,0.8);
+}
+
+#building_popup2 .oneUnitHelp > td > span > table > tbody > tr > td {
+    padding-right: 20px;
+}
+
+#building_popup2 .oneUnitHelp > td > span > table > tbody > tr .memberDivider {
+    width: 231px;
+    height: 8px;
+    margin: 1px auto;
+    background-image: url('https://static.realmofempires.com/images/misc/M_ListBar2.png');
+    background-size: 100% 100%;
+}
+
+#building_popup2 .oneUnitHelp > td > span > table > tbody > tr .mainIcon {
+    position: relative;
+    top: -3px;
+    width: 32px;
+    height: 32px;
+}
+
+#building_popup2 .oneUnitHelp > td > span > table .tableHeader {
+    text-align: right;
+    color: #808080;
+    font-family: IM Fell French Canon;
+}
+
+#building_popup2 .oneUnitHelp > td > span > table td {
+    color: #d9d9d9;
+    font: 12px georgia;
+}
+    #building_popup2 .oneUnitHelp > td > span > table td > .imageIcon {
+        width: 16px;
+        height: 16px;
+        padding-right: 3px;
+    }
+
+#building_popup2 .oneUnitHelp > td > span > .quickRecruitBtn {
+    position: absolute;
+    z-index: 1;
+}
+    #building_popup2 .oneUnitHelp > td > span > .quickRecruitBtn span {
+            position: absolute;
+            background-image: url(https://static.realmofempires.com/images/icons/Q_Recruit2.png);
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+    }
+
+#building_popup2 .oneUnitHelp > td > span table {
+    width: 100%;
+}
+
+#building_popup2 .oneUnitHelp > td > span > table td .smallRoundButtonDark > img:first-child {
+    width: 24px; 
+    height: 24px; 
+    padding-left: 2px;
+}
+/*#building_popup2 .oneUnitHelp > td > span > table td .smallRoundButtonDark > img:last-child {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    bottom: 20px;
+    left: 15px;
+}*/
+
+#building_popup2 .oneUnitHelp td img {
+    max-width: 280px;
+}
+
+
+
+
+
+
+

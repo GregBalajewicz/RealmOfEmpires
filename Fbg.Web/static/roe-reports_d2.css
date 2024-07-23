@@ -1,0 +1,508 @@
+﻿/*.reports_popup_old { position: absolute;  top: 0px;  bottom: 0px;  left: 0px;  right: 0px; overflow: hidden;   }
+*/
+
+#reports_popup .main-fg {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#reports_popup .reload {
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    padding: 0px;
+    float: left;
+    margin: 2px;
+    cursor: pointer;
+}
+/*#reports_popup .loading { float: left; margin: 3px 20px 3px 1px; font-size: 18px; }
+*/
+#reports_popup .list { width: 100%; margin-left: 0px; position: absolute; top: 45px; }
+#reports_popup .list .items { overflow-y: auto; width:100%; top: 45px; bottom: 0px; position: absolute; left: 0px; right: 0px; }
+/*#reports_popup .list .items .empty { font-size: 22px; margin: 20px; display: none; }*/
+#reports_popup .list .item { 
+    padding: 2px 0; 
+    color: #8e8e8e; 
+    margin: 1px 0; 
+    clear: both; 
+    overflow: hidden; 
+    background: rgba(0,0,0,0.6);
+}
+    #reports_popup .list .item:hover,
+    #reports_popup .list .item.new:hover {
+        background-color: rgba(117, 153, 160, 0.4);
+    }
+/*#reports_popup .list .item.selected { color: black !important; background: rgba(255,255,255,0.7); }
+#reports_popup .list .item.selected a { color: black; }
+#reports_popup .list .item.selected .rightArrows { 
+    -moz-opacity: 1; opacity: 1;
+    content: url("https://static.realmofempires.com/images/icons/M_ArrowRBlack.png");   
+}
+*/
+#reports_popup .list .item .time { float:none; margin: 0; }
+#reports_popup .list .item a { display:block; width:100%; color: #B7B7B7; }
+
+#reports_popup .list .item.new { color: #ffd776 !important; background-color: rgba(45, 56, 71, 0.8); }
+/*#reports_popup .list .item.new a { color: #ffd776 !important; }
+#reports_popup .list .item.new .rightArrows { 
+    -moz-opacity: 1; opacity: 1;    
+    content: url("https://static.realmofempires.com/images/misc/M_ArrowR.png"); 
+}
+#reports_popup .list .item a:hover { text-decoration:none; }
+#reports_popup .list .item .rightArrows { float: right; -moz-opacity: 1; opacity: 1; }
+#reports_popup .list .item .troopIconSheet44 { float: left; }
+
+.ReportsPopup { height: 100%; }
+
+#reports_popup > .bg { 
+    z-index: 1; 
+    margin-top: 2px;
+    background: rgba(0,0,0,0.5) !important;
+}
+#reports_popup .list .template { display: none }
+#reports_popup .phrases { display: none }
+#reports_popup .more { height: 58px; width: 247px; margin:10px 0 4px 0; cursor: pointer; background: url(https://static.realmofempires.com/images/icons/M_MoreList.png) }
+
+#reports_popup .detail { display: none; position: absolute; bottom: 0px; top: 0px }
+
+#reports_popup .detail .info { bottom: 0px; top: 85px; overflow-y: auto; overflow-x: hidden; position: absolute; right: 0; left: 0; }
+
+#reports_popup .detail .attacker .functions, 
+#reports_popup .detail .defender .functions { display:none; }
+
+#reports_popup .function { top: 30px; position: absolute }
+#reports_popup .function > div { float: left; font-size: 18px; margin: 5px; cursor: pointer }
+#reports_popup .function .forward-search { display: none; width: 100%; }
+#reports_popup .function .forward-search .selected { width: 50% }
+#reports_popup .function .forward-search .result span { margin: 0px 5px 0px 5px; float: left }
+#reports_popup .function .forward-search .message { clear: both }
+
+#reports_popup .list { top: 0px; overflow-y: auto; overflow-x: hidden; }
+#reports_popup .list, #reports_popup .details { position: absolute; top: 0px; bottom: 0px; width: 100%; }
+
+#reports_popup .list .filterHeader { height: 22px; line-height: 33px; font: 16px "charlemagne_stdbold"; padding-top: 11px; }
+#reports_popup .action { width: 44px; height: 44px; }
+#reports_popup .action-expandColapse { position: absolute; right: 0px; top: 0px; width: 44px; height: 44px; background-image: url("https://static.realmofempires.com/images/misc/M_ArrowDown.png"); background-repeat: no-repeat; background-position: center center; filter: alpha(opacity=1); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1; -webkit-transition: opacity 0.7s; -moz-transition: opacity 0.7s; transition: opacity 0.7s; }
+#reports_popup .action-expandColapse.clicked { background-image: url("https://static.realmofempires.com/images/misc/M_ArrowUp.png"); filter: alpha(opacity=0.4); -moz-opacity: 0.4; -khtml-opacity: 0.4; opacity: 0.4; -webkit-transition: opacity 0.7s; -moz-transition: opacity 0.7s; transition: opacity 0.7s; }
+#reports_popup .detail .fg .themeM-more { float: left }
+
+#reports_popup .list .reportseparator {
+    width:100%;
+    text-align:center;
+    margin: -7px 0;
+}
+
+#reports_popup [id$=lblDescription] a {
+    line-height:33px;
+}
+*/
+#popup_reports {
+    background-image:none;
+    background:none;
+}
+/*
+
+
+.reportDetails_forwardReportPopup .forwardPopup {   
+    z-index:100;
+    background-color:none;
+}
+
+
+.reportDetails_forwardReportPopup .forwardPopup .forwardSendBtn {
+    position: relative;
+    float: left;
+    top: 6px;
+}
+
+.reportDetails_forwardReportPopup .forwardPopup .forwardTo {
+    position: relative;
+    width: 184px;
+    float: left;
+    margin: 12px 5px 5px 8px;
+    -webkit-box-shadow: inset -1px 3px 2px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: inset -1px 3px 2px 1px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+.reportDetails_forwardReportPopup .forwardPopup ul.forwardSearchList {
+    position:relative;
+    clear:both;
+    padding:6px;
+    padding-left: 14px;
+    list-style: none;
+}
+
+.reportDetails_forwardReportPopup .forwardPopup ul.forwardSearchList li {
+    font: 13px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    padding:4px 0px;
+}
+
+.reportDetails_forwardReportPopup .forwardPopup ul.forwardSearchList li {
+    font: 13px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    padding:4px 0px;
+}
+
+.reportDetails_forwardReportPopup .forwardPopup .loadingSearchList {
+   background-image:url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+   width:20px;
+   height:20px;
+   background-size:20px 20px;
+   background-repeat:no-repeat;
+   margin-left:14px;
+   position: absolute;
+top: 110px;
+
+}
+
+#reports_popup .phrases {
+    display:none;
+}
+
+#newReportsIndicator {
+    display:none;
+     position: absolute;
+    top: 15px;
+    right: 50px;
+}
+*/
+#reports_popup .item .hotspot {
+    float:none;    
+    width:auto;
+}
+
+#reports_popup .item .hotspot:hover {
+   /* text-decoration:underline;*/  
+  
+}
+
+/*
+#reports_popup .toggle {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-size:100% 100%;
+    top: 3px;
+    margin: 2px 5px;
+    position: absolute;
+    float:left;
+}
+
+    #reports_popup .toggle.selectableReport {
+        display:none;
+    }
+
+#reports_popup .toggle.selectableReport[data-state="on"] {
+    background-image: url('https://static.realmofempires.com/images/misc/yesGreen.PNG');
+}
+#reports_popup .toggle.selectableReport[data-state="off"] {
+    background-image: url('https://static.realmofempires.com/images/icons/M_IcoCancel.png');
+}
+
+
+*/.filterReports {
+    float:none;
+}
+ 
+#reportFilterInput {
+    float:left;
+    margin: 2px;
+    height:20px;
+    width:100px;
+    margin-top:6px;
+    padding-top: 5px;
+
+} /*
+
+.filterReports .runFilterBtn {
+    float:left;
+    background-color:blue;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+
+#reports_popup .filterReports .clearFilterBtn {
+
+background-color: transparent;
+position: relative;
+padding: 0px;
+padding-top: 10px;
+float: left;
+margin: 2px;
+cursor: pointer;
+width:22px;
+height:22px;
+}
+*/
+/*#reports_popup .filterReports .clearFilterBtn img {
+    width:22px;
+    height:22px;
+}*/
+
+/*
+
+.reportModifiers {
+    width:100%;
+    overflow: auto;
+}
+
+.reportModifiers .deleteSelectedReports {
+    float:left;
+    background-color:red;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.reportModifiers .selectAllReports {
+    float:left;
+    background-color:forestgreen;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.reportModifiers .deselectAllReports {
+    float:left;
+    background-color:forestgreen;
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+
+#reports_popup .numNewReports {
+    display:none;
+    background-image: url('https://static.realmofempires.com/images/fonts/num_B3.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+
+#reports_popup .fontFellFCLClg {
+color: #ffffff;
+font: 15px/1.0em "IM Fell French Canon LC", serif;
+text-shadow: 0 0 4px #000000;
+
+}
+*/
+
+
+/* NEW D2 Table layout for report lists */
+
+#reports_popup .itemListTable {
+    border:0px solid black;
+    
+    width:100%;
+    float: left;
+    position: static !important;
+    top: 0px;
+    /*border-spacing:0 1px;*/
+    border-spacing:1px;
+}
+
+#reports_popup .itemListTable td {
+    
+}
+
+#reports_popup .itemListTable th {
+   
+    padding: 4px;
+}
+
+#reports_popup .timeColumn,
+#reports_popup .subjectColumn {
+    vertical-align:middle;
+    
+    padding-left:4px;
+    padding-right:4px;
+}
+
+#reports_popup .timeColumn {
+    min-width:100px;
+}
+
+
+/*
+@media all and (min-width: 601px) {
+    .outcomeIcon:after {
+        content: attr(data-outcometype);
+    }
+}*/
+
+
+#reports_popup .outcomeDescription {
+    display:none;
+}
+
+#reportsDialog.width800 .outcomeDescription {
+    display:inline;
+}
+
+#reports_popup .list .item .indicator {
+    height: 24px;
+    width: 24px;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+#reports_popup .outcomeIcon {
+    width: 24px;
+    height: 24px;
+    background-image: url(https://static.realmofempires.com/images/icons/M_Misc.png);
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+.btnCheckboxToggle.medUI {
+    height:24px;
+    width:24px;
+    background-size: 270px 330px;
+    background-position: 0px 0px;
+}
+
+.btnCheckboxToggle {
+    height:40px;
+    width:40px;
+    text-align: center;
+    /*box-sizing: border-box;*/
+    
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px 0px;
+    background-size: 450px 550px;
+    background-repeat:no-repeat;
+   
+}
+
+#reports_popup .subjectLine {
+    cursor:pointer;
+}
+
+#reports_popup .listTools {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 45px;
+    min-width: 625px;
+    overflow: hidden;
+}
+
+#reports_popup .listToolsFilter {
+    float: left;
+    width: 415px;
+    overflow: initial;
+}
+
+
+.listTools .listToolBtn {
+background-color: transparent;
+position: relative;
+width: 36px;
+height: 36px;
+padding: 0px;
+float: left;
+margin: 2px;
+cursor: pointer;
+border-spacing: 0 1px;
+}
+
+.listToolsSelect {
+    float:right;
+}
+
+#reports_popup .clearFilterBtn .listToolIcon {
+    width:34px;
+    height:34px;
+}
+
+/*#reports_popup .filterTerm {
+    display:none;
+    float:left;
+    padding-left: 6px;
+    padding-right: 3px;
+    padding-top:15px;
+}*/
+
+
+#newReportsIndicator {
+    display: none;
+    position: absolute;
+    background-color: rgba(30, 162, 147, 0.87);
+    z-index: 3;
+    padding: 6px;
+    border-top-right-radius: 8px;
+    bottom: 0px;
+    box-shadow: 0px 0px 5px 0px rgba(57, 199, 183, 0.8);
+    top: auto;
+    right: auto;
+    transform: translate(0px,30px);
+  -webkit-transition: transform 1s ease-in;
+     -moz-transition: transform 1s ease-in;
+       -o-transition: transform 1s ease-in;
+          transition: transform 1s ease-in;
+}
+
+    #newReportsIndicator.newToast {
+        display: block;
+        transform: translate(0px,0px);
+    }
+
+
+
+#reports_popup .themeM-view {
+    background-color: rgba(0, 0, 0, 0.6);
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    width:auto;
+    height:auto;
+    overflow:hidden;
+}
+
+/* Mozilla hacks
+   These should fix yet it seems to compensate for the fixes
+    so it continues to look incorrect!? */
+/*
+#reports_popup .list {
+    top: 50px !important;
+}
+
+#newReportsIndicator {
+    bottom: -35px !important;
+}
+  
+
+#reports_popup .listTools .listToolBtn,
+#reports_popup .reload {
+    margin-top: 7px !important;
+}
+
+#reportFilterInput {
+    margin-top:11px !important;
+}
+#reports_popup .filterTerm {
+    margin-top: 5px !important;
+}
+#reports_popup .listTools .filterReports .clearFilterBtn {
+    margin-top: 9px !important;
+}*/

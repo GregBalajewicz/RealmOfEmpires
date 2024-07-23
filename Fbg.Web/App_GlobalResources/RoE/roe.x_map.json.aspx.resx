@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="x_highlights_t" xml:space="preserve">
+    <value>This allows you to highlight villags on the map with a custom shield, based on some criteria. 
+&lt;ul&gt;
+&lt;LI&gt;You can highlight an entire &lt;B&gt;clan&lt;/B&gt;
+&lt;LI&gt;You can highlight a particular &lt;B&gt;player&lt;/B&gt;
+&lt;LI&gt;You can highlight a player or set of players based on your &lt;B&gt;note on those players&lt;/B&gt;. Notice that if you put a note on the player, the first 10 characters of this note are displayed on the map's hover over. You can use those 10 characters to highlight players.
+&lt;LI&gt;You can highlight a set of villages based on your &lt;B&gt;note on those villages&lt;/b&gt;. Notice that if you put a note on a village, the first 10 characters of this note are displayed on the map's hover over. You can use those 10 characters to highlight villages. &lt;BR&gt;For example, if you put a note on a village "empty" you can then highlight all villages with this note to easily see empty villages on the map
+&lt;LI&gt;Lastly, you can highlight villages based on &lt;B&gt;tags&lt;/B&gt;. If you have a tag meaning "attack villages" you can then highlight those villages with a special shield. 
+&lt;/ul&gt;</value>
+  </data>
+  <data name="x_incoming_t" xml:space="preserve">
+    <value>Clicking this button will show (or refresh) incoming troops information. &lt;BR&gt;&lt;BR&gt;It will show all incoming attacks and support, from any player, to any of your villages on the map by displaying a small attack (sword)or support (shield) icons 
+&lt;BR&gt;&lt;BR&gt;Click this anytime you want to get the latest information</value>
+  </data>
+  <data name="x_outgoing_t" xml:space="preserve">
+    <value>Clicking this button will show (or refresh) outgoing troops information. &lt;BR&gt;&lt;BR&gt;It will show &lt;B&gt;your&lt;/B&gt; outgoing attacks and support to any of the villages on the map by displaying a small attack (sword)or support (shield) icons 
+&lt;BR&gt;&lt;BR&gt;Click this anytime you want to get the latest information</value>
+  </data>
+  <data name="x_showalltags_t" xml:space="preserve">
+    <value>Click Show All to show you ALL your tags on the village hover over. &lt;BR&gt;&lt;BR&gt;This will allow you to easily tags a village with a new tag</value>
+  </data>
+  <data name="x_showtags_t" xml:space="preserve">
+    <value>Click Show Tags to display the village tags ase you hover over villages on the map. &lt;BR&gt;&lt;BR&gt;You can edit the tags directly of the map, that is, assign and remove tags from the village</value>
+  </data>
+  <data name="x_summary_t" xml:space="preserve">
+    <value>Map summary lists all the villages that are on the map. &lt;BR&gt;&lt;BR&gt;You can use this, for example, to easily compile a list of names of near by allies to message them, perhaps calling for support or to organize an attack</value>
+  </data>
+</root>

@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdvancedHeadquarters" xml:space="preserve">
+    <value>Advanced Headquarters mode active</value>
+  </data>
+  <data name="AdvancedHQ" xml:space="preserve">
+    <value>Advanced HQ</value>
+  </data>
+  <data name="AnExampleOfAnAlert" xml:space="preserve">
+    <value>An example of an alert is a warning of incoming attacks when you are not logged in.</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonymous</value>
+  </data>
+  <data name="ClickHereToEnableAlerts" xml:space="preserve">
+    <value>Click here to enable email alerts</value>
+  </data>
+  <data name="ClickToActivate" xml:space="preserve">
+    <value>Click To Activate</value>
+  </data>
+  <data name="ClickToActivateAdvancedMode" xml:space="preserve">
+    <value>Click to activate advanced mode.</value>
+  </data>
+  <data name="ClickToActivateSleep" xml:space="preserve">
+    <value>Click to activate sleep mode in {0}min</value>
+  </data>
+  <data name="ClickToActivateSleepMode" xml:space="preserve">
+    <value>Click to activate sleep mode in {0}min</value>
+  </data>
+  <data name="EmailAlerts" xml:space="preserve">
+    <value>Email alerts</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="GiveYouProperTitle" xml:space="preserve">
+    <value>Used to give you proper title, ie Queen vs King. If you do not specify, masculine titles will be used.</value>
+  </data>
+  <data name="Headquarters" xml:space="preserve">
+    <value>Headquarters</value>
+  </data>
+  <data name="IfYouChooseNotToAlert" xml:space="preserve">
+    <value>If you choose not to receive alerts on this realm you can</value>
+  </data>
+  <data name="InOrderToReceiveAlerts" xml:space="preserve">
+    <value>In order to receive the email alerts, you must share your email with us via Facebook. Edit your Realm of Empires application settings in facebook to share your email and then re-login to Realm of Empires</value>
+  </data>
+  <data name="IWantAnonymous" xml:space="preserve">
+    <value>I want to be anonymous</value>
+  </data>
+  <data name="MyCurrentTimeIs" xml:space="preserve">
+    <value>My current time is:</value>
+  </data>
+  <data name="MyTimezone" xml:space="preserve">
+    <value>My Timezone</value>
+  </data>
+  <data name="NightBuildCanBeUsedAgainIn" xml:space="preserve">
+    <value>Night build can again be activated in:</value>
+  </data>
+  <data name="NightBuildIsActive" xml:space="preserve">
+    <value>Night build is active! Expires in:</value>
+  </data>
+  <data name="NightTimeBuild" xml:space="preserve">
+    <value>Night time build</value>
+  </data>
+  <data name="NoteToEnsureYouDontMiss" xml:space="preserve">
+    <value>Note - to ensure you do not miss any alerts, add this email</value>
+  </data>
+  <data name="NotSpecified" xml:space="preserve">
+    <value>Not specified</value>
+  </data>
+  <data name="OptionNotAvailable" xml:space="preserve">
+    <value>Option not available for stewards</value>
+  </data>
+  <data name="OptOut" xml:space="preserve">
+    <value>Opt-out</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ShareMyEmailWithRoE" xml:space="preserve">
+    <value>Share my email with Realm Of Empires</value>
+  </data>
+  <data name="SleepMode" xml:space="preserve">
+    <value>Sleep Mode</value>
+  </data>
+  <data name="SleepModeCanAgain" xml:space="preserve">
+    <value>Sleep Mode can again be activated in:</value>
+  </data>
+  <data name="SleepModeIsActive" xml:space="preserve">
+    <value>Sleep Mode is active. Protection lasts for:</value>
+  </data>
+  <data name="SleepModeNotAvailable" xml:space="preserve">
+    <value>Sleep mode is not available on this realm</value>
+  </data>
+  <data name="SleepModeWillActivate" xml:space="preserve">
+    <value>Sleep Mode is set to activate in:</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Night time build allows you to queue up to 8 hours of building upgrades in each of your villages once every 24 hours. You will have 15 minutes to perform your upgrades once activated.</value>
+  </data>
+  <data name="ThankYouForSharingEmail" xml:space="preserve">
+    <value>Thank you for sharing your email ( {0} ) for alerts such an incoming attacks alert.</value>
+  </data>
+  <data name="ThisWillHideFacebookProfile" xml:space="preserve">
+    <value>This will hide the 'See Facebook Profile' link on your player overview screen to all players except your facebook friends.</value>
+  </data>
+  <data name="ToolsAndOptions" xml:space="preserve">
+    <value>Tools and Options</value>
+  </data>
+  <data name="ToSafeSendersList" xml:space="preserve">
+    <value>to safe senders list in your email program</value>
+  </data>
+  <data name="UnlockingUnlimitedBuilding" xml:space="preserve">
+    <value>unlocking the 'Unlimited Building Queue' feature</value>
+  </data>
+  <data name="UsingNightTimeBuild" xml:space="preserve">
+    <value>(Using the Night time build feature a lot? Consider</value>
+  </data>
+  <data name="WARNINGYouDisabledEmailAlerts" xml:space="preserve">
+    <value>&lt;span class=Error&gt;WARNING:&lt;/span&gt; You disabled email alerts on this realm. You will not get notifications of incoming attacks. </value>
+  </data>
+  <data name="WeDoNotShareYourEmail" xml:space="preserve">
+    <value>We do not share your email with any other third party and you can opt-out of email alerts anytime.</value>
+  </data>
+  <data name="YouAreReceivingEmailAlerts" xml:space="preserve">
+    <value>&lt;img  height=12px src="https://static.realmofempires.com/images/CheckMark_Quests.png" /&gt;You are receiving email alerts. You may choose to opt-out of emails on this realm.</value>
+  </data>
+  <data name="YouMayReceiveEmailAlerts" xml:space="preserve">
+    <value>&lt;span class=Error&gt;WARNING:&lt;/span&gt;You are not currently received attack email alerts. You may receive email alerts from Realm of Empires if you share your email address.</value>
+  </data>
+  <data name="ForSecurity" xml:space="preserve">
+    <value>For security reasons, we can only use the email that you entered in your facebook profile.</value>
+  </data>
+  <data name="IfYouChange" xml:space="preserve">
+    <value>However, if you change your email in facebook, we will pickup your latest email next time you login - to force it now, close your browser, then login to the game again</value>
+  </data>
+  <data name="RestartRealm" xml:space="preserve">
+    <value>Restart Realm</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="RestartRealmDesc" xml:space="preserve">
+    <value> the realm in a different quadrant.</value>
+  </data>
+</root>

@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="email2_body" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/units/infantry.jpg' align='left' style='padding:2px;'/&gt; &lt;B&gt;Hail {0}&lt;/B&gt;! &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+A friend whose invitation you accepted when registering, has claimed their reward of you reaching a title of Knight! As a thank you for your dedication, please accept a small gift of 5 servants as well. &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+Did you know that you can also claim rewards for recruiting other Knights into the game? &lt;a href="Invites_AcceptedInvites.aspx"&gt;Please click here for details&lt;/a&gt;. &lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+Once again, Congratulations on your progress!&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;
+
+&lt;I&gt;This is an automated message, please do not reply&lt;/I&gt;&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;</value>
+  </data>
+  <data name="email2_subject" xml:space="preserve">
+    <value>Please accept this gift of 5 servants!</value>
+  </data>
+  <data name="email_AttackIn_Body" xml:space="preserve">
+    <value>{0} {1}. You are under attack in Realm of Empires!
+&lt;BR&gt;&lt;BR&gt;First attack landing at {2} local time. &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=9'&gt;Defend yourself!&lt;/a&gt;
+&lt;BR&gt;&lt;BR&gt;Note, you will not receive further alerts from this realm until you login to the realm, even if a new attack, landing earlier than this one, is launched. </value>
+  </data>
+  <data name="email_AttackIn_Subject" xml:space="preserve">
+    <value>You are under attack in Realm of Empires, {0}</value>
+  </data>
+  <data name="email_BPEnding_Body" xml:space="preserve">
+    <value>{0} {1}, your Beginner Protection runs out in just {2} hours! 
+
+&lt;BR&gt;&lt;BR&gt;&lt;B&gt;What does this mean?&lt;/b&gt; This means you will be vulnerable to attacks. Other players will be able to attack you to loot your silver, destroy your buildings or even take your hard-earned city from you!.
+
+
+&lt;BR&gt;&lt;BR&gt;&lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=10'&gt;&lt;B&gt;Login now!&lt;/B&gt;&lt;/a&gt;
+
+
+&lt;BR&gt;&lt;BR&gt;&lt;B&gt; Here are some tips how you can protect yourself:&lt;/B&gt;
+&lt;BR&gt; &gt; Join a good clan
+&lt;BR&gt; &gt; Recruit troops. Infantry is a good choice for defense
+&lt;BR&gt; &gt; Build Wall and Towers
+&lt;BR&gt; &gt; Build Hiding Spot to hide your silver in case of an attack
+&lt;BR&gt; &gt; Be active! no one wants to pick an even fight :)</value>
+  </data>
+  <data name="email_BPEnding_Subject" xml:space="preserve">
+    <value>Are you ready? Wars may begin in {0} hours</value>
+  </data>
+  <data name="email_ClanInvite_Body" xml:space="preserve">
+    <value>Hey {3} {4}!
+
+&lt;BR&gt;&lt;BR&gt; I just invited you to my clan {0}&lt;/B&gt; in &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=5&amp;goto=clanoverview.aspx'&gt;Realm Of Empires&lt;/a&gt;!
+
+&lt;BR&gt;&lt;BR&gt;Hope to see you there! Cheers!
+&lt;BR&gt;{1} {2}
+
+&lt;BR&gt;&lt;BR&gt;&lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=5&amp;goto=clanoverview.aspx'&gt;Accept&lt;/a&gt; or &lt;a href='http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=5&amp;goto=clanoverview.aspx'&gt;Reject&lt;/a&gt; the invitation.
+
+&lt;BR&gt;&lt;BR&gt; &lt;i&gt;Clan is a loose federation of players working together for their mutual glory! Invites expire so decide soon!&lt;/i&gt;</value>
+  </data>
+  <data name="email_ClanInvite_Subject" xml:space="preserve">
+    <value>{0} {1} invited you to a clan</value>
+  </data>
+  <data name="email_footer" xml:space="preserve">
+    <value>&lt;/div&gt;
+            &lt;div style="color: #FFFFFF;
+            font-size: 11px;
+            background-color: #000000;
+            clear: both;"&gt;
+                This is an automated player alert from the Facebook game &lt;a href="http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm={0}&amp;ccd=roe" style="color: #FFD886;
+            text-decoration: none;"&gt;Realm Of Empires&lt;/a&gt;; please do not reply
+                &lt;br /&gt;
+                You are receiving this email beacuse you authorized Realm of Empires in facebook.
+                &lt;br /&gt;
+                &lt;br&gt;If you do not want to receive such alerts, you can turn off email notifications. &lt;a href="http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm={0}&amp;ccd=block" style="color: #FFD886;
+            text-decoration: none;"&gt;Login&lt;/a&gt; and go to Tools &amp; Options -&gt; Options where you can turn off emails from us. 
+                    &lt;br /&gt;
+                    &lt;br /&gt;
+                &lt;/br&gt;
+                To ensure you do not miss such an alert, please add the sender of this message (PlayerAlerts @ RealmOfEmpires.com) to your safe sender list.
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/td&gt;&lt;/TR&gt;&lt;/table&gt;
+    &lt;/center&gt;
+&lt;/body&gt;</value>
+  </data>
+  <data name="email_header" xml:space="preserve">
+    <value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;center&gt;
+&lt;table width=620&gt;&lt;TR&gt;&lt;TD&gt;
+        &lt;div style="width: 620px; border: solid 2px black;"&gt;
+            &lt;img src="https://static.realmofempires.com/images/ROE_Email_Header_620.jpg" border="1" alt="Realm Of Empires Logo" /&gt;
+            &lt;div style="background-color: #DDDDAA;padding:5px 5px 5px 5px;"&gt;
+                &lt;br /&gt;</value>
+  </data>
+  <data name="email_Inactive_Body" xml:space="preserve">
+    <value>Hello {0} {1},
+                &lt;br /&gt;
+                &lt;br /&gt;
+                This is a notification that you have been inactive for at least 7 days on {2}.                
+                &lt;br /&gt;
+                &lt;br /&gt;
+                Players that are inactive for 14 days are removed from the realm - they lose all their villages which go "abandoned" 
+                and can fall into enemies' hands.
+                &lt;BR /&gt;&lt;BR /&gt;To prevent going abandoned, please make sure you &lt;a href="http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=11"&gt;login to {2}&lt;/a&gt;.
+                &lt;br /&gt;
+                &lt;br /&gt;
+                            &lt;B&gt;What if I am on vacation?&lt;/b&gt;
+                            &lt;BR&gt;Make sure you assign a kingdom steward - another player whom you trust, perhaps a clanmate - that will look
+                            after your kingdom during your absence. Player with active stewards do not go abandoned.
+                &lt;br /&gt;
+                &lt;br /&gt;
+                            &lt;b&gt;
+                                What if I don't play on {2} anymore?&lt;/b&gt;
+                                &lt;BR&gt;If you choose not to play on {2} anymore, then you can safely ignore this message and your village(s) will simply go abandoned. 
+                                There is nothing you need to do in this case.
+</value>
+  </data>
+  <data name="email_Inactive_Subject" xml:space="preserve">
+    <value>Your kingdom is about to be abandoned</value>
+  </data>
+  <data name="email_EmailNotify_Body" xml:space="preserve">
+    <value>Hello {0} {1},
+                &lt;br /&gt;
+                &lt;br /&gt;
+                This is a notification that you received an email from {3} on {2}
+                &lt;br /&gt;
+                &lt;br /&gt;
+&lt;HR&gt;
+&lt;B&gt;Subject:&lt;/B&gt;{4}
+&lt;BR&gt;&lt;B&gt;Message:&lt;/B&gt;{5} ...
+&lt;HR&gt;
+You currently have {6} unread messages on {2}. &lt;a href="http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm=12"&gt;&lt;B&gt;Login&lt;/B&gt;&lt;/a&gt; to check your messages
+                &lt;br /&gt;
+                &lt;br /&gt;
+Note, you will not receive further alerts from this realm about new emails until you login to the realm.</value>
+  </data>
+  <data name="email_EmailNotify_Subject" xml:space="preserve">
+    <value>Email from {0} : '{1}'</value>
+  </data>
+  <data name="email_youHaveBeenBlocked_body" xml:space="preserve">
+    <value>This is a courtesy information email, telling you that you have been blocked by another player. 
+    
+    This email does not suggest that you did anything wrong, it just tells you that someone blocked you which MAY be a sign that someone found your communications offensive. Repeated blocks will flag you 
+    for investigation as we try to ensure that everyone is following the Terms of Use. 
+    
+    Violations of the TOU may result in a suspension or ban from communication channels, the realm, or RoE itself. The TOU can be found here: https://www.realmofempires.com/tou.aspx
+
+  Again, there is absolutely no cause for concern if you have not broken any rules and this email can be safely disregarded and note that we warn players
+  first if rules are broken, unless of a serious (criminal) offense.  If you have any questions, please feel free to contact support at anytime. 
+
+Have fun and play hard - but be respectful of your fellow players.
+
+-RoE Team
+
+ This is an automated email, from a unmonitored mailbox, please do not reply</value>
+  </data>
+  <data name="email_youHaveBeenBlocked_subject" xml:space="preserve">
+    <value>You have been blocked by another player</value>
+  </data>
+  <data name="notification_attack" xml:space="preserve">
+    <value>You are under attack! : Landing at {0} game time.</value>
+  </data>
+  <data name="notification_bdpending" xml:space="preserve">
+    <value>Beginner protection runs out in just {0} hours.</value>
+  </data>
+  <data name="notification_claninvite" xml:space="preserve">
+    <value>{0} {1} invited you to join {2}.</value>
+  </data>
+  <data name="notification_email" xml:space="preserve">
+    <value>You received and email from {0} on {1}.</value>
+  </data>
+  <data name="notification_inactive" xml:space="preserve">
+    <value>Your kingdom in {0} is about to be abandoned!</value>
+  </data>
+  <data name="notification_quest" xml:space="preserve">
+    <value />
+  </data>
+  <data name="notification_research" xml:space="preserve">
+    <value />
+  </data>
+  <data name="notification_takingavillage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="email_verifyrecoveryemailsubject" xml:space="preserve">
+    <value>Realm of Empires recovery email verification.</value>
+  </data>
+  <data name="email_verifyrecoveryemailbody" xml:space="preserve">
+    <value>Hi &lt;strong&gt;{0}&lt;/strong&gt; from &lt;strong&gt;{1}&lt;/strong&gt;,&lt;BR/&gt;&lt;BR/&gt;Please confirm your email address by clicking &lt;a href='{2}/Verify.aspx?uid={3}'&gt;here&lt;/a &gt;.
+
+&lt;BR&gt;&lt;BR&gt;&lt;span style="font-size: 10px;"&gt; If you did not register for a new account or did not request an email change please ignore this email.&lt;/span&gt;
+
+&lt;BR/&gt;&lt;BR/&gt;Sincerely,&lt;BR/&gt;&lt;strong&gt;The Realm of Empires Team.&lt;/strong&gt;&lt;BR/&gt; &lt;BR/&gt;</value>
+  </data>
+  <data name="email_verifyrecoveryemail_footer" xml:space="preserve">
+    <value>&lt;/div&gt;
+&lt;/td&gt;				
+			&lt;/tr&gt;
+			
+			
+			
+			
+			&lt;!-- Bottom Spacer --&gt;
+			&lt;tr&gt;
+				&lt;td style="padding: 10px;"&gt;&lt;/td&gt;
+			&lt;/tr&gt;	
+			
+
+			&lt;!-- Bottom Image --&gt;
+			&lt;tr&gt;&lt;td style="padding: 0px;"&gt;&lt;img class="mainimg" src="https://static.realmofempires.com/images/email/bottomgrad.png" border="0" style="width:480px; margin: 0px;display:block;"/&gt;&lt;/td&gt;&lt;/tr&gt;	
+			&lt;tr&gt;&lt;td style="padding: 0px;"&gt;&lt;img class="mainimg"  src="https://static.realmofempires.com/images/email/lower.jpg" border="0" style="width:480px; margin: 0px;display:block;"/&gt;&lt;/td&gt;&lt;/tr&gt;
+			
+			
+			&lt;!-- Footer Content --&gt;
+			&lt;tr&gt;
+				&lt;td style="color: #857C77; font-family:georgia; font-size: 12px;  background: #211313; margin: 0px; padding: 10px; padding-top: 0px;"&gt;
+					  You are receiving this automated alert because you play &lt;a href="http://apps.facebook.com/realmofempires/?ccid=[[%CCID%]]&amp;ccm=[[%CCM%]]&amp;ccd=[[%CCD%]]" style="color: #BC9E75 !important; text-decoration:none;" target="_blank"&gt;Realm Of Empires&lt;/a&gt; - please do not reply. Email notifications can be turned off for each realm individually.
+&lt;br&gt;
+					  To ensure you do not miss such an alert, please add the sender of this message (PlayerAlerts @ RealmOfEmpires.com) to your safe sender list.
+
+				&lt;/td&gt;
+			&lt;/tr&gt;
+
+		&lt;/tbody&gt;
+
+   &lt;/table&gt;
+	[[%MIXPANELPIXEL%]]
+&lt;/div&gt;</value>
+  </data>
+  <data name="email_verifyrecoveraccountbody" xml:space="preserve">
+    <value>PLEASE READ THE FOLLOWING CAREFULLY AND ONLY COMPLETE THIS IF IT IS CORRECT.&lt;BR/&gt;&lt;BR/&gt;Someone (maybe you) has requested to recover their account associated with this email. 
+
+&lt;BR&gt;&lt;BR&gt;If this was not you, then just delete and ignore this email  - no further action from your end is necessary. Your account is safe.
+
+&lt;BR&gt;&lt;BR&gt;For your reference, the account that is associated with this email address has the following player(s): {0}. 
+
+&lt;BR&gt;&lt;BR&gt;If it is you who requested to recover this account, and want to associate it with your new device, then please &lt;a href='{1}/VerifyActRec.aspx?id={2}&amp;uid={3}'&gt;click here  to verify and accept this change&lt;/a &gt;. (expires in 48 hours)
+
+&lt;BR&gt;&lt;BR&gt;if this is not the account that you want to recover, then remember that you may get multiple recovery emails, one for each account associated with this email address. Please use the right email to recover the correct account and ignore the others. 
+
+&lt;BR&gt;&lt;BR&gt;Again, if this email was not initiated by you, delete and ignore this email.
+
+&lt;BR&gt;&lt;BR&gt;If you have any questions, please contact us as support@realmofempires.com
+
+&lt;BR/&gt;&lt;BR/&gt;Sincerely,&lt;BR/&gt;&lt;strong&gt;The Realm of Empires Team.&lt;/strong&gt;&lt;BR/&gt; &lt;BR/&gt;</value>
+  </data>
+  <data name="email_verifyrecoveraccountsubject" xml:space="preserve">
+    <value>Realm of Empires account email verification for the following player(s): {0}</value>
+  </data>
+  <data name="email_verifyrecoveraccountbodyforfb" xml:space="preserve">
+    <value>PLEASE READ THE FOLLOWING CAREFULLY.&lt;BR/&gt;&lt;BR/&gt;Someone (maybe you) has requested to recover their account associated with this email.  However this account is a FACEBOOK account.  Please go back to Realm of Empires and tap 'I DID THAT, NOW LOG ME IN' or just login with 'VIA FACEBOOK'.
+
+&lt;BR&gt;&lt;BR&gt;If this was not you, then just delete and ignore this email  - no further action from your end is necessary. Your account is safe.
+
+&lt;BR&gt;&lt;BR&gt;For your reference, the account that is associated with this email address has the following player(s): {0}. 
+
+
+&lt;BR&gt;&lt;BR&gt;Again, if this email was not initiated by you, delete and ignore this email.
+
+&lt;BR&gt;&lt;BR&gt;If you have any questions, please contact us as support@realmofempires.com
+
+&lt;BR/&gt;&lt;BR/&gt;Sincerely,&lt;BR/&gt;&lt;strong&gt;The Realm of Empires Team.&lt;/strong&gt;&lt;BR/&gt; &lt;BR/&gt;</value>
+  </data>
+  <data name="email_verifyemail_onregistration_body" xml:space="preserve">
+    <value>Welcome to Realm of Empires!
+
+&lt;BR&gt;&lt;BR&gt;Thank you for registering
+
+&lt;BR&gt;&lt;BR&gt;Please &lt;a href='{0}/Verify.aspx?uid={1}'&gt;click here to verify your email&lt;/a &gt;.  This is necessary to secure your Tactica Account.  
+
+&lt;BR&gt;&lt;BR&gt;Let the battles begin!
+
+&lt;BR/&gt;&lt;BR/&gt;Sincerely,&lt;BR/&gt;&lt;strong&gt;The Realm of Empires Team.&lt;/strong&gt;
+
+&lt;BR&gt;&lt;BR&gt;P.S. If you did not create a Tactica account, please ignore and delete this email.</value>
+  </data>
+  <data name="email_verifyemail_onregistration_subject" xml:space="preserve">
+    <value>Welcome to Realm of Empires. Email verification required for security.</value>
+  </data>
+  <data name="email_resetpassword_body" xml:space="preserve">
+    <value>Hello!,&lt;BR/&gt;&lt;BR/&gt;You have requested to reset the password of your Realm of Empires Tactica account.
+
+&lt;BR&gt;&lt;BR&gt;Please click on the following link to reset your password: &lt;a href='{0}'&gt;{0}&lt;/a &gt;. 
+
+&lt;BR&gt;&lt;BR&gt;If you did not request this password reset, please ignore and delete this email, your account is safe. 
+
+&lt;BR/&gt;&lt;BR/&gt;Sincerely,&lt;BR/&gt;&lt;strong&gt;The Realm of Empires Team.&lt;/strong&gt;&lt;BR/&gt; &lt;BR/&gt;</value>
+  </data>
+  <data name="email_resetpassword_footer" xml:space="preserve">
+    <value>&lt;/div&gt;
+            &lt;div style="color: #FFFFFF;
+            font-size: 11px;
+            background-color: #000000;
+            clear: both;"&gt;
+                This is an automated player alert from the Facebook game &lt;a href="http://apps.facebook.com/realmofempires/?ccid=2&amp;ccm={0}&amp;ccd=roe" style="color: #FFD886;
+            text-decoration: none;"&gt;Realm Of Empires&lt;/a&gt;; please do not reply
+                &lt;/br&gt;
+                To ensure you do not miss such an alert, please add the sender of this message (PlayerAlerts @ RealmOfEmpires.com) to your safe sender list.
+            &lt;/div&gt;
+        &lt;/div&gt;
+&lt;/td&gt;&lt;/TR&gt;&lt;/table&gt;
+    &lt;/center&gt;
+&lt;/body&gt;</value>
+  </data>
+  <data name="email_resetpasswordDone_body" xml:space="preserve">
+    <value>Hello!,&lt;BR/&gt;&lt;BR/&gt;You have requested to reset the password of your Realm of Empires Tactica account.
+
+&lt;BR&gt;&lt;BR&gt;Your new, randomly generated password is &lt;div style='font-family: "Courier New", Courier, monospace;  font-size: 16pt;'&gt;&lt;B&gt;{0}&lt;/B&gt;&lt;/div&gt;
+
+&lt;BR&gt;&lt;BR&gt;Please go to your settings in-game and change this password as soon as possible. If you did not request this reset, please contact support at support@RealmOfEmpires.com
+
+&lt;BR/&gt;&lt;BR/&gt;Sincerely,&lt;BR/&gt;&lt;strong&gt;The Realm of Empires Team.&lt;/strong&gt;&lt;BR/&gt; &lt;BR/&gt;</value>
+  </data>
+  <data name="email_resetpasswordDone_subject" xml:space="preserve">
+    <value>Your password has been reset</value>
+  </data>
+  <data name="email_resetpassword_subject" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="email_header2" xml:space="preserve">
+    <value>&lt;head&gt;
+&lt;style&gt;
+@import url(http://fonts.googleapis.com/css?family=Eagle+Lake);
+@media only screen and (max-device-width: 480px) {
+	.mainBodyDiv{
+		width: 480px; !important;
+	}
+
+}
+
+	.mainBodyTable {
+
+		background-size: 480px auto !important;
+	}
+
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;div class="mainBodyDiv" style="width: 480px; height:auto; font-family: Calibri,sans-serif;"&gt;
+	&lt;table class="mainBodyTable" background="https://static.realmofempires.com/images/email/midtexture.jpg" border="0" cellspacing="0" cellpadding="20" &gt;
+		
+		&lt;tbody&gt;
+		
+			&lt;!-- Upper Image --&gt;		
+			&lt;tr&gt;&lt;td style="padding: 0px;"&gt;&lt;img class="mainimg" src="https://static.realmofempires.com/images/email/upper.jpg" border="0" style="width:480px; margin: 0px;display:block;"/&gt;&lt;/td&gt;&lt;/tr&gt;			
+			&lt;tr&gt;&lt;td style="padding: 0px;"&gt;&lt;img class="mainimg" src="https://static.realmofempires.com/images/email/topgrad.png" border="0" style="width:480px; margin: 0px;display:block;"/&gt;&lt;/td&gt;&lt;/tr&gt;			
+				
+			&lt;!-- Top Spacer --&gt;
+			&lt;tr&gt;
+				&lt;td style="padding: 5px;"&gt;&lt;/td&gt;
+			&lt;/tr&gt;				
+				
+			&lt;!-- Content --&gt;
+			&lt;tr&gt;
+				&lt;td style="padding: 0px;"&gt;
+&lt;div style='margin:5px'&gt;</value>
+  </data>
+</root>

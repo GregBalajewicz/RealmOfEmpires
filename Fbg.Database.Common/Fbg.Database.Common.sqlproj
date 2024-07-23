@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <PostConversionRemoveFromScc>
+    </PostConversionRemoveFromScc>
+    <PostConversionAddToScc>
+    </PostConversionAddToScc>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <PostUpgradeAddToSCC>;C:\Users\greg\Documents\_important\projects\facebookgame\fbg\Fbg.Database.Common\Fbg.Database.Common.dbproj;C:\Users\greg\Documents\_important\projects\facebookgame\fbg\Fbg.Database.Common\Connections.txt;C:\Users\greg\Documents\_important\projects\facebookgame\fbg\Fbg.Database.Common\Scripts\Post-Deployment\Script.PostDeployment.sql;C:\Users\greg\Documents\_important\projects\facebookgame\fbg\Fbg.Database.Common\Scripts\Pre-Deployment\Script.PreDeployment.sql</PostUpgradeAddToSCC>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <PreviousProjectVersion>4.1</PreviousProjectVersion>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>Fbg.Database.Common</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql90DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08cca2bf-fef6-4d17-8e4b-56a8f578d283}</ProjectGuid>
+    <GenerateDatabaseFile>False</GenerateDatabaseFile>
+    <GenerateCreateScript>False</GenerateCreateScript>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <DefaultSchema>dbo</DefaultSchema>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetLanguage>CS</TargetLanguage>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseState>ONLINE</DatabaseState>
+    <UpdateOptions>READ_WRITE</UpdateOptions>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <DefaultFileStreamFilegroup />
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>FbgCommon</TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <ItemGroup>
+    <Folder Include="Create Scripts" />
+    <Folder Include="SP" />
+    <Folder Include="Properties" />
+    <Folder Include="Create Scripts\Step 1 - register aspnet membership" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Create Scripts\Step 2 - FbgCommon DDL - creates.sql" />
+    <None Include="Create Scripts\Step 3 - Populate DB - FbgCommon.sql" />
+    <None Include="SP\dInvites.sql" />
+    <None Include="SP\fnGetIds.sql" />
+    <None Include="SP\iEmailSent.sql" />
+    <None Include="SP\iGift_Buy.sql" />
+    <None Include="SP\iInviteReward_NoteUserGotReward.sql" />
+    <None Include="SP\iNotificationSent.sql" />
+    <None Include="SP\iPlayerQ.sql" />
+    <None Include="SP\iRegisterInvited.sql" />
+    <None Include="SP\iRegisterInvited_Gift.sql" />
+    <None Include="SP\iRegisterPlayer_CheckPlayerName.sql" />
+    <None Include="SP\iRegisterPlayerInCommon.sql" />
+    <None Include="SP\iStoryPublished.sql" />
+    <None Include="SP\iUserDetails.sql" />
+    <None Include="SP\iUserFlag.sql" />
+    <None Include="SP\iUserLog.sql" />
+    <None Include="SP\iUserVote.sql" />
+    <None Include="SP\qDonors.sql" />
+    <None Include="SP\qGift_GetMyGifts.sql" />
+    <None Include="SP\qGift_GetSentToday.sql" />
+    <None Include="SP\qInviteReward_GetUsers.sql" />
+    <None Include="SP\qInvites.sql" />
+    <None Include="SP\qInvites_Accepted.sql" />
+    <None Include="SP\qInvitesForMe.sql" />
+    <None Include="SP\qIsMarkedForDeletionDueToInactivity.sql" />
+    <None Include="SP\qNotificationRecipients.sql" />
+    <None Include="SP\qRealms.sql" />
+    <None Include="SP\qTransferableCredits.sql" />
+    <None Include="SP\qUser.sql" />
+    <None Include="SP\qUserCredits.sql" />
+    <None Include="SP\qUsersToRewardForInvites.sql" />
+    <None Include="SP\uBuyCredits.sql" />
+    <None Include="SP\uCredits_Subtract.sql" />
+    <None Include="SP\uCredits_Subtract_BuyGift.sql" />
+    <None Include="SP\uCredits_Subtract2.sql" />
+    <None Include="SP\uCredits_SubtractAdmin.sql" />
+    <None Include="SP\uGetCredits.sql" />
+    <None Include="SP\uGift_Accept.sql" />
+    <None Include="SP\uGift_Delete.sql" />
+    <None Include="SP\uGift_Use.sql" />
+    <None Include="SP\uGiveServants.sql" />
+    <None Include="SP\uInvites_ClaimReward.sql" />
+    <None Include="SP\uRefundCredits.sql" />
+    <None Include="SP\uRefundNPCredits.sql" />
+    <None Include="SP\uTransferCredits.sql" />
+    <None Include="SP\uUser.sql" />
+    <None Include="SP\_runs.bat">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\qUserXP.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="Create Scripts\Step 2.5 - FbgCommon DDL - additonal creates.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\uGift_AcceptByRequest.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\qFBFriends.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\qPlayersFriends.sql" />
+    <None Include="SP\fnRankToPoints.sql" />
+    <None Include="SP\iThroneRoomLike.sql" />
+    <None Include="SP\qThroneRoomLike.sql" />
+    <None Include="SP\VillageStartLevels_BuildingSpeedup_i.sql" />
+    <None Include="SP\VillageStartLevels_ResearchSpeedup_i.sql" />
+    <None Include="SP\iStartLevel_Items2.sql" />
+    <None Include="Create Scripts\Step 1 - register aspnet membership\aspnet_regsql.exe" />
+    <None Include="Create Scripts\Step 1 - register aspnet membership\Aspnet_regsql.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uCredits_Subtract3.sql">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="SP\qPolls.sql">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug.publish.xml" />
+    <None Include="Release.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\dUserNotifications_androids.sql" />
+    <None Include="SP\qUserNotifications_Android.sql" />
+    <None Include="SP\iUserNotifications_android.sql" />
+    <None Include="SP\qUserNotificationRegID_android.sql" />
+    <None Include="SP\iUserNotifications.sql" />
+    <None Include="SP\iUserNotificationSent.sql" />
+    <None Include="SP\qUserNotificationRegID.sql" />
+    <None Include="SP\qUserNotifications.sql" />
+    <None Include="SP\iBadEmail.sql" />
+    <None Include="SP\iGiveGifts.sql" />
+    <None Include="SP\qCreditPackages_Device.sql" />
+    <None Include="SP\iPendingAccountRecovery.sql" />
+    <None Include="SP\qAccountRecoveryLogin.sql" />
+    <None Include="SP\iGiveOffer2.sql" />
+    <None Include="SP\iLoginLog.sql" />
+    <None Include="SP\qPlayerActivity.sql" />
+    <None Include="SP\qDoesPlayerHaveEnoughCredits.sql" />
+    <None Include="SP\uUserNotificationsToSend.sql" />
+    <None Include="SP\iCalculateTournamentSeasonPoints.sql" />
+    <None Include="SP\aspnet_Membership_UpdateUser.sql" />
+    <None Include="SP\uMigrateToBDAAccount.sql" />
+    <None Include="SP\uMaintenance_InferLoginType.sql" />
+    <None Include="SP\qFriendInviteCode.sql" />
+    <None Include="SP\qAllPlayers.sql" />
+    <None Include="SP\uRenameUser.sql" />
+    <None Include="SP\qtr_PlayerListSettings.sql" />
+    <None Include="SP\utr_PlayerListSettings.sql" />
+    <None Include="SP\qAllBlockedUsers.sql" />
+    <None Include="SP\qPlayerNames.sql" />
+    <None Include="SP\iBlockUser.sql" />
+    <None Include="SP\dUnblockUser.sql" />
+    <None Include="SP\iChat_SaveMessage.sql" />
+    <None Include="SP\qChat_PreviousChatMessages.sql" />
+    <None Include="SP\qChat_Notifications.sql" />
+    <None Include="SP\uChat_LastSeenDate.sql" />
+    <None Include="SP\qChat_OneOnOne.sql" />
+    <None Include="SP\qChat_AllUnreadOneOnOneChats.sql" />
+    <None Include="SP\qvPlayers.sql" />
+    <None Include="SP\aspnet_Membership_GetUserByName.sql" />
+    <None Include="SP\uUserForMassMailer.sql" />
+    <None Include="SP\uUserSetSex.sql" />
+    <None Include="SP\uUserSetAvatarID.sql" />
+    <None Include="SP\qChat_AllClientPlayerInfos.sql" />
+    <None Include="SP\qChat_Notifications2.sql" />
+    <None Include="SP\qChat_AllGlobalAndClanChats.sql" />
+    <None Include="SP\qAllBlockedUsers2.sql" />
+    <None Include="SP\iChat_SaveMessage2.sql" />
+    <None Include="SP\uChat_LastSeenDate2.sql" />
+    <None Include="SP\qChat_PreviousChatMessages2.sql" />
+    <None Include="SP\qChat_OneOnOne2.sql" />
+    <None Include="SP\iBlockUser2.sql" />
+    <None Include="SP\dUnblockUser2.sql" />
+    <None Include="SP\qChat_AllChats.sql" />
+    <None Include="SP\qChat_OneOnOneByGroupId.sql" />
+    <None Include="SP\iChat_CreateGroup.sql" />
+    <None Include="SP\qChat_GroupChatUsers.sql" />
+    <None Include="SP\qPlayerAutocomplete.sql" />
+    <None Include="SP\qChat_AddPlayersToGroup.sql" />
+    <None Include="SP\dChat_KickUser.sql" />
+    <None Include="SP\qChat_OtherChatPlayerInfos.sql" />
+    <None Include="SP\qChat_GetClanChat.sql" />
+    <None Include="SP\dChat_ClanChat.sql" />
+    <None Include="SP\qChat_DoesClanChatExist.sql" />
+    <None Include="SP\dChat_UsersToChats2.sql" />
+    <None Include="SP\qChat_IsPlayerInClanChat.sql" />
+    <None Include="SP\qIdByNameAndRealm.sql" />
+    <None Include="SP\uChat_ChangeGroupName.sql" />
+    <None Include="SP\qGetAllAvatars.sql" />
+    <None Include="SP\fnTranslate.sql" />
+    <None Include="SP\_PopulateDB_OpenRealm.sql" />
+    <None Include="SP\qGetUserAvatarData.sql" />
+    <None Include="SP\Items2_iItem_Troops.sql" />
+    <None Include="SP\Items2_q.sql" />
+    <None Include="SP\Items2_dItem.sql" />
+    <None Include="SP\Items2_iItem_Silver.sql" />
+    <None Include="SP\Items2_iItem_PFWithDuration.sql" />
+    <None Include="SP\uPlayerSetAvatarID.sql" />
+    <None Include="SP\Items2_iItem_BuildingSpeedup.sql" />
+    <None Include="SP\Items2_iItem_ResearchSpeedup.sql" />
+    <None Include="SP\iRegisterPlayerInCommon_PlayerStartingLevels.sql" />
+    <None Include="SP\uUserUnlockAvatarID.sql" />
+    <None Include="SP\uCredits_Subtract3_ByPID.sql">
+      <SubType>Code</SubType>
+    </None>
+    <None Include="SP\qThroneRoomTournamentRealmStats.sql" />
+  </ItemGroup>
+</Project>

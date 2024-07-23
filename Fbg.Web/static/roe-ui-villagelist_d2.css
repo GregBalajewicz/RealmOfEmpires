@@ -1,0 +1,507 @@
+﻿#popup_villList .IFrameDivTitle {
+    position: fixed !important;
+}
+
+.ui-dialog .feedback {
+    display: block;
+    position: absolute;
+    font-size: 11px;
+    bottom: 2px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0px 2px;
+}
+
+#villageListPopup {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.30);
+}
+
+    #villageListPopup .filterArea {
+        height: 40px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    #villageListPopup .feedback {
+        position: absolute;
+        top: 40px;
+        /* left: 2px; */
+        right: 0px;
+        background: black;
+        padding: 1px;
+        display: none;
+    }
+
+    /*
+        basically clone of village list table,
+        idea is to keep the clone in a confined space,
+        to use it as a header, but since it is a clone of the real table, it keeps the column width proper
+
+    */
+    #villageListPopup .villageListsWrapper {
+        position: absolute;
+        top: 40px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        overflow-x: auto;
+        background: rgba(0,0,0,.8);
+    }
+    #villageListPopup .villageListHeader {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 34px;
+        z-index: 1;
+        overflow: hidden;
+        background: rgb(15, 15, 15);
+        min-width: 100%;
+    }
+        /*this is essentially the cloned table, but we just use it as a fixed header */
+        #villageListPopup .villageListHeader table {
+            width:100%;
+        }
+
+    #villageListPopup .villageList {
+
+    }
+
+        #villageListPopup .villageList table {
+            width: 100%;
+        }
+
+.villageListHeader .dataHeaderRow th:hover {
+    background-color: #005184;
+    cursor: pointer;
+}
+
+
+
+#villageListPopup .buildings .buildingIcon{
+   width:20px
+}
+
+    #villageListPopup .villNameCont {
+        white-space:nowrap;
+    }
+
+
+
+
+    #villageListPopup .villlist_itemlist {
+        padding: 0px;
+        width: 100%;
+        cursor: pointer;
+        background-color: rgba(29, 32, 32, 0.9);
+    }
+       
+        #villageListPopup .villlist_itemlist:nth-child(even) {
+            /*background-color: #2a3232;*/
+            background-color: rgba(42, 50, 50, 0.9);
+        }
+         #villageListPopup .villlist_itemlist:hover {
+            background: rgba(12, 12, 12, 0.9);
+            opacity: 1 !important;
+        }
+
+
+        #villageListPopup .villlist_itemlist.selected {
+            text-shadow: 0 0 #000000;
+            /*background-color: rgba(93, 92, 92, 0.9) !important*/
+            background-color: #005184;
+        }
+        #villageListPopup .villlist_itemlist .sectionDivider {
+            bottom: -7px;
+            z-index: 1;
+        }
+
+        #villageListPopup .villlist_itemlist .villageImage {
+             display: inline-block; 
+            height: 15px;
+            width: 15px;
+            background-size: 100% 100%, 100% 100%;
+            /* background-position: right bottom, 0px 0px; */
+            background-repeat: no-repeat;
+        }
+
+        #villageListPopup .villlist_itemlist .villListName {
+           
+            white-space: nowrap;
+        }
+
+        #villageListPopup .villlist_itemlist .villCoorPts {
+            
+        }
+            #villageListPopup .villCoors,
+            #villageListPopup  .villPts {
+                color: #988B73;
+                text-align:right;
+            }
+            #villageListPopup .villlist_itemlist .villCoorPts .villCoors {
+                text-align: right;
+            }
+            #villageListPopup .villlist_itemlist .villCoorPts .villPts {
+                text-align: left;
+            }
+        #villageListPopup .villlist_itemlist .incoming {
+            
+            float: right;
+            
+            text-shadow: 0px 1px rgba(0, 0, 0, 0.75);
+        }
+        /*
+        #villageListPopup .villlist_itemlist.selected,
+        #villageListPopup .villlist_itemlist.selected .villListName,
+        #villageListPopup .villlist_itemlist.selected .villCoors,
+        #villageListPopup .villlist_itemlist.selected .villPts,
+        #villageListPopup .villlist_itemlist.selected .silver:not(.full),
+        #villageListPopup .villlist_itemlist.selected .food {
+            color: #000 !important;
+            text-shadow: 0 0 #000;
+        }
+        */
+        #villageListPopup .villlist_itemlist .details  {
+            margin-left: 42px;
+        }
+
+        
+          #villageListPopup .silverIcon {
+            height: 14px;
+            width: 35px;
+            background-image: url(https://static.realmofempires.com/images/icons/Silver44.png);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position :center;
+           
+        }
+    #villageListPopup .villlist_itemlist .silver {
+        text-align: right;
+        color: #d7d7d7;
+    }
+
+            #villageListPopup .villlist_itemlist .silver.full {
+                color: #ED2B2B !important;
+            }
+
+        #villageListPopup .foodIcon {
+            height: 14px;
+            width: 35px;
+            background-image: url(https://static.realmofempires.com/images/icons/Sheep44.png);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position :center;
+        }
+    #villageListPopup .villlist_itemlist .food {
+        text-align: right;
+        color: #d7d7d7;
+    }
+        
+    
+        #villageListPopup .yeyHeader {
+           
+            background-image: url(https://static.realmofempires.com/images/icons/lowYEA.png);
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+        #villageListPopup .yey {
+            display: none;
+           text-align:right
+        }
+            #villageListPopup  .yey.under100 {
+                display:inline-block;
+                color: #ED2B2B !important;
+            }
+
+        #villageListPopup .villlist_itemlist .buildingIcon,
+        #villageListPopup .villlist_itemlist .recruitingIcon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background:none;
+        }
+            #villageListPopup .villlist_itemlist .buildingIcon.isBuilding,
+            #villageListPopup .villlist_itemlist .recruitingIcon.isRecruiting {
+                background-size: 100% 100%;
+            }
+            #villageListPopup .villlist_itemlist .buildingIcon.isBuilding {
+                background-image: url('https://static.realmofempires.com/images/hammerX2_anim.gif');
+            }
+            #villageListPopup .villlist_itemlist .recruitingIcon.isRecruiting {
+                background-image: url('https://static.realmofempires.com/images/recruiting_anim.gif');
+            }
+
+
+    #villageListPopup .villlist_itemlist .troops {
+        display: none;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding: 5px;
+        padding-bottom: 0px;
+        box-sizing: border-box;
+        border-top: 1px solid #4E4B41;
+        color: #d7d7d7;
+    }
+
+    #villageListPopup .troopsA,
+    #villageListPopup .troopsY,
+    #villageListPopup .troopsC,
+    #villageListPopup .troopsS {
+        display: none;
+    }
+                #villageListPopup .villlist_itemlist .troops .troopSource .sourceLabel {
+                    float: left;
+                    position: absolute;
+                    overflow: hidden;
+                    top: 10%;
+                    left: 0px;
+                }
+                #villageListPopup .unitIcon {
+                  
+                    min-width:16px;
+                    background-size: auto 100%;
+                    background-repeat: no-repeat;
+                  background-position: center;
+                }
+                    #villageListPopup .villlist_itemlist  .unit .rec {
+                        color: #0DDE0D;
+                        font-size: 10px;
+                    }
+
+
+    #villageListPopup .building {
+        min-width: 16px;
+        text-align: left;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        text-align: right;
+        background-position: center;
+        display: none;
+        color: #d7d7d7;
+        white-space:nowrap;
+    }
+        #villageListPopup .building .upgrading {
+            color: #4CFF4C;
+        }
+
+         #villageListPopup .buildingBusyTime {
+            opacity: 0.5;
+            display:none;
+        }
+
+         #villageListPopup .unit .rec
+         {
+             display:none;
+         }
+
+
+    #villageListPopup.showTroopsA .troops,
+    #villageListPopup.showTroopsY .troops,
+    #villageListPopup.showTroopsC .troops,
+    #villageListPopup.showTroopsS .troops,
+    #villageListPopup.showTroopsA .troopsA,
+    #villageListPopup.showTroopsY .troopsY,
+    #villageListPopup.showTroopsC .troopsC,
+    #villageListPopup.showTroopsS .troopsS,
+    #villageListPopup.showBuildings .building,
+    #villageListPopup.showTroopsC .troopsC {
+        display: table-cell;
+    }
+    #villageListPopup.showBuildingBusyTime .buildingBusyTime,
+    #villageListPopup.showrecruitingTroopNumbers .unit .rec {
+        display: inline;
+    }
+
+
+
+
+    #villageListPopup.showTroopsA  .troopsA,
+    #villageListPopup.showTroopsY  .troopsY,
+    #villageListPopup.showTroopsC  .troopsC,
+    #villageListPopup.showTroopsS  .troopsS  {
+        text-align:right;
+    }
+    #villageListPopup.showBuildings  .buildings {
+        display: block;
+    }
+
+    #villageListPopup .villlist_refresh {
+        text-align: right;
+        cursor: pointer;
+        width: 38px;
+        height: 38px;
+        transform: scale(.86);
+        position: absolute;
+        top: -1px;
+        left: 1px;
+    }
+
+    #villageListPopup .getmorevill {
+        text-align: center;
+        font: 12px/0.7em "Georgia", serif;
+        padding: 10px;
+        line-height: 200%;
+    }
+
+
+    #villageListPopup .massfeatures {
+        position: absolute;
+        top: 2px;
+        left: 50px;
+        width: 175px;
+    }
+        #villageListPopup .massfeatures .massfeature {
+            position: relative;
+            display: block;
+            float: left;
+            height: 38px;
+            width: 38px;
+            margin-right: 5px;
+            background-size: 100% 100%;
+            cursor:pointer;
+        }
+            #villageListPopup .massfeatures .massfeature.massrecruit {
+                background-image: url(https://static.realmofempires.com/images/icons/M_MassRecruit.png);
+            }
+            #villageListPopup .massfeatures .massfeature.massupgrade {
+                background-image: url(https://static.realmofempires.com/images/icons/M_MassUpgrade.png);
+            }
+            #villageListPopup .massfeatures .massfeature.massdowngrade {
+                background-image: url(https://static.realmofempires.com/images/icons/M_MassDowngrade.png);
+            }
+            #villageListPopup .massfeatures .massfeature.massdisband {
+                background-image: url(https://static.realmofempires.com/images/icons/M_MassDisband.png);
+            }
+
+
+
+    /*responsive styles*/
+
+    /*small - not yet implemented*/
+#villageListDialog[sizerange="s"] #villageListPopup .villlist_itemlist {
+}
+    #villageListDialog[sizerange="s"] #villageListPopup .villlist_itemlist .villageImage {
+    }
+    #villageListDialog[sizerange="s"] #villageListPopup .villlist_itemlist .villListName {
+    }
+    #villageListDialog[sizerange="s"] #villageListPopup .villlist_itemlist .villListCoord {
+    }
+    #villageListDialog[sizerange="s"] #villageListPopup .villlist_itemlist .details {
+    }
+
+    /*medium  - not yet implemented*/
+#villageListDialog[sizerange="m"] #villageListPopup .villlist_itemlist {
+}
+    #villageListDialog[sizerange="m"] #villageListPopup .villlist_itemlist .villageImage {
+    }
+    #villageListDialog[sizerange="m"] #villageListPopup .villlist_itemlist .villListName {
+    }
+    #villageListDialog[sizerange="m"] #villageListPopup .villlist_itemlist .villCoorPts {
+    }
+    #villageListDialog[sizerange="m"] #villageListPopup .villlist_itemlist .incoming {
+    }
+    #villageListDialog[sizerange="m"] #villageListPopup .villlist_itemlist .details {
+    }
+
+        /*large - not yet implemented */
+#villageListDialog[sizerange="l"] #villageListPopup .villlist_itemlist {
+}
+    #villageListDialog[sizerange="l"] #villageListPopup .villlist_itemlist .villListName {
+    }
+    #villageListDialog[sizerange="l"] #villageListPopup .villlist_itemlist .villListCoord {
+    }
+    #villageListDialog[sizerange="l"] #villageListPopup .villlist_itemlist .details {
+    }
+
+
+#villageListPopup .headerTroopType {
+    opacity: 0.5;
+    font-weight: normal;
+    border-left: solid 1px gray;
+    text-align:center !important;
+    white-space:nowrap
+}
+    
+     #villageListPopup .filtersCmdBtn {
+        position: absolute;
+        top: 1px;
+        right: 2px;
+    }
+
+
+    #villageListPopup .filtersCmdBtn {
+        position: absolute;
+        top: 1px;
+        right: 2px;
+    }
+        #villageListPopup .filtersCmdBtn .filterIcon {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-image: url('https://static.realmofempires.com/images/icons/M_FilterB.png');
+        }
+
+        
+     #villageListPopup .unit 
+     {
+        white-space:nowrap;
+        color: #d7d7d7;
+     }
+    
+     #villageListPopup .unit.zero,
+     #villageListPopup .building.zero {
+           opacity: 0.1;
+    }
+
+
+
+/*filterSettings styling */
+ #villageListPopup .hiddenDuringFilter {
+    position: absolute;
+    top: 2px;
+    left: 225px;
+    width: 155px;
+}
+
+ 
+
+ #villageListPopup .filterSearchString {
+    float: left;
+    margin: 2px;
+    height: 20px;
+    width: 100px;
+  
+    border-radius: 6px;
+    font: 14px/1.0em "IM Fell French Canon", serif;
+    color: #616161;
+    border: 1px solid #616161;
+    padding: 4px;
+}
+
+#villageListPopup .listToolIcon {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#villageListPopup  .listToolBtn {
+    position: relative;
+    padding: 0px;
+    float: left;
+    /* margin: 2px; */
+    cursor: pointer;
+}

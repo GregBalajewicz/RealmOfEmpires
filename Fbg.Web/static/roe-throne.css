@@ -1,0 +1,2534 @@
+﻿html {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    position: relative;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    color: #F7F7F7;
+    background-image: url(https://static.realmofempires.com/imAges/throneRoom/background_01-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    background-image: none;
+}
+
+* {
+    outline: none;
+}
+a {
+    color: #FFD886 !important;
+    text-decoration: none;
+}
+
+
+
+.throneBusyMask {
+    display: none;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10000;
+}
+    .throneBusyMask .msg {
+        position: absolute;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+        top: 40%;
+        padding-top: 45px;
+        font: 21px "IM Fell French Canon", serif;
+        color: #e6cd90;
+        text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-align: center;
+        background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+    }
+        .throneBusyMask .msg .timeoutMessage {
+            margin-top: 5px;
+            color: #D2BB0E;
+            font-size: 15px;
+        }
+
+
+
+/* MAIN PANEL AND ASSETS */
+
+#panelMain {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+    #panelMain #assetStage {
+        position: absolute;
+        background-color:pink;
+        background-color:black;
+        overflow: hidden;
+    }
+        #panelMain #assetStage .throneAsset {
+            position: absolute;
+            /*background-color:rgba(0, 255, 20, 0.22);*/
+            background-size:100% 100%;
+            pointer-events: none;
+        }
+            #panelMain #assetStage .throneAsset.flipped {
+                transform: scaleX(-1);
+                filter: FlipH;
+            }
+
+
+
+        #panelMain #assetStage .shield {
+            overflow: hidden;
+            cursor: pointer;
+            background-size: 100% 100%;
+            pointer-events: initial;
+            background-image:url(https://static.realmofempires.com/imAges/throneRoom/shield_01small.png);
+        }
+            #panelMain #assetStage .shield.nontract {
+                pointer-events:none;
+            }
+            #panelMain #assetStage .shield.clickedOn {
+                /*cursor:default;*/
+                background-image:url(https://static.realmofempires.com/imAges/throneRoom/SHIElD_01.png);
+                -webkit-transition: all .3s ease !important;
+                -moz-transition: all .3s ease !important;
+                -ms-transition: all .3s ease !important;
+                -o-transition: all .3s ease !important;
+                transition: all .3s ease !important;
+                width: 531px !important;
+                height: 764px !important;
+                z-index: 2;
+            }
+            #panelMain #assetStage .shield.inUse:hover {
+                -webkit-transition: all .1s ease;
+                -moz-transition: all .1s ease;
+                -ms-transition: all .1s ease;
+                -o-transition: all .1s ease;
+                transition: all .1s ease;
+                z-index: 2;
+            }
+
+            #panelMain #assetStage .shield .realmNumber {
+                position: absolute;
+                top: 12%;
+                left: 0px;
+                right: 0px;
+                height: 19%;
+                text-align: center;
+            }
+                #panelMain #assetStage .shield .realmNumber .numberDiv {
+                    position: relative;
+                    display: inline-block;
+                    width: 16%;
+                    height: 100%;
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                }
+
+            #panelMain #assetStage .shield .detail {
+                display: none;
+                color: #D5CCB5;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
+                font: 18px "IM Fell French Canon", serif;
+                font-weight: bold;
+            }
+                #panelMain #assetStage .shield .detail.ratingDiv .ordinal {
+                    margin-top: 2px;
+                    font-size: 25px;
+                }
+                #panelMain #assetStage .shield .detail.ratingDiv .value {
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 15px;
+                }
+
+                #panelMain #assetStage .shield .detail.playerTitle {
+                    position:absolute;
+                    bottom: 12%;
+                    left: 32%;
+                    right: 32%;
+                    height: 10%;
+                    text-align: center;
+                    font-size: 27px;
+                    line-height: 22px;
+                }
+                #panelMain #assetStage .shield .detail.realmPlayerName {
+                    position:absolute;
+                    top: 28.3%;
+                    left: 0px;
+                    right: 0px;
+                    text-align: center;
+                    font-size: 21px;
+                }
+      
+
+            #panelMain #assetStage .shield .itemSet {
+                position: absolute;
+                height: 8%;
+                /*background-color: rgba(95, 158, 160, 0.4);*/
+            }
+                #panelMain #assetStage .shield .itemSet:nth-child(1) {
+                    top: 33.5%;
+                    left: 26%;
+                    right: 51%;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(2) {
+                    top: 33.5%;
+                    left: 51%;
+                    text-align: left;
+                    width:140px;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(3) {
+                    top: 42%;
+                    left: 22%;
+                    right: 51%;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(4) {
+                    top: 42%;
+                    left: 51%;
+                    text-align: left;
+                    width:140px;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(5) {
+                    top: 51%;
+                    left: 22%;
+                    right: 51%;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(6) {
+                    top: 51%;
+                    left: 51%;
+                    text-align: left;
+                    width:140px;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(7) {
+                    top: 59.3%;
+                    left: 51%;
+                    right: 22%;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(8) {
+                    top: 59.3%;
+                    right: 52%;
+                    text-align: right;
+                    width:140px;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(9) {
+                    top: 67.5%;
+                    left: 50%;
+                    right: 27%;
+                }
+                #panelMain #assetStage .shield .itemSet:nth-child(10) {
+                    top: 67.8%;
+                    right: 52%;
+                    text-align: right;
+                    width:140px;
+                }
+
+            #panelMain #assetStage .shield .itemSet .item {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                background-position: 50% 50%;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+            }
+            #panelMain #assetStage .shield .itemSet .aceWing {
+                position:absolute;
+                left:0px;
+                right:0px;
+                top:0px;
+                bottom:0px;
+                background-position:50% 50%;
+                background-size:auto 100%;
+                background-repeat:no-repeat;
+            }
+                #panelMain #assetStage .shield .itemSet .aceWing.ace1 {
+                    background-image: url(https://static.realmofempires.com/imAges/throneRoom/rankLaurelsDouble_01.png);
+                }
+                #panelMain #assetStage .shield .itemSet .aceWing.ace2 {
+                    background-image: url(https://static.realmofempires.com/imAges/throneRoom/rankLaurelsSingle_01.png);
+                }
+                            
+            #panelMain #assetStage .shield .itemSet.ace1 .item,
+            #panelMain #assetStage .shield .itemSet.ace2 .item {
+                left:0px;
+                right:0px;       
+            }
+            #panelMain #assetStage .shield .itemSet.oneStar .item {
+                left:0px;
+                right:0px; 
+            }
+            #panelMain #assetStage .shield .itemSet.twoStar .item:nth-child(1) {
+                left: -20%;
+                right: 20%;
+            }
+            #panelMain #assetStage .shield .itemSet.twoStar .item:nth-child(2) {
+                left: 20%;
+                right: -20%;
+            }
+
+                #panelMain #assetStage .shield .itemSet.threeStar .item:nth-child(1) {
+                    left: -33%;
+                    right: 33%;
+                    top: 10%;
+                    bottom: 10%;
+                }
+                #panelMain #assetStage .shield .itemSet.threeStar .item:nth-child(2) {
+                    left: 0%;
+                    right: 0%;
+                    top: 0%;
+                    bottom: 0%;
+                }
+                #panelMain #assetStage .shield .itemSet.threeStar .item:nth-child(3) {
+                    left: 33%;
+                    right: -33%;
+                    top: 10%;
+                    bottom: 10%;
+                }
+
+                #panelMain #assetStage .shield .itemSet.HP .item {
+                    background-image: url(https://static.realmofempires.com/imAges/throneRoom/rankVillagePoints_01.png);
+                }
+                #panelMain #assetStage .shield .itemSet.HN .item {
+                    background-image: url(https://static.realmofempires.com/imAges/throneRoom/rankVillageCount_01.png);
+                }
+                #panelMain #assetStage .shield .itemSet.HA .item {
+                    background-image: url(https://static.realmofempires.com/imAges/throneRoom/rankAttackPoints_01.png);
+                }
+                #panelMain #assetStage .shield .itemSet.HD .item {
+                    background-image: url(https://static.realmofempires.com/imAges/throneRoom/rankDefencePoints_01.png);
+                }
+                #panelMain #assetStage .shield .itemSet.HG .item {
+                    background-image: url(https://static.realmofempires.com/imAges/throneRoom/ranKGovKills_01.png);
+                }
+
+
+
+    #panelMain .shieldClickedMask {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0,0,0,.8);
+        opacity: 0;
+        z-index:1;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+        #panelMain .shieldClickedMask.fadeIn {
+            opacity: 1;
+        }
+        #panelMain .shieldClickedMask .clickMask {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            cursor: pointer;
+        }
+        #panelMain .shieldClickedMask .maskBtn {
+            position: fixed;
+            top:50%;
+            left:50%;
+            margin-left:0px;
+            opacity:0;
+        }
+
+            #panelMain .shieldClickedMask .maskBtn.realmProfile {
+                margin-top: 0px;
+            }
+            #panelMain .shieldClickedMask .maskBtn.joinChat {
+                margin-top: 50px;
+            }
+                #panelMain .shieldClickedMask .maskBtn.joinChat .rid {
+                    position: absolute;
+                    height: 34px;
+                    width: 34px;
+                    top: 2px;
+                    left: 12px;
+                    cursor: pointer;
+                    font: 19px "IM Fell French Canon", serif;
+                    text-align: center;
+                    line-height: 33px;
+                    box-sizing: border-box;
+                    background-image: url('https://static.realmofempires.com/images/icons/M_RealmNumber.png');
+                    background-size: auto 100%;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                }
+
+.floatIconPanel {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+}
+    .floatIconPanel .floatIcon {
+        display:none; 
+        position: relative;
+        float: left;
+        margin-right: 3px;
+        cursor:pointer;
+    }
+        .floatIconPanel .floatIcon:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+    .floatIconPanel .shareTr {
+        height: 33px;
+        padding-left: 33px;
+        padding-right: 8px;
+        font-size: 26px;
+        line-height: 33px;
+        background-image: url(https://static.realmofempires.com/images/icons/throne.png);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        user-select: text;
+    }
+
+.likeTr {
+    overflow: initial !important;
+    overflow: visible !important;
+    padding-right: 20px;
+    line-height: 12px !important;
+}
+    .likeTr:hover {
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+    .likeTr .count {
+        position: absolute;
+        top: 4px;
+        right: 16px;
+        width: 22px;
+        height: 22px;
+        background-color: rgba(16, 80, 92, 0.6);
+        border-radius: 20px;
+        border: 1px outset #A6AC84;
+        line-height: 19px;
+        text-shadow: 0px 1px #000,0px -1px #000;
+        text-align: center;
+    }
+    .likeTr .containerBusyMask .busyMaskText {
+        position: absolute;
+        top: 3px;
+        bottom: 3px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        text-align: center;
+        background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+        margin: 0px;
+        padding: 0px;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 35px;
+    }
+
+    .likeTr .msg {
+        position:absolute;
+        right:0px;
+        top:0px;
+    }
+        .likeTr .msg.new {
+            right: 20px;
+            top: 9px;
+            font-size: 17px;
+            font-family: sans-serif;
+        }
+
+
+
+.uservoice {
+    height: 33px;
+    width: 33px;
+    background-size: 100% 100%;
+}
+#ideas {
+    background-image: url(https://static.realmofempires.com/images/icons/exclamationg.png);
+}
+#supportq {
+    background-image: url(https://static.realmofempires.com/images/icons/questiong.png);
+}
+
+
+
+
+
+#panelTop,
+#panelBottom {
+    display: none;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.8);
+}
+#panelTop {
+    top: 0px;
+    height: 65px;
+}
+    #panelTop .xpVacArea {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        text-align: left;
+    }
+        #panelTop .xpVacArea .nextVacationProgress {
+            position: relative;
+            padding: 0px;
+            margin-top: 2px;
+            width: 180px;
+            overflow: hidden;
+            height: 16px;
+            border: 2px inset rgba(137, 128, 101, 0.6);
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+        }
+        #panelTop .xpVacArea .nextVacationBar {
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            bottom: 1px;
+            width: 0%;
+            background-color: #4B4B4B;
+            border-radius: 6px;
+            background-color: #028530;
+            background: linear-gradient(to right, #028530 0%, #16FF42 100%);
+        }
+        #panelTop .xpVacArea .nextVacationXP {
+            position: relative;
+            margin-top: 1px;
+            margin-left: 4px;
+        }
+
+    #panelTop .vip {
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        top: -5px;
+        width: 64px;
+        height: 64px;
+        margin-right: 2px;
+        margin-bottom: -28px;
+        background-size: 100% auto;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+        #panelTop .vip[data-viplevel="0"] {
+            display: none;
+        }
+        #panelTop .vip[data-viplevel="1"] {
+            background-image: url(https://static.realmofempires.com/images/icons/VIP_bronze1.png);
+        }
+        #panelTop .vip[data-viplevel="2"] {
+            background-image: url(https://static.realmofempires.com/images/icons/VIP_silver1.png);
+        }
+        #panelTop .vip[data-viplevel="3"] {
+            background-image: url(https://static.realmofempires.com/images/icons/VIP_gold1.png);
+        }
+        #panelTop .vip[data-viplevel="4"] {
+            background-image: url(https://static.realmofempires.com/images/icons/VIP_diamond1.png);
+        }
+
+    #panelTop .playerNameBox {
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        text-align: center;
+        font-size: 29px;
+    }
+        #panelTop .playerNameBox .globalPlayerAvatar {
+            display: inline-block;
+            position: relative;
+            width: 45px;
+            height: 45px;
+            margin-right: 2px;
+            margin-bottom: -13px;
+            border-radius: 5px;
+            background-size: 100% 100%;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-sizing: border-box;
+            background-size: 50px 50px;
+            background-position: 50% 50%;
+        }
+        #panelTop .playerNameBox .highestTitle {
+            display: inline-block;
+            position: relative;
+            margin-right: 2px;
+        }
+        #panelTop .playerNameBox .globalPlayerName {
+            display: inline-block;
+            position: relative;
+        }
+            #panelTop .playerNameBox .globalPlayerName .editGPN {
+                position: absolute;
+                top: 15%;
+                left: 100%;
+                opacity: 0;
+                width: 250px;
+                font-size: 13px;
+                text-align: left;
+            }
+
+
+#panelTop .topStatsTicker {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    cursor:pointer;
+    box-sizing:border-box;
+}
+    #panelTop .topStatsTicker:hover {
+        background-color: rgba(75, 75, 75, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    #panelTop .topStatsTicker .statBox {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        line-height: 40px;
+    }
+
+
+#panelBottom {
+    bottom: 0px;
+    height: 40px;
+}
+    #panelBottom .btnWrapBottomLeft {
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+        text-align: left;
+    }
+
+    #panelBottom .bottomMenuBtn {
+        position: relative;
+        display: block;
+        float: left;
+    }
+
+    #panelBottom .realmButtonsContainer {
+        position: relative;
+        display: block;
+        float: left;
+        width: auto;
+        height: 40px;
+        text-align: center;
+        margin-right: 10px;
+        cursor: pointer;
+        overflow: hidden;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+        #panelBottom .realmButtonsContainer:hover {
+            background-color: rgba(15, 12, 10, 0.9);
+        }
+        #panelBottom .realmButtonsContainer #lnkBacktoCR {
+            display: block;
+            float: left;
+            position: relative;
+            top: 3px;
+            background-image: url('https://static.realmofempires.com/images/icons/m_switchrealm.png');
+            background-size: auto 100%;
+            height: 33px;
+            width: 33px;
+            cursor: pointer;
+            margin-right: 5px;
+            box-sizing: border-box;
+        }
+
+        #panelBottom .realmButtonsContainer .realmListCompact {
+            display: block;
+            float: left;
+            position: relative;
+            top: 3px;
+            height: 35px;
+            overflow: hidden;
+            max-width: 116px;
+            -webkit-transition: all .4s ease;
+            -moz-transition: all .4s ease;
+            -ms-transition: all .4s ease;
+            -o-transition: all .4s ease;
+            transition: all .4s ease;
+        }
+
+            #panelBottom .realmButtonsContainer .realmListCompact.expanded  {
+                max-width: 400px;
+            }
+
+            #panelBottom .realmButtonsContainer .realmListCompact .realmLink {
+                display: block;
+                float: left;
+                position: relative;
+                top: 1px;
+                height: 33px;
+                width: 33px;
+                cursor: pointer;
+                font: 19px "IM Fell French Canon", serif;
+                text-align: center;
+                padding-top: 6px;
+                box-sizing: border-box;
+                margin-right: 3px;
+                margin-left: 2px;
+                background-image: url('https://static.realmofempires.com/images/icons/M_RealmNumber.png');
+                background-size: auto 33px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                border-radius: 50px;
+            }
+            /*
+                #panelBottom .realmButtonsContainer .realmListCompact .realmLink:hover {
+                    background-color: rgba(75, 75, 75, 0.3);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                }
+                */
+        #panelBottom .realmButtonsContainer .btnChooseRealms {
+            display: block;
+            float: left;
+            position: relative;
+            top: 4px;
+            height: 33px;
+            width: 33px;
+            cursor: pointer;
+            font: 21px "IM Fell French Canon", serif;
+            text-align: center;
+            padding-top: 0px;
+            box-sizing: border-box;
+            margin-right: 5px;
+            background-image: url('https://static.realmofempires.com/images/icons/M_RealmNumber.png');
+            background-size: auto 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        /*
+        #panelBottom .realmButtonsContainer .btnRealmProfileList {
+            top: 1px;
+        }
+            #panelBottom .realmButtonsContainer .btnRealmProfileList.spectator {
+                font-size: 12px;
+                line-height: 12px;
+                padding-top: 7px;
+            }
+*/
+        #panelBottom .realmButtonsContainer .btnRealmProfileList {
+            top: 0px;
+            height: 40px;
+            width: 40px;
+            background-image: url('https://static.realmofempires.com/images/icons/bookPile.png');
+            background-size: auto 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+    #panelBottom #addNewChat {
+        width: 30px;
+        font-size: 20px;
+        line-height: 27px;
+        float: right;
+    }
+
+
+#panelOne {
+    position: absolute;
+    top: 70px;
+    right: 5px;
+}
+
+    #panelOne .btn {
+        position: relative;
+        display: block;
+        float: left;
+        height: 40px;
+        width: 40px;
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        margin-left: 10px;
+        font-size: 11px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    #panelOne .btnRealmProfileList {
+        background-image: url(https://static.realmofempires.com/images/icons/bookPile.png);
+    }
+
+    #panelOne .btnChangelog {
+        background-image: url(https://static.realmofempires.com/images/icons/m_Reports.png);
+    }
+
+    #panelOne .btnSpeedRealmStandings {
+        text-align: center;
+        padding-top: 15px;
+        width: 75px;
+        height: 75px;
+        font-size: 27px;
+    }
+        #panelOne .btnSpeedRealmStandings.master {
+            background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_master.png);
+        }
+        #panelOne .btnSpeedRealmStandings.diamond {
+            background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_diamond.png);
+        }
+        #panelOne .btnSpeedRealmStandings.platinum {
+            background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_platinum.png);
+        }
+        #panelOne .btnSpeedRealmStandings.gold {
+            background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_gold.png);
+        }
+        #panelOne .btnSpeedRealmStandings.silver {
+            background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_silver.png);
+        }
+        #panelOne .btnSpeedRealmStandings.bronze {
+            background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_copper.png);
+        }
+        #panelOne .btnSpeedRealmStandings.nonRanked {
+            background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_copper.png);
+            padding-top: 26px;
+            font-size: 12px;
+        }
+
+    #panelOne .btnTrophies {
+        background-image: url('https://static.realmofempires.com/images/icons/M_Reward.png');
+    }
+
+    #panelOne .btnNews {
+        background-image: url(https://static.realmofempires.com/images/icons/m_Reports.png);
+    }
+
+
+    
+
+
+
+
+/* MODULES */
+.gpnRenameContent {
+    text-align:center;
+}
+    .gpnRenameContent .info {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+.gpnRenameContent #globalPlayerNameInput {
+    position: relative;
+    width: 240px;
+    font: 13px "IM Fell French Canon", serif;
+    box-shadow: inset -1px 3px 2px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 2px;
+    border: none;
+    margin-right: 5px;
+}
+.gpnRenameContent #globalPlayerNameOk {
+    position: relative;
+    font: 13px "IM Fell French Canon", serif;
+    box-shadow: -1px 3px 2px 1px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 2px 10px;
+    border: none;
+    cursor:pointer;
+}
+.gpnRenameContent .nameErrorBox {
+    padding: 5px;
+    color: #F00;
+}
+
+.realmProfileList {
+    position:relative;
+    text-align: center;
+}
+
+    .realmProfileList .realmBox {
+        position: relative;
+        text-align: left;
+        padding: 5px 10px;
+        background-color: #172832;
+    }
+        .realmProfileList .realmBox:nth-child(odd) {
+            background-color: #0C1821;
+        }
+        .realmProfileList .realmBox:hover {
+            background-color: #5B6660;
+        }
+
+        .realmProfileList .realmBox .buttonPanel {
+            position: absolute;
+            top: 10px;
+            right: 2px;
+        }
+            .realmProfileList .realmBox .buttonPanel .btn {
+                position: relative;
+                float: right;
+                cursor: pointer;
+                text-align: center;
+                margin-left: 3px;
+            }
+
+        .realmProfileList .realmBox .displayStatus {
+
+        }
+            .realmProfileList .realmBox .displayStatus[data-displayStatus="1"] {
+                color: #0F0;
+            }
+            .realmProfileList .realmBox .displayStatus[data-displayStatus="0"] {
+                color: #F00;
+                text-shadow: 0px 0px 3px #690000;
+            }
+
+    .realmProfileList .realmBox .joinRealmChat {
+
+    }
+
+
+.realmProfileContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+    .realmProfileContent .realmBox {
+        position:absolute;
+        top:0px;
+        width:100%;
+        box-sizing:border-box;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        height: 110px;
+    }
+
+        .realmProfileContent .realmBox .leftBox {
+            position: relative;
+            width: 50%;
+            float: left;
+        }
+        .realmProfileContent .realmBox .rightBox {
+            position: relative;
+            width: 50%;
+            float: left;
+        }
+
+        .realmProfileContent .realmBox .label,
+        .realmProfileContent .realmBox .playerName {
+            font-size: 19px;
+            color: #D8D8D8;
+        }
+
+    .realmProfileContent .leaderBoard {
+        position: absolute;
+        top: 115px;
+        bottom: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+        .realmProfileContent .leaderBoard .label {
+            font-size: 19px;
+            color: #D8D8D8;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .realmProfileContent .leaderBoard .searchBox {
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            height: 15px;
+            width: 170px;
+        }
+        .realmProfileContent .leaderBoard .content {
+            position: absolute;
+            top: 40px;
+            overflow:auto;
+            overflow-x:hidden;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            box-sizing: border-box;
+        }
+        
+            .realmProfileContent .leaderBoard .content .leaderTable {
+                position: relative;
+                width: 100%;
+                border-spacing: 0px;
+            }
+   
+                .realmProfileContent .leaderBoard .content .leaderTable tr.headerRow {
+                    background-color: rgba(0, 0, 0, 0.7);
+                    text-align:left;
+                    padding-left:3px;
+                }
+
+                    .realmProfileContent .leaderBoard .content .leaderTable tr.headerRow th {
+                        padding: 5px;
+                    }
+                        .realmProfileContent .leaderBoard .content .leaderTable tr.headerRow th.num {
+                            text-align: right;
+                        }
+                        .realmProfileContent .leaderBoard .content .leaderTable tr.headerRow th.chat {
+                            text-align:center;
+                            width: 54px;
+                        }
+                .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow {
+                    background-color: #172832;
+                    text-align: left;
+                    cursor:pointer;
+                }
+                 
+                .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow:nth-child(odd) {
+                        background-color: #0C1821;
+                    }
+                    .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow.self {
+                        background-color: #5D4E30;
+                    }
+
+                    .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow:hover {
+                        background-color: #5B6660;
+                    }
+
+                    .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow td {
+                        /*position:relative; //this KILLS IE */
+                        padding-left: 3px;
+                    }
+                        .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow td.playerName span{
+                            color: #9E9E9E;
+                        }
+                    .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow .num {
+                        text-align:right;
+                    }
+
+
+                    .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow .chat {
+                        /*
+                        transform: scale(0.5);
+                        font-size: 19px;
+                        line-height: 13px;
+                        position: absolute;
+                        left: -21px;
+                        top: -7px;
+                        */
+                        text-align: center;
+                        font-size: 11px;
+                        background-color: #02070A;
+                        border-radius: 10px;
+                    }
+                        .realmProfileContent .leaderBoard .content .leaderTable tr.dataRow .chat:hover {
+                            background-color: #234A61;
+                        }
+
+.changeLogContent {
+    padding: 20px;
+    background-color: rgba(0,0,0,.8);
+}
+    .changeLogContent .logLink {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+#loginDialog {
+    text-align: center;
+    padding: 20px;
+}
+    #loginDialog .bkg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    }
+    #loginDialog .text {
+        position: relative;
+        font-size: 17px;
+        margin-bottom: 15px;
+        text-shadow: 0px 1px #000;
+    }
+    #loginDialog .BtnBLg1 {
+        position: relative;
+        display: inline-block;
+    }
+
+                    
+
+.gameWideTopStats .statBox {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+.shareTr {
+    text-align: center;
+}
+    .shareTr .panel {
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+    }
+        .shareTr .panel.info {
+            margin-top: 20px;
+        }
+            .shareTr .panel.info .header {
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+
+            .shareTr .panel.info .shareBtn {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+                margin-bottom: 5px;
+            }
+                .shareTr .panel.info .shareBtn.twitter {
+                    background-image: url(https://g.twimg.com/about/feature-corporate/image/tweetbutton.png);
+                    background-size: 100% auto;
+                    width: 55px;
+                    height: 21px;
+                }
+
+    .shareTr .fbLikeWrapper {
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 5px;
+        border-radius: 3px;
+    }
+
+.shareRaffle .panel {
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.shareRaffle .header {
+    font-size: 22px;
+}
+
+.shareRaffle .shareTr {
+    position: relative;
+    width: 100px;
+    cursor: pointer;
+    height: 33px;
+    padding-left: 33px;
+    padding-right: 8px;
+    font-size: 26px;
+    line-height: 33px;
+    background-image: url(https://static.realmofempires.com/images/icons/throne.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.32);
+    border-radius: 3px;
+}
+
+.shareRaffle .prizeheader {
+margin-bottom:10px;
+}
+.shareRaffle .prize {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 40px;
+    background-size: auto 100%;
+    /* background-position: right center; */
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 160px;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 3px;
+}
+    .shareRaffle .prize.kn {
+        background-image: url('https://static.realmofempires.com/images/units/Knight_m.png');
+    }
+    .shareRaffle .prize.lc {
+        background-image: url('https://static.realmofempires.com/images/units/Cavalry_M.png');
+    }
+    .shareRaffle .prize.if {
+        background-image: url('https://static.realmofempires.com/images/units/Infantry_m.png');
+    }
+    .shareRaffle .prize.sv {
+        background-image: url('https://static.realmofempires.com/images/gifts/Gift_sack_of_silver.png');
+    }
+
+
+
+/*Choose Realm*/
+#chooseRealmsBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+    #chooseRealmsBox #panelRealms {
+        position: absolute;
+        top: 0px;
+        bottom: 10px;
+        left: 0px;
+        right: 0px;
+        overflow: auto;
+    }
+    #chooseRealmsBox .realmButtons {
+        position: relative;
+    }
+        #chooseRealmsBox .realmButtons a {
+            display: block;
+            height: auto;
+            font: 24px/1.0em "IM Fell French Canon SC", serif;
+            text-shadow: 2px 2px 2px #000;
+            text-align: center;
+            padding-left: 10px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+            #chooseRealmsBox .realmButtons a:hover {
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+
+        #chooseRealmsBox .realmButtons .realm {
+            position: relative;
+            float: left;
+            top: 13px;
+        }
+
+
+.realmButtons a.vipexclusive {
+    background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(0, 173, 255, 0.4) 50%,rgba(125,185,232,0) 100%);
+}
+
+.realmButtons a.private {
+    background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgb(146 83 4 / 75%) 50%,rgba(125,185,232,0) 100%);
+}
+
+.realmButtons .vipexclusive .realmNumber {
+    box-shadow: 0px 0px 2px 1px rgba(0, 176, 255, 0.8);
+    background-image: url('https://static.realmofempires.com/images/icons/M_RealmNumberVipExclusive.png') !important;
+    border-radius: 50px;
+}
+
+    #chooseRealmsBox #panelRealms .realmNumber {
+        position: relative;
+        top: 5px;
+        float: left;
+        margin-left: 10px;
+        width: 46px;
+        height: 28px;
+        background: url('https://static.realmofempires.com/images/icons/M_RealmNumber.png') no-repeat;
+        text-align: center;
+        font: 24px/1.0em "Georgia", serif;
+        color: #FFD776;
+        text-shadow: 1px 1px 1px #000000;
+        padding: 9px 0;
+    }
+    #chooseRealmsBox #panelRealms .realmInfo {
+        display: inline-block;
+        position: relative;
+    }
+    #chooseRealmsBox #panelRealms .realmLogin {
+        font: 19px "IM Fell French Canon SC", serif;
+    }
+    #chooseRealmsBox #panelRealms .realmName {
+        font: 19px "IM Fell French Canon SC", serif;
+        color: #d0d0d0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 280px;
+    }
+    #chooseRealmsBox #panelRealms .realmDetail {
+        font: 13px  serif;
+        color: #B7B7B7;
+    }
+
+    #chooseRealmsBox #panelRealms .realmStats {
+        display:none;
+    }
+
+
+.endedToggle {
+    position: absolute;
+    right: 45px;
+    top: 4px;
+    width: 23px;
+    margin: 0px;
+    padding: 0px;
+    height: 23px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+    .endedToggle.showing {
+        background-image: url(https://static.realmofempires.com/images/icons/M_FilterShowHidden.png);
+    }
+    .endedToggle.hiding {
+        background-image: url(https://static.realmofempires.com/images/icons/M_FilterHideHidden.png);
+    }
+
+.openOnStart {
+    position: absolute;
+    right: 90px;
+    top: 9px;
+    background: #0c1424;
+    font-size: 15px;
+    padding: 0px 1px;
+    padding-left: 4px;
+    color: #adb7c3;
+}
+    .openOnStart .autoOpenCheckbox {
+        vertical-align: middle;
+        cursor:pointer;
+    }
+
+
+
+
+
+/* 
+    DIALOG RELATED STYLE
+    TEMP: will probably have to port over the standard RoE Dialog style.
+*/
+
+#busy {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: auto;
+    height: auto;
+    z-index:999999;
+    right: 0px;
+    bottom: 0px;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 1%, rgba(0,0,0,0.57) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.9)), color-stop(1%,rgba(0,0,0,0.9)), color-stop(100%,rgba(0,0,0,0.57)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 1%,rgba(0,0,0,0.57) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 1%,rgba(0,0,0,0.57) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 1%,rgba(0,0,0,0.57) 100%);
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.9) 1%,rgba(0,0,0,0.57) 100%);
+}
+    #busy #busy-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: -115px;
+        width: 300px;
+        height: 230px;
+        color: #C39037;
+        text-align: center;
+        font-size: 12pt;
+    }
+        #busy #busy-content #AdminHideBusyFrame {
+            position: relative;
+            background: -moz-linear-gradient(left, rgba(178,0,15,0) 0%, rgba(154,0,13,0.66) 44%, rgba(151,0,13,0.74) 49%, rgba(118,0,10,0) 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(178,0,15,0)), color-stop(44%,rgba(154,0,13,0.66)), color-stop(49%,rgba(151,0,13,0.74)), color-stop(100%,rgba(118,0,10,0)));
+            background: -webkit-linear-gradient(left, rgba(178,0,15,0) 0%,rgba(154,0,13,0.66) 44%,rgba(151,0,13,0.74) 49%,rgba(118,0,10,0) 100%);
+            background: -o-linear-gradient(left, rgba(178,0,15,0) 0%,rgba(154,0,13,0.66) 44%,rgba(151,0,13,0.74) 49%,rgba(118,0,10,0) 100%);
+            background: -ms-linear-gradient(left, rgba(178,0,15,0) 0%,rgba(154,0,13,0.66) 44%,rgba(151,0,13,0.74) 49%,rgba(118,0,10,0) 100%);
+            background: linear-gradient(to right, rgba(178,0,15,0) 0%,rgba(154,0,13,0.66) 44%,rgba(151,0,13,0.74) 49%,rgba(118,0,10,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b2000f', endColorstr='#0076000a',GradientType=1 );
+            padding: 5px 0px;
+            margin-top: 50px;
+            cursor: pointer;
+            text-shadow: 0px 1px #000;
+        }
+        
+            #busy #busy-content #AdminHideBusyFrame:hover {
+                color: #A4A4A4;
+}
+
+        #busy #busy-content #busy-refresh {
+            display: none;
+            text-decoration: none;
+            color: #00ff21;
+            font-size: small;
+            cursor: pointer;
+}
+
+
+.containerBusyMask {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index:1;
+}
+    .containerBusyMask .busyMaskText {
+        position: absolute;
+        width: 300px;
+        left: 50%;
+        margin-top: -40px;
+        margin-left: -150px;
+        top: 50%;
+        padding-top: 45px;
+        font: 21px "IM Fell French Canon", serif;
+        color: #e6cd90;
+        text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-align: center;
+        background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+    }
+    .containerBusyMask.nonMsg {
+        background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 60% 60%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+        .containerBusyMask.nonMsg .busyMaskText {
+            display: none;
+        }
+
+
+.popupDialogs .containerBusyMask {
+    border-radius: 15px;
+}
+
+
+.throneDialog {
+    z-index: 3;
+    font: 13px "IM Fell French Canon", serif;
+}
+
+
+.desktop .ui-dialog.ui-widget-content {
+    border: none;
+    background: none;
+    padding-bottom: 15px;
+    border-radius: 0px;
+}
+    .desktop .ui-dialog.ui-widget-content .roeStyleContent {
+        position: absolute;
+        top: 27px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+        .desktop .ui-dialog.ui-widget-content .roeStyleContent .contentLT {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 15px;
+            height: 8px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_LeftT.png);
+        }
+        .desktop .ui-dialog.ui-widget-content .roeStyleContent .contentLM {
+            position: absolute;
+            left: 0px;
+            top: 8px;
+            width: 15px;
+            bottom: 8px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_LeftM.png);
+        }
+
+        .desktop .ui-dialog.ui-widget-content .roeStyleContent .contentLB {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 15px;
+            height: 15px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_LeftB.png);
+        }
+        .desktop .ui-dialog.ui-widget-content .roeStyleContent .contentBottom {
+            position: absolute;
+            left: 15px;
+            bottom: 0px;
+            right: 15px;
+            height: 15px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_Bottom.png);
+        }
+
+        .desktop .ui-dialog.ui-widget-content .roeStyleContent .contentRT {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 15px;
+            height: 8px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_RightT.png);
+        }
+        .desktop .ui-dialog.ui-widget-content .roeStyleContent .contentRM {
+            position: absolute;
+            right: 0px;
+            top: 8px;
+            width: 15px;
+            bottom: 8px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_RightM.png);
+        }
+
+        .desktop .ui-dialog.ui-widget-content .roeStyleContent .contentRB {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            width: 15px;
+            height: 15px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_RightB.png);
+        }
+        .desktop .ui-dialog.ui-widget-content .roeStyleContent .contentBody {
+            position: absolute;
+            top: 0px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            background-color: #000716;
+        }
+
+
+.desktop .ui-dialog .ui-dialog-titlebar {
+    height: 27px;
+    border: none;
+    border-radius: 0px;
+    color: #FFD776;
+    font: 17px/1.0em "IM Fell French Canon SC", serif;
+    text-shadow: 0px 1px 1px #000;
+}
+
+    .desktop .ui-dialog .ui-dialog-titlebar .roeStyleTitle {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+        .desktop .ui-dialog .ui-dialog-titlebar .roeStyleTitle .headerL {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 21px;
+            height: 27px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_HeaderL.png);
+        }
+        .desktop .ui-dialog .ui-dialog-titlebar .roeStyleTitle .headerM {
+            position: absolute;
+            left: 21px;
+            right: 21px;
+            top: 0px;
+            height: 27px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_HeaderM.png);
+            background-size: 100% 100%;
+        }
+        .desktop .ui-dialog .ui-dialog-titlebar .roeStyleTitle .headerR {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 21px;
+            height: 27px;
+            background-image: url(https://static.realmofempires.com/images/D2test/PopupA_HeaderR.png);
+        }
+
+        .desktop .ui-dialog .ui-dialog-titlebar .roeStyleTitle .headerOverlay {
+            position: absolute;
+            right: 17px;
+            top: 10px;
+            left: 18px;
+            height: 17px;
+            background-image: url(https://static.realmofempires.com/images/D2test/KnotTile.png);
+            background-position: 10px 0px;
+        }
+
+.desktop .ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    width: 20px;
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+    background: url("https://static.realmofempires.com/images/icons/M_X.png");
+    background-size: 100% 100%;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+.ui-dialog-titlebar-close span {
+    display: none;
+}
+
+
+
+.ui-widget-overlay {
+    z-index:2;
+    background: #000 !important;
+    opacity: .8 !important;
+}
+
+.genericDialogContent {
+    height: 100%;
+    width:100%;
+    overflow: auto;
+}
+
+#genericDialog {
+    background-image: url(https://static.realmofempires.com/images/backgrounds/M_BG_Research.jpg);
+}
+#realmProfile {
+    background-image: url(https://static.realmofempires.com/images/backgrounds/M_BG_Battle1.jpg);
+}
+#loginDialog {
+    background-image: url(https://static.realmofempires.com/images/misc/Intro.jpg);
+}
+#shareDialog {
+    background-image: url(https://static.realmofempires.com/images/backgrounds/BGcolor40485c.jpg);
+}
+#tourneyBesFinish {
+    background-image: url(https://static.realmofempires.com/images/backgrounds/M_BG_Research.jpg);
+}
+#chooseRealmDialog {
+    background-image: url(https://static.realmofempires.com/images/D2test/BG_landingBottom.jpg);
+}
+
+/* desktop specific dialog */
+.desktop .popupDialogs {
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    border: 3px solid rgba(159, 148, 86, 0.7);
+    overflow: hidden;
+    box-sizing: content-box;
+    margin: 0px 16px 0px 15px;
+    box-shadow: inset 0px 0px 15px #000;
+}
+
+/* mobile specific dialog */
+.mobile .ui-dialog, .mobile .ui-widget-overlay {
+    border-radius: 0px;
+}
+.mobile .popupDialogs {
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+.mobile .ui-dialog .roeStyleTitle {
+   
+}
+.mobile .ui-dialog .ui-dialog-titlebar {
+    height: 27px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #726F68;
+    color: #FFD776;
+    font: 18px/1.0em "IM Fell French Canon SC", serif;
+    text-shadow: 0px 1px 1px #000;
+    background-color: #000;
+    background-position: 0px 2px;
+    background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png);
+    background-size: auto 100%;
+}
+.mobile .ui-dialog .ui-dialog-title {
+    top: 5px !important;
+}
+
+.mobile .ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: 3px;
+    top: -1px;
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background: url("https://static.realmofempires.com/images/icons/M_X.png");
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+}
+
+
+.mobile .ui-resizable-handle {
+    display: none !important;
+}
+
+
+
+
+/*MOBILE STYLING*/
+.mobile #containerForm {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*overflow: auto;*/
+}
+.mobile #panelTop, #panelBottom {
+position:absolute;
+}
+.mobile #panelTop {
+    background-color: rgba(0, 0, 0, 0.6);
+    /*height: 145px; when launch intro showing */
+    height:117px;
+}
+    .mobile #panelTop .playerNameBox {
+        top: 0px;
+        font-size: 19px;
+    }
+        .mobile #panelTop .playerNameBox .globalPlayerAvatar {
+            position:absolute;
+            top:6px;
+            left:70px;
+            width: 36px;
+            height: 36px;
+            background-size: 45px 45px;
+        }
+        .mobile #panelTop .playerNameBox .highestTitle {
+            position:absolute;
+            top:6px;
+            left:115px;
+            right:10px;
+            text-align:left;
+
+        }
+        .mobile #panelTop .playerNameBox .globalPlayerName {
+            position:absolute;
+            text-align:left;
+            top:22px;
+            left:115px;
+            right:10px;
+
+        }
+
+    .mobile #panelTop .xpVacArea {
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        text-align: center;
+        right: 0px;
+    }
+        .mobile #panelTop .xpVacArea .nextVacationProgress {
+            margin: 0 auto;
+            margin-top: 2px;
+            width: 200px;
+        }
+
+    .mobile #panelTop .topStatsTicker {
+        top: 92px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        height: 22px;
+    }
+        .mobile #panelTop .topStatsTicker .statBox {
+            line-height: 22px;
+        }
+
+    .mobile #panelTop .vip {
+        position:absolute;
+        top: 0px;
+        left:10px;
+        width: 54px;
+        height: 54px;
+    }
+        /*
+.mobile .launchIntro {
+    position: absolute;
+    left: 10px;
+    top: 115px;
+    right: 10px;
+    font-size: 12px;
+    box-sizing: border-box;
+    width: auto;
+}
+    .mobile .launchIntro span {
+        display:block;
+    }
+*/
+
+.mobile #panelOne .btn {
+    display: inline-block;
+    vertical-align: bottom;
+    float: initial;
+}
+
+.mobile #panelMain .shieldClickedMask .maskBtn {
+    position: fixed;
+    left:50%;
+    top: 5px;
+    margin-top: 0px;
+    opacity: 0;
+}
+.mobile #panelMain .shieldClickedMask .maskBtn.realmProfile {
+    margin-left: -140px;
+}
+.mobile #panelMain .shieldClickedMask .maskBtn.joinChat {
+    margin-left: 5px;
+}
+
+
+    .mobile #panelMain #assetStage .shield .detail.ratingDiv .ordinal {
+        font-size: 19px;
+    }
+    .mobile #panelMain #assetStage .shield .detail.ratingDiv .value {
+        font-size: 15px;
+    }
+
+.mobile #panelOne {
+    top: auto;
+    bottom: 40px;
+}
+
+.mobile #fog {
+display:none;
+}
+
+.mobile .floatIconPanel {
+    position: absolute;
+    bottom: 40px;
+    left: 2px;
+}
+
+.mobile #panelMain .shieldClickedMask {
+    background-color: rgba(0,0,0,.9);
+}
+
+.mobile .realmProfileList .realmBox {
+    height: 75px;
+    text-align:center;
+}
+
+.mobile .realmProfileList .realmBox .buttonPanel {
+    position: absolute;
+    top: 52px;
+    right: 0px;
+    left: 0px;
+}
+    .mobile .realmProfileList .realmBox .buttonPanel .btn {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        margin: 0px;
+        -moz-transform: scale(.7);
+        -webkit-transform: scale(.7);
+        -o-transform: scale(.7);
+        -ms-transform: scale(.7);
+        transform: scale(.7);
+    }
+        .mobile .realmProfileList .realmBox .buttonPanel .btn.leaderBoardBtn {
+            margin-left: -162px;
+        }
+        .mobile .realmProfileList .realmBox .buttonPanel .btn.joinRealmChat {
+                margin-left: -69px;
+        }
+        .mobile .realmProfileList .realmBox .buttonPanel .btn.displayStatus {
+                margin-left: 25px;
+        }
+
+.mobile .realmProfileContent .realmBox {
+    padding: 5px;
+}
+    .mobile .realmProfileContent .realmBox .leftBox {
+        width: 55%;
+    }
+    .mobile .realmProfileContent .realmBox .rightBox {
+        width: 40%;
+    }
+    .mobile .realmProfileContent .realmBox .label, .mobile .realmProfileContent .realmBox .playerName{
+        font-size: 13px;
+    }
+     .mobile .realmProfileContent .rightBox {
+        font-size: 11px;
+    }
+.realmProfileContent .leaderBoard .label {
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    width: 120px;
+}
+.mobile .realmProfileContent .leaderBoard .content {
+    overflow: auto;
+}
+
+
+.mobile #chooseRealmsBox  #panelRealms .realmButtons a {
+    display: block;
+    position: relative;
+    height: 50px;
+    font: 15px "IM Fell French Canon SC", serif;
+    text-shadow: 2px 2px 2px #000;
+    text-align: left;
+    margin-bottom: 5px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0px;
+}
+
+.mobile #chooseRealmsBox  #panelRealms .realmButtons .realm {
+    position: relative;
+    float: left;
+    top: 13px;
+}
+
+.mobile #chooseRealmsBox  #panelRealms .realmButtons .realmNumber {
+    position: relative;
+    top: 5px;
+    float: left;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background: url('https://static.realmofempires.com/images/icons/M_RealmNumber.png') no-repeat;
+    text-align: center;
+    font: 23px "Georgia", serif;
+    color: #FFD776;
+    text-shadow: 1px 1px 1px #000;
+    background-size: 100% auto;
+    line-height: 37px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.mobile #chooseRealmsBox #panelRealms .realmInfo {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    left: 86px;
+    bottom: 5px;
+}
+
+.mobile #chooseRealmsBox #panelRealms .realmName {
+    width: 100%;
+    font: 15px "IM Fell French Canon SC", serif;
+}
+.mobile #chooseRealmsBox #panelRealms .realmDetail {
+    font: 13px "IM Fell French Canon SC", serif;
+}
+.mobile #chooseRealmsBox #panelRealms .realmLogin {
+    font: 15px "IM Fell French Canon SC", serif;
+}
+
+
+
+
+
+/* CHAT STYLE */
+#chatBarContainer {
+    display:none;
+    position: absolute;
+    text-align: left;
+    max-height: 27px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+
+    /*DESKTOP CHAT STYLE */
+.desktop #chatBarContainer {
+    display:block;
+    bottom: 0px;
+    right: 0px;
+    max-width: 50%;
+}
+    .desktop #chatBarContainer .toggleBarContainer {
+        display: none;
+        position: absolute;
+        cursor: pointer;
+        height: 25px;
+        width: 98px;
+        margin-left: 3px;
+        text-align: center;
+        background-position: -120px -253px;
+        overflow: hidden;
+        border: 1px outset #B38F61;
+        border-radius: 5px;
+        padding: 0px;
+        bottom: 2px;
+        left: -55px;
+        width: 50px;
+        box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
+       .desktop #chatBarContainer .toggleBarContainer .icon {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 10px;
+            right: 10px;
+            background-image: url(https://static.realmofempires.com/images/buttons/M_SP_Buttons.png);
+            background-position: -400px -198px;
+        }
+    .desktop #chatBarContainer.expanded {
+        max-height: 100%;
+        z-index: 91; /*to avoid the handlebar issue from chatwindows*/
+        background-color: rgba(0,0,0,.7);
+    }
+    .desktop #chatBarContainer.expanded .toggleBarContainer .icon {
+        background-position: -400px -148px;
+    }
+
+
+
+
+/* M CHAT STYLE */
+.mChatToggle {
+    display: none;
+}
+.mobile .mChatToggle {
+    display: block;
+    width: 50px;
+    height:40px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    background-image:url('https://static.realmofempires.com/images/icons/chat-chat.png');
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+}
+    .mobile .mChatToggle.show {
+        background-image:url('https://static.realmofempires.com/images/icons/minimize.png');
+    }
+
+.mChatMask {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    text-align: left;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.mobile #chatBarContainer {
+    display: none;
+    left: 0px;
+    bottom: 0px;
+    right: 55px;
+}
+
+.mobile #chatContainer {
+    display: none;
+}
+
+    .mobile .mChatMask.show,
+    .mobile #chatBarContainer.show,
+    .mobile #chatContainer.show {
+        display: block;
+    }
+
+.mobile.throneroom .chatWindow {
+    position: absolute;
+    left: 0px !important;
+    top: 0px !important;
+    right: 0px !important;
+    bottom: 40px !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.mobile .chatWindow .titleBar {
+
+}
+
+
+.mobile .chatBar {
+    height: 37px;
+    width: 98px;
+    margin-left: 3px;
+    text-align: center;
+    background-position: -120px -251px;
+    overflow: hidden;
+    border: 1px outset #B38F61;
+    border-left: 2px outset #B38F61;
+    border-right: 2px outset #B38F61;
+    border-radius: 5px;
+    line-height: 35px;
+    padding: 0px !important;
+}
+
+    .mobile .chatBar:active {
+        background-position: -120px -301px !important;
+    }
+
+.mobile #panelBottom .btnWrapBottomLeft {
+    /*left: 0px;*/
+}
+    .mobile #panelBottom .btnWrapBottomLeft .realmLink {
+        /*display:none;*/
+    }
+
+
+.mobile .chatWindow#chatList {
+    left: 60px !important;
+    top: 80px !important;
+    right: 0px !important;
+}
+
+/*
+.mobile .chatWindow.inputFocused .chatInput {
+    position: absolute;
+    bottom: initial;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+    .mobile .chatWindow.inputFocused .chatInput .textbox {
+        top: 30px;
+        height:50px;
+    }
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE UI*/
+/*
+.compact #panelBottom {
+
+}
+*/
+.compact.desktop #panelBottom .btnWrapBottomLeft {
+    -moz-transform: scale(.8);
+-webkit-transform: scale(.8);
+-o-transform: scale(.8);
+-ms-transform: scale(.8);
+transform: scale(.8);
+}
+.compact.desktop #panelBottom .btnWrapBottomLeft {
+    top: 2px;
+    left: 0px;
+}
+
+
+    /*TEMP /// UNIQUE STUFF */
+
+.shareRafflePanel {
+    display: none;
+    position: absolute;
+    bottom: 110px;
+    left: 0px;
+    padding: 10px 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0,0,0,.8);
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(255, 228, 152, 0.5);
+
+    /*
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuOCIvPgogICAgPHN0b3Agb2Zmc2V0PSIxNSUiIHN0b3AtY29sb3I9IiM1YjRiMTIiIHN0b3Atb3BhY2l0eT0iMC41Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQxJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjc2Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjgiLz4KICAgIDxzdG9wIG9mZnNldD0iNjYlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNTIiLz4KICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjNjE0ZDEzIiBzdG9wLW9wYWNpdHk9IjAuMzMiLz4KICAgIDxzdG9wIG9mZnNldD0iODElIiBzdG9wLWNvbG9yPSIjNjg1MjE0IiBzdG9wLW9wYWNpdHk9IjAuMzUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjgiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+    background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.8) 0%, rgba(91,75,18,0.5) 15%, rgba(0,0,0,0.76) 41%, rgba(0,0,0,0.8) 45%, rgba(0,0,0,0.52) 66%, rgba(97,77,19,0.33) 80%, rgba(104,82,20,0.35) 81%, rgba(0,0,0,0.8) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.8) 0%,rgba(91,75,18,0.5) 15%,rgba(0,0,0,0.76) 41%,rgba(0,0,0,0.8) 45%,rgba(0,0,0,0.52) 66%,rgba(97,77,19,0.33) 80%,rgba(104,82,20,0.35) 81%,rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%,rgba(91,75,18,0.5) 15%,rgba(0,0,0,0.76) 41%,rgba(0,0,0,0.8) 45%,rgba(0,0,0,0.52) 66%,rgba(97,77,19,0.33) 80%,rgba(104,82,20,0.35) 81%,rgba(0,0,0,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#cc000000',GradientType=1 );
+    background-size: 100% 100%;
+    */
+}
+
+/*
+.launchIntro {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    top: 46px;
+    padding: 3px;
+    cursor: pointer;
+}
+    .launchIntro:hover {
+        background-color: rgba(21, 21, 21, 0.5);
+    }*/
+.chatPlaceholder {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+.toolTipBox {
+    position: absolute;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font: 15px "IM Fell French Canon", serif;
+    color: #E2E2E2;
+    text-shadow: 0px 1px #000, 0px 0px 1px rgba(135, 135, 135, 0.6);
+    max-width: 220px;
+    min-width: 70px;
+    text-align: center;
+    z-index: 9999999999;
+}
+
+.feelStuck {
+    padding:5px;
+    background-color:rgba(0,0,0,.3);
+    color: #FFD886;
+    cursor:pointer;
+}
+    .feelStuck:hover {
+        background-color: rgba(0,0,0,.5);
+        color: #FDE7B8;
+    }
+#tempSneakStamp {
+    position: fixed;
+    left: 50%;
+    margin-left: -110px;
+    width: 180px;
+    top: 70px;
+    text-align: center;
+    padding: 3px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font: 21px "IM Fell French Canon", serif;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.chatNotification {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    background-color: #DCD6C5;
+    width: 27px;
+    height: 22px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #F3AA4F;
+    text-shadow: 0px 1px rgba(255, 255, 255, 0.58);
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+}
+
+
+#windowCloser {
+    position:absolute;
+    top:3px;
+    right:3px;
+    width:44px;
+    height:44px;
+    background-image: url("https://static.realmofempires.com/images/icons/M_X.png");
+    background-size: 100% 100%;
+}
+
+.globalPlayerAvatar .containerBusyMask .busyMaskText {
+    top: 100%;
+}
+
+.quicknotif {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+    z-index: 11110;
+    top: 20%;
+    left: 50%;
+    margin-left: -100px;
+    padding: 20px;
+}
+
+
+#vipPopup {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.8);
+    font-size: 15px;
+    text-align: justify;
+}
+
+    #vipPopup .badge {
+        position: relative;
+        width: 100%;
+        height: 256px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 256px 256px;
+    }
+
+        #vipPopup .badge[data-viplevel="1"] {
+            background-image: url(https://static.realmofempires.com/images/icons/VIP_bronze1.png);
+        }
+        #vipPopup .badge[data-viplevel="2"] {
+            background-image: url(https://static.realmofempires.com/images/icons/VIP_silver1.png);
+        }
+        #vipPopup .badge[data-viplevel="3"] {
+            background-image: url(https://static.realmofempires.com/images/icons/VIP_gold1.png);
+        }
+        #vipPopup .badge[data-viplevel="4"] {
+            background-image: url(https://static.realmofempires.com/images/icons/VIP_diamond1.png);
+        }
+
+    #vipPopup p {
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+
+
+    #vipPopup .avatars {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+        #vipPopup .avatars .avatarBox {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 5px 10px;
+            border: 1px solid #12110e;
+        }
+    #vipPopup .vipSwitch {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        margin-bottom: 5px;
+    }
+
+
+.realmLink.vipexclusive {
+    box-shadow: 0px 0px 2px 1px rgba(0, 176, 255, 0.8);
+    background-image:url('https://static.realmofempires.com/images/icons/M_RealmNumberVipExclusive.png') !important;
+}
+
+
+
+.touerneyStatsContent {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+    .touerneyStatsContent .bestFinishesContainer {
+
+        padding-top: 0px;
+        text-align: center;
+
+    }
+
+        .touerneyStatsContent .bestFinishesContainer .header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            font-size: 17px;
+        }
+
+        .touerneyStatsContent .bestFinishesContainer .finishBox {
+            position: relative;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 15px;
+            margin-bottom: 25px;
+            font-size: 10px;
+            text-shadow: 0px 3px 3px #000, 0px -3px 3px #000, -4px 0px 3px #000, 4px 0px 3px #000;
+            box-sizing: border-box;
+            
+        }
+
+            .touerneyStatsContent .bestFinishesContainer .finishBox.master {
+                background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_master.png);
+            }
+            .touerneyStatsContent .bestFinishesContainer .finishBox.diamond {
+                background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_diamond.png);
+            }
+            .touerneyStatsContent .bestFinishesContainer .finishBox.platinum {
+                background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_platinum.png);
+            }
+            .touerneyStatsContent .bestFinishesContainer .finishBox.gold {
+                background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_gold.png);
+            }
+            .touerneyStatsContent .bestFinishesContainer .finishBox.silver {
+                background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_silver.png);
+            }
+            .touerneyStatsContent .bestFinishesContainer .finishBox.bronze {
+                background-image: url(https://static.realmofempires.com/images/throneRoom/medals/medal_copper.png);
+            }
+
+            /*
+            .touerneyStatsContent .bestFinishesContainer .finishBox .type {
+                position: absolute;
+                top: 10px;
+                left: 66px;
+                font-size: 23px;
+                background: rgba(0,0,0,0.3);
+                border-radius: 10px;
+            }
+            .touerneyStatsContent .bestFinishesContainer .finishBox.RX .type {
+                color: #ff1e00;
+            }
+            .touerneyStatsContent .bestFinishesContainer .finishBox.RS .type {
+                color: #00a6ff;
+            }
+            .touerneyStatsContent .bestFinishesContainer .finishBox .count {
+                position: absolute;
+                bottom: 30px;
+                right: 10px;
+                font-size: 22px;
+                color: #c4b47f;
+                font-family: monospace;
+            }
+            */
+
+            .touerneyStatsContent .bestFinishesContainer .finishBox .rank .label {
+                position: relative;
+                font-size: 13px;
+                margin: 0 auto;
+                text-align: center;
+                top: 7px;
+                width: 40px;
+                line-height: 8px;
+                padding: 2px;
+            }
+
+            .touerneyStatsContent .bestFinishesContainer .finishBox .rank {
+                position: absolute;
+                top: 30px;
+                left: 0px;
+                right: 0px;
+                height: 80px;
+                font-size: 56px;
+                text-align: center;
+                border-radius: 50px;
+                background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 100%);
+                background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 10%,rgba(0,0,0,0) 75%,rgba(0,0,0,0) 100%);
+                background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.84) 10%,rgba(0,0,0,0) 75%,rgba(0,0,0,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+                /* background: 0; */
+            }
+
+
+
+
+            .touerneyStatsContent .bestFinishesContainer .finishBox .info {
+                position: absolute;
+                bottom: -25px;
+                left: 0px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                font-size: 13px;
+                right: 0px;
+                text-align: center;
+                border-top:1px solid rgba(5, 16, 26, 0.3);
+                background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(78,136,193,1) 50%, rgba(125,185,232,0) 100%);
+                background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(78,136,193,1) 50%,rgba(125,185,232,0) 100%);
+                background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgb(43, 14, 12) 50%,rgba(125,185,232,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 );
+            }
+
+                .touerneyStatsContent .bestFinishesContainer .finishBox .info .type {
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                    .touerneyStatsContent .bestFinishesContainer .finishBox .info .type span {
+                        vertical-align: middle;
+                    }
+                    .touerneyStatsContent .bestFinishesContainer .finishBox.RX .info .type span {
+                        color: red;
+                    }
+                    .touerneyStatsContent .bestFinishesContainer .finishBox.RS .info .type span {
+                        color: #00c2ff;
+                    }
+
+            .touerneyStatsContent .bestFinishesContainer .finishBox .info .count {
+                display: inline-block;
+            }
+
+        .touerneyStatsContent .bestFinishesContainer .allFinishDataContainer {
+            position: relative;
+            text-align: center;
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+        }
+            .touerneyStatsContent .bestFinishesContainer .allFinishDataContainer .label {
+                padding: 5px;
+                font-size: 17px;
+                margin-bottom: 5px;
+            }
+
+            .touerneyStatsContent .bestFinishesContainer .allFinishDataContainer .finishTable {
+                width: 100%;
+                border-collapse: collapse;
+            }
+                .touerneyStatsContent .bestFinishesContainer .allFinishDataContainer .finishTable .header {
+                    background: rgba(0, 0, 0, 0.7);
+                }
+                .touerneyStatsContent .bestFinishesContainer .allFinishDataContainer .finishTable tr {
+                    background: rgba(0, 0, 0, 0.5);
+                }
+                    .touerneyStatsContent .bestFinishesContainer .allFinishDataContainer .finishTable tr:nth-child(even) {
+                        background: rgba(0, 0, 0, 0.3);
+                    }
+
+
+        .touerneyStatsContent .bestFinishesContainer .tournamentSeasonsContainer {
+            position: relative;
+            text-align: center;
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+        }
+            .touerneyStatsContent .bestFinishesContainer .tournamentSeasonsContainer .label {
+                padding: 5px;
+                font-size: 17px;
+                margin-bottom: 5px;
+            }
+            .touerneyStatsContent .bestFinishesContainer .tournamentSeasonsContainer .seasonTab {
+                display:inline-block;
+                padding: 5px;
+                margin:5px;
+                background: rgba(0, 0, 0, 0.7);
+                cursor:pointer;
+                border-radius: 5px;
+                border: 1px solid gray;
+            }
+                .touerneyStatsContent .bestFinishesContainer .tournamentSeasonsContainer .seasonTab:hover {
+                    background: rgba(0, 0, 0, 0.9);
+                }

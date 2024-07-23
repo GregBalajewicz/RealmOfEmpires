@@ -1,0 +1,522 @@
+/* 
+	CSS for site wide menu system
+ */
+
+
+
+.villageCoOrd {
+    background: rgb(109, 132, 180);
+}
+
+.stripeTableRow td {
+    background-color: rgb(200,200,200);
+}
+
+.stripeTableHover td {
+    background-color: #5B6660;
+}
+
+.stripeTablePopupHover td {
+    background-color: rgb(41,33,22) !important;
+}
+
+.PNote, .VNote {
+    background: url('https://static.realmofempires.com/images/noteicon.gif') right center no-repeat;
+}
+
+/*.hideMe { display : none; }*/
+.tlbHideSome td {
+    white-space: nowrap;
+    width: 100%;
+}
+/*.BasicBox { z-index : 100; width : 240px; float : right; clear : right; margin-bottom : 10px; }*/
+.BorderBox {
+    background-color: rgb(137, 142, 146);
+    border: 1px solid rgb(0,0,0);
+    padding: 2px;
+    overflow: hidden;
+}
+    /*.BasicBox .TroopsHeader { width : 236px; }*/
+    .BorderBox .TroopsHeader {
+        width: auto;
+    }
+
+.test {
+    z-index: 20 !important;
+}
+/*.test table.Box { float : right; clear : right; margin-bottom : 10px; }*/
+
+/* Top menu icons helper */
+#topDropMenu a {
+    display: block;
+    color: #C39037;
+    padding: 2px 4px;
+    width: 92px;
+    height: auto;
+}
+
+    #topDropMenu a:hover {
+        color: #fff;
+    }
+
+#topDropMenu {
+    background-color: #000;
+    width: 100px;
+    border-color: #4B3D30;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    text-align: left;
+}
+
+.ui_menu, .facebookMenu {
+    float: left;
+    background: rgb(75, 61, 48);
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+}
+
+    .ui_menu ul, .facebookMenu ul {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .dropMenuItem, .facebookMenu li {
+        list-style-image: none;
+        list-style-type: none;
+        list-style-position: outside;
+        list-style-image: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        .dropMenuItem div.hr, .facebookMenu div.hr {
+            height: 1px;
+            background-color: rgb(75, 61, 48);
+        }
+
+            .dropMenuItem div.hr hr, .facebookMenu div.hr hr {
+                display: none;
+            }
+    /*.ui_menu .divider { background-color : rgb(255,0,0); height : 2px; border-width : 1px 0px 0px 0px; border-style : solid; border-color : rgb(195, 144, 55); }
+.ui_menu .divider hr { display : none; }*/
+    .ui_menu .divider {
+        border-style: solid;
+        border-color: rgb(195, 144, 55);
+        border-width: 1px 0px 0px 0px;
+        padding-top: 2px;
+        margin-top: 2px;
+    }
+
+#ui_warn {
+    z-index: 100;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 400px;
+}
+
+    #ui_warn .ui_warn {
+        margin-bottom: 10px;
+        border: 1px solid rgb(0, 0, 0);
+        background: rgb(75, 61, 48);
+    }
+
+/* stuff to hide by default */
+.ui_def_hide {
+    visibility: hidden;
+}
+
+.ui_def_hide_full {
+    display: none;
+}
+/* visibility : hidden; still takes up space on the layout */
+
+.genConfirm {
+    z-index: 200;
+}
+
+    .genConfirm * {
+        z-index: 201;
+    }
+
+#genConfirmBlock {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(255,255,255);
+    z-index: 199;
+}
+
+
+/* make some links normal.. */
+a.normal {
+    display: inline;
+    padding: 0px;
+    background: none;
+}
+
+li.markup {
+    list-style: none;
+    white-space: nowrap;
+    padding-left: 14px;
+}
+/* new legend/overview code */
+#MapPulldown {
+    position: absolute;
+}
+
+#MapPulldownContent {
+    background-color: rgb(137,142,146);
+}
+
+.hideMap .OverviewParent {
+    display: none;
+}
+
+.hideMap #MapIFrameParent {
+    display: none;
+}
+
+.hideLegend .OverviewLegend {
+    display: none;
+}
+
+.OverviewLegend, #MapIFrameParent {
+    position: absolute;
+}
+
+#OverViewMapToggle {
+    background: url('https://static.realmofempires.com/images/globeDelete.gif') 0px -14px no-repeat;
+    height: 14px;
+    width: 14px;
+    display: block;
+    float: left;
+}
+
+.hideMap #OverViewMapToggle {
+    background-position: 0px 0px;
+}
+
+.genericMenu {
+    z-index: 200;
+    display: table-cell;
+    position: absolute;
+    background-color: rgb(75,61,48);
+    border: 1px solid rgb(0,0,0);
+    color: rgb(195,144,55);
+}
+
+    .genericMenu li.divider {
+        border-top: 1px solid rgb(195,144,55);
+        padding-top: 1px;
+    }
+
+    .genericMenu a {
+        background: url('https://static.realmofempires.com/images/menuItemSeperator.png') 2px center no-repeat;
+        color: rgb(195,144,55);
+        text-decoration: none;
+        display: block;
+        padding: 1px 4px 1px 16px;
+    }
+
+        .genericMenu a:hover {
+            text-decoration: underline;
+            background-color: rgb(41,33,22);
+        }
+
+.genericMenuScroll {
+    overflow: auto;
+}
+
+.genericMenuInner {
+}
+
+.genericMenu ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.genericMenu li {
+    white-space: nowrap;
+    list-style-image: none;
+    list-style-type: none;
+    list-style-position: outside;
+    list-style-image: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+    .genericMenu li.markup {
+        padding: 1px 3px;
+    }
+
+.genericMenu .IFrameDivTitle {
+    background: rgb(41,33,22);
+    text-align: left;
+    width: 100%;
+    height: 18px;
+}
+
+    .genericMenu .IFrameDivTitle span.title {
+        padding: 0px 2px;
+        float: left;
+        font-size: 14px;
+        color: rgb(195,144,55);
+        font-weight: bold;
+    }
+
+    .genericMenu .IFrameDivTitle img {
+        float: right;
+        border: none;
+        display: inline;
+        background: none;
+        margin: 0px;
+        cursor: pointer;
+    }
+
+.genericMenuSilver {
+}
+    /*
+	A version of the menu item without a dot
+.genericMenuSilver a { color : rgb(195,144,55); text-decoration : none; display : block; padding : 1px 4px 1px 4px; } */
+
+    /* silver menu with a blue dot, just change the URL to what ever */
+    .genericMenuSilver a.mi {
+        background: url('https://static.realmofempires.com/images/buildingIcons/trade.png') 2px center no-repeat;
+        text-decoration: none;
+        padding: 1px 4px 1px 22px;
+    }
+
+        .genericMenuSilver a.mi:hover {
+            text-decoration: underline;
+        }
+
+    .genericMenuSilver a.config {
+        background: url('https://static.realmofempires.com/images/buildingIcons/seige.png') 2px center no-repeat;
+        text-decoration: none;
+        padding: 1px 4px 1px 22px;
+    }
+
+        .genericMenuSilver a.config:hover {
+            text-decoration: underline;
+        }
+
+.Popup a {
+    text-decoration: none;
+}
+
+    .Popup a:hover {
+        text-decoration: underline;
+    }
+
+    .Popup a.Cancel {
+        background: url('https://static.realmofempires.com/images/cancel.png') 4px center no-repeat;
+        text-decoration: none;
+        padding: 1px 4px 1px 22px;
+        font-size: medium;
+    }
+
+        .Popup a.Cancel:hover {
+            text-decoration: underline;
+        }
+
+
+.summary a {
+    display: inline;
+    padding: 1px 3px;
+    margin: 0px;
+    background-image: none;
+}
+
+.menuHeader {
+    background-position: center right;
+    background-repeat: no-repeat;
+    height: 35px;
+    line-height: 35px;
+    width: 160px;
+}
+
+    .menuHeader span {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+iframe {
+    border: 1px solid #000;
+}
+
+/* fake select / dropdowns */
+div.jsFakeSelect {
+    display: inline;
+}
+
+    div.jsFakeSelect .jsOptions {
+        display: none;
+        position: absolute;
+    }
+
+        div.jsFakeSelect .jsOptions a {
+            display: block;
+        }
+
+    div.jsFakeSelect .jsTriger, div.jsFakeSelect .jsMaster {
+    }
+
+*.leftFrom,
+*.leftTo {
+    -webkit-transition: left 0.5s ease 0.0s;
+    -moz-transition: left 0.5s ease 0.0s;
+    -ms-transition: left 0.5s ease 0.0s;
+    -o-transition: left 0.5s ease 0.0s;
+    transition: left 0.5s ease 0.0s;
+}
+
+*.leftFrom {
+    left: 0% !important;
+}
+
+    *.leftFrom.transition {
+        left: -100% !important;
+    }
+
+*.leftTo {
+    left: 100% !important;
+}
+
+    *.leftTo.transition {
+        left: 0% !important;
+    }
+
+
+
+/*overrid the default style for the poup, for the gov selection popup*/
+#popup_gov {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50% !important;
+    margin-left: -155px !important;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+#GovSelection {
+    cursor: pointer;
+    margin-bottom: 2px;
+    padding: 3px;
+    font: 10pt "Georgia";
+    color: #c8c8c8;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7039);
+    font-size: 10pt;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    border: 2px solid #846824;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 4px 4px rgba(0,0,0, 0.5);
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0, 0.5);
+}
+
+    #GovSelection .desc {
+        font-size: 8pt;
+    }
+
+    #GovSelection .acceptButton {
+        width: 130px;
+        height: 50px;
+        display: none;
+        background-image: url( https://static.realmofempires.com/images/buttons/accept.png);
+        background-repeat: no-repeat;
+    }
+
+        #GovSelection .acceptButton:hover {
+            background-image: url(https://static.realmofempires.com/images/buttons/accept_hover.png);
+        }
+
+    #GovSelection .govType {
+        margin: 10px;
+        height: 75px;
+        width: 280px;
+        overflow: hidden;
+        background-position: top;
+        background-repeat: no-repeat;
+        -moz-transition: height 0.7s;
+        -o-transition: height 0.7s;
+        -webkit-transition: height 0.7s;
+        transition: height 0.7s;
+    }
+
+        #GovSelection .govType.selected {
+            height: 265px;
+            -moz-transition: height 0.7s;
+            -o-transition: height 0.7s;
+            -webkit-transition: height 0.7s;
+            transition: height 0.7s;
+        }
+
+
+    #GovSelection .phrases > div {
+        display: none;
+    }
+
+    #GovSelection .title {
+        color: #FFD776;
+        font: 17px/1.0em "IM Fell French Canon SC", serif;
+        text-align: center;
+    }
+
+
+    #GovSelection .cf {
+        position: relative;
+        height: 75px;
+        margin: 0 auto;
+    }
+
+        #GovSelection .cf img {
+            position: absolute;
+            left: 0;
+            -webkit-transition: opacity 0.7s ease-in-out;
+            -moz-transition: opacity 0.7s ease-in-out;
+            -o-transition: opacity 0.7s ease-in-out;
+            transition: opacity 0.7s ease-in-out;
+        }
+
+    #GovSelection .govType.selected img.top {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+    #GovSelection .govType .popupInfo_close {
+        display: none;
+    }
+
+
+     #GovSelection .govType .arrow {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 32px;
+            height: 125px;
+            background-image: url("https://static.realmofempires.com/images/misc/M_ArrowDown.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+    #GovSelection .govType.selected .arrow {
+        background-image: url("https://static.realmofempires.com/images/misc/M_ArrowUp.png");
+    }
+
+    #GovSelection .closeX {
+        display: inline-block;
+        position: relative;
+        margin: 0px;
+        float: right;
+        width: 24px;
+        height: 24px;
+    }

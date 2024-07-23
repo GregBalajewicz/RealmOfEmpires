@@ -1,0 +1,564 @@
+﻿/*
+
+
+.widget_inOutTroops table
+{
+    width: 100%;
+}*/
+    .widget_inOutTroops table tr.cmd {
+        position:relative;
+        display: block;
+        padding-bottom: 8px;
+        background-image: url('https://static.realmofempires.com/images/misc/M_ListBar2s.png');
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-position-x: center;
+    }/*
+        .widget_inOutTroops table tr.cmd[data-hidestate="hidden"] {
+            opacity: .5;
+        }
+        .widget_inOutTroops table tr.cmd.hidden.selected {
+            opacity: .8;
+        }
+         */
+        .widget_inOutTroops table tr.cmd.activeState-new {
+            background: none;
+            margin-top: -13px;
+            margin-bottom: -13px;
+        }
+        
+        .widget_inOutTroops table tr.cmd .rowCounter {
+            position: absolute;
+            top: 0px;
+            left: 148px;
+            width: 22px;
+            height: 22px;
+            display: block;
+            text-align: center;
+            line-height: 21px;
+            text-shadow: 0px 1px 0px #000,0px -1px 0px #000;
+            font-size: 11px;
+            font-family: georgia;
+            cursor: pointer;
+        }
+
+/*
+.widget_inOutTroops .reload {
+    visibility:hidden;
+}*/
+
+         
+.widget_inOutTroops .incomingTroops .cmd > td
+{
+    position: relative;
+    width: 320px;
+    padding: 0px 0 0px 0;
+    margin-bottom: 10px;
+    color:#b7b7b7;
+    /*Turned off for performance gains. Untill better solution is found.*/
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+}
+.widget_inOutTroops .incomingTroops .cmd.selected > td {
+    background-color: rgba(0, 30, 49, 0.7);
+}
+
+    .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 {
+        position: relative;
+        height: 58px;
+    }
+        /*
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .avatarIcon {
+            display:none;
+            position: absolute;
+            left: 8px;
+            top: 0px;
+            width: 28px;
+            height: 28px;
+            background-color: rgba(248, 248, 255, 0.3);
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .villageIcon {
+            display:none;
+            position: absolute;
+            right: 8px;
+            top: 0px;
+            width: 28px;
+            height: 28px;
+            background-color: rgba(248, 248, 255, 0.3);
+        }
+        */
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .cmdTimer {
+            position: absolute;
+            left: 3px;
+            top: 0px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .speed {
+            position: absolute;
+            left: 73px;
+            top: 1px;
+            background: url(https://static.realmofempires.com/images/misc/M_ArrowR.png);
+            background-size: contain;
+            background-position: 0px 50%;
+            background-repeat: no-repeat;
+            min-width: 30px;
+            height: 15px;
+            padding-left: 12px;
+            line-height: 14px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .morale {
+            position: absolute;
+            left: 107px;
+            top: 1px;
+            background: url(https://static.realmofempires.com/images/icons/M_HD_Morale.png);
+            background-size: contain;
+            background-position: 0px 50%;
+            background-repeat: no-repeat;
+            min-width: 30px;
+            height: 15px;
+            padding-left: 15px;
+            line-height: 14px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .arriveOn {
+            position: absolute;
+            right: 3px;
+            top: 0px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .countdown {
+            white-space: nowrap;
+            left: 40px;
+            position: absolute;
+            top: 0px;
+            color: #D7D7D7;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .opname,
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .ovunknown {
+            position: absolute;
+            top: 13px;
+            left: 3px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .dpname {
+            position: absolute;
+            top: 13px;
+            right: 3px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .ovcords {
+            position: absolute;
+            top: 26px;
+            left: 3px;
+            color: #FFF;
+            font: 13px georgia;
+            text-align: right;
+            z-index: 1;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .ov {
+            position: absolute;
+            top: 43px;
+            left: 3px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .dvcords {
+            position: absolute;
+            top: 26px;
+            right: 3px;
+            color: #FFF;
+            font: 13px georgia;
+            text-align: left;
+            z-index: 1;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1 .dv {
+            position: absolute;
+            top: 43px;
+            right: 3px;
+        }
+
+        /*
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .avatarIcon {
+            display: none;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .villageIcon {
+            display: none;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .cmdTimer {
+            left: 5px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .arriveOn {
+            right: 5px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .countdown {
+            left: 5px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .opname {
+            left: 5px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .dpname {
+            right: 5px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .ovcords {
+            width: auto;
+            text-align: left;
+            left: 0px;
+            margin-left: 5px;
+            float: left;
+            position: relative;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .ov {
+            position: relative;
+            text-align: left;
+            float: left;
+            top: 27px;
+            left: 0px;
+            margin-left: 1px;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .dvcords {
+            right: 0px;
+            width: auto;
+            margin-right: 5px;
+            float: right;
+            position: relative;
+        }
+        .widget_inOutTroops .incomingTroops tr.cmd > td .troopMoveDetails1.tempNoIconStyle .dv {
+            text-align: right;
+            position: relative;
+            float: right;
+            top: 27px;
+            right: 0px;
+            margin-right: 2px;
+        }
+            */
+        /*
+.widget_inOutTroops .LightText
+{    
+    color:#6e6e6e;
+}
+
+.widget_inOutTroops .cmd .rightArrows
+{
+    float: right;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.widget_inOutTroops .cmd.activeState-deleted
+{
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+
+    .widget_inOutTroops .cmd.activeState-deleted .troopMoveDetails2
+    {
+        display:none;
+    }
+
+.widget_inOutTroops .cmd.activeState-new div, .widget_inOutTroops .cmd.activeState-new span, .widget_inOutTroops .cmd.activeState-new br, .widget_inOutTroops .cmd.activeState-new img {
+    display:none;
+}
+*/
+.widget_inOutTroops .cmd.activeState-new td {
+    height: 22px;
+    background-image: url(https://static.realmofempires.com/images/buttons/IncOut_NewAttacks.png);
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+/*
+.widget_inOutTroops .cmd.activeState-new.extraNewHidden {
+    display:none;
+}
+
+.widget_inOutTroops .cmd.activeState-new.extraNewHidden td  {
+    background: yellow;
+}
+
+
+
+.widget_inOutTroops .cmd.selected .rightArrows
+{
+    float: right;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+.widget_inOutTroops .cmd.selected .troopMoveActions {
+   display: table-cell !important;
+}
+
+    .widget_inOutTroops .cmd[data-hidestate="vis"] .troopMoveActions .toggleHide {
+        background-position: -220px 0px;
+    }
+    .widget_inOutTroops .cmd[data-hidestate="hidden"] .troopMoveActions .toggleHide {
+        background-position: -264px 0px;
+    }
+
+    .widget_inOutTroops .troopMoveActions div.troopIconSheet44 {
+        display: table-cell;
+        width: 44px;
+        height: 44px;
+    }*/
+    .widget_inOutTroops .troopMoveActions .smallRoundButtonDark
+     {
+        position: relative;
+        float: left;
+        margin-left: 5px;
+        margin-top: 4px;
+    }
+.widget_inOutTroops .troopMoveActions .filtersCmdBtn .filterIcon 
+ {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('https://static.realmofempires.com/images/icons/M_FilterB.png');
+}/*
+.noFilter .widget_inOutTroops .troopMoveActions .filtersCmdBtn,
+.noFilter .widget_inOutTroops .troopMoveActions .profilesCmdBtn {
+    display:none;
+}
+
+
+.widget_inOutTroops .action
+{
+    width: 44px;
+    height: 44px;
+}
+
+
+.widget_inOutTroops .cmdList
+{
+    bottom: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.widget_inOutTroops .cmdList,
+.troopMoveDetails
+{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.widget_inOutTroops .refresh-NewData {
+    font: 11px "charlemagne_stdbold";
+    background-color: rgb(148, 148, 133);
+    color: rgb(20, 78, 9);
+    height: 25px;
+    line-height: 25px;
+    margin: 8px;
+    display:none;
+}
+
+.widget_inOutTroops .troopMoveDetails {
+    font-size: 16px;
+    overflow-y: auto;
+    bottom: 0px;
+}
+
+    .widget_inOutTroops .troopMoveDetails .cmdType
+    {
+        font: 16px "charlemagne_stdbold";
+    }
+
+    .widget_inOutTroops .troopMoveDetails .arriveOnLine
+    {
+         font-size: 12px;
+    }
+    .widget_inOutTroops .troopMoveDetails .unitcountnumb
+    {
+        font: 20px/1.0em "charlemagne_stdbold";
+    }
+
+    .widget_inOutTroops .troopMoveDetails .unitimg
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+        height: 44px;
+        width: 44px;
+    }
+
+.widget_inOutTroops .action-back > .fg > .themeM-more
+{
+    float: left;
+}
+
+
+.widget_inOutTroops .lineInfo
+{
+    line-height: 33px;
+    padding:5px;
+    clear:both;
+}
+
+.widget_inOutTroops .filter {
+    border-top: 1px solid #000;
+    background-image: url('https://static.realmofempires.com/images/misc/M_ListBar2s.png');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    padding-bottom: 10px;
+    margin-bottom: -2px;
+    color: #D7D7D7;
+}
+*/
+.widget_inOutTroops .filterHeader {
+    height: 25px;
+    cursor: pointer;
+    display: table-cell;
+}
+
+    .widget_inOutTroops .filterHeader span:first-child {
+        float: left;
+        margin-top: 4px;
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterB.png');
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        font: 19px/1.0em "IM Fell French Canon SC", serif;
+        height: 44px;
+        width: 44px;
+    }/*
+    .widget_inOutTroops .filterHeader .filterAppliedIndicator {
+        float: left;
+        margin-top: 7PX;
+        margin-left: 2PX;
+    }
+
+         */
+.widget_inOutTroops .filter .byType {
+    display:table-cell;
+    vertical-align: top;
+}
+.widget_inOutTroops .filter .byFromOrToVillOrPlayer {
+    display: table-cell;
+}
+    .widget_inOutTroops .filter .byFromOrToVillOrPlayer span, .widget_inOutTroops .filter .byFromOrToVillOrPlayer a {
+        display: table-cell;
+    }
+    
+    .widget_inOutTroops .filter .byFromOrToVillOrPlayer.hidden {
+        display: none;
+    }
+    .simplePopupOverlay.filterPopup .toVorP,
+    .widget_inOutTroops .filter .byFromOrToVillOrPlayer .toVorP {
+        color: red;
+    }
+    .simplePopupOverlay.filterPopup .toVorP.hidden,
+    .widget_inOutTroops .filter .byFromOrToVillOrPlayer .toVorP.hidden {
+        display: none;
+    }
+.simplePopupOverlay.filterPopup .clearFilter {
+    position: relative;
+    top: 7px;
+    margin-left: 5px;
+    display: inline-block;
+    overflow: hidden;
+}
+    .widget_inOutTroops .filter .byFromOrToVillOrPlayer .clearFilter {
+        height: 22px;
+        width: 22px;
+        display: table-cell;
+    }
+        .simplePopupOverlay.filterPopup .clearFilter > img,
+        .widget_inOutTroops .filter .byFromOrToVillOrPlayer .clearFilter > img {
+            height: 22px;
+            width: 22px;
+        }
+    /*
+
+.widget_inOutTroops .utilFooter
+{
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    display: none;
+    font: 18px/1.0em serif;
+}
+
+.widget_inOutTroops .themeM-panel.action-back
+{
+    margin:12px;
+}
+
+.widget_inOutTroops .troopIconSheet44 {
+    background-image: url(https://static.realmofempires.com/images/troopIconSheet44x.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 34px;
+    height: 34px;
+}
+    .widget_inOutTroops .troopIconSheet44.cmdIcon {
+        position: absolute;
+        top: 4px;
+        left: 142px;
+    }
+        .widget_inOutTroops .troopIconSheet44.cmdIcon.sup {
+            background-position: -35px 0px;
+        }
+        .widget_inOutTroops .troopIconSheet44.cmdIcon.ret {
+            background-position: -135px 0px;
+        }
+
+.widget_inOutTroops .cmd .lineInfo
+,.widget_inOutTroops .cmd .troopMoveActions
+{
+    display:none;
+}
+
+.widget_inOutTroops .cmd.selected .lineInfo
+,.widget_inOutTroops .cmd.selected .troopMoveActions
+{
+    display:block;
+}
+
+.widget_inOutTroops .cmd .filterButton {
+    width:24px;
+    background-color:red;
+}
+
+
+.widget_inOutTroops .troopMoveDetails2 .cmdTroopList table tr {
+    text-align:center;
+}
+.widget_inOutTroops .troopMoveDetails2 .cmdTroopList table tr td span{
+   display:block;
+}
+
+.widget_inOutTroops .simplePopupOverlay.filterPopup .pContent {
+    text-align: center;
+    padding: 10px;
+    color: #898989;
+}
+
+    .widget_inOutTroops .simplePopupOverlay.filterPopup .pContent div {
+        margin-bottom: 10px;
+    }
+
+.widget_inOutTroops .simplePopupOverlay.profilePopup .pContent {
+    text-align: center;
+    padding: 10px;
+}
+
+    .widget_inOutTroops .simplePopupOverlay.profilePopup .pContent div {
+        margin-bottom: 10px;
+    }*/
+
+
+.widget_inOutTroops .troopIconSheet44 {
+    background-image: url(https://static.realmofempires.com/images/troopIconSheet44x.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    width: 34px;
+    height: 34px;
+}
+    .widget_inOutTroops .troopIconSheet44.cmdIcon {
+        position: absolute;
+        top: 4px;
+        left: 142px;
+    }
+        .widget_inOutTroops .troopIconSheet44.cmdIcon.sup {
+            background-position: -35px 0px;
+        }
+        .widget_inOutTroops .troopIconSheet44.cmdIcon.ret {
+            background-position: -135px 0px;
+        }
+
+

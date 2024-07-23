@@ -1,0 +1,379 @@
+﻿/* Style for Normal Map's Cordinates */
+TD.MCords
+{
+	text-align:center;
+	vertical-align:middle;
+	white-space: nowrap;
+	font-weight:bold;
+	
+}
+
+.village
+{
+	position:relative;
+}
+
+
+Table.giantMap img.att 
+{
+	position:absolute; 
+	left:0px; 
+	top:0px;
+}
+Table.giantMap img.sup
+{
+	position:absolute; 
+	left:0px; 
+	top:0px;
+}
+Table.notGiantMap img.att 
+{
+	position:absolute; 
+	left:11px; 
+	top:5px;
+}
+Table.notGiantMap img.sup
+{
+	position:absolute; 
+	left:20px; 
+	top:5px;
+}
+
+.flag 
+{
+	position:absolute; 
+	left:0px; 
+	top:0px;
+}
+
+
+.mapBracket
+{
+	-position:absolute; 
+	-z-index:2;
+}
+
+
+
+
+/* BEGIN --- OVERVIEW Map */
+
+/* Mini Overview Map */
+/*(#OverviewPulldown { background-color : rgb(255,255,255); } (*/
+#OverviewPulldownClick { display : block; height : 15px; width : 15px; background-image : url('https://static.realmofempires.com/images/globeDelete.gif'); background-repeat : no-repeat; background-position : 0px -15px; float : right; }
+
+.OverviewPulldownHide .OverviewParent { display : none; }
+.OverviewPulldownHide #OverviewPulldownClick { background-position : 0px 0px !important; }
+
+.OverviewParent { /*display : none !important;*/ height : 0px;  }
+
+
+/*Overview map, typical TD, ie TD containing an empty grass square*/
+.OverviewMap TD 
+{
+	background-color:#006400;
+	cursor : pointer;
+	width:5px;
+	height:5px;
+}
+/* Style for Overview Map's Cordinates */
+TD.OVCords
+{
+	text-align:center;
+	vertical-align:middle;
+	white-space: nowrap;
+	font-weight:bold;
+}
+/* Style for Overview Map's My Villages */
+TD.OVMV
+{
+	background-color: white;
+	cursor : pointer;
+	width:5px;
+	height:5px;
+}
+/* Style for Overview Map's Other Villages */
+TD.OVOV
+{
+	background-color: #000000;
+	cursor : pointer;
+	width:5px;
+	height:5px;
+}
+/* Style for Overview Map's My Clan Member's Vilalges */
+TD.OVMCMV
+{
+	background-color: #00ff00;
+	cursor : pointer;
+	width:5px;
+	height:5px;
+}
+/* Style for Overview Map's Ally's Villages */
+TD.OVAV
+{
+	background-color: #870EF8;
+	cursor : pointer;
+	width:5px;
+	height:5px;
+}
+/* Style for Overview Map's Enemy's Villages */
+TD.OVEV
+{
+	background-color: #ff0000;
+	cursor : pointer;
+	width:5px;
+	height:5px;
+}
+/* Style for Overview Map's NDA Villages */
+TD.OVNDAV
+{
+	background-color: #cc9900;
+	cursor : pointer;
+	width:5px;
+	height:5px;
+}
+/* Style for Overview Map's abandoned Villages */
+TD.OVABD
+{
+	background-color: #333333 ;
+	cursor : pointer;
+	width:5px;
+	height:5px;
+}
+
+.OVrb
+{
+	border-right: black 10px solid!;
+	
+}
+
+.OVPFHL /* OverView PlayerFriend HighLight! */
+{
+	background-color : #064ED7 !important;
+}
+/* END --- OVERVIEW Map */
+
+
+.TranspPopupMenu { position : absolute; }
+
+#hoverInfo TD
+{
+ vertical-align:top;
+}
+
+/* style for the popup menu */
+
+#hoverInfo { position : absolute; }
+
+#hoverInfo TD
+{
+ vertical-align:top;
+}
+
+.OverviewLegend 
+{
+	background-color:Gray;
+	border: solid 2px #4B3D30;
+}
+
+/* hide the freind flags untill script has finished adding to DOM */
+.hideFriends .fbfFlag { display : none; }
+
+
+#dropMenu { position : absolute; z-index : 101; }
+#dropMenuDummy { float : left; }
+
+#villageHover { position : absolute; width:250px;}
+#villageHover div#hoverHead { padding : 3px 3px 3px 3px; }
+#villageHover #villageMenu {}
+span.mapPoints {color:#8d7765;}
+
+.mapLable {
+    color:#c8a488;
+    font-weight:normal;
+}
+
+.mapAttSup {
+    color:#c8a488;
+}
+
+
+.facebookMenu .ui_item{ 
+    white-space : nowrap;
+    padding : 2px;
+}
+
+.facebookMenu .vilName,
+.facebookMenu .hdr
+{ 
+    background-color:rgb(41, 33, 22);
+      color:#c8a488;
+    font-weight:normal;
+}
+
+.facebookMenu .help {
+ color:#c8a488;
+     height:15px;
+    text-align:center;
+
+ }
+
+
+.facebookMenu a{  color : rgb(195, 144, 55); }
+
+
+.facebookMenu .hoverMenu a
+{ 
+    white-space : nowrap;  
+    color : rgb(195, 144, 55); 
+    background-image : url('https://static.realmofempires.com/images/menuItemSeperator.png'); 
+    text-decoration : none; 
+    background-color : rgb(75, 61, 48); 
+    background-repeat:no-repeat;
+    background-position: 2px center;
+    display:table-cell;
+    width:30px;
+    height:30px;
+}
+
+
+.facebookMenu .hoverMenu .na
+{ 
+    white-space : nowrap;  
+    color : rgb(195, 144, 55); 
+    background-image : url('https://static.realmofempires.com/images/menuItemSeperator.png'); 
+    text-decoration : none; 
+    background-color : rgb(75, 61, 48); 
+    background-repeat:no-repeat;
+    background-position: 2px center;
+    display:table-cell;
+    width:30px;
+    height:30px;
+}
+
+.facebookMenu .hoverMenu a:hover { color : rgb(195, 144, 55); text-decoration : underline; text-decoration : none; }
+.facebookMenu .hoverMenu a.attq{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttack.png');  }
+.facebookMenu .hoverMenu  .attq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttackGray.png');  }
+.facebookMenu .hoverMenu a.attq:hover { background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickAttackHover.png'); }
+.facebookMenu .hoverMenu a.att{ background-image : url('https://static.realmofempires.com/images/icons/Q_Attack.png');  }
+.facebookMenu .hoverMenu a.att:hover { background-image : url('https://static.realmofempires.com/images/icons/Q_AttackHover.png'); }
+.facebookMenu .hoverMenu a.sup{ background-image : url('https://static.realmofempires.com/images/icons/Q_Support.png');  }
+.facebookMenu .hoverMenu  .sup_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportGray.png');  }
+.facebookMenu .hoverMenu a.sup:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportHover.png');  }
+.facebookMenu .hoverMenu a.supq{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupport.png');  }
+.facebookMenu .hoverMenu  .supq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupportGray.png');  }
+.facebookMenu .hoverMenu a.supq:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_1ClickSupportHover.png');  }
+.facebookMenu .hoverMenu a.supl{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookup.png');  }
+.facebookMenu .hoverMenu  .supl_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookupGray.png');  }
+.facebookMenu .hoverMenu a.supl:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SupportLookupHover.png');  }
+.facebookMenu .hoverMenu a.map{ background-image : url('https://static.realmofempires.com/images/icons/Q_CenterMap.png');  }
+.facebookMenu .hoverMenu a.map:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_CenterMapHover.png');  }
+.facebookMenu .hoverMenu a.sends{ background-image : url('https://static.realmofempires.com/images/icons/Q_Silver.png');  }
+.facebookMenu .hoverMenu  .sends_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_SilverGray.png');  }
+.facebookMenu .hoverMenu a.sends:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_SilverHover.png');  }
+.facebookMenu .hoverMenu a.myvov{ background-image : url('https://static.realmofempires.com/images/icons/Q_Vov2.png');}
+.facebookMenu .hoverMenu a.myvov:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_Vov2Hover.png');}
+.facebookMenu .hoverMenu a.hq{ background-image : url('https://static.realmofempires.com/images/icons/Q_Upgrade.png');}
+.facebookMenu .hoverMenu  .hq_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_UpgradeGray.png');}
+.facebookMenu .hoverMenu a.hq:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_UpgradeHover.png');}
+.facebookMenu .hoverMenu a.renV{ background-image : url('https://static.realmofempires.com/images/icons/Q_Rename.png');}
+.facebookMenu .hoverMenu .renV_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_RenameGray.png');}
+.facebookMenu .hoverMenu a.renV:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_RenameHover.png');}
+.facebookMenu .hoverMenu a.recr{ background-image : url('https://static.realmofempires.com/images/icons/Q_Recruit.png');}
+.facebookMenu .hoverMenu .recr_na{ background-image : url('https://static.realmofempires.com/images/icons/Q_RecruitGray.png');}
+.facebookMenu .hoverMenu a.recr:hover{ background-image : url('https://static.realmofempires.com/images/icons/Q_RecruitHover.png');}
+
+
+
+.facebookMenu .vilName a { white-space : nowrap; color : rgb(195, 144, 55); text-decoration : none;  }
+.facebookMenu .vilName a { white-space : nowrap; color : rgb(195, 144, 55); text-decoration : none; }
+.facebookMenu .vilName a:hover { text-decoration : underline; }
+
+
+
+
+.notelink { font-size : x-small; white-space : nowrap;  }
+.notelink a { text-decoration:none; color:#EDD5C2 !important; font-style:italic  }
+.notelink a:hover { text-decoration:underline;}
+
+
+.unitsMapDisplay .title 
+{
+ background-color:#292116;
+ color:#C8A488;
+text-align:center;
+
+}
+
+
+.unitsMapDisplay .unitHdr
+{
+    background-color:#292116;
+    color:#C8A488;
+    text-align:center;
+}
+
+
+.unitsMapDisplay .unitCnt
+{
+    color:#C8A488;
+    text-align:right;
+}
+
+
+.unitsMapDisplay
+{
+ border: 1px solid #292116;
+}
+
+.jsAllowOneClick
+{
+display:none;
+
+}
+.troop-moves .button { height:19px; width: 285px; clear: both; margin: 3px; border: solid 1px black; background: #736F6E; cursor: pointer; font-size:9pt; }
+.troop-moves .button:hover {  background: #646060; }
+.troop-moves .button img {  vertical-align:middle; float:left}
+.troop-moves .button span {padding: 2px; text-align:center; float:right;}
+.troop-moves .button .inactive { display: none; }
+
+.mapUI .uiitem {padding:2px;margin:2px; border:solid 1px black;font-size:9pt; }
+
+
+#hoverTags .noTag {
+    color: #8F661F;
+}
+
+#hoverTags .Tag {
+    color: #FFD886;
+}
+
+
+#favorite .flag-icon 
+{
+    cursor : pointer; 
+}
+
+#favorite img.cancel 
+{
+    cursor : pointer; 
+    width: 11px;
+    margin-right: 3px;
+}
+
+
+
+#favorite input.highlight
+{
+    margin-left:14px;
+}
+
+#favorite input.addrow
+{
+    float:right;
+}
+
+.chat .list .panel 
+{
+width:auto !important; 
+}

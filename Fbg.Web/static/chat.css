@@ -1,0 +1,35 @@
+﻿    /*BEGIN chat*/
+.chat .tabs 
+{
+padding: 4px 0 0 0; 
+}
+.chat .tabs ul {
+    list-style: none;
+	padding: 0;
+	margin: 0;
+	    }
+.chat .tabs ul li { 
+    float: left;
+	border: 1px solid #454F50;
+	border-bottom-width: 0;
+	margin-left: 3px;
+	padding:2px; 
+	}
+.chat .tabs ul li.selected { background-color: #454F50; color:#66FFFF; }
+.chat .tabs ul li:hover { background-color: #454F50; cursor: pointer; color:#66FFFF; }
+.chat .list .panel { height: 160px; overflow-y: auto; overflow-x: hidden; width: 260px;}
+.chatInPopup .list .panel { height: 390px; width: 495px;}
+.chat .stop a, .chat .older a, .chat .popup a { cursor: pointer; }
+/*BEGIN chat*/
+    
+    .chat .block { color: gray; cursor: pointer; }
+    .chat .block:hover { color: red; cursor: pointer; }
+    .chat .panel img.avatar { height:24px; float:left;margin:1px;padding-right:1px; }
+    .chat .panel img.clan { height:10px;padding-right:1px; }
+    .chat .c1 {clear:both;min-height:25px;}
+    .chat .c1.toclan {background-color:#660000;}
+    .chat .c1:hover {background-color:#404040  ;}
+    
+    .chat .c1 .pinfo {color:Gray;}
+
+

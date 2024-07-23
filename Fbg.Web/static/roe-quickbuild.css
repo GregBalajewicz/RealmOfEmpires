@@ -1,0 +1,1067 @@
+﻿
+
+#popup_QuickBuild {
+    background-image: url('https://static.realmofempires.com/images/misc/M_BG_Generic.jpg');
+    background-size: 100% auto;
+}
+
+
+
+    #popup_QuickBuild .popupBody {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        height: auto !important;
+        margin-top: 40px;
+    }
+
+    #popup_QuickBuild .IFrameDivTitle {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #popup_QuickBuild .themeM-panel.header > .fg > .label {
+        text-align: center;
+    }
+
+    #popup_QuickBuild .themeM-panel.header > .fg > .level {
+        display: block;
+    }
+
+
+#quickbuild_popup .qSummaryArea .sectionDivider {
+    top: 45px;
+}
+
+#quickbuild_popup .buildingRow .sectionDivider {
+    bottom: 0px;
+}
+
+#quickbuild_popup .default .qSummaryArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    background-color: rgba(0,0,0,0.8);
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0px 98px;
+}
+#quickbuild_popup #d2fg .default .qSummaryArea {
+    height: 60px;
+}
+
+    #quickbuild_popup .default .qSummaryArea .speedUpButton {
+        position: absolute;
+        top: 0px;
+        left: 90px;
+        padding-right: 28px;
+    }
+    /*#quickbuild_popup #d2fg .default .qSummaryArea .speedUpButton {
+        left:205px;
+        top: 2px;
+        background-image:url("https://static.realmofempires.com/images/icons/m_hatspells.png");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: 60px -1px;
+    }*/
+    #quickbuild_popup #d2fg .default .qSummaryArea .speedUpButton {
+        padding-left: 10px;
+        left: auto;
+        top: -7px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+        #quickbuild_popup .default .qSummaryArea .speedUpButton.downgrade {
+            left: 120px;
+        }
+    #quickbuild_popup .default .qSummaryArea .speedUpButton.disabled {
+        opacity:0.5;
+    }
+        #quickbuild_popup .default .qSummaryArea .speedUpButton span {
+            background-image: url("https://static.realmofempires.com/images/icons/m_hatspells.png");
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            right: 5px;
+            background-size: 28px 28px;        
+            background-repeat: no-repeat;
+            background-position: 84px -1px;
+}
+        #quickbuild_popup #d2fg .default .qSummaryArea .speedUpButton span {
+            top: 8px;
+            left: -11px;
+            background-size: 18px 18px;
+        }
+
+        #quickbuild_popup .default .qSummaryArea .speedUpButton:active span {
+            background-position: 84px 1px;
+        }
+
+
+    #quickbuild_popup .default .qSummaryArea .speedUpFreeButton {
+        display: none;
+        position: relative;
+        margin: 0 auto;
+        padding-right: 33px;
+    }
+    #quickbuild_popup #d2fg .default .qSummaryArea .speedUpFreeButton {
+        cursor: pointer;
+        top: -6px;
+    }
+
+    #quickbuild_popup #d2fg .effect-smoothpulse {
+        animation: d2fg-smoothpulse 1.5s ease-out;
+        -moz-animation: d2fg-smoothpulse 1.5s ease-out;
+        -webkit-animation: d2fg-smoothpulse 1.5s ease-out;
+        -ms-animation: d2fg-smoothpulse 1.5s ease-out;
+        -o-animation: d2fg-smoothpulse 1.5s ease-out;
+        animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+    }
+
+
+@-webkit-keyframes d2fg-smoothpulse {
+    0% {
+        -webkit-transform: scale(1, 0.8);
+    }
+
+    25% {
+        -webkit-transform: scale(0.95, 0.76);
+    }
+
+    50% {
+        -webkit-transform: scale(1.05, .84);
+    }
+
+    75% {
+        -webkit-transform: scale(0.95, 0.76);
+    }
+
+    100% {
+        -webkit-transform: scale(1, 0.8);
+    }
+}
+@-ms-keyframes d2fg-smoothpulse {
+    0% {
+        -ms-transform: scale(1, 0.8);
+    }
+
+    25% {
+        -ms-transform: scale(0.95, 0.76);
+    }
+
+    50% {
+        -ms-transform: scale(1.05, 0.84);
+    }
+
+    75% {
+        -ms-transform: scale(0.95, 0.76);
+    }
+
+    100% {
+        -ms-transform: scale(1, 0.8);
+    }
+}
+@-moz-keyframes d2fg-smoothpulse {
+    0% {
+        -moz-transform: scale(1, 0.8);
+    }
+
+    25% {
+        -moz-transform: scale(0.95, 0.76);
+    }
+
+    50% {
+        -moz-transform: scale(1.05, 0.84);
+    }
+
+    75% {
+        -moz-transform: scale(0.95, 0.76);
+    }
+
+    100% {
+        -moz-transform: scale(1, 0.8);
+    }
+}
+@keyframes d2fg-smoothpulse {
+    0% {
+        transform: scale(1, 0.8);
+    }
+
+    25% {
+        transform: scale(0.95, 0.76);
+    }
+
+    50% {
+        transform: scale(1.05, 0.84);
+    }
+
+    75% {
+        transform: scale(0.95, 0.76);
+    }
+
+    100% {
+        transform: scale(1, 0.8);
+    }
+}
+@-o-keyframes d2fg-smoothpulse {
+    0% {
+        -o-transform: scale(1, 0.8);
+    }
+
+    25% {
+        -o-transform: scale(0.95, 0.76);
+    }
+
+    50% {
+        -o-transform: scale(1.05, .84);
+    }
+
+    75% {
+        -o-transform: scale(0.95, 0.76);
+    }
+
+    100% {
+        -o-transform: scale(1, 0.8);
+    }
+}
+
+        #quickbuild_popup .default .qSummaryArea .speedUpFreeButton .icon {
+            position: absolute;
+            top: -4px;
+            right: 14px;
+            width: 44px;
+            height: 44px;
+            background-size: 100% 100%;
+            background-image: url(https://static.realmofempires.com/images/icons/freeSign.png);
+        }
+        #quickbuild_popup #d2fg .default .qSummaryArea .speedUpFreeButton .icon {
+            top: 0;
+            left: 60px;
+            width: 30px;
+            height: 30px;
+        }
+
+    #quickbuild_popup .default .qSummaryArea .buildTimeArea {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        height: 37px;
+    }
+    #quickbuild_popup #d2fg .default .qSummaryArea .buildTimeArea {
+        height: 20px;
+    }
+
+        #quickbuild_popup .default .qSummaryArea .buildTimeArea .currentBuildTimeTitle,
+        #quickbuild_popup .default .qSummaryArea .buildTimeArea .totalBuildTimeTitle {
+            position: absolute;
+            top: 3px;
+        }
+
+        #quickbuild_popup .default .qSummaryArea .buildTimeArea .currentBuildTimeTitle,
+        #quickbuild_popup .default .qSummaryArea .buildTimeArea .currentBuildTimeTimer {
+            left: 14px;
+        }
+
+        #quickbuild_popup #d2fg .default .qUpgradeSummaryArea .buildTimeArea .currentBuildTimeTimer {
+            left: 75px;
+        }
+        #quickbuild_popup #d2fg .default .qDowngradeSummaryArea .buildTimeArea .currentBuildTimeTimer {
+            left: 115px;
+        }
+
+        #quickbuild_popup .default .qSummaryArea .buildTimeArea .currentBuildTimeTimer,
+        #quickbuild_popup .default .qSummaryArea .buildTimeArea .totalBuildTimeTimer {
+            font: 11px/1.0em "lucida grande" , tahoma, verdana, arial, sans-serif;
+            position: absolute;
+            top: 19px;
+        }
+
+        #quickbuild_popup #d2fg .default .qSummaryArea .buildTimeArea .currentBuildTimeTimer,
+        #quickbuild_popup #d2fg .default .qSummaryArea .buildTimeArea .totalBuildTimeTimer {
+            top: 3px;
+        }
+
+        #quickbuild_popup .default .qSummaryArea .buildTimeArea .totalBuildTimeTitle,
+        #quickbuild_popup .default .qSummaryArea .buildTimeArea .totalBuildTimeTimer {
+            right: 12px;
+        }
+
+        #quickbuild_popup #d2fg .default .qSummaryArea .buildTimeArea .totalBuildTimeTitle {
+            right: 65px;
+        }
+
+    #quickbuild_popup .default .qSummaryArea .queuedItemsArea {
+        position: absolute;
+        top: 55px;
+        left: 13px;
+        right: 90px;
+        height: 40px;
+        text-align: center;
+        width:100%;
+    }
+    #quickbuild_popup #d2fg .default .qSummaryArea .queuedItemsArea {
+        top: 25px;
+        left: 4px;
+        width: 102%;
+    }
+
+        #quickbuild_popup .default .qSummaryArea .queuedItemsArea .queuedItem {
+            position: relative;
+            float: left;
+            top: 6px;
+            display: block;
+            height: 30px;
+            width: auto;
+            padding: 1px 7px 1px 30px;
+            background-position: 0px 0px;
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            line-height: 29px;
+        }
+        #quickbuild_popup #d2fg .default .qSummaryArea .queuedItemsArea .queuedItem {
+            background-size: 18px 18px;
+            height: 18px;
+            line-height: 17px;
+            top: 11px;
+            padding: 3px 7px 1px 19px;
+            font: 11px/1.0em "lucida grande" , tahoma, verdana, arial, sans-serif;
+        }
+        #quickbuild_popup .default .qSummaryArea .queuedItemsArea .queuedMore {
+            position: relative;
+            float: left;
+            display: block;
+            width: auto;
+            left: 2px;
+            top: 2px;
+            color: #D7D7D7;
+            font: 22px Georgia;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+    #quickbuild_popup .default .qSummaryArea .slideToQueuePage {
+        position: absolute;
+        top: 55px;
+        left: 205px;
+        padding-right: 10px;
+    }
+#quickbuild_popup #d2fg .default .qSummaryArea .slideToQueuePage {
+    position: absolute;
+    right: 2px;
+    left: auto;
+    top: 4px;
+    padding-right: 15px;
+    padding-top: 8px;
+}
+        #quickbuild_popup #d2fg .default .qSummaryArea .slideToQueuePage .smallArrowRight {
+            top: 6px;
+            right: 15px;
+        }
+
+#quickbuild_popup .default .upgDowngContainer {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    bottom: 38px;
+    overflow: auto;
+}
+#quickbuild_popup #d2fg .default .upgDowngContainer {
+    top: 60px;
+    margin-bottom: 40px;
+}
+
+    #quickbuild_popup .default .switchModeArea {
+        position: relative;
+        overflow: hidden;
+        height: 35px;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 5px 0px;
+        margin-top: 4px;
+    
+        text-align: center;
+}
+    #quickbuild_popup #d2fg .default .switchModeArea {
+        position: absolute;
+        bottom: 38px;
+        height: 30px;
+        width: 100%;      
+    }
+        #quickbuild_popup .default .switchModeArea .switchModeBtn {
+            position: absolute;
+            top: 3px;
+            height: 36px;
+            width: 125px;
+            padding-top: 11px;
+            box-sizing: border-box;
+            background-image: url('https://static.realmofempires.com/images/buttons/M_SP_ButtonToggle1.png');
+            background-size: 250px 100px;
+            background-repeat: no-repeat;
+            cursor:pointer;          
+        }
+        #quickbuild_popup #d2fg .default .switchModeArea .switchModeBtn {
+            transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            -o-transform: scale(0.8);
+        }     
+            #quickbuild_popup .default .switchModeArea .switchModeBtn.toUpgrade {
+                left: 35px;
+                padding-left: 10px;
+            }
+            #quickbuild_popup #d2fg .default .switchModeArea .switchModeBtn.toUpgrade {
+                left: -50px;
+                position: relative;
+                margin: 0 auto;
+                top: -3px;
+            }
+            #quickbuild_popup .default .switchModeArea .switchModeBtn.toDowngrade {
+                left: 160px;
+                padding-right: 10px;
+            }
+            #quickbuild_popup #d2fg .default .switchModeArea .switchModeBtn.toDowngrade {
+                left: 50px;
+                position: relative;
+                margin: 0 auto;
+                top: -39px;
+            }#quickbuild_popup #d2fg .default .qSummaryArea .slideToQueuePage
+
+        #quickbuild_popup .default .switchModeArea.upgradeActive .switchModeBtn.toUpgrade {
+            background-position: 0px 0px;
+            padding-top: 12px;
+        }
+        #quickbuild_popup .default .switchModeArea.downgradeActive .switchModeBtn.toUpgrade {
+            background-position: 0px -50px;
+        }
+        #quickbuild_popup .default .switchModeArea.upgradeActive .switchModeBtn.toDowngrade {
+            background-position: -125px 0px;
+        }
+        #quickbuild_popup .default .switchModeArea.downgradeActive .switchModeBtn.toDowngrade {
+            background-position: -125px -50px;
+            padding-top: 12px;
+        }
+
+    #quickbuild_popup .default .upgDowngContainer .upgradeArea {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+        #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea #upgHeader {
+            background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+            background-repeat: no-repeat;
+            background-size: 200% 2px;
+            background-position: 60% 22px;
+        }
+        #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea #upgHeader *{
+            font: 15px "IM Fell French Canon", serif;
+        }
+        #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea #upgHeader .buildingsIcon{
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Upgrade2.png');
+            background-size: 20px;
+            width: 20px;
+            height: 20px;
+            left: 2px;
+            top: 1px;
+        }
+
+        #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow {
+            position: relative;
+            width: 100%;
+            height: 44px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: 30px 30px;
+            background-position: 15px 6px;
+            -webkit-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -ms-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;  
+            background-color: rgba(29, 32, 32, 0.9);
+        }
+        #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow {
+            height: 24px;
+        }
+            
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow:nth-child(even) {
+                background-color: rgba(42, 50, 50, 0.9);
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.expanded {
+                height: 100px;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow.expanded {
+                height: 46px;
+            }
+                #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.expanded .buildingRequirements {
+                    display: block;
+                }
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingBtn {
+                position: absolute;
+                top: 6px;
+                left: 15px;
+            }
+                #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingBtn .buildingIcon {
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    right: 2px;
+                    bottom: 2px;
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                }
+                #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .buildingIcon {
+                    background-size:20px;
+                    top:2px;
+                    left:2px;
+                    width:20px;
+                    height:20px;
+                    position:absolute;
+                }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingName {
+                position: absolute;
+                float: left;
+                top: 3px;
+                left: 55px;
+            }
+
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .buildingName {
+                left: 24px;
+                font-size: 14px;
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingName span{
+                font: 15px georgia;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .buildingName span {
+                font: 12px "lucida grande" , tahoma, verdana, arial, sans-serif
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingResources {
+                position: absolute;
+                left: 55px;
+                top: 22px;
+                font: 11px georgia;
+            }
+            
+            /*for d2 only*/
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .buildingResources {
+                top:3px;
+                font: 13px "lucida grande" , tahoma, verdana, arial, sans-serif;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .silverResource {
+                left: 180px;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .foodResource {
+                left: 235px;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .timeResource {
+                left: 265px;
+            }
+                  
+                #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingResources .bResourceIcon {
+                    padding: 0px 4px 0px 16px;
+                    background-repeat: no-repeat;
+                }       
+
+                    #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingResources .bResourceIcon.bFood {
+                        background-image: url("https://static.realmofempires.com/images/Food.png");
+                    }
+                    #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingResources .bResourceIcon.bSilver {
+                        background-image: url('https://static.realmofempires.com/images/icons/M_silver_sml.png');
+                    }
+                    #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingResources .bResourceIcon.bTime {
+                        background-image: url('https://static.realmofempires.com/images/HourGlass.png');
+                    }
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusLackSilver .buildingResources .bResourceIcon.bSilver,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusLackFood .buildingResources .bResourceIcon.bFood,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusLackSilver .silverResource,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusLackFood .foodResource {
+                color: #F00;
+            }
+
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .upgradeLevel {
+                position:absolute;
+                top:3px;
+                left:325px;
+            }
+
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .upgradeLevel a {
+                padding-right:3px;
+                font: 13px "lucida grande" , tahoma, verdana, arial, sans-serif;
+                text-decoration:underline;
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingUpgradeBtnOne,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingUpgradeBtnMore {
+                position: absolute;
+                top: 2px;
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingUpgradeBtnOne {
+                left: 215px;
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingUpgradeBtnMore {
+                left: 269px;
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingCongrats {
+                position: absolute;
+                left: 215px;
+                top: 13px;
+                color: #FFF;
+                font: 18px/1.0em "IM Fell French Canon SC", serif;
+                text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                -webkit-text-stroke: 1px #ae9360;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .buildingCongrats {
+                left: 325px;
+                top: 5px;
+                font: 15px/1.0em "IM Fell French Canon SC", serif;
+                color: #d7d7d7;
+                text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+                -webkit-text-stroke:initial;
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingBtnInfo {
+                position: absolute;
+                top: 1px;
+                left: 205px;
+                padding-right: 10px;
+            }
+
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .requirementsInfo {
+                position: absolute;
+                top :5px;
+                left: 325px;
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingRequirements {
+                display:none;
+                position: absolute;
+                top: 51px;
+                left: 0px;
+                right: 0px;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .buildingRequirements {
+                top:22px;
+            }
+
+                #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingRequirements .requirementItem {
+                    position: relative;
+                    width: 110px;
+                    float: left;
+                    margin: 2px 0px 0px 15px;
+                    padding: 2px 0px 2px 20px;
+                    background-repeat: no-repeat;
+                    background-position: 0px -5px;
+                }
+                #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow .buildingRequirements .requirementItem {
+                    width: auto;
+                }
+
+                    #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingRequirements .requirementItem.reqMet {
+                        background-image: url("https://static.realmofempires.com/images/misc/M_SmGood.png");
+                    }
+
+                    #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow .buildingRequirements .requirementItem.reqNotMet {
+                        background-image: url("https://static.realmofempires.com/images/misc/M_SmNotEnough.png");
+                    }
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusMaxed .buildingName {
+                top: 12px;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow.statusMaxed .buildingName {
+                top: 3px;
+            }
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusMaxed .buildingUpgradeBtnOne,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusMaxed .buildingUpgradeBtnMore,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusMaxed .buildingResources,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusUnsatisfied .buildingUpgradeBtnOne,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusUnsatisfied .buildingUpgradeBtnMore,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusBuild .buildingCongrats,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusUnsatisfied .buildingCongrats,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusLack .buildingCongrats,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusBuild .buildingBtnInfo,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusMaxed .buildingBtnInfo,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusLack .buildingBtnInfo,
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow.statusUnsatisfied .upgradeLevel,
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow.statusMaxed .upgradeLevel,
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow.statusBuild .requirementsInfo,
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow.statusMaxed .requirementsInfo,
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow.statusLack .requirementsInfo {
+                display: none;
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusLack .buildingUpgradeBtnOne,
+            #quickbuild_popup .default .upgDowngContainer .upgradeArea .buildingRow.statusLack .buildingUpgradeBtnMore,
+            #quickbuild_popup .default .upgDowngContainer .downgradeArea .buildingRow.cantDowngrade .buildingUpgradeBtnOne {
+                opacity:0.5;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .upgradeArea .buildingRow.statusLack .upgradeLevel a {
+                color:#F00;
+            }
+
+    #quickbuild_popup .default .upgDowngContainer .downgradeArea {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding-top: 5px;
+    }
+        #quickbuild_popup .default .upgDowngContainer .downgradeArea .buildingRow {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-bottom: 2px;
+            background-repeat: no-repeat;
+            background-size: 30px 30px;
+            background-position: 15px 4px;
+            -webkit-transition: height .3s ease-out;
+            -moz-transition: height .3s ease-out;
+            -ms-transition: height .3s ease-out;
+            -o-transition: height .3s ease-out;
+            transition: height .3s ease-out;
+            background-color: rgba(29, 32, 32, 0.9);
+        }
+            
+            #quickbuild_popup .default .upgDowngContainer .downgradeArea .buildingRow:nth-child(even) {
+                background-color: rgba(42, 50, 50, 0.9);
+            }
+
+            #quickbuild_popup .default .upgDowngContainer .downgradeArea .buildingRow .buildingName {
+                position: relative;
+                float: left;
+                top: 10px;
+                left: 55px;
+            }
+            #quickbuild_popup .default .upgDowngContainer .downgradeArea .buildingRow .buildingUpgradeBtnOne {
+                position: relative;
+                float: right;
+                top: 0px;
+                margin: 1px 6px 10px 0px;
+            }
+            #quickbuild_popup #d2fg .default .upgDowngContainer .downgradeArea .buildingRow .buildingUpgradeBtnOne {
+                top: 5px;
+            }
+                 
+
+.upgradeNumpadHolder {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+}
+
+    .upgradeNumpadHolder .upgradeNumpadHeader {
+        position: relative;
+        width: 100%;
+        height: 50px;
+    }
+
+        .upgradeNumpadHolder .upgradeNumpadHeader .buildingName {
+            position: absolute;
+            left: 65px;
+            top: 5px;
+        }
+
+        .upgradeNumpadHolder .upgradeNumpadHeader .buildingLevel {
+            position: absolute;
+            left: 65px;
+            top: 24px;
+        }
+
+        .upgradeNumpadHolder .upgradeNumpadHeader .buildingUpgradeText {
+            position: absolute;
+            left: 215px;
+            top: 6px;
+            text-align: right;
+        }
+
+    .upgradeNumpadHolder .upgradeNumpadBox {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 240px;
+        overflow: hidden;
+        padding: 0px 20px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+        .upgradeNumpadHolder .upgradeNumpadBox .upgradeItemNum {
+            position: relative;
+            float: left;
+            margin: 9px;
+        }
+
+            .upgradeNumpadHolder .upgradeNumpadBox .upgradeItemNum.impossibleUpgrade {
+                opacity: 0.5;
+                filter: url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+                filter: gray;
+                -webkit-filter: grayscale(100%);
+            }
+
+#quickbuild_popup .queuepage .queueWrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+    #quickbuild_popup .queuepage .queueWrapper .queueHeader {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 35px;
+    }
+    #quickbuild_popup .queuepage .queueWrapper.upgrade .queueHeader,
+    #quickbuild_popup .queuepage .queueWrapper.downgrade .queueHeader {
+        display:block;
+    }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .sectionDivider {
+            bottom: 0px;
+        }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .qLvl,
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .qName,
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .qTime,
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .qCancel {
+            position: absolute;
+            top: 7px;
+            color: #e6cd90;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font: 15px "IM Fell French Canon LC", serif;
+        }
+
+
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .qLvl,
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qLvl {
+            left: 15px;
+        }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .qName,
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qName {
+            left: 70px;
+        }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .qTime,
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qTime {
+            left: 210px;
+        }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueHeader .qCancel,
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qCancel {
+            left: 265px;
+        }
+
+    #quickbuild_popup .queuepage .queueWrapper .queueContainer .qSpeedUp {
+        position: absolute;
+        left: 170px;
+    }
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qSpeedUp span {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            right: 4px;
+            bottom: 4px;
+            background-image: url("https://static.realmofempires.com/images/icons/m_hatspells.png");
+            background-size: 28px;
+            background-repeat: no-repeat;
+            background-position: 2px 0px;
+        }
+
+    #quickbuild_popup .queuepage .queueWrapper .queueContainer {
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        right: 0px;
+        bottom: 35px;
+        overflow: auto;
+    }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .queuedItemRow {
+            position: relative;
+            width: 100%;
+            height: 36px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: 30px 30px;
+            background-position: 38px 0px;
+        }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qLvl,
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qName,
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qTime,
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qCancel {
+            position: absolute;
+            top: 7px;
+            color: #d7d7d7;
+            text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font: 15px "IM Fell French Canon LC", serif;
+        }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueContainer .qCancel {
+            top: 4px;
+            left: 280px;
+            width: 25px;
+            height: 25px;
+            background-image: url("https://static.realmofempires.com/images/icons/M_X.png");
+            background-size: 100% 100%;
+        }
+    #quickbuild_popup .queuepage .queueWrapper.upgrade .queueHeader .qName.dgrade,
+    #quickbuild_popup .queuepage .queueWrapper.downgrade .queueHeader .qName.ugrade {
+        display: none;
+    }
+
+    #quickbuild_popup .queuepage .queueWrapper .queueFooter {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 36px;
+        background-color: #000;
+        background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+    }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueFooter .stripe {
+            position: absolute;
+            left: 3px;
+            top: 8px;
+            right: 3px;
+            bottom: 3px;
+            background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png);
+        }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueFooter .slideBackToDefaultPage {
+            position: absolute;
+            top: 3px;
+            left: 5px;
+        }
+
+            #quickbuild_popup .queuepage .queueWrapper .queueFooter .slideBackToDefaultPage .smallArrowLeft {
+                top: 6px;
+            }
+
+            #quickbuild_popup .queuepage .queueWrapper .queueFooter .slideBackToDefaultPage:active .smallArrowLeft {
+                top: 7px;
+            }
+
+        #quickbuild_popup .queuepage .queueWrapper .queueFooter .cancelAll {
+            position: absolute;
+            top: 3px;
+            right: 5px;
+        }
+
+
+
+#quickbuild_popup .default .quickBuildFooter {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 38px;
+    background-color: #030000;
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+}
+    #quickbuild_popup .default .quickBuildFooter .fVillName {
+        position: absolute;
+        top: 4px;
+        left: 10px;
+    }
+    #quickbuild_popup .default .quickBuildFooter .fVillSilver,
+    #quickbuild_popup .default .quickBuildFooter .fVillFood {
+        position: relative;
+        font: 11px georgia;
+        top: 17px;
+        padding: 0px 0px 4px 18px;
+        background-repeat: no-repeat;   
+        background-position: 0px 2px;
+        margin-left: 9px;
+}
+    #quickbuild_popup .default .quickBuildFooter .fVillSilver {
+        background-image: url('https://static.realmofempires.com/images/icons/M_silver_sml.png');
+    }
+    #quickbuild_popup .default .quickBuildFooter .fVillFood {
+        background-image: url("https://static.realmofempires.com/images/Food.png");
+    }
+
+    #quickbuild_popup .default .quickBuildFooter .goToBazzar ,
+    #quickbuild_popup .default .quickBuildFooter .transportSilverHere {
+        position: absolute;
+        top: 1px;
+    }
+    #quickbuild_popup .default .quickBuildFooter .transportSilverHere {
+        left: 215px;
+    }
+        #quickbuild_popup .default .quickBuildFooter .transportSilverHere span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Silver.png');
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: 3px -2px;
+        }
+    #quickbuild_popup .default .quickBuildFooter .goToBazzar {
+        left: 269px;
+    }
+        #quickbuild_popup .default .quickBuildFooter .goToBazzar span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://static.realmofempires.com/images/icons/m_gifts.png');
+            background-size: 25px 25px;
+            background-repeat: no-repeat;
+            background-position: 6px 0px;
+        }
+
+        #quickbuild_popup #d2fg .default .sectionDivider {
+            top: 26px;
+        }
+
+
+.cannotUpgradePanel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+    .cannotUpgradePanel span {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px 0px;
+        font: 20px "IM Fell French Canon LC", serif;
+        color: #C5B494;
+        text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        border-bottom: 1px solid rgba(197, 180, 148, 0.3);
+        border-top: 1px solid rgba(197, 180, 148, 0.3);
+    }
+
+

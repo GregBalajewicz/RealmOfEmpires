@@ -1,0 +1,1671 @@
+﻿
+#chatContainer .ui-resizable-se {
+    background-image: none;
+}
+
+.unselectable {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.notification {
+    position: absolute;
+    background-color: #DCD6C5;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #F3AA4F;
+    text-shadow: 0px 1px rgba(255, 255, 255, 0.58);
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    width: 24px;
+    height: 13px;
+    border-radius: 7px;
+    font-size: 9px;
+    line-height: 13px;
+}
+
+.desktop #chatBarContainer .chatBar {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    height: 25px;
+    width: 98px;
+    text-align: center;
+    background-position: -120px -253px;
+    overflow: hidden;
+    border: 1px outset #B38F61;
+    border-radius: 5px;
+    line-height: 25px;
+    font-size: 11px !important;
+    padding: 0px;
+    margin-bottom: 2px;
+    margin-left: 3px;
+}
+
+.desktop #chatBarContainer .chatBar.active {
+    box-shadow: inset 0px 0px 10px 4px rgba(0, 0, 0, 0.75);
+}
+.desktop #chatBarContainer .chatBar:active {
+    padding: 0px;
+    line-height: 27px;
+}
+
+
+    .desktop #chatBarContainer .chatBar .barName {
+        position: absolute;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    .desktop #chatBarContainer .chatBar .notification {
+        display: block;
+        top: 1px;
+        right: 2px;
+    }
+
+    .desktop #chatBarContainer .chatBar .close {
+        display: none;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        background: url("https://static.realmofempires.com/images/icons/M_X.png");
+        background-size: 100% 100%;
+    }
+
+    .desktop #chatBarContainer .chatBar:hover .close {
+        display: block;
+    }
+
+
+
+
+#chatBarContainer #chatListBtn {
+    width: 30px;
+}
+    #chatBarContainer #chatListBtn .icon {
+        position: absolute;
+        left: 1px;
+        top: 1px;
+        bottom: 1px;
+        right: 1px;
+        background-size: 100% 100%;
+        background-position: 50% 50%;
+        background-image: url('https://static.realmofempires.com/images/icons/chatlist.png');
+    }
+
+.chatWindow {
+    display: none;
+    position: absolute;
+    width: 330px;
+    height: 300px;
+    color: #d7d7d7;
+    box-shadow: 0px 0px 10px #000;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+    .chatWindow.displayed {
+        display: block !important;
+    }
+    .chatWindow.active {
+        z-index: 1;
+    }
+    .chatWindow.disabled {
+    
+    }
+        .chatWindow.disabled .textbox {
+            opacity: .3;
+        }
+
+    .chatWindow .titleBar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 36px;
+        box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
+        cursor: move;
+        box-sizing: border-box;
+        padding-left: 11px;
+    }
+
+     .chatWindow .titleBar .headerL {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 18px;
+            height: 36px;
+            background-image: url(https://static.realmofempires.com/images/D2test/chat-topL.png);
+        }
+        .chatWindow .titleBar .headerM {
+            position: absolute;
+            left: 18px;
+            right: 18px;
+            top: 0px;
+            height: 36px;
+            background-image: url(https://static.realmofempires.com/images/D2test/chat-topM.png);
+            background-size: 100% 100%;
+        }
+        .chatWindow .titleBar .headerR {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 18px;
+            height: 36px;
+            background-image: url(https://static.realmofempires.com/images/D2test/chat-topR.png);
+        }
+
+        .chatWindow .titleBar .headerOverlay {
+            position: absolute;
+            right: 9px;
+            top: 9px;
+            left: 9px;
+            height: 17px;
+            background-image: url(https://static.realmofempires.com/images/D2test/KnotTile.png);
+            background-position: 10px 0px;
+        }
+
+        .chatWindow .titleBar .chatName {
+            position: relative;
+            float: left;
+            top: 9px;
+            text-shadow: 0px 1px 1px #000,0px -1px 1px #000;
+            max-height: 17px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.3);
+            text-overflow: ellipsis;
+            word-break: break-all;
+            white-space: nowrap;
+            max-width: 65%;
+        }
+    /*ONLINE/OFFLINE FUNCTIONALITY*/
+        /*.oneOnOne .titleBar .status {
+            width: 6px;
+            height: 6px;
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            border-radius: 5px;
+            background-color: grey;
+        }
+            .oneOnOne .titleBar .online {
+                background-color: lightgreen;
+            }*/
+
+
+
+    .chatWindow .chatButton {
+        position: absolute;
+        width: 31px;
+        height: 23px;
+        top: 7px;
+       
+        cursor: pointer;
+        background-position: 50% 50%;
+    }
+
+        .chatWindow .chatButton.minimize {
+            right: 5px;
+            background-image: url(https://static.realmofempires.com/images/icons/minimize.png);
+        }
+
+        .chatWindow .chatButton.pinBtn {
+            right: 37px;
+            background-image: url(https://static.realmofempires.com/images/icons/chat-boxEmpty.png);
+        }
+    .chatWindow.pinned .chatButton.pinBtn {
+        background-image: url(https://static.realmofempires.com/images/icons/chat-boxFull.png);
+    }
+
+    .chatWindow .chatButton.addUser {
+        right: 69px;
+        background-image: url(https://static.realmofempires.com/images/icons/chat-addUser.png);
+    }
+
+    
+
+
+    .chatWindow .chatIcon {
+        position: absolute;
+        width: 25px;
+        height: 23px;
+        top: 7px;
+        background-position: 50% 50%;
+    }
+        .chatWindow .chatIcon.chatType {
+            position: relative;
+            float: left;
+            top: 7px;
+            margin-left: 0px;
+        }
+    .chatWindow[type="0"] .chatIcon.chatType {
+        background-image: url("https://static.realmofempires.com/images/icons/chat-global.png");
+    }
+        .chatWindow[type="0"] .chatIcon.chatType.toggleUsers {
+            background-image: url("https://static.realmofempires.com/images/icons/chat-globalG.png");
+            cursor: pointer;
+        }
+    
+    .chatWindow[type="1"] .chatIcon.chatType {
+        background-image: url("https://static.realmofempires.com/images/icons/chat-player.png");
+    }
+
+    .chatWindow[type="2"] .chatIcon.chatType {
+        background-image: url("https://static.realmofempires.com/images/icons/chat-group.png");
+    }
+        .chatWindow[type="2"] .chatIcon.chatType.toggleUsers {
+            background-image: url("https://static.realmofempires.com/images/icons/chat-groupG.png");
+            cursor: pointer;
+        }
+
+    .chatWindow[type="3"] .chatIcon.chatType {
+        background-image: url("https://static.realmofempires.com/images/icons/chat-clan.png");
+    }
+
+    .chatWindow .userArea {
+        top: 36px;
+        position: absolute;
+        right: 100%;
+        width: 0px;
+        bottom: 0px;
+        background-color: #100D0C;
+        box-shadow: inset -4px 0px 10px rgba(0, 0, 0, 0.5);
+        border-right: 1px solid #100D0C;
+        opacity: 0;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+        .chatWindow .userArea.shown {
+            width: 150px;
+            opacity: 1;
+        }
+
+        .chatWindow .userArea .title {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 26px;
+            background-color: #0C1821;
+            box-sizing: border-box;
+            line-height: 26px;
+            padding-left: 5px;
+        }
+            .chatWindow .userArea .title .toggleUsers2 {
+                position: relative;
+                float: right;
+                top: 2px;
+                background-image: url(https://static.realmofempires.com/images/icons/M_X.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .chatWindow .userArea .title .add {
+                position:relative;
+                float:right;
+                top: 2px;
+                background-image:url(https://static.realmofempires.com/images/icons/chat-addUser.png);
+            }
+
+            .chatWindow .userArea .title .copyUserList {
+                position: relative;
+                float: right;
+                top: 2px;
+                background-image: url(https://static.realmofempires.com/images/icons/m_Reports.png);
+                background-size:contain;
+                background-repeat:no-repeat;
+            }
+
+
+        .chatWindow .userArea .users {
+            position:absolute;
+            top:30px;
+            width:100%;
+            overflow: auto;
+            word-wrap: break-word;
+            bottom: 0;
+        }
+            .chatWindow .userArea .users .name {
+                padding: 3px 5px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+                .chatWindow .userArea .users .name:hover {
+                    background-color: rgba(33,33,33,0.8);
+                }
+                .chatWindow .userArea .users .name.dev {
+                    color: #4091B9;
+                }
+                    .chatWindow .userArea .users .name.dev .icon {
+                        position: relative;
+                        float: left;
+                        top: 0px;
+                        left: 0px;
+                        width: 20px;
+                        height: 20px;
+                        background-size: 100% auto;
+                        background-image: url(https://static.realmofempires.com/images/misc/BDAEico44w.png);
+                        margin-right: 2px;
+                    }
+    .chatWindow .chatArea {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+        .chatWindow .chatUsers {
+            text-align: center;
+            margin: 7px 7px 0 7px;   
+        }
+
+    .chatWindow .chatArea .messages {
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 36px;
+        bottom: 22px;
+        overflow: auto;
+        word-wrap: break-word;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        padding-top: 5px;
+        overflow-x: hidden;
+        background-color: #100D0C;
+    }
+
+        .chatWindow .chatArea .messages .older {
+            cursor: pointer;
+            padding: 1px 0px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .chatWindow .chatArea .messages .older:hover {
+            background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(27,91,155,0) 10%, rgba(16,108,165,1) 49%, rgba(16,108,165,0.97) 50%, rgba(94,163,213,0) 90%, rgba(125,185,232,0) 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(30,87,153,0)), color-stop(10%,rgba(27,91,155,0)), color-stop(49%,rgba(16,108,165,1)), color-stop(50%,rgba(16,108,165,0.97)), color-stop(90%,rgba(94,163,213,0)), color-stop(100%,rgba(125,185,232,0)));
+            background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 10%,rgba(16,108,165,1) 49%,rgba(16,108,165,0.97) 50%,rgba(94,163,213,0) 90%,rgba(125,185,232,0) 100%);
+            background: -o-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 10%,rgba(16,108,165,1) 49%,rgba(16,108,165,0.97) 50%,rgba(94,163,213,0) 90%,rgba(125,185,232,0) 100%);
+            background: -ms-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 10%,rgba(16,108,165,1) 49%,rgba(16,108,165,0.97) 50%,rgba(94,163,213,0) 90%,rgba(125,185,232,0) 100%);
+            background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 10%,rgba(16,108,165,1) 49%,rgba(16,108,165,0.97) 50%,rgba(94,163,213,0) 90%,rgba(125,185,232,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 );
+        }
+
+        .chatWindow .chatArea .messages .msg {
+            position: relative;
+            font-size: 11px;
+            padding: 5px 5px;
+            white-space: pre-wrap;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            margin-left: 62px;
+            margin-right: 15px;
+            background-color: rgba(25, 25, 25, 0.6);
+            border: 1px solid #2B2B2B;
+            min-height: 47px;
+            box-sizing: border-box;
+        }
+            .chatWindow .chatArea .messages .msg.self {
+                margin-left: 15px;
+                margin-right: 62px;
+                background-color: rgba(50, 50, 50, 0.6);
+            }
+
+            .chatWindow .chatArea .messages .msg .avatar {
+                position: absolute;
+                left: -55px;
+                bottom: -1px;
+                width: 47px;
+                height: 47px;
+                border-radius: 5px;
+                background-size: 50px 50px;
+                background-position: 50% 50%;
+            }
+                .chatWindow .chatArea .messages .msg .avatar .inner {
+                    position: absolute;
+                    top: -2px;
+                    bottom: -2px;
+                    left: -2px;
+                    right: -2px;
+                    background-size: 100% 100%;
+                    background-position: 50% 50%;
+                    border-radius: 5px;
+                }
+
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="1"],
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="2"],
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="3"],
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="4"] {
+                    bottom: 0px;
+                }
+
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="0"] .inner {
+                    display:none;
+                }
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="1"] .inner {
+                    background-image: url(https://static.realmofempires.com/images/icons/vip_Border_1.png);
+                }
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="2"] .inner {
+                    background-image: url(https://static.realmofempires.com/images/icons/vip_Border_2.png);
+                }
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="3"] .inner {
+                    background-image: url(https://static.realmofempires.com/images/icons/vip_Border_3.png);
+                }
+                .chatWindow .chatArea .messages .msg .avatar[data-avatarborderid="4"] .inner {
+                    background-image: url(https://static.realmofempires.com/images/icons/vip_Border_4.png);
+                }
+
+            .chatWindow .chatArea .messages .msg.dev .avatar .inner {
+                background-image: url(https://static.realmofempires.com/images/icons/vip_Border_dev.png) !important;
+            }
+            
+            .chatWindow .chatArea .messages .msg.self .avatar{
+                left:auto;
+                right: -55px;
+            }
+
+            .chatWindow .chatArea .messages .msg .msgHeader {
+                color: grey;
+                margin-bottom: 2px;
+            }
+            .chatWindow .chatArea .messages .msg .msgBody {
+                font-size: 12px;
+                font-family: helvetica, arial, sans-serif;
+            }
+
+            .chatWindow .chatArea .messages .msg .addUserIcon {
+                display: inline-block;
+                width: 20px;
+                height: 18px;
+                background-image: url(https://static.realmofempires.com/images/icons/chat-addUser.png);
+                background-size: 27px auto;
+                background-repeat: no-repeat;
+                background-position: 50% 0px;
+            }
+                
+        .chatWindow .chatArea .messages .adminMsg {
+            text-align: center;
+            font-size: 10px;
+            padding: 2px 5px;
+            white-space: pre-wrap;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            margin-left: 2px;
+            margin-right: 2px;
+            color: #5D5D5D;
+            font-style: italic;
+        }
+        .chatWindow .chatArea .messages .adminMsg .msgHeader {
+            font-size: 11px;
+                display: inline-block;
+                margin-right: 10px;
+        }
+            .chatWindow .chatArea .messages .adminMsg .msgBody {
+                font-size: 12px;
+                display: inline-block;
+                word-break: break-word;
+            }
+                    .chatWindow .chatArea .messages .msg .msgBody .emoticon {
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        position: relative;
+                        top: 3px;
+                    }
+                        .chatWindow .chatArea .messages .msg .msgBody .happy {
+                            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABgklEQVQ4T41TsXECQQyUiI4IXIGfhBldAnRAB8Yd4Ar8dG\
+                                                                    BXwLsDOjDugA6Mk1P4lED2zBDIs+/jfbzfY18m3Z20u1oxtY6qZmb2SERzZp7i2sz2RLRj5hcROaRfOA1CCAURLYioYObt5XEsin\
+                                                                    xORK/e+9XlX1NAVdFl75zLR6PRsY0McVmWw9PpVJjZxHs/Q64ugM7MPBSRZdfHDpobMzt673OO8Hb9fn/6W+d2ASCpqmrPzHOOvA/\
+                                                                    ee/Cvj6o+RZj3MUbHgfe+jiNq6JEBAbgvUnVjbuKcuwGqEMKBmW9FJNUsI6ItClh6kYgFTeqRRfGaOEFqnQX+I2SkVhe4ooBu5/M5G4\
+                                                                    /HyDcnopiKyC5+/qLQFlFV57iAYWAmjMvMYCKM+PkidgihERHWvRpjHNMyWhmd0HWTalJVVcnMs9RIAxF5+A9/Vf02UqIoOL8751Z/W\
+                                                                    HlNRDMRqRetc5l6vd7azN7SZWLmOzPLkYeFfyxTggSa5LApEU1i/gM6MXPRXudPoPoIQKkeqGoAAAAASUVORK5CYII=');
+                        }
+                        .chatWindow .chatArea .messages .msg .msgBody .sad {
+                            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABbUlEQVQ4T61TvVkCQRB9j+iIpAQIZxOgAzqQDtQKPDqwA84OtAKhA\
+                                zoQk9uP6CiBDAhg/ObcxeXETwI3m9mdn/ezRON477uq+ghgRHJg16q6BLAg+Swi67SEaVCWZQFgDKAgOYuPQ1PL5wDenHOTWHdq4L23Kcssy/Jer7dpbmZxVVWd3W5XqGrfOTe0XN3AJpPsi\
+                                Mj9pcILMF9UdeOcyxnWW7Tb7cFvk5sNbJPtdrskOWLAvXbOGf76GBxV1bhmMw5bGx9d28Cwj1N2Qw4iUqtQluWa5CbGYUgXwMwaqIicqXEND6GJ/kuDHxCMpP1+f6eqpn1tJJJzEVkkPH1BaJ\
+                                K4Wq3Gh8PBCJ2ZmUKBufPJciZdk0S7PMkYzGKeOLNsJM7yQcaK5DA10o2IPFxDoPf+20ip9gDesyyb/GHlKYBhlPTiZ2q1WlNVNdJqGOZWkrfH49F4eI08nP5Cunawdm42BdAPdx/GE8miyc0n\
+                                idH7Mft0z0kAAAAASUVORK5CYII=');
+                        }
+                .chatWindow .chatArea .messages .msg .extraMsg {
+                    padding-top: 3px;
+                }
+                .chatWindow .chatArea .messages .msg .name {
+                    color: #FFD886;
+                    cursor: pointer;
+                }
+                .chatWindow .chatArea .messages .msg .date {
+                    font-style: normal;
+                }
+
+            .chatWindow .chatArea .messages .msg.dev {
+                border-top: 1px solid #2E4567;
+                border-bottom: 1px solid #253854;
+                background: #16242D;
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                background: -moz-linear-gradient(top, rgba(22,36,45,1) 0%, rgba(30,28,27,0.5) 48%, rgba(30,28,27,0.5) 50%, rgba(22,36,45,1) 100%);
+                background: -webkit-linear-gradient(top, #16242D 0%,rgba(30, 28, 27, 0.5) 48%,rgba(30, 28, 27, 0.5) 50%,#16242D 100%);
+                background: linear-gradient(to bottom, #16242D 0%,rgba(30, 28, 27, 0.5) 48%, rgba(30, 28, 27, 0.5) 50%,#16242D 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16242d', endColorstr='#16242d',GradientType=0 );
+            }
+                .chatWindow .chatArea .messages .msg.dev .icon {
+                    position: absolute;
+                    top: 4px;
+                    left: 2px;
+                    color: #4E96B9;
+                    width: 20px;
+                    height: 20px;
+                    background-size: 100% auto;
+                    background-image: url(https://static.realmofempires.com/images/misc/BDAEico44w.png);
+                }
+                .chatWindow .chatArea .messages .msg.dev .msgHeader {
+                    margin-left: 20px;
+                    margin-bottom: 7px;
+                }
+                .chatWindow .chatArea .messages .msg.dev .name {
+                    color: #2cb8f1;
+                }
+
+        .chatWindow .chatArea .messages .msg.admincast .avatar {
+            left: -61px;
+            bottom: -6px;
+            width: 59px;
+            height: 59px;
+            background-size: 57px 57px;
+            background-image: url(https://static.realmofempires.com/images/icons/K_AppIco114x114.png);
+        }
+        .chatWindow .chatArea .messages .msg.admincast .roe {
+            color: #2cb8f1;
+            cursor: default;
+        }
+                        
+    .chatWindow .chatArea .newMessages {
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: -70px;
+        width: 115px;
+        color: #FFF;
+        border-radius: 10px;
+        background-color: #1B3244;
+        cursor: pointer;
+        padding: 5px;
+        padding-right: 20px;
+        box-shadow: 0px 1px 5px #000;
+    }
+        .chatWindow .chatArea .newMessages .icon {
+            position: absolute;
+            width: 20px;
+            height: 17px;
+            right: 5px;
+            top: 4px;
+            background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+            background-position: -400px -350px;
+        }
+
+    .chatWindow .chatArea .chatInput {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+        .chatWindow .chatArea .chatInput .toggleTools {
+            position: absolute;
+            left: 0px;
+            width: 40px;
+            bottom: 0px;
+            height: 22px;
+            background-color: rgba(0,0,0,.6);
+            line-height: 22px;
+            text-align: center;
+            cursor:pointer;
+        }
+    .chatWindow.showTools .chatArea .chatInput .toggleTools {
+        color: #1d1d1d;
+        background-color: rgba(144, 144, 144, 0.7);
+        box-shadow: inset 0px 0px 2px 2px #545454;
+    }
+    .chatWindow .chatArea .chatInput .chatInputTextWrapper {
+        position: absolute;
+        left: 40px;
+        right: 0px;
+        bottom: 0px;
+        height: 22px;
+        box-sizing: border-box;
+    }
+        .chatWindow .chatArea .chatInput .chatInputTextWrapper .textbox {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #F1F1F1;
+            border: none;
+            box-sizing: border-box;
+            padding: 2px;
+            overflow: hidden;
+            resize: none;
+        }
+            .chatWindow .chatArea .chatInput .send {
+                display:none;
+                float: left;
+                width: 50px;
+                color: #DADADA;
+                text-shadow: 0px 1px #000;
+                border: 1px solid #4A4A4A;
+                background: -moz-linear-gradient(top, rgba(74,74,74,1) 0%, rgba(63,63,63,1) 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A4A4A), color-stop(100%,#3F3F3F));
+                background: -webkit-linear-gradient(top, #4A4A4A 0%,#3F3F3F 100%);
+                background: -o-linear-gradient(top, rgba(74,74,74,1) 0%,rgba(63,63,63,1) 100%);
+                background: -ms-linear-gradient(top, rgba(74,74,74,1) 0%,rgba(63,63,63,1) 100%);
+                background: linear-gradient(to bottom, #4A4A4A 0%,#3F3F3F 100%);
+                cursor: pointer;
+            }
+                .chatWindow .chatArea .chatInput .send:hover {
+                    color: #fff;
+                }
+                .chatWindow .chatArea .chatInput .send:active {
+                    color: #000;
+                }
+
+#chatList {
+    z-index: 3;
+    font-size:11px;
+}
+    #chatList .titleBar {
+        opacity: 1;
+    }
+        #chatList .titleBar .chatName {
+            color: #d7d7d7;
+        }
+
+    #chatList .titleBar .chatIcon {
+        background-image: url("https://static.realmofempires.com/images/icons/chatlistS.png");
+        background-size: contain;
+    }
+
+    #chatList .listItems {
+        position: absolute;
+        top: 36px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: auto;
+        word-wrap: break-word;
+        padding-top: 5px;
+        padding-bottom: 50px;
+        background-color: #100D0C;
+    }
+    #chatList .realmLabel {
+        cursor: pointer;
+        position: relative;
+        padding: 5px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        height: 30px;
+    }
+
+
+    #chatList .realmLabel:hover,
+    #chatList .chatLabel:hover {
+        background-color: rgba(33,33,33,0.8);
+    }
+        #chatList .realmLabel .arrowIcon {
+            display: inline-block;
+            padding: 2px 5px;
+            right: 5px;
+            line-height: 10px;
+            position: absolute;
+        }
+        #chatList .realmLabel .realmName {
+            display: inline-block;
+        }
+        #chatList .realmSet .realmLabel .notification {
+            display:none;
+            right: 34px;
+            top: 3px;
+        }
+        #chatList .realmSet.notable .realmLabel .notification {
+            display:block;
+        }
+
+    #chatList .listItems .realmSet {
+        margin-bottom: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-bottom: 1px solid #030303;
+    }
+
+    #chatList .chatLabel {
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+        height: 30px;
+        padding: 3px;
+        padding-left: 30px;
+        margin-bottom: 2px;
+    }
+
+        #chatList .chatLabel .notification {
+            left: 2px;
+            top: 8px;
+        }
+        #chatList .chatLabel .labelName {
+            position: absolute;
+            top: 7px;
+            right: 30px;
+            left: 49px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            white-space: nowrap;
+        }
+        #chatList .chatLabel .typeIcon {
+            position: absolute;
+            left: 30px;
+            top: 7px;
+            width: 15px;
+            height: 15px;
+            background-size: auto 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        #chatList .chatLabel[data-grouptype="0"] .typeIcon {
+            background-image: url("https://static.realmofempires.com/images/icons/chat-global.png");
+        }
+        #chatList .chatLabel[data-grouptype="1"] .typeIcon {
+            background-image: url("https://static.realmofempires.com/images/icons/chat-player.png");
+        }
+        #chatList .chatLabel[data-grouptype="2"] .typeIcon {
+            background-image: url("https://static.realmofempires.com/images/icons/chat-group.png");
+        }
+        #chatList .chatLabel[data-grouptype="3"] .typeIcon {
+            background-image: url("https://static.realmofempires.com/images/icons/chat-clan.png");
+        }
+
+        #chatList .chatLabel .gear {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            height: 30px;
+            width: 40px;
+            background-image: url("https://static.realmofempires.com/images/icons/chat-gear.png");
+            background-size: auto 90%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        #chatList .chatLabel .mute {
+            display: none;
+            position: absolute;
+            right: 40px;
+            top: 7px;
+            width: 15px;
+            height: 15px;
+            background-image: url("https://static.realmofempires.com/images/icons/chat-mute.png");
+            background-size: auto 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+        #chatList .chatLabel.muted {
+            color: #5A5A5A;
+        }
+            #chatList .chatLabel.muted .mute {
+                display: block;
+            }
+
+
+    #chatList .chatListButtons {
+        position: relative;
+        margin: 2px auto;
+        padding-left: 22px;
+    }
+        #chatList .chatListButtons .icon {
+            position: absolute;
+            top: 9px;
+            left: 17px;
+            width: 27px;
+            height: 20px;
+            background-size: cover;
+        }
+        #chatList .chatListButtons.create1on1Btn .icon {
+            background-image: url(https://static.realmofempires.com/images/icons/chat-player.png);
+        }
+        #chatList .chatListButtons.createGroupBtn .icon {
+            background-image: url(https://static.realmofempires.com/images/icons/chat-group.png);
+        }
+
+
+.contextMenu {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    background-color: #151515;
+    border: 1px solid #383734;
+    width:150px;
+}
+    .contextMenu:active
+    {
+        display: block;
+    }
+    .contextMenu .menuItem {
+        padding: 10px;
+        cursor: pointer;
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+        .contextMenu .menuItem:hover {
+            background-color: rgba(33,33,33,0.8);
+        }
+
+#refreshDialog {
+    text-align:center;
+    background-color: #000716;
+    height: 100px;
+}
+    #refreshDialog .text {
+        position: relative;
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    #refreshDialog .BtnBLg1 {
+        position: relative;
+        display: inline-block;
+    }
+
+.chatDialog {
+    z-index: 3;
+    font: 13px "IM Fell French Canon", serif;
+}
+
+#chatDialogNotif .goodNotif {
+    color: green;
+}
+#chatDialogNotif .badNotif {
+    color: red;
+}
+
+.gameChatBarContainer {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    text-align: left;
+
+}
+
+
+   
+
+
+/* Syntax highlighting for BBCodes */
+.bbsyntax_v, .bbcode_v {
+    color: #de7d4d;
+}  
+
+.bbsyntax_c, .bbcode_c {
+    color: #cdb596;
+} 
+
+.bbsyntax_p, .bbcode_p {
+    color: #7c9fdd;
+}
+
+.bbsyntax_f{
+     color: #99cd3e;
+}
+
+
+/* Desktop specific */
+.desktop .chatWindow {
+
+}
+    /*non active chat style*/
+    .desktop .chatWindow .titleBar{
+         opacity: .7;
+    }
+        .desktop .chatWindow .titleBar .chatName {
+            color: #808080;
+        }
+    .desktop .chatWindow .chatArea .chatInput {
+        opacity: .3;
+    }
+
+
+    /*active chat style*/
+    .desktop .chatWindow.active .titleBar,
+    .desktop .chatWindow.active .chatArea .messages,
+    .desktop .chatWindow.active .chatArea .chatInput {
+        opacity: 1;
+    }
+        .desktop .chatWindow.active .titleBar .chatName {
+            color: #d7d7d7;
+        }
+
+
+    .desktop .chatWindow .userArea .title .toggleUsers2 {
+        display: none;
+    }
+
+
+/* M SPECIFIC STYLING */
+.mobile #chatContainer {
+
+}
+    .mobile #chatContainer.large {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        overflow: hidden;
+        background-color: #0E0E0E;
+        z-index: 10;
+    }
+
+.mobile .chatWindow {
+    background-color: #0E0E0E;
+    position: absolute;
+    left: 0px !important;
+    top: 0px !important;
+    right: 0px !important;
+    bottom: 40px !important;
+    width: auto !important;
+    height: auto !important;
+    /*z-index: 10;*/
+    overflow:hidden;
+}
+
+.mobile .chatWindow .titleBar .chatButton {
+
+}
+    .mobile .chatWindow .chatButton.pinBtn {
+        display: none;
+    }
+    .mobile .chatWindow .chatButton.addUser {
+        right: 37px;
+    }
+
+.mobile .chatWindow .userArea.shown {
+    opacity: 1;
+    top: 36px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    right: auto;
+    bottom: 0px;
+    z-index: 1;
+}
+
+
+    .mobile .chatWindow .titleBar .chatButton.minimize {
+
+    }
+
+
+    .mobile .chatWindow.inputFocused .chatArea {
+        bottom: 60%;
+    }
+        .mobile .chatWindow.inputFocused .chatArea .chatInput .textbox {
+            height: 30px;
+            top: -24px;
+        }
+
+    .mobile .chatWindow .chatArea .messages .msg,
+    .mobile #globalAndClanChat .chatWindow .chatArea .messages .msg {
+        margin-left: 40px;
+        margin-right: 5px;
+    }
+
+        .mobile .chatWindow .chatArea .messages .msg .avatar,
+        .mobile #globalAndClanChat .chatWindow .chatArea .messages .msg .avatar {
+            width: 32px;
+            height: 32px;
+            background-size: 32px 32px;
+            left: -37px;
+        }
+
+        .mobile .chatWindow .chatArea .messages .msg.self,
+        .mobile #globalAndClanChat .chatWindow .chatArea .messages .msg.self {
+            margin-right: 40px;
+            margin-left: 5px;
+        }
+
+            .mobile .chatWindow .chatArea .messages .msg.self .avatar,
+            .mobile #globalAndClanChat .chatWindow .chatArea .messages .msg.self .avatar {
+                left: auto;
+                right: -37px;
+            }
+
+.mobile #chatBarContainer .chatBar {
+    position: relative;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    height: 37px;
+    width: 98px;
+    margin-right: 3px;
+    text-align: center;
+    background-position: -120px -250px;
+    overflow: hidden;
+    border-right: 2px solid #B38F61;
+    border-left: 2px solid #B38F61;
+    border-radius:5px;
+    font-size:15px !important;
+}
+    .mobile #chatBarContainer .chatBar:active {
+        background-position: -120px -300px !important;
+    }
+
+
+    .mobile #chatBarContainer .chatBar .barName {
+        position: absolute;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    .mobile #chatBarContainer .chatBar .notification {
+        display: block;
+        top: 8px;
+        right: 2px;
+    }
+
+    .mobile #chatBarContainer .chatBar .close {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 2px;
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        background: url("https://static.realmofempires.com/images/icons/M_X.png");
+        background-size: 100% 100%;
+    }
+
+    .mobile #chatBarContainer .chatBar:hover .close {
+        display: block;
+    }
+
+.throneroom.mobile #chatContainer {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+
+
+/*temp M stuff hide
+.mobile #chatBarContainer{
+    display: none;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 40px;
+}
+.mobile #chatContainer #chatListBtn {
+    display: none;
+}
+.mobile .chatWindow {
+        display: none !important;
+}
+.mobile #globalAndClanChat .chatWindow.displayed {
+    display: block !important;
+}
+    */
+
+
+
+/*CHAT DIALOG STYLE*/
+#chatDialog {
+    background-image: url(https://static.realmofempires.com/images/backgrounds/BGcolor40485c.jpg);
+}
+
+    #chatDialog .genericDialogContent {
+        position: relative;
+        background-color: rgba(0,0,0,0.7);
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+        #chatDialog .genericDialogContent .chatPopupBtn {
+            position:relative;
+            margin:0 auto;
+        }
+
+    #chatDialog .chatPopupLabel, 
+    #chatDialog .createGroupLabel,
+    #chatDialog .chatPopupBtn, 
+    #chatDialog input {
+        margin-bottom: 3px;
+    }
+
+
+
+    
+    #chatDialog .autoCompleteBox {
+        position: absolute;
+        top: 100px;
+        left: 10%;
+        right: 10%;
+        padding: 0px;
+        bottom: 10px;
+        overflow: auto;
+        background: rgba(0, 0, 0, 0.6);
+    }
+        #chatDialog .autoCompleteBox div {
+            margin-bottom: 3px;
+            cursor: pointer;
+            height: 30px;
+            line-height: 30px;
+        }
+            #chatDialog .autoCompleteBox div:hover {
+                background-color: rgba(110,110,110,0.3);
+            }
+
+    #chatDialog #chatDialogNotif {
+        position: absolute;
+        z-index: 1;
+        left: 10%;
+        right: 10%;
+        top: 100px;
+        /* bottom: 20px; */
+        overflow: auto;
+        background: #000;
+    }
+
+
+
+/*over rides the dumb z-index given to these guys -farhad*/
+.chatWindow .ui-resizable-handle {
+    z-index: 0 !important;
+}
+
+
+
+
+
+
+
+
+/* IN REALM CHAT STYLE */
+
+
+#globalAndClanChat {
+    overflow: hidden;
+    position: absolute;
+    right: 13px;
+    bottom: 80px;
+    width: 400px;
+    -webkit-transition: height .2s ease;
+    -moz-transition: height .2s ease;
+    -ms-transition: height .2s ease;
+    -o-transition: height .2s ease;
+    transition: height .2s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+    #globalAndClanChat .chatWindow .chatArea .messages .msg {
+        margin-left: 55px;
+        margin-right: 15px;
+        background-color: rgba(20, 20, 20, 0.5);
+    }
+        #globalAndClanChat .chatWindow .chatArea .messages .msg .avatar {
+            left: -50px;
+            right: auto;
+            bottom: 0px;
+            width: 45px;
+            height: 45px;
+        }
+        #globalAndClanChat .chatWindow .chatArea .messages .msg.self {
+            margin-right: 55px;
+            margin-left: 15px;
+            background-color: rgba(60, 60, 60, 0.5);
+        }
+            #globalAndClanChat .chatWindow .chatArea .messages .msg.self .avatar {
+                right: -50px;
+                left: auto;
+            }
+        #globalAndClanChat .chatWindow .chatArea .messages .msg.admincast .avatar {
+            left: -56px;
+            bottom: -5px;
+            width: 59px;
+            height: 59px;
+        }
+
+
+#chatContainer.mini #globalAndClanChat {
+    height: 120px;
+}
+    #chatContainer.mini #globalAndClanChat .handle {
+        background-image: url(https://static.realmofempires.com/images/misc/M_ArrowUp.png);
+        background-position: 50% 2px;
+    }
+#chatContainer.large #globalAndClanChat {
+    height: 450px;
+}
+    #chatContainer.large #globalAndClanChat .handle {
+        background-image: url(https://static.realmofempires.com/images/misc/M_ArrowDown.png);
+        background-position: 50% 5px;
+    }
+
+#chatContainer.mini #globalAndClanChat .chatInput{
+    display:none;
+}
+#chatContainer.mini #globalAndClanChat .chatArea .messages{
+        bottom: 0px;
+        overflow:hidden;
+}
+
+#chatContainer.mini #globalAndClanChat .chatWindow .chatArea .messages .msg {
+    margin: 1px !important;
+    padding: 1px !important;
+    min-height: 30px;
+}
+    #chatContainer.mini #globalAndClanChat .chatWindow .chatArea .messages .msg .msgHeader {
+        margin-left: 2px;
+        margin-bottom: 2px;
+    }
+    #chatContainer.mini #globalAndClanChat .chatWindow .chatArea .messages .msg .msgBody{
+        margin-left:7px;
+    }
+    #chatContainer.mini #globalAndClanChat .chatWindow .chatArea .messages .msg .avatar {
+        display: none;
+    }
+    #chatContainer.mini #globalAndClanChat .chatWindow .chatArea .messages .msg .extraMsg {
+        padding:0px !important;
+    }
+
+    #chatContainer.mini #globalAndClanChat .chatWindow .chatArea .messages .msg.dev .msgHeader {
+        padding-left: 15px;
+    }
+        #chatContainer.mini #globalAndClanChat .chatWindow .chatArea .messages .msg.dev .msgHeader .icon {
+            top: 2px;
+            left: 2px;
+            width: 15px;
+            height: 15px;
+        }
+
+#globalAndClanChat .handle {
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+    #globalAndClanChat .list {
+        position: absolute;
+        top: 25px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+    #globalAndClanChat .chatWindow {
+        position: absolute !important;
+        width: 100%;
+        height: 100%;
+        box-shadow: none !important;
+    }
+        #globalAndClanChat .chatWindow.active {
+            z-index: auto;
+        }
+
+        #globalAndClanChat .chatWindow .chatArea .messages {
+            top: 0px;
+        }
+
+
+.globalAndClanChatBars {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 30px;
+}
+    .globalAndClanChatBars .chatBar {
+        position: relative;
+        float: left;
+        width: 110px;
+        opacity: 0.5;
+        cursor: pointer;
+        border: 0px solid #000;
+        font: 11px "IM Fell French Canon", serif !important;
+        color: #d7d7d7;
+        text-shadow: 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        height: 16px;
+        top: 4px;
+        line-height: 13px;
+        background: none;
+        background-position: 0px 0px !important;
+        padding: 0px;
+    }
+        .globalAndClanChatBars .chatBar .barName {
+            position:absolute;
+            top: 2px;
+            left:0px;
+            right:0px;
+        }
+        .globalAndClanChatBars .chatBar:active {
+            line-height: 18px;
+        }
+        .globalAndClanChatBars .chatBar.selected {
+            opacity: 1.0;
+            background: -moz-linear-gradient(left, rgba(30,87,153,0) 0%, rgba(27,91,155,0) 10%, rgba(16,108,165,1) 49%, rgba(16,108,165,0.97) 50%, rgba(94,163,213,0) 86%, rgba(125,185,232,0) 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(30,87,153,0)), color-stop(10%,rgba(27,91,155,0)), color-stop(49%,rgba(16,108,165,1)), color-stop(50%,rgba(16,108,165,0.97)), color-stop(86%,rgba(94,163,213,0)), color-stop(100%,rgba(125,185,232,0)));
+            background: -webkit-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 10%,rgba(16,108,165,1) 49%,rgba(16,108,165,0.97) 50%,rgba(94,163,213,0) 86%,rgba(125,185,232,0) 100%);
+            background: -o-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 10%,rgba(16,108,165,1) 49%,rgba(16,108,165,0.97) 50%,rgba(94,163,213,0) 86%,rgba(125,185,232,0) 100%);
+            background: -ms-linear-gradient(left, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 10%,rgba(16,108,165,1) 49%,rgba(16,108,165,0.97) 50%,rgba(94,163,213,0) 86%,rgba(125,185,232,0) 100%);
+            background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 10%,rgba(16,108,165,1) 49%,rgba(16,108,165,0.97) 50%,rgba(94,163,213,0) 86%,rgba(125,185,232,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 );
+        }
+
+        .globalAndClanChatBars .chatBar .notification {
+            top: 1px;
+            right: 5px;
+        }
+
+    .globalAndClanChatBars #chatListBtn {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 26px;
+        height: 26px;
+        border: 0px solid black;
+        cursor:pointer;
+    }
+        .globalAndClanChatBars #chatListBtn .icon {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-image: url('https://static.realmofempires.com/images/icons/chatlist.png');
+        }
+
+        .globalAndClanChatBars #chatListBtn .notableNotifications {
+            position: absolute;
+            background-color: #DCD6C5;
+            text-align: center;
+            color: #000;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px #F3AA4F;
+            text-shadow: 0px 1px rgba(255, 255, 255, 0.58);
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            left: -15px;
+            top: 5px;
+            width: 24px;
+            height: 13px;
+            border-radius: 7px;
+            font-size: 9px;
+            line-height: 13px;
+        }
+
+/*IN REALM CHAT - DESKTOP SPECIFIC */
+.desktop #chatContainer.inRealm .chatWindow {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.desktop #globalAndClanChat .chatWindow {
+    background: none !important;
+}
+
+.desktop .gameChatBarContainer {
+    position: absolute;
+    bottom: 0px;
+    right: 285px;
+    text-align: left;
+    z-index: 1;
+}
+
+.desktop #chatContainer.inRealm .chatWindow .chatArea .messages, 
+.desktop #chatContainer.inRealm #chatList .listItems {
+    background-color: rgba(16, 13, 12, 0);
+}
+
+.desktop #chatContainer.mini #globalAndClanChat .chatArea .messages:hover {
+    overflow: auto;
+}
+
+
+/*IN REALM CHAT - M SPECIFIC */
+.mobile #chatBarContainer {
+    display:none;
+}
+.mobile #chatContainer.inRealm .chatWindow {
+    bottom:0px !important;
+}
+.mobile #chatContainer.inRealm.mini .chatWindow {
+    /*display:none !important; //we now show chatwindows even if chat is mini */
+    z-index:2;
+}
+.mobile #chatContainer.inRealm.mini #globalAndClanChat .chatWindow.displayed {
+    display:block !important;
+    z-index:auto;
+}
+.mobile #chatContainer.inRealm #globalAndClanChat {
+    right: 0px;
+    left: 0px;
+    width: 100%;
+}
+    .mobile #chatContainer.inRealm.mini #globalAndClanChat .handle {
+        z-index: 1;
+    }
+.mobile #chatContainer.inRealm.mini #globalAndClanChat .list {
+    top: 0px;
+}
+
+.mobile #chatContainer.inRealm.mini #globalAndClanChat {
+    height: auto;
+    bottom: 44px;
+    top: 397px;
+    border-top: 1px solid #785E21;
+}
+
+
+.mobile #chatContainer.inRealm.large #globalAndClanChat {
+    top: 0px;
+    background-color: #0E0E0E;
+    height: auto;
+    bottom: 0px;
+}
+
+.mobile #chatContainer.inRealm.mini .globalAndClanChatBars {
+    display: block;
+    z-index: 1;
+}
+/*
+    .mobile #chatContainer.inRealm.mini .globalAndClanChatBars #chatListBtn .icon {
+        display: none;
+    }
+    .mobile #chatContainer.inRealm.mini .globalAndClanChatBars #chatListBtn .notableNotifications {
+        left: 1px;
+        top: 5px;
+    }
+*/
+    .mobile #chatContainer.inRealm.mini .globalAndClanChatBars .chatBar.chatButton {
+        height: 3px;
+        width: 110px;
+        top: 0px;
+        background: #808080;
+        background: linear-gradient(to right, rgba(30,87,153,0) 0%,rgba(27,91,155,0) 0%,rgba(71, 81, 86, 0.89) 15%,rgba(74, 77, 78, 0.97) 85%,rgba(94,163,213,0) 100%,rgba(125,185,232,0) 100%);
+        opacity: 1;
+        overflow: hidden;
+        pointer-events: none;
+    }
+            .mobile #chatContainer.inRealm.mini .globalAndClanChatBars .chatBar.chatButton .notification {
+                top: 0px;
+                right: 3px;
+                border-radius: 0px;
+            }
+
+            .mobile #chatContainer.inRealm.mini .globalAndClanChatBars.chatBar.chatButton .barName {
+                display: none;
+            }
+
+        .mobile #chatContainer.inRealm.mini .globalAndClanChatBars .chatBar.chatButton.selected {
+            background: #1A91DA;
+            opacity: 1;
+        }
+
+
+.chatWindow.chatFlash {
+    -webkit-animation: neon2 1s ease-in-out;
+    -moz-animation: neon2 1s ease-in-out;
+    animation: neon2 1s ease-in-out;
+}
+
+
+
+/*Chat Toolbox */
+.chatToolBox {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -50px;
+}
+    .chatToolBox .cToolBtn {
+        position: relative;
+        float: left;
+        padding: 5px;
+        margin-left: 5px;
+        background: rgba(0,0,0,.8);
+        cursor: pointer;
+    }
+
+    .chatToolBox.areyousure {
+        color:red;
+    }
+
+
+.chatConfirmBox {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,.8);
+    padding: 10px;
+    text-align: center;
+}
+
+    .chatConfirmBox .confirmMsg {
+        margin-bottom: 5px;
+    }
+    .chatConfirmBox .confirmBtn {
+        position: relative;
+        display: inline-block;
+        border: 1px solid #fff;
+        padding: 10px;
+        margin: 5px;
+        cursor:pointer;
+    }
+
+
+.callTargetToChatBox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,.8);
+    text-align: left;
+    padding: 4px;
+}
+    .callTargetToChatBox .callTargetToChatTextInput {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        right: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        resize: none;
+        bottom: 50px;
+    }
+    .callTargetToChatBox .confirmBtn {
+        position: absolute;
+        bottom: 7px;
+        border: 1px solid #fff;
+        padding: 10px;
+        cursor: pointer;
+        background: rgba(0,0,0,.8);
+    }
+        .callTargetToChatBox .confirmBtn.yes {
+             left: 50px;
+        }
+        .callTargetToChatBox .confirmBtn.cancel {
+             left: 150px;
+        }
+       
+/*Chat Toolbox */
+
+
+
+
+@-webkit-keyframes neon2 {
+    from {
+        box-shadow: 0 0 5px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+    }
+    to {
+        box-shadow: 0 0 0px #228DFF, 0 0 0px #228DFF, 0 0 0px #228DFF;
+    }
+}
+@-moz-keyframes neon2 {
+    from {
+        box-shadow: 0 0 5px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+    }
+    to {
+        box-shadow: 0 0 0px #228DFF, 0 0 0px #228DFF, 0 0 0px #228DFF;
+    }
+}
+@keyframes neon2 {
+    from {
+        box-shadow: 0 0 5px #228DFF, 0 0 10px #228DFF, 0 0 15px #228DFF;
+    }
+    to {
+        box-shadow: 0 0 0px #228DFF, 0 0 0px #228DFF, 0 0 0px #228DFF;
+    }
+}
+
+
+
+
+
+.simplePopupOverlay.copyUsers .pContainer {
+    max-width: 520px;
+    margin: 0 auto;
+}
+    .simplePopupOverlay.copyUsers .pContainer .pContent {
+        padding:20px;
+    }
+        .simplePopupOverlay.copyUsers .pContainer .pContent .namesArea {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            height: 200px;
+            margin: 0 auto;
+        }

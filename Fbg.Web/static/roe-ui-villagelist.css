@@ -1,0 +1,23 @@
+﻿
+
+
+/*filterSettings styling */
+ .villageListFilterSettings {
+    background-color: rgba(0,0,0,0.45);
+}
+    .villageListFilterSettings .detailSettings {
+        padding: 10px;
+        padding-left: 20px;
+        text-align: left;
+    }
+    .villageListFilterSettings .detailSettings .indented {
+        margin-left: 20px;
+    }
+
+
+
+#villageListPopup .notYetLoaded {
+    opacity: 0.5;
+}
+
+ 

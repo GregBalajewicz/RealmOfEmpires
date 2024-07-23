@@ -1,0 +1,433 @@
+﻿
+/******************************************************************************/
+
+
+footer
+{
+    height: 44px; 
+}
+
+.TDContent.mainView
+{
+    bottom: 44px;
+}
+
+/******************************************************************************/
+
+#research
+{
+    background: #000000;
+}
+
+/******************************************************************************/
+
+#research .themeM-panel.header,
+#research .themeM-panel.header-dropdown
+{
+    position: absolute;
+    left: 0px; top: 0px; right: 0px; bottom: auto;
+    width: auto; height: 40px;
+}
+
+#research .themeM-panel.header
+{
+    z-index: 3;
+}
+
+#research .themeM-panel.header > .bg
+{
+    background: transparent;
+}
+
+#research .themeM-panel.header > .fg
+{
+    max-width: 300px;
+}
+
+#research .themeM-panel.header .researchMemberBusy,
+#research .themeM-panel.header .researchMemberFree,
+#research .themeM-panel.header .researchMemberNone {
+    position: absolute;
+    
+    color: #FFC947;
+    font: 14px/1.0em "Arapey", serif;
+}
+
+#research .themeM-panel.header .researchMemberBusy > span,
+#research .themeM-panel.header .researchMemberFree > span,
+#research .themeM-panel.header .researchMemberNone > span {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+#research .themeM-panel.header .researchMemberBusy
+{
+    left: 4px; top: 4px;
+}
+
+#research .themeM-panel.header .researchMemberFree
+{
+    left: 85px; top: 4px; right: 113px; bottom: auto;
+}
+
+#research .themeM-panel.header .researchMemberNone
+{
+    left: auto; top: 4px; right: 4px; bottom: auto;
+}
+
+#research .themeM-panel.header .handle {
+    display: block;
+    position: absolute;
+    left: 4px; top: 4px; right: auto; bottom: 4px;
+    width: 292px; height: auto;
+    
+    background: url("https://static.realmofempires.com/images/icons/M_ArrowDownSm.png") no-repeat center 20px;
+}
+
+#research .themeM-panel.header-dropdown
+{
+    min-height: 40px;
+    z-index: 2;
+    overflow: hidden;
+    
+    -webkit-transition: height 0.5s ease 0.0s;
+       -moz-transition: height 0.5s ease 0.0s;
+        -ms-transition: height 0.5s ease 0.0s;
+         -o-transition: height 0.5s ease 0.0s;
+            transition: height 0.5s ease 0.0s;
+}
+
+#research .themeM-panel.header-dropdown > .fg > .scroll {
+    position: absolute;
+    left: 10px; top: 50px; right: 10px; bottom: 28px;
+    width: auto; height: auto;
+}
+
+#research .themeM-panel.header-dropdown > .fg > .scroll > .scroll-content {
+    width: 280px;
+}
+
+#research .themeM-panel.header-dropdown .handle {
+    display: block;
+    position: absolute;
+    left: 4px; top: auto; right: auto; bottom: 4px;
+    width: 292px; height: 24px;
+    
+    background: url("https://static.realmofempires.com/images/icons/M_ArrowUpSm.png") no-repeat center 12px;
+}
+
+#research .themeM-panel > .bg
+{
+    background-color: black; /*no gradiant on this*/
+}
+
+#research .themeM-panel.header-dropdown .researchMember > li .busy,
+#research .themeM-panel.header-dropdown .researchMember > li .free,
+#research .themeM-panel.header-dropdown .researchMember > li .none
+{
+    position: relative;
+    margin: 0 0 8px 0;
+    height: 40px;
+}
+
+#research .themeM-panel.header-dropdown .researchMember > li.busy .free,
+#research .themeM-panel.header-dropdown .researchMember > li.busy .none {
+    display: none;
+}
+
+#research .themeM-panel.header-dropdown .researchMember > li.free .busy,
+#research .themeM-panel.header-dropdown .researchMember > li.free .none {
+    display: none;
+}
+
+#research .themeM-panel.header-dropdown .researchMember > li.none .busy,
+#research .themeM-panel.header-dropdown .researchMember > li.none .free {
+    display: none;
+}
+
+#research .themeM-panel.header-dropdown .avatar,
+#research .themeM-panel.header-dropdown .status {
+    position: absolute;
+    height: 40px;
+}
+
+#research .themeM-panel.header-dropdown .avatar .icon,
+#research .themeM-panel.header-dropdown .status .icon {
+}
+
+#research .themeM-panel.header-dropdown .avatar .icon > img,
+#research .themeM-panel.header-dropdown .status .icon > img {
+    width: 40px; height: 40px;
+}
+
+#research .themeM-panel.header-dropdown .avatar .name,
+#research .themeM-panel.header-dropdown .status .name {
+    height: 16px;
+}
+
+#research .themeM-panel.header-dropdown .avatar {
+    left: 0px; top: 0px;
+    width: 40px;
+}
+
+#research .themeM-panel.header-dropdown .none .avatar .icon img {
+    width: 38px; height: 38px;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+         -o-border-radius: 6px;
+            border-radius: 6px;
+    border: 1px solid #B7A679;
+    background: #FFFFFF;
+}
+
+#research .themeM-panel.header-dropdown .avatar .name {
+    position: absolute;
+    left: 0px; bottom: 0px;
+    width: 40px;
+    overflow: hidden;
+    
+    white-space: nowrap;
+    text-align: center;
+    text-overflow: ellipsis;
+    
+    text-shadow: 1px 1px 0 #000000;
+    filter: glow(color=#000000, strength=0);
+}
+
+#research .themeM-panel.header-dropdown .status {
+    left: 50px; top: 0px; right: 0px; bottom: auto;
+    width: auto;
+}
+
+#research .themeM-panel.header-dropdown .status .anim,
+#research .themeM-panel.header-dropdown .status .icon,
+#research .themeM-panel.header-dropdown .status .name,
+#research .themeM-panel.header-dropdown .status .time
+{
+    position: absolute;
+}
+
+#research .themeM-panel.header-dropdown .status .anim {
+    left: 0px; top: 0px;
+    width: 40px; height: 40px;
+    
+    background: url("https://static.realmofempires.com/images/research-anim.gif") no-repeat center center;
+}
+
+#research .themeM-panel.header-dropdown .status .icon {
+    left: 48px; top: 0px;
+}
+
+#research .themeM-panel.header-dropdown .status .name {
+    left: 96px; top: 0px;
+    font-size: 14px;
+}
+
+#research .themeM-panel.header-dropdown .status .time {
+    left: 96px; top: auto; right: auto; bottom: 0px;
+}
+
+#research .themeM-panel.header-dropdown .status .idle,
+#research .themeM-panel.header-dropdown .status .hire {
+    padding-top: 13px;
+    height: auto;
+    font-size: 14px;
+}
+
+#research .themeM-panel.header-dropdown .status .idle {
+}
+
+#research .themeM-panel.header-dropdown .status .hire {
+    display: block;
+}
+
+/******************************************************************************/
+
+#research .themeM-panel.footer {
+    position: absolute;
+    left: 60px; top: auto; right: 0px; bottom: 0px;
+    width: auto; height: 40px;
+    z-index: 1;
+}
+
+
+#research .themeM-panel.footer .home
+{
+    display: block;
+    position: absolute;    
+    width: 44px; 
+    height: 44px;
+    left:-56px;
+    top: -4px;
+    background-image: url("https://static.realmofempires.com/images/icons/M_ResearchList.png");
+    background-repeat: no-repeat;
+    
+    cursor: pointer;
+}
+
+#research .themeM-panel.footer .container {
+    position: absolute;
+    left: 13px; top: -2px; right: 10px; bottom: -2px;
+    width: auto; height: auto;
+}
+
+#research .themeM-panel.footer .container > .scroll > .scroll-content {
+    height: 44px;
+}
+
+#research .themeM-panel.footer .researchType > li
+{
+    padding: 0 10px 0 0;
+}
+
+#research .themeM-panel.footer .researchType > li > a {
+    display: block;
+    position: relative;
+    width: auto; height: 44px;
+    min-width: 44px;
+}
+
+#research .themeM-panel.footer .researchType > li .themeM-icon
+{
+    margin: 0 auto;
+}
+
+#research .themeM-panel.footer .researchType > li.none {
+    display: none;
+}
+
+#research .themeM-panel.footer .researchType > li .more 
+{
+    position: relative;
+    left: 0px; top: auto; right: auto; bottom: 10px;
+    margin: 0 2px;
+    width: 40px; height: 8px;
+    overflow: hidden;
+}
+
+#research .themeM-panel.footer .researchType > li.selected .more 
+{
+    width: auto;
+    overflow: visible;
+}
+
+#research .themeM-panel.footer .more > .researchItem {
+    display: table;
+    margin: 0 auto;
+}
+
+#research .themeM-panel.footer .more > .researchItem > li > .blip {
+    display: block;
+    margin: 1px;
+    border: 1px solid #000000;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+    width: 6px; height: 6px;
+    background-color: #028530;
+    -webkit-transition: background-color 0.5s ease 0.0s, -webkit-box-shadow 0.5s ease 0.0s;
+       -moz-transition: background-color 0.5s ease 0.0s,    -moz-box-shadow 0.5s ease 0.0s;
+        -ms-transition: background-color 0.5s ease 0.0s,     -ms-box-shadow 0.5s ease 0.0s;
+         -o-transition: background-color 0.5s ease 0.0s,      -o-box-shadow 0.5s ease 0.0s;
+            transition: background-color 0.5s ease 0.0s,         box-shadow 0.5s ease 0.0s;
+}
+
+#research .themeM-panel.footer .researchType .more > .researchItem > li.selected > .blip {
+    background-color: #16FF42;
+    background-image: none;
+    -webkit-box-shadow: 0 0 4px #16FF42;
+       -moz-box-shadow: 0 0 4px #16FF42;
+        -ms-box-shadow: 0 0 4px #16FF42;
+         -o-box-shadow: 0 0 4px #16FF42;
+            box-shadow: 0 0 4px #16FF42;
+}
+
+/******************************************************************************/
+
+#research .themeM-panel.research {
+    position: absolute;
+    left: 0px; top: 50px; right: 0px; bottom: 50px;
+    width: auto; height: auto;
+    z-index: 0;
+}
+
+#research .themeM-panel.research > .fg > .margin
+{
+    position: absolute;
+    left: 10px; top: 10px; right: 10px; bottom: 10px;
+    width: auto; height: auto;
+    overflow: hidden;
+}
+
+#research .themeM-panel.research a {
+    text-decoration: none;
+}
+
+#research .themeM-panel.research .themeM-view.master {
+}
+
+#research .themeM-panel.research .themeM-view.master > .scroll > .scroll-content {
+    width: 280px;
+}
+
+#research .themeM-panel.research .researchType > li > a {
+    display: block;
+    position: relative;
+    margin: 0 0 4px 0;
+    width: auto; height: 44px;
+}
+
+#research .themeM-panel.research .themeM-icon,
+#research .themeM-panel.research .more,
+#research .themeM-panel.research .name,
+#research .themeM-panel.research .themeM-progress {
+    position: absolute;
+}
+
+#research .themeM-panel.research .themeM-icon
+{
+    left: 0px; top: 0px;
+}
+
+#research .themeM-panel.research .researchType > li.some .more.none {
+    display: none;
+}
+
+#research .themeM-panel.research .researchType > li.none .more.some {
+    display: none;
+}
+
+#research .themeM-panel.research .more {
+    left: auto; top: 1px; right: 0px; bottom: auto;
+    
+    color: #FFFFFF;
+    font: 14px/1.0em "IM Fell French Canon SC", serif;
+}
+
+#research .themeM-panel.research .name {
+    left: 54px; top: 0px; right: 104px; bottom: auto;
+    width: auto; height: 24px;
+    overflow: hidden;
+    
+    color: #FFFFFF;
+    font: 14px/1.0em "Eagle Lake", serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#research .themeM-panel.research .themeM-progress {
+    left: 54px; top: auto; right: 0px; bottom: 8px;
+    margin: 0;
+    width: auto; height: 16px;
+}
+
+#research .themeM-panel.research .themeM-view.detail {
+}
+
+#research .themeM-panel.research .buffer {
+    position: absolute;
+    left: 0px; top: 0px;
+}

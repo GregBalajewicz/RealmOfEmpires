@@ -1,0 +1,2607 @@
+﻿.themeM-page {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+    .themeM-page > .bg {
+    }
+
+    .themeM-page > .fg {
+        overflow: hidden;
+    }
+
+/******************************************************************************/
+
+.themeM-view {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/******************************************************************************/
+
+.themeM-panel,
+.themeM-group,
+.themeM-tabPanel {
+    position: relative;
+    margin: 6px;
+    min-height: 16px;
+}
+
+
+
+
+    .themeM-panel > .bg,
+    .themeM-tabPanel > .themeM-tabContent > .bg {
+        border: 1px solid #726F68;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1.0)), color-stop(100%, rgba(0, 0, 0, 1.0)));
+        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+        background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+        background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+        background-image: -o-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+    }
+
+
+    .themeM-panel.disabled > .bg,
+    .disabled .themeM-panel > .bg {
+        border-color: #808080;
+    }
+
+    .themeM-panel > .bg > .corner-tl,
+    .themeM-panel > .bg > .corner-br,
+    .themeM-tabPanel > .themeM-tabContent > .bg > .corner-tl,
+    .themeM-tabPanel > .themeM-tabContent > .bg > .corner-br {
+        position: absolute;
+        width: 22px;
+        height: 31px;
+        background-repeat: no-repeat;
+    }
+
+    .themeM-panel > .bg > .corner-tl,
+    .themeM-tabPanel > .themeM-tabContent > .bg > .corner-tl {
+        left: -8px;
+        top: -8px;
+        background-image: url("https://static.realmofempires.com/images/misc/M_BoxTLGold.png");
+    }
+
+    .themeM-panel.disabled > .bg > .corner-tl,
+    .disabled .themeM-panel > .bg > .corner-tl {
+        background-image: url("https://static.realmofempires.com/images/misc/M_BoxTLGray.png");
+    }
+
+    .themeM-panel > .bg > .corner-br,
+    .themeM-tabPanel > .themeM-tabContent > .bg > .corner-br {
+        left: auto;
+        top: auto;
+        right: -8px;
+        bottom: -8px;
+        background-image: url("https://static.realmofempires.com/images/misc/M_BoxBRGold.png");
+    }
+
+    .themeM-panel.disabled > .bg > .corner-br,
+    .disabled .themeM-panel > .bg > .corner-br {
+        background-image: url("https://static.realmofempires.com/images/misc/M_BoxBRGray.png");
+    }
+
+    .themeM-panel > .fg {
+    }
+
+        .themeM-panel > .fg h1 {
+            margin: 10px;
+            color: #FFFFFF;
+            font: 16px/1.0em "charlemagne_stdbold";
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 0 0 4px #000000;
+        }
+
+        .themeM-panel > .fg h2 {
+            margin: 10px 10px -10px 20px;
+            color: #888888;
+            font: 16px/1.0em "charlemagne_stdbold";
+            text-transform: uppercase;
+            text-shadow: 0 0 4px #000000;
+        }
+
+        .themeM-panel > .fg .themeM-panel > .bg {
+            background: transparent;
+        }
+
+    .themeM-group > .fg {
+        padding: 3px 0;
+    }
+
+    /******************************************************************************/
+
+    .themeM-panel.header {
+        height: 30px;
+    }
+
+        .themeM-panel.header > .bg > .stripe {
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            right: 3px;
+            bottom: 3px;
+            width: auto;
+            height: auto;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            background-image: url(https://static.realmofempires.com/images/misc/knotDesign.png);
+        }
+
+        .themeM-panel.header > .fg > .themeM-icon {
+            position: absolute;
+            left: 0px;
+            top: -7px;
+        }
+
+        .themeM-panel.header > .fg > .label {
+            position: absolute;
+            left: 54px;
+            top: 4px;
+            right: 40px;
+            bottom: 4px;
+            width: auto;
+            height: auto;
+            overflow: hidden;
+            color: #FFD776;
+            font: 18px/1.0em "IM Fell French Canon SC", serif;
+            text-transform: uppercase;
+            white-space: nowrap;
+            -webkit-text-overflow: ellipsis;
+            -moz-text-overflow: ellipsis;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            text-shadow: 0 0 4px #000000;
+            line-height: 23px;
+        }
+
+        .themeM-panel.header > .fg > .level {
+            display: none;
+            position: absolute;
+            left: 10px;
+            top: 8px;
+            width: 20px;
+            height: auto;
+            color: #C8C8C8;
+            font: 16px/1.0em "charlemagne_stdbold";
+            text-transform: uppercase;
+            text-align: right;
+        }
+
+        .themeM-panel.header > .fg > .close {
+            position: absolute;
+            left: auto;
+            top: -7px;
+            right: -6px;
+            bottom: auto;
+            width: 44px;
+            height: 44px;
+            background-image: url("https://static.realmofempires.com/images/icons/M_X.png");
+            background-repeat: no-repeat;
+        }
+
+    /******************************************************************************/
+
+    .themeM-panel.style-link {
+        height: 26px;
+    }
+
+    .themeM-panel > .fg .themeM-panel.style-link > .bg {
+        background-image: url("https://static.realmofempires.com/images/misc/M_BGCharlieBrownSmall.png");
+        background-position: 0 center;
+        background-repeat: repeat-x;
+    }
+
+    .themeM-panel.style-link > .fg > .themeM-more {
+        float: right;
+        margin-top: -2px;
+    }
+
+    .themeM-panel.style-link > .fg > .themeM-button {
+        float: left;
+        margin: 0;
+        margin-top: -5px;
+    }
+
+    .themeM-panel.style-link > .fg > .label,
+    .themeM-panel.style-link > .fg > .labelDone {
+        padding: 6px 12px 4px 12px;
+        overflow: hidden;
+        color: #FFFFFF;
+        font: 16px/1.0em "charlemagne_stdbold";
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        text-shadow: 0 0 4px #000000;
+    }
+
+    .themeM-panel > .fg .themeM-panel.style-link > .fg > .label,
+    .themeM-panel > .fg .themeM-panel.style-link > .fg > .labelDone {
+        text-align: left;
+    }
+
+    /******************************************************************************/
+
+    .themeM-panel.style-more {
+    }
+
+        .themeM-panel.style-more > .fg > .themeM-panel {
+            margin: 0;
+        }
+
+/******************************************************************************/
+
+.themeM-button {
+    position: relative;
+    margin: 10px;
+    min-height: 36px;
+}
+
+    .themeM-button > .bg {
+        border: 2px solid #FFD776;
+        background-image: url("https://static.realmofempires.com/images/misc/M_ButtonBG.jpg");
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+    .themeM-button.color-premium > .bg {
+        border-color: #70DABF;
+    }
+
+    .themeM-button.color-warning > .bg {
+        background-image: url("https://static.realmofempires.com/images/misc/M_ButtonBGCancel.jpg");
+    }
+
+    .themeM-button > .bg > .corner-tl,
+    .themeM-button > .bg > .corner-tr,
+    .themeM-button > .bg > .corner-bl,
+    .themeM-button > .bg > .corner-br {
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+
+    .themeM-button > .bg > .corner-tl {
+        left: -2px;
+        top: -3px;
+        width: 26px;
+        height: 18px;
+        background-image: url("https://static.realmofempires.com/images/misc/M_ButtonTL.png");
+    }
+
+    .themeM-button > .bg > .corner-tr {
+        left: auto;
+        top: -2px;
+        right: -2px;
+        bottom: auto;
+        width: 14px;
+        height: 15px;
+        background-image: url("https://static.realmofempires.com/images/misc/M_ButtonTR.png");
+    }
+
+    .themeM-button > .bg > .corner-bl {
+        left: -2px;
+        top: auto;
+        right: auto;
+        bottom: -5px;
+        width: 14px;
+        height: 20px;
+        background-image: url("https://static.realmofempires.com/images/misc/M_ButtonBL.png");
+    }
+
+    .themeM-button > .bg > .corner-br {
+        left: auto;
+        top: auto;
+        right: -2px;
+        bottom: -5px;
+        width: 28px;
+        height: 20px;
+        background-image: url("https://static.realmofempires.com/images/misc/M_ButtonBR.png");
+    }
+
+    .themeM-button > .fg {
+    }
+
+        .themeM-button > .fg > .themeM-icon {
+            float: left;
+            margin: 3px 0 3px 6px;
+        }
+
+        .themeM-button > .fg > .label {
+            display: table-cell;
+            padding: 11px 12px 9px 12px;
+            overflow: hidden;
+            color: #FFFFFF;
+            font: 16px/1.0em "charlemagne_stdbold";
+            text-transform: uppercase;
+            white-space: nowrap;
+            -webkit-text-overflow: ellipsis;
+            -moz-text-overflow: ellipsis;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            text-shadow: 0 0 4px #000000;
+        }
+
+        .themeM-button > .fg > .themeM-icon + .label {
+            padding-left: 0;
+        }
+
+    .themeM-button.color-warning > .fg > .label {
+        color: #EF4C4C;
+    }
+
+/******************************************************************************/
+
+.themeM-more {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+    .themeM-more > .bg {
+        border: 2px solid #846824;
+        background: #000000;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+        .themeM-more > .bg > .corner-tl {
+            position: absolute;
+            left: -8px;
+            top: -8px;
+            width: 22px;
+            height: 31px;
+            background-image: url("https://static.realmofempires.com/images/misc/M_BoxTLGold.png");
+            background-repeat: no-repeat;
+        }
+
+    .themeM-more > .fg {
+    }
+
+        .themeM-more > .fg > .label {
+            padding: 4px 0 2px 0;
+            color: #FFFFFF;
+            font: 24px/1.0em "charlemagne_stdbold";
+            text-transform: uppercase;
+            text-align: center;
+            text-shadow: 0 0 4px #000000;
+        }
+
+        .themeM-more > .fg > .arrow-l {
+            position: absolute;
+            left: -14px;
+            top: 2px;
+            right: auto;
+            bottom: auto;
+            width: 20px;
+            height: 26px;
+            background-image: url("https://static.realmofempires.com/images/misc/M_ArrowL.png");
+            background-repeat: no-repeat;
+        }
+
+        .themeM-more > .fg > .arrow-r {
+            position: absolute;
+            left: auto;
+            top: 2px;
+            right: -14px;
+            bottom: auto;
+            width: 20px;
+            height: 26px;
+            background-image: url("https://static.realmofempires.com/images/misc/M_ArrowR.png");
+            background-repeat: no-repeat;
+        }
+
+        .themeM-more > .fg > .arrow-t {
+            position: absolute;
+            left: 2px;
+            top: -15px;
+            right: auto;
+            bottom: auto;
+            width: 26px;
+            height: 20px;
+            background-image: url("https://static.realmofempires.com/images/misc/M_ArrowUp.png");
+            background-repeat: no-repeat;
+        }
+
+        .themeM-more > .fg > .arrow-b {
+            position: absolute;
+            left: 2px;
+            top: auto;
+            right: auto;
+            bottom: -15px;
+            width: 26px;
+            height: 20px;
+            background-image: url("https://static.realmofempires.com/images/misc/M_ArrowDown.png");
+            background-repeat: no-repeat;
+        }
+
+/******************************************************************************/
+
+.themeM-progress {
+    position: relative;
+    margin: 10px;
+    width: auto;
+    height: 22px;
+}
+
+    .themeM-progress > .bg {
+        border: 2px solid #846824;
+        background: #000000;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+
+        .themeM-progress > .bg > .corner-tl {
+            position: absolute;
+            left: -8px;
+            top: -8px;
+            width: 22px;
+            height: 31px;
+            background-image: url("https://static.realmofempires.com/images/misc/M_BoxTLGold.png");
+            background-repeat: no-repeat;
+        }
+
+    .themeM-progress > .fg {
+    }
+
+        .themeM-progress > .fg > .label,
+        .themeM-progress > .fg > .value {
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 1.0em;
+            text-shadow: 0 0 4px #000000;
+        }
+
+        .themeM-progress > .fg > .label {
+            padding: 4px 12px 2px 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            -webkit-text-overflow: ellipsis;
+            -moz-text-overflow: ellipsis;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+
+        .themeM-progress > .fg > .value + .label {
+            padding-right: 0;
+        }
+
+        .themeM-progress > .fg > .value {
+            float: right;
+            padding: 4px 12px 2px 12px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+.shine DIV:after {
+    -moz-animation: 2s ease-out 0s normal none infinite animate-shine;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.shine DIV {
+    position: relative;
+}
+
+.themeM-progress .progress-container {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    width: auto;
+    height: auto;
+}
+
+.themeM-progress .progress-indicator {
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    /*
+    background-color: rgba(2, 70, 133, 1.0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(2, 70, 133, 1.0)), color-stop(100%, rgba(22, 225, 255, 1.0)));
+    background: -webkit-linear-gradient(left, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    background:    -moz-linear-gradient(left, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    background:     -ms-linear-gradient(left, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    background:      -o-linear-gradient(left, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    background:         linear-gradient(to right, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    */
+    background-color: rgba(2, 133, 48, 1.0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(2, 133, 48, 1.0)), color-stop(100%, rgba(22, 255, 66, 1.0)));
+    background: -webkit-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+    background: -moz-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+    background: -ms-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+    background: -o-linear-gradient(left, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+    background: linear-gradient(to right, rgba(2, 133, 48, 1.0) 0%, rgba(22, 255, 66, 1.0) 100%);
+}
+
+.themeM-progress .red-progress-indicator {
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    /*
+    background-color: rgba(2, 70, 133, 1.0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(2, 70, 133, 1.0)), color-stop(100%, rgba(22, 225, 255, 1.0)));
+    background: -webkit-linear-gradient(left, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    background:    -moz-linear-gradient(left, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    background:     -ms-linear-gradient(left, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    background:      -o-linear-gradient(left, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    background:         linear-gradient(to right, rgba(2, 70, 133, 1.0) 0%, rgba(22, 225, 255, 1.0) 100%);
+    */
+    background-color: rgba(133, 2, 48, 1.0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(133, 2, 48, 1.0)), color-stop(100%, rgba(255, 22, 66, 1.0)));
+    background: -webkit-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: -moz-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: -ms-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: -o-linear-gradient(left, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+    background: linear-gradient(to right, rgba(133, 2, 48, 1.0) 0%, rgba(255, 22, 66, 1.0) 100%);
+}
+
+/******************************************************************************/
+
+.themeM-squiggle-t,
+.themeM-squiggle-b {
+    position: absolute;
+    left: 0px;
+    top: auto;
+    right: 0px;
+    bottom: auto;
+    margin: 0 auto;
+    width: 247px;
+    height: 15px;
+    background-repeat: no-repeat;
+}
+
+.themeM-squiggle-t {
+    top: -8px;
+    background-image: url("https://static.realmofempires.com/images/misc/M_SpacerBottom.png");
+}
+
+.themeM-squiggle-b {
+    bottom: -9px;
+    background-image: url("https://static.realmofempires.com/images/misc/M_SpacerTop.png");
+}
+
+/******************************************************************************/
+
+.themeM-icon {
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+    .themeM-icon.scale-large,
+    .themeM-icon.scale-large > img,
+    .themeM-icon.scale-large > .bg > img,
+    .themeM-icon.scale-large > .fg > img {
+        width: 44px;
+        height: 44px;
+    }
+
+        .themeM-icon.scale-large > .bg {
+            left: -3px;
+            top: -3px;
+            right: auto;
+            bottom: auto;
+            width: 72px;
+            height: 47px;
+            background-image: url("https://static.realmofempires.com/images/misc/M_HeaderIconBG.png");
+            background-repeat: no-repeat;
+        }
+
+        .themeM-icon.scale-large > .fg {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            width: auto;
+            height: auto;
+        }
+
+        .themeM-icon.scale-large.building-barracks > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Barracks.png");
+        }
+
+        .themeM-icon.scale-large.building-farm > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Farm.png");
+        }
+
+        .themeM-icon.scale-large.building-headquarters > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_HQ.png");
+        }
+
+        .themeM-icon.scale-large.building-palace > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Palace.png");
+        }
+
+        .themeM-icon.scale-large.building-siegeWorkshop > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Siege.png");
+        }
+
+        .themeM-icon.scale-large.building-silverMine > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_SilverMine.png");
+        }
+
+        .themeM-icon.scale-large.building-stable > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Stable.png");
+        }
+
+        .themeM-icon.scale-large.building-tavern > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Tavern.png");
+        }
+
+        .themeM-icon.scale-large.building-tradingPost > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_TradingPost.png");
+        }
+
+        .themeM-icon.scale-large.building-treasury > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Treasury.png");
+        }
+
+        .themeM-icon.scale-large.building-towers > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Tower.png");
+        }
+
+        .themeM-icon.scale-large.building-wall > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Wall.png");
+        }
+
+        .themeM-icon.scale-large.unit-knight > .fg {
+            background-image: url("https://static.realmofempires.com/images/icons/M_Knight.png");
+        }
+
+    .themeM-icon.scale-small,
+    .themeM-icon.scale-small > img {
+        width: 30px;
+        height: 30px;
+    }
+
+        .themeM-icon.scale-small.action-build {
+            background-image: url("https://static.realmofempires.com/images/icons/M_IcoBuild.png");
+        }
+
+        .themeM-icon.scale-small.action-cancel {
+            background-image: url("https://static.realmofempires.com/images/icons/M_IcoCancel.png");
+        }
+
+        .themeM-icon.scale-small.action-recruit {
+            background-image: url("https://static.realmofempires.com/images/icons/M_IcoRecruit.png");
+        }
+
+        .themeM-icon.scale-small.action-speedup {
+            width: 42px;
+            background-image: url("https://static.realmofempires.com/images/icons/M_IcoSpeedUpWIDEyellow.png");
+        }
+
+        .themeM-icon.scale-small.action-upgrade {
+            background-image: url("https://static.realmofempires.com/images/icons/M_IcoUpgrade.png");
+        }
+
+    .themeM-icon.scale-micro,
+    .themeM-icon.scale-micro > img {
+        width: 20px;
+        height: 20px;
+    }
+
+/******************************************************************************/
+
+.action,
+.style-link,
+.themeM-button,
+.themeM-more {
+    cursor: pointer;
+}
+
+.spacer {
+    width: auto;
+    height: 0px;
+    visibility: hidden;
+}
+
+/******************************************************************************/
+
+.bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+    z-index: 0;
+}
+
+.fg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/******************************************************************************/
+
+ul.list-x,
+ul.list-y {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    ul.list-x > li {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    ul.list-y > li {
+        display: block;
+    }
+
+.template {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/******************************************************************************/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/******************************************************************************/
+
+
+/*********************           themeM-tabPanel           **************************/
+
+.themeM-tabPanel {
+    margin-top: 44px;
+}
+
+    .themeM-tabPanel > .themeM-tabContent {
+        position: relative;
+    }
+
+        .themeM-tabPanel > .themeM-tabContent > .fg {
+            padding: 6px;
+        }
+
+    .themeM-tabPanel > .themeM-tabs {
+        width: 100%;
+        margin-right: 15px;
+        position: absolute;
+        margin-left: 15px;
+        top: -44px;
+    }
+
+        .themeM-tabPanel > .themeM-tabs ul {
+            list-style: none;
+            height: 35px;
+            padding: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .themeM-tabPanel > .themeM-tabs li {
+            list-style: none;
+            float: left;
+            white-space: nowrap;
+            margin-top: 3px;
+        }
+
+        .themeM-tabPanel > .themeM-tabs a {
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin: 0px 2px 0px 2px;
+            float: left;
+            text-decoration: none;
+            color: rgb(138, 138, 138);
+            padding: 4px 5px;
+            display: block;
+            border-left: 2px solid #846824;
+            border-top: 2px solid #846824;
+            border-right: 2px solid #846824;
+            width: 70px;
+            height: 35px;
+            font: 12px/1.0em "charlemagne_stdbold";
+            line-height: 16px;
+            -webkit-transition: color 0.5s ease 0.0s;
+            -webkit-text-shadow: 1px 2px black;
+            text-shadow: 1px 2px black;
+        }
+
+
+
+            .themeM-tabPanel > .themeM-tabs a.oneLine {
+                line-height: 35px;
+            }
+
+            .themeM-tabPanel > .themeM-tabs a.selected {
+                background-color: #000000;
+                color: #ffffff;
+                -webkit-transition: color 0.5s ease 0.0s;
+            }
+
+
+    /*special tabs without the border around the content*/
+    .themeM-tabPanel.noBoxAroundContent {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+        .themeM-tabPanel.noBoxAroundContent > .themeM-tabContent > .bg {
+            border: none;
+            border-top: 2px solid #846824;
+            -webkit-border-radius: 0px;
+            border-radius: 0px;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1.0)), color-stop(100%, rgba(0, 0, 0, 1.0)));
+            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+            background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+            background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+            background-image: -o-linear-gradient(top, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 1.0) 100%);
+        }
+
+        .themeM-tabPanel.noBoxAroundContent > .themeM-tabContent > .fg {
+            padding: 0px;
+            padding-top: 2px;
+        }
+
+
+.pressedEffect:active,
+.pressedEffect.pressed {
+    left: 1px;
+    top: 1px;
+}
+
+.pressedEffect.type2:active,
+.pressedEffect.type2.pressed {
+    background-position: 1px 1px;
+}
+
+
+/*********************    END    themeM-tabPanel           **************************/
+
+
+
+/* DEV CONSOLE ELEMENTS */
+#betaFeaturePanel {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(0,0,0,0.9);
+    z-index: 10;
+}
+    #betaFeaturePanel .close {
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 5px 10px;
+        background: rgba(220, 0, 0, 0.8);
+        cursor:pointer;
+    }
+        #betaFeaturePanel .close:hover,
+        #betaFeaturePanel .close:active {
+            background: rgba(255, 30, 30, 1);
+        }
+
+    #betaFeaturePanel .itemRow {
+        position: relative;
+        height: 20px;
+        width: 240px;
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+        cursor:pointer;
+    }
+        #betaFeaturePanel .itemRow.ON {
+            background-color: rgba(63, 202, 28, 0.7);
+        }
+        #betaFeaturePanel .itemRow.OFF {
+            background-color: rgba(240, 33, 33, 0.7);
+        }
+/* END OF DEV CONSOLE ELEMENTS*/
+
+
+
+/* COMMON ELEMENTS */
+
+/*GOLD FR SC */
+.fontGoldFrSClrg {
+    font: 15px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontGoldFrSClrg2 {
+    font: 16px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontGoldFrSCxlrg {
+    font: 18px/1.0em "IM Fell French Canon SC", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+/*SILVER FR SC*/
+.fontSilverFrSCmed {
+    font: 13px/1.0em "IM Fell French Canon SC", serif;
+    color: #d7d7d7;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontSilverFrSCsm2 {
+    font: 12px/1.0em "IM Fell French Canon SC", serif;
+    color: #d7d7d7;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontSilverFrSClrg {
+    font: 15px/1.0em "IM Fell French Canon SC", serif;
+    color: #d7d7d7;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+/*SILVER FR LC*/
+.fontSilverFrLCmed {
+    font: 13px/1.0em "IM Fell French Canon", serif;
+    color: #d7d7d7;
+    text-shadow: 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontSilverFrLClrg {
+    font: 15px/1.0em "IM Fell French Canon", serif;
+    color: #d7d7d7;
+    text-shadow: 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontSilverFrLCXlrg {
+    font: 17px/1.0em "IM Fell French Canon", serif;
+    color: #d7d7d7;
+    text-shadow: 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+/*GOLD FR LC*/
+.fontGoldFrLCsm {
+    font: 11px "IM Fell French Canon", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontGoldFrLCmed {
+    font: 13px "IM Fell French Canon", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontGoldFrLClrg {
+    font: 15px "IM Fell French Canon", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontGoldFrLCXlrg {
+    font: 17px "IM Fell French Canon", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontGoldFrLC21 {
+    font: 21px "IM Fell French Canon", serif;
+    color: #e6cd90;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+/*DARK GOLD FR LC*/
+.fontDarkGoldFrLCsm {
+    font: 11px "IM Fell French Canon", serif;
+    color: #C5B494;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.fontDarkGoldFrLCmed {
+    font: 13px "IM Fell French Canon", serif;
+    color: #C5B494;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.fontDarkGoldFrLClrg {
+    font: 15px "IM Fell French Canon", serif;
+    color: #C5B494;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.fontDarkGoldFrLCxlrg {
+    font: 17px "IM Fell French Canon", serif;
+    color: #C5B494;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+/*GRAY FR LC*/
+.fontGrayFrLCmed {
+    font: 13px "IM Fell French Canon", serif;
+    color: #b2b2b2;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontGrayFrLClrg {
+    font: 15px "IM Fell French Canon", serif;
+    color: #b2b2b2;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+/*WHITE FR LC*/
+.fontWhiteFrLClrg {
+    font: 15px "IM Fell French Canon", serif;
+    color: #FFF;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.fontWhiteFrLCxlrg {
+    font: 17px "IM Fell French Canon", serif;
+    color: #FFF;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+/*NUMBER FONTS*/
+.fontWhiteNumbers {
+    color: #FFFFFF;
+    font: 11px/1.0em Georgia;
+}
+.fontSilverNumbersSm {
+    color: #d7d7d7;
+    font: 11px Georgia;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+.fontSilverNumbersMed {
+    color: #d7d7d7;
+    font: 13px Georgia;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+
+.fontSilverNumbersLrg {
+    color: #d7d7d7;
+    font: 15px Georgia;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+
+.fontGoldNumbersMed {
+    color: #e6cd90;
+    font: 13px Georgia;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+.fontGoldNumbersLrg {
+    color: #e6cd90;
+    font: 15px Georgia;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+.fontGoldNumbersXLrg {
+    color: #e6cd90;
+    font: 18px Georgia;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+
+
+.fontDarkGoldNumbersSm {
+    font: 11px Georgia;
+    color: #C5B494;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+.fontDarkGoldNumbersMed {
+    font: 13px Georgia;
+    color: #C5B494;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+.fontDarkGoldNumbersLrg {
+    font: 15px Georgia;
+    color: #C5B494;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+
+
+
+.fontGrayNumbersSm {
+    color: #B2B2B2;
+    font: 11px Georgia;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+.fontGrayNumbersMed {
+    color: #B2B2B2;
+    font: 13px Georgia;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+
+.fontMonoNumberSm {
+    color: #B7B7B7;
+    font-size:11px;
+    font-family: 'Droid Sans Mono', monospace;
+    text-shadow: 1px 1px 0 #000,1px 1px 0 #000;
+}
+
+
+
+/*BUTTON FONT*/
+.fontButton1M {
+    font: 15px/0.83em "IM Fell French Canon SC", serif;
+    color: #d7d7d7;
+    text-shadow: 0px -3px 3px #081137, 0px -2px 0px #081137, 0px 3px 3px #081137, 0px 2px 0px #081137, -3px 0px 0px #081137, 3px 0px 0px #081137;
+}
+.fontButton1L {
+    font: 17px/0.83em "IM Fell French Canon SC", serif;
+    color: #d7d7d7;
+    text-shadow: 0px -3px 3px #081137, 0px -2px 0px #081137, 0px 3px 3px #081137, 0px 2px 0px #081137, -3px 0px 0px #081137, 3px 0px 0px #081137;
+}
+
+.circleButton {
+    background-image: url('https://static.realmofempires.com/images/buttons/M_selectEmpty.png');
+    background-size: 100% 100%;
+    width: 38px;
+    height: 38px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-top: 12px;
+}
+    .circleButton:active {
+        padding-top: 13px;
+    }
+
+.smallRoundButtonDark {
+    width: 38px;
+    height: 38px;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px -100px;
+    padding-top: 7px;
+    padding-right: 2px;
+    text-align: center;
+    cursor: pointer;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .smallRoundButtonDark:active {
+        background-position: -50px -100px;
+        padding-top: 8px;
+    }
+
+.smallRoundButtonLight {
+    width: 38px;
+    height: 40px;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px -50px;
+    padding-top: 6px;
+    padding-right: 2px;
+    text-align: center;
+    cursor: pointer;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+    .smallRoundButtonLight:active {
+        background-position: -50px -50px;
+        padding-top: 6px;
+    }
+
+
+    /*ROE UI BUTTONS, */
+  /* please refer to: https://docs.google.com/a/bdaentertainment.com/document/d/1gFg5YD_GmtejChryPSpIWyJwzfiLwyEt1jvIL4GdqKI/edit#heading=h.m30ebdeo8no2 */
+
+.BtnBSm1 {
+    height: 40px;
+    width: 95px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px -150px;
+    overflow: hidden;
+}
+
+    .BtnBSm1:active:not(.grayout) {
+        background-position: 0px -200px;
+        padding-top: 11px;
+    }
+
+.BtnBSm2 {
+    height: 40px;
+    width: 110px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -100px -50px;
+    overflow: hidden;
+}
+
+    .BtnBSm2:active:not(.grayout) {
+        background-position: -100px -100px;
+        padding-top: 11px;
+    }
+
+.BtnDSm2 {
+    height: 40px;
+    width: 110px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -250px -50px;
+    overflow: hidden;
+}
+
+    .BtnDSm2:active:not(.grayout) {
+        background-position: -250px -100px;
+        padding-top: 11px;
+    }
+
+.BtnDSm2n {
+    height: 30px;
+    width: 105px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 9px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -150px 0px;
+    overflow: hidden;
+}
+
+    .BtnDSm2n:active:not(.grayout) {
+        background-position: -300px 0px;
+        padding-top: 10px;
+    }
+
+.BtnDSm2n .smallArrowLeft {
+    top: 7px;
+}
+    .BtnDSm2n:active:not(.grayout)  .smallArrowLeft{
+        top: 8px;
+    }
+
+.BtnDLf1 {
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -250px 300px;
+    overflow: hidden;
+}
+
+    .BtnDLf1:active:not(.grayout) {      
+        background-position: -250px 250px;
+        padding-top: 11px;
+    }
+
+    
+.BtnBMed1 {
+    height: 40px;
+    width: 92px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 11px;
+    cursor: pointer;
+    overflow:auto;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -0px -150px;
+    overflow: hidden;
+}
+
+    .BtnBMed1:active:not(.grayout) {
+        background-position: -0px -200px;
+        padding-top: 12px;
+    }
+
+
+.BtnBLg1 {
+    height: 37px;
+    width: 135px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 11px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -100px -250px;
+    overflow: hidden;
+}
+
+    .BtnBLg1:active:not(.grayout) {
+        background-position: -100px -300px;
+        padding-top: 12px;
+    }
+
+.BtnBLg2 {
+    height: 40px;
+    width: 179px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 11px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px -350px;
+    overflow: hidden;
+}
+
+    .BtnBLg2:active:not(.grayout) {
+        background-position: 0px -400px;
+        padding-top: 12px;
+    }
+
+.BtnDLg2 {
+    height: 40px;
+    width: 179px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 11px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -200px -350px;
+    overflow: hidden;
+}
+
+    .BtnDLg2:active:not(.grayout) {
+        background-position: -200px -400px;
+        padding-top: 12px;
+    }
+
+.BtnBXLg1 {
+    height: 40px;
+    width: 222px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 12px;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px -450px;
+    overflow: hidden;
+}
+    .BtnBXLg1:active:not(.grayout) {
+        background-position: 0px -500px;
+        padding-top: 13px;
+    }
+
+    /*end of buttons */
+
+
+.spLargeArrowL {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -400px -100px;
+    width: 23px;
+    height: 28px;
+}
+.spLargeArrowR {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -400px -50px;
+    width: 23px;
+    height: 28px;
+}
+    
+.smallArrowLeft {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -400px -300px;
+    position: absolute;
+    top: 9px;
+    left: 16px;
+    width: 17px;
+    height: 20px;
+}
+
+.smallArrowRight {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -400px -250px;
+    position: absolute;
+    top: 9px;
+    right: 13px;
+    width: 17px;
+    height: 20px;
+}
+div:active > .smallArrowRight {
+    top: 10px;
+}
+
+.smallArrowUp {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -400px -400px;
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    width: 20px;
+    height: 17px;
+}
+.smallArrowDown {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -400px -350px;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    width: 20px;
+    height: 17px;
+}
+div:active > .smallArrowUp,
+div:active > .smallArrowDown {
+    top: 11px;
+}
+
+.smallRoundButtonDark .smallArrowUp,
+.smallRoundButtonDark .smallArrowDown {
+    top: 11px;
+    right: 10px;
+}
+div:active > .smallRoundButtonDark .smallArrowUp,
+div:active > .smallRoundButtonDark .smallArrowDown {
+    top: 12px;
+}
+
+/*thin silver divider*/
+.sectionDivider {
+    position: absolute;
+    left: 50%;
+    margin-left: -116px;
+    width: 233px;
+    height: 8px;
+    background-image: url('https://static.realmofempires.com/images/misc/M_SP_UIMisc.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+/*thin golden divider*/
+.sectionDividerGold {
+    position: absolute;
+    left: 50%;
+    margin-left: -116px;
+    width: 233px;
+    height: 8px;
+    background-image: url('https://static.realmofempires.com/images/misc/M_SP_UIMisc.png');
+    background-repeat: no-repeat;
+    background-position: 0px -49px;
+}
+
+
+/*big golden bar*/
+.sectionBar {
+    position: absolute;
+    left: 50%;
+    margin-left: -123px;
+    width: 246px;
+    height: 19px;
+    background-image: url('https://static.realmofempires.com/images/misc/M_SP_UIMisc.png');
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+}
+
+
+
+.Spacer_verticalL {
+    background-image: url("https://static.realmofempires.com/images/misc/M_SP_UIMisc.png");
+    background-position: 0px -150px;
+    width: 17px;
+    height: 54px;
+}
+
+.Spacer_verticalR {
+    background-image: url("https://static.realmofempires.com/images/misc/M_SP_UIMisc.png");
+    background-position: -50px -150px;
+    width: 17px;
+    height: 54px;
+}
+
+.largeArrowR {
+    position:absolute;
+    width: 20px;
+    height: 26px;
+    background-image: url("https://static.realmofempires.com/images/misc/M_ArrowR.png");
+    background-repeat: no-repeat;
+}
+/* END OF COMMON ELEMENTS*/
+
+
+.grayout {
+    opacity: 0.5 !important;
+}
+
+
+/* STANDARD PROGRESS BAR STYLE 1 */
+.sProgressContainer {
+    position: relative;
+    float: left;
+    width: 160px;
+    height: 23px;
+    margin: 14px 0px 0px 0px;
+    border: 2px solid #63594c;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2px;
+}
+
+
+    .sProgressContainer .sProgressBar {
+        height: 100%;
+        border-radius: 6px;
+        border: 1px solid #445c64;
+        box-sizing: border-box;
+        background: #3e565e; /* Old browsers */
+        background: -moz-linear-gradient(left, #3e565e 0%, #172737 6%, #2a4950 29%, #385f62 35%, #5a998d 40%, #568462 65%, #264355 92%, #445c64 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#3e565e), color-stop(6%,#172737), color-stop(29%,#2a4950), color-stop(35%,#385f62), color-stop(40%,#5a998d), color-stop(65%,#568462), color-stop(92%,#264355), color-stop(100%,#445c64)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* IE10+ */
+        background: linear-gradient(to right, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e565e', endColorstr='#445c64',GradientType=1 ); /* IE6-9 */
+        background-size: 160px; /*TO PREVENT SQUISH */
+        -webkit-transition: width .5s ease-out;
+        -moz-transition: width .5s ease-out;
+        -ms-transition: width .5s ease-out;
+        -o-transition: width .5s ease-out;
+        transition: width .5s ease-out;
+    }
+        .sProgressContainer .sProgressBar.finished {
+            border: 1px solid #B35706;
+            background: #D4BA2A;
+            background: -moz-linear-gradient(left, rgba(212,186,42,1) 0%, rgba(174,99,19,1) 3%, rgba(211,139,23,1) 39%, rgba(245,215,76,1) 42%, rgba(224,190,67,1) 61%, rgba(174,99,19,1) 92%, rgba(103,38,2,1) 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#D4BA2A), color-stop(3%,#AE6313), color-stop(39%,#D38B17), color-stop(42%,#F5D74C), color-stop(61%,#E0BE43), color-stop(92%,#AE6313), color-stop(100%,#672602));
+            background: -webkit-linear-gradient(left, #D4BA2A 0%,#AE6313 3%,#D38B17 39%,#F5D74C 42%,#E0BE43 61%,#AE6313 92%,#672602 100%);
+            background: -o-linear-gradient(left, rgba(212,186,42,1) 0%,rgba(174,99,19,1) 3%,rgba(211,139,23,1) 39%,rgba(245,215,76,1) 42%,rgba(224,190,67,1) 61%,rgba(174,99,19,1) 92%,rgba(103,38,2,1) 100%);
+            background: -ms-linear-gradient(left, rgba(212,186,42,1) 0%,rgba(174,99,19,1) 3%,rgba(211,139,23,1) 39%,rgba(245,215,76,1) 42%,rgba(224,190,67,1) 61%,rgba(174,99,19,1) 92%,rgba(103,38,2,1) 100%);
+            background: linear-gradient(to right, #D4BA2A 0%,#AE6313 3%,#D38B17 39%,#F5D74C 42%,#E0BE43 61%,#AE6313 92%,#672602 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ba2a', endColorstr='#672602',GradientType=1 );
+            background-size: 160px; /*TO PREVENT SQUISH */
+            width: 100% !important;
+            box-shadow: 0 0 2px 1px #B35706;
+        }
+
+        .sProgressContainer .sProgressBar.finishedDowngrade {
+            background: #8d0025; /* Old browsers */
+            background: -moz-linear-gradient(left, #8d0025 0%, #550010 7%, #7d0021 34%, #a50030 37%, #990020 69%, #67001c 90%, #860014 99%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8d0025), color-stop(7%,#550010), color-stop(34%,#7d0021), color-stop(37%,#a50030), color-stop(69%,#990020), color-stop(90%,#67001c), color-stop(99%,#860014)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, #8d0025 0%,#550010 7%,#7d0021 34%,#a50030 37%,#990020 69%,#67001c 90%,#860014 99%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, #8d0025 0%,#550010 7%,#7d0021 34%,#a50030 37%,#990020 69%,#67001c 90%,#860014 99%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, #8d0025 0%,#550010 7%,#7d0021 34%,#a50030 37%,#990020 69%,#67001c 90%,#860014 99%); /* IE10+ */
+            background: linear-gradient(to right, #8d0025 0%,#550010 7%,#7d0021 34%,#a50030 37%,#990020 69%,#67001c 90%,#860014 99%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d0025', endColorstr='#860014',GradientType=1 ); /* IE6-9 */
+        }
+
+    .sProgressContainer .sTimeBar {
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        bottom: 4px;
+        right: 4px;
+        text-align: center;
+    }
+
+        /*END OF STANDARD PROGRESS STYLE 1*/
+
+/* SPEED UP PANEL STYLE */
+.speedUpOptionsPopup .pContent {
+    width: 250px;
+    margin: 0 auto;
+}
+
+    .speedUpOptionsPopup .pContent .speedUpItemRewards {
+        position: relative;
+        width: 80px;
+        height: 44px;
+        padding: 5px 0px;
+        margin-left: 35px;
+        text-align: center;
+        line-height: 17px;
+        padding-right: 47px;
+        background-image: url(https://static.realmofempires.com/images/icons/M_Reward.png);
+        background-size: 44px 44px;
+        background-position: right 0px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    .speedUpOptionsPopup .pContent .notEnoughSpeedUp {
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+.speedUpOptionsPopup .sHeader {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+    .speedUpOptionsPopup .sHeader .sIcon {
+        position: relative;
+        float: left;
+        width: 44px;
+        height: 44px;
+        margin: 6px 5px 6px 0;
+        background-size: 100% 100%;
+    }
+    .speedUpOptionsPopup .sHeader .sProgressContainer {
+        position: relative;
+        float: left;
+        width: 160px;
+        height: 23px;
+        margin: 14px 0px 0px 0px;
+        border: 2px solid #63594c;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 2px;
+    }
+
+        .speedUpOptionsPopup .sHeader .sProgressContainer.downgradeTempFix {
+            border: none;
+            width: 125px;
+        }
+            .speedUpOptionsPopup .sHeader .sProgressContainer.downgradeTempFix .sProgressBar {
+                border: none;
+                background:none;
+            }
+        .speedUpOptionsPopup .sHeader .sProgressContainer .sProgressBar {
+            height: 100%;
+            border-radius: 6px;
+            border: 1px solid #445c64;
+            box-sizing: border-box;
+            background: #3e565e; /* Old browsers */
+            background: -moz-linear-gradient(left, #3e565e 0%, #172737 6%, #2a4950 29%, #385f62 35%, #5a998d 40%, #568462 65%, #264355 92%, #445c64 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#3e565e), color-stop(6%,#172737), color-stop(29%,#2a4950), color-stop(35%,#385f62), color-stop(40%,#5a998d), color-stop(65%,#568462), color-stop(92%,#264355), color-stop(100%,#445c64)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* IE10+ */
+            background: linear-gradient(to right, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e565e', endColorstr='#445c64',GradientType=1 ); /* IE6-9 */
+            background-size: 160px; /*TO PREVENT SQUISH */
+            -webkit-transition: width .5s ease-out;
+            -moz-transition: width .5s ease-out;
+            -ms-transition: width .5s ease-out;
+            -o-transition: width .5s ease-out;
+            transition: width .5s ease-out;
+        }
+            .speedUpOptionsPopup .sHeader .sProgressContainer .sProgressBar.finished {
+                border: 1px solid #B35706;
+                background: #D4BA2A;
+                background: -moz-linear-gradient(left, rgba(212,186,42,1) 0%, rgba(174,99,19,1) 3%, rgba(211,139,23,1) 39%, rgba(245,215,76,1) 42%, rgba(224,190,67,1) 61%, rgba(174,99,19,1) 92%, rgba(103,38,2,1) 100%);
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#D4BA2A), color-stop(3%,#AE6313), color-stop(39%,#D38B17), color-stop(42%,#F5D74C), color-stop(61%,#E0BE43), color-stop(92%,#AE6313), color-stop(100%,#672602));
+                background: -webkit-linear-gradient(left, #D4BA2A 0%,#AE6313 3%,#D38B17 39%,#F5D74C 42%,#E0BE43 61%,#AE6313 92%,#672602 100%);
+                background: -o-linear-gradient(left, rgba(212,186,42,1) 0%,rgba(174,99,19,1) 3%,rgba(211,139,23,1) 39%,rgba(245,215,76,1) 42%,rgba(224,190,67,1) 61%,rgba(174,99,19,1) 92%,rgba(103,38,2,1) 100%);
+                background: -ms-linear-gradient(left, rgba(212,186,42,1) 0%,rgba(174,99,19,1) 3%,rgba(211,139,23,1) 39%,rgba(245,215,76,1) 42%,rgba(224,190,67,1) 61%,rgba(174,99,19,1) 92%,rgba(103,38,2,1) 100%);
+                background: linear-gradient(to right, #D4BA2A 0%,#AE6313 3%,#D38B17 39%,#F5D74C 42%,#E0BE43 61%,#AE6313 92%,#672602 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4ba2a', endColorstr='#672602',GradientType=1 );
+                background-size: 160px; /*TO PREVENT SQUISH */
+                width: 100% !important;
+                box-shadow: 0 0 2px 1px #B35706;
+            }
+
+            .speedUpOptionsPopup .sHeader .sProgressContainer .sProgressBar.finishedDowngrade {
+                background: #8d0025; /* Old browsers */
+                background: -moz-linear-gradient(left, #8d0025 0%, #550010 7%, #7d0021 34%, #a50030 37%, #990020 69%, #67001c 90%, #860014 99%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8d0025), color-stop(7%,#550010), color-stop(34%,#7d0021), color-stop(37%,#a50030), color-stop(69%,#990020), color-stop(90%,#67001c), color-stop(99%,#860014)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(left, #8d0025 0%,#550010 7%,#7d0021 34%,#a50030 37%,#990020 69%,#67001c 90%,#860014 99%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(left, #8d0025 0%,#550010 7%,#7d0021 34%,#a50030 37%,#990020 69%,#67001c 90%,#860014 99%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(left, #8d0025 0%,#550010 7%,#7d0021 34%,#a50030 37%,#990020 69%,#67001c 90%,#860014 99%); /* IE10+ */
+                background: linear-gradient(to right, #8d0025 0%,#550010 7%,#7d0021 34%,#a50030 37%,#990020 69%,#67001c 90%,#860014 99%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8d0025', endColorstr='#860014',GradientType=1 ); /* IE6-9 */
+            }
+
+        .speedUpOptionsPopup .sHeader .sProgressContainer .sTimeBar {
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            bottom: 4px;
+            right: 4px;
+            text-align: center;
+        }
+
+.speedUpOptionsPopup .sContent {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+    .speedUpOptionsPopup .sContent .sOption {
+        position: relative;
+        width: 100%;
+        height: 40px;
+    }
+        .speedUpOptionsPopup .sContent .sOption .sName {
+            position: relative;
+            float: left;
+            text-align: right;
+            width: 85px;
+            margin-top: 8px;
+            margin-right: 5px;
+        }
+
+        .speedUpOptionsPopup .sContent .sOption .speedUpButton {
+            position: relative;
+            float: left;
+            margin-right: 3px;
+        }
+
+        .speedUpOptionsPopup .sContent .sOption .sCut {
+            padding-top: 3px;
+        }
+
+        .speedUpOptionsPopup .sContent .sOption .speedUpButton span {
+            background-image: url("https://static.realmofempires.com/images/icons/m_hatspells.png");
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            right: 5px;
+            background-size: 100% 100%;
+        }
+
+    .speedUpOptionsPopup .sContent .sBusy {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+        background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display:none;
+    }
+
+    .speedUpOptionsPopup .sContent .nextInQueue {
+        position: relative;
+        margin: 0 auto;
+    }
+
+.speedUpOptionsPopup .sFooter {
+    position: relative;
+    overflow: hidden;
+}
+
+    .speedUpOptionsPopup .sFooter .sectionDividerGold {
+        position: relative;
+        margin: 10px auto;
+        left: initial;
+    }
+    .speedUpOptionsPopup .sFooter .sServantLabel,
+    .speedUpOptionsPopup .sFooter .sServantCount {
+        position: absolute;
+        left: 45px;
+    }
+    .speedUpOptionsPopup .sFooter .sServantLabel {
+        top: 41px;
+    }
+    .speedUpOptionsPopup .sFooter .sServantCount {
+        top: 25px;
+    }
+    .speedUpOptionsPopup .sFooter .sServantHiremore {
+        position: relative;
+        float: right;
+        /*margin-right: 45px;*/
+    }
+        /*The D2 version has an HREF in it*/
+        .speedUpOptionsPopup .sFooter .sServantHiremore a {
+            display: block;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            padding-top: 10px;
+            text-decoration: none;
+        }
+
+    .speedUpOptionsPopup .sFooter .sServantIcon {
+        position: relative;
+        float: left;
+        width: 38px;
+        height: 38px;
+        margin: 0;
+        background-image: url('https://static.realmofempires.com/images/icons/servantCarry_m.png');
+        background-size: 100% 100%;
+    }
+
+/* END OF SPEED UP PANEL STYLE */
+
+.massChestPopup .pContainer .pContent .note {
+    width: 280px;
+    margin: 0 auto;
+}
+.massChestPopup .pContainer .pContent .keepCoins {
+    margin-bottom: 5px;
+    width: 100px;
+}
+.massChestPopup .pContainer .pContent .startMassBuyBtn,
+.massChestPopup .pContainer .pContent .stopMassBuyBtn {
+    margin: 0 auto;
+}
+.massChestPopup .pContainer .pContent {
+    text-align: center;
+}
+
+.massChestPopup .pContainer .pContent {
+    text-align: center;
+}
+
+    .massChestPopup .pContainer .pContent .vProgressBar {
+        position: relative;
+        width: 250px;
+        height: 23px;
+        margin: 10px 0px 10px 31px;
+        margin-bottom: 10px;
+        border: 2px solid #63594C;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 2px;
+    }
+
+        .massChestPopup .pContainer .pContent .vProgressBar .vProgress {
+            height: 100%;
+            border-radius: 6px;
+            border: 1px solid #445C64;
+            box-sizing: border-box;
+            background: #3E565E;
+            background: -moz-linear-gradient(left, #3e565e 0%, #172737 6%, #2a4950 29%, #385f62 35%, #5a998d 40%, #568462 65%, #264355 92%, #445c64 100%);
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,#3E565E), color-stop(6%,#172737), color-stop(29%,#2A4950), color-stop(35%,#385F62), color-stop(40%,#5A998D), color-stop(65%,#568462), color-stop(92%,#264355), color-stop(100%,#445C64));
+            background: -webkit-linear-gradient(left, #3E565E 0%,#172737 6%,#2A4950 29%,#385F62 35%,#5A998D 40%,#568462 65%,#264355 92%,#445C64 100%);
+            background: -o-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%);
+            background: -ms-linear-gradient(left, #3e565e 0%,#172737 6%,#2a4950 29%,#385f62 35%,#5a998d 40%,#568462 65%,#264355 92%,#445c64 100%);
+            background: linear-gradient(to right, #3E565E 0%,#172737 6%,#2A4950 29%,#385F62 35%,#5A998D 40%,#568462 65%,#264355 92%,#445C64 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e565e', endColorstr='#445c64',GradientType=1 );
+            background-size: 250px;
+            -webkit-transition: width .3s ease-out;
+            -moz-transition: width .3s ease-out;
+            -ms-transition: width .3s ease-out;
+            -o-transition: width .3s ease-out;
+            transition: width .3s ease-out;
+        }
+
+        .massChestPopup .pContainer .pContent .vProgressBar .vProgressMessage {
+            position: absolute;
+            top: 3px;
+            left: 4px;
+            bottom: 4px;
+            right: 4px;
+            text-align: center;
+        }
+
+.massChestPopup .pContainer .pContent .sectionDivider {
+    position:relative;
+}
+.massChestPopup .pContainer .pContent .massBuyLog {
+    position: relative;
+    padding: 5px 0px 5px 80px;
+    height: 90px;
+    overflow: auto;
+    text-align: left;
+}
+.massChestPopup .pContainer .pContent .massBuyLog p{
+    margin:0px;
+}
+
+/* MASS CHEST BUY PANEL STYLE */
+
+
+/* END OF MASS CHEST BUY PANEL STYLE */
+
+/* RESOURCE FOOTER SWIDGET STYLE */
+.resourceFooter {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 38px;
+    /*
+    background-color: #000;
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png'), url('https://static.realmofempires.com/images/misc/knotDesign.png');
+    background-repeat: no-repeat, repeat-x;
+    background-size: 100% 2px,28px auto;
+    background-position: 0px 0px, 0px 8px;
+        */
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('https://static.realmofempires.com/images/misc/metalgrad320x1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    overflow: hidden;
+}
+    .resourceFooter .fVillName {
+        position: absolute;
+        top: 4px;
+        left: 10px;
+    }
+    .resourceFooter .fVillSilver,
+    .resourceFooter .fVillFood {
+        position: relative;
+        font: 11px georgia;
+        top: 17px;
+        padding: 1px 0px 1px 20px;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        margin-left: 9px;
+    }
+    .resourceFooter .fVillSilver {
+        background-image: url('https://static.realmofempires.com/images/icons/Silver44.png');
+    }
+    .resourceFooter .fVillFood {
+        background-image: url("https://static.realmofempires.com/images/icons/Sheep44.png");
+    }
+
+    .resourceFooter .footerBtn{
+        position: absolute;
+        top: 1px;
+    }
+        .resourceFooter .footerBtn span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+    .resourceFooter .transportSilverHere {
+        right: 95px;
+    }
+        .resourceFooter .transportSilverHere span {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Silver.png');
+            background-size: 30px;
+            background-position: 3px -2px;
+        }
+    .resourceFooter .goToBazzar {
+        right: 50px;
+    }
+        .resourceFooter .goToBazzar span {
+            background-image: url('https://static.realmofempires.com/images/icons/m_gifts.png');
+            background-size: 25px 25px;
+            background-position: 6px 0px;
+        }
+    .resourceFooter .rewards {
+        right:5px;
+    }
+        .resourceFooter .rewards span {
+            background-image: url('https://static.realmofempires.com/images/icons/M_Reward.png');
+            background-size: 25px 25px;
+            background-position: 6px 0px;
+        }
+
+/*END OF RESOURCE FOOTER SWIDGET TYLE */
+
+
+/*this little guy fixes android 4.4 keyboard hiding input elements issue */
+.paddinator2000 {
+    position: relative;
+    width: 100%;
+}
+
+
+
+/*AutoComplete global style */
+.autocomplete {
+    position: absolute;
+    left:10px;
+    right: 10px;
+    z-index: 1;
+}
+    .autocomplete > div {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 0px;
+        border-bottom: 1px solid rgba(45, 45, 45, 0.7);
+        box-sizing: border-box;
+        cursor: pointer;
+        text-shadow: 0px 1px #000;
+        background: rgb(41,42,43);
+        background: -moz-linear-gradient(top, rgba(41,42,43,1) 1%, rgba(35,38,41,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(41,42,43,1)), color-stop(100%,rgba(35,38,41,1)));
+        background: -webkit-linear-gradient(top, rgba(41,42,43,1) 1%,rgba(35,38,41,1) 100%);
+        background: -o-linear-gradient(top, rgba(41,42,43,1) 1%,rgba(35,38,41,1) 100%);
+        background: -ms-linear-gradient(top, rgba(41,42,43,1) 1%,rgba(35,38,41,1) 100%);
+        background: linear-gradient(to bottom, rgba(41,42,43,1) 1%,rgba(35,38,41,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292a2b', endColorstr='#232629',GradientType=0 );
+    }
+        .autocomplete > div:hover {
+            border: 1px solid rgba(161, 161, 161, 0.7);
+        }
+
+/*end of AutoComplete global style */
+
+
+
+/* List Tools global styles */
+.listTools {
+    float:left;
+    overflow: auto;
+}
+
+.listToolsFilter {
+    float:left;
+}
+
+.listTools .filterInput {
+ 
+    float: left;
+    margin: 2px;
+    margin-left: 12px;
+    margin-top: 6px;
+    padding: 4px;
+    height: 20px;
+    width: 100px;
+    border-radius: 6px;
+    font: 14px/1.0em "IM Fell French Canon", serif;
+    color: #616161;
+    border: 1px solid #616161;
+
+}
+
+/* Designed to fit the BtnBMed1, etc. family of buttons */
+.stylishInputBox {
+    /*float: left;*/
+    /*width: 210px;*/
+    color: #101010;    
+    border: 1px solid #1D1D1D;
+    -moz-box-shadow: inset 2px 2px 5px -2px rgba(0, 0, 0, 0.85);
+    -webkit-box-shadow: inset 2px 2px 5px -2px rgba(0, 0, 0, 0.85);
+    box-shadow: inset 2px 2px 5px -2px rgba(0, 0, 0, 0.85);
+    border-radius: 6px;    
+    /*font: 14px/1.0em "IM Fell French Canon", serif;*/
+    font: 14px Georgia, serif;
+    border: 1px solid #616161;    
+    margin: 2px 0px;
+    /*margin-left: 12px;*/    
+    padding: 4px;
+    padding-left: 6px;
+    padding-top: 5px;    
+    height: 24px;
+    background-color:#fff;
+    /*background: linear-gradient(to bottom, #D3FCFF 0%, #FFFFFF 100%); */
+}
+
+.listTools .filterListBtn {
+    float:left;
+    
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+
+.listTools .clearFilterListBtn {
+    float:left;
+   
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+    margin: 2px;
+}
+
+.listTools .deleteSelectedBtn {
+    float:left;
+
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.listTools .forwardSelectedBtn {
+    float:left;
+  
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.listTools .selectAllItemsBtn {
+    float:left;
+  
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+.listTools .deselectAllItemsBtn {
+    float:left;
+  
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+
+.listTools .filterStarredOnlyBtn {
+    float:left;
+  
+    padding:6px;
+    margin:2px;
+    cursor:pointer;
+}
+
+.listTools .listToolBtn {
+    background-color:transparent;
+    position:relative;
+}
+.listTools .listToolBtn:active {
+    transform:scale(0.95,0.95);
+}
+    
+
+.listTools .listToolIcon {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.listTools .listToolBtn.newIndicator-round .listToolIcon {
+    -webkit-box-shadow: 0px 0px 3px 5px #f2e1f2;
+    -moz-box-shadow: 0px 0px 3px 5px #f2e1f2;
+    box-shadow: 0px 0px 5px 0px rgba(57, 199, 183, 0.8);
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;
+    border: 2px solid rgba(57, 199, 183, 0.8);
+
+    background-size: 110% 110% !important;
+    background-position: -1px -2px;
+}
+
+
+.listToolIcon:active {
+}
+
+
+.lt-checkboxToggleBtn {}
+
+
+.lt-checkboxToggleBtn .checkbox {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    /* box-sizing: border-box; */
+   
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: 0px 0px;
+    background-size: 450px 550px;
+    background-repeat: no-repeat;
+}
+
+.lt-checkboxToggleBtn.medUI .checkbox {
+    height:24px;
+    width:24px;
+    background-size: 270px 330px;   
+}
+
+.lt-checkboxToggleBtn.lrgUI .checkbox {
+    height:32px;
+    width:32px;
+    background-size: 360px 440px;
+}
+
+
+.lt-checkboxToggleBtn .checkmark {
+    cursor: pointer;
+    height:27px;
+    width: 27px;
+    text-align: center;
+  
+    background-size: 450px 550px;
+    background-repeat:no-repeat;
+
+    position: relative;
+    top: 5px;
+    left: 6px;
+}
+
+.lt-checkboxToggleBtn .checkmark.on {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -51px 0px;   
+}
+
+.lt-checkboxToggleBtn .checkmark.off {
+   background-image:none;
+}
+
+.lt-checkboxToggleBtn .checkmark.del {
+    background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+    background-position: -98px 0px;  
+}
+
+.lt-checkboxToggleBtn.medUI .checkmark {
+    height:16px;
+    width: 16px;
+    background-size: 270px 330px;
+   
+    top: 3px;
+    left: 5px;
+}
+
+.lt-checkboxToggleBtn.medUI .checkmark.on {
+     background-position: -31px 0px; 
+}
+
+.lt-checkboxToggleBtn.lrgUI .checkmark {
+    height:21px;
+    width: 21px;
+    background-size: 360px 440px;
+   
+    top: 4px;
+    left: 6px;
+}
+
+.lt-checkboxToggleBtn.lrgUI .checkmark.on {
+     background-position: -41px 0px; 
+}
+
+
+.lt-starToggleBtn .lt-starIcon {
+    
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    cursor: pointer;
+    background-image: url("https://static.realmofempires.com/images/icons/starred.png");
+    /* background-position: 100% 100%; */
+    /* background-size: 155px 32px; */
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    margin:0px;
+
+}
+
+.lt-starToggleBtn.medUI .lt-starIcon {
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    background-size: 24px 24px;
+
+}
+
+.lt-starToggleBtn.lrgUI .lt-starIcon {
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    background-size: 26px 26px;
+
+}
+
+
+.lt-starToggleBtn .lt-starIcon.on {
+    opacity:1;
+     background-image: url("https://static.realmofempires.com/images/icons/starred.png");
+}
+
+.lt-starToggleBtn .lt-starIcon.off {
+    opacity:0.7;
+     background-image: url("https://static.realmofempires.com/images/icons/starredh.png");
+}
+
+/* End List Tools global styles */
+
+
+
+
+
+
+
+/*Animations */
+
+.effect-smoothpulse {
+    animation: effect-smoothpulse 1.5s ease-out;
+    -moz-animation: effect-smoothpulse 1.5s ease-out;
+    -webkit-animation: effect-smoothpulse 1.5s ease-out;
+    -o-animation: effect-smoothpulse 1.5s ease-out;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes effect-smoothpulse {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    25% {
+        -webkit-transform: scale(.95);
+    }
+
+    50% {
+        -webkit-transform: scale(1.05);
+    }
+
+    75% {
+        -webkit-transform: scale(.95);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+
+.effect-bounce-loud {
+    animation: effect-bounce-loud 5s  infinite;
+    -moz-animation: effect-bounce-loud 5s  infinite;
+    -webkit-animation: effect-bounce-loud 5s  infinite;
+    -o-animation: effect-bounce-loud 5s  infinite;
+}
+
+@-webkit-keyframes effect-bounce-loud {
+    0% {
+        -webkit-transform: translateY(0);
+    }
+
+    4% {
+        -webkit-transform: translateY(-16px);
+    }
+    4.5% {
+        -webkit-transform: translateY(-20px);
+    }
+    6% {
+        -webkit-transform: translateY(-22px);
+    }
+    7.5% {
+        -webkit-transform: translateY(-20px);
+    }
+    8% {
+        -webkit-transform: translateY(-16px);
+    }
+    12% {
+        -webkit-transform: translateY(0px);
+    }
+
+
+    16% {
+        -webkit-transform: translateY(-13px);
+    }
+    17% {
+        -webkit-transform: translateY(-15px);
+    }
+    18% {
+        -webkit-transform: translateY(-13px);
+    }
+    22% {
+        -webkit-transform: translateY(0px);
+    } 
+
+
+    24% {
+        -webkit-transform: translateY(-5px);
+    }
+    25% {
+        -webkit-transform: translateY(-6px);
+    }
+    26% {
+        -webkit-transform: translateY(-5px);
+    }
+    28% {
+        -webkit-transform: translateY(0px);
+    } 
+
+
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+ 
+@keyframes effect-bounce-loud {
+ 0% {
+        transform: translateY(0);
+    }
+
+    4% {
+        transform: translateY(-14px);
+    }
+    5% {
+        transform: translateY(-20px);
+    }
+    6% {
+        transform: translateY(-22px);
+    }
+    7% {
+        transform: translateY(-20px);
+    }
+    8% {
+        transform: translateY(-14px);
+    }
+    12% {
+        transform: translateY(0px);
+    }
+
+
+    16% {
+        transform: translateY(-13px);
+    }
+    17% {
+        transform: translateY(-15px);
+    }
+    18% {
+        transform: translateY(-13px);
+    }
+    22% {
+        transform: translateY(0px);
+    } 
+
+
+    24% {
+        transform: translateY(-5px);
+    }
+    25% {
+        transform: translateY(-6px);
+    }
+    26% {
+        transform: translateY(-5px);
+    }
+    28% {
+        transform: translateY(0px);
+    } 
+
+
+    100% {
+        transform: translateY(0);
+    }
+} 
+
+
+
+
+
+/*constant pulsing loop*/
+.effect-pulse-constant {
+    animation: effect-pulse-constant 2s  infinite;
+    -moz-animation: effect-pulse-constant 2s  infinite;
+    -webkit-animation: effect-pulse-constant 2s  infinite;
+    -o-animation: effect-pulse-constant 2s  infinite;
+}
+
+
+@-webkit-keyframes effect-pulse-constant {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    30% {
+        -webkit-transform: scale(1.05);
+    }
+
+    40% {
+        -webkit-transform: scale(1.2);
+    }
+
+    50% {
+        -webkit-transform: scale(1.05);
+    }
+
+    60% {
+        -webkit-transform: scale(1);
+    }
+
+    70% {
+        -webkit-transform: scale(1.05);
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+    }
+
+    90% {
+        -webkit-transform: scale(1.05);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes effect-pulse-constant {
+    0% {
+        -webkit-transform: scale(1);
+    }
+
+    30% {
+        -webkit-transform: scale(1.05);
+    }
+
+    40% {
+        -webkit-transform: scale(1.2);
+    }
+
+    50% {
+        -webkit-transform: scale(1.05);
+    }
+
+    60% {
+        -webkit-transform: scale(1);
+    }
+
+    70% {
+        -webkit-transform: scale(1.05);
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+    }
+
+    90% {
+        -webkit-transform: scale(1.05);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+
+.effect-credits-positive {
+    animation: effect-credits-positive 1.5s;
+    -moz-animation: effect-credits-positive 1.5s;
+    -webkit-animation: effect-credits-positive 1.5s;
+    -o-animation: effect-credits-positive 1.5s;
+}
+
+@-webkit-keyframes effect-credits-positive {
+    0% {
+        color: #49FF00;
+        -webkit-transform: scale(1);
+    }
+
+    10% {
+        -webkit-transform: scale(1.4);
+    }
+
+    90% {
+        color: #49FF00;
+        -webkit-transform: scale(1);
+    }
+    100% {
+        color: #FFFFFF;
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes effect-credits-positive {
+    0% {
+        color: #49FF00;
+        -webkit-transform: scale(1);
+    }
+
+    10% {
+        -webkit-transform: scale(1.4);
+    }
+
+    90% {
+        color: #49FF00;
+        -webkit-transform: scale(1);
+    }
+    100% {
+        color: #FFFFFF;
+        -webkit-transform: scale(1);
+    }
+}

@@ -1,0 +1,108 @@
+﻿ .vovHover
+    {
+        opacity:0.6 !important;
+        display:block !important;
+    }
+    .vovNotBuilt
+    {
+        display:none;
+    }
+
+.vovBuildPnl
+{
+    z-index:101;
+    font-size:12pt;
+    width:300px;
+    height:350px;
+    overflow-y:auto;
+    left:200px;
+    top:41px;
+    display:none;
+    border: solid 2px black;
+}
+
+.buildLink
+{
+    left:378px;top:15px;
+    z-index:101;
+    font-size:14px;
+    display:block;
+    width:85px;
+    height:28px;
+    background-image: url(https://static.realmofempires.com/images/buttons/build.gif);
+    cursor:pointer;
+}
+.buildLink:hover
+{
+    background-image: url(https://static.realmofempires.com/images/buttons/buildhover.gif);
+}
+
+
+.researchLinkA
+{
+    left:10px;top:14px;
+    z-index:101;
+    font-size:14px;
+    display:block;
+    width:123px;
+    height:27px;
+    background-image: url(https://static.realmofempires.com/images/buttons/research_active.gif);
+}
+.researchLinkA:hover
+{
+    background-image: url(https://static.realmofempires.com/images/buttons/research_hover.gif);
+}
+
+.researchLink
+{
+    left:10px;top:14px;
+    z-index:101;
+    font-size:14px;
+    display:block;
+    width:123px;
+    height:27px;
+    background-image: url(https://static.realmofempires.com/images/buttons/research.gif);
+}
+.researchLink:hover
+{
+    background-image: url(https://static.realmofempires.com/images/buttons/research_hover.gif);
+}
+
+DIV#popup_build {
+    background: url("https://static.realmofempires.com/images/misc/M_BG_Generic.jpg") no-repeat center;
+}
+DIV.vovBuildPnl {
+    border: 2px solid #846824 !important;
+    -webkit-border-radius: 15px !important;
+    border-radius: 15px !important;
+    margin: 0 4px !important;
+    padding: 4px 0 !important;
+    background: rgba(0, 0, 0, 0.85) !important;
+}
+.vovBuildPnl img.notBuiltBuilding 
+{
+    float:left;
+    height:50px;
+}
+.vovBuildPnl div
+{
+    padding-bottom:5px;
+    clear:both;
+    height:60px;
+    background: url('https://static.realmofempires.com/images/misc/m_listbar.png') no-repeat bottom center;
+}
+
+.vovBuildPnl div a
+{
+    color:White;
+    text-decoration:none;
+    width:100%;
+    height:60px;
+    display:block;  
+    font-size:10pt;  
+}
+ 
+
+.VovAnimFlags {display:none;}
+
+.graphicalVOV .border {display:none;}

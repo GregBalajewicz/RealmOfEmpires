@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <PostConversionRemoveFromScc>
+    </PostConversionRemoveFromScc>
+    <PostConversionAddToScc>
+    </PostConversionAddToScc>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <PostUpgradeAddToSCC>;C:\Users\greg\Documents\_important\projects\facebookgame\fbg\Fbg.Database\Fbg.Database.Realm.dbproj;C:\Users\greg\Documents\_important\projects\facebookgame\fbg\Fbg.Database\Connections.txt;C:\Users\greg\Documents\_important\projects\facebookgame\fbg\Fbg.Database\Scripts\Post-Deployment\Script.PostDeployment.sql;C:\Users\greg\Documents\_important\projects\facebookgame\fbg\Fbg.Database\Scripts\Pre-Deployment\Script.PreDeployment.sql</PostUpgradeAddToSCC>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProjectName>SAK</SccProjectName>
+    <PreviousProjectVersion>4.1</PreviousProjectVersion>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>Fbg.Database.Realm</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql90DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{aa970f2f-1bae-4da5-b101-cff3a5125244}</ProjectGuid>
+    <GenerateDatabaseFile>False</GenerateDatabaseFile>
+    <GenerateCreateScript>False</GenerateCreateScript>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <DefaultSchema>dbo</DefaultSchema>
+    <SqlServerVerification>False</SqlServerVerification>
+    <TargetLanguage>CS</TargetLanguage>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>False</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseState>ONLINE</DatabaseState>
+    <UpdateOptions>READ_WRITE</UpdateOptions>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>LOCAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>True</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>FULL</Recovery>
+    <EnableFullTextSearch>True</EnableFullTextSearch>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>True</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <DefaultFileStreamFilegroup />
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>True</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>2</ChangeTrackingRetentionPeriod>
+    <ChangeTrackingRetentionUnit>Days</ChangeTrackingRetentionUnit>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetDatabase>FBG</TargetDatabase>
+    <TreatTSqlWarningsAsErrors>False</TreatTSqlWarningsAsErrors>
+    <SuppressTSqlWarnings />
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <ItemGroup>
+    <Folder Include="Create Scripts" />
+    <Folder Include="SP" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Create Scripts\Step 2 - Fbg DDL - creates.sql" />
+    <None Include="Create Scripts\Step 3.5 - Populate DB.sql" />
+    <None Include="SP\dAccountStewards.sql" />
+    <None Include="SP\dAccountStewardsForInactivity.sql" />
+    <None Include="SP\dAccountStewardship.sql" />
+    <None Include="SP\dCancelBuildingDowngrade.sql" />
+    <None Include="SP\dCancelEvent.sql" />
+    <None Include="SP\dCancelGovernorRecruit.sql" />
+    <None Include="SP\dCancelRecruit.sql" />
+    <None Include="SP\dCancelTransportCoins.sql" />
+    <None Include="SP\dCancelUnitMovement.sql" />
+    <None Include="SP\dClan.sql" />
+    <None Include="SP\dClanInvitation.sql" />
+    <None Include="SP\dClanMember.sql" />
+    <None Include="SP\dDeleteInvitation.sql" />
+    <None Include="SP\dDeleteMessage.sql" />
+    <None Include="SP\dDeleteReport.sql" />
+    <None Include="SP\dFilter.sql" />
+    <None Include="SP\dFolder.sql" />
+    <None Include="SP\dMoveFolder.sql" />
+    <None Include="SP\dMyClanDiplomacy.sql" />
+    <None Include="SP\dNoTransportCoinsVillages.sql" />
+    <None Include="SP\dPlayerPFNobilityPackage.sql" />
+    <None Include="SP\dPlayerPFPackages.sql" />
+    <None Include="SP\dPlayerRole.sql" />
+    <None Include="SP\dTag.sql" />
+    <None Include="SP\dUnBlockPlayer.sql" />
+    <None Include="SP\dVillageTag.sql" />
+    <None Include="SP\fbGetMin.sql" />
+    <None Include="SP\fnConvertToInt.sql" />
+    <None Include="SP\fnGetBuildingProperty.sql" />
+    <None Include="SP\fnGetCurrentPopulation.sql" />
+    <None Include="SP\fnGetForumIsViewed.sql" />
+    <None Include="SP\fnGetIds.sql" />
+    <None Include="SP\fnGetIds_Distinct.sql" />
+    <None Include="SP\fnGetMax.sql" />
+    <None Include="SP\fnGetMaxPopulation.sql" />
+    <None Include="SP\fnGetMinAmountToTransport.sql" />
+    <None Include="SP\fnGetPlayerRolesFromSecurityLevel.sql" />
+    <None Include="SP\fnGetStringIDs.sql" />
+    <None Include="SP\fnGetTravelTime.sql" />
+    <None Include="SP\fnGetUnitMovementReturnType.sql" />
+    <None Include="SP\iAccountStewards.sql" />
+    <None Include="SP\iAccountStewards_Transfer.sql" />
+    <None Include="SP\iActivatePackage.sql" />
+    <None Include="SP\iActivePFTrial.sql" />
+    <None Include="SP\iBlockPlayer.sql" />
+    <None Include="SP\iBuildingDowngrade.sql" />
+    <None Include="SP\iBuildingDowngrade_GetOneFromQ.sql" />
+    <None Include="SP\iBuildingUpgrade.sql" />
+    <None Include="SP\iBuildingUpgrade_GetOneFromQ.sql" />
+    <None Include="SP\iChatMessage.sql" />
+    <None Include="SP\iClan.sql" />
+    <None Include="SP\iClanEvents.sql" />
+    <None Include="SP\iClanInvite.sql" />
+    <None Include="SP\iClanJoin.sql" />
+    <None Include="SP\iCommandUnits.sql" />
+    <None Include="SP\iCompleteBuildingDowngrade.sql" />
+    <None Include="SP\iCompleteBuildingUpgrade.sql" />
+    <None Include="SP\iCompleteResearch.sql" />
+    <None Include="SP\iCompleteUnitRecruitment.sql" />
+    <None Include="SP\iCreateVillage.sql" />
+    <None Include="SP\iFilter.sql" />
+    <None Include="SP\iFilterTags.sql" />
+    <None Include="SP\iFolder.sql" />
+    <None Include="SP\iForwardReport.sql" />
+    <None Include="SP\iLandMark.sql" />
+    <None Include="SP\iLandMarks.sql" />
+    <None Include="SP\iMyClanDiplomacy.sql" />
+    <None Include="SP\iNoTransportCoinsVillages.sql" />
+    <None Include="SP\iPlayerFlag.sql" />
+    <None Include="SP\iPlayerPFPackage.sql" />
+    <None Include="SP\iPlayerRole.sql" />
+    <None Include="SP\iProcessUnitMovement_Attack.sql" />
+    <None Include="SP\iProcessUnitMovement_Recall.sql" />
+    <None Include="SP\iProcessUnitMovement_Return.sql" />
+    <None Include="SP\iProcessUnitMovement_Support.sql" />
+    <None Include="SP\iRecruitGoverner.sql" />
+    <None Include="SP\iRecruitUnits.sql" />
+    <None Include="SP\iRegisterPlayerInRealm.sql" />
+    <None Include="SP\iResearchInProgress.sql" />
+    <None Include="SP\iSendMail.sql" />
+    <None Include="SP\iStatHistory.sql" />
+    <None Include="SP\iTag.sql" />
+    <None Include="SP\iTransportCoins.sql" />
+    <None Include="SP\iUnitRecruit_GetOneFromQ.sql" />
+    <None Include="SP\iVillageTag.sql" />
+    <None Include="SP\qAccountStewards_AccountsISteward.sql" />
+    <None Include="SP\qAccountStewards_MyStewards.sql" />
+    <None Include="SP\qBlockedPlayers.sql" />
+    <None Include="SP\qCalculateSpyStuff.sql" />
+    <None Include="SP\qChatByPlayer.sql" />
+    <None Include="SP\qCheckPlayers.sql" />
+    <None Include="SP\qClanByID.sql" />
+    <None Include="SP\qClanInvites.sql" />
+    <None Include="SP\qClanMemberLite.sql" />
+    <None Include="SP\qClanMembers.sql" />
+    <None Include="SP\qClanPublicProfile.sql" />
+    <None Include="SP\qClanRanking.sql" />
+    <None Include="SP\qClansByID.sql" />
+    <None Include="SP\qClansByName.sql" />
+    <None Include="SP\qClanSettings.sql" />
+    <None Include="SP\qCoinTransports.sql" />
+    <None Include="SP\qCoinTransports_AreTransportToVillageAvail.sql" />
+    <None Include="SP\qCompleteRealmInfo.sql" />
+    <None Include="SP\qEventsDue.sql" />
+    <None Include="SP\qFilterByID.sql" />
+    <None Include="SP\qFilters.sql" />
+    <None Include="SP\qFolders.sql" />
+    <None Include="SP\qGetClanEvents.sql" />
+    <None Include="SP\qGetCordinatesForNewVillage.sql" />
+    <None Include="SP\qGetCordinatesForNewVillage_Generate.sql" />
+    <None Include="SP\qGlobalStats.sql" />
+    <None Include="SP\qHasPlayerMadeAForumPost.sql" />
+    <None Include="SP\qInbox.sql" />
+    <None Include="SP\qIncomingAttack.sql" />
+    <None Include="SP\qIncomingTroops.sql" />
+    <None Include="SP\qInvitesLeft.sql" />
+    <None Include="SP\qIsFolderEmpty.sql" />
+    <None Include="SP\qLordUnitTypeCost.sql" />
+    <None Include="SP\qMap.sql" />
+    <None Include="SP\qMapOverview.sql" />
+    <None Include="SP\qMapTroopsMove_Incoming.sql" />
+    <None Include="SP\qMapTroopsMove_Outgoing.sql" />
+    <None Include="SP\qMessageDetail.sql" />
+    <None Include="SP\qMessages.sql" />
+    <None Include="SP\qMyClanDiplomacy.sql" />
+    <None Include="SP\qNearestVillages.sql" />
+    <None Include="SP\qNoTransportCoinsVillages.sql" />
+    <None Include="SP\qOutgoingTroops.sql" />
+    <None Include="SP\qPlayerActiveFeatures.sql" />
+    <None Include="SP\qPlayerActivity.sql" />
+    <None Include="SP\qPlayerChests.sql" />
+    <None Include="SP\qPlayerClan.sql" />
+    <None Include="SP\qPlayerClanQuickComm.sql" />
+    <None Include="SP\qPlayerExtraInfo2.sql" />
+    <None Include="SP\qPlayerExtraInfo_OnLogin.sql" />
+    <None Include="SP\qPlayerFlag.sql" />
+    <None Include="SP\qPlayerForumChanged.sql" />
+    <None Include="SP\qPlayerIDByName.sql" />
+    <None Include="SP\qPlayerInvites.sql" />
+    <None Include="SP\qPlayerNotes.sql" />
+    <None Include="SP\qPlayerOther.sql" />
+    <None Include="SP\qPlayerPFPackages.sql" />
+    <None Include="SP\qPlayerRanking.sql" />
+    <None Include="SP\qPlayerRecentTargetStack.sql" />
+    <None Include="SP\qPlayerRoles.sql" />
+    <None Include="SP\qPlayersByIP.sql" />
+    <None Include="SP\qPlayersByName.sql" />
+    <None Include="SP\qPlayersFriendRanking.sql" />
+    <None Include="SP\qPlayerStatHistory.sql" />
+    <None Include="SP\qPlayerVillages.sql" />
+    <None Include="SP\qReportDetails.sql" />
+    <None Include="SP\qReportList.sql" />
+    <None Include="SP\qReportList_Short.sql" />
+    <None Include="SP\qReports_BattleReportDet.sql" />
+    <None Include="SP\qReports_SupportAttackedReportDet.sql" />
+    <None Include="SP\qReportType.sql" />
+    <None Include="SP\qSent.sql" />
+    <None Include="SP\qSupportingTroops.sql" />
+    <None Include="SP\qTagByID.sql" />
+    <None Include="SP\qTags.sql" />
+    <None Include="SP\qTagsByVillageID.sql" />
+    <None Include="SP\qTitlesRanking.sql" />
+    <None Include="SP\qUnitMovementDetails.sql" />
+    <None Include="SP\qUnitsAbroad.sql" />
+    <None Include="SP\qVillageBuildingInfo.sql" />
+    <None Include="SP\qVillageInfo.sql" />
+    <None Include="SP\qVillageInfo_Min.sql" />
+    <None Include="SP\qVillagesByID.sql" />
+    <None Include="SP\qVillagesToSendSilverFrom.sql" />
+    <None Include="SP\savePlayerNote.sql" />
+    <None Include="SP\saveVillageNote.sql" />
+    <None Include="SP\tbh_Forums_ApprovePost.sql" />
+    <None Include="SP\tbh_Forums_CloseThread.sql" />
+    <None Include="SP\tbh_Forums_DeleteForum.sql" />
+    <None Include="SP\tbh_Forums_DeletePost.sql" />
+    <None Include="SP\tbh_Forums_GetForumByID.sql" />
+    <None Include="SP\tbh_Forums_GetForumsByClanID.sql" />
+    <None Include="SP\tbh_Forums_GetPostByID.sql" />
+    <None Include="SP\tbh_Forums_GetThreadByID.sql" />
+    <None Include="SP\tbh_Forums_GetThreads.sql" />
+    <None Include="SP\tbh_Forums_GetUnapprovedPosts.sql" />
+    <None Include="SP\tbh_Forums_IncrementViewCount.sql" />
+    <None Include="SP\tbh_Forums_InsertForum.sql" />
+    <None Include="SP\tbh_Forums_InsertPost.sql" />
+    <None Include="SP\tbh_Forums_IsPlayerInClan.sql" />
+    <None Include="SP\tbh_Forums_IsPlayerInRole.sql" />
+    <None Include="SP\tbh_Forums_MoveThread.sql" />
+    <None Include="SP\tbh_Forums_SetForumAsRead.sql" />
+    <None Include="SP\tbh_Forums_SetThreadAsRead.sql" />
+    <None Include="SP\tbh_Forums_UnDeleteForum.sql" />
+    <None Include="SP\tbh_Forums_UpdateForum.sql" />
+    <None Include="SP\tbh_Forums_UpdatePost.sql" />
+    <None Include="SP\uAcceptAccountStewardship.sql" />
+    <None Include="SP\uBonusVillageInit.sql" />
+    <None Include="SP\uBoostLoyalty.sql" />
+    <None Include="SP\uBuyPlayerChests.sql" />
+    <None Include="SP\uClanPublicProfile.sql" />
+    <None Include="SP\uClanRename.sql" />
+    <None Include="SP\uClanSettings.sql" />
+    <None Include="SP\uDisbandUnits.sql" />
+    <None Include="SP\uFilter.sql" />
+    <None Include="SP\uFolder.sql" />
+    <None Include="SP\uMessageAsRead.sql" />
+    <None Include="SP\uMessageMove.sql" />
+    <None Include="SP\UpdateVillageCoins.sql" />
+    <None Include="SP\uPlayer.sql" />
+    <None Include="SP\uPlayerNote.sql" />
+    <None Include="SP\uPlayerPFPackage.sql" />
+    <None Include="SP\uPlayerProfile.sql" />
+    <None Include="SP\uPlayerRecentTargetStack.sql" />
+    <None Include="SP\uPlayers_Avatar.sql" />
+    <None Include="SP\uPlayers_NightBuildMode.sql" />
+    <None Include="SP\uPlayers_SleepMode.sql" />
+    <None Include="SP\uPlayers_SleepModeCancel.sql" />
+    <None Include="SP\uPlayerTitle.sql" />
+    <None Include="SP\uPoints_Player.sql" />
+    <None Include="SP\uPoints_Village.sql" />
+    <None Include="SP\uRecallSomeUnits.sql" />
+    <None Include="SP\uReportMove.sql" />
+    <None Include="SP\uSpeedUpDowngrade.sql" />
+    <None Include="SP\uSpeedUpUpgrade.sql" />
+    <None Include="SP\uTag.sql" />
+    <None Include="SP\uToggleHideUnitMovement.sql" />
+    <None Include="SP\uTransportCoinsCompleted.sql" />
+    <None Include="SP\uUpdatePlayerCoins.sql" />
+    <None Include="SP\uVillageCoins.sql" />
+    <None Include="SP\uVillageCoins_Add.sql" />
+    <None Include="SP\uVillageCoins_Subtract.sql" />
+    <None Include="SP\uVillageName.sql" />
+    <None Include="SP\uVillageUnits.sql" />
+    <None Include="SP\_runs.bat">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\iPromotedVillage.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\dPromotedVillage.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\qPromotedVillages.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\qPlayersResearchers.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\uBuyResearcher.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\qIncomingTroops2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\qOutgoingTroops2.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\Temp_PopBuildingLevelInfo.sql" />
+    <None Include="SP\Temp_PopLevelProperties.sql" />
+    <None Include="SP\Temp_PopBuildingLevelInfo_TWEEK.sql" />
+    <None Include="SP\iPlayerNotifications.sql" />
+    <None Include="SP\uPlayerNotifications.sql" />
+    <None Include="Create Scripts\Step 2.2 - add linked server.sql" />
+    <None Include="SP\fnTranslate.sql" />
+    <None Include="SP\fnGetMinReal.sql" />
+    <None Include="SP\uCreditFarm_PlayerModifier.sql" />
+    <None Include="SP\iPlayerVillageClaims.sql" />
+    <None Include="SP\dPlayerVillageClaims.sql" />
+    <None Include="SP\qAllPlayerVillageClaims.sql" />
+    <None Include="SP\qAllPlayerVillageClaims_OfOnePlayer.sql" />
+    <None Include="SP\qAllPlayerVillageClaims_Completed.sql" />
+    <None Include="SP\uPlayerPFPackage_FromItem2.sql" />
+    <None Include="SP\qIncomingTroops3.sql" />
+    <None Include="SP\qDefinedTargetsLight.sql" />
+    <None Include="SP\iRaid_spawn_private.sql" />
+    <None Include="SP\_PopulateDB_Raids.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qMapBySquares.sql">
+      <SubType>Code</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Debug.publish.xml" />
+    <None Include="Release.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\tbh_Forum_DeleteClanFromSharedForum.sql" />
+    <None Include="SP\tbh_Forums_DeleteWhiteListClan.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\tbh_Forums_GetSharedForumsByClanID.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\tbh_Forums_GetSharedForumsWithClansByClanID.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\tbh_Forums_GetWhiteListClansByClanID.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\tbh_Forums_InsertClanToSharedForum.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qPlayerNotificationSettings.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayerNotificationSettings.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iPlayerGovType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uGiveChests.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uVillageType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uAbandonVillage.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iPlayerNotificationSent.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iPlayerNotificationNotSent.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB_Translations.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB_Research.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB_Quests.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB_StartingLevels.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB_OpenRealm.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\tbh_Forums_InsertWhiteListClan.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uTriggerUnitMovementCacheUpdateBasedOnVID.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qReportListAll.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qMessagesAll.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uSpeedUpUpgradeFree.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayers_VacationMode.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayers_VacationModeCancel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qPlayerMapEvents.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayers_MapEventsActivate.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayerRenameAdmin.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qPlayerInfo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qPlayerRankingThroneRoom.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uCreditFarm.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iPlayerRankingThroneRoom.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qAllPlayerVillageClaims_ByOnePlayer.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iPlayers_MapEventsType2.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uMapEventCardPicked.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uMapEventCardReveal.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\UpdateRealmPlayerAvatarID.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uSpeedUpUpgrade_viaItem.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uSpeedUpResearch_viaItem.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB_Map.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB_BonusVillages.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qClanClaimSysSettings.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uClanClaimSysSettings.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iMapEventsCaravanCatchup.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayerMorale.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\_PopulateDB_Morale.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayerMorale_SubtractAdd_Unsafe.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qDefinedTargets.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iDefinedTargets.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\dDefinedTargets.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uDefinedTargets.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uDefinedTargetResponse.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qPlayersResearch_HourseBehind.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uSpeedUpResearch_viaServants.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayers_WeekendMode.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\uPlayers_WeekendModeCancel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\qPlayerRaids.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iSendRaid.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iProcessRaidMovement.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iRaidRewardAccept.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\iRaid_spawn_private_early.sql" />
+    <None Include="SP\iRaid_spawn_private_early_deleteRaids.sql" />
+    <None Include="SP\iRaid_spawn_givePrivateRaids.sql" />
+    <None Include="SP\qRaidDetails.sql">
+      <SubType>NotInBuild</SubType>
+    </None>
+    <None Include="SP\iRaid_spawn_clan.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP\fbGetMax.sql" />
+  </ItemGroup>
+</Project>

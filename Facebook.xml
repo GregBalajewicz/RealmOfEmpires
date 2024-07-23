@@ -1,0 +1,2965 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Facebook</name>
+    </assembly>
+    <members>
+        <member name="F:Facebook.Forms.FacebookAuthentication.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Facebook.Forms.FacebookAuthentication.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Facebook.Forms.FacebookAuthentication.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.NotificationsParser.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.NotificationsParser.ParseNotifications(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a collection of work objects given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="F:Facebook.Forms.RequestSelection.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Facebook.Forms.RequestSelection.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Facebook.Forms.RequestSelection.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.PublishImage.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.PublishImage.#ctor(System.String,System.String)">
+            <summary>
+            constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.PublishImage.ImageLocation">
+            <summary>
+            The url or facebook photoid of the image
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.PublishImage.ImageLink">
+            <summary>
+            The url where clicking the image should go
+            </summary>
+        </member>
+        <member name="M:Facebook.Utility.DateHelper.ConvertDoubleToDate(System.Double)">
+            <summary>
+            Convert UTC time, as returned by Facebook, to localtime.
+            </summary>
+            <param name="secondsSinceEpoch">The number of seconds since Jan 1, 1970.</param>
+            <returns>Local time.</returns>
+        </member>
+        <member name="M:Facebook.Utility.DateHelper.ConvertDateToDouble(System.DateTime)">
+            <summary>
+            Convert datetime to UTC time, as understood by Facebook.
+            </summary>
+            <param name="dateToConvert">The date that we need to pass to the api.</param>
+            <returns>The number of seconds since Jan 1, 1970.</returns>
+        </member>
+        <member name="M:Facebook.Parser.EventUserParser.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.EventUserParser.ParseEventUser(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute an EventUser data object given the xml returned from facebook
+            this does not include the actual user object as that is populated separately
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.Photo.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PhotoId">
+            <summary>
+            The facebook unique identifier of the photo
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.AlbumId">
+            <summary>
+            The facebook unique identifier of the album that this photo is part of
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.OwnerUserId">
+            <summary>
+            The facebook unique identifier of the user who owns the picture and album
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.Link">
+            <summary>
+            The facebook unique identifier of the user who owns the picture and album
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.Picture">
+            <summary>
+            The picture of the event.  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PictureBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PictureUrl">
+            <summary>
+            The url of the event picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PictureSmall">
+            <summary>
+            The picture of the event (small version).  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PictureSmallBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.  (small version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PictureSmallUrl">
+            <summary>
+            The url of the event picture (small version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PictureBig">
+            <summary>
+            The picture of the event (Big version).  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PictureBigBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.  (Big version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.PictureBigUrl">
+            <summary>
+            The url of the event picture (Big version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.Caption">
+            <summary>
+            The caption associated with the picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Photo.CreateDate">
+            <summary>
+            The date picture was created
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.PhotoTag.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.PhotoTag.PhotoId">
+            <summary>
+            The facebook unique identifier of the photo
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.PhotoTag.SubjectUserId">
+            <summary>
+            The facebook unique identifier of the user the tag points to
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.PhotoTag.XCoord">
+            <summary>
+            The x coordinate within the picture of the location of the tag
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.PhotoTag.YCoord">
+            <summary>
+            The y coordinate within the picture of the location of the tag
+            </summary>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookInvalidAlbumException">
+            <summary>
+            Exception returned for ERRORNO 120
+            </summary>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookException">
+            <summary>
+            Exception raised for core events aka Facebook interaction.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidAlbumException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidAlbumException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidAlbumException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidAlbumException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookUnknownException">
+            <summary>
+            Exception returned for ERRORNO 1
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookUnknownException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookUnknownException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookUnknownException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookUnknownException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="T:Facebook.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.DummyCallbackUrl">
+            <summary>
+              Looks up a localized string similar to http://dummy-callback-url/.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.FacebookAuthenticationFormName">
+            <summary>
+              Looks up a localized string similar to Facebook Login.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.FacebookLoginUrl">
+            <summary>
+              Looks up a localized string similar to http://api.facebook.com/login.php?api_key={0}&amp;auth_token={1}&amp;v=1.0&amp;popup.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.FacebookLogoutUrl">
+            <summary>
+              Looks up a localized string similar to http://www.facebook.com/logout.php?api_key={0}&amp;auth_token={1}&amp;v=1.0&amp;confirm=1.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.FacebookNamespace">
+            <summary>
+              Looks up a localized string similar to http://api.facebook.com/1.0/.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.FacebookRequestExtendedPermissionUrl">
+            <summary>
+              Looks up a localized string similar to http://www.facebook.com/authorize.php?api_key={0}&amp;v=1.0&amp;ext_perm={1}.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.FacebookRESTUrl">
+            <summary>
+              Looks up a localized string similar to http://api.facebook.com/bestserver.php.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.MissingPictureUrl">
+            <summary>
+              Looks up a localized string similar to http://static.ak.facebook.com/pics/s_default.jpg.
+            </summary>
+        </member>
+        <member name="P:Facebook.Properties.Resources.SendRequestUrl">
+            <summary>
+              Looks up a localized string similar to http://www.facebook.com/multi_friend_selector.php.
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.PhotoTagParser.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.PhotoTagParser.ParsePhotoTag(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a PhotoTag data object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.HigherEducation.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.HigherEducation.School">
+            <summary>
+            The name of the school
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.HigherEducation.Concentration">
+            <summary>
+            Collection of concentrations
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.HigherEducation.ClassYear">
+            <summary>
+            Graduation year
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.HighSchool.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.HighSchool.HighSchoolOneName">
+            <summary>
+            The name of the first high school attended
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.HighSchool.HighSchoolTwoName">
+            <summary>
+            The name of the second high school attended
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.HighSchool.HighSchoolOneId">
+            <summary>
+            The facebook unique identifier of the first high school attended
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.HighSchool.HighSchoolTwoId">
+            <summary>
+            The facebook unique identifier of the second high school attended
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.HighSchool.GraduationYear">
+            <summary>
+            The year this person graduated from high school
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.User.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.UserId">
+            <summary>
+            Facebook unique identifier of the user
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.FirstName">
+            <summary>
+            User's first name
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.LastName">
+            <summary>
+            User's last name
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Name">
+            <summary>
+            User's name
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Birthday">
+            <summary>
+            User's birthday
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.ProfileUpdateDate">
+            <summary>
+            User's birthday
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Music">
+            <summary>
+            Free form text of music this user likes
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Activities">
+            <summary>
+            Free form text of activities this user does
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Interests">
+            <summary>
+            Free form text of this user's interests
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.TVShows">
+            <summary>
+            Free form text of this user's favorite tv shows
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Movies">
+            <summary>
+            Free form text of this user's favorite movies
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Books">
+            <summary>
+            Free form text of this user's favorite books
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Quotes">
+            <summary>
+            Free form text of this user's favorite quotes
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.AboutMe">
+            <summary>
+            Free form text describing this user
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Picture">
+            <summary>
+            The picture of the event.  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureUrl">
+            <summary>
+            The url of the event picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureSmall">
+            <summary>
+            The picture of the event (small version).  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureSmallBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.  (small version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureSmallUrl">
+            <summary>
+            The url of the event picture (small version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureBig">
+            <summary>
+            The picture of the event (Big version).  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureBigBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.  (Big version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureBigUrl">
+            <summary>
+            The url of the event picture (Big version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureSquare">
+            <summary>
+            The picture of the event (Square version).  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureSquareBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.  (Square version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PictureSquareUrl">
+            <summary>
+            The url of the event picture (Square version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Affiliations">
+            <summary>
+            Collection of networks this person is affiliated with
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Sex">
+            <summary>
+            user's gender
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.HometownLocation">
+            <summary>
+            user's hometown
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.CurrentLocation">
+            <summary>
+            user's current location
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.InterestedInGenders">
+            <summary>
+            collection of genders this user is interested in
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.InterstedInRelationshipTypes">
+            <summary>
+            collection of relationship types this user is interested in
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.RelationshipStatus">
+            <summary>
+            user's relationship status
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.PoliticalView">
+            <summary>
+            user's political view
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.SignificantOtherId">
+            <summary>
+            facebook unique identifier of the significant other of this user
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.SchoolHistory">
+            <summary>
+            user's school history
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.WorkHistory">
+            <summary>
+            user's work history
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Religion">
+            <summary>
+            user's religion
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.NotesCount">
+            <summary>
+            count of notes
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.WallCount">
+            <summary>
+            Number of messages on the wall
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.User.Status">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.UserParser.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.UserParser.ParseUser(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a PhotoTag data object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.UserParser.ParseRelationshipTypes(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a collection of relationshiptype object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.UserParser.ParseInterestedInGenders(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a collection of genderlist object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.GroupUserParser.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.GroupUserParser.ParseGroupUser(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a GroupUser data object given the xml returned from facebook
+            does not populate the User portion of the object.  This is done separately since it is not part of this xml node.
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.GroupUserParser.ParsePositions(System.Xml.XmlNode,System.Collections.ObjectModel.Collection{Facebook.Entity.GroupPosition})">
+            <summary>
+            Uses DOM parsing to construct a collection of positions
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.UnreadMessageCount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.MostRecentMessageId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.UnreadPokeCount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.MostRecentPokeId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.UnreadShareCount">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.MostRecentShareId">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.FriendRequests">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.GroupInvites">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Notifications.EventInvites">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.Group.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.GroupId">
+            <summary>
+            The facebook unique identifier of the group
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.NetworkId">
+            <summary>
+            The facebook unique identifier of the network that the group is affiliated with
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.Name">
+            <summary>
+            The name of the group
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.Type">
+            <summary>
+            The type of group
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.SubType">
+            <summary>
+            The sub-type of group
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.RecentNews">
+            <summary>
+            Any news about the group
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.Creator">
+            <summary>
+            The name of the group creator
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.UpdateDate">
+            <summary>
+            The last time the group was updated
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.Office">
+            <summary>
+            The description of the group office
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.WebSite">
+            <summary>
+            Link to group's website 
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.Venue">
+            <summary>
+            Location of group's headquarters
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.Picture">
+            <summary>
+            The picture of the group.  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.PictureBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.PictureUrl">
+            <summary>
+            The url of the group picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.PictureBig">
+            <summary>
+            The picture of the group (big version).  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.PictureBigBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.PictureBigUrl">
+            <summary>
+            The url of the group picture (big version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.PictureSmall">
+            <summary>
+            The picture of the group (small version).  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.PictureSmallBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.PictureSmallUrl">
+            <summary>
+            The url of the group picture (small version)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Group.Description">
+            <summary>
+            The description of the group
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.GroupParser.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.GroupParser.ParseGroup(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a Group data object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="T:Facebook.Components.FacebookService">
+            <summary>
+            Provides various methods to use the Facebook Platform API.
+            </summary>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.ExtendedPermissionUrl(Facebook.Types.Enums.Extended_Permissions)">
+            <summary>
+            ExtendedPermissionUrl
+            </summary>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.ConnectToFacebook">
+            <summary>
+            Displays an integrated browser to allow the user to log on to the
+            Facebook web page.
+            </summary>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetExtendedPermission(Facebook.Types.Enums.Extended_Permissions)">
+            <summary>
+            Displays an integrated browser to allow the user to log on to the
+            Facebook web page.
+            </summary>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.LogOff">
+            <summary>
+            Forgets all connection information so that this object may be used for another connection.
+            </summary>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.CreateSession(System.String)">
+            <summary>
+            Creates a new session with Facebook.
+            </summary>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.DirectFQLQuery(System.String)">
+            <summary>
+            Sends a direct FQL query to Facebook.
+            </summary>
+            <param name="query">An FQL Query.</param>
+            <returns>The result of the FQL query as an XML string.</returns> 
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEventIds">
+            <summary>
+            Gets all event ids for the logged in user.
+            </summary>
+            <returns>A list of event ids.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEvents">
+            <summary>
+            Gets all events for the logged in user.
+            </summary>
+            <returns>A list of events.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEvents(System.String)">
+            <summary>
+            Gets all events for the specified user.
+            </summary>
+            <param name="userId">User to return events for.</param>
+            <returns>A list of events.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEvents(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Gets all events corresponding to the specified event ids.
+            </summary>
+            <param name="eventList">A list of event ids.</param>
+            <returns>A list of events.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEvents(System.Collections.ObjectModel.Collection{System.String},System.String)">
+            <summary>
+            Gets all events for the specified user corresponding to the specified event ids.
+            </summary>
+            <param name="eventList">A list of event ids.</param>
+            <param name="userId">The user to return events for.</param>
+            <returns>A list of events.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEvents(System.Collections.ObjectModel.Collection{System.String},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Gets all events for the specified user and event ids that overlap the
+            window of time specified by the start and end dates.
+            </summary> 
+            <param name="eventList">A list of event ids.</param>
+            <param name="userId">The user to return events for.</param>
+            <param name="startDate">The lower bound of the time window.</param>
+            <param name="endDate">The upper bound of the time window.</param>
+            <returns>A list of events.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEventsXML(System.Collections.ObjectModel.Collection{System.String},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Gets the XML representation of all events for the specified user and
+            event ids that overlap the window of time specified by the start and
+            end dates.
+            </summary>
+            <param name="eventList">list of event ids.</param>
+            <param name="userId">User to return events for.</param>
+            <param name="startDate">events occuring after this date.</param>
+            <param name="endDate">events occuring before this date.</param>
+            <returns>A list of events as raw XML.</returns> 
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEventMembers(System.String)">
+            <summary>
+            Gets all event members for the specified event.
+            </summary>
+            <param name="eventId">The event to return users for.</param>
+            <returns>A list of event members with rsvp status.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetEventMembersXML(System.String)">
+            <summary>
+            Gets the XML representation of all event members for the specified event.
+            </summary>
+            <param name="eventId">The event to return users for.</param>
+            <returns>A list of event members with rsvp status as raw XML.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFriends">
+            <summary>
+            Get all the friends for the logged in user
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFriendIds">
+            <summary>
+            Get all the friends for the logged in user
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFriendsXML">
+            <summary>
+            Get all the friends for the logged in user and returns the results as raw XML
+            </summary>
+            <returns>The XMl representation of the user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFriendsNonAppUsers">
+            <summary>
+            Get all the friends for the logged in user that use the current application 
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFriendsAppUsers">
+            <summary>
+            Get all the friends for the logged in user that use the current application 
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFriendsAppUsersXML">
+            <summary>
+            Get all the friends for the logged in user that use the current application 
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFriendsAppUsersList">
+            <summary>
+            Get all the friends for the logged in user that use the current application 
+            </summary>
+            <returns>comma deliminated list of friends</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.AreFriends(Facebook.Entity.User,Facebook.Entity.User)">
+            <summary>
+            Determine if the two specified users are friends
+            </summary>
+            <param name="user1">User to check</param>
+            <param name="user2">User to check</param>
+            <returns>whether specified users are friends or not</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.AreFriends(System.String,System.String)">
+            <summary>
+            Determine if the two specified users are friends
+            </summary>
+            <param name="userId1">User to check</param>
+            <param name="userId2">User to check</param>
+            <returns>whether specified users are friends or not</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetUserInfo">
+            <summary>
+            Build the user profile for the logged in user
+            </summary>
+            <returns>user profile</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetUserInfo(System.String)">
+            <summary>
+            Build the user profile for the list of users
+            </summary>
+            <param name="userIds">Comma separated list of user ids</param>
+            <returns>user profile list</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetUserInfo(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Build the user profile for the list of users
+            </summary>
+            <param name="userIds">A collection of userId strings</param>
+            <returns>user profile list</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetUserInfoXml(System.String)">
+            <summary>
+            Builds the user profile for the list of users and returns the results as raw xml
+            </summary>
+            <param name="userIds">Comma separated list of user ids</param>
+            <returns>The xml representation of the user profile list</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SetStatus(System.String)">
+            <summary>
+            Update your status on Facebook, it will not include "IS" prepended.
+            
+            Requires Facebook extended permission of "status_update"
+            </summary>
+            <param name="statusMessage">Your status message to be posted</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SetStatus(System.String,System.Boolean)">
+            <summary>
+            Update your status on Facebook
+            
+            Requires Facebook extended permission of "status_update"
+            </summary>
+            <param name="statusMessage">Your status message to be posted</param>
+            <param name="IncludeIsVerb">Have your message start with the word "is"</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.HasPermission(Facebook.Types.Enums.Extended_Permissions)">
+            <summary>
+            Verify user has permission to do action
+            </summary>
+            <param name="permission">Extended Permission</param>
+            <returns>Does user have permission.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetNotifications">
+            <summary>
+            Return the notifications
+            </summary>
+            <returns>user profile list</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetNotificationsXml">
+            <summary>
+            Builds the list of notifications and returns the results as raw xml
+            </summary>
+            <returns>The xml representation of the user profile list</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotos(System.String)">
+            <summary>
+            Get the photos for a specified album
+            </summary>
+            <param name="albumId">The album</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotos(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the photos for a specified list of photos
+            </summary>
+            <param name="photoList">Collection of photo ids</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotos(Facebook.Entity.User)">
+            <summary>
+            Get the photos for a specified User
+            </summary>
+            <param name="user">The user</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotos(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the photos for a specified album and list of photos
+            </summary>
+            <param name="albumId">The album</param>
+            <param name="photoList">Collection of photo ids</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotos(System.String,System.Collections.ObjectModel.Collection{System.String},Facebook.Entity.User)">
+            <summary>
+            Get the photos for a specified album, photo list, and User
+            </summary>
+            <param name="albumId">The album</param>
+            <param name="photoList">Collection of photo ids</param>
+            <param name="user">The user</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotosXML(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the photos for a specified album and list of photos
+            </summary>
+            <param name="albumId">The album</param>
+            <param name="photoList">Collection of photo ids</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotosXML(System.String,System.Collections.ObjectModel.Collection{System.String},Facebook.Entity.User)">
+            <summary>
+            Get the photos for a specified album, list of photos, and User
+            </summary>
+            <param name="albumId">The album</param>
+            <param name="photoList">Collection of photo ids</param>
+            <param name="user">The user</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotoAlbums">
+            <summary>
+            Get the albums for the logged in user
+            </summary>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotoAlbums(System.String)">
+            <summary>
+            Get the albums for the specified user
+            </summary>
+            <param name="userId">user to return albums for</param>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotoAlbums(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the albums for the specified list of albums
+            </summary>
+            <param name="albumList">collection of album ids</param>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotoAlbums(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the albums for the specified user and list of albums
+            </summary>
+            <param name="userId">user to return albums for</param>
+            <param name="albumList">collection of album ids</param>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetPhotoAlbumsXML(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the albums for the specified user and list of albums
+            </summary>
+            <param name="userId">user to return albums for</param>
+            <param name="albumList">collection of album ids</param>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetTags(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the tags for the specifed photos
+            </summary>
+            <param name="photoList">collection of photo ids</param>
+            <returns>photo tags</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetTagsXML(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the tags for the specifed photos
+            </summary>
+            <param name="photoList">collection of photo ids</param>
+            <returns>photo tags</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFBML">
+            <summary>
+            Gets the FBML on the logged-in user's profile.
+            </summary>
+            <returns>The FBML from the user's profile.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetFBML(System.String)">
+            <summary>
+            Gets the FBML on a user's profile
+            </summary>
+            <param name="userId">The id of the user to get the FBML from.</param>
+            <returns>The FBML markup from the user's profile.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SetFBML(System.String,System.String,System.String)">
+            <summary>
+            Set the FBML on a profile
+            </summary>
+            <param name="profileFBML">Profile FBML markup</param>
+            <param name="profileActionFBML">Profile Action FBML markup</param>
+            <param name="mobileFBML">Mobile Profile FBML markup</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SetFBML(System.String,System.String,System.String,System.String)">
+            <summary>
+            Set the FBML on a profile
+            </summary>
+            <param name="profileFBML">Profile FBML markup</param>
+            <param name="profileActionFBML">Profile Action FBML markup</param>
+            <param name="mobileFBML">Mobile Profile FBML markup</param>
+            <param name="userId">user id</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SetRefHandle(System.String,System.String)">
+            <summary>
+            Associates a specified handle with a piece of FBML markup.
+            </summary>
+            <param name="handle">The handle to use as a reference.</param>
+            <param name="markup">The FBML markup to be referenced.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.RefreshRefUrl(System.String)">
+            <summary>
+            Tells Facebook to fetches and re-cache the content stored at the
+            given URL for use in a fb:ref FBML tag.
+            </summary>
+            <param name="url">The URL of the content to refresh.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.RefreshImgSrc(System.String)">
+            <summary>
+            Tells Facebook to fetche and re-cache the image stored at the given
+            URL for use in non-canvas pages on Facebook.
+            </summary>
+            <param name="url">The URL of the image to refresh.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SendNotification(System.String,System.String,System.Boolean)">
+            <summary>
+            Send a notification
+            </summary>
+            <param name="markup">fbml markup</param>
+            <param name="toList">list of users to be notified</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SendNotification(System.String,System.String)">
+            <summary>
+            Send a notification
+            </summary>
+            <param name="markup">fbml markup</param>
+            <param name="toList">list of users to be notified</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SendNotification(System.String,System.String,System.String)">
+            <summary>
+            Send a notification - app_to_user by default
+            </summary>
+            <param name="markup">fbml markup</param>
+            <param name="toList">list of users to be notified</param>
+            <param name="email">fbml of email</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SendNotification(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Send a notification
+            </summary>
+            <param name="markup">fbml markup</param>
+            <param name="toList">list of users to be notified</param>
+            <param name="email">fbml of email</param>
+            <param name="isUserToUser">if true, it is a user_to_user notification, otherwise it is a app_to_user notification</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.BanUser(System.String)">
+            <summary>
+            ban a user
+            </summary>
+            <param name="facebookUserIDToBan">to ban</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.UnBanUser(System.String)">
+            <summary>
+            unban a user
+            </summary>
+            <param name="facebookUserIDToBan">to unban</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SendRequest(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Display a page to send a request
+            </summary>
+            <param name="markup">FBML markup for the request</param>
+            <param name="requestType">Type of request</param>
+            <param name="text">Text to display in the friend selection form</param>
+            <param name="isInvite">Whether this is an invitation (true) or request (false)</param>
+            <returns>A collection of the ids of friends to whom requests were sent</returns>
+            <remarks>This metod only works for desktop applications. For web applications, use
+            the new fb:multi-friend-selector tag, or one of its relatives.</remarks>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.PublishStory(System.String,System.String,System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage})">
+            <summary>
+            Publishes a story to the logged-in user's feed.
+            </summary>
+            <param name="title">The title of the story.</param>
+            <param name="body">The body of the story.</param>
+            <param name="images">A list of images, with associated links, to be
+            used in the story.</param>
+            <remarks>The priority is set to 1 by default.</remarks>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.PublishStory(System.String,System.String,System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage},System.Int32)">
+            <summary>
+            Publishes a story to the logged-in user's feed.
+            </summary>
+            <param name="title">The title of the story.</param>
+            <param name="body">The body of the story.</param>
+            <param name="images">A list of images, with associated links, to be
+            used in the story.</param>
+            <param name="priority">The priority of the story.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.PublishAction(System.String,System.String,System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage})">
+            <summary>
+            Publishes an action to the logged-in user's mini-feed, and to the
+            news feeds of the user's friends who have added the application.
+            </summary>
+            <param name="title">The title of the action.</param>
+            <param name="body">The body of the action.</param>
+            <param name="images">A list of images, with associated links, to be
+            used in the action.</param>
+            <remarks>The priority is set to 1 by default.</remarks>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.PublishAction(System.String,System.String,System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage},System.Int32)">
+            <summary>
+            Publishes an action to the logged-in user's mini-feed, and to the
+            news feeds of the user's friends who have added the application.
+            </summary>
+            <param name="title">The title of the action.</param>
+            <param name="body">The body of the action.</param>
+            <param name="images">A list of images, with associated links, to be
+            used in the action.</param>
+            <param name="priority">The priority of the action.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.UploadPhoto(System.String,System.IO.FileInfo)">
+            <summary>
+            Uploads the specified photo to the specified album.
+            </summary>
+            <param name="albumId">The album to upload to. If not specified, will use default album.</param>
+            <param name="uploadFile">The .jpg file to upload.</param>
+            <returns>A result containing the ids for the photo and album.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.UploadPhoto(System.String,System.IO.FileInfo,System.String)">
+            <summary>
+            Uploads the specified photo to the specified album.
+            </summary>
+            <param name="albumId">The album to upload to. If not specified, will use default album.</param>
+            <param name="uploadFile">The .jpg file to upload.</param>
+            <param name="caption">The caption to attach to the photo.</param>
+            <returns>A result containing the ids for the photo and album.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.AddTag(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a tag to a photo.  Only allowed on photos in pending state.
+            </summary>
+            <param name="photoId">The id of the photo to tag</param>
+            <param name="tagText">The text of the tag.  Need to specify either this of tagUserId</param>
+            <param name="tagUserId">The facebook id the person that was tagged</param>
+            <param name="xCoord">The x position of the tag on the photo</param>
+            <param name="yCoord">The y position of the tag on the photo</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.CreateAlbum(System.String,System.String,System.String)">
+            <summary>
+            Create Album.
+            </summary>
+            <param name="name">The name of the album</param>
+            <param name="location">The location of the album.  (Optional)</param>
+            <param name="description">The description of the album.  (Optional)</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetGroups">
+            <summary>
+            Get the groups that the logged in user belongs to
+            </summary>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetGroups(System.String)">
+            <summary>
+            Get the groups that the specified user belongs to
+            </summary>
+            <param name="userId">The id of the user to return groups for</param>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetGroups(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the groups for the group list
+            </summary>
+            <param name="groupsList">Collection of group ids</param>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetGroups(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the groups for the specified user and group list
+            </summary>
+            <param name="userId">The id of the user to return groups for</param>
+            <param name="groupsList">Collection of group ids</param>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetGroupsXML(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the groups for the specified user and group list
+            </summary>
+            <param name="userId">The id of the user to return groups for</param>
+            <param name="groupsList">Collection of group ids</param>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetGroupMembers(System.String)">
+            <summary>
+            Get the members of the specified group
+            </summary>
+            <param name="groupId">The id of the group to return members for</param>
+            <returns>Group members (user profiles, and group roles)</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetGroupMembersXML(System.String)">
+            <summary>
+            Get the members of the specified group
+            </summary>
+            <param name="groupId">The id of the group to return members for</param>
+            <returns>Group members (user profiles, and group roles)</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.GetLoggedInUser">
+            <summary>
+            Get the facebook user id of the user associated with the current session
+            </summary>
+            <returns>facebook userid</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.IsAppAdded">
+            <summary>
+            Determine if the current user is a user of this application already
+            </summary>
+            <returns>facebook userid</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.PublishTemplatizedAction(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage})">
+            <summary>
+            Publishes a templatized action to the logged-in user's mini-feed,
+            and to the news feeds of the user's friends who have added the application.
+            </summary>
+            <remarks>More documentation on the template parameters can be found
+            on the Facebook Developers web site.
+            </remarks>
+            <param name="titleTemplate">Templated markup for the title of the action.</param>
+            <param name="titleData">A dictionary of token values.</param>
+            <param name="bodyTemplate">Templated markup for the body content.</param>
+            <param name="bodyData">A dictionary of token values for the body.</param>
+            <param name="images">A collection of images, and their associated
+            links, to be shown in the action.</param>
+            <returns>The string result of the call.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.PublishTemplatizedAction(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage})">
+            <summary>
+            Publishes a templatized action to the logged-in user's mini-feed,
+            and to the news feeds of the user's friends who have added the application.
+            </summary>
+            <remarks>More documentation on the template parameters can be found
+            on the Facebook Developers web site.
+            </remarks>
+            <param name="titleTemplate">Templated markup for the title of the action.</param>
+            <param name="titleData">A dictionary of token values.</param>
+            <param name="bodyTemplate">Templated markup for the body content.</param>
+            <param name="bodyData">A dictionary of token values for the body.</param>
+            <param name="bodyGeneral">General content (markup) to be added to the action</param>
+            <param name="targetIds">The ids of other users to "target" with this action</param>        
+            <param name="images">A collection of images, and their associated
+            links, to be shown in the action.</param>
+            <returns>The string result of the call.</returns>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SendEmail(System.String,System.String,System.String,System.String)">
+            <summary>
+            Send an email
+            </summary>
+            <param name="recipients">A comma-separated list of recipient IDs. The recipients must be people who have already added your application. You can email up to 100 people at a time.</param>
+            <param name="subject">The subject of the email message.</param>
+            <param name="text">The plain text version of the email content. You must include at least one of either the fbml or text parameters. </param>
+            <param name="fbml">The FBML version of the email. You must include at least one of either the fbml or text parameters. The fbml parameter is a stripped-down set of FBML that allows only tags that result in text, links and linebreaks.</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.SetAuthenticationToken">
+            <summary>
+            Creates and sets a new authentication token.
+            </summary>
+        </member>
+        <member name="F:Facebook.Components.FacebookService.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Facebook.Components.FacebookService.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Facebook.Components.FacebookService.ApplicationKey">
+            <summary>
+            Access Key required to use the API
+            </summary>
+        </member>
+        <member name="P:Facebook.Components.FacebookService.UserId">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:Facebook.Components.FacebookService.Secret">
+            <summary>
+            Secret word
+            </summary>
+        </member>
+        <member name="P:Facebook.Components.FacebookService.SessionKey">
+            <summary>
+            Session key
+            </summary>
+        </member>
+        <member name="P:Facebook.Components.FacebookService.SessionExpires">
+            <summary>
+            Whether or not the session expires
+            </summary>
+        </member>
+        <member name="P:Facebook.Components.FacebookService.LoginUrl">
+            <summary>
+            Login Url
+            </summary>
+        </member>
+        <member name="P:Facebook.Components.FacebookService.LogOffUrl">
+            <summary>
+            LogOff Url
+            </summary>
+        </member>
+        <member name="P:Facebook.Components.FacebookService.IsDesktopApplication">
+            <summary>
+            Whether or not this component is being used in a desktop application
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.UploadPhotoResult.PhotoId">
+            <summary>
+            The id of the uploaded photo
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.UploadPhotoResult.AlbumId">
+            <summary>
+            The id of the album the photo was uploaded to.
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.SchoolHistory.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.SchoolHistory.HighSchool">
+            <summary>
+            The high school data object for the user
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.SchoolHistory.HigherEducation">
+            <summary>
+            Collection of colleges that the user has attended
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.Location.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.Location.ToString">
+            <summary>
+            Override of ToString();  Used when displaying the location as a field on the user interface
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Location.City">
+            <summary>
+            Name of the city
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Location.State">
+            <summary>
+            State (US and Canada)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Location.StateAbbreviation">
+            <summary>
+            State Postal Abbreviation (US and Canada)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Location.Country">
+            <summary>
+            Country
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Location.ZipCode">
+            <summary>
+            Zip Code
+            </summary>
+        </member>
+        <member name="T:Facebook.Entity.State">
+            <summary>
+            Represents the states 
+            </summary>
+        </member>
+        <member name="T:Facebook.Entity.StateAbbreviation">
+            <summary>
+            Represents the abbreviations for states specified in States enum
+            </summary>
+        </member>
+        <member name="T:Facebook.Entity.Country">
+            <summary>
+            Represents the countries 
+            </summary>
+        </member>
+        <member name="M:Facebook.Utility.XmlHelper.GetNodeText(System.Xml.XmlNode,System.String)">
+            <summary>
+            Method to return the inner text of a node.
+            </summary>
+            <param name="node">The node to parse.</param>
+            <param name="name">The node name.</param>
+            <returns>The text containted by the node.</returns>
+        </member>
+        <member name="M:Facebook.Parser.LocationParser.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.LocationParser.ParseLocation(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a Location data object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookServiceUnavailableException">
+            <summary>
+            Exception returned for ERRORNO 2
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookServiceUnavailableException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookServiceUnavailableException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookServiceUnavailableException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookServiceUnavailableException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="M:facebook.Utility.JSONHelper.EscapeJsonString(System.String)">
+            <summary>
+            Escape backslashes and double quotes
+            </summary>
+            <param name="originalString">string</param>
+            <returns>string</returns>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookTimeoutException">
+            <summary>
+            Exception returned for ERRORNO 102
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookTimeoutException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookTimeoutException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookTimeoutException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="M:Facebook.Parser.PhotoParser.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.PhotoParser.ParsePhoto(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a Photo data object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.FacebookEvent.#ctor">
+            <summary>
+            The default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.EventId">
+            <summary>
+            The facebook unique identifier of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.Name">
+            <summary>
+            The name of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.TagLine">
+            <summary>
+            The event's tagline
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.NetworkId">
+            <summary>
+            The facebook unique identifier of the network this event is affiliated with
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.Picture">
+            <summary>
+            The picture of the event.  This is not initially populated, but when accessed will stream the bytes of the picture
+            from the url and provide an actual picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.PictureBytes">
+            <summary>
+            This is only used for serialization.  Should not be accessed directly.
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.PictureUrl">
+            <summary>
+            The url of the event picture
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.Host">
+            <summary>
+            The name of the event host
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.Description">
+            <summary>
+            The description of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.Type">
+            <summary>
+            The type of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.SubType">
+            <summary>
+            The sub-type of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.StartDate">
+            <summary>
+            The starting date of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.EndDate">
+            <summary>
+            The ending date of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.Creator">
+            <summary>
+            The creator of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.UpdateDate">
+            <summary>
+            The last time the event was updated
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.Location">
+            <summary>
+            The location of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.FacebookEvent.Venue">
+            <summary>
+            The venue of the event
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.NetworkParser.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.NetworkParser.ParseNetworks(System.Xml.XmlNode,System.Collections.ObjectModel.Collection{Facebook.Entity.Network})">
+            <summary>
+            Uses DOM parsing to constitute a collection of Networks given the xml returned from facebook
+            call ParseNetwork in a loop
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.NetworkParser.ParseNetwork(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a Network given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Utility.StringHelper.ConvertToCommaSeparated(System.Collections.Generic.ICollection{System.String})">
+            <summary>
+            Convert a collection of strings to a comma separated list.
+            </summary>
+            <param name="collection">The collection to convert to a comma separated list.</param>
+            <returns>comma separated string.</returns>
+        </member>
+        <member name="M:Facebook.Parser.AlbumParser.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.AlbumParser.ParseAlbum(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute an Album data object given the xml returned from facebook
+            representing the album
+            </summary>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookSessionExpiredException">
+            <summary>
+            Exception returned for ERRORNO 102
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookSessionExpiredException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookSessionExpiredException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookSessionExpiredException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookSessionExpiredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="M:Facebook.Parser.WorkParser.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.WorkParser.ParseWorkHistory(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a collection of work objects given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.WorkParser.ParseWork(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a work data object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookInvalidUserException">
+            <summary>
+            Exception returned for ERRORNO 110
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidUserException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidUserException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidUserException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidUserException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookInvalidFqlSyntaxException">
+            <summary>
+            Exception returned for ERRORNO 120
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidFqlSyntaxException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidFqlSyntaxException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidFqlSyntaxException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidFqlSyntaxException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="T:Facebook.Types.Enums">
+            <summary>
+            Facebook Enums
+            </summary>
+        </member>
+        <member name="T:Facebook.Types.Enums.Extended_Permissions">
+            <summary>
+            Extended Permissions
+            </summary>
+        </member>
+        <member name="F:Facebook.Types.Enums.Extended_Permissions.status_update">
+            <summary>
+            Status Update
+            </summary>
+        </member>
+        <member name="F:Facebook.Types.Enums.Extended_Permissions.photo_upload">
+            <summary>
+            Photo Upload
+            </summary>
+        </member>
+        <member name="F:Facebook.Types.Enums.Extended_Permissions.create_listing">
+            <summary>
+            Create a listing
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Facebook.Components.AsyncFacebookService.EndGetUserInfoList(System.IAsyncResult)" -->
+        <member name="M:Facebook.Entity.Status.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Status.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Status.Time">
+            <summary>
+            Time
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.GroupUser.#ctor">
+            <summary>
+            default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.GroupUser.GroupId">
+            <summary>
+            The facebook unique identifier of the group this person belongs to
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.GroupUser.UserId">
+            <summary>
+            The facebook unique identifier of the user
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.GroupUser.User">
+            <summary>
+            The user profile object representing everything about this person
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.GroupUser.Positions">
+            <summary>
+            A collection of the positions this person holds within the group
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.FacebookEventParser.#ctor">
+            <summary>
+            The default constructor
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.FacebookEventParser.ParseEvent(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute an Event data object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Work.Location">
+            <summary>
+            city/state where work took place
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Work.CompanyName">
+            <summary>
+            The name of the company
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Work.Position">
+            <summary>
+            The person's job title
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Work.Description">
+            <summary>
+            description of job
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Work.StartDate">
+            <summary>
+            date person started the job
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Work.EndDate">
+            <summary>
+            date person ended the job
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.EventUser.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.EventUser.EventId">
+            <summary>
+            The facebook unique identifier of the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.EventUser.UserId">
+            <summary>
+            The facebook unique identifier of the user who was invited to the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.EventUser.User">
+            <summary>
+            The user profile object of the user invited to the event
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.EventUser.Attending">
+            <summary>
+            Represents the person's commitment to attend the event or not
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.Network.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Network.NetworkId">
+            <summary>
+            Facebook unique identifier of the network
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Network.Name">
+            <summary>
+            The name of the network
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Network.Type">
+            <summary>
+            The type of the network (College, High School, Work or Region)
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Network.Year">
+            <summary>
+            The year the network started
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Network.Status">
+            <summary>
+            The status of the network
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.SchoolHistoryParser.#ctor">
+            <summary>
+            The high school data object for the user
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.SchoolHistoryParser.ParseSchoolHistory(System.Xml.XmlNode,System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a SchoolHistory data object given the xml returned from facebook
+            This includes populating the high school object and collection of higher education objects
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.SchoolHistoryParser.ParseHighSchool(System.Xml.XmlNode)">
+            <summary>
+            Uses DOM parsing to constitute a High School data object given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.SchoolHistoryParser.ParseHigherEducations(System.Xml.XmlNode,System.Collections.ObjectModel.Collection{Facebook.Entity.HigherEducation})">
+            <summary>
+            Uses DOM parsing to constitute a collection of higher education objects given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="M:Facebook.Parser.SchoolHistoryParser.ParseConcentrations(System.Xml.XmlNode,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Uses DOM parsing to constitute a collection of concentration objects given the xml returned from facebook
+            </summary>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookNotVisibleException">
+            <summary>
+            Exception returned for ERRORNO 210, 220 or 221
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookNotVisibleException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookNotVisibleException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookNotVisibleException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookNotVisibleException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="T:Facebook.Forms.UnicodeUri">
+            <summary>
+            This class is only needed because the ToString method in the original
+            URI class prints Unicode characters instead of their http-escaped
+            versions. Since the .Net Compact Framework can only support the URI
+            constructor for the WebBrowser control, we have to use this new URI
+            class. 
+            </summary>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookInvalidUserExtendedPermission">
+            <summary>
+            Exception returned for ERRORNO 250
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidUserExtendedPermission.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidUserExtendedPermission.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidUserExtendedPermission.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookInvalidUserExtendedPermission.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookRequestLimitException">
+            <summary>
+            Exception returned for ERRORNO 4
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookRequestLimitException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookRequestLimitException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookRequestLimitException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookRequestLimitException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+        <member name="F:Facebook.Forms.FacebookExtendedPermission.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Facebook.Forms.FacebookExtendedPermission.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Facebook.Forms.FacebookExtendedPermission.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Entity.Album.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.AlbumId">
+            <summary>
+            The facebook unique identifier of the album
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.CoverPhotoId">
+            <summary>
+            The facebook unique identifier of the photo that is the cover photo for this album
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.OwnerUserId">
+            <summary>
+            The facebook unique identifier of the user that created the album
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.Name">
+            <summary>
+            The name of the album
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.CreateDate">
+            <summary>
+            The date the album was created
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.ModifiedDate">
+            <summary>
+            The date the album was last updated
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.Description">
+            <summary>
+            The description of the album
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.Location">
+            <summary>
+            The location where the pictures took place
+            </summary>
+        </member>
+        <member name="P:Facebook.Entity.Album.Size">
+            <summary>
+            The number of pictures in the album
+            </summary>
+        </member>
+        <member name="T:Facebook.API.FacebookAPI">
+            <summary>
+            Provides various methods to use the Facebook Platform API.
+            </summary>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.CreateSession(System.String)">
+            <summary>
+            Creates a new session with Facebook.
+            </summary>
+            <param name="authToken">The auth token received from Facebook.</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.DirectFQLQuery(System.String)">
+            <summary>
+            Sends a direct FQL query to FB
+            </summary>
+            <param name="query">FQL Query</param>
+            <returns>Result of the FQL query as an XML string</returns> 
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEvents">
+            <summary>
+            Gets all events for the logged in user.
+            </summary>
+            <returns>A collection of the events.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEventIds">
+            <summary>
+            Get all event ids for the logged in user.
+            </summary>
+            <returns>A collection of the event IDs.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEventIdsXML">
+            <summary>
+            Gets the XML representation of the ids of all events for the logged in user.
+            </summary>
+            <returns>Event id list as raw XML</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEvents(System.String)">
+            <summary>
+            Get all events for the specified user.
+            </summary>
+            <param name="userId">User to return events for</param>
+            <returns>event list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEvents(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get all events in the list of events.
+            </summary>
+            <param name="eventList">list of event ids</param>
+            <returns>event list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEvents(System.Collections.ObjectModel.Collection{System.String},System.String)">
+            <summary>
+            Get all events for the specified user and list of events
+            </summary>
+            <param name="userId">User to return events for</param>
+            <param name="eventList">list of event ids</param>
+            <returns>event list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEvents(System.Collections.ObjectModel.Collection{System.String},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Get all events for the specified user and list of events between 2 dates
+            </summary>
+            <param name="userId">User to return events for</param>
+            <param name="eventList">list of event ids</param>
+            <param name="startDate">events occuring after this date</param>
+            <param name="endDate">events occuring before this date</param>
+            <returns>event list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEventsXML(System.Collections.ObjectModel.Collection{System.String},System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Get the XML representation of all events for the specified user and list of events between 2 dates
+            </summary>
+            <param name="userId">User to return events for</param>
+            <param name="eventList">list of event ids</param>
+            <param name="startDate">events occuring after this date</param>
+            <param name="endDate">events occuring before this date</param>
+            <returns>event list as raw XML</returns> 
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEventMembers(System.String)">
+            <summary>
+            Get all event members for the specified event
+            </summary>
+            <param name="eventId">Event to return users for</param>
+            <returns>evet user list with rsvp status</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetEventMembersXML(System.String)">
+            <summary>
+            Get all event members for the specified event
+            </summary>
+            <param name="eventId">Event to return users for</param>
+            <returns>evet user list with rsvp status</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFriends">
+            <summary>
+            Get all the friends for the logged in user
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFriendIds">
+            <summary>
+            Get all the friends for the logged in user
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFriendsXML">
+            <summary>
+            Get all the friends for the logged in user and returns the results as raw XML
+            </summary>
+            <returns>The XMl representation of the user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFriendsNonAppUsers">
+            <summary>
+            Get all the friends for the logged in user that do not use the current application 
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFriendsAppUsers">
+            <summary>
+            Get all the friends for the logged in user that use the current application 
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFriendsAppUsersList">
+            <summary>
+            Get all the friends for the logged in user that use the current application 
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFriendsAppUsersXML">
+            <summary>
+            Get all the friends for the logged in user that use the current application 
+            </summary>
+            <returns>user profile of each friend</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.AreFriends(Facebook.Entity.User,Facebook.Entity.User)">
+            <summary>
+            Determine if the two specified users are friends
+            </summary>
+            <param name="user1">User to check</param>
+            <param name="user2">User to check</param>
+            <returns>whether specified users are friends or not</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.AreFriends(System.String,System.String)">
+            <summary>
+            Determine if the two specified users are friends
+            </summary>
+            <param name="userId1">User to check</param>
+            <param name="userId2">User to check</param>
+            <returns>whether specified users are friends or not</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.IsAppAdded">
+            <summary>
+            returns if the application is added
+            </summary>
+            <returns>user profile list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetUserInfo">
+            <summary>
+            Build the user profile for the logged in user
+            </summary>
+            <returns>user profile</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetUserInfo(System.String)">
+            <summary>
+            Build the user profile for the list of users
+            </summary>
+            <param name="userIds">Comma separated list of user ids</param>
+            <returns>user profile list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetUserInfo(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Build the user profile for the list of users
+            </summary>
+            <param name="userIds">A collection of userId strings</param>
+            <returns>user profile list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetUserInfoXml(System.String)">
+            <summary>
+            Builds the user profile for the list of users and returns the results as raw xml
+            </summary>
+            <param name="userIds">Comma separated list of user ids</param>
+            <returns>The xml representation of the user profile list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SetStatus(System.String)">
+            <summary>
+            Update your status on Facebook, it will not include "IS" prepended.
+            
+            Requires Facebook extended permission of "status_update"
+            </summary>
+            <param name="statusMessage">Your status message to be posted</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SetStatus(System.String,System.Boolean)">
+            <summary>
+            Update your status on Facebook
+            
+            Requires Facebook extended permission of "status_update"
+            </summary>
+            <param name="statusMessage">Your status message to be posted</param>
+            <param name="IncludeIsVerb">Have your message start with the word "is"</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.HasPermission(Facebook.Types.Enums.Extended_Permissions)">
+            <summary>
+            Do you have permission to do the task needed?
+            </summary>
+            <param name="permission">Your status message to be posted</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetNotifications">
+            <summary>
+            Return the notifications
+            </summary>
+            <returns>user profile list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetNotificationsXml">
+            <summary>
+            Builds the list of notifications and returns the results as raw xml
+            </summary>
+            <returns>The xml representation of the user profile list</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotos(System.String)">
+            <summary>
+            Get the photos for a specified album
+            </summary>
+            <param name="albumId">The album</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotos(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the photos for a specified list of photos
+            </summary>
+            <param name="photoList">Collection of photo ids</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotos(Facebook.Entity.User)">
+            <summary>
+            Get the photos for a specified User
+            </summary>
+            <param name="user">The user</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotos(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the photos for a specified album and list of photos
+            </summary>
+            <param name="albumId">The album</param>
+            <param name="photoList">Collection of photo ids</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotos(System.String,System.Collections.ObjectModel.Collection{System.String},Facebook.Entity.User)">
+            <summary>
+            Get the photos for a specified album, photo list, and User
+            </summary>
+            <param name="albumId">The album</param>
+            <param name="photoList">Collection of photo ids</param>
+            <param name="user">The user</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotosXML(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the photos for a specified album and list of photos
+            </summary>
+            <param name="albumId">The album</param>
+            <param name="photoList">Collection of photo ids</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotosXML(System.String,System.Collections.ObjectModel.Collection{System.String},Facebook.Entity.User)">
+            <summary>
+            Get the photos for a specified album, list of photos, and User
+            </summary>
+            <param name="albumId">The album</param>
+            <param name="photoList">Collection of photo ids</param>
+            <param name="user">The user</param>
+            <returns>photos</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotoAlbums">
+            <summary>
+            Get the albums for the logged in user
+            </summary>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotoAlbums(System.String)">
+            <summary>
+            Get the albums for the specified user
+            </summary>
+            <param name="userId">user to return albums for</param>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotoAlbums(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the albums for the specified list of albums
+            </summary>
+            <param name="albumList">collection of album ids</param>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotoAlbums(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the albums for the specified user and list of albums
+            </summary>
+            <param name="userId">user to return albums for</param>
+            <param name="albumList">collection of album ids</param>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetPhotoAlbumsXML(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the albums for the specified user and list of albums
+            </summary>
+            <param name="userId">user to return albums for</param>
+            <param name="albumList">collection of album ids</param>
+            <returns>albums</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetTags(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the tags for the specifed photos
+            </summary>
+            <param name="photoList">collection of photo ids</param>
+            <returns>photo tags</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetTagsXML(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the tags for the specifed photos
+            </summary>
+            <param name="photoList">collection of photo ids</param>
+            <returns>photo tags</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFBML">
+            <summary>
+            Gets the FBML on the logged-in user's profile.
+            </summary>
+            <returns>The FBML from the user's profile.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFBML(System.String)">
+            <summary>
+            Gets the FBML on a user's profile
+            </summary>
+            <param name="userId">The id of the user to get the FBML from.</param>
+            <returns>The FBML markup from the user's profile.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SetFBML(System.String,System.String,System.String,System.String)">
+            <summary>
+            Set the FBML on a profile
+            </summary>
+            <param name="profileFBML">Profile FBML markup</param>
+            <param name="profileActionFBML">Profile Action FBML markup</param>
+            <param name="mobileFBML">Mobile Profile FBML markup</param>
+            <param name="userId">user id</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SetRefHandle(System.String,System.String)">
+            <summary>
+            Associates a specified handle with a piece of FBML markup.
+            </summary>
+            <param name="handle">The handle to use as a reference.</param>
+            <param name="markup">The FBML markup to be referenced.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.RefreshRefUrl(System.String)">
+            <summary>
+            Tells Facebook to fetches and re-cache the content stored at the
+            given URL for use in a fb:ref FBML tag.
+            </summary>
+            <param name="url">The URL of the content to refresh.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.RefreshImgSrc(System.String)">
+            <summary>
+            Tells Facebook to fetche and re-cache the image stored at the given
+            URL for use in non-canvas pages on Facebook.
+            </summary>
+            <param name="url">The URL of the image to refresh.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SendNotification(System.String,System.String,System.Boolean)">
+            <summary>
+            Send a notification
+            </summary>
+            <param name="markup">fbml markup</param>
+            <param name="toList">list of users to be notified</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SendNotification(System.String,System.String)">
+            <summary>
+            Send a notification - app_to_user by default
+            </summary>
+            <param name="markup">fbml markup</param>
+            <param name="toList">list of users to be notified</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SendNotification(System.String,System.String,System.String)">
+            <summary>
+            Send a notification - - app_to_user by default
+            </summary>
+            <param name="markup">fbml markup</param>
+            <param name="toList">list of users to be notified</param>
+            <param name="email">fbml of email</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SendNotification(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Send a notification
+            </summary>
+            <param name="markup">fbml markup</param>
+            <param name="toList">list of users to be notified</param>
+            <param name="email">fbml of email</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.BanUser(System.String)">
+            <summary>
+            ban
+            </summary>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.UnBanUser(System.String)">
+            <summary>
+            unban
+            </summary>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.PublishStory(System.String,System.String,System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage})">
+            <summary>
+            Publishes a story to the logged-in user's feed.
+            </summary>
+            <param name="title">The title of the story.</param>
+            <param name="body">The body of the story.</param>
+            <param name="images">A list of images, with associated links, to be
+            used in the story.</param>
+            <remarks>The priority is set to 1 by default.</remarks>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.PublishStory(System.String,System.String,System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage},System.Int32)">
+            <summary>
+            Publishes a story to the logged-in user's feed.
+            </summary>
+            <param name="title">The title of the story.</param>
+            <param name="body">The body of the story.</param>
+            <param name="images">A list of images, with associated links, to be
+            used in the story.</param>
+            <param name="priority">The priority of the story.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.PublishAction(System.String,System.String,System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage})">
+            <summary>
+            Publishes an action to the logged-in user's mini-feed, and to the
+            news feeds of the user's friends who have added the application.
+            </summary>
+            <param name="title">The title of the action.</param>
+            <param name="body">The body of the action.</param>
+            <param name="images">A list of images, with associated links, to be
+            used in the action.</param>
+            <remarks>The priority is set to 1 by default.</remarks>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.PublishAction(System.String,System.String,System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage},System.Int32)">
+            <summary>
+            Publishes an action to the logged-in user's mini-feed, and to the
+            news feeds of the user's friends who have added the application.
+            </summary>
+            <param name="title">The title of the action.</param>
+            <param name="body">The body of the action.</param>
+            <param name="images">A list of images, with associated links, to be
+            used in the action.</param>
+            <param name="priority">The priority of the action.</param>
+            <returns>The result of the method call as a string.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.UploadPhoto(System.String,System.IO.FileInfo)">
+            <summary>
+            Uploads the specified photo to the specified album.
+            </summary>
+            <param name="albumId">The album to upload to. If not specified, will use default album.</param>
+            <param name="uploadFile">The .jpg file to upload.</param>
+            <returns>A result containing the ids for the photo and album.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.UploadPhoto(System.String,System.IO.FileInfo,System.String)">
+            <summary>
+            Uploads the specified photo to the specified album.
+            </summary>
+            <param name="albumId">The album to upload to. If not specified, will use default album.</param>
+            <param name="uploadFile">The .jpg file to upload.</param>
+            <param name="caption">The caption to attach to the photo.</param>
+            <returns>A result containing the ids for the photo and album.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.AddTag(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add tag to a photo.  Only allowed on photos in pending state.
+            </summary>
+            <param name="photoId">The id of the photo to tag</param>
+            <param name="tagText">The text of the tag.  Need to specify either this of tagUserId</param>
+            <param name="tagUserId">The facebook id the person that was tagged</param>
+            <param name="xCoord">The x position of the tag on the photo</param>
+            <param name="yCoord">The y position of the tag on the photo</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.CreateAlbum(System.String,System.String,System.String)">
+            <summary>
+            Create Album.
+            </summary>
+            <param name="name">The name of the album</param>
+            <param name="location">The location of the album.  (Optional)</param>
+            <param name="description">The description of the album.  (Optional)</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetGroups">
+            <summary>
+            Get the groups that the logged in user belongs to
+            </summary>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetGroups(System.String)">
+            <summary>
+            Get the groups that the specified user belongs to
+            </summary>
+            <param name="userId">The id of the user to return groups for</param>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetGroups(System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the groups for the group list
+            </summary>
+            <param name="groupsList">Collection of group ids</param>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetGroups(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the groups for the specified user and group list
+            </summary>
+            <param name="userId">The id of the user to return groups for</param>
+            <param name="groupsList">Collection of group ids</param>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetGroupsXML(System.String,System.Collections.ObjectModel.Collection{System.String})">
+            <summary>
+            Get the groups for the specified user and group list
+            </summary>
+            <param name="userId">The id of the user to return groups for</param>
+            <param name="groupsList">Collection of group ids</param>
+            <returns>groups</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetGroupMembers(System.String)">
+            <summary>
+            Get the members of the specified group
+            </summary>
+            <param name="groupId">The id of the group to return members for</param>
+            <returns>Group members (user profiles, and group roles)</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetGroupMembersXML(System.String)">
+            <summary>
+            Get the members of the specified group
+            </summary>
+            <param name="groupId">The id of the group to return members for</param>
+            <returns>Group members (user profiles, and group roles)</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetLoggedInUser">
+            <summary>
+            Get the facebook user id of the user associated with the current session
+            </summary>
+            <returns>facebook userid</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.PublishTemplatizedAction(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage})">
+            <summary>
+            Publishes a templatized action to the logged-in user's mini-feed,
+            and to the news feeds of the user's friends who have added the application.
+            </summary>
+            <remarks>More documentation on the template parameters can be found
+            on the Facebook Developers web site.
+            </remarks>
+            <param name="titleTemplate">Templated markup for the title of the action.</param>
+            <param name="titleData">A dictionary of token values.</param>
+            <param name="bodyTemplate">Templated markup for the body content.</param>
+            <param name="bodyData">A dictionary of token values for the body.</param>
+            <param name="images">A collection of images, and their associated
+            links, to be shown in the action.</param>
+            <returns>The string result of the call.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.PublishTemplatizedAction(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{Facebook.Entity.PublishImage})">
+            <summary>
+            Publishes a templatized action to the logged-in user's mini-feed,
+            and to the news feeds of the user's friends who have added the application.
+            </summary>
+            <remarks>More documentation on the template parameters can be found
+            on the Facebook Developers web site.
+            </remarks>
+            <param name="titleTemplate">Templated markup for the title of the action.</param>
+            <param name="titleData">A dictionary of token values.</param>
+            <param name="bodyTemplate">Templated markup for the body content.</param>
+            <param name="bodyData">A dictionary of token values for the body.</param>
+            <param name="bodyGeneral">General content (markup) to be added to the action</param>
+            <param name="targetIds">The ids of other users to "target" with this action</param>        
+            <param name="images">A collection of images, and their associated
+            links, to be shown in the action.</param>
+            <returns>The string result of the call.</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.LogOff">
+            <summary>
+            Forgets all connection information so that this object may be used for another connection.
+            </summary>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.SendEmail(System.String,System.String,System.String,System.String)">
+            <summary>
+            Send an email
+            </summary>
+            <param name="recipients">A comma-separated list of recipient IDs. The recipients must be people who have already added your application. You can email up to 100 people at a time.</param>
+            <param name="subject">The subject of the email message.</param>
+            <param name="text">The plain text version of the email content. You must include at least one of either the fbml or text parameters. </param>
+            <param name="fbml">The FBML version of the email. You must include at least one of either the fbml or text parameters. The fbml parameter is a stripped-down set of FBML that allows only tags that result in text, links and linebreaks.</param>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.CreateSession">
+            <summary>
+            Method creates a session
+            </summary>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetQueryResponse(System.String,System.String)">
+            <summary>
+            Get Query Response
+            </summary>
+            <param name="requestUrl">Request Url</param>
+            <param name="postString">posted query</param>
+            <returns>Response data</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetFileQueryResponse(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}},System.IO.FileSystemInfo)">
+            <summary>
+            Get File Query Response
+            </summary>
+            <param name="parameterDictionary">parameter list</param>
+            <param name="uploadFile">uploaded file info</param>
+            <returns>Response data</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GetRequestUrl(System.Boolean)">
+            <summary>
+            Gets the request url
+            </summary>
+            <param name="useSSL">True if the request should use SSL, otherwise False</param>
+            <returns>Request Url</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.GenerateSignature(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            This method generates the signature based on parameters supplied
+            </summary>
+            <param name="parameters">List of paramenters</param>
+            <returns>Generated signature</returns>
+        </member>
+        <member name="M:Facebook.API.FacebookAPI.ErrorCheck(System.Xml.XmlDocument)">
+            <summary>
+            Parse the Facebook result for an error, and throw an exception. 
+            For some of the different types of exceptions, custom action might be desirable.
+            </summary>
+            <param name="doc">The XML result.</param>
+        </member>
+        <member name="P:Facebook.API.FacebookAPI.ApplicationKey">
+            <summary>
+            Access Key required to use the API
+            </summary>
+        </member>
+        <member name="P:Facebook.API.FacebookAPI.IsDesktopApplication">
+            <summary>
+            Whether or not this component is being used in a desktop application
+            </summary>
+        </member>
+        <member name="P:Facebook.API.FacebookAPI.SessionExpires">
+            <summary>
+            Whether or not the session expires
+            </summary>
+        </member>
+        <member name="P:Facebook.API.FacebookAPI.Secret">
+            <summary>
+            Secret word
+            </summary>
+        </member>
+        <member name="P:Facebook.API.FacebookAPI.SessionKey">
+            <summary>
+            Session key
+            </summary>
+        </member>
+        <member name="P:Facebook.API.FacebookAPI.UserId">
+            <summary>
+            User Id
+            </summary>
+        </member>
+        <member name="P:Facebook.API.FacebookAPI.AuthToken">
+            <summary>
+            Authorization token
+            </summary>
+        </member>
+        <member name="P:Facebook.API.FacebookAPI.NsManager">
+            <summary>
+            XML Namespace Manager
+            </summary>
+        </member>
+        <member name="T:Facebook.Exceptions.FacebookSigningException">
+            <summary>
+            Exception returned for ERRORNO 102
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookSigningException.#ctor">
+            <summary>
+            Empty constructor.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookSigningException.#ctor(System.String)">
+            <summary>
+            Constructor with Error Message.
+            </summary>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookSigningException.#ctor(System.String,System.Exception)">
+            <summary>
+            Exception constructor with a custom message after catching an exception.
+            </summary>
+            <param name="message">Exception message.</param>
+            <param name="innerException">Exception caught.</param>
+        </member>
+        <member name="M:Facebook.Exceptions.FacebookSigningException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor used for serialization.
+            </summary>
+            <param name="si">The info.</param>
+            <param name="sc">The context.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,97 @@
+#floatHelp {  position: absolute; 
+              width: 180px; 
+              border: 1px solid rgb(59, 89, 152);
+              background : #fff; 
+              
+              top : 100px;
+              left : 100px;
+            }
+#floatHelpTitle { background :  rgb(59, 89, 152);  }
+#floatHelpBody {  overflow : hidden; height : 0px; }
+p { margin : 0px 0px 5px 0px; padding:3px;  }
+
+.pinned .helpBalloonTitle 
+{
+    background	: #ea0;
+}
+
+.helpBalloonTitle #helpBalloonTitleMove { cursor : move; float : left; width : 120px; height : 10px; }
+.helpBalloonTitle #helpLinkClose { float : right; }
+#tutDrag { cursor : move; }
+
+.helpBalloonTitle
+{
+    background	: rgb(75, 61, 50);
+    padding		: 3px;
+}
+
+.helpBalloonTitle, .TutorialHeader
+{
+    
+}
+.helpBalloonBody
+{
+	background	: rgb(69, 79, 80);
+	color		: rgb(255, 255, 255);
+	padding		: 1px 3px; 
+}
+
+.helpBalloon
+{
+    position	: absolute;
+    top			: 100px;
+    left		: 100px;
+    
+    width		: 200px;
+    /*height	: 100px;*/
+}
+.helpBalloon
+{
+    border		: 1px solid #000000;
+    background	: rgb(75, 61, 50);
+    z-index		: 50;
+    
+    color		: rbg(255, 255, 255);
+}
+
+.helpBalloon a
+{
+    color		: rgb(195, 144, 55);
+}
+.helpBalloonTitle a, .helpBalloon a
+{
+    cursor		: pointer;
+}
+
+.yellow 
+{
+ border  : 1px solid #ffdd00 !important;
+}
+
+#highlight
+{
+	border	: 1px solid #01F800; 
+	position	: absolute; 
+	
+	z-index : 40;
+}
+
+.highlightElement
+{
+	z-index:45;
+}
+
+.helpQuestion 
+{
+	z-index	: 50;
+	background : url('https://static.realmofempires.com/images/helpicon.png') 1px 1px no-repeat; height : 18px; width : 18px;
+	
+    position	: absolute; 
+    top			: 0px; 
+    left		: 0px;
+}
+
+.help 
+{
+	/*border	: 1px solid transparent;*/
+}

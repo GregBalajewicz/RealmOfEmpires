@@ -1,0 +1,307 @@
+﻿
+
+#items2 * {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#items2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+    background-size:cover;
+    background-position:50% 50%;
+}
+    #items2 .header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 50px;
+        right: 0px;
+        overflow: hidden;
+        background-color: rgba(0,0,0,.4);
+    }
+        #items2 .header .villageInfoContainer {
+            position: relative;
+            margin: 0 auto;
+            width: 290px;
+            height: 100%;
+        }
+
+        #items2 .header .villageIcon {
+            position: absolute;
+            top: 0px;
+            left: 10px;
+            height: 50px;
+            width: 50px;
+            background-size: 90% auto;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        #items2 .header .villageInfo {
+            position: absolute;
+            top: 5px;
+            left: 70px;
+        }
+        #items2 .header .text1 {
+            position: absolute;
+            top: 26px;
+            left: 70px;
+        }
+
+        #items2 .header .reload {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+        }
+            #items2 .header .reload .icon {
+                background-image: url(https://static.realmofempires.com/images/buttons/M_RefreshSm.png);
+                position: absolute;
+                top: 1px;
+                left: 2px;
+                right: 2px;
+                bottom: 2px;
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                border-radius: 40px;
+            }
+
+    #items2 .categoryList {
+        position: absolute;
+        top: 51px;
+        left: 0px;
+        height: 50px;
+        right: 0px;
+        overflow: hidden;
+        padding: 3px;
+        background-color: rgba(0,0,0,.4);
+        box-sizing: border-box;
+        padding-left: 16px;
+    }
+
+        #items2 .categoryList .categoryItem {
+            position: relative;
+            float: left;
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+            background-size: 75% auto;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            border: 1px solid #9E9250;
+            border-radius: 3px;
+            cursor:pointer;
+        }
+            #items2 .categoryList .categoryItem:hover {
+                background-color: rgba(255,255, 255, 0.9);
+            }
+            #items2 .categoryList .categoryItem.selected {
+                background-color: rgba(255,255, 255, 0.9);
+            }
+           
+    #items2 .itemsList {
+        position: absolute;
+        top: 102px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        overflow: auto;
+        padding: 3px;
+        text-align:center;
+    }
+        #items2 .itemsList .item {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 90px;
+            margin: 5px;
+            font-size: 10px;
+            cursor: pointer;
+            text-shadow: 0px 3px 3px #000, 0px -3px 3px #000, -4px 0px 3px #000, 4px 0px 3px #000;
+            box-sizing: border-box;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.8);
+            background-size: 40px auto;
+            background-position: 50% 15px;
+            background-repeat: no-repeat;
+            border-radius: 3px;
+            border-top: 1px solid #676131;
+            border-bottom: 1px solid #27261A;
+        }
+
+            #items2 .itemsList .item:hover {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+                #items2 .itemsList .item:hover .text {
+                    color: black;
+                    text-shadow: none;
+                }
+
+            #items2 .itemsList .item .emptyMask {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                background-color: rgba(40,40,40,0.8);
+            }
+            #items2 .itemsList .item:hover.empty {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+                #items2 .itemsList .item:hover.empty .text {
+                    color: inherit;
+                    text-shadow: inherit;
+                }
+
+
+            /*
+            #items2 .itemsList .item.busy {
+            }
+            #items2 .itemsList .item .busyMask {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+                background-size: 50% 50%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-color: rgba(0,0,0,0.5);
+            }
+
+            #items2 .itemsList .item.used {
+                background-color: rgba(0, 128, 0, 0.5);
+            }
+            #items2 .itemsList .item .usedMask {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                background-image: url(https://static.realmofempires.com/images/d2_CheckMark_Quests.png);
+                background-size: 50% 50%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+
+            #items2 .itemsList .item.failed {
+                background-color: #900;
+            }
+            #items2 .itemsList .item .failedMask {
+                position: absolute;
+                top:0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                background-color: rgba(153, 0, 0, 0.7);
+                color: white;
+                padding: 0px;
+                text-align: center;
+                font: 17px "IM Fell French Canon", serif;
+                padding-top: 20px;
+                text-shadow: none;
+            }
+
+            #items2 .itemsList .item.cant .failedMask {
+                display: none;
+            }
+*/
+
+            #items2 .itemsList .item.cant,
+            #items2 .itemsList .item.cant:hover {
+                background-color: rgba(51, 51, 51, 0.8);
+                border-top: 1px solid #676767;
+                border-bottom: 1px solid #252525;
+            }
+                #items2 .itemsList .item.cant .text {
+                    z-index: 1;
+                }
+                #items2 .itemsList .item.cant .c {
+                    background-color:rgba(0,0,0,0);
+                }
+            #items2 .itemsList .item .cantMask {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                background-color: rgba(40,40,40,0.8);
+                color: #FFF;
+                padding: 0px;
+                text-align: center;
+                font: 17px "IM Fell French Canon", serif;
+                padding-top: 13px;
+            }
+
+
+            #items2 .itemsList .item .text {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                right: 0px;
+                padding: 3px;
+            }
+
+            #items2 .itemsList .item.cant:hover .text,
+            #items2 .itemsList .item.used:hover .text,
+            #items2 .itemsList .item.failed:hover .text {
+                color: #e6cd90;
+                text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+            }
+
+            #items2 .itemsList .item .c {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                background-color: #000;
+                padding: 0px 8px;
+                border-radius: 10px;
+                min-width: 12px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            #items2 .itemsList .item .feedback {
+                position:absolute;
+                bottom:0%;
+                left:0px;
+                width:auto;
+                height:auto;
+                font-size: 15px;
+                z-index: 1;
+            }
+                #items2 .itemsList .item .feedback.used {
+                    color:lime;
+                } 
+                #items2 .itemsList .item .feedback.notused {
+                    color: #ff2f2f;
+                }
+
+            #items2 .itemsList .item .busy {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 20px;
+                height: 20px;
+                background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+                background-size: 100% 100%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+
+
+        #items2 .itemsList .catNotice {
+            background-color: rgba(0,0,0,.8);
+            text-align: left;
+            padding: 5px 16px;
+        }
+
+
+
+

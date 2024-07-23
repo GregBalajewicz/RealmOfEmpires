@@ -1,0 +1,144 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterNoCurVillageHeader.master.cs" Inherits="masterNoCurVillageHeader" %>
+<%@ Register Src="Controls/Tutorial.ascx" TagName="Tutorial" TagPrefix="uc3" %>
+<%@ Register Src="Controls/VillageHeaderInfo.ascx" TagName="VillageHeaderInfo" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Realm Of Empires</title>
+    <link href="static/menus_c.css" rel="stylesheet" type="text/css" />
+    <link href="static/help.css" rel="stylesheet" type="text/css" />
+    <link href="main.2.css" rel="stylesheet" type="text/css" />
+
+    <% if(isD2) { %>
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake|IM+Fell+French+Canon+SC|IM+Fell+French+Canon+LC|Arapey" rel="stylesheet" type="text/css">
+    <style>
+    html {
+        background-color: #000000;
+        background: url('https://static.realmofempires.com/images/backgrounds/M_BG_Tower.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    body {
+        font-family: Georgia, 'Playfair Display';
+        font-size: 12px;
+        background:none !important;
+    }
+    .BtnBLg1 {
+        float:left;
+        height: 37px;
+        width: 135px;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 11px;
+        cursor: pointer;
+        background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+        background-position: -100px -250px;
+        overflow: hidden;
+        text-decoration:none !important;
+        margin-right: 10px;
+    }
+    .BtnBLg1:hover {
+         text-decoration:none;
+    }
+    .fontButton1L {
+        font: 17px/0.83em "IM Fell French Canon SC", serif;
+        color: #d7d7d7;
+        text-shadow: 0px -3px 3px #081137, 0px -2px 0px #081137, 0px 3px 3px #081137, 0px 2px 0px #081137, -3px 0px 0px #081137, 3px 0px 0px #081137;
+    }
+    .grayout {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.5 !important;
+    }
+
+   
+
+    .d2_wrapper {
+
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .d2_titleStyle {
+        color: #FFD776;
+        font: 17px/1.0em "IM Fell French Canon SC", serif;
+        text-shadow: 0px 1px 1px #000;
+    }
+
+    TD.TDContent {
+        /* this messes up the fb dialog window */
+      /*  padding: 0px;
+        background-color: rgba(6, 20, 31, 0.71) !important;
+        height: 100% !important;
+        position: absolute;
+        overflow: hidden;
+          */
+    }
+
+    </style>
+    <% } %>
+
+    <%=Fbg.Common.WebHelper.FileList.js(Fbg.Common.WebHelper.FileList.FOR.popupfulFunct, isMobile, Config.InDev)%>
+
+
+    <script type="text/javascript">
+            <asp:Literal runat=server ID="lblJSONStruct"></asp:Literal>    
+    </script>
+
+    
+    
+    <script type="text/javascript">
+
+        $(function () {
+            var isInIframe = (window.top != window);
+            if ($.browser.mozilla && isInIframe) {
+                $('a[href^="javascript:"]').each(function () {
+                    var newOnClick = $(this).attr('href').replace(/^javascript:/i, '');
+                    var existingOnClick = this.getAttribute('onclick');
+                    existingOnClick = (existingOnClick ? (existingOnClick + ';') : '') + newOnClick;
+                    this.setAttribute('onclick', existingOnClick);
+                });
+            }
+        }); 
+              
+    </script> 
+    
+    <%if (isMobile)
+      { %>
+    
+    <meta name="viewport" content="width=device-width,inital-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+   
+    <%}%> 
+    <asp:contentplaceholder id="HeadPlaceHolder" runat="server">
+    </asp:contentplaceholder>
+    <link type="text/json" rel="help" href="static/help/j_Global.json.aspx" />
+</head>
+<body style="margin-left: 0; margin-right: 0;">
+    <form id="form1" runat="server">
+        <% if(!isD2 && !isMobile) { %>
+        <center>
+            <img src="https://static.realmofempires.com/images/Logo.png" />
+        </center>
+         <% } else if(isD2) { %>
+          <center>
+            <img src="https://static.realmofempires.com/images/icons/K_AppIco114x114.png" />
+        </center>              
+          <% } %> 
+        
+            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+                <tr>
+                    <td style="vertical-align: top; height: 392px;" class="TDContent" colspan="2">
+                        <asp:ContentPlaceHolder ID="cph1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+    </form>
+</body>
+</html>

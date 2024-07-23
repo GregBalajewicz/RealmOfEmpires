@@ -1,0 +1,47 @@
+﻿
+
+/* d2 only */
+#reportDetails_section {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+#reportDetails_section .reportDetailScroll {
+    padding-bottom:50px !important;
+    /*overflow-y:scroll !important;*/
+    bottom:auto !important;
+    background:none !important;
+}
+
+#reportDetails_section .themeM-progress .label {
+    color: #FFF;
+    text-align: center;
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-shadow: 1px 2px 2px #000,1px 1px 2px #000,1px -1px 2px #000;
+}
+
+#reportDetails_section .reportDetailContainer {
+    bottom:40px;
+}
+
+
+#reportDetails_section .reportDetailControlBar .btnBattleSim {  
+    cursor:pointer;
+}
+
+#reportDetails_section .reportDetailControlBar .btnDeleteReport {   
+    cursor:pointer;
+}
+#reportDetails_section .reportDetailControlBar .btnForwardReport {    
+    cursor:pointer;
+}
+
+
+#reportDetails_section .versus2 .vsIcon {
+    position:absolute;
+    top:30%;
+    margin-top:-24px;
+    left:50%;
+    margin-left:-9px;
+}

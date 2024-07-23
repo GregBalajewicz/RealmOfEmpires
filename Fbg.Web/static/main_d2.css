@@ -1,0 +1,613 @@
+
+body {
+    background: #000000; /*b6a876	*/
+}
+
+    body.Popup {
+        background-color: transparent !important;
+    }
+
+.Error {
+    color: #C01808 !important;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+td {
+    vertical-align: top;
+}
+
+
+.click {
+    cursor: pointer;
+}
+
+
+.lblCurRealm {
+    font-size: 14px;
+}
+
+
+
+
+/*this is the body of the non-iframe popups*/
+.popupBody {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.vilres_silverimg, .vilres_foodimg {
+    float: left;
+    padding-left: 20px;
+}
+
+.vilres_silver, .vilres_food {
+    font-size: 12pt;
+}
+
+.vilres_nameloc {
+    border-color: #B7A679;
+    font-size: 12pt;
+    text-indent: 20px;
+    background-color: #222222;
+    width: 100%;
+    height: 40px;
+    vertical-align: middle;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: thin;
+    border-bottom-width: thin;
+}
+
+.vilres_nameloc_txt {
+    vertical-align: middle;
+}
+
+.vilres_trooptable {
+    background-color: #555555;
+    width: 100%;
+}
+
+.vilres_trooptable_header {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 2px;
+    height: 20px;
+}
+
+
+
+#vilres_popup {
+    font-size: 12pt;
+}
+
+    #vilres_popup .boostloyalty {
+        display: block;
+    }
+
+    #vilres_popup .loyalty.low {
+        background-color: Red;
+        font-weight: bold;
+    }
+
+    #vilres_popup .loyaltyBoosted.success .vilres_unitcount {
+        padding: 20px 0px 20px 0px;
+        vertical-align: middle;
+        text-align: left;
+        width: 10%;
+    }
+
+
+.troopHeaderTitle {
+    font-size: 16px;
+    font-family: Verdana, Arial;
+}
+
+.troopSword2 {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.inputbutton, .inputsubmit {
+font: 17px "IM Fell French Canon", serif;
+color: #DADADA;
+text-shadow: 0px 1px #000;
+height: 26px;
+line-height: 25px;
+box-sizing: border-box;
+padding: 0px 7px;
+cursor: pointer;
+border: 1px solid #4A4A4A;
+
+background: #4A4A4A;
+background: -moz-linear-gradient(top, rgba(74,74,74,1) 0%, rgba(63,63,63,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A4A4A), color-stop(100%,#3F3F3F));
+background: -webkit-linear-gradient(top, #4A4A4A 0%,#3F3F3F 100%);
+background: -o-linear-gradient(top, rgba(74,74,74,1) 0%,rgba(63,63,63,1) 100%);
+background: -ms-linear-gradient(top, rgba(74,74,74,1) 0%,rgba(63,63,63,1) 100%);
+background: linear-gradient(to bottom, #4A4A4A 0%,#3F3F3F 100%);
+
+}
+
+
+
+
+.TextBox {
+    font-weight: normal;
+    font-size: 11pt;
+    border: none;
+    height: 25px;
+    box-sizing: border-box;
+}
+
+.TextBoxReadOnly {
+    font-weight: normal;
+    font-size: 11pt;
+}
+
+.popupBody .vovBuildPnl {
+    display: block;
+    position: static;
+    left: 0px;
+    top: 0px;
+    border: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+
+.Sectionheader {
+    background-color: rgb(82, 81, 81);
+}
+
+.BoxContent {
+    background-image: -webkit-linear-gradient(top, rgb(82, 81, 81) 0%, #000000 100%);
+}
+
+
+/*
+
+
+The following are for table formatting. 
+Tables that actually list data in tabular fashion 
+
+
+*/ /* This is a header row for a table*/
+.TableHeaderRow {
+    background-image: -webkit-linear-gradient(top, #313131 0%, #181818 100%);
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 1px;
+}
+
+.TypicalTable TD {
+    padding: 2px;
+}
+
+    .TypicalTable TD.NoPad {
+        padding: 0px;
+    }
+
+
+
+.TypicalTable .DataRowNormal {
+    color: #ffffff;
+}
+
+.TypicalTable .DataRowAlternate {
+    color: #ffffff;
+}
+
+/*Use this when ever you want to gray or slighlty hidden text in the table */
+.TypicalTable .LightText {
+    color: #A6A2A3;
+    font-weight: normal;
+}
+
+
+
+/*
+temp menus for clan, report, mail pages
+*/
+
+.tempMenu {
+    width: 100%;
+    overflow: auto;
+    border-spacing: 2px;
+    -webkit-border-vertical-spacing: 0px;
+}
+
+    .tempMenu span {
+        display: inline-block;
+        width: 76px;
+        height: 14px;
+        padding: 3px;
+        margin: 0px 0px 5px 16px;
+        border: 2px solid #846824;
+        float: left;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    .tempMenu a {
+        display: block;
+        text-align: center;
+        font-weight: normal !important;
+    }
+
+        .tempMenu a:hover {
+            text-decoration: none;
+        }
+
+    .tempMenu span.SelectedMenuItem {
+        border: 2px solid rgb(226, 185, 84);
+        background-color: rgb(170, 130, 31);
+    }
+
+    .tempMenu a.SelectedMenuItem {
+        color: Black;
+    }
+
+    .tempMenu img {
+        display: none;
+    }
+
+
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+    #background > .stretch {
+        width: 100%;
+        height: 100%;
+    }
+
+.chatAlertName {
+    color: #FFD886;
+}
+
+.chatAlertText {
+    text-align: justify;
+}
+
+#screenOrientationMask {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    text-align: center;
+    z-index: 99999999;
+}
+
+    #screenOrientationMask p {
+        margin-top: 30px;
+    }
+
+    #screenOrientationMask img {
+        position: relative;
+        top: 20%;
+        margin: 0 auto;
+        width: auto;
+        height: 60%;
+    }
+
+
+#sleepMode {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: url('https://static.realmofempires.com/images/icons/M_MoreSleep.png') no-repeat;
+    text-align: right;
+    overflow: hidden;
+    /*font: 11px/80px "Trebuchet MS", serif;*/
+    text-shadow: 0px 3px 3px #000000, 0px -3px 3px #000000, -4px 0px 3px #000000, 4px 0px 3px #000000;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    -moz-transition: opacity 2s ease-out;
+    -webkit-transition: opacity 2s ease-out;
+    -o-transition: opacity 2s ease-out;
+}
+
+    #sleepMode.deactive {
+        opacity: 0.5;
+    }
+
+#html5SwipeWrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 320px;
+    background-color: rgba(30, 30, 90, 0.5);
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+    #html5SwipeWrapper #html5SwipeFloater {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 500px;
+        height: 100%;
+        background-color: rgba(190, 0, 0, 0.5);
+        font-size: 115px;
+    }
+
+.html5SwipeWrapper {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+    .html5SwipeWrapper.inBuildingPage {
+        height: 50px;
+        width: 275px;
+        z-index: 99999;
+    }
+
+    .html5SwipeWrapper.inVov {
+        bottom: 0px;
+        width: 100%;
+        z-index: 4;
+    }
+
+    .html5SwipeWrapper .html5SwipeFloater {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 600px;
+        height: 100%;
+    }
+
+.player-avatar {
+    border: 1px solid #8d7765;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+
+
+
+#ClickMenu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    border-radius: 7px;
+    z-index: 9999;
+}
+
+
+    #ClickMenu .help {
+        font: 13px/1.0em "IM Fell French Canon", serif;
+        color: #D7D7D7;
+        text-shadow: 0px 0px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        text-align:center;
+    }
+
+    #ClickMenu .hoverMenu a {
+        cursor: pointer;
+    }
+    #ClickMenu .hoverMenu a,#ClickMenu .hoverMenu .na {
+        text-decoration: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    }
+
+
+    #ClickMenu .hoverMenu a.attq {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickAttack.png');
+    }
+
+    #ClickMenu .hoverMenu .attq_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickAttackGray.png');
+    }
+
+    #ClickMenu .hoverMenu a.attq:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickAttackHover.png');
+    }
+
+    #ClickMenu .hoverMenu a.att {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Attack.png');
+    }
+
+        #ClickMenu .hoverMenu a.att:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_AttackHover.png');
+        }
+
+    #ClickMenu .hoverMenu a.sup {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Support.png');
+    }
+
+    #ClickMenu .hoverMenu .sup_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportGray.png');
+    }
+
+    #ClickMenu .hoverMenu a.sup:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportHover.png');
+    }
+
+    #ClickMenu .hoverMenu a.supq {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupport.png');
+    }
+
+    #ClickMenu .hoverMenu .supq_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupportGray.png');
+    }
+
+    #ClickMenu .hoverMenu a.supq:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_1ClickSupportHover.png');
+    }
+
+    #ClickMenu .hoverMenu a.supl {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookup.png');
+    }
+
+    #ClickMenu .hoverMenu .supl_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookupGray.png');
+    }
+
+    #ClickMenu .hoverMenu a.supl:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SupportLookupHover.png');
+    }
+
+    #ClickMenu .hoverMenu a.map {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_CenterMap.png');
+    }
+
+        #ClickMenu .hoverMenu a.map:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_CenterMapHover.png');
+        }
+
+    #ClickMenu .hoverMenu a.sends {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Silver.png');
+    }
+
+    #ClickMenu .hoverMenu .sends_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SilverGray.png');
+    }
+
+    #ClickMenu .hoverMenu a.sends:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_SilverHover.png');
+    }
+
+    #ClickMenu .hoverMenu a.myvov {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Vov2.png');
+    }
+
+        #ClickMenu .hoverMenu a.myvov:hover {
+            background-image: url('https://static.realmofempires.com/images/icons/Q_Vov2Hover.png');
+        }
+
+    #ClickMenu .hoverMenu a.hq {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Upgrade2.png');
+    }
+
+    #ClickMenu .hoverMenu .hq_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_UpgradeGray.png');
+    }
+
+    #ClickMenu .hoverMenu a.hq:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Upgrade2Hover.png');
+    }
+
+    #ClickMenu .hoverMenu a.renV {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Rename.png');
+    }
+
+    #ClickMenu .hoverMenu .renV_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_RenameGray.png');
+    }
+
+    #ClickMenu .hoverMenu a.renV:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_RenameHover.png');
+    }
+
+    #ClickMenu .hoverMenu a.recr {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Recruit2.png');
+    }
+
+    #ClickMenu .hoverMenu .recr_na {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_RecruitGray.png');
+    }
+
+    #ClickMenu .hoverMenu a.recr:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/Q_Recruit2Hover.png');
+    }
+
+    #ClickMenu .hoverMenu a.othervov {
+        background-image: url('https://static.realmofempires.com/images/helpicon.png');
+    }
+
+    #ClickMenu .hoverMenu a.inOutFilter {
+        background-image: url('https://static.realmofempires.com/images/icons/M_FilterB.png');
+        background-size: 100% auto;
+    }
+
+    #ClickMenu .hoverMenu a.pundButton {
+        background-image: url("https://static.realmofempires.com/images/buttons/M_SP_Buttons.png");
+        background-position: 0px -75px;
+        background-size: 340px auto;
+        padding-top: 6px;
+        text-align: center;
+        display: block;
+        box-sizing: border-box;
+        float: left;
+    }
+        #ClickMenu .hoverMenu a.pundButton:hover {
+            color:#FFF;
+        }
+    #ClickMenu .hoverMenu a.gifts {
+        background-image: url('https://static.realmofempires.com/images/icons/giftsS.png');
+    }
+
+    #ClickMenu .hoverMenu .gifts_na {
+        background-image: url('https://static.realmofempires.com/images/icons/giftsS.png');
+        opacity:.3;
+    }
+
+    #ClickMenu .hoverMenu a.gifts:hover {
+        background-image: url('https://static.realmofempires.com/images/icons/giftsHoverS.png');
+    }
+
+
+    #ClickMenu a.toVillage,
+    #ClickMenu a.fromVillage,
+    #ClickMenu a.toPlayer,
+    #ClickMenu a.fromPlayer {
+        width: 38px;
+        height:25px;
+    }
+
+
+    #ClickMenu a.toVillage {
+        background-image: url('https://static.realmofempires.com/images/icons/toVillage.png');
+    }
+
+    #ClickMenu a.fromVillage {
+        background-image: url('https://static.realmofempires.com/images/icons/fromVillage.png');
+    }
+
+    #ClickMenu a.toPlayer {
+        background-image: url('https://static.realmofempires.com/images/icons/toPlayer.png');
+    }
+
+    #ClickMenu a.fromPlayer {
+        background-image: url('https://static.realmofempires.com/images/icons/fromPlayer.png');
+    }
+
+        #ClickMenu a.toVillage.notAvailable, #ClickMenu a.fromVillage.notAvailable, #ClickMenu a.toPlayer.notAvailable, #ClickMenu a.fromPlayer.notAvailable {
+            opacity: 0.3;
+            cursor: auto;
+        }
+
+.jsV {
+    cursor: pointer;
+}
+
+
+/* major button pulse/scale effect */
+.ButtonTouch {
+    cursor: pointer;
+}

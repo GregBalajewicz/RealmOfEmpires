@@ -1,0 +1,26 @@
+﻿.MapsummaryPopup >ul { 
+    border: 2px solid #846824;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.6);
+    margin: 10px;
+}
+
+#mapSummaryDialog.MapsummaryPopup > ul {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 60px;
+    margin: 0px;
+}
+
+.MapsummaryPopup .collapse { width: 24px; height: 24px; }
+.MapsummaryPopup .torecip { padding: 2px 5px 2px 20px; background: url(https://static.realmofempires.com/images/OldMail.PNG) no-repeat scroll 0 center transparent; text-decoration:none; }
+.MapsummaryPopup a.torecip:hover { text-decoration:none; }
+
+.MapsummaryPopup .point { color:#D0D5D9; }
+.MapsummaryPopup .message { font-size: 130%; }
+

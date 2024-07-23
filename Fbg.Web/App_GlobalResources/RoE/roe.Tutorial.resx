@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Done" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;{0}, I thank you for your time! You are now well prepared to lead us into glory! 
+&lt;BR&gt;&lt;BR&gt;
+Please explore your kingdom on your own now. If you are wondering what to do next, I suggest:
+&lt;UL&gt;
+&lt;LI&gt;Upgrade your buildings - Silver Mine should be your priority.&lt;/li&gt;
+&lt;LI&gt;Explore the map and contact your neighbours.&lt;/li&gt;
+&lt;LI&gt;COMPLETE ALL QUESTS!&lt;/LI&gt;
+&lt;/ul&gt;
+&lt;img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6009003479760&amp;amp;value=0" /&gt;</value>
+  </data>
+  <data name="GoTo_Map" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;{0}, please go the map.
+&lt;BR&gt;&lt;BR&gt;
+Click on the Map link &lt;a href="#" onclick="PointToMapLink();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border="0" Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;</value>
+  </data>
+  <data name="GoTo_SilverMine" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;{0}, please go to the &lt;B&gt;SilverMine&lt;/B&gt;.&lt;BR&gt;&lt;BR&gt;
+
+To get there, first click &lt;B&gt;your village name&lt;/B&gt; to go to the VillageOverview&lt;a href="#" onclick="PointToVilName();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border=0 Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;</value>
+  </data>
+  <data name="GoTo_VillageOverview" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;{0}, please go to the &lt;B&gt;Village Overview&lt;/B&gt; page.&lt;BR&gt;&lt;BR&gt;
+
+Click &lt;B&gt;Your Village Name&lt;/B&gt; link on the top left of the screen &lt;a href="#" onclick="PointToVilName();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border=0 Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;</value>
+  </data>
+  <data name="Step1" xml:space="preserve">
+    <value>
+
+
+&lt;img src='https://static.realmofempires.com/images/tutorial_advisor.png'/ style='position:absolute;POSITION: absolute; left: -110px;top:-70px;'&gt;&lt;center&gt;&lt;B&gt;ALL HAIL, our ruler {0}!&lt;/b&gt;
+
+&lt;BR&gt;&lt;BR&gt;I am Lady Isobel,&lt;BR&gt; your loyal servant.
+
+&lt;/center&gt;</value>
+  </data>
+  <data name="Step1_0" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;As you know, your village is composed of many different buildings as seen here.
+&lt;BR&gt;&lt;BR&gt;
+Each building performs some unique function. For example, your Silver Mine produces silver.</value>
+  </data>
+  <data name="Step1_1" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;&lt;BR&gt;Buildings have &lt;I&gt;levels&lt;/i&gt;; the higher the level of a building the better it performs it's function. 
+
+
+&lt;BR&gt;&lt;BR&gt;For Example - your Silver Mine is at level {0} &lt;a href="#" onclick="PointToLevel('linkMine_Level');return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border=0 Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;
+
+&lt;BR&gt;&lt;BR&gt;At this level, Silver Mine produces {1} silver per hour &lt;a href="#" onclick="PointToSilverProd();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border="0" Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;
+
+</value>
+  </data>
+  <data name="Step1_1_1" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;Now lets upgrade your Silver Mine.
+
+&lt;BR&gt;&lt;BR&gt;
+Click on your Silver Mine now. &lt;a href="#" onclick="PointToBuilding('linkMine');return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border=0 Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;
+
+</value>
+  </data>
+  <data name="Step3_1" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;No sovereign can rule without an army, and neither should you!
+&lt;BR&gt;&lt;BR&gt;
+The Troops table on the right shows you the troops you have. &lt;a href="#" onclick="PointToTroopsTable();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border="0" Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;</value>
+  </data>
+  <data name="Step3_1a" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;{0}, now we will take a quick look at your army.
+
+&lt;BR&gt;&lt;BR&gt;For this, please go to the &lt;B&gt;Village Overview&lt;/B&gt; page.&lt;BR&gt;&lt;BR&gt;
+
+Click &lt;B&gt;Your Village Name&lt;/B&gt; link &lt;a href="#" onclick="PointToVilName();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border=0 Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;</value>
+  </data>
+  <data name="Step3_1_1" xml:space="preserve">
+    <value>
+&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;In time, you will be able to recruit a mighty army! 
+
+&lt;BR&gt;&lt;BR&gt;However, when you first start, you begin with just a handful of Citizen Militia. &lt;a href="#" onclick="PointToCM();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border="0" Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;
+
+&lt;BR&gt;&lt;BR&gt;These are your peasants armed with pitch forks, sticks and anything else they can find. They will help you defend your village in it's early stages.</value>
+  </data>
+  <data name="Step3_2" xml:space="preserve">
+    <value>&lt;img src='https://static.realmofempires.com/images/vov/d_barracks1.png' alt='Barrack' align="left" style="padding-right: 10px" /&gt;At the beginning, you are not able to recruit more troops. You will need to construct the &lt;B&gt;Barracks&lt;/b&gt; building first.
+&lt;BR&gt;&lt;BR&gt;
+Do not neglect recruiting troops! Build barracks and recruit some troops daily or you risk creating an easy and tempting target for your neighbors.</value>
+  </data>
+  <data name="Step4_1" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;Now let's meet your neighbors!
+&lt;BR&gt;&lt;BR&gt;
+Click on the Map link now &lt;a href="#" onclick="PointToMapLink();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border="0" Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;
+
+&lt;BR&gt;&lt;BR&gt;
+This will display the map centered on your village</value>
+  </data>
+  <data name="Step4_2" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;Here is a view of your surroundings.
+&lt;BR&gt;&lt;BR&gt;&lt;img src="https://static.realmofempires.com/images/map/freb.png" style=float:left /&gt;Your village is in the middle of the map, the one with the white shield - move this window if you dont see it.</value>
+  </data>
+  <data name="Step4_2_1" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;&lt;img src="https://static.realmofempires.com/images/map/fme.png" style=float:left /&gt;Your village is in the middle of the map, the one with the white shield - move this window if you dont see it.</value>
+  </data>
+  <data name="Step4_2_2" xml:space="preserve">
+    <value>
+&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;Move your mouse over the villages. &lt;BR&gt;&lt;BR&gt; 
+
+You will get a bit of information about them - who is the owner, how powerful they are (points), what clan (if any) they are part of.</value>
+  </data>
+  <data name="Step4_3" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;All* the villages you see are owned by REAL PEOPLE! Some could already be your facebook friends!&lt;BR&gt;&lt;BR&gt;
+*&lt;img src="https://static.realmofempires.com/images/map/fme.png" style=float:left /&gt;Villages with gray flags are owned by Rebels. These make great targets when you are ready to expand  your empire!</value>
+  </data>
+  <data name="Step4_3_1" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;&lt;img src="https://static.realmofempires.com/images/attack.png" style=float:left /&gt;Soon you will expand your empire by CONQUERING your neighbours!
+
+&lt;br&gt;&lt;br&gt;But beware! Your neighbours are also looking to conquer you!</value>
+  </data>
+  <data name="Step4_5" xml:space="preserve">
+    <value>&lt;BR&gt;
+&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;Get to know your neighbours! You WILL need them to help you defend your village, or help you conquer an enemy.
+&lt;BR&gt;&lt;BR&gt;Clicking any village gives you a list of commands you can do such as attack this village, learn more about the owner etc. Explore this on your own later on.</value>
+  </data>
+  <data name="Step5_1" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;{0}, you are almost done! 
+&lt;BR&gt;&lt;BR&gt;
+My last piece of advice is that you should consider joining a &lt;B&gt;Clan&lt;/B&gt; - a grouping of players for their mutual protection. 
+&lt;BR&gt;&lt;BR&gt;
+Alone we become prey for stronger players. In a clan we conquer and defend together!
+&lt;BR&gt;&lt;BR&gt;
+On the map you can see what clan your neighbours are members of. If you find one you like, you can send a message to someone in that clan and ask to be invited. (Explore the map after this tutorial). </value>
+  </data>
+  <data name="Step5_2" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;Alternatively, you can form and lead your own clan!
+&lt;BR&gt;&lt;BR&gt;
+You could even invite your facebook friends and lead a mighty clan!
+&lt;BR&gt;&lt;BR&gt;
+To learn how to create a clan, click the highlighted icon on top right. It is best you explore that after this tutorial. </value>
+  </data>
+  <data name="Step_UpgradeBuildings_Finish" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;So this is where you upgrade buildings. &lt;BR&gt;&lt;BR&gt;You build new buildings the same way. </value>
+  </data>
+  <data name="Step_UpgradeBuildings_InSilverMine1" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;Here you can upgrade your silver mine!
+&lt;BR&gt;&lt;BR&gt;Click the &lt;B&gt;Upgrade To {0}&lt;/B&gt; link now. &lt;a href="#" onclick="PointToUpgrade();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border=0 Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;</value>
+  </data>
+  <data name="Step_UpgradeBuildings_InSilverMine2" xml:space="preserve">
+    <value>&lt;div style="width:58px;height:70px;display:block;float:left;"&gt;&lt;/div&gt;Every building has a page like this.
+&lt;BR&gt;&lt;BR&gt;Here you can upgrade the building, as well as learn more about it. 
+&lt;BR&gt;&lt;BR&gt;Now lets go back to the Village Overview. Click the name of your village. &lt;a href="#" onclick="PointToVilName();return false;"&gt;&lt;img src="https://static.realmofempires.com/images/misc/Arrow_pointer_North.gif" border=0 Style="height:15px;" /&gt;SHOW ME!&lt;/a&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,342 @@
+﻿
+
+
+/* Map Event and Event Notifications */
+
+.mapEventGui {
+    position: fixed;
+    z-index: 11000;
+    text-align: left;
+    text-shadow: 0px 2px 0px #000, 0px 0px 5px #948806;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    .mapEventGui .close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+        background-image: url("https://static.realmofempires.com/images/icons/M_X.png");
+        background-size: 100% 100%;
+        cursor: pointer;
+    }
+
+    .mapEventGui .title {
+        position: relative;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+
+
+.travellingCaravan {
+    width: 230px;
+    height: auto;
+    overflow: hidden;
+}
+    .travellingCaravan .cards {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: auto;
+
+    }
+
+        .travellingCaravan .cards .cardsInfo {
+            color: #FFF;
+            margin-bottom: 10px;
+        }
+
+
+        .travellingCaravan .cards .rerollBtn {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+            .travellingCaravan .cards .rerollBtn .text {
+                position: absolute;
+                top: 6px;
+                bottom: 8px;
+                left: 15px;
+                right: 17px;
+                line-height: 25px;
+                padding-right: 11px;
+                background-image: url(https://static.realmofempires.com/images/icons/servantCarry_m.png);
+                background-repeat: no-repeat;
+                background-position: right center;
+                background-size: auto 100%;
+            }
+
+        .travellingCaravan .noServ,
+        .travellingCaravan .noServCatchup {
+            color: #ff2d2d;
+            text-shadow: 0px 0px 0px #525252;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .travellingCaravan .cards .card {
+            position: relative;
+            display: inline-block;
+            perspective: 800px;
+            width: 62px;
+            height: 90px;
+            margin: 5px;
+            cursor: pointer;
+            -webkit-transition: all .35s ease-out;
+            -moz-transition: all .35s ease-out;
+            -ms-transition: all .35s ease-out;
+            -o-transition: all .35s ease-out;
+            transition: all .35s ease-out;
+            border-radius:5px;
+        }
+
+            .travellingCaravan .cards .card:hover {
+                transform: scale(1.15);
+                z-index: 1;
+            }
+
+            .travellingCaravan .cards .common {
+                box-shadow: 0px 0px 10px 1px rgba(183, 183, 183, 0.5);
+            }
+            .travellingCaravan .cards .uncommon {
+                box-shadow: 0px 0px 10px 1px #2aa728;
+            }
+            .travellingCaravan .cards .rare {
+                box-shadow: 0px 0px 10px 2px #1987ff;
+            }
+            .travellingCaravan .cards .epic {
+                box-shadow: 0px 0px 10px 3px #e60bf5;
+            }
+            .travellingCaravan .cards .legendary {
+                box-shadow: 0px 0px 8px 3px #ff7500;
+            }
+
+            .travellingCaravan .cards .card.flip .flipper {
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+            }
+
+            .travellingCaravan .cards .card .flipper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: .5s;
+                transform-style: preserve-3d;
+                -webkit-transform-style: preserve-3d;
+            }
+
+                .travellingCaravan .cards .card .flipper .front, .travellingCaravan .cards .card .flipper .back {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    background-position: 50% 50%;
+                    background-repeat: no-repeat;
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+                    border-radius: 5px;
+                }
+
+                .travellingCaravan .cards .card .flipper .back {
+                    background-size: 100% auto;
+                    background-image: url("https://static.realmofempires.com/images/mapevents/CArdBack01.png");
+                    z-index: 2;
+                    /* for firefox 31 */
+                    transform: rotateY(0deg);
+                    -webkit-transform: rotateY(0deg);
+                }
+
+                .travellingCaravan .cards .card .flipper .front {
+                    background-size: 100% 100%;
+                    background-image: url("https://static.realmofempires.com/images/mapevents/CardFaceBlank01.png");
+                    transform: rotateY(180deg);
+                    -webkit-transform: rotateY(180deg);
+                }
+
+
+                    .travellingCaravan .cards .card .flipper .front .count {
+                        position: absolute;
+                        bottom: 3px;
+                        left: 2px;
+                        right: 2px;
+                        padding: 1px;
+                        padding-bottom: 3px;
+                        font: 13px Georgia;
+                        background: rgba(0, 0, 0, 0.6);
+                        text-align: center;
+                    }
+
+                    .travellingCaravan .cards .card .flipper .front .icon {
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                        right: 3px;
+                        bottom: 15px;
+                        background-repeat: no-repeat;
+                        background-position: 50% 50%;
+                        background-size: contain;
+                    }
+
+
+/*IE css flip compatibility... */
+.oldIE .cards .card .flipper .back {
+    display: none !important;
+}
+.oldIE .cards .card .flipper .front {
+    backface-visibility: visible !important;
+}
+/*IE compatibility... */
+
+    .travellingCaravan .infos {
+        text-align: center;
+    }
+        .travellingCaravan .infos .info {
+            margin-bottom: 5px;
+        }
+            .travellingCaravan .infos .info span {
+                font: 13px Georgia;
+            }
+
+
+        .travellingCaravan .infos .youreBehindMsg {
+            margin-top:10px;
+        }
+
+    .travellingCaravan .catchUpBtn {
+        position: relative;
+        display: inline-block;
+    }
+        .travellingCaravan .catchUpBtn .text {
+            position: absolute;
+            top: 6px;
+            bottom: 8px;
+            left: 15px;
+            right: 17px;
+            line-height: 25px;
+            padding-right: 11px;
+            background-image: url(https://static.realmofempires.com/images/icons/servantCarry_m.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: auto 100%;
+        }
+
+
+
+
+.eventClaimDiv {
+    position: fixed;
+    z-index: 10000;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px 2px 0px #000, 0px 0px 5px #948806;
+    font: 31px georgia;
+    pointer-events:none;
+}
+
+.eventClaimReward {
+    position: fixed;
+    z-index: 110000;
+    text-align: left;
+    color: #FFF;
+    text-shadow: 0px 2px 0px #000, 0px 0px 5px #948806;
+    font: 25px georgia;
+    pointer-events: none;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+    .eventClaimReward div {
+        position: absolute;
+        bottom: 0px;
+        left: -15px;
+    }
+
+#surface .mapEventMask {
+    position: absolute;
+    z-index: 2;
+    background-image: url(https://static.realmofempires.com/images/misc/ajax-loader1.gif);
+    background-size: 50% 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#eventNotifWrapper {
+    position: absolute;
+    bottom: 175px;
+    right: 0px;
+    z-index: 1;
+}
+
+    #eventNotifWrapper .notif {
+        position: relative;
+        padding: 8px 10px;
+        padding-left: 40px;
+        padding-right: 55px;
+        background-color: rgba(0,0,0,.6);
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        max-width: 170px;
+        background-repeat: no-repeat;
+        background-size: 30px auto;
+        background-position: 3px 50%;
+    }
+        #eventNotifWrapper .notif .btn {
+            position: absolute;
+            top: 3px;
+            width: 24px;
+            height: 24px;
+            background-color: rgba(0,0,0,.6);
+            text-align: center;
+            line-height: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            font-size: 11px;
+        }
+        #eventNotifWrapper .notif .why {
+            right: 28px;
+        }
+            #eventNotifWrapper .notif .why:hover {
+                color:lime;
+            }
+        #eventNotifWrapper .notif .close {
+            right: 3px;
+        }
+            #eventNotifWrapper .notif .close:hover {
+                color: red;
+            }
+
+.mobile #eventNotifWrapper {
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+}
+
+    .mobile #eventNotifWrapper .notif {
+        padding-right: 75px;
+        max-width: 190px;
+        margin-top: 3px;
+    }
+        .mobile #eventNotifWrapper .notif .btn {
+            position: absolute;
+            top: 3px;
+            width: 33px;
+            height: 26px;
+            background-color: rgba(0,0,0,.6);
+            text-align: center;
+            line-height: 26px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            font-size: 15px;
+        }
+        .mobile #eventNotifWrapper .notif .why {
+            right: 37px;
+        }
