@@ -26,3 +26,4 @@ Version.cpp
 */**/obj/Debug
 */**/obj/Release
 /Fbg.Web/ErrorLog.txt
+/packages
