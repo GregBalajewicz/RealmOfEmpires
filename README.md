@@ -133,3 +133,12 @@ You can create many different types of realms (worlds). You will edit this scrip
 - Re-build the entire solution
 - Set fbg.web as Startup Project
 - Run / debug the project 
+
+# Creator's comments
+### About the code
+Please note. The code is a product of 16 years of intense work (some code 20+ years). It is  not up to date with latest patters and methods software development. It was written in a different time - before cloud, 
+before mobile devices, before Faceook matured, before hardware was as fast and as cheap as now. Code also went through a number of upgrades, so it contains both old and new technology. If you have question, or want 
+more explanations, please open an issue or start a discussion
+
+### About the engine
+The code was originally designed to be a game engine. There are a lot of options for configuring a world, and an ability to skin the game to look completely differently. 
