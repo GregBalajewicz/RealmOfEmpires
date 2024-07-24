@@ -54,7 +54,7 @@ Trivia: Term "fbg" stands for, "face-book-game" since Realm of Empires started a
 </details>
 
 ### Step B - Setup FBGCommon Database
-#### B.1 - Setup ASP.NET Membership on FBGCommon DB
+#### B.1 - Setup ASP.NET Membership
 run tool `Fbg.Database.Common/Create Scripts/Step 1 - register aspnet membership/Aspnet_regsql.exe)` and follow the wizard to setup .NET Framework Membership, which is [an old](https://learn.microsoft.com/en-us/aspnet/identity/overview/migrations/migrating-an-existing-website-from-sql-membership-to-aspnet-identity) 
 tool to add email based login and registration functionality
 
@@ -121,6 +121,3 @@ You can create many different types of realms (worlds). You will edit this scrip
 - Re-build the entire solution
 - Set frb.web as Startup Project
 - Run / debug the project 
-=======
-The code is provided with AGLP-3.0 License but this does not include images, videos, sounds and music, most which are sourced from original game (https://static.realmofempires.com). These are not provided for general use, are copyright. You may use them for development and experimentation purposes only. 
->>>>>>> 037f00df7834a6c1453318d37b2d5427655cf336
