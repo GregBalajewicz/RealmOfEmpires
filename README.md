@@ -5,6 +5,17 @@
 # About
 Realm of Empires MMORTS Game engine, is an open source version of a game by the same name - [RealmOfEmpires.com](https://www.realmofempires.com/)
 
+Realm of Empires was launch in 2008, has had over 2 million players and is live today.
+
+[BDA Entertainment](https://www.bdaentertainment.com/) decide to open source the engine to allow the community to create other games based on the code. 
+
+In the last 16 years, Realm of Empires has gone through a lot of changes, technology upgrades and is provided as-is, without any warranties.
+
+References
+- [Official Blog](https://realmofempires.blogspot.com/)
+- [Video Dev Logs](https://www.youtube.com/@realmofempires9110)
+- ["Unofficial" Blog](https://bubaribaman.blogspot.com/)
+
 # License
 The code is provided with AGLP-3.0 License but this does not include images, videos, sounds, music etc, most which are sourced from original game (https://static.realmofempires.com). These are not provided for general use and are copyright. You may use them for development and experimentation purposes only.
 
