@@ -37,6 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		PushSharp.Core.dll = PushSharp.Core.dll
 		PushSharp.Windows.dll = PushSharp.Windows.dll
 		PushSharp.WindowsPhone.dll = PushSharp.WindowsPhone.dll
+		security.md = security.md
 	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Fbg.Web", "Fbg.Web\", "{0EBF27BE-2A16-40B2-AE3B-630C0AEC0FE0}"
