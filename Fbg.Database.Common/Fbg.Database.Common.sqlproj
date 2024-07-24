@@ -165,9 +165,6 @@
     <None Include="SP\qUserXP.sql">
       <SubType>NotInBuild</SubType>
     </None>
-    <None Include="Create Scripts\Step 2.5 - FbgCommon DDL - additonal creates.sql">
-      <SubType>NotInBuild</SubType>
-    </None>
     <None Include="SP\uGift_AcceptByRequest.sql">
       <SubType>NotInBuild</SubType>
     </None>
