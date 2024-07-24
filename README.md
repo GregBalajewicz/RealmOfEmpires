@@ -129,6 +129,7 @@ You can create many different types of realms (worlds). You will edit this scrip
 </details>
 
 ### Step D - Compile and run the application
+- Open the solution with Visual Studio
 - Re-build the entire solution
-- Set frb.web as Startup Project
+- Set fbg.web as Startup Project
 - Run / debug the project 
