@@ -145,7 +145,7 @@ The best way to run it, is to navigate to the directory where Fbg.EventHandlerWi
 
 This process will handle completion of events such as building uggrades, troop movements etc. 
 
-# How to deploy a game for public use
+# How to deploy a game for public use 
 This is a big topic, and we are happy to help with more detailed guidance (please create a discussion for this), here is a very brief and high level guide.
 
 Realm of Empires was meant to run on bear-metal or on a virtual machine (it was created before the days of cloud computing as it is now). One way is to create a Windows Server virtual machine, install SQL Server and configurate all that is needed to run a website under Windows’ Internet Information Services. 
