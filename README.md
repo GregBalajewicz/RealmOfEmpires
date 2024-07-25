@@ -128,11 +128,31 @@ You can create many different types of realms (worlds). You will edit this scrip
 
 </details>
 
-### Step D - Compile and run the application
+### Step D - Compile and run the game
 - Open the solution with Visual Studio
 - Re-build the entire solution
 - Set fbg.web as Startup Project
 - Run / debug the project 
+
+
+### Step E - Run Event-Handler
+- Compile and run project Fbg.EventHandlerWin2
+- Compile and run project Fbg.EventHandlerWin2
+
+The best way to run it, is to navigate to the directory where Fbg.EventHandlerWin2 is placed, then navigate to subdirectory `bin\debug` and execute `Fbg.EventHandlerWin2.exe`
+
+- Once running, click the "Start / ReInit ALL" button. 
+
+This process will handle completion of events such as building uggrades, troop movements etc. 
+
+# How to deploy a game for public use 
+This is a big topic, and we are happy to help with more detailed guidance (please create a discussion for this), here is a very brief and high level guide.
+
+Realm of Empires was meant to run on bear-metal or on a virtual machine (it was created before the days of cloud computing as it is now). One way is to create a Windows Server virtual machine, install SQL Server and configurate all that is needed to run a website under Windows’ Internet Information Services. 
+
+You can also release on Azure Cloud in various configurations, but SQL Databases have to be on Azure SQL Instances or on SQL on VM.  You cannot use Azure SQL Databases as the solution uses cross-database queries. 
+
+You will of course need your own URL and art. You can use our art assets for testing purposes only. 
 
 # Creator's comments
 ### About the code
