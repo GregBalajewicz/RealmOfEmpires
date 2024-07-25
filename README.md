@@ -134,6 +134,14 @@ You can create many different types of realms (worlds). You will edit this scrip
 - Set fbg.web as Startup Project
 - Run / debug the project 
 
+
+# How to deploy a game for public use
+This is a big topic, and we are happy to help with more detailed guidance (please create a discussion for this), here is a very brief and high level guide.
+
+Realm of Empires was meant to run on bear-metal or on a virtual machine (it was created before the days of cloud computing as it is now). One way is to create a Windows Server virtual machine, install SQL Server and configurate all that is needed to run a website under Windows’ Internet Information Services. 
+
+You can also release on Azure Cloud in various configurations, but SQL Databases have to be on Azure SQL Instances or on SQL on VM.  You cannot use Azure SQL Databases as the solution uses cross-database queries. 
+
 # Creator's comments
 ### About the code
 Please note. The code is a product of 16 years of intense work (some code 20+ years). It is  not up to date with latest patters and methods software development. It was written in a different time - before cloud, 
